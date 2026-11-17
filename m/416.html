@@ -1,0 +1,158 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MC MuraFGC SF6 Input system is WEIRD｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 416 篇</div><h1>MC MuraFGC SF6 Input system is WEIRD</h1><hr />
+<h2>核心資訊與影片導航</h2>
+<ul>
+<li><strong>影片標題</strong>：SF6 Input system is WEIRD (Moves input reader)</li>
+<li><strong>頻道作者</strong>：MC MuraFGC</li>
+<li><strong>YouTube 識別碼</strong>：DYA4QYsNCpY</li>
+<li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=DYA4QYsNCpY">點擊前往觀看原影片</a></li>
+</ul>
+<h3>核心教學主旨</h3>
+<p>本影片由知名格鬥遊戲分析創作者 MC Mura 深度剖析《快打旋風 6 (SF6)》極為特殊且複雜的<strong>輸入判讀系統 (Input Reader &amp; Buffer Engine)</strong>。影片透過 C. Viper（以 SF4 機制為參照對象）、Kimberly、Ken、Ryu、Cody 與 Poison 等角色的實例比對，揭示了 SF6 在「按住輸入 (Button Hold Buffer)」、「放開判定 (Negative Edge)」以及「複合鍵指令優先級 (Priority Hierarchy)」上的微觀管理邏輯。</p>
+<p>過去舊作（如 SF4、SF5）普遍遵循全局統一且僵化的優先層級（如：CA &gt; 昇龍 &gt; 踢擊 &gt; 拳擊）；然而 SF6 卻採用了高度客製化的「招式個別導向 (Move-by-Move Tuning)」，甚至疑似為了兼顧 Modern 現代模式的輸入判定，對特定角色的取消與複合鍵施放進行了刻意的偏好傾斜。掌握此輸入機制的底層邏輯，將大幅提升玩家在極限取消、跑停判定與刷鍵防失誤操作上的精確度。</p>
+<hr />
+<h2>完整微觀時間戳章節導航（Micro-Timeline Navigation）</h2>
+<ul>
+<li><strong><a href="https://www.youtube.com/watch?v=DYA4QYsNCpY&amp;t=0s">00:00</a> SF6 奇異輸入系統引言與取消機制本質</strong></li>
+<li>探討 SF6 輸入判讀器如何針對微觀操作進行刻意設計與優化。</li>
+<li>以經典取消招式為例（如 Viper 的 Thunder Knuckle 取消、Seismic 取消），解析傳統指令必須依序輸入「特殊技 + 取消鍵」的標準架構。</li>
+<li>
+<p>闡述「動作跟隨 (Follow-up)」輸入與預先輸入緩衝在 SF6 中的初始表現。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=DYA4QYsNCpY&amp;t=46s">00:46</a> 按住判定 (Button Hold) 與 Negative Edge 的本質差異</strong></p>
+</li>
+<li>實測「按住按鈕 (Holding Button)」即可自動吃進後續指令判定，甚至無須重複按鍵即可連續觸發招式（例如連鎖 Seismic）。</li>
+<li>釐清「按鈕放開輸入 (Button Release Input / Negative Edge)」與「持續按住讀取」的判定分歧（SF6 預設將 Negative Edge 關閉）。</li>
+<li>
+<p>確認按住判定並非利用放開瞬間的信號，而是底層緩衝器在特定動作下持續保留有效狀態。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=DYA4QYsNCpY&amp;t=91s">01:31</a> 角色個例測試：Kimberly 跑停 vs Ken 奔跑機制斷裂</strong></p>
+</li>
+<li>Kimberly 的奔跑急停 (Run Stop) 可以透過「按住重拳/攻擊鍵」在指令輸入後第 1 幀全自動最速觸發 Stop。</li>
+<li>Ken 的奔跑急停 (Ken's Run Stop，即 66 奔跑 &gt; LK) 卻無法透過按住 LK 觸發，角色會跑完全程而不會提前剎車。</li>
+<li>
+<p>證實按住判定在 SF6 內並非全局通用規則，而是 Capcom 逐一為角色單獨寫入的「例外例外化」設計。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=DYA4QYsNCpY&amp;t=138s">02:18</a> 招式複合鍵優先級之謎：Punch vs Kick 的動態判定</strong></p>
+</li>
+<li>當兩個相同方向指令的必殺技按鍵重疊時（例如 214 + HP + LK 或 236 + 雙鍵），SF6 的判讀邏輯深度實測。</li>
+<li>Viper 模式：214HP+LK 或 214+DI 判定下，系統優先給出拳擊系的 Thunder Knuckle 佯攻 (Feint)。</li>
+<li>
+<p>Ken 模式：236HP+LK 複合輸入時，系統覆蓋波動拳 (Hadoken)，優先給出踢擊系的迅雷腳 (Jinrai Kick)。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=DYA4QYsNCpY&amp;t=180s">03:00</a> 跨世代優先級比較（SF5 / SF4 舊時代 vs SF6 新世代）</strong></p>
+</li>
+<li>回顧 SF5 經典角色（Cody 的 236P 龍捲風 vs 236K 惡徒踢；Poison 的 236P 皮鞭 vs 236K 飛踢），舊作無一例外將 Kick 設為絕對高於 Punch 的全局優先級。</li>
+<li>Ryu 的波昇與破衝拳 (Hoshogiki) 判定比較，點出 SF6 徹底打破了「固定優先級樹狀圖 (Fixed Hierarchy)」。</li>
+<li>探討 SF6 為何轉向「招式個別導向 (Move-by-Move Basis)」：使特定取消更容易達成，並深度兼容現代模式 (Modern Controls) 的按鍵對應。</li>
+</ul>
+<hr />
+<h2>核心技術/心法深入拆解</h2>
+<h3>1. 「按住緩衝 (Hold Buffer)」與「按鈕放開 (Negative Edge)」的底層運作原理</h3>
+<ul>
+<li><strong>機制本質辨析</strong>：</li>
+<li><strong>Negative Edge (按鈕放開輸入)</strong>：按鍵在按下瞬間產生一次訊號，放開時（Frame of Release）產生另一次訊號。SF6 選單內提供此選項，但預設為 <strong>OFF</strong>。</li>
+<li><strong>Button Hold Input (按住輸入緩衝)</strong>：SF6 中的部分動作（如 Feint、Stop 取消）允許玩家在動作進入可取消視窗前「按住特定按鍵」。當方向指令完成或判定窗口開啟的第 1 幀（Frame 1），系統會直接檢查「當前按鍵是否處於按下狀態（Is_Pressed = True）」，直接放行該派生招式，省去重新按下 (Press) 的物理按鍵時間。</li>
+<li><strong>角色特例性（非通用規則）</strong>：</li>
+<li><strong>Kimberly</strong>：輸入奔跑指令前即按住停止按鍵（如 HP），奔跑發動時立即自動觸發 Run Stop，達成最速停止。</li>
+<li><strong>Ken</strong>：指令奔跑（66 或 KK 奔跑）中，若按住 LK，系統不會觸發 Run Stop，Ken 必須在奔跑發動後，於合法窗口內<strong>重新產生一次 LK 的按下信號</strong>。</li>
+<li><strong>教練解析</strong>：這證明 SF6 底層不再套用過去的通用狀態機（State Machine），而是針對角色機體的連段難易度、節奏平衡進行了個案化（Hard-coded）調校。</li>
+</ul>
+<h3>2. 複合輸入優先級（Input Priority Hierarchy）的世代變革</h3>
+<ul>
+<li><strong>舊世代邏輯（以 SF5 / SF4 為例）</strong>：
+  $$\text{Critical Art (超必殺)} &gt; \text{DP (昇龍)} &gt; \text{Kick 特殊技} &gt; \text{Punch 特殊技} &gt; \text{重攻擊} &gt; \text{中攻擊} &gt; \text{輕攻擊}$$</li>
+<li>在舊作中，若角色擁有相同方向指令的招式（例如 236P 與 236K），同時按下時必定強制判定為踢擊（Kick）。</li>
+<li><strong>SF6 新世代邏輯：Move-by-Move 個別效益導向</strong>：</li>
+<li>SF6 放棄了全局「踢擊優先於拳擊」的死板規則。</li>
+<li><strong>Ken 的案例</strong>：輸入 $236\text{P}+\text{K}$ 時，優先判定為 <strong>迅雷腳 (Jinrai Kick, 236K)</strong>，波動拳 (Hadoken, 236P) 被吞噬。</li>
+<li><strong>Ryu 的案例</strong>：輸入 $236\text{P}+\text{K}$ 時，優先判定為 <strong>破衝拳 (Hashogeki, 236P)</strong>，而非其他指令。</li>
+<li><strong>Viper 衍生案例</strong>：輸入 $214\text{HP}+\text{LK}$ 或 $214+\text{DI}$ 時，系統偏向判定拳擊系的 Thunder Knuckle，使選手能利用 DI 鍵或複合按鍵輕鬆實現最速佯攻（Feint）。</li>
+</ul>
+<h3>3. Modern（現代模式）與指令簡化架構的潛在影響</h3>
+<ul>
+<li>SF6 引入了 Modern 操作，單鍵必殺技需要依賴「方向鍵 + SP 鍵」或「方向鍵 + 單鍵輔助」進行即時映射。</li>
+<li>為了避免雙鍵/複合鍵輸入（如綠衝取消 66、摔技 LP+LK、DI HP+HK、Parry MP+MK）在實戰混亂中誤觸非預期的必殺技，Capcom 特意對所有角色的指令重疊（Overlapping Inputs）進行了個別優先級權重賦予。</li>
+<li><strong>實戰心法</strong>：了解你所用角色的「優先權招式」，能讓你大膽使用「刷鍵保險法」或「複合指令 (Option Select-like inputs)」，而不用擔心招式被意外吞掉。</li>
+</ul>
+<hr />
+<h2>指令優先級與角色機制對照矩陣表</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">角色 (Character)</th>
+<th style="text-align: left;">重疊指令 (Motion Input)</th>
+<th style="text-align: left;">複合按下按鍵 (Simultaneous Buttons)</th>
+<th style="text-align: left;">最終優先判定招式 (Resulting Move)</th>
+<th style="text-align: left;">舊世代/常規對比 (Traditional Behavior)</th>
+<th style="text-align: left;">機制效益與戰術影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ken</strong></td>
+<td style="text-align: left;">236 (下前 / QCF)</td>
+<td style="text-align: left;">$\text{Punch} + \text{Kick}$</td>
+<td style="text-align: left;"><strong>迅雷腳 (Jinrai Kick)</strong></td>
+<td style="text-align: left;">舊世代通常判定 Kick，SF6 維持 Kick 優先</td>
+<td style="text-align: left;">進攻壓制時不易誤出波動拳，利於壓近身壓迫。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ryu</strong></td>
+<td style="text-align: left;">236 (下前 / QCF)</td>
+<td style="text-align: left;">$\text{Punch} + \text{Kick}$ (特例情境)</td>
+<td style="text-align: left;"><strong>破衝拳 (Hashogeki)</strong></td>
+<td style="text-align: left;">傳統優先波 (Hadoken) 或 Kick</td>
+<td style="text-align: left;">確保中距離波打與破衝拳壓制具有明確判讀意圖。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kimberly</strong></td>
+<td style="text-align: left;">奔跑派生 (Run)</td>
+<td style="text-align: left;">預先按住攻擊鍵 (Hold Button)</td>
+<td style="text-align: left;"><strong>最速 Run Stop (全自動急停)</strong></td>
+<td style="text-align: left;">必須在奔跑動作展開後單獨按下按鍵</td>
+<td style="text-align: left;">大幅降低奔跑停頓的輸入門檻，使假動作更加致命。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ken</strong></td>
+<td style="text-align: left;">奔跑派生 (Run)</td>
+<td style="text-align: left;">預先按住輕腳 (Hold LK)</td>
+<td style="text-align: left;"><strong>不觸發急停 (跑完全程)</strong></td>
+<td style="text-align: left;">與 Kimberly 形成強烈反差</td>
+<td style="text-align: left;">要求玩家節奏必須乾淨，不可依賴預先偷按鍵。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>C. Viper</strong> (分析對照)</td>
+<td style="text-align: left;">214 (下後 / QCB)</td>
+<td style="text-align: left;">$\text{HP} + \text{LK}$ 或 $\text{214} + \text{DI}$</td>
+<td style="text-align: left;"><strong>Thunder Knuckle Feint (拳系)</strong></td>
+<td style="text-align: left;">舊世代 Kick 優先，理應出 Focus/Kick 系</td>
+<td style="text-align: left;">大幅簡化高難度取消與佯攻操作，不易漏招。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>大師避坑指南與實戰心法（Common Pitfalls &amp; Master Tips）</h2>
+<h3>1. 致命誤區：以為每個角色的「派生取消」都能靠「按住按鈕」偷吃步</h3>
+<ul>
+<li><strong>NG 行為</strong>：以為在 Kimberly 身上成功的「按住攻擊鍵最速 Run Stop」，可以完美複製到 Ken 的奔跑急停上，導致在實戰中 Ken 傻傻直直往前衝而吃到對手的迎頭重擊確反。</li>
+<li><strong>大師指引</strong>：在練習室（Training Mode）中務必打開「輸入歷史記錄 (Input Display)」與「動作資訊」，逐一測試你角色的派生技是屬於「持續狀態檢測型 (Continuous Hold Check)」還是「邊緣觸發型 (Edge/Press Trigger)」。</li>
+</ul>
+<h3>2. 避免將「按鈕放開輸入 (Button Release / Negative Edge)」與「預先輸入 (Buffer)」混為一談</h3>
+<ul>
+<li><strong>NG 行為</strong>：許多玩家招式放不出來時，會病急亂投醫去設定把 Negative Edge 打開。</li>
+<li><strong>大師指引</strong>：在 SF6 中，強烈建議<strong>關閉</strong>按鈕放開輸入（預設即為 OFF）。打開 Negative Edge 會導致你在放開按鍵時產生二次判定，極度容易在立回中將「單發牽制拳腳」誤出成「必殺技/昇龍」，造成嚴重的被確反風險。</li>
+</ul>
+<h3>3. 利用招式優先級打造「乾淨的防失誤指令」</h3>
+<ul>
+<li><strong>頂尖選手思維</strong>：頂尖高手非常清楚在混亂對局中，複合按鍵會優先呼叫哪一招。例如使用 Ken 在防守轉進攻時，若要快速打出 236K 壓制，即使手滑多碰到了輕拳或重拳，系統依然會優先執行迅雷腳。了解自己角色的「指令階層」，才能在心理高壓下放膽輸入，杜絕招式猶豫。</li>
+</ul><div class="nav"><span><a href="415.html">← 415 魯比 Firemanruby 讀心的極致 老桑這樣猜拳的方式真的只能用恐怖來形容</a></span><span style="text-align:right"><a href="417.html">417 いおりチャンネル スト6講座と スト６ ケンの端の大P固めが最強の理由  ストリ →</a></span></div></div></body></html>

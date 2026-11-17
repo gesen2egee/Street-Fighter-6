@@ -1,0 +1,746 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>傑斯特 吉米Jamie飲酒阻斷與流派招式破綻速效解｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 175 篇</div><h1>影片專屬深度解析 175：傑斯特 - 【street fighter 6】簡單的對策 Jamie (吉米) 核心破綻與速效確反大典</h1><blockquote>
+<p>📺 <strong>影片來源</strong>：<a href="https://www.youtube.com/watch?v=YFszsFLPiKc">【street fighter 6】簡單的對策 Jamie</a><br />
+👤 <strong>頻道作者</strong>：Jest_stickman【傑斯特】（繁體中文圈知名格鬥導師、資深格鬥名將） | ⏱️ <strong>時長</strong>：02分52秒 (172s) | 🆔 <strong>影片ID</strong>：YFszsFLPiKc<br />
+【字幕補充】：原片採實機操作與畫面字卡直觀教學，官方字幕含 02:22 一處更正字卡（「更正:角落尖端命中會有後續 但很少見」）。章節完全對應 info.json 時間軸。<br />
+🎯 <strong>核心對策目標</strong>：徹底擊潰醉拳小子「吉米（Jamie）」的立回虛張聲勢與流派偷幀陷阱！從底層物理機制拆解「5HP 嘟嘟嘟三連擊負 3 幀真解」「流醉拳 236P 一段 -6F、三段下劈 -14F 致命確反」「弱水疾步 214P 滑步中途無霸體之中拳截擊法」「OD 昇龍 623KK 被防 -35F 滿氣極限斬殺」「空中無影踢 J214K 著地破綻」，以及最重要的戰略天條——「絕對不可進入力竭 (Burnout)」與自角色隆（Ryu）專屬「戒酒第一人稱波升壓制公式」！</p>
+</blockquote>
+<hr />
+<h2>🧭 戰略總綱：撕下醉拳少年的神秘面具，終結「花拳繡腿」</h2>
+<p>在《快打旋風 6 (Street Fighter 6)》中，<strong>吉米（Jamie）</strong>以其極具觀賞性的街舞醉拳動作、行雲流水的連續推掌，以及邊打邊喝葫蘆酒的成長機制，成為天梯新手玩家最懼怕的「初見殺」常客。</p>
+<p>許多玩家在對抗吉米時常常陷入以下心理誤區：
+1. <strong>「他一直出 5HP 嘟嘟嘟推我，推完我根本不敢動！」</strong>：吉米揮拳動作快且花哨，防守方被推完後誤以為吉米處於有利幀，一直死守蹲防，結果被吉米走上前普通投或生綠衝繼續壓制；
+2. <strong>「流醉拳三連擊打過來，什麼時候才能確反？」</strong>：吉米推一掌又踢兩腳，防守方不知何時該反擊，搶招被打 Counter，不搶招被磨血；
+3. <strong>「他突然滑步過來或者空中踩下來，防不勝防！」</strong>：吉米使用弱水疾步在地面滑行，或從空中突然變軌下踩，打亂防守方的防空節奏；
+4. <strong>「不知不覺進入力竭（Burnout），然後被吉米活活玩死！」</strong>：防守方因為頻繁防禦吉米的花哨拳腳，綠條耗盡力竭，吉米直接當面狂喝到 4 酒，開啟無敵狂暴模式！</p>
+<p>台灣格鬥遊戲資深導師 <strong>傑斯特 (Jest_stickman)</strong> 在本教學中以最直觀、最速效的方式打破了吉米的神話：</p>
+<blockquote>
+<p><strong>「吉米看起來很花哨，但他的拳腳在物理數據上破綻百出！他的 5HP 被防是負幀！他的流醉拳一段被防是 -6F，三段踢完是整整 -14F 的送命破綻！他的滑步中途完全沒有霸體，隨便一個下中拳就能把他打飛！只要你守住『絕對不讓自己力竭』這條底線，並在防住大招後給予最痛的確反，吉米就是天梯上最脆弱的角色！」</strong></p>
+</blockquote>
+<pre><code class="language-mermaid">graph TD
+    A[吉米三大常規進攻板斧] --&gt; B[板斧 1：5HP 站重拳三連打]
+    A --&gt; C[板斧 2：流醉拳 236P 三段派生]
+    A --&gt; D[板斧 3：弱水疾步 214P 滑步接近]
+
+    B --&gt;|物理真相| E[非綠衝被防固定 -3F！防守方手握主動權，出中拳搶斷]
+    C --&gt;|物理真相| F[一段被防 -6F 輕拳確反！三段下劈被防 -14F 重拳最大連段！]
+    D --&gt;|物理真相| G[滑步中途 0 霸體 0 無敵！隆直接 2MP 下中拳截斷打康！]
+</code></pre>
+<hr />
+<h2>⏱️ 影片微觀時間戳章節導航 (傑斯特速效時序)</h2>
+<p>本解析提煉傑斯特教學影片 00:00 至 02:52 每一秒的核心教學時序與關鍵實機操作點：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">分:秒 時間戳</th>
+<th style="text-align: left;">章節主題與教學核心</th>
+<th style="text-align: left;">實機演示與技術要點剖析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[00:00 - 00:29]</strong></td>
+<td style="text-align: left;"><strong>【5HP】站立重拳三連打核心破綻</strong></td>
+<td style="text-align: left;">演示吉米 5HP（嘟嘟嘟）被防 -3F 機制，點明非綠衝狀態下防守方奪回節奏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[00:29 - 01:34]</strong></td>
+<td style="text-align: left;"><strong>【236P &amp; 236P-6K-6K】流醉拳確反大典</strong></td>
+<td style="text-align: left;">逐段拆解：一段被防 <strong>-6F</strong> 確反、三段下劈被防 <strong>-14F</strong> 巨大破綻，重攻擊滿額痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:34 - 01:53]</strong></td>
+<td style="text-align: left;"><strong>【214P】弱水疾步滑行截擊指南</strong></td>
+<td style="text-align: left;">演示吉米滑步前衝動作，指出其零霸體漏洞，傳授下中拳 (2MP) 迎面截斷</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:53 - 02:04]</strong></td>
+<td style="text-align: left;"><strong>【623KK】OD 昇龍/張弓腿被防 -35F 斬殺</strong></td>
+<td style="text-align: left;">演示吉米凹昇龍空揮/被防後的巨大僵直，上前出滿氣連段痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[02:04 - 02:27]</strong></td>
+<td style="text-align: left;"><strong>【J214K】空中無影踢下踩對空破局 【字幕補充】</strong></td>
+<td style="text-align: left;">演示吉米空中變軌下落，解析著地負幀與空中停頓，強昇龍拳截擊；【字幕補充】：傑斯特於 02:22 特別以字卡更正「角落尖端命中會有後續，但很少見」。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[02:27 - 02:38]</strong></td>
+<td style="text-align: left;"><strong>【別虛弱】戰略核心天條：嚴防 Burnout</strong></td>
+<td style="text-align: left;">傑斯特嚴肅告誡：防守吉米切忌耗盡綠條，力竭等於送給吉米 4 酒狂暴</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[02:38 - 02:52]</strong></td>
+<td style="text-align: left;"><strong>結語與速效心態總結</strong></td>
+<td style="text-align: left;">總結實戰精要，鼓勵玩家沉著應對，破除醉拳恐懼</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>一、 【5HP】站立重拳（嘟嘟嘟三連打）微觀機制與應對真解</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[00:00 - 00:29]</li>
+<li><strong>招式屬性</strong>：單按 5HP 觸發多段打擊動作（俗稱「嘟嘟嘟」），吉米的核心地面摸獎與壓制工具。</li>
+</ul>
+<h3>1. 幀數數據與物理機制真相</h3>
+<ul>
+<li><strong>常態 5HP 被防幀數</strong>：<strong>-3 幀</strong>（防守方手握 +3F 優勢！）</li>
+<li><strong>命中優勢</strong>：+3 幀（常規打擊）</li>
+<li><strong>生綠衝 5HP 被防幀數</strong>：<strong>+1 幀</strong>（吉米手握 +1F 優先權）</li>
+</ul>
+<h3>2. 實戰常見誤區與傑斯特破解指南</h3>
+<ul>
+<li><strong>玩家常見誤區</strong>：吉米在出 5HP 時，雙手連續快速推擊，音效極度嘈雜，防守方往往誤以為自己被「壓制」了，擋完之後不敢動，結果吉米緊接著出普通投或再次壓制！</li>
+<li><strong>傑斯特破解指南</strong>：</li>
+<li><strong>常態 5HP 防完立刻動手</strong>：吉米沒有綠衝的常規 5HP，擋完之後吉米整整是 <strong>-3 幀</strong>！</li>
+<li>此時防守方擁有絕對的「行動優先權」！</li>
+<li>隆在擋完第三拳的一瞬間，直接按出 <strong>站立中拳 (5MP, 6F)</strong> 或 <strong>蹲下中腳 (2MK, 7F)</strong>，或者最速 <strong>蹲下輕拳 (2LP, 4F)</strong>！</li>
+<li>如果吉米企圖在 -3F 之後繼續按任何按鍵（哪怕是他最速的 4F 輕拳），也會因為 3 幀的物理劣勢被隆 <strong>100% 打出 Counter 打康</strong>！</li>
+<li>如果吉米出的是生綠衝 5HP（身上冒綠光），被防吉米手握 +1F，防守方需保持防禦，或在吉米出下一招的微小空隙拍出 <strong>Drive Reversal</strong>！</li>
+</ul>
+<pre><code>吉米 5HP 被防幀數對決：
+吉米出常態 5HP 嘟嘟嘟 ──&gt; [防守方盾牌成功防禦]
+幀數狀態：               吉米：-3 幀 (硬直中) | 隆：+3 幀 (主動權！)
+隆輸入 5MP (6F 發生)：    在吉米能出招的第 3 幀時，隆的拳頭已至！
+結果：吉米企圖搶招直接被爆頭打出 Counter Hit！
+</code></pre>
+<hr />
+<h2>二、 【236P &amp; 236P-6K-6K】流醉拳系列微觀拆解與確定反擊大典</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[00:29 - 01:34]</li>
+<li><strong>招式名稱</strong>：流醉拳（Free-Flow Strikes / 236P），吉米的標誌性三段式派生必殺技。</li>
+</ul>
+<h3>1. 各段派生微觀幀數表與物理死穴</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">派生階段</th>
+<th style="text-align: left;">動作表現</th>
+<th style="text-align: left;">被防硬直 (On Block)</th>
+<th style="text-align: left;">命中優勢 (On Hit)</th>
+<th style="text-align: left;">防守方最優懲罰策略 (Optimal Punish)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>第一段 (236P)</strong></td>
+<td style="text-align: left;">單發向前推掌</td>
+<td style="text-align: left;"><strong>-6 幀</strong></td>
+<td style="text-align: left;">-2 幀</td>
+<td style="text-align: left;"><strong>4F/5F 輕拳必確反！</strong> 隆最速按 5LP 或 2LP 打出 Punish Counter！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第二段 (6K 派生)</strong></td>
+<td style="text-align: left;">轉身向前側踹</td>
+<td style="text-align: left;"><strong>-8 幀</strong></td>
+<td style="text-align: left;">倒地 (可喝酒)</td>
+<td style="text-align: left;"><strong>中攻擊穩定確反！</strong> 隆按 2MP 或 2MK 取消生綠衝痛懲！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第三段 (6K 派生)</strong></td>
+<td style="text-align: left;">騰空下劈重砸</td>
+<td style="text-align: left;"><strong>-14 幀</strong></td>
+<td style="text-align: left;">擊倒大傷害</td>
+<td style="text-align: left;"><strong>大攻擊極限確反！</strong> 隆直接上前按 5HP/5HK 打滿全套滿額 CA3 斬殺！</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2. 傑斯特親授：流醉拳實戰心理博弈與防守口訣</h3>
+<ul>
+<li><strong>吉米玩家的心理算盤</strong>：</li>
+<li>天梯吉米非常喜歡在連攜中「確認失誤」漏出全套三段；</li>
+<li>也有吉米故意只出一段（-6F），賭防守方不知道有確反不敢動，然後偷喝酒或偷投；</li>
+<li>或者出到第二段停頓，引誘防守方搶招，然後突然出第三段打出 Counter。</li>
+<li><strong>防守方的絕對應對真解</strong>：</li>
+<li><strong>死守原則</strong>：只要吉米出 236P，防守方保持蹲姿防禦；</li>
+<li><strong>見一段停頓</strong>：看吉米出完第一掌雙手收回，隆最速點出 <strong>2LP &gt; 5LP &gt; 輕旋風腿</strong>，穩穩吃下 -6F 確反；</li>
+<li><strong>見三段下劈踢出</strong>：看吉米整個身子飛起來砸在地上，<strong>此時吉米陷入整整 14 幀的無法動作大僵直</strong>！</li>
+<li><strong>隆的滿額斬殺公式</strong>：<ul>
+<li>隆上前一步按出 <strong>站立重拳 5HP (Punish Counter)</strong>；</li>
+<li>接續：<code>4HP &gt; 重驢踢 (214HK) &gt; 重昇龍拳 (623HP)</code>（造成 3900+ 傷害）；</li>
+<li>若手握 3 條氣，直接：<code>5HP (PC) &gt; 4HP &gt; 生綠衝 &gt; 4HP &gt; 2HP &gt; 重波掌氣 &gt; CA3</code>，直接打掉 <strong>5850 點</strong> 毀滅傷害！</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>三、 【214P】弱水疾步（滑步接近）微觀機制與迎面截斷指南</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[01:34 - 01:53]</li>
+<li><strong>招式名稱</strong>：弱水疾步（Swagger Step / 214P），俗稱滑步推掌或滑步喝酒。</li>
+</ul>
+<h3>1. 物理真相：零霸體、零無敵的「裸奔滑行」</h3>
+<ul>
+<li>許多玩家看見吉米壓低身軀從遠處滑行過來，以為這招帶有霸體或無敵，驚慌失措拉後防禦；</li>
+<li><strong>傑斯特點破真相</strong>：弱水疾步在滑行全程<strong>完全沒有任何霸體判定，也沒有任何投擲或打擊無敵！</strong></li>
+<li>吉米只是壓低身軀向前移動，其受傷判定框（Hurtbox）在滑行中完全處於暴露狀態！</li>
+</ul>
+<h3>2. 隆的截斷實戰方案</h3>
+<ul>
+<li><strong>最速截斷技：蹲下中拳 (2MP, 6F)</strong>：</li>
+<li>看見吉米身體下沉啟動滑步，隆在中距離不需要後退，直接按下 <strong>蹲下中拳 2MP</strong>；</li>
+<li>隆的拳頭伸出，會在吉米滑到身前的一瞬間直接迎面痛擊其面門，觸發「Counter Hit」！</li>
+<li>隆隨後確認接續 <strong>2MK 取消波動拳</strong> 或 <strong>生綠衝連段</strong>，將企圖滑步偷襲的吉米當場打翻在地！</li>
+<li><strong>氣功攔截法</strong>：隆在中遠距離發射 <strong>波動拳 (236P)</strong>，吉米若敢裸出滑步，會直接在滑行中途迎面撞在氣功上被炸飛！</li>
+</ul>
+<hr />
+<h2>四、 【623KK】OD 張弓腿（OD 昇龍）被防 -35F 滿氣極限斬殺</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[01:53 - 02:04]</li>
+<li><strong>招式名稱</strong>：張弓腿 (Tenshin / 623K 系列)，吉米唯一的對空與防守無敵昇龍技。</li>
+</ul>
+<h3>1. 破綻數據與懲罰時機</h3>
+<ul>
+<li><strong>OD 版 (623KK)</strong>：具備對空與打擊無敵，常被吉米玩家在倒地起身或防守壓力下瘋狂凹招；</li>
+<li><strong>被防硬直</strong>：<strong>-35 幀</strong>（落地長達半秒無法動作，且處於 Punish Counter 狀態）！</li>
+</ul>
+<h3>2. 隆的滿額斬殺連段</h3>
+<ul>
+<li>擋住吉米 OD 昇龍落地的一瞬間，隆有充足的時間進行蓄力或上前打出最大傷害：</li>
+<li><code>集中波掌氣 (214P 蓄力) &gt; 站立重腳 5HK (Punish Counter) &gt; 4HP &gt; 重驢踢 &gt; SA3 真空波動拳</code></li>
+<li>傷害高達 <strong>5600+ 點</strong>！讓吉米為他的一次盲目凹招付出近 60% 血量的慘痛代價！</li>
+</ul>
+<hr />
+<h2>五、 【J214K】空中無影踢（流醉腳）微觀機制與對空截殺</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[02:04 - 02:27]</li>
+<li><strong>招式屬性</strong>：吉米在 2 酒及以上解鎖的空中必殺技，在空中急停變軌下踩。</li>
+</ul>
+<h3>1. 弱點解剖</h3>
+<ul>
+<li>空中發動時有極為明顯的滯空頓挫動畫（前搖長）；</li>
+<li>下踩的判定僅朝下方，對水平與上方完全沒有防護；</li>
+<li>著地硬直依高度而定：若踩在防守方胸口以上，被防手握 <strong>-8F～-12F</strong> 巨大劣勢！</li>
+<li>【字幕補充】：傑斯特在 02:22 處特別打出字幕更正提醒——「更正：角落尖端命中會有後續，但很少見」，實戰中絕大多數情況下著地都是防守方的大優勢或確反。</li>
+</ul>
+<h3>2. 傑斯特對空截殺心法</h3>
+<ul>
+<li><strong>截殺方案 A（對空昇龍拳）</strong>：看見吉米在空中起跳並停頓，隆不要後退，原地最速輸入 <strong>強昇龍拳 (623HP)</strong>！昇龍拳的完全對空無敵會直接將下踩的吉米從半空中揍飛！</li>
+<li><strong>截殺方案 B（著地確反）</strong>：若吉米踩在隆的防禦盾牌上，隆落地直接按 <strong>2MP &gt; 2MK 綠衝</strong> 進行一套穩定確反！</li>
+</ul>
+<hr />
+<h2>六、 【別虛弱】核心戰略天條：嚴格防範力竭 (Burnout)</h2>
+<ul>
+<li><strong>微觀時間戳</strong>：[02:27 - 02:38]</li>
+<li>這是傑斯特全篇教學中最振聾發聵、最核心的戰略告誡！</li>
+</ul>
+<h3>1. 為什麼對戰吉米「絕對不能進入 Burnout」？</h3>
+<ul>
+<li><strong>底層數值懲罰</strong>：在《快打旋風 6》中，防守方進入 Burnout 狀態時，防禦對手任何攻擊的被防硬直增加整整 <strong>4 幀</strong>！</li>
+<li><strong>吉米的質變</strong>：</li>
+<li>吉米常態 5HP 被防從 -3F 變成 <strong>+1F 有利</strong>！</li>
+<li>吉米流醉拳一段從 -6F 變成 <strong>-2F 安全技</strong>！</li>
+<li>吉米可以在你臉上無腦狂推張手、無限二擇，並且利用巨大的有利幀當著你的面從 0 酒一路喝到 4 酒！</li>
+<li>4 酒吉米解鎖全技能、攻擊力提升 110%，在版邊直接將力竭的防守方一套帶走！</li>
+</ul>
+<h3>2. 隆的鬥氣條管理鐵律</h3>
+<ul>
+<li>對戰吉米時，隨時保持手握 <strong>3 格以上鬥氣條</strong>；</li>
+<li>嚴禁盲目在立回中過度復讀生綠衝；</li>
+<li>當鬥氣條低於 2 格時，主動拉開距離發射波動拳牽制，等待綠條自然恢復，絕對不給吉米壓制力竭的機會！</li>
+</ul>
+<hr />
+<h2>七、 吉米全醉酒等級 (Drink Levels 0～4) 機制、傷害補正與技能解鎖全景矩陣</h2>
+<p>吉米是《快打旋風 6》中唯一的動態升級型角色。徹底掌握其每個酒點帶來的數值改變與招式池擴充，是瓦解其心理威懾的關鍵：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">醉酒等級</th>
+<th style="text-align: left;">攻擊力補正</th>
+<th style="text-align: left;">額外性能</th>
+<th style="text-align: left;">解鎖必殺技 / 核心威脅招式</th>
+<th style="text-align: left;">隆 (Ryu) 的專屬對策心態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>0 酒 (Level 0)</strong></td>
+<td style="text-align: left;"><strong>90%</strong> (極度疲軟)</td>
+<td style="text-align: left;">無完全無敵對空</td>
+<td style="text-align: left;">基礎推掌、弱水疾步、基礎三連擊</td>
+<td style="text-align: left;"><strong>極限進攻</strong>：利用其 90% 輸出懲罰，貼身肉骨壓制，絕不給其喝第一口酒的空間！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1 酒 (Level 1)</strong></td>
+<td style="text-align: left;"><strong>95%</strong> (接近標準)</td>
+<td style="text-align: left;">移動靈活性微增</td>
+<td style="text-align: left;">解鎖「流醉拳」四段派生、醉步後撤 (4HK)</td>
+<td style="text-align: left;"><strong>封殺中段</strong>：警惕其 4HK 醉步後撤誘騙差合，中距離以 2MK 與波動拳牽制。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2 酒 (Level 2)</strong></td>
+<td style="text-align: left;"><strong>100%</strong> (標準輸出)</td>
+<td style="text-align: left;">具備下段穿波手段</td>
+<td style="text-align: left;">解鎖「Breakin (22K)」、空中無影踢 (J214K)</td>
+<td style="text-align: left;"><strong>封印慢波</strong>：吉米 22K 具備下段無敵與穿波能力，中距離切忌盲目復讀慢速氣功。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3 酒 (Level 3)</strong></td>
+<td style="text-align: left;"><strong>105%</strong> (高額輸出)</td>
+<td style="text-align: left;">解鎖不可拆指令投</td>
+<td style="text-align: left;">解鎖「點辰 (63214K)」指令投、特殊指令連攜</td>
+<td style="text-align: left;"><strong>防範偷投</strong>：殘血切勿死守蹲防，看見綠衝貼臉預防性垂直起跳 (Neutral Jump)！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4 酒 (Level 4)</strong></td>
+<td style="text-align: left;"><strong>110%</strong> (狂暴狀態)</td>
+<td style="text-align: left;">全技能性能最大化</td>
+<td style="text-align: left;">解鎖「疾步仙掌 (623P 派生)」、前翻摔、瘋狂醉拳</td>
+<td style="text-align: left;"><strong>沉著防守</strong>：吉米已無喝酒需求，進攻極度毛躁，穩守防禦抓其大招硬直一發入魂！</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>八、 吉米核心通常技、特殊技幀數表與差合 (Whiff Punish) 弱點大解剖</h2>
+<p>吉米的醉拳步伐看似飄忽不定，但其各項拳腳在物理受傷判定框（Hurtbox）上有極大的致命死穴：</p>
+<h3>1. 核心通常技幀數與死穴矩陣</h3>
+<ol>
+<li><strong>蹲下輕拳 (2LP)</strong>：
+   - <strong>發生幀數</strong>：4 幀
+   - <strong>被防幀數</strong>：-1 幀
+   - <strong>命中幀數</strong>：+5 幀
+   - <strong>破綻剖析</strong>：吉米近身防守最速按鍵。防住其 2LP 之後吉米為 -1F，此時隆處於 +1F 主動權，按 5LP (4F) 具有絕對優先權！</li>
+<li><strong>站立中腳 (5MK - 橫踹)</strong>：
+   - <strong>發生幀數</strong>：9 幀
+   - <strong>被防幀數</strong>：-4 幀
+   - <strong>命中幀數</strong>：+2 幀
+   - <strong>物理弱點</strong>：吉米在中距離喜歡用 5MK 橫向蹬腿牽制。但該招式<strong>揮空硬直長達 18 幀</strong>，且整條伸出去的腿部完全是受傷框，是隆使用 <strong>5HP 差合</strong> 的絕佳靶子！</li>
+<li><strong>蹲下中腳 (2MK - 下盤掃腿)</strong>：
+   - <strong>發生幀數</strong>：7 幀
+   - <strong>被防幀數</strong>：-4 幀
+   - <strong>命中幀數</strong>：+2 幀
+   - <strong>死穴解析</strong>：吉米地面開綠衝的核心下盤腳。但其腳尖延伸出去後，受傷判定框會停留整整 15 幀！隆退後半步引誘其踢空，立即以 <strong>2MK 取消生綠衝</strong> 或 <strong>5HP</strong> 進行差合（Whiff Punish），痛打 3200+ 傷害！</li>
+<li><strong>前重腳 (6HK - 醉步中段踢)</strong>：
+   - <strong>發生幀數</strong>：22 幀
+   - <strong>被防幀數</strong>：-6 幀
+   - <strong>屬性</strong>：中段技（Overhead，蹲防必挨打）
+   - <strong>確反實戰</strong>：起手長達 22 幀，肉眼看清動作切換站防。一旦擋住，吉米陷入 <strong>-6 幀</strong> 劣勢，隆最速按出 <strong>2LP (4F) &gt; 5LP &gt; 強昇龍拳</strong> 穩穩打一套完整確反！</li>
+<li><strong>滑步掃腿 (3HK - 醉地滑鏟)</strong>：
+   - <strong>發生幀數</strong>：11 幀
+   - <strong>被防幀數</strong>：近身 <strong>-11 幀</strong>，最遠端約 <strong>-6 幀</strong>
+   - <strong>確反實戰</strong>：吉米意圖滑下盤穿波或搶先手。近身出滑鏟被防，隆直接 <strong>2MP (6F) &gt; 236MK (龍卷旋風腳)</strong> 或直接 <strong>5HP (PC) &gt; 滿額連段</strong>！</li>
+</ol>
+<hr />
+<h2>九、 吉米三大超必殺技 (Super Arts) 微觀破綻與反制手冊</h2>
+<ol>
+<li><strong>超必殺技 SA1 (武賴漢 - 狂暴推掌)</strong>：
+   - <strong>發生幀數</strong>：10 幀
+   - <strong>被防幀數</strong>：<strong>-18 幀</strong>！
+   - <strong>破綻剖析</strong>：吉米向前狂奔推掌打擊。擋住之後吉米陷入 -18 幀巨大僵直，隆直接跳入 Jump HK 打出滿額 CA3 斬殺！</li>
+<li><strong>超必殺技 SA2 (絕唱醉舞 - 15秒滿酒爆發)</strong>：
+   - <strong>技能效果</strong>：吉米狂飲葫蘆酒，瞬間將醉酒等級提升至 <strong>4 酒（狂暴狀態）</strong>，持續 15 秒！
+   - <strong>心理與戰術反制</strong>：<ul>
+<li>吉米在發動 SA2 期間會急於進攻，心態極度毛躁；</li>
+<li>隆的最優策略是：<strong>徹底龜防 + 保持距離</strong>；</li>
+<li>當吉米貼臉出招時，隆防住瞬間直接按出 <strong>Drive Reversal (6HP+HK)</strong> 將其一腳踹飛，強行消耗其寶貴的 15 秒時效；</li>
+<li>15 秒時效一過，吉米自動回復原酒點，並且進入身心疲軟期！</li>
+</ul>
+</li>
+<li><strong>終極超必殺技 SA3 / CA3 (月牙叉手 - 終極醉殺)</strong>：
+   - <strong>發生幀數</strong>：10 幀
+   - <strong>被防幀數</strong>：<strong>-32 幀</strong>！
+   - <strong>避開真解</strong>：吉米 SA3 是打擊判定（非指令投），暗轉時只要隆在防禦狀態，穩穩擋住後吉米硬直高達 32 幀，隆上前從容打出 5800+ 滿額 CA3 斬殺！</li>
+</ol>
+<hr />
+<h2>十、 傑斯特親授：天梯吉米四大「陰招套路」見招拆招全錄</h2>
+<p>在天梯對戰中（尤其 Master 1400~1700 分段），吉米玩家普遍存在嚴重的「依賴花招」與「賭徒心理」。掌握這四大陰招套路，能讓你在對局中完全掌控主動：</p>
+<h3>陰招 1：開局盲目「後撤步偷喝第一口酒」</h3>
+<ul>
+<li><strong>對手心理</strong>：吉米開局 0 酒輸出只有 90%，極度心虛，想在開局第 1 秒就拉開距離偷喝一口酒。</li>
+<li><strong>破解對策</strong>：隆開局完全不要發呆！倒數結束瞬間<strong>直接生綠衝 (Raw Drive Rush) &gt; 5HP</strong>！吉米後撤步喝酒有整整 50 幀的無法防禦硬直，隆的綠衝 5HP 會在吉米剛把酒碰到嘴唇的瞬間直接打出 Punish Counter！</li>
+<li><strong>懲罰收益</strong>：Punish Counter 5HP &gt; 4HP &gt; 重波掌氣 &gt; 昇龍拳，開局直接削掉吉米 3500+ 血量，並將其推至版邊！</li>
+</ul>
+<h3>陰招 2：2 酒狀態下「中距離裸出 Breakin 穿波」</h3>
+<ul>
+<li><strong>對手心理</strong>：吉米達到 2 酒後，解鎖了 Breakin (22K) 迴旋踢，具有下段無敵與穿波能力，吉米會故意引誘隆發波，然後裸出 Breakin 穿波偷襲。</li>
+<li><strong>破解對策</strong>：面對 2 酒吉米，隆<strong>封印慢速弱波</strong>！改為在立回中虛晃前走後撤，引誘吉米裸出 Breakin。Breakin 被防手握整整 <strong>-10 幀</strong> 破綻！隆擋住後直接按出 <strong>2MP 綠衝連段</strong> 痛懲！</li>
+</ul>
+<h3>陰招 3：3 酒殘血「通常技取消生綠衝偷點辰指令投」</h3>
+<ul>
+<li><strong>對手心理</strong>：在 3 酒以上且血量進入斬殺線時，吉米知道常規打擊很難破防，90% 會在 2MK 或 5LP 取消綠衝後貼臉按點辰 (63214K) 指令投！</li>
+<li><strong>破解對策</strong>：看見吉米殘血綠衝貼臉，<strong>毫不猶豫垂直起跳 (Neutral Jump)</strong>！吉米點辰撲空雙手僵直在原地（38F 破綻），隆空中下落打出全套滿額 CA3 斬殺！</li>
+</ul>
+<h3>陰招 4：力竭時試圖「狂推張手當面喝酒」</h3>
+<ul>
+<li><strong>對手心理</strong>：若防守方不慎進入 Burnout，吉米會興奮地貼臉連打推掌，並利用有利幀當面狂喝葫蘆酒。</li>
+<li><strong>破解對策</strong>：防守方擋住推掌第一段後，<strong>直接狂凹無敵 SA1 或 SA3</strong>！超必殺技在力竭時依然享有完全無敵，直接在吉米喝酒或推掌的瞬間將其當場穿透擊殺！</li>
+</ul>
+<hr />
+<h2>十一、 深度進階：吉米核心招式「微觀幀數與幾何判定框」全景矩陣</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱</th>
+<th style="text-align: left;">遊戲指令</th>
+<th style="text-align: left;">發生 (Startup)</th>
+<th style="text-align: left;">持續 (Active)</th>
+<th style="text-align: left;">硬直 (Recovery)</th>
+<th style="text-align: left;">被防幀數 (On Block)</th>
+<th style="text-align: left;">命中幀數 (On Hit)</th>
+<th style="text-align: left;">判定特性與幾何破綻剖析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>站立重拳 (5HP)</strong></td>
+<td style="text-align: left;"><code>5HP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-3F</strong></td>
+<td style="text-align: left;">+3F</td>
+<td style="text-align: left;">嘟嘟嘟三連打起手，非綠衝被防 -3F，防守方手握 +3F 主動權</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>生綠衝 5HP</strong></td>
+<td style="text-align: left;"><code>綠衝 &gt; 5HP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>+1F</strong></td>
+<td style="text-align: left;">+7F</td>
+<td style="text-align: left;">帶綠光突進，被防 +1F，防守方需冷靜防守或拍 Drive Reversal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳 (一段)</strong></td>
+<td style="text-align: left;"><code>236P</code></td>
+<td style="text-align: left;">13F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-6F</strong></td>
+<td style="text-align: left;">-2F</td>
+<td style="text-align: left;">單發向前推掌，被防 -6 幀，4F/5F 輕拳必確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳 (二段)</strong></td>
+<td style="text-align: left;"><code>236P &gt; 6K</code></td>
+<td style="text-align: left;">派生</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">21F</td>
+<td style="text-align: left;"><strong>-8F</strong></td>
+<td style="text-align: left;">倒地</td>
+<td style="text-align: left;">轉身向前側踹，被防 -8 幀，中攻擊綠衝確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳 (三段)</strong></td>
+<td style="text-align: left;"><code>236P &gt; 6K &gt; 6K</code></td>
+<td style="text-align: left;">派生</td>
+<td style="text-align: left;">4F</td>
+<td style="text-align: left;">28F</td>
+<td style="text-align: left;"><strong>-14F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">騰空下劈重砸，被防 -14 幀巨大僵直，重攻擊 PC 滿額痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>弱水疾步</strong></td>
+<td style="text-align: left;"><code>214P</code></td>
+<td style="text-align: left;">18F~26F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-6F~-4F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">滑步前衝推掌，滑行中途 0 霸體 0 無敵，2MP 下中拳迎面截斷</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 張弓腿</strong></td>
+<td style="text-align: left;"><code>623KK</code></td>
+<td style="text-align: left;">6F</td>
+<td style="text-align: left;">6F</td>
+<td style="text-align: left;">40F</td>
+<td style="text-align: left;"><strong>-35F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">對空對地完全無敵昇龍，被防 -35 幀，跳入滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>無影踢 (流醉腳)</strong></td>
+<td style="text-align: left;"><code>空 214K</code></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">至著地</td>
+<td style="text-align: left;">著地 16F</td>
+<td style="text-align: left;"><strong>-8F~-12F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">空中變軌下踩，胸口以上被防 -8F 劣勢，強昇龍拳空中截擊</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Breakin (迴旋踢)</strong></td>
+<td style="text-align: left;"><code>22K</code></td>
+<td style="text-align: left;">14F</td>
+<td style="text-align: left;">6F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;"><strong>-10F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">2 酒解鎖，下段無敵穿波，被防 -10 幀中攻擊綠衝確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>點辰 (指令投)</strong></td>
+<td style="text-align: left;"><code>63214K</code></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">38F</td>
+<td style="text-align: left;"><strong>抓空 38F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">3 酒解鎖，不可拆指令投，抓空 38 幀垂直起跳落地滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站立中腳 (5MK)</strong></td>
+<td style="text-align: left;"><code>5MK</code></td>
+<td style="text-align: left;">9F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">+2F</td>
+<td style="text-align: left;">橫踹長腿，揮空硬直 18 幀，腿部受傷框停留長，隆 5HP 差合首選</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲下大足 (2HK)</strong></td>
+<td style="text-align: left;"><code>2HK</code></td>
+<td style="text-align: left;">8F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">25F</td>
+<td style="text-align: left;"><strong>-11F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">橫掃地腿，被防 -11 幀大破綻，5HK 打出 Punish Counter</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>前重腳 (6HK)</strong></td>
+<td style="text-align: left;"><code>6HK</code></td>
+<td style="text-align: left;">22F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">19F</td>
+<td style="text-align: left;"><strong>-6F</strong></td>
+<td style="text-align: left;">+2F</td>
+<td style="text-align: left;">醉步中段踢，起手 22 幀動作明顯，站防後 2LP 最速確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA1</strong></td>
+<td style="text-align: left;"><code>236236P</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">32F</td>
+<td style="text-align: left;"><strong>-18F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進推掌，被防 -18 幀跳入滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA2</strong></td>
+<td style="text-align: left;"><code>214214P</code></td>
+<td style="text-align: left;">1F 暗轉</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">15 秒時效</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">15 秒滿酒爆發，防守方龜防與 Drive Reversal 消耗時效</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA3/CA3</strong></td>
+<td style="text-align: left;"><code>236236K</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">42F</td>
+<td style="text-align: left;"><strong>-32F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">終極醉殺，打擊判定，被防 -32 幀直接葬送比賽</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>十二、 自角色：隆 (Ryu) 對戰吉米專屬「確反與斬殺連段大典」</h2>
+<h3>1. 流醉拳三段下劈 (-14F) 落地滿氣極限斬殺</h3>
+<ul>
+<li><strong>起手條件</strong>：吉米流醉拳出完第三段下劈砸地，隆穩穩防住。</li>
+<li><strong>連段公式</strong>：</li>
+<li><code>站立重拳 5HP (Punish Counter) &gt; 4HP &gt; 生綠衝 &gt; 4HP &gt; 蹲下重拳 2HP &gt; 重波掌氣 (214HP) &gt; CA3 真空波動拳</code></li>
+<li><strong>傷害輸出</strong>：<strong>5880 點</strong>！一擊削去吉米近 60% 體力，直接奠定勝局！</li>
+</ul>
+<h3>2. 弱水疾步滑步 2MP 截斷確認連段</h3>
+<ul>
+<li><code>蹲下中拳 2MP (Counter Hit) &gt; 2MK 取消生綠衝 &gt; 站立重拳 5HP &gt; 4HP &gt; 重驢踢 (214HK) &gt; 重昇龍拳 (623HP)</code></li>
+<li><strong>傷害輸出</strong>：3450 點，將企圖滑步偷襲的吉米直接揍飛推至版邊！</li>
+</ul>
+<h3>3. 防住常規 5HP (-3F) 最速搶動確認</h3>
+<ul>
+<li><code>站立中拳 5MP (打斷 Counter) &gt; 蹲下中腳 2MK &gt; 弱波動拳 (236LP)</code></li>
+<li><strong>傷害輸出</strong>：1850 點，穩吃回合主動並推開距離！</li>
+</ul>
+<h3>4. OD 昇龍張弓腿 (-35F) 著地大確反</h3>
+<ul>
+<li><code>集中波掌氣 (214P 蓄力) &gt; 站立重腳 5HK (Punish Counter) &gt; 4HP &gt; 重驢踢 &gt; SA3</code></li>
+<li><strong>傷害輸出</strong>：5650 點，一波直接滿血斬殺！</li>
+</ul>
+<hr />
+<h2>十三、 吉米「醉步 (4HK)」假動作後撤誘導差合之破解指南</h2>
+<p>吉米在 1 酒之後解鎖的特殊技「醉步 (4HK)」，是許多進階吉米用來「釣魚騙差合」的核心利器：</p>
+<h3>1. 醉步 (4HK) 的物理機制與心理陷阱</h3>
+<ul>
+<li><strong>動作表現</strong>：吉米手持酒葫蘆向後大幅度踉蹌後撤，隨後身體前傾使出踢擊；</li>
+<li><strong>對手意圖</strong>：</li>
+<li>吉米故意在中距離出 4HK 後撤，誘騙防守方誤以為吉米要跑而下意識按下 2MK 或 5HP；</li>
+<li>防守方的拳腳因距離不夠而打在空氣中（Whiff）；</li>
+<li>吉米隨後順勢派生向前踢擊，打出防守方的 Punish Counter 並帶入大傷害連段！</li>
+<li><strong>破綻真相</strong>：</li>
+<li>吉米後撤步全程<strong>完全沒有無敵判定</strong>；</li>
+<li>派生的踢擊被防手握 <strong>-8 幀</strong> 破綻！</li>
+</ul>
+<h3>2. 隆的面對醉步破局策略</h3>
+<ul>
+<li><strong>策略 A：沉著不動，等其踢出</strong>：</li>
+<li>面對吉米 4HK 後撤，隆雙腳站穩絕不盲目出招；</li>
+<li>等吉米派生踢擊踢在盾牌上，吉米著地為 <strong>-8F</strong>，隆直接 <strong>2MP &gt; 2MK 取消綠衝連段</strong> 必中確反！</li>
+<li><strong>策略 B：主動前走壓制下盤</strong>：</li>
+<li>看到吉米向後踉蹌，隆前走半步直接按出 <strong>蹲下中腳 2MK 取消波動拳</strong>；</li>
+<li>隆的 2MK 會直接在吉米後撤結束、身體前傾的第 1 幀將其下盤掃倒！</li>
+</ul>
+<hr />
+<h2>十四、 「別虛弱」專題深入：力竭 (Burnout) 狀態下的極限防守與反殺手冊</h2>
+<p>在影片 02:27，傑斯特用全片最嚴肅的語氣打出「別虛弱」三個字。以下是防守方一旦不幸進入力竭，必須恪守的極限求生手冊：</p>
+<h3>1. 力竭時吉米的「三大無解滾雪球連攜」</h3>
+<ol>
+<li><strong>5HP 嘟嘟嘟無腦復讀</strong>：常態被防 -3F 變成 <strong>+1F 有利</strong>，吉米可以連續出三次 5HP 將防守方活活推死；</li>
+<li><strong>流醉拳一段偷喝酒</strong>：被防從 -6F 變成 <strong>-2F 安全技</strong>，吉米推一掌後直接當面喝一口酒，防守方輕拳無法確反；</li>
+<li><strong>點辰指令投必中陷阱</strong>：在有利幀壓制下，防守方不敢動，吉米 3 酒指令投直接把防守方抓死！</li>
+</ol>
+<h3>2. 絕處逢生：三大力竭反制手段</h3>
+<ul>
+<li><strong>手段 1：預防性垂直起跳 (Neutral Jump)</strong>：</li>
+<li>在版邊被壓時，預判吉米要出點辰指令投或普通投，毫不猶豫直接向上拉起跳；</li>
+<li>吉米抓空 38 幀，隆空中下落打出一套大傷害連段！</li>
+<li><strong>手段 2：狂凹無敵超必殺技 (SA1 / SA3)</strong>：</li>
+<li>記住：<strong>力竭狀態下，超必殺技 (Super Arts) 依然享有完全的全身無敵判定！</strong></li>
+<li>在吉米貼臉出 5HP 或流醉拳的第一發與第二發之間，隆直接狂刷 <strong>SA1 (真空波動拳)</strong> 或 <strong>SA3</strong>！</li>
+<li>隆的大招無敵會直接切斷吉米的壓制，將得意忘形的吉米轟飛全場，逆轉局勢！</li>
+<li><strong>手段 3：多用後跳 (Back Jump) 與反向起跳逃脫</strong>：</li>
+<li>切忌一直死死蹲在版邊，適當利用垂直跳或大跳逃出角落，爭取 10 秒時間讓綠條自然恢復！</li>
+</ul>
+<hr />
+<h2>十五、 傑斯特格鬥教室：對戰吉米「全回合心流與戰術劇本」</h2>
+<pre><code>【第一回合 (Round 1)：滴酒不沾極限壓殺】
+核心目標：滴酒不沾，速戰速決！
+- 開局：吉米 0 酒輸出僅 90%，隆開局直接生綠衝 5HP 或發射波動拳，打斷其後撤喝酒；
+- 立回：吉米無穿波手段，隆用弱波動拳死死鎖住地面，逼迫其急躁起跳後強昇龍擊落；
+- 擊倒：吉米無完全無敵昇龍，倒地後隆無腦進行肉骨打擊 (Meaty 2MP) 與普通投二擇，一燈之內將其極速斬殺！
+
+【第二回合 (Round 2)：防範穿波與指令投】
+核心目標：警惕 2 酒穿波，嚴防 3 酒指令投！
+- 2 酒時：中距離封印慢速弱波，防其 Breakin (22K) 下段穿波；
+- 3 酒時：血量進入斬殺線嚴禁盲目蹲防，預防通常技取消綠衝偷點辰，多用垂直起跳避開指令投；
+- 吉米若發動 SA2：沉著龜防，貼臉瞬間拍出 Drive Reversal 將其踹飛，強行拖延其 15 秒時效！
+
+【第三回合 (Round 3)：殘局極限防凹】
+核心目標：防其賭命 OD 張弓腿，一發入魂！
+- 殘血吉米急於翻盤，極度容易在起身或立回中狂按 OD 張弓腿 (623KK)；
+- 隆假壓誘敵，防住其 OD 昇龍落地 (-35F)，打出 5880+ 滿額 CA3 斬殺，完美奪冠！
+</code></pre>
+<hr />
+<h2>十六、 訓練場 (Training Mode) 專項「戒酒特訓」木人錄製菜單</h2>
+<p>請按照傑斯特的配置，在訓練場設置木人進行以下肌肉記憶強化：</p>
+<h3>特訓 1：5HP 擋完最速 5MP 搶斷特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：吉米出 5HP &gt; 5HP &gt; 5HK，擋完立刻再按 5LP。</li>
+<li><strong>防守方操作</strong>：
+   - 蹲下防守擋住三連擊；
+   - 第三擊落地瞬間最速按出 5MP (6F)；
+   - 螢幕出現 Counter Hit，成功打斷吉米！連續成功 15 次！</li>
+</ol>
+<h3>特訓 2：流醉拳三段下劈 -14F 滿額確反特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：吉米出 236P &gt; 6K &gt; 6K (流醉拳三段完整下劈)。</li>
+<li><strong>防守方操作</strong>：
+   - 蹲防擋住前兩段，擋住第三段下劈落地瞬間；
+   - 最速按出 5HP (Punish Counter) &gt; 4HP &gt; 重驢踢 &gt; 重昇龍拳；
+   - 連續成功 15 次！</li>
+</ol>
+<h3>特訓 3：弱水疾步滑步 2MP 截斷特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：吉米在中距離出 214P (弱水疾步)。</li>
+<li><strong>防守方操作</strong>：
+   - 看到吉米滑行瞬間，按下 2MP (下中拳)；
+   - 將吉米在半路上迎面打飛，連續成功 15 次！</li>
+</ol>
+<hr />
+<h2>十七、 傑斯特格鬥教室：天梯各分段（白金、鑽石、大師）擊潰吉米速成指南</h2>
+<p>為了幫助不同技術水平的玩家在天梯排位中迅速取得勝率突破，傑斯特總結了這套階梯式對策修煉指南：</p>
+<h3>1. 白金 (Platinum) 段位：打破「虛擬壓制」與「流醉拳確反」</h3>
+<ul>
+<li><strong>核心目標</strong>：克服對吉米連續推掌的恐懼，養成確反肌肉記憶！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>只要擋住吉米的 5HP（嘟嘟嘟三拳），不要發呆，<strong>立刻按下站立中拳 5MP (6F)</strong>！</li>
+<li>只要看見吉米流醉拳第三段騰空下劈砸在地上，<strong>直接按站立重拳 5HP</strong> 打出 Punish Counter！</li>
+<li><strong>段位收益</strong>：在白金段位，吉米玩家普遍習慣無腦連出三段流醉拳。只要你能做到防住第三段痛打一套連段，吉米兩回合之內就會血條清空，勝率超過 80%！</li>
+</ul>
+<h3>2. 鑽石 (Diamond) 段位：封殺地面滑步與空中變軌</h3>
+<ul>
+<li><strong>核心目標</strong>：封死吉米的立回偷襲，讓他無法順利接近！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>熟練掌握 <strong>「2MP 截斷滑步」</strong>：吉米在遠處壓低身體滑步過來，隆在中距離按下蹲下中拳，迎面打出 Counter Hit 並帶入連段；</li>
+<li>熟練掌握 <strong>「強昇龍拳截無影踢」</strong>：看到 2 酒吉米空中急停下踩，抬頭最速輸入 623HP 將其從半空中揍飛；</li>
+<li><strong>段位收益</strong>：剝奪了吉米的奇襲突進手段後，吉米只能老實打地面差合，而隆剛猛的拳腳在判定上完勝吉米！</li>
+</ul>
+<h3>3. 大師 (Master 1500+) 段位：控綠條嚴防力竭與預判起跳</h3>
+<ul>
+<li><strong>核心目標</strong>：嚴守鬥氣條，在 3 酒斬殺線實施心理讀心！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>嚴格落實 <strong>「絕對不進入 Burnout」</strong> 的天條，鬥氣條低於 2 格立即拉開距離發波恢復；</li>
+<li>面對 3 酒吉米殘血生綠衝，<strong>毫不猶豫拉上垂直起跳 (Neutral Jump)</strong>，躲開點辰指令投後落地打滿 5800+ CA3 斬殺；</li>
+<li>吉米開啟 SA2 滿酒爆發時，善用 <strong>Drive Reversal</strong> 踢飛拖延時效，讓對手 15 秒一無所獲！</li>
+</ul>
+<hr />
+<h2>十九、 自角色隆 (Ryu) 對戰吉米之「集中波掌氣」版邊窒息壓制大典</h2>
+<p>在面對缺乏完全無敵昇龍的吉米（0～3 酒）時，隆在版邊擁有近乎「作弊級」的壓制體系。善用集中狀態（Denjin Charge），能將吉米直接釘死在角落：</p>
+<h3>1. 擊倒後的「電刃波掌氣 (214P)」真假二擇</h3>
+<ul>
+<li><strong>操作步驟</strong>：
+  1. 隆使用重昇龍拳 (623HP) 或重驢踢 (214HK) 將吉米擊倒在版邊；
+  2. 隆在吉米倒地期間，最速輸入 <strong>下下 + 手 (22P)</strong> 完成「電刃集中」；
+  3. 卡在吉米起身第 1 幀，直接按出 <strong>集中波掌氣 (214P)</strong>！</li>
+<li><strong>判定優勢</strong>：</li>
+<li>集中波掌氣命中吉米：造成高額傷害並觸發崩防，隆接續 <code>2MP &gt; 623HP</code> 痛打 2800+ 傷害；</li>
+<li>集中波掌氣被吉米防住：<strong>隆手握整整 +2 幀至 +4 幀的絕對有利！</strong></li>
+<li>此時吉米處於大不利，隆直接進行：<ul>
+<li><strong>二擇 A（肉骨投）</strong>：向前走一步普通投，吉米再次被摔倒在版邊；</li>
+<li><strong>二擇 B（肉骨 2LP 連打）</strong>：吉米若想搶招或跳躍，直接被打出 Counter Hit，帶入連段！</li>
+</ul>
+</li>
+</ul>
+<h3>2. 封殺吉米版邊「後跳 (Back Jump)」與「起跳逃脫」</h3>
+<ul>
+<li>很多吉米在版邊受不了壓制，會企圖向上起跳或後跳翻牆；</li>
+<li>隆在壓制時隨時預備 <strong>強昇龍拳 (623HP)</strong>；</li>
+<li>只要看見吉米雙腳離地，昇龍鐵拳第 1 幀升空截擊，再次將其砸回角落！</li>
+</ul>
+<pre><code>隆在版邊對吉米的窒息死局：
+[吉米倒地] ──(隆電刃集中)──&gt; [吉米起身第 1 幀]
+                                  ▲ 隆集中波掌氣直接覆蓋肉體！
+                ┌─────────────────┴─────────────────┐
+           【吉米防禦】                         【吉米搶招 / 凹招】
+                │                                   │
+      被防隆手握 +2F 有利！               直接被打出 Counter / 崩防！
+                │                                   │
+      隆向前走普通投或打擊二擇            隆 2MP &gt; 強昇龍拳痛打 3000+！
+</code></pre>
+<hr />
+<h2>二十、 傑斯特格鬥教室：對戰吉米「三大速效心法」深度解讀</h2>
+<ol>
+<li><strong>心法一：擋住 5HP 莫慌張，動手中拳打斷槍！</strong>
+   - <strong>深層內涵</strong>：吉米未開綠衝的 5HP 是負 3 幀，防守方手握 +3 幀優勢！此時出 6 幀的 5MP，在系統判定上相當於 3 幀神速出招，吉米企圖搶任何招都會被 100% 暴頭打康！</li>
+<li><strong>心法二：流醉三段下劈落，重拳滿氣送他走！</strong>
+   - <strong>深層內涵</strong>：流醉拳第三段下劈被防手握高達 14 幀的大僵直，防守方切忌慌慌張張只點個輕拳，必須以最高傷害的 5HP 滿額連段打出 5000+ 傷害，給予對手心理上的毀滅性打擊！</li>
+<li><strong>心法三：綠條控好別虛弱，未成年人莫喝酒！</strong>
+   - <strong>深層內涵</strong>：對戰吉米最忌諱的就是盲目揮霍綠條導致力竭。力竭會讓吉米所有的負幀招式全變成正幀，讓吉米完成 0 到 4 酒的質變。保護好綠條，吉米就永遠是一隻翻不起大浪的幼雛！</li>
+</ol>
+<hr />
+<h2>二十一、 傑斯特格鬥格言：對戰吉米的「三不原則」</h2>
+<p>為了讓所有天梯實戰中的玩家隨時保持最高警戒，傑斯特總結了最直擊靈魂的「三不原則」：</p>
+<ol>
+<li><strong>不被花拳嚇退</strong>：看見吉米連續推掌不要縮在版邊發呆，那是 -3 幀的物理劣勢，勇敢按出你的中拳奪回主動權！</li>
+<li><strong>不給免費飲酒</strong>：看見吉米後退拉開距離，哪怕他在全螢幕，也必須立刻發射氣功或生綠衝壓制，絕對不讓他白喝一口酒！</li>
+<li><strong>不讓綠條力竭</strong>：無論局勢多麼混亂，時刻保護好自己的綠條。只要不進入 Burnout，吉米就永遠是一隻沒有獠牙的幼狼！</li>
+</ol>
+<hr />
+<h2>二十二、 總結：知己知彼，百戰不殆</h2>
+<p>傑斯特用不到 3 分鐘的時間，直截了當地拆解了吉米的所有核心花招：
+- 5HP 是負幀送主動，流醉拳是送命大確反；
+- 滑步中途零霸體，空中踩腳昇龍打；
+- 只要你守住鬥氣條，用冷靜的防守與剛猛的拳腳痛擊破綻，吉米在空手道宗師面前就只是一個手足無措的頑童！</p><div class="nav"><span><a href="174.html">← 174 傑斯特 埃德蒙本田超級頭槌與百貫落速效對策</a></span><span style="text-align:right"><a href="176.html">176 傑斯特 泰瑞Terry衝拳與能量灌籃實戰速效確反 →</a></span></div></div></body></html>

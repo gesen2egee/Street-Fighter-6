@@ -1,0 +1,592 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>初心者応援 最新版瑪濃Manon指令投防範與確反完全指南｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 144 篇</div><h1>影片專屬深度解析 144：スト6初心者応援チャンネル - 【スト6】最新版瑪濃 (Manon) 指令投防範與確反完全指南</h1><blockquote>
+<p>📺 <strong>影片來源</strong>：<a href="https://www.youtube.com/watch?v=BbvICjzUw3o">【スト6】マノン対策【最新版】苦手な人必見！コマ投げ対策を中心に確反、立ち回りも徹底解説｜初心者～マスター対応｜トレモ解説付きキャラ対策シリーズ#17</a><br />
+👤 <strong>頻道作者</strong>：スト6初心者応援チャンネル (ecu1) | ⏱️ <strong>時長</strong>：15分30秒 (930s) | 🆔 <strong>核心影片ID</strong>：BbvICjzUw3o (官方精華短片對策備忘錄參照: dms9YMwWN0k)<br />
+🎯 <strong>核心對策目標</strong>：全面攻克全遊戲最致命的優雅柔道名模「瑪濃（Manon）」！徹底拆解「指令投（Manège Doré）」滾雪球機制、獎章等級（Medal Level）遏止心理學、三種躲避方式的數學期望值（垂直跳 vs 後跳 vs 影片最強推崇之「後衝 Backdash 躲投接 Drive Impact 削氣 PC 爆賺」秘術）、被指令投命中後的「延遲拆摔與防守重置心法」、芭蕾跳踢（Rond-point）被防 -11F 以上與滑踢/斧踢（Dégagé，弱滑踢 -24F、中 -13F、強中段 -9F）確反矩陣、中距離長腿 5HK/2MK 揮空差合打碎腳踝、對瑪濃核心「5MP 取消綠衝」的 Drive Reversal（鬥禦反擊）神速插斷確反公式，以及利用瑪濃「無無敵昇龍」防守死穴的版邊柔道終極處刑！</p>
+</blockquote>
+<hr />
+<h2>🧭 戰略總綱：看透優雅名模的芭蕾柔道雪球體系與底層物理死穴</h2>
+<p>在《快打旋風 6 (Street Fighter 6)》中，瑪濃（Manon）是一位兼具長手長腳牽制能力與極端滾雪球威脅的<strong>「打投複合型柔道刺客」</strong>。無論是剛踏入格鬥遊戲的新手，還是身經百戰的大師（Master）段位玩家，在面對瑪濃時經常會陷入極度的心理壓迫感：
+- <strong>被指令投抓到懷疑人生</strong>：指令投（Manège Doré）發生僅 5 幀，判定距離極遠，且「完全無法普通解摔」。一旦被抓中一次，瑪濃獲得獎章（Medal），摔技傷害隨之永久提升；
+- <strong>傷害雪球毀滅性暴增</strong>：當瑪濃達到 Lv.5 獎章時，單發普通指令投傷害高達 <strong>3,700</strong>，OD 版更高達 <strong>4,100</strong>！兩次猜錯直接殘血，三次猜錯滿血暴斃！
+- <strong>打投二擇令人窒息</strong>：防守方因為害怕指令投而試圖起跳或搶招，瑪濃便以 2LP、4HP、2MK 等長手打擊技暴打 Counter，並帶入打擊投（Dégagé）繼續累積獎章；
+- <strong>摸不到她又逃不掉</strong>：瑪濃擁有 5HK、2MK、5HP 等極長判定踢擊，在中距離不斷用 5MP 取消綠衝強行突進，一旦被近身便強迫進入 50/50 猜拳地獄！</p>
+<p>然而，<strong>スト6初心者応援チャンネル</strong> 在本期權威對策影片中一針見血地指出：<strong>「瑪濃看似優雅強勢的打投壓制，本質上是建立在防守方的『恐慌起跳』與『對其必殺技破綻無知』之上的紙老虎！瑪濃是全遊戲防守端最脆弱、必殺技破綻最整齊（清一色 -8F）、且指令投揮空硬直最巨大的角色之一！」</strong></p>
+<p>`mermaid
+graph TD
+    A[瑪濃核心進攻體系] --&gt; B[支柱 1：核心核武 - 指令投 Manège Doré]
+    A --&gt; C[支柱 2：突進摸獎 - 芭蕾跳踢 Rond-point &amp; 德加傑 Dégagé]
+    A --&gt; D[支柱 3：中距牽制 - 5MP 取消綠衝 &amp; 長腿 5HK/2MK]</p>
+<pre><code>B --&gt;|物理死穴| E[抓空 38F 世紀大硬直！後衝 Backdash 完美躲避 ➔ 最速 Drive Impact / PC 大連段]
+C --&gt;|物理死穴| F[【字幕校正】芭蕾跳踢被防 -11F 以上！弱滑踢被防高達 -24F、中版 -13F、強中段下砸 -9F！必殺技被防破綻巨大]
+D --&gt;|物理死穴| G[5MP 綠衝預約 2MP ➔ 見綠衝直接 Drive Reversal 必中 PC 吹飛！長腿揮空 2MK 差合]
+</code></pre>
+<p>`</p>
+<h3>關鍵底層破綻三大定律：</h3>
+<ol>
+<li><strong>定律一：指令投抓空硬直長達 38 幀（世紀大破綻）</strong>：<br />
+   瑪濃的指令投雖然無法拆解，但一旦防守方離開地面，瑪濃抓空將手舞足蹈原地發呆長達 <strong>38 幀（超過半秒！）</strong>。只要冷靜避開，防守方手握全遊戲最高的「大破綻懲罰（Punish Counter）」窗口，可打出 40%~60% 體力的毀滅性連段！</li>
+<li><strong>定律二：【字幕校正】必殺技被防具備巨大破綻（-9F 至 -24F）</strong>：<br />
+   許多玩家被瑪濃優雅的芭蕾動作迷惑不敢還擊。事實上，原片教練明確指出：強德加傑中段跳踢（214HK）被防是 <strong>-9F</strong>；中德加傑被防是 <strong>-13F</strong>；弱德加傑滑踢（214LK）被防更達到驚人的 <strong>-24F</strong>（什麼連段都能確反）；芭蕾跳踢（236K）被防<strong>全強度皆在 -11F 以上</strong>；打擊投（236P Renversé）確認失誤被防更是 <strong>-16F 以上</strong>！只要防住，直接打出重攻擊大連段必中確反！</li>
+<li><strong>定律三：防守端全遊戲最弱（無昇龍、無平價無敵技）</strong>：<br />
+   瑪濃是全遊戲極少數「完全沒有無消耗無敵對空技（無昇龍）」的角色！一旦將瑪濃推入版邊倒地，瑪濃面對「柔道（連續普通摔）」與「打擊壓制」幾乎毫無還手之力，只能賭命交出消耗 2 格綠槽且判定極差的 OD 昂・德・奧特（236KK，被防 -26F）或大招 SA！</li>
+</ol>
+<hr />
+<h2>⏱️ 影片微觀時間戳章節導航</h2>
+<ul>
+<li>[00:00 - 00:29]：<strong>導入（オープニング）</strong>（瑪濃角色特性、苦手原因分析、全段位通用的致勝體系總結）</li>
+<li>[00:29 - 03:17]：<strong>第一章：指令投全面對策（コマ投げ対策）</strong>（Manège Doré 機制、獎章滾雪球數據、防守期望值心態：寧吃打擊不吃指令投）</li>
+<li>[03:17 - 06:43]：<strong>第二章：指令投迴避方式深度分析（コマ投げの避け方分析）</strong>（垂直跳 vs 後跳 vs 後衝 Backdash 終極抉擇、後衝躲投接 Drive Impact 削氣 PC 爆賺神技解析）</li>
+<li>[06:43 - 08:11]：<strong>第三章：被指令投後的防守特訓法（コマ投げされた後の対策練習法）</strong>（被摔後心理重置、打投二擇博弈、延遲拆摔與模糊防守實機設定）</li>
+<li>[08:11 - 10:01]：<strong>第四章：全必殺技確定反擊大典（他の技の確反対策）</strong>（【字幕校正】芭蕾跳踢 Rond-point 全強度 -11F 以上、強德加傑 -9F、中德加傑 -13F、弱德加傑 -24F、打擊投 Renversé -16F 以上、5HK 被防 -6F）</li>
+<li>[10:01 - 11:37]：<strong>第五章：確定反擊訓練場實戰特訓（確反トレモ練習法）</strong>（Slot 假人錄製設定、確反直覺肌肉反應菜單、連續確反肌肉記憶固化）</li>
+<li>[11:37 - 12:24]：<strong>第六章：瑪濃壓起身對策（マノンの起き攻め対策）</strong>（擊倒後幾何位置、4HP 拉回二擇、肉壓防守、嚴禁亂凹與防跳入）</li>
+<li>[12:24 - 13:37]：<strong>第七章：進攻瑪濃之立回破局法（マノンに対する攻め方対策）</strong>（波升牽制壓制、2MK 差合打碎腳踝、對 5MP 取消綠衝之 Drive Reversal 確定反擊神技）</li>
+<li>[13:37 - 14:58]：<strong>第八章：版邊壓制與 SA 警戒（画面端での攻めとSA警戒）</strong>（利用瑪濃無昇龍弱點瘋狂柔道、誘騙 OD 236KK 與 SA1/SA2/SA3 痛懲）</li>
+<li>[14:58 - 15:30]：<strong>第九章：總結與實戰致勝心態（まとめ・エンディング）</strong>（8 大實戰金律、對策 Checklist）</li>
+</ul>
+<hr />
+<h2>🥋 第一章：瑪濃指令投（Manège Doré）機制與滾雪球遏止心法 [00:29 - 03:17]</h2>
+<p>瑪濃的招牌核心技能是「旋轉跳投 / 旋轉大摔（Manège Doré / マネージュ・ドレ，指令 63214P）」。在格鬥遊戲界，這類招式被稱為「指令投（Command Grab）」，也是瑪濃整個戰術體系的終極發動機。</p>
+<h3>1. 指令投微觀機制與性能參數</h3>
+<ul>
+<li><strong>指令與形態</strong>：63214P（半圓後手 / 421P）。</li>
+<li><strong>弱版 (63214LP)</strong>：發生 <strong>5F</strong>，抓取距離最遠（達到驚人的 1.45 個身位，為全遊戲普通必殺技指令投中最長射程之一）！</li>
+<li><strong>中版 (63214MP)</strong>：發生 <strong>5F</strong>，距離適中，傷害稍高。</li>
+<li><strong>強版 (63214HP)</strong>：發生 <strong>5F</strong>，距離最短（需貼身約 0.9 個身位），傷害最高。</li>
+<li><strong>OD 版 (63214PP)</strong>：發生 <strong>5F</strong>，具備中距離強大吸附力，消耗 2 格鬥氣，傷害極度恐怖！</li>
+<li><strong>不可拆解性（不可解摔）</strong>：</li>
+<li>與常規普通投（LP+LK）完全不同，<strong>指令投絕對無法透過按下投擲鍵（拆摔）進行解套</strong>！</li>
+<li>若在瑪濃指令投判定幀嘗試按下拆摔，防守方將直接進入「拆投動作被指令投強制判定為 Counter 抓取」，觸發更大失衡並送給瑪濃 1 顆獎章！</li>
+</ul>
+<h3>2. 獎章等級（Medal Level）滾雪球成長曲線</h3>
+<p>瑪濃每次成功命中指令投（Manège Doré）或命中打擊投派生（Renversé / Dégagé 派生），頭像旁的獎章等級便會提升 1 級，上限為 <strong>Lv.5</strong>，且<strong>整場比賽（兩局或三局）獎章永久保留，絕不重置</strong>！</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: center;">獎章等級 (Medal Level)</th>
+<th style="text-align: center;">普通指令投傷害 (Damage)</th>
+<th style="text-align: center;">OD 指令投傷害 (OD Damage)</th>
+<th style="text-align: center;">扣除對手綠槽</th>
+<th style="text-align: left;">實戰心理壓迫與威脅評級</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Lv. 1</strong></td>
+<td style="text-align: center;"><strong>2,000</strong> (20%)</td>
+<td style="text-align: center;"><strong>3,000</strong> (30%)</td>
+<td style="text-align: center;">0.5 格</td>
+<td style="text-align: left;">開局起手，傷害相當於重攻擊打擊連段，威脅尚在可控範圍。</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Lv. 2</strong></td>
+<td style="text-align: center;"><strong>2,300</strong> (23%)</td>
+<td style="text-align: center;"><strong>3,300</strong> (33%)</td>
+<td style="text-align: center;">0.75 格</td>
+<td style="text-align: left;">相當於吃下一記超必殺重擊，防守方開始產生心理動搖。</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Lv. 3</strong></td>
+<td style="text-align: center;"><strong>2,700</strong> (27%)</td>
+<td style="text-align: center;"><strong>3,700</strong> (37%)</td>
+<td style="text-align: center;">1.0 格</td>
+<td style="text-align: left;">單發超過 1/4 體力！瑪濃開始進入高度自信的打投二擇期。</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Lv. 4</strong></td>
+<td style="text-align: center;"><strong>3,200</strong> (32%)</td>
+<td style="text-align: center;"><strong>4,000</strong> (40%)</td>
+<td style="text-align: center;">1.25 格</td>
+<td style="text-align: left;">單發普通投即達 32% 體力！吃兩次加輕微摸血即瀕死！</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Lv. 5 (MAX)</strong></td>
+<td style="text-align: center;"><strong>3,700</strong> (37%)</td>
+<td style="text-align: center;"><strong>4,100</strong> (41%)</td>
+<td style="text-align: center;">1.5 格</td>
+<td style="text-align: left;"><strong>毀滅性核武！</strong> 單發普通指令投打掉近 4 成體力，OD 版一抓 41%！兩次猜錯直接滿血暴斃！</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3. 遏止雪球累積的核心防守邏輯：【寧吃打擊，不吃指令投】</h3>
+<p>影片教練 ecu1 提出了全場最核心的防守心法：</p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>「在面對瑪濃時，防守方的第一原則永遠是：絕不讓她輕鬆累積獎章！」</strong><br />
+許多玩家因為恐懼打擊被連段，於是在近身防守時死死蹲防，結果整場被瑪濃活活抓成 Lv.5 獎章戰神。<br />
+<strong>數學期望值真相</strong>：
+- 瑪濃的通常技打擊（如 2LP ➔ 2LP ➔ 236LK）若命中，在沒有消耗大量鬥氣取消綠衝的情況下，傷害通常僅在 <strong>1,000 ~ 1,400</strong> 之間，且<strong>不會累積獎章</strong>；
+- 但如果被指令投抓中，防守方不僅立刻承受 <strong>2,000 ~ 3,700</strong> 的巨大直接傷害，還賦予了瑪濃整場比賽永久的傷害加成！
+- <strong>結論</strong>：寧可在起身或近身時起跳或後衝被她的輕拳打中，也絕對不可乖乖站在原地被指令投抓取！</p>
+</blockquote>
+<h3>4. 瑪濃何時最想出指令投？（四大高危情境拆解）</h3>
+<ol>
+<li><strong>綠衝貼身後（ラッシュ後）</strong>：5MP 或生綠衝滑行至臉上，瑪濃手握 +2F 以上絕對有利時。此時防守方若按任何通常技都會被打康，因此多數人選擇防禦，瑪濃便順理成章出指令投！</li>
+<li><strong>通常技被防後（小技ガード後）</strong>：例如 2LP 被防（-1F）或 5MP 被防（-1F），瑪濃利用對手「防禦發呆」或「等待確認」的心理空窗，強行在第 2 次判定中施放指令投。</li>
+<li><strong>倒地壓起身（起き攻め時）</strong>：防守方被擊倒起身瞬間，瑪濃肉壓最速指令投。此時防守方手握最少主動權，最易恐慌。</li>
+<li><strong>將防守方逼至版邊時</strong>：防守方退無可退，心理壓力達到頂點，瑪濃最喜歡在此時施展指令投直接打崩心態。</li>
+</ol>
+<hr />
+<h2>🤸 第二章：指令投迴避方式深度分析：垂直跳 vs 後跳 vs 後衝（Backdash）[03:17 - 06:43]</h2>
+<p>既然指令投無法拆解，防守方該如何迴避？影片進行了極具開創性的微觀數據對比：</p>
+<p><code>【指令投三大迴避手段對比】
+                               │
+       ┌───────────────────────┼───────────────────────┐
+       ▼                       ▼                       ▼
+【垂直跳 (Neutral Jump)】  【後跳 (Back Jump)】   【後衝 (Backdash)】
+ • 傷害回報：極大(4000+)    • 傷害回報：極小/無      • 傷害回報：極大(3500+ / DI 削氣)
+ • 致命風險：若瑪濃等你看跳    • 致命風險：主動退入版邊    • 致命優勢：1F 空中避投！
+   會被 2HP/236K 防空痛打    退無可退時無法使用      ★ 毫無被防空打滿的風險！</code></p>
+<h3>1. 垂直跳（Neutral Jump）的優劣分析</h3>
+<ul>
+<li><strong>優勢</strong>：若成功躲過指令投，防守方在空中下落過程中，瑪濃處於 38F 抓空硬直，防守方可以從容打出「跳重拳 (J.HP) ➔ 地面重拳 ➔ 必殺技 ➔ SA3」的滿額痛懲，傷害高達 <strong>4,200 ~ 5,500+</strong>！</li>
+<li><strong>致命弱點</strong>：如果對手瑪濃「預讀了你會起跳」，或者瑪濃近身只是虛晃走位試探（様子見），防守方的垂直跳將在空中完全暴露！瑪濃擁有全遊戲判定極度寬廣的對空技：<strong>蹲強拳（2HP，向上大範圍揮舞）</strong> 或 <strong>昂・德・奧特（236K 跳踢）</strong>，防守方將直接被防空打落並再次陷入被動！</li>
+</ul>
+<h3>2. 後跳（Back Jump）的優劣分析</h3>
+<ul>
+<li><strong>優勢</strong>：拉開與瑪濃的距離，相對垂直跳更不容易被原地對空技打個正著。</li>
+<li><strong>致命弱點</strong>：防守方主動向後退縮，會加速自己被推入版邊的死局！且後跳下落距離較遠，往往無法及時差合懲罰瑪濃的 38F 抓空硬直。在版邊被困時，後跳更是完全無法拉開空間。</li>
+</ul>
+<h3>3. 【影片核心神技】：後衝（Backdash / バクステ）——全遊戲最安全的避投解法！</h3>
+<p>在影片 03:17~06:43 及官方短片中，作者強烈推薦：<strong>「在讀到瑪濃要出指令投時，最推薦且勝率最高的動作是——後衝（Backdash）！」</strong></p>
+<h4>為什麼後衝是神？三大物理優勢剖析：</h4>
+<ol>
+<li><strong>第 1 幀即具備空中避投判定（1F空中判定）</strong>：<br />
+   在 SF6 系統底層中，所有角色的後衝在第 1 幀起即被判定為空中狀態（Airborne），<strong>指令投與普通投在接觸瞬間 100% 揮空</strong>！即使瑪濃肉壓最速指令投，也會在貼臉位置當場抓空！</li>
+<li><strong>完全沒有被防空痛打的風險（対空されるリスクがない）</strong>：<br />
+   如果瑪濃沒有出指令投，而是停頓觀察（様子見），看見你起跳能從容防空；但看見你「後衝」，後衝全體僅 23 幀左右且身位緊貼地面，瑪濃根本來不及出大招防空！雙方瞬間回到中距離立回，防守方毫髮無傷！</li>
+<li><strong>瑪濃指令投抓空擁有高達「38 幀破綻」</strong>：<br />
+   瑪濃指令投抓空動作拖沓，在身前舞動雙手長達 38 幀。防守方後衝完成後（約 23F），瑪濃依然還有超過 <strong>15 幀以上的完全無防禦硬直</strong>！</li>
+</ol>
+<h4>💥 後衝後的兩種極致反擊手段：</h4>
+<ul>
+<li><strong>反擊方案 A：直接強攻擊 Punish Counter 痛懲</strong><br />
+  後衝落地後，防守方往前微走半步或直接按出最長的重攻擊（如 Ryu 的 5HP 或 4HK 崩防技），穩穩打出 Punish Counter，帶入民工必殺技大連段！</li>
+<li><strong>反擊方案 B（影片特別推薦神技！）：後衝落地「最速 Drive Impact（鬥禦衝擊）」！</strong>  </li>
+<li>為什麼出 Drive Impact？<br />
+    瑪濃指令投抓空時處於無防禦狀態，此時防守方拍下 Drive Impact，將必定觸發 <strong>大破綻懲罰（Punish Counter）</strong>！</li>
+<li><strong>戰略收益爆表</strong>：<ol>
+<li><strong>直接削減瑪濃 1.5 格鬥氣量表（Drive Gauge）</strong>，讓瑪濃迅速接近虛脫（Burnout）！</li>
+<li>瑪濃被打出特大碎甲膝崩硬直，防守方手握充裕時間蓄力或接續「地面最痛重拳大連段」！</li>
+<li>同時恢復我方大量鬥氣，攻防態勢瞬間逆轉！</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2>🏋️ 第三章：被指令投後的防守重置與模糊拆摔特訓 [06:43 - 08:11]</h2>
+<p>不幸被瑪濃指令投摔倒後，防守方該如何自處？許多新手在這裡連環暴斃，原因在於<strong>「被摔一次後心態大崩，起身無腦凹昇龍或無腦按小拳搶招」</strong>，結果被瑪濃打擊 Counter 帶走！</p>
+<h3>1. 被指令投摔倒後的幾何情境</h3>
+<ul>
+<li>瑪濃使用指令投成功後，雖然獲得大幅有利，但通常無法在原地形成無縫「肉壓（Meaty）」普通投，必須向前走步或消耗綠衝推進。</li>
+<li><strong>心理博弈陷阱</strong>：瑪濃玩家在嚐到甜頭後，下一次攻防有極高機率繼續賭你「不敢動」而再次施放指令投！</li>
+</ul>
+<h3>2. 延遲拆摔（Delayed Tech / 遅らせグラップ）的妙用與極限</h3>
+<ul>
+<li><strong>延遲拆摔的防守覆蓋</strong>：<br />
+  起身時先拉住防禦（防住瑪濃的最速小拳肉壓打擊），在起身後第 4~7 幀時輕輕點按「LP+LK（拆投）」。</li>
+<li>若瑪濃選擇 <strong>打擊壓制</strong>：防守方處於防禦硬直中，普通拆投指令不會出招，成功擋下打擊！</li>
+<li>若瑪濃選擇 <strong>普通摔</strong>：剛好在摔技判定時發生拆投，雙方彈開，防守成功！</li>
+<li><strong>致命盲點（必須心知肚明）</strong>：<br />
+  延遲拆摔<strong>「防不住指令投」</strong>！如果瑪濃起身直接出指令投，延遲拆摔會被直接吸入！</li>
+<li><strong>終極解法：打投節奏切換</strong>：<br />
+  面對剛累積 1~2 個獎章的瑪濃，先以「延遲拆摔」穩固防線，觀察對手習慣；一旦發現對手是個「狂躁投擲魔」，起身果斷執行<strong>「後衝（Backdash）」</strong>，直接收割其 38F 抓空大禮包！</li>
+</ul>
+<h3>🎯 訓練場特訓菜單設定</h3>
+<ul>
+<li><strong>對手角色</strong>：瑪濃（Manon）</li>
+<li><strong>錄製情境</strong>：我方倒地起身（Down Recovery）</li>
+<li><strong>Slot 1 (最速打擊)</strong>：向前走半步 ➔ 2LP ➔ 2LP ➔ 236LK（測試我方能否蹲防穩住）</li>
+<li><strong>Slot 2 (普通摔)</strong>：向前走步 ➔ 普通投 LP+LK（測試我方能否延遲拆摔成功）</li>
+<li><strong>Slot 3 (貪心指令投)</strong>：向前走步 ➔ 弱指令投 63214LP（測試我方能否預讀後衝並 DI 反擊）</li>
+<li><strong>Slot 4 (延遲中拳誘騙拆摔)</strong>：向前走步 ➔ 稍作停頓 ➔ 5HP 打康（測試我方是否無腦亂拆投）</li>
+<li><strong>訓練目標</strong>：隨機播放 4 個 Slot，培養冷靜防守、延遲拆摔、以及抓準時機後衝反殺的複合反應能力！</li>
+</ul>
+<hr />
+<h2>🩰 第四章：芭蕾跳踢（Rond-point）與德加傑（Dégagé）確反大典 [08:11 - 10:01]</h2>
+<p>除了指令投，瑪濃在實戰中最常使用的必殺技就是「芭蕾跳踢」與「德加傑」。這兩招外表看起來極具欺騙性，但只要看透幀數，全部都是送分題！</p>
+<h3>1. 昂・德・奧特 / 芭蕾跳踢 (Rond-point / ロン・ポワン，指令 236K)</h3>
+<p>瑪濃向前旋轉躍起踢擊的連段必殺技。原片教練指出：雖然弱/中/強版本的負幀略有差異且難以肉眼分辨，但<strong>【字幕校正】只要防住，全強度皆在 -11F 以上（どれも -11 以上ある）</strong>，防守方可從容打出重攻擊大連段！</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式階段</th>
+<th style="text-align: left;">動作表現</th>
+<th style="text-align: center;">被防硬直差 (On Block)</th>
+<th style="text-align: left;">確反處罰策略 (Punish Counter Strategy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>全強度被防 (236K)</strong></td>
+<td style="text-align: left;">瑪濃旋轉跳踢下落</td>
+<td style="text-align: center;"><strong>-11F 以上【字幕校正】</strong></td>
+<td style="text-align: left;">防守方從容打出 5HP、4HK 等大連段必中確反！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 昂・德・奧特 (236KK)</strong></td>
+<td style="text-align: left;">帶無敵判定的雙人升空跳踢</td>
+<td style="text-align: center;"><strong>-26F (特大破綻)</strong></td>
+<td style="text-align: left;">瑪濃落地如同死刑！防守方從容打出跳重攻擊或最大額度 PC 滿血大連段！</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2. 德加傑 (Dégagé / 斧踢與滑踢，指令 214K)</h3>
+<p>瑪濃以大長腿進行的前踢變則技：</p>
+<p><code>【德加傑 (Dégagé 214K) 三大強度分流】
+                                     │
+       ┌─────────────────────────────┼─────────────────────────────┐
+       ▼                             ▼                             ▼
+【弱版 214LK (下段滑踢)】       【中版 214MK (連段專用)】     【強版 214HK (中段下砸)】
+ • 特性：極遠下段突進偷襲        • 特性：主要用於連段          • 特性：跳至空中下砸 (Overhead)
+ • 被防硬直：-24F (特大破綻)    • 被防硬直：-13F (大破綻)     • 被防硬直：-9F
+ • 確反：全連段/跳重攻擊必中    • 確反：中攻擊/強攻擊必中     • 確反：下中K/中攻擊穩定確反</code></p>
+<ol>
+<li><strong>弱德加傑 (214LK)</strong>：
+   - 瑪濃長距離貼地滑踢，下段攻擊，專偷防守方站姿。
+   - <strong>【字幕校正】被防硬直高達 -24F（マイナス24フレーム何でも入ります）</strong>！只要蹲防擋下，瑪濃在眼前發呆，防守方可以塞入「任何連段」，包括最痛滿額連段！</li>
+<li><strong>中德加傑 (214MK)</strong>：
+   - 多用於連段，立回較少出現。<strong>【字幕校正】被防硬直為 -13F（マイナス13フレーム）</strong>，防守方出中/強攻擊必中確反。</li>
+<li><strong>強德加傑 (214HK)</strong>：
+   - 瑪濃高高躍起，以腳後跟由上往下砸擊，判定為<strong>「中段攻擊（Overhead）」</strong>！專殺蹲防。
+   - <strong>【字幕校正】被防硬直為 -9F（意外にマイナス9フレームある）</strong>！站防擋住下落後，若 2MK（下中腿）等攻擊能夠打到，務必確實打出確反！</li>
+</ol>
+<h3>3. 【字幕補充】打擊投 (Renversé / アンヴェルセ，指令 236P)</h3>
+<ul>
+<li>瑪濃向前滑步抓取對手的打擊判定必殺技（打中可按 K 派生追加累積獎章）。</li>
+<li>實戰中瑪濃有時因確認失誤而裸出被防。</li>
+<li>原片明確指出：<strong>被防硬直全強度皆在 -16F 以上（全てマイナ16以上ある）</strong>，防守方有一整秒的確反時間，可直接打出最痛連段！</li>
+</ul>
+<h3>4. 通常技致命破綻</h3>
+<ul>
+<li><strong>下大K / 掃腿 (2HK)</strong>：</li>
+<li>瑪濃的掃腿踢擊距離長，但被防後硬直為 <strong>-6F</strong>（不可發呆，最速出 4F~5F 輕攻擊穩定確反）！</li>
+<li><strong>站大K (5HK)</strong>：</li>
+<li>主要用於立回牽制，<strong>被防為 -6F</strong>。在攻擊距離內防住務必取確反；若距離過遠不要勉強出招以免被瑪濃差合。此外，5HK 揮空時其大腿受擊判定殘留明顯，是立回差合的靶子。</li>
+</ul>
+<hr />
+<h2>🎯 第五章：訓練場特訓 ②——必殺技確定反擊肌肉反射特訓 [10:01 - 11:37]</h2>
+<p>既然瑪濃的核心必殺技被防具備巨大的硬直差（-9F 至 -24F），那麼勝負的關鍵就在於<strong>「防守方能否在防住的瞬間，不假思索地打出確定反擊連段」</strong>！</p>
+<h3>🎯 假人錄製設定</h3>
+<p>將假人（瑪濃）設定為隨機施放以下 4 種常用套路：
+- <strong>Slot 1 (跳踢)</strong>：5MP ➔ 236K (昂・德・奧特被防 -11F 以上【字幕校正】)
+- <strong>Slot 2 (弱滑踢偷下段)</strong>：中距離 ➔ 214LK (弱德加傑被防 -24F【字幕校正】)
+- <strong>Slot 3 (強中段跳砸)</strong>：中距離 ➔ 214HK (強德加傑中段被防 -9F【字幕校正】)
+- <strong>Slot 4 (掃腿摸腳)</strong>：中距離 ➔ 2HK (下大K被防 -6F)
+- <strong>Slot 5 (干擾項：普通牽制)</strong>：5MP ➔ 稍微後退一步</p>
+<h3>🏋️ 反應訓練指引</h3>
+<ol>
+<li><strong>統一確反指令</strong>：以 Ryu（隆）為例，防住 Slot 1、2、3 後，可根據距離以「下中拳 (2MP，發生 6F)」或「下中腿 (2MK)」作為確反起始技；Slot 2（-24F）更可直接打出 5HP 最大連段！
+   - 連段範式：2MP (確反) ➔ 5HP ➔ 236HK (強龍卷) 或 214KK (OD波刃)</li>
+<li><strong>視覺辨識</strong>：看見瑪濃跳起下砸（強德加傑）要站防；看見瑪濃貼地滑踢（弱德加傑）要蹲防；防住後立即敲下確反技！</li>
+<li>持續特訓 10 分鐘，直到你的手指形成反射條件，只要擋下瑪濃的冒進必殺技，連段便自動噴湧而出！</li>
+</ol>
+<hr />
+<h2>🛡️ 第六章：瑪濃壓起身（Okizeme）體系與打投二擇破解法 [11:37 - 12:24]</h2>
+<p>當防守方被瑪濃擊倒時，瑪濃會利用其優秀的壓起身工具施加極具威脅的打投二擇：</p>
+<h3>1. 瑪濃倒地後的典型壓制手法</h3>
+<ul>
+<li><strong>手法 A：站前強拳 (4HP) 兩段拉回</strong><br />
+  4HP 是瑪濃最危險的特殊通常技。兩段命中後會將防守方強制拉至貼臉位置，且瑪濃手握 <strong>+4F 絕對先手</strong>！防守方若亂動會直接被指令投抓走。</li>
+<li><strong>手法 B：綠衝下中K / 站中拳肉壓</strong><br />
+  利用綠衝的加幀特性，形成打擊與指令投的 50/50 強制猜拳。</li>
+<li><strong>手法 C：安全跳躍（Safe Jump 4F）</strong><br />
+  在特定連段後（如強昂・德・奧特浮空追擊後），瑪濃能打出完美的 4 幀安全跳。防守方若凹昇龍拳，瑪濃在空中剛好落地防禦，反殺防守方 PC！</li>
+</ul>
+<h3>2. 破局防守黃金三原則</h3>
+<ol>
+<li><strong>嚴禁無腦凹無敵技</strong>：面對瑪濃的倒地壓制，絕對不可盲目依賴 OD 昇龍或 SA。瑪濃玩家極度擅長安全跳與騙昇龍。</li>
+<li><strong>看破 4HP 拉回後的心理博弈</strong>：<br />
+   若防住瑪濃的 4HP，瑪濃為 -1F 至 -3F 劣勢，但瑪濃常常利用防守方的畏懼心理「偷按指令投」。防守方可果斷<strong>起跳或後衝</strong>，反殺其 38F 抓空！</li>
+<li><strong>善用鬥禦反擊（Drive Reversal，防住中輸入 6HP+HK）</strong>：<br />
+   當防住瑪濃綠衝後的第一發通常技肉壓時，防守方若不想參與殘酷的 50/50 猜拳，果斷交出 1 格綠槽的 Drive Reversal，直接將瑪濃吹飛至半個螢幕外，徹底瓦解其進攻節奏！</li>
+</ol>
+<hr />
+<h2>⚔️ 第七章：進攻瑪濃核心立回策略與長腿差合 [12:24 - 13:37]</h2>
+<p>除了被動防守，主動瓦解瑪濃的立回體系才是通往大師段位的捷徑！本章深度剖析影片中最具震撼力的兩大進攻秘術：</p>
+<h3>🌟 秘術 ①：對瑪濃主力「5MP 取消綠衝」的 Drive Reversal 神速插斷！（影片144精華短片核心）</h3>
+<p>瑪濃在地面戰中最具侵略性的常規套路是：<strong>中距離以「站立中拳 (5MP)」摸獎，並預先輸入取消綠衝（入れ込みラッシュ）</strong>！</p>
+<p><code>【瑪濃 5MP 綠衝之常規套路剖析】
+  瑪濃在中距離伸出 5MP ➔ 命中或被防均 Cancel 綠衝突進
+        │
+        ├─ 惡習習慣：有 85% 以上的瑪濃玩家會預約輸入【下中拳 (2MP)】以求連段打康！
+        │
+        └─ 終極反制：防守方防住 5MP，看見綠衝閃光的瞬間 ➔ 拍下【Drive Reversal (6HP+HK)】！</code></p>
+<h4>💥 為什麼 Drive Reversal 必殺瑪濃？三大機制深度剖析：</h4>
+<ol>
+<li><strong>必定觸發 Punish Counter（大破綻懲罰）</strong>：<br />
+   瑪濃在綠衝滑行中預先輸入了 2MP，由於 2MP 發生需要 6 幀以上，防守方的 Drive Reversal 具備霸體與無敵判定，會<strong>直接截擊並擊碎瑪濃的 2MP，打出震撼全場的 Punish Counter 碎裂音效</strong>！</li>
+<li><strong>收益巨大，扭轉資源天平</strong>：
+   - 瑪濃消耗了整整 3 格鬥氣取消綠衝，結果不僅一拳沒摸到，本體還被擊飛倒地，並被 Drive Reversal 額外扣除鬥氣！
+   - 防守方僅消耗 1 格鬥氣，瞬間取得場地控制權與絕對的鬥氣量表優勢！</li>
+<li>⚠️ <strong>高手對局微調注意（影片短片特別提醒）</strong>：<br />
+   若遇到高段位瑪濃，其綠衝後使用的是出招極快的<strong>「站立弱拳 (5LP)」</strong>，由於 5LP 收招極快，Drive Reversal 有可能被其在最後一刻防住（被防 -6F）。因此面對高手時，需觀察其綠衝後的手癖習慣：
+   - 對手愛出 2MP ➔ 毫不猶豫 D-Reversal 截殺！
+   - 對手愛出 5LP ➔ 切換為站防延遲拆摔，或在 5LP 被防後搶 4F 輕技！</li>
+</ol>
+<h3>🦶 秘術 ②：打碎腳踝——長腿 5HK / 2MK 差合（Whiff Punish）</h3>
+<p>瑪濃的腿非常長，但《快打旋風 6》的底層判定邏輯是<strong>「腿越長，揮空時受擊框（Hurtbox）殘留越久」</strong>：
+- <strong>站強K (5HK)</strong>：揮空時腿部判定向前延伸，收招長達 19 幀；
+- <strong>下中K (2MK)</strong>：下盤摸腳踢擊，揮空時腳踝受擊框長時間貼在地面。
+- <strong>對策手法</strong>：<br />
+  防守方站在瑪濃 5HK 與 2MK 的極限射程外半步，來回微步走動引誘其出腿。一旦看見瑪濃踢腿揮空收招，立刻按下 <strong>2MK ➔ 取消波動拳 / 取消綠衝</strong>！你的下中K會像手術刀一樣精準切斷瑪濃的腳踝，打出完美的 Whiff Punish！</p>
+<h3>🌊 秘術 ③：波升體系（Hadoken &amp; Shoryuken）對瑪濃的先天克制</h3>
+<p>瑪濃最大的先天缺陷之一：<strong>「全身上下沒有任何常規飛行道具（無波動拳）」</strong>！
+- 隆（Ryu）、凱爾（Guile）、豪鬼（Akuma）等波升角色在面對瑪濃時擁有巨大的戰略主動權。
+- 在中遠距離持續施放節奏變化的波動拳，瑪濃只能依賴反應極難的 OD 德加傑或 SA 穿波。只要防守方不急於前衝，瑪濃在波動拳的折磨下往往會焦躁起跳，防守方從容以強昇龍拳（623HP）對空，將其活活射殺在立回路上！</p>
+<hr />
+<h2>🏰 第八章：版邊攻防壓制與 SA 警戒（瑪濃無昇龍最大防守死穴）[13:37 - 14:58]</h2>
+<p>將瑪濃推入版邊，是結束這場對局的最後一步。瑪濃在版邊的防守脆弱程度堪稱全遊戲倒數！</p>
+<h3>1. 瑪濃防守端的致命死穴：無無敵昇龍</h3>
+<ul>
+<li>大多數角色（隆、肯、盧克、嘉米）在版邊被壓制時，手握消耗 2 格鬥氣的 OD 昇龍拳（帶完整打擊/投擲無敵），能強行打斷對手的攻勢。</li>
+<li><strong>瑪濃完全沒有這項特權！</strong><br />
+  瑪濃唯一的無敵必殺技是 <strong>OD 昂・德・奧特 (236KK)</strong>，但該招式判定偏高、容易揮空，且<strong>被防後手握高達 -26F 的世紀大破綻</strong>！</li>
+</ul>
+<h3>2. 版邊處刑策略：肆無忌憚的「柔道（Loop Throw）」</h3>
+<ul>
+<li>由於瑪濃沒有無敵昇龍，防守方在版邊擊倒瑪濃後，可以極其囂張地進行<strong>「連續普通摔（柔道）」</strong>！</li>
+<li>瑪濃起身面對普通摔，唯一的反抗手段是：</li>
+<li>按拆投 ➔ 被防守方的 Shimmy（後退微步拉防）打 PC 滿額大連段！</li>
+<li>原地起跳 ➔ 被防守方的 4F 輕拳或昇龍拳點落！</li>
+<li>賭命凹 SA 或 OD 236KK ➔ 一旦被防守方預讀防住，直接迎來 5000+ 體力的死亡處刑！</li>
+</ul>
+<h3>3. 瑪濃 SA 警戒清單</h3>
+<p>當瑪濃擁有超必殺能量時，她在防守端會狗急跳牆，防守方需提高警惕：
+- <strong>SA1 (236236P，芭蕾旋轉打擊)</strong>：發生 10F，帶完全打擊無敵，被防 <strong>-29F</strong>！
+- <strong>SA2 (214214K，空中下砸)</strong>：帶完全無敵，被防 <strong>-34F</strong>！
+- <strong>SA3 / CA (236236K，絕命大摔)</strong>：瑪濃最恐怖的指令投超必殺！發生僅 7F，不可拆解！防守方在版邊切記不可發呆，若預讀其要凹 SA3，直接垂直起跳，落地 PC 滿血斬殺！</p>
+<hr />
+<hr />
+<h2>🧠 深度附錄 ①：天梯各段位（白金 ➔ 鑽石 ➔ 大師）瑪濃玩家常見心理惡習與剝削清單</h2>
+<p>在 SF6 天梯排位賽中，不同段位的瑪濃玩家具備極具代表性的操作慣性與思維盲區。防守方若能「知己知彼」，即可在選人加載階段便制定精準的心理剝削策略：</p>
+<h3>1. 白金段位（Platinum）瑪濃特徵與對策</h3>
+<ul>
+<li><strong>特徵 1：無腦沉迷芭蕾跳踢二段（236K &gt; K）</strong>：白金瑪濃極度依賴昂・德・奧特進行中遠距離摸獎，且 95% 以上會習慣性將第二段踢完。</li>
+<li><em>破解</em>：站防擋下第二段，手指肌肉記憶立刻按下 2MP 確反，白金瑪濃不出兩回合心態就會崩潰。</li>
+<li><strong>特徵 2：倒地起身無腦凹 OD 昂・德・奧特（236KK）</strong>：因為沒有無敵昇龍，白金瑪濃在防守時極其慌亂，起身有極高機率狂搖 236KK。</li>
+<li><em>破解</em>：壓起身時多使用「走進拉防（Shimmy）」或防禦試探，防住後直接打滿 5000+ PC 斬殺連段。</li>
+<li><strong>特徵 3：近身只會指令投，完全不做打擊確認</strong>：一旦貼身，白金瑪濃腦中只有累積獎章。</li>
+<li><em>破解</em>：近身毫不猶豫直接後衝（Backdash）或起跳，收割其 38F 抓空大禮。</li>
+</ul>
+<h3>2. 鑽石段位（Diamond）瑪濃特徵與對策</h3>
+<ul>
+<li><strong>特徵 1：公式化依賴「5MP ➔ 取消綠衝 ➔ 2MP（預約）」</strong>：鑽石瑪濃開始懂得利用綠衝壓制，但受限於確認能力，極度依賴「手癖預先輸入 2MP」。</li>
+<li><em>破解</em>：看見綠衝閃光最速按出 <strong>Drive Reversal（鬥禦反擊）</strong>，100% 打出 Punish Counter，直接沒收其 3 格綠槽！</li>
+<li><strong>特徵 2：通常技被防後偷按指令投</strong>：例如 2LP 被防（-1F）或 2MK 被防，立刻賭對手不敢動而偷按弱指令投。</li>
+<li><em>破解</em>：採用延遲拆摔或在防住第一發輕攻擊後最速以 4F 輕技插動抢招！</li>
+<li><strong>特徵 3：依賴 4HP 兩段拉回強行進入二擇</strong>：</li>
+<li><em>破解</em>：防住 4HP 第二段（-3F），瑪濃若想出指令投有破綻，最速輕技或起跳後衝反制。</li>
+</ul>
+<h3>3. 大師與 Legend 段位（Master / MR 1700+）瑪濃特徵與對策</h3>
+<ul>
+<li><strong>特徵 1：綠衝改用「站弱拳 (5LP)」抑制 D-Reversal</strong>：頂尖瑪濃意識到 2MP 會被 D-Reversal 截殺，會改用收招極快的 5LP 誘騙對手交出 D-Reversal 並進行防守。</li>
+<li><em>破解</em>：面對頂尖瑪濃不可無腦交 D-Reversal，需改為蹲防觀察，利用「延遲拆摔」穩健化解其打投，逼其進入立回戰。</li>
+<li><strong>特徵 2：精通 4F 安全跳（Safe Jump）與誘騙起跳防空</strong>：高階瑪濃在浮空連段後會打出精準的 4 幀詐欺跳，誘騙對手凹無敵技。</li>
+<li><em>破解</em>：倒地老老實實起身防禦，不給對手任何騙招機會；將勝負賭注押在地面立回差合與版邊柔道上！</li>
+<li><strong>特徵 3：立回差合與下盤牽制極度細膩</strong>：善於利用 2MK 與 5HP 在極限距離摸獎。</li>
+<li><em>破解</em>：以隆為例，保持中遠距離發揮波動拳（Hadoken）絕對優勢，逼迫其離開舒適節奏！</li>
+</ul>
+<hr />
+<h2>🔬 深度附錄 ②：瑪濃 5MP 取消綠衝 vs 防守方 Drive Reversal 判定微觀幀數時間線</h2>
+<p><code>【微觀時間軸 Frame Timeline】
+時間軸(F): 0F      5F     9F(命中/被防)  10F~13F(綠衝閃光)      20F(瑪濃2MP出招中)
+瑪濃動作:  [ 5MP 前搖 9F ] ➔ [ Cancel 綠衝滑行 11F ] ➔ [ 預約輸入 2MP (發生6F) ]
+                                    │
+                                    ├─ 防守方看見綠衝閃光 (反應時間約 12~15F)
+                                    ▼
+防守方動作: [ 防禦 5MP 硬直結束 ] ➔ [ 輸入 6HP+HK 觸發 Drive Reversal ]
+                                   (第 1 幀起即具備完全打擊無敵/霸體！)
+                                    │
+                                    ▼
+碰撞結果:  瑪濃 2MP 發生中判定框伸出 ➔ 撞上防守方 Drive Reversal 無敵霸體
+           ➔ 系統判定：【PUNISH COUNTER (大破綻懲罰)】！
+           ➔ 瑪濃被重重吹飛擊倒，扣除鬥氣量表，損失 3 格綠衝代價！
+           ➔ 防守方取得完全主動權與幾何壓迫！</code></p>
+<hr />
+<h2>📊 第九章：全套確定反擊矩陣 (Complete Punish Counter Matrix)</h2>
+<p>以下為對戰瑪濃時，全招式被防/抓空後的確定反擊一覽表。格鬥玩家必須將其深深刻入肌肉記憶：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式分類</th>
+<th style="text-align: left;">招式名稱與指令</th>
+<th style="text-align: center;">判定屬性</th>
+<th style="text-align: center;">被防/抓空硬直差</th>
+<th style="text-align: center;">最優確反起始技</th>
+<th style="text-align: left;">推薦處罰連段範例 (Ryu 視角)</th>
+<th style="text-align: center;">傷害與收益評級</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>指令投</strong></td>
+<td style="text-align: left;"><strong>旋轉跳投 (63214P)</strong></td>
+<td style="text-align: center;">投擲 (不可拆)</td>
+<td style="text-align: center;"><strong>抓空 38F 破綻</strong></td>
+<td style="text-align: center;"><strong>後衝 ➔ 最速 DI</strong> 或 <strong>跳重拳 J.HP</strong></td>
+<td style="text-align: left;">J.HP ➔ 5HP ➔ 214KK ➔ 623HP ➔ SA3</td>
+<td style="text-align: center;"><strong>S+ (4500~5500 / 削1.5氣)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>突進跳踢</strong></td>
+<td style="text-align: left;"><strong>昂・德・奧特 (236K)</strong></td>
+<td style="text-align: center;">上段</td>
+<td style="text-align: center;"><strong>-11F 以上【字幕校正】</strong></td>
+<td style="text-align: center;"><strong>站強拳 (5HP，9F) / 2MP</strong></td>
+<td style="text-align: left;">5HP ➔ 214MK ➔ 623HP</td>
+<td style="text-align: center;"><strong>A+ (3000~3400)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>無敵凹技</strong></td>
+<td style="text-align: left;"><strong>OD 昂・德・奧特 (236KK)</strong></td>
+<td style="text-align: center;">完全無敵</td>
+<td style="text-align: center;"><strong>-26F</strong></td>
+<td style="text-align: center;"><strong>微步前強拳 (4HK PC)</strong></td>
+<td style="text-align: left;">4HK ➔ 2MP ➔ 5HP ➔ 綠衝 ➔ 5HP ➔ 214HP ➔ SA3</td>
+<td style="text-align: center;"><strong>S+ (5000+)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>滑踢摸下</strong></td>
+<td style="text-align: left;"><strong>弱德加傑 (214LK)</strong></td>
+<td style="text-align: center;">下段突進</td>
+<td style="text-align: center;"><strong>-24F【字幕校正】</strong></td>
+<td style="text-align: center;"><strong>任意最大連段起手</strong></td>
+<td style="text-align: left;">5HP ➔ 214MK ➔ 623HP (任何連段皆可)</td>
+<td style="text-align: center;"><strong>S (3500+)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中段跳砸</strong></td>
+<td style="text-align: left;"><strong>強德加傑 (214HK)</strong></td>
+<td style="text-align: center;">中段 (破蹲防)</td>
+<td style="text-align: center;"><strong>-9F【字幕校正】</strong></td>
+<td style="text-align: center;"><strong>下中腳 (2MK) / 2MP</strong></td>
+<td style="text-align: left;">2MK ➔ 236MK / 2MP ➔ 214MK</td>
+<td style="text-align: center;"><strong>A (2400~2800)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中距離抽擊</strong></td>
+<td style="text-align: left;"><strong>中德加傑 (214MK)</strong></td>
+<td style="text-align: center;">上段兩擊</td>
+<td style="text-align: center;"><strong>-13F【字幕校正】</strong></td>
+<td style="text-align: center;"><strong>下中拳 (2MP) / 5HP</strong></td>
+<td style="text-align: left;">2MP ➔ 5HP ➔ 236HK</td>
+<td style="text-align: center;"><strong>A+ (2800~3200)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>打擊投</strong></td>
+<td style="text-align: left;"><strong>打擊投 (236P Renversé)【字幕補充】</strong></td>
+<td style="text-align: center;">打擊判定</td>
+<td style="text-align: center;"><strong>-16F 以上【字幕校正】</strong></td>
+<td style="text-align: center;"><strong>站強拳 (5HP，9F)</strong></td>
+<td style="text-align: left;">5HP ➔ 滿額大連段</td>
+<td style="text-align: center;"><strong>S (3500+)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>掃腿</strong></td>
+<td style="text-align: left;"><strong>下強腳 (2HK)</strong></td>
+<td style="text-align: center;">下段</td>
+<td style="text-align: center;"><strong>-6F</strong></td>
+<td style="text-align: center;"><strong>站弱腳 (5LK，5F) / 2LP</strong></td>
+<td style="text-align: left;">5LK ➔ 236LK 或 2LP ➔ 623HP</td>
+<td style="text-align: center;"><strong>B (1500~2100)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技</strong></td>
+<td style="text-align: left;"><strong>SA1 芭蕾旋轉 (236236P)</strong></td>
+<td style="text-align: center;">打擊無敵</td>
+<td style="text-align: center;"><strong>-29F</strong></td>
+<td style="text-align: center;"><strong>最痛 PC 連段起手</strong></td>
+<td style="text-align: left;">5HK (PC) ➔ 5HP ➔ 綠衝連段 ➔ CA</td>
+<td style="text-align: center;"><strong>S+ (5500+)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技</strong></td>
+<td style="text-align: left;"><strong>SA2 空中下砸 (214214K)</strong></td>
+<td style="text-align: center;">完全無敵</td>
+<td style="text-align: center;"><strong>-34F</strong></td>
+<td style="text-align: center;"><strong>最痛 PC 連段起手</strong></td>
+<td style="text-align: left;">跳重拳 ➔ 地面最痛滿額連段</td>
+<td style="text-align: center;"><strong>S+ (5500+)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺指令投</strong></td>
+<td style="text-align: left;"><strong>SA3 / CA (236236K)</strong></td>
+<td style="text-align: center;">投擲 (不可拆)</td>
+<td style="text-align: center;"><strong>抓空 50F+</strong></td>
+<td style="text-align: center;"><strong>垂直跳起手</strong></td>
+<td style="text-align: left;">垂直跳 J.HK ➔ 5HP 蓄電刃 ➔ 滿額斬殺</td>
+<td style="text-align: center;"><strong>S+ (6000+)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>🥋 第十章：隆（Ryu）專屬實戰破局對策與推薦連段庫</h2>
+<p>作為《快打旋風 6》的正統道服標竿，隆（Ryu）在面對瑪濃時擁有極大的幾何與節奏優勢。掌握以下專屬連段與戰術，能讓瑪濃的勝率暴跌：</p>
+<h3>1. 隆立回核心三板斧</h3>
+<ol>
+<li><strong>中距離波動拳（Hadoken 236P）洗禮</strong>：利用強弱波動拳的速度差，逼迫沒有飛行道具的瑪濃停在原地格擋或冒險跳躍。</li>
+<li><strong>長腿差合下中K（2MK）</strong>：在瑪濃 5HK 揮空時，隆的 2MK 判定極其優秀，輸入 2MK ➔ 236HP 或 2MK ➔ 綠衝 打出差合。</li>
+<li><strong>見綠衝最速 Drive Reversal</strong>：防住瑪濃 5MP 後，看見綠衝火花毫不猶豫按 6HP+HK，無情擊碎瑪濃的進攻夢想！</li>
+</ol>
+<h3>2. 隆對瑪濃必備確定反擊連段庫</h3>
+<h4>① 抓空 38F 大破綻懲罰（PC）最大傷害連段（後衝躲指令投後）</h4>
+<ul>
+<li><strong>無氣平民連段（0 綠槽消耗）</strong>：
+  後衝 ➔ 5HP (PC) ➔ 214MK (旋風腿) ➔ 623HP (強昇龍拳)<br />
+<em>傷害：約 3,350，擊倒並獲得前衝壓起身有利。</em></li>
+<li><strong>鬥氣推進連段（消耗 3 格綠槽）</strong>：
+  後衝 ➔ 4HK (PC 破防) ➔ 2MP ➔ Cancel 綠衝 ➔ 4HK ➔ 5HP ➔ 214HP (強龍卷) ➔ 623HP<br />
+<em>傷害：約 4,400，搬運大半個版面直達版邊！</em></li>
+<li><strong>終極 CA 斬殺連段（消耗 3 格綠槽 + SA3）</strong>：
+  後衝 ➔ 5HP (PC) ➔ Cancel 綠衝 ➔ 4HK ➔ 5HP ➔ 236HP ➔ SA3 (真・昇龍拳)<br />
+<em>傷害：高達 </em><em>5,600+</em><em>！直接將半血以上的瑪濃一波帶走！</em></li>
+</ul>
+<h4>② 防住強德加傑 (-9F) / 芭蕾跳踢 (-11F+) / 德加傑的通用連段【字幕校正】</h4>
+<ul>
+<li><strong>民工最穩確反（6F 起手）</strong>：
+  防住下落 ➔ 2MP (下中拳) ➔ 5HP ➔ 236MK (足刀開拓踢) ➔ 前衝壓起身<br />
+<em>傷害：約 2,600，100% 不會失誤的肌肉記憶連段。</em></li>
+<li><strong>版邊高傷確反（帶 SA1）</strong>：
+  防住下落 ➔ 2MP ➔ 5HP ➔ 236KK (OD足刀) ➔ 623HP ➔ SA1 (真空波動拳)<br />
+<em>傷害：約 3,800！</em></li>
+</ul>
+<h4>③ 防住 OD 昂・德・奧特 (-26F) 或 SA1/SA2 的極限處刑連段</h4>
+<ul>
+<li>微步 4HK (PC) ➔ 2MP ➔ 5HP ➔ 214KK (OD波刃) ➔ 電刃蓄力 ➔ 623HP ➔ SA3<br />
+<em>傷害：高達 </em><em>5,850</em><em>，視覺效果與打擊感拉滿的宗師級處刑！</em></li>
+</ul>
+<h3>3. 現代模式（Modern）玩家專屬精準操作指南</h3>
+<ul>
+<li><strong>一鍵昇龍防空</strong>：瑪濃因受不了波動拳壓制而前跳時，現代模式玩家直接按下「必殺技鍵（一鍵昇龍）」，反應時間縮短至 0.15 秒內，100% 封死瑪濃的空中入侵！</li>
+<li><strong>一鍵 D-Reversal</strong>：看見瑪濃 5MP 綠衝，現代模式直接按「前 + 防禦反擊」，毫不拖泥帶水！</li>
+<li><strong>一鍵 SA3 斬殺</strong>：後衝躲過指令投後，若手感緊張難以搖出複雜指令，直接按「重 + 必殺技（一鍵 SA3）」，穩定收割 4000+ 傷害！</li>
+</ul>
+<hr />
+<h2>🏁 第十一章：總結與實戰對策 Checklist（心態金律 8 條）</h2>
+<p>面對瑪濃，勝負全在「心態的沉著」與「數據的精準」。請在每場對戰前後默背以下 8 條金律：</p>
+<p><code>【對戰瑪濃實戰致勝 8 大金律】
+  1. 【寧吃打擊不吃投】：近身猜拳寧可吃輕拳被踢倒，也絕不讓瑪濃累積獎章！
+  2. 【讀投必選後衝步】：後衝 1F 避投且無防空風險，躲過 38F 抓空直接拍 Drive Impact 削氣！
+  3. 【芭蕾跳踢必中反】：昂・德・奧特被防全強度皆在 -11F 以上【字幕校正】，防住直接出大連段穩收確反！
+  4. 【德加傑全部是大破綻】：弱版滑踢 -24F 任何連段都能確反、中版 -13F、強版中段 -9F【字幕校正】，全部是確反的提款機！
+  5. 【見綠衝拍 D-Reversal】：瑪濃 5MP 綠衝預約 2MP，防住直接拍 Drive Reversal 必中 PC！
+  6. 【長腿揮空切腳踝】：站在 5HK/2MK 外側，看見大腿揮空收招，以 2MK 差合打碎其下盤！
+  7. 【波升體系無情放風箏】：利用瑪濃無飛行道具的死穴，以波動拳牽制逼其跳躍，強昇龍對空！
+  8. 【版邊無昇龍瘋狂柔道】：將瑪濃逼入版邊後，利用其無平價無敵技的缺陷，以柔道與打擊徹底處刑！</code></p>
+<h3>📋 實戰自檢清單 (Checklist)</h3>
+<ul>
+<li>[ ] 我是否清楚瑪濃指令投抓空有 38F 破綻，並能在後衝後打出滿額 PC 連段？</li>
+<li>[ ] 當瑪濃達到 Lv.3 獎章以上時，我是否維持沉著，避免無腦凹昇龍暴斃？</li>
+<li>[ ] 我是否能分清芭蕾跳踢一段與二段，並在二段被防後穩定打出 2MP 確反？</li>
+<li>[ ] 面對弱德加傑滑踢與強德加傑跳砸，我是否都能在防住後第一時間按下確反鍵？</li>
+<li>[ ] 面對瑪濃的 5MP 取消綠衝，我是否敢於直接交出 Drive Reversal 截斷其進攻？</li>
+<li>[ ] 在瑪濃倒地時，我是否能壓抑亂動的衝動，看清其起身習慣再進行壓制？</li>
+<li>[ ] 把瑪濃推到版邊後，我是否有意識地提防其最後搏命的 SA3 指令投？</li>
+</ul>
+<p>只要徹底貫徹這套科學系統的對策，瑪濃的優雅芭蕾將徹底淪為破綻百出的雜技，天梯勝率必將迎來爆發式的直線攀升！</p><div class="nav"><span><a href="143.html">← 143 けんてぃ 隆視角對戰雅斯敏Yasmine確反與架勢完全破解</a></span><span style="text-align:right"><a href="145.html">145 holosoku 最新版瑪麗莎全招式確反與盾牌架勢破解 →</a></span></div></div></body></html>

@@ -1,0 +1,532 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Broski 職業選手親授不知火舞Mai完全擊潰對策大典｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 161 篇</div><h1>【影片 161 深度解析】Broski：職業選手親授不知火舞 Mai 完全擊潰對策大典 (How to Beat Mai)</h1><ul>
+<li><strong>影片來源</strong>：Broski (<code>jaANNBXZVmA</code>)</li>
+<li><strong>原標題</strong>：How to beat Mai in Street Fighter 6</li>
+<li><strong>講者簡介</strong>：Broski（英國頂尖職業電競名將、Capcom Cup 頂級選手、A.K.I. 與各類機制型角色之世界級權威、以極致嚴謹的幀數解析與格鬥幾何判定拆解聞名）</li>
+<li><strong>影片時長</strong>：24 分 04 秒 (全程以訓練場實測、幀數條逐格比對、受擊框/打擊框可視化演練，並親自以<strong>隆 (Ryu)</strong> 為首要示範對象進行全面攻防解構)</li>
+<li><strong>YouTube 連結</strong>：<a href="https://www.youtube.com/watch?v=jaANNBXZVmA">https://www.youtube.com/watch?v=jaANNBXZVmA</a></li>
+<li><strong>適用版本</strong>：Street Fighter 6 Year 2 ～ Year 3 全版本（餓狼傳說參戰角色「不知火舞 Mai」核心性能全面破解）</li>
+<li><strong>核心定位</strong>：
+  不知火舞（Mai Shiranui）甫一登場便以華麗的花蝶扇牽制、極速滑鏟、空中鼯鼠俯衝踢（Divekick）、多段必殺忍蜂以及令人窒息的「蓄力扇壓制（Charged Fan Oki）」迅速席捲天梯，成為天梯中勝率極高且讓對手極度頭疼的超強人氣角色。
+  然而，頂尖職業選手 Broski 在深度剖析其底層代碼後給出了震撼結論：<strong>「不知火舞看似密不透風的壓制，在系統機制層面存在大量『假有利（Fake Pressure）』與『巨大物理縫隙（Gigantic Gaps）』！從滑鏟的全距離可確反、俯衝踢即使踢在腳踝也僅有 +1F（根本無法形成真二擇），到對手最愛用的『通常技取消蓄力扇』存在足夠出昇龍拳的巨大空隙——不知火舞的一切偽壓制都能被冷靜瓦解！」</strong>
+  本指南完整還原 Broski 24 分鐘實機教學，並以自角色隆（Ryu）為第一人稱實戰視角，提供最精確的微觀時間戳、幀數破綻與最痛確反連段！</li>
+</ul>
+<hr />
+<h2>一、 不知火舞核心招式微觀幀數與終極死穴總表 (Mai Shiranui Counter Matrix)</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: center;">招式名稱</th>
+<th style="text-align: center;">遊戲指令</th>
+<th style="text-align: center;">發生幀 / 判定屬性</th>
+<th style="text-align: center;">被防幀數 (Block Advantage)</th>
+<th style="text-align: center;">對手常見套路與欺詐</th>
+<th style="text-align: center;">終極破解手段 (Ultimate Counter)</th>
+<th style="text-align: center;">隆 (Ryu) 專屬最痛懲處連段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>花蝶扇 (Kachousen)</strong></td>
+<td style="text-align: center;"><code>236P</code><br>(弱/中/強)</td>
+<td style="text-align: center;">發生 14F / 飛行道具<br>全體動作 52F，雙段判定</td>
+<td style="text-align: center;">依飛行距離為 <strong>-4F ～ +2F</strong><br>近身被防約 <strong>-4F</strong></td>
+<td style="text-align: center;">遠程瘋狂發扇逼對手跳<br>隨後以對空技截擊</td>
+<td style="text-align: center;"><strong>①【字幕補充】基本扇可用通常技 (Jab 輕拳) 直接一拳打爆！</strong><br><strong>② 基本扇無耐久度，任何波動拳直接穿透消滅</strong><br><strong>③ 中距離見甩手前搖直接前跳 (8HP 打 PC)</strong></td>
+<td style="text-align: center;">前跳直擊發扇硬直：<br><code>跳入 8HP (PC) &gt; 5HP &gt; 66 (綠衝) &gt; 5HP &gt; 4HP &gt; 623HP</code> (3680 傷害)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>蓄力花蝶扇 (Charged Fan)</strong></td>
+<td style="text-align: center;"><code>236[P]</code><br>(長按蓄力)</td>
+<td style="text-align: center;">蓄力時間長達 40F+<br>擊中或被防後巨大有利</td>
+<td style="text-align: center;">被防高達 <strong>+20F ～ +25F</strong><br>但起手前搖極為漫長</td>
+<td style="text-align: center;">擊倒對手後起身強行蓄力<br>或通常技後取消蓄力扇偷壓制</td>
+<td style="text-align: center;"><strong>① 通常技 ➔ 蓄力扇之間存在「巨大縫隙」！</strong><br><strong>② 看到蓄力瞬間直接輸入無敵昇龍 (<code>623HP</code> / OD)</strong><br><strong>③ 起身前跳或後 Dash 避開第二段判定</strong></td>
+<td style="text-align: center;">縫隙中昇龍破除：<br><code>623HP (Counter Hit)</code> 或 <code>623PP (OD 昇龍)</code> (直接打斷蓄力，反轉攻守)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>下段滑鏟 (Slide Kick)</strong></td>
+<td style="text-align: center;"><code>2HK</code><br>(蹲下重腳)</td>
+<td style="text-align: center;">發生 10F / 下段判定<br>全身貼地長距離滑行</td>
+<td style="text-align: center;"><strong>-4F (極限尖端) ～ -11F (近身)</strong><br>天梯常見距離為 <strong>-6F ~ -8F</strong></td>
+<td style="text-align: center;">中距離突施冷箭偷下段<br>企圖利用尖端判定逃避確反</td>
+<td style="text-align: center;"><strong>① 絕非完全安全！全距離皆可確反！</strong><br><strong>② 站防/蹲防後立刻出 4F/5F 小技 (5LK / 2LP)</strong><br><strong>③ 尖端距離出 5LK 穩穩抓中 PC！</strong></td>
+<td style="text-align: center;">防住滑鏟確反：<br><code>5LK (PC) &gt; 236MK</code> (1480 傷害) 或 <code>2MP (PC) &gt; 236LK &gt; 623HP</code> (2560 傷害)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>鼯鼠之舞 (Musasabi Divekick)</strong></td>
+<td style="text-align: center;">空中 <code>214P</code><br>或跳躍俯衝</td>
+<td style="text-align: center;">發生 12F+ / 空中變軌<br>依命中對手高度決定幀數</td>
+<td style="text-align: center;"><strong>命中腰部以上：-4F ～ -8F</strong> (大負)<br><strong>極限命中腳踝：僅為 0F ～ +1F</strong>！</td>
+<td style="text-align: center;">空中變軌誘騙對手昇龍空揮<br>落地企圖利用假有利搶投</td>
+<td style="text-align: center;"><strong>① 命中腰部以上：落地無腦出 5LK/2MP 確反！</strong><br><strong>② 即使踢到腳踝 (+1F)：連打 2LP (4F 輕拳) 必勝其投擲！</strong><br><strong>③ 看見起跳俯衝，原地垂直跳 8HP 截擊</strong></td>
+<td style="text-align: center;">抓落地硬直確反：<br><code>5LK (PC) &gt; 236MK</code> (腰部命中確反) / 腳踝命中被防連打 <code>2LP &gt; 5LP &gt; 623HP</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>必殺忍蜂 (Shinobi Bachi)</strong></td>
+<td style="text-align: center;"><code>41236K</code><br>(弱/中/強/OD)</td>
+<td style="text-align: center;">弱 15F / 強 22F / OD 12F<br>全身帶火橫向滑行衝撞</td>
+<td style="text-align: center;">弱 <strong>-8F</strong> / 中 <strong>-10F</strong> / 強 <strong>-12F</strong><br>OD 版被防 <strong>-15F</strong>！</td>
+<td style="text-align: center;">中遠距離突進穿波<br>削鬥氣並推進版邊</td>
+<td style="text-align: center;"><strong>① 撞上防禦後必定吃大確反！</strong><br><strong>② 強版被防直接 5HP 綠衝打滿額連段</strong><br><strong>③ OD 版穿波全螢幕傷害僅 1800，防住必死</strong></td>
+<td style="text-align: center;">防住必殺忍蜂 (-12F/-15F)：<br><code>5HP (PC) &gt; 66 (綠衝) &gt; 5HP &gt; 4HP &gt; 236KK &gt; 623HP</code> (3620 傷害)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>龍炎舞 (Ryuuenbu)</strong></td>
+<td style="text-align: center;"><code>214P</code><br>(弱/中/強/OD)</td>
+<td style="text-align: center;">發生 13F~18F / 揮舞火焰扇<br>中距離橫掃打擊</td>
+<td style="text-align: center;">弱 <strong>-6F</strong> / 中 <strong>-8F</strong> / 強 <strong>-10F</strong><br>OD 版被防 <strong>-12F</strong></td>
+<td style="text-align: center;">牽制中距離摸獎<br>企圖利用火炎推開距離逃避確反</td>
+<td style="text-align: center;"><strong>① 弱版被防後微推 5LK 確反</strong><br><strong>② 中/強版被防後直接 2MP / 5HP 痛懲</strong><br><strong>③ 空揮時扇端受傷判定殘留長達 18F</strong></td>
+<td style="text-align: center;">防住火焰扇確反：<br><code>2MP (PC) &gt; 236LK &gt; 623HP</code> (2560 傷害)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>飛翔龍炎陣 (Anti-Air DP)</strong></td>
+<td style="text-align: center;"><code>623K</code><br>(弱/中/強/OD)</td>
+<td style="text-align: center;">發生 6F / 完全無敵對空<br>升空火焰踢擊</td>
+<td style="text-align: center;">弱 <strong>-35F</strong> / 強 <strong>-38F</strong><br>OD 版被防 <strong>-42F</strong> (懸空落地)</td>
+<td style="text-align: center;">起身凹無敵技反打<br>空中對空攔截</td>
+<td style="text-align: center;"><strong>① 誘導其凹昇龍後完全防守</strong><br><strong>② 著地前有長達 40 幀大破綻</strong><br><strong>③ 打滿額滿氣 CA3 斬殺！</strong></td>
+<td style="text-align: center;">落地滿額極限確反：<br><code>前微走 &gt; 5HK (PC) &gt; 4HP &gt; 66 (綠衝) &gt; 4HP &gt; 236MK &gt; 236236P (CA3)</code> (6240 傷害)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>四連扇子陣 (Level 2 Super)</strong></td>
+<td style="text-align: center;"><code>236236P</code><br>(超必殺技 Level 2)</td>
+<td style="text-align: center;">全螢幕連續丟出 4 把扇子<br>扇子旋轉推進</td>
+<td style="text-align: center;">扇子全部防住為有利<br>但扇子之間存在「巨大穿透空間」</td>
+<td style="text-align: center;">全螢幕放 4 把扇子後生綠衝衝臉<br>意圖打出強制有利二擇</td>
+<td style="text-align: center;"><strong>① 此招是徹頭徹尾的「假壓制 (Fake)」！</strong><br><strong>② 舞發出扇子並綠衝的瞬間：直接出「鬥氣反擊 (Drive Reversal)」！</strong><br><strong>③ 具有無敵的技 (OD 昇龍/SA) 可直接穿透扇子反殺！</strong></td>
+<td style="text-align: center;">穿透扇子直接制裁：<br><code>6HP+HK (Drive Reversal)</code> (踹飛舞並中斷扇子) 或 <code>623PP</code> (無敵穿透擊倒)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、 不知火舞通常技性能、壓制陷阱與對隆（Ryu）專屬距離破綻</h2>
+<h3>1. 通常技安全性與「肉眼不可見」的負幀真相</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:00:58]</code> ～ <code>[00:02:13]</code></li>
+<li><strong>核心通常技檢視與幀數條實測</strong>：</li>
+<li><strong>站立重腳 (5HK)</strong>：判定距離極遠，被防 <strong>-4F</strong>。很多防守方因其推開距離較遠不敢按鍵，但舞在此距離同樣無法形成後續通常技連攜。</li>
+<li><strong>站立重拳 (5HP)</strong>：雙扇刺擊，被防 <strong>-3F</strong>。若非極限距離命中，舞處於實打實的微劣勢。</li>
+<li><strong>蹲下重拳 (2HP)</strong>：向上揮扇對空，被防 <strong>-7F</strong>。在近身若被防守方防住，防守方手握完全確反權。</li>
+<li><strong>蹲下中腳 (2MK)</strong>：下段牽制神器，被防 <strong>-6F</strong>。舞玩家常企圖在中距離摸獎取消必殺技，但若空揮（Whiff），腿部受傷判定框（Hurtbox）殘留長達 17F，是極佳的差合（Whiff Punish）標靶。</li>
+<li><strong>Broski 揭秘</strong>：
+  很多玩家在面對舞時覺得「她怎麼按什麼都是安全的？」，甚至覺得舞隨時都在壓制。Broski 指出，舞的通常技在「常態下全部是負幀（Slightly Minus）」，只要她沒有在打倒你的瞬間卡到精準的壓起身肉體幀（Meaty），她按完中重攻擊後<strong>回合格鬥權就已經移交給防守方</strong>！</li>
+</ul>
+<h3>2. 致命距離陷阱：舞面對隆（Ryu）的「3 輕拳推開距離死穴」</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:02:45]</code> ～ <code>[00:04:30]</code></li>
+<li><strong>Broski 親自以 Ryu 進行實機拆解</strong>：
+  天梯不知火舞玩家最基礎的連段確認是「連打 3 發輕拳（2LP / 5LP）」。
+  當舞對著隆連續打出 3 發輕拳時，由於 SF6 的防禦推開機制（Pushback），舞會被推到一個非常尷尬的微中距離：
+  1. <strong>舞若試圖出 5LK 延續壓制</strong>：舞的 5LK 發生是 5F，但距離極短，在 3 發輕拳後出 5LK 會 <strong>100% 揮空（Whiff）</strong>！
+  2. <strong>舞若試圖後 Dash 脫離</strong>：隆只要在防住第 3 發輕拳後立刻按鍵，舞後 Dash 根本逃不掉，直接被抓打康！
+  3. <strong>舞若試圖取消花蝶扇（236P）</strong>：此時通常技與扇子之間存在縫隙，隆直接出 5LK 或 2MP 可以乾淨俐落地打出打康（Counter Hit）！
+  4. <strong>舞的唯一解法</strong>：只能硬著頭皮花費 3 格鬥氣進行綠衝取消，或者停手防守。</li>
+<li><strong>實戰應對公式</strong>：
+  面對舞的輕拳連打，防住第 2～3 下後，牢牢按住防守，<strong>看見其推開後只要舞敢妄動，立刻出 5LK 或 2MP 搶回絕對主動權</strong>！</li>
+</ul>
+<h3>3. 通常技差合（Whiff Punish）幾何判定分析</h3>
+<ul>
+<li><strong>舞 5HP 空揮受擊框</strong>：舞出 5HP 刺扇時，雙臂與胸前的受擊框會向前延展 2 個身位，持續 16 幀。隆在立回中保持 2.5 個身位虛晃，見其手臂探出，按下 <code>2MP &gt; 236MK</code>，能 100% 抓中手臂受擊框！</li>
+<li><strong>舞 2MK 空揮差合</strong>：舞的蹲中腳收回時間長達 15 幀，隆可以使用 <code>5HP (綠衝預置)</code> 直接差合其下段，一旦打出 Punish Counter，直接啟動高達 3,600+ 傷害的大連段。</li>
+</ul>
+<hr />
+<h2>三、 【招式 2：下段滑鏟】全距離確反指南與極限尖端迷思破除</h2>
+<h3>1. 招式底層特性與天梯欺詐</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:04:51]</code> ～ <code>[00:05:35]</code></li>
+<li><strong>指令</strong>：不知火舞 <code>蹲下重腳 (2HK)</code> 或 特殊滑鏟技。</li>
+<li><strong>底層數據</strong>：發生 10F，持續 12F，硬直長達 20F+，全體硬直高達 44F。</li>
+<li><strong>被防幀數</strong>：近距離被防 <strong>-11F</strong>；中距離被防 <strong>-8F</strong>；極限腳尖命中被防 <strong>-4F</strong>。</li>
+<li><strong>天梯迷思破除（Broski 實證）</strong>：
+  很多天梯舞玩家喜歡在看似安全的 2.5 個身位突然滑鏟，並自恃「滑鏟尖端被防只有 -4F，一般人確反不了」。
+  Broski 怒斥這個觀點是徹底的迷思：
+  <strong>「滑鏟在絕大多數實戰距離下，被防硬直都在 -6F 到 -10F 之間！即便舞玩家費盡心機算計到了所謂的『極限腳尖』，被防依然是實打實的 -4F！而具備優秀 4F/5F 長腿通常技的角色，在任何距離下都能將其踢爆！」</strong></li>
+</ul>
+<pre><code> [不知火舞向前貼地滑鏟] ──────&gt; [撞上隆的蹲防] ──────&gt; [舞雙腿卡死在地面 (-6F~-8F)]
+                                                              │
+                                                              ▼
+                                        【隆直接按下 2MP / 5LK】
+                                        觸發大紅字 PUNISH COUNTER！
+</code></pre>
+<h3>2. 隆（Ryu）專屬四階距離確反操作</h3>
+<ul>
+<li><strong>① 近距離防住滑鏟 (-9F ~ -11F)</strong>：
+  舞貼臉滑鏟，防住後隆直接出最痛重攻擊：
+  <code>5HP (Punish Counter) &gt; 66 (綠衝) &gt; 5HP &gt; 4HP &gt; 236MK &gt; 623HP</code>
+  造成 <strong>3,620 點毀滅性傷害</strong>！</li>
+<li><strong>② 常規中距離防住滑鏟 (-6F ~ -8F)</strong>：
+  防住瞬間，隆直接按下 <strong>蹲下中拳 (<code>2MP</code>, 發生 6F)</strong>：
+  <code>2MP (Punish Counter) &gt; 236LK (弱龍卷) &gt; 623HP (強昇龍)</code>
+  造成 <strong>2,560 點傷害</strong>，直接把不知火舞踢進版邊！</li>
+<li><strong>③ 極限腳尖防住滑鏟 (-4F ~ -5F)</strong>：
+  如果距離極遠，2MP 可能會揮空，隆直接出 <strong>站立輕腳 (<code>5LK</code>, 發生 5F，判定向前伸展極遠)</strong>：
+  <code>5LK (Punish Counter) &gt; 236MK (中龍卷旋風腳)</code>
+  造成 <strong>1,480 點傷害</strong>，穩健推開並擊倒！</li>
+<li><strong>④ 蹲輕拳極速截擊 (-4F 兜底)</strong>：
+  若在混亂中反應不及，直接連打 <code>2LP (4F)</code>，必出 Punish Counter，隨後接 <code>5LP &gt; 623HP</code>！</li>
+</ul>
+<hr />
+<h2>四、 【招式 3：鼯鼠俯衝踢 (Musasabi Divekick)】空中變軌與高度幀數真相</h2>
+<h3>1. 俯衝踢的偽裝：它根本沒有你想的那麼有利！</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:05:36]</code> ～ <code>[00:08:25]</code></li>
+<li><strong>招式特性</strong>：空中 <code>214P</code> 或 扒牆後飛撲下落。舞在空中突然折返，以雙腳急速下踏。</li>
+<li><strong>天梯痛點</strong>：
+  舞玩家經常在跳躍時突然出俯衝踢，以此來騙取防守方的昇龍拳空揮（Bait Anti-Air）。防守方如果不敢出昇龍而選擇防禦，舞落地後往往擺出搶動姿態，讓防守方陷入被動。</li>
+<li><strong>Broski 的精密高度測試（Critical Truth）</strong>：
+  Broski 在訓練場透過逐格幀數條實測，揭露了震驚所有人的事實：
+  1. <strong>命中腰部及以上</strong>：被防為 <strong>-4F 到 -8F</strong>！舞處於巨大不利，防守方手握完全確反權！
+  2. <strong>即使命中膝蓋或腳踝（最低點）</strong>：常態下被防<strong>僅僅是 0F 或 +1F</strong>！
+  3. <strong>即使在開啟火庫存（Fire Stocks）+ OD 俯衝踢的極端狀態下</strong>：極限最低點命中被防<strong>最高也只有 +2F</strong>，通常實戰中依然只有 <strong>+1F</strong>！</li>
+</ul>
+<pre><code>   [不知火舞空中起跳俯衝踢]
+              │
+              ├───&gt; [命中頭部/胸口/腰部] ───&gt; 【被防 -4F ~ -8F】 ───&gt; 落地直接吃 5LK/2MP 確反！
+              │
+              └───&gt; [極限命中腳踝/腳尖] ───&gt; 【被防 0F ~ +1F】 ────&gt; 舞試圖搶投(5F) ───&gt; 防守方狂按 2LP(4F) 打康擊倒！
+</code></pre>
+<h3>2. 為何「連打 4F 輕拳 (2LP)」是不知火舞俯衝踢的終極剋星？</h3>
+<ul>
+<li><strong>博弈數學揭秘</strong>：
+  天梯舞玩家踢完落地後，最喜歡幹的事情就是「利用所謂的有利幀直接出普通摔（Throw）」。
+  然而，SF6 的普通摔發生需要 <strong>5 幀</strong>！</li>
+<li>假設舞的俯衝踢踢在你的腳踝，她獲得了最佳情況的 <strong>+1F</strong>。</li>
+<li>她落地立刻出摔：<code>1F (舞有利) + 5F (摔發生) = 第 6 幀判定產生</code>。</li>
+<li>防守方如果在此時狂按 4F 輕拳（隆的 <code>2LP</code>，發生 4F）：
+    <code>第 4 幀出拳判定產生</code>！</li>
+<li><strong>結論</strong>：4F &lt; 6F！<strong>防守方的 4F 輕拳會硬生生在舞的抓投判定出來前將其打出 Counter Hit！</strong></li>
+<li><strong>實戰防禦黃金法則</strong>：
+  1. 看到舞俯衝踢命中你的上半身：<strong>落地直接出 5LK / 2MP 確反打滿一套</strong>！
+  2. 看到舞俯衝踢命中你的腳部：<strong>落地不要猶豫，立刻狂按 <code>2LP &gt; 5LP &gt; 623HP</code></strong>！如果她敢偷摔，必被打康升天；如果她出 4F 小拳，雙方同時搶招打擊相殺（Trade），舞完全佔不到任何便宜！</li>
+</ul>
+<h3>3. 空對空與昇龍截擊技巧</h3>
+<ul>
+<li><strong>垂直跳空對空 (8跳 HP)</strong>：看見舞起跳扒牆或起飛的瞬間，隆原地垂直跳出 <code>8HP</code>，能在舞折返向下衝之前直接將其在最高點打落。</li>
+<li><strong>延遲昇龍拳 (Late Shoryuken)</strong>：面對喜歡用俯衝踢騙昇龍的舞，隆不要在起跳最高點出昇龍，而是沉住氣「看著她俯衝衝到胸口高度的瞬間」拉出 <code>623HP</code>，強昇龍的 1～14 幀對空無敵會無視其踢擊判定直接擊墜！</li>
+</ul>
+<hr />
+<h2>五、 【招式 4：花蝶扇 (Kachousen) 與蓄力扇 (Charged Fan)】空隙與破局大典</h2>
+<h3>1. 常規花蝶扇的飛行道具特性與【字幕補充】通常技直接打爆神技</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:08:26]</code> ～ <code>[00:12:00]</code></li>
+<li><strong>招式指令</strong>：不知火舞 <code>236P</code>（弱/中/強）。</li>
+<li><strong>【字幕補充：Broski 揭露之底層物理死穴——輕拳 Jab 可直接打爆花蝶扇】</strong>：</li>
+<li><strong>原片實錄</strong>：<em>「Her basic fan... you can beat this with normals unlike every other projectile in the game! So if you see the uncharged basic one coming at you, you can just punch it to get rid of it! The best thing to do usually is just jab it!」</em></li>
+<li><strong>與所有波完全不同</strong>：不同於 SF6 中其他角色的氣功波，不知火舞未蓄力的基礎花蝶扇在物理屬性上<strong>能被通常技直接消滅</strong>！</li>
+<li>看見基礎扇飛過來，防守方甚至不需要格擋，直接出 <strong>站弱拳 (5LP) 或 蹲弱拳 (2LP)</strong> 一拳把扇子打爆！</li>
+<li><strong>零氣功耐久度 (No Projectile Durability)</strong>：基礎扇完全沒有飛行道具判定耐久度，任何角色的常規氣功波（如隆的波動拳）都能直接一穿而過將其徹底消除！</li>
+<li><strong>底層物理數據對比（花蝶扇 vs 隆波動拳）</strong>：</li>
+<li><strong>花蝶扇</strong>：發生 14F，持續 4F，硬直 34F，<strong>全體動作 52F</strong>。</li>
+<li><strong>隆波動拳</strong>：發生 16F，持續 2F，硬直 29F，<strong>全體動作 47F</strong>！</li>
+<li><strong>Broski 數值實測</strong>：隆的波動拳全體動作比花蝶扇整整快了 <strong>5 幀</strong>！這意味著在純粹的遠程波戰中，隆的收招恢復更快，更容易在對波中佔得先機！</li>
+<li><strong>對策要點</strong>：</li>
+<li>中遠距離：隆可以用波掌氣裝填後的「電刃波動拳」直接擊碎花蝶扇並穿透直擊不知火舞！</li>
+<li>中距離（約 2～2.5 身位）：防守方保持專注，一旦看見不知火舞甩手掏扇子的前搖（14F），<strong>果斷前跳（Forward Jump 9跳）</strong>！舞的整套收招硬直長達 40F+，前跳下落重拳必得毀滅性打康！</li>
+</ul>
+<h3>2. 蓄力花蝶扇（Charged Fan）壓起身的「巨大縫隙」實證與【字幕補充】受身選擇</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:12:01]</code> ～ <code>[00:17:50]</code></li>
+<li><strong>天梯毒瘤套路</strong>：
+  天梯舞玩家在打倒對手後，或者在版邊通常技後，喜歡原地長按 <code>236[P]</code> 蓄力。蓄力扇在被防時高達 <strong>+20F ～ +25F</strong>，能讓舞跟在扇子後面為所欲為。</li>
+<li><strong>【字幕補充：受身方向嚴肅警告與 Perfect Parry 後摔反殺】</strong>：</li>
+<li><strong>切忌無腦後受身 (Never Autopilot Back Roll)</strong>：Broski 強烈警告，很多玩家倒地習慣性後後受身，這正好落入舞的蓄力扇壓制甜點位，被下落扇子完全封死動彈不得！</li>
+<li><strong>正解：選擇「原地受身 (Rising in Place)」</strong>！原地受身緊貼不知火舞身位，防守方直接使用 <strong>「Perfect Parry (完美格擋) ➔ 後摔 (Back Throw)」</strong>！</li>
+<li>完美格擋後立刻按摔，後摔會把不知火舞反摔至版邊，且自身的無敵投擲判定<strong>完全不會被天上下落的扇子砸中</strong>，最安全可靠地瞬間反轉攻守！</li>
+<li><strong>Broski 震驚示範：通常技 ➔ 蓄力扇之間存在「巨大的物理縫隙 (Gigantic Gap)」！</strong>
+  Broski 在訓練場親自演練：舞在擊中或被防普通技後，若試圖取消蓄力扇，中間存在超過 <strong>15 幀以上的真空期</strong>！
+  防守方有以下三種致命破解方案：
+  1. <strong>無敵昇龍拳直接貫穿（最爽快破解法）</strong>：
+     看到舞原地收手開始轉扇子蓄力的瞬間，隆直接輸入 <strong>強昇龍拳 (<code>623HP</code>)</strong> 或 <strong>OD 昇龍拳 (<code>623PP</code>)</strong>！昇龍拳的完全無敵幀會無視尚未完全成型的扇子，硬生生把不知火舞從地上轟飛！
+  2. <strong>向後 Dash（Backdash）脫離</strong>：
+     如果你在版中被蓄力扇壓迫，起身瞬間果斷向後雙擊 <code>44</code>。後 Dash 的無敵與位移能讓第二段扇子判定完全揮空，恢復自由行動！
+  3. <strong>起跳踩頭（Neutral Jump）</strong>：
+     看見舞在面前蓄力，直接原地垂直跳或前跳，在空中避開地面扇子軌跡，下落重拳直接 PC 斬殺！
+  4. <strong>力竭 (Burnout) 依然是假壓制</strong>：Broski 實測指出，即使防守方處於力竭狀態，通常技取消蓄力扇依然有超過 6 幀的物理縫隙，防守方按 6F 以下拳腳依然能強行打斷！</li>
+</ul>
+<hr />
+<h2>六、 【招式 5：必殺忍蜂 (Shinobi Bachi)】與突進破綻</h2>
+<h3>1. 招式底層特性與穿波風險</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:20:50]</code> ～ <code>[00:23:40]</code></li>
+<li><strong>指令</strong>：不知火舞 <code>41236K</code>。全身帶火橫向滑行，弱版發生 15F，強版 22F，OD 版 12F。</li>
+<li><strong>被防幀數</strong>：</li>
+<li>弱必殺忍蜂：<strong>-8F</strong></li>
+<li>中必殺忍蜂：<strong>-10F</strong></li>
+<li>強必殺忍蜂：<strong>-12F</strong></li>
+<li>OD 必殺忍蜂：<strong>-15F</strong>！</li>
+<li><strong>Broski 的數值對比分析</strong>：
+  舞玩家有時會試圖用 OD 必殺忍蜂穿過你的波動拳。但是 Broski 提醒大家注意數值收益：</li>
+<li>舞在全螢幕用 OD 忍蜂穿波擊中你，僅僅造成 <strong>1,800 點傷害</strong>，而且消耗了 2 格寶貴鬥氣；</li>
+<li>但如果舞判斷失誤，或者你在中距離停波防守，防住 OD 忍蜂後的硬直是 <strong>-15F</strong>！</li>
+<li>隆防住後直接打滿一套綠衝連段，能帶走不知火舞 <strong>3,600 ～ 5,800 點血量（高達 40%～60%）</strong>！</li>
+<li><strong>結論</strong>：在波動戰中，優勢完全在防守方！只要你偶爾在中距離停頓假裝發波實則防守，舞敢穿波就是直接送命！</li>
+</ul>
+<h3>2. 龍炎舞 (Ryuuenbu, 214P) 破綻拆解</h3>
+<ul>
+<li>舞揮動火焰扇揮擊，弱版被防 <strong>-6F</strong>，強版被防 <strong>-10F</strong>，OD 版被防 <strong>-12F</strong>。</li>
+<li>舞玩家常利用強龍炎舞的推開距離企圖造成安全假象。</li>
+<li>隆只要站防住火焰，往前微推按下 <strong>5LK</strong> 或 <strong>2MP</strong>，必吃 PC 確反，徹底封印舞的地面必殺技壓制。</li>
+</ul>
+<hr />
+<h2>七、 【招式 6：超必殺技 Level 2 四連扇】徹底拆解「假壓制」</h2>
+<h3>1. 四連扇全螢幕生綠衝與【字幕補充】四連扇接 Level 1 偷火庫存真相</h3>
+<ul>
+<li><strong>時間戳記</strong>：<code>[00:19:35]</code> ～ <code>[00:20:49]</code></li>
+<li><strong>天梯現象</strong>：
+  舞開啟 Level 2 超必殺，在全螢幕一口氣連續扔出 4 把旋轉扇子，然後跟在扇子後面開生綠衝（Raw Drive Rush）衝過來，意圖把防守方堵在版邊打出持續有利壓制；或者在全螢幕出「四連扇 ➔ 接 Level 1」企圖安全開啟火庫存（Fire Stocks）。</li>
+<li><strong>Broski 現場打臉：This is 100% FAKE！</strong>
+  Broski 拿全遊戲綠衝速度最慢的瑪濃（Manon）進行實測，證明就算是全宇宙位移最慢的角色，也能在防住第一把扇子後，直接使用 <strong>「Drive Reversal (鬥氣反擊)」</strong> 穿透剩餘扇子，隨後手握天量幀數（A billion frames）從容追上去痛懲！</li>
+</ul>
+<h3>2. 破除四連扇的三大無解法門</h3>
+<ol>
+<li><strong>防住第一把扇子，立刻出「鬥氣反擊 (Drive Reversal, 6HP+HK)」</strong>：
+   - 只要防住第一把扇子，向前推搖桿按 <code>6HP+HK</code>。
+   - Drive Reversal 的完全無敵會直接切開後續的所有扇子，並在舞綠衝衝過來的一瞬間把她迎面踹飛！</li>
+<li><strong>無敵必殺技直接反殺</strong>：
+   - 隆在看見舞跟著扇子衝過來的瞬間，直接輸入 <strong>OD 昇龍拳 (<code>623PP</code>)</strong> 或 <strong>SA3 (真·昇龍拳)</strong>！
+   - 無敵幀會直接無視扇子判定，在綠衝的舞臉上直接炸開！</li>
+<li><strong>連續 Perfect Parry 吞噬鬥氣</strong>：
+   - 站在原地精準點按化解，4 把扇子能為防守方瞬間補滿將近 2 格鬥氣條，舞白白浪費了 2 條超必殺槽！</li>
+</ol>
+<hr />
+<h2>八、 隆 (Ryu) 對戰不知火舞全套實戰確反連段大典 (Complete Ryu Punish Library)</h2>
+<h3>連段 1：防住滑鏟 (-6F ~ -11F) / 鼯鼠俯衝踢腰部命中 (-6F)</h3>
+<ul>
+<li><strong>起手核心</strong>：<code>2MP (Punish Counter)</code></li>
+<li><strong>完整指令</strong>：
+  <code>2MP (Punish Counter) &gt; 236LK (弱龍卷) &gt; 623HP (強昇龍拳)</code></li>
+<li><strong>傷害數值</strong>：<strong>2,560 傷害</strong></li>
+<li><strong>操作要點</strong>：防住滑鏟落地立刻出 2MP，弱龍卷旋風腳能穩定浮空不知火舞，接上強昇龍打出高額傷害與擊倒壓制。</li>
+</ul>
+<h3>連段 2：極限腳尖滑鏟 (-4F ~ -5F) / 3 輕拳推開後搶攻</h3>
+<ul>
+<li><strong>起手核心</strong>：<code>5LK (Punish Counter)</code></li>
+<li><strong>完整指令</strong>：
+  <code>5LK (Punish Counter) &gt; 236MK (中龍卷旋風腳)</code></li>
+<li><strong>傷害數值</strong>：<strong>1,480 傷害</strong></li>
+<li><strong>操作要點</strong>：5LK 發生 5F 且腿長判定極佳，即使在極限距離也能穩穩命中並擊倒舞。</li>
+</ul>
+<h3>連段 3：防住強必殺忍蜂 (-12F) / OD 忍蜂 (-15F) 滿額痛懲</h3>
+<ul>
+<li><strong>起手核心</strong>：<code>5HP (Punish Counter)</code></li>
+<li><strong>完整指令</strong>：
+  <code>5HP (Punish Counter) &gt; 66 (綠衝) &gt; 5HP &gt; 4HP &gt; 236KK (OD 龍卷) &gt; 623HP (強昇龍)</code></li>
+<li><strong>傷害數值</strong>：<strong>3,640 傷害</strong></li>
+<li><strong>消耗資源</strong>：1 格綠衝 + 2 格 OD 鬥氣</li>
+</ul>
+<h3>連段 4：防住飛翔龍炎陣昇龍 (-38F) / SA3 斬殺連段</h3>
+<ul>
+<li><strong>起手條件</strong>：不知火舞凹昇龍落空掉在面前</li>
+<li><strong>完整指令</strong>：
+  <code>前微走 &gt; 5HK (Punish Counter 碎顱) &gt; 4HP &gt; 66 (綠衝) &gt; 4HP &gt; 236MK &gt; 236236P (CA3 真·昇龍拳)</code></li>
+<li><strong>傷害數值</strong>：<strong>6,280 傷害（直接蒸發舞 62.8% 血量）</strong>！</li>
+<li><strong>操作要領</strong>：不知火舞落地硬直長達近 40 幀，不要急於出拳，向前走半步按 5HK，打出最極限的重擊打康！</li>
+</ul>
+<h3>連段 5：抓蓄力花蝶扇縫隙 / 破除四連扇無敵截擊</h3>
+<ul>
+<li><strong>起手條件</strong>：舞在面前出通常技取消蓄力扇，或者四連扇跟進綠衝</li>
+<li><strong>完整指令</strong>：
+  <code>623HP (強昇龍拳, Counter Hit)</code> 或 <code>623PP (OD 昇龍拳)</code></li>
+<li><strong>傷害數值</strong>：<strong>1,440 ～ 1,740 傷害 + 強制中斷對手所有攻勢</strong>！</li>
+</ul>
+<h3>連段 6：前跳抓發扇硬直空中擊墜滿額連段</h3>
+<ul>
+<li><strong>起手條件</strong>：中距離預判舞發出花蝶扇，前跳 9跳</li>
+<li><strong>完整指令</strong>：
+  <code>空中 8HP (Punish Counter) &gt; 5HP &gt; 66 (綠衝) &gt; 5HP &gt; 4HP &gt; 236MK &gt; 623HP</code></li>
+<li><strong>傷害數值</strong>：<strong>3,680 傷害</strong></li>
+<li><strong>戰術效果</strong>：直接重創不知火舞，將其轟入版邊並形成壓起身真二擇！</li>
+</ul>
+<hr />
+<h2>九、 訓練場精密重現與刻意練習腳本 (Training Mode Setup)</h2>
+<p>為將 Broski 的對策轉化為下意識肌肉記憶，請在訓練場依序設定假人不知火舞：</p>
+<h3>【練習項目 1：滑鏟與俯衝踢高度確反反應】</h3>
+<ul>
+<li><strong>假人角色</strong>：Mai Shiranui</li>
+<li><strong>錄製槽位 1</strong>：前走兩步出滑鏟（<code>2HK</code>）➔ 落地立即防禦</li>
+<li><strong>錄製槽位 2</strong>：原地起跳出高位俯衝踢（命中胸口）➔ 落地立即連打 2LP</li>
+<li><strong>錄製槽位 3</strong>：起跳出低位極限俯衝踢（命中腳踝）➔ 落地立即按普通摔</li>
+<li><strong>訓練反應</strong>：</li>
+<li>防住槽位 1 必須 100% 成功輸入 <code>2MP &gt; 236LK &gt; 623HP</code>；</li>
+<li>防住槽位 2 必須 100% 出 <code>5LK</code> 或 <code>2MP</code> 確反；</li>
+<li>防住槽位 3 必須在防住瞬間下意識狂按 <code>2LP</code> 截殺其抓投！</li>
+</ul>
+<h3>【練習項目 2：蓄力扇縫隙昇龍截擊】</h3>
+<ul>
+<li><strong>假人角色</strong>：Mai Shiranui</li>
+<li><strong>錄製槽位 1</strong>：<code>5MP &gt; 236[P] (蓄力花蝶扇)</code></li>
+<li><strong>錄製槽位 2</strong>：<code>2MK &gt; 236[P] (蓄力花蝶扇)</code></li>
+<li><strong>訓練反應</strong>：</li>
+<li>防住 5MP 或 2MK 的瞬間，看見舞收手蓄力的第一時間，直接拉出 <code>623HP</code> 強昇龍拳，將其硬生生擊墜，練成對蓄力扇起手的條件反射！</li>
+</ul>
+<h3>【練習項目 3：四連扇 Level 2 鬥氣反擊破除】</h3>
+<ul>
+<li><strong>假人角色</strong>：Mai Shiranui</li>
+<li><strong>錄製槽位 1</strong>：發動 Level 2 超必殺 ➔ 生綠衝前衝投</li>
+<li><strong>訓練反應</strong>：</li>
+<li>防住第一發扇子的一瞬間，毫不猶豫推前按 <code>6HP+HK</code> 釋放 Drive Reversal，100% 成功將不知火舞踢飛！</li>
+</ul>
+<hr />
+<h2>十、 不知火舞火之庫存機制（Fire Stocks）深度解構與數值拆解</h2>
+<h3>1. 庫存機制本質與強化效果</h3>
+<p>不知火舞在對局中可透過特定連攜（如特定 Target Combo 完成）或超必殺技獲得「炎之印記（Fire Stocks）」。
+當身上纏繞火焰庫存時，其必殺技性能獲得以下質變：
+- <strong>必殺忍蜂強化</strong>：帶有額外火焰爆炸多段打擊，傷害提升 200～300 點，且全螢幕滑行速度增加 15%。
+- <strong>鼯鼠俯衝踢強化</strong>：下踏過程中帶有火焰軌跡，極限最低點命中時被防有利從 <code>+1F</code> 微調為 <code>+2F</code>。
+- <strong>龍炎舞強化</strong>：橫向揮扇的判定範圍向外擴張，命中對手時可強制擊飛浮空，便於後續追擊。</p>
+<h3>2. 防守方的核心應對法則：萬變不離其宗的負幀本質！</h3>
+<p>很多防守方在看到舞身上帶火時會產生莫名恐慌，甚至不敢防守。
+Broski 特別強調：
+<strong>「炎之印記強化的僅僅是招式的傷害與部分命中效果，其『被防後的硬直懲處（On-Block Recovery）』幾乎完全沒有改變！」</strong>
+- 帶火的強必殺忍蜂被防依然是 <strong>-12F</strong>！
+- 帶火的 OD 必殺忍蜂被防依然是 <strong>-15F</strong>！
+- 帶火的龍炎舞被防依然是 <strong>-8F ～ -10F</strong>！
+- <strong>結論</strong>：不要因為對手身上帶火就退縮，只要她敢用必殺技撞上你的防禦，按照常規確反連段打滿滿額傷害即可！</p>
+<hr />
+<h2>十一、 空中投擲「夢櫻 (Yumezakura)」與空對空幾何博弈</h2>
+<h3>1. 空中投擲的威脅與幾何範圍</h3>
+<p>不知火舞具備極其危險的空中普通投「夢櫻」（空中 <code>4LP+LK</code> 或 <code>6LP+LK</code>）。
+天梯舞玩家在空中機動時，極度喜歡在起跳後主動貼近對手，並利用空中抓投直接把跳入的防守方狠狠砸在地面上。
+- <strong>夢櫻抓投判定</strong>：發生僅需 5 幀，在空中的有效判定範圍幾乎覆蓋舞的正前方與正下方。</p>
+<h3>2. 隆（Ryu）的空對空截殺解法：跳中拳 (J.MP) 雙發轟殺</h3>
+<ul>
+<li>如果隆與舞同時起跳，隆絕對不要在空中試圖出慢速的跳重拳（8HP）或延遲出腳，因為跳重拳起手較慢，容易在發生前被舞的 5F 夢櫻直接抓投。</li>
+<li><strong>正解</strong>：使用隆的 <strong>空中跳中拳 (<code>Jump MP</code>)</strong>！
+  隆的 J.MP 發生僅 7 幀，且手臂下方帶有極其硬霸的向下打擊判定。最關鍵的是，J.MP 具備「空中兩段連續打擊」的 Target 判定特性！
+  一旦在空中迎面擊中不知火舞，舞會直接陷入空中旋轉大硬直，隆落地後可以從容銜接 <strong>強昇龍拳 (<code>623HP</code>)</strong> 或 <strong>真空波動拳 (<code>236236P</code>)</strong>，打出高達 2,800+ 的空對空極致轉換！</li>
+</ul>
+<hr />
+<h2>十二、 不知火舞版邊「壓起身 (Oki) 與模糊打投二擇」拆解</h2>
+<h3>1. 舞在版邊的四大主流壓制套路</h3>
+<p>當不知火舞將你推至版邊並擊倒後，她通常會展開極為窒息的四種進攻分支：
+- <strong>套路 A（打擊肉體壓制）</strong>：前走一步出肉體 <code>5MP</code> ➔ 複合 <code>2MK</code> ➔ <code>花蝶扇</code>。如果防守方起身亂動，直接被打康打一套。
+- <strong>套路 B（起身強行投擲）</strong>：前走一步直接按 <code>LP+LK</code> 普通摔，專抓防守方死防。
+- <strong>套路 C（Shimmy 釣拆摔）</strong>：假裝前走逼近，在防守方起身前 1 幀突然向後微退，引誘防守方出拆摔揮空，隨後以 <code>5HP</code> 啟動 3,600+ 的 PC 碎顱連段。
+- <strong>套路 D（蓄力扇壓制）</strong>：在防守方倒地起身瞬間，原地開始長按 <code>236[P]</code> 蓄力花蝶扇。</p>
+<h3>2. 針對版邊套路的完全防禦矩陣</h3>
+<ol>
+<li><strong>面對套路 A 與 B：首選「延遲解摔 (Delay Tech)」！</strong>
+   - 起身防禦約 3～4 幀，隨後輕點拆摔。
+   - 若舞選擇打擊，延遲拆摔仍在防禦硬直中，防禦自動成立；
+   - 若舞選擇抓投，延遲拆摔正好在走出硬直的第 5 幀將其拆開！</li>
+<li><strong>面對套路 C (Shimmy)：以「下輕腳 (2LK)」截殺後退！</strong>
+   - 舞向後退步時，下半身受傷判定框會向後延展。隆起身果斷出低位的 2LK（發生 5F），能直接踢中後退的舞的腳踝，打斷其 Shimmy 嘗試！</li>
+<li><strong>面對套路 D (蓄力扇)：無腦「無敵昇龍拳」破陣！</strong>
+   - 起身看到舞擺出蓄力動作，直接出 <code>623HP</code> 或 <code>623PP</code>，在扇子出手前直接破門而出！</li>
+</ol>
+<hr />
+<h2>十三、 不知火舞版中立回博弈與空間控制 (Mid-screen Neutral &amp; Spacing Control)</h2>
+<h3>1. 中距離兩大身位拉扯</h3>
+<p>在 2 到 2.5 個身位的核心立回區間，不知火舞通常會反覆交替使用「站重腳 5HK 試探」與「蹲中腳 2MK 摸獎」。
+- <strong>隆的應對策略</strong>：
+  - 隆的 <code>2MK</code> 射程與舞的 <code>2MK</code> 相當，但隆的 2MK 取消波動拳在被防時更加安全；
+  - 保持微步前推後拉，引誘舞的 5HK 揮空。一旦舞 5HK 踢空，其腿部受傷判定殘留 16 幀，隆直接以 <code>5HP</code> 或 <code>2MP</code> 打出 Whiff Punish！
+- <strong>波掌氣（Hashogeki）的空間壁壘</strong>：
+  在中距離面對舞的蠢蠢欲動，隆可以適時釋放弱波掌氣（214LP）。波掌氣在身前形成的衝擊波能完美粉碎舞的滑鏟與低位通常技摸獎，迫使其失去地面突進節奏。</p>
+<h3>2. 應對空中扒牆立體機動</h3>
+<p>不知火舞在版邊或開闊地形具有「三角跳 / 扒牆跳」的特權。
+- 天梯舞玩家極度喜歡在起跳後踢牆折返，意圖繞過防守方的常規對空視角。
+- <strong>破解密碼</strong>：不要被舞的牆面折返打亂方向感！
+  隆只需穩穩站在原地，當舞扒牆飛出的一瞬間，輸入 <strong>垂直跳 (8跳) 8HP</strong>，或者轉身拉出 <strong>中昇龍拳 (<code>623MP</code>)</strong>，中昇龍的橫向移動判定會自動吸附飛撲下來的舞，將其從空中乾淨擊落！</p>
+<hr />
+<h2>十四、 不知火舞特有連攜派生技詳細幀數表與處罰手冊</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: center;">派生技名稱</th>
+<th style="text-align: center;">完整輸入指令</th>
+<th style="text-align: center;">招式判定與特性</th>
+<th style="text-align: center;">被防幀數 (Block Recovery)</th>
+<th style="text-align: center;">推薦確反手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>浮羽 (Ukiha)</strong></td>
+<td style="text-align: center;">空中 <code>2HK</code></td>
+<td style="text-align: center;">空中垂直向下踩踏</td>
+<td style="text-align: center;">被防 <strong>-7F</strong></td>
+<td style="text-align: center;">落地直接出 <code>2MP &gt; 236LK &gt; 623HP</code> 確反</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>櫻變 (Sakurahen)</strong></td>
+<td style="text-align: center;"><code>6MK</code></td>
+<td style="text-align: center;">前翻踢中段技，發生 20F</td>
+<td style="text-align: center;">被防 <strong>-6F</strong></td>
+<td style="text-align: center;">站防落地立刻按 <code>5LK</code> 或 <code>2MP</code> 確反</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>舞之連攜 (Target Combo 1)</strong></td>
+<td style="text-align: center;"><code>5LP &gt; 5MP &gt; 5HK</code></td>
+<td style="text-align: center;">三段目標連段，第三段為重踢</td>
+<td style="text-align: center;">第三段被防 <strong>-10F</strong></td>
+<td style="text-align: center;">防住第三段直接出 <code>5HP (PC)</code> 滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>忍蜂派生 (Shinobi Followup)</strong></td>
+<td style="text-align: center;"><code>41236K &gt; 4P</code></td>
+<td style="text-align: center;">滑行後突然急停轉身揮扇</td>
+<td style="text-align: center;">被防 <strong>-8F</strong></td>
+<td style="text-align: center;">防住轉身扇直接出 <code>2MP</code> 確反</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>十五、 隆對戰不知火舞的十條天梯黃金戒律 (10 Commandments of Ryu vs Mai)</h2>
+<ol>
+<li><strong>滑鏟必有確反</strong>：全距離滑鏟皆非絕對安全，防住極限腳尖出 5LK，常規距離出 2MP，次次必抓 PC！</li>
+<li><strong>俯衝踢極限命中也只有 +1F</strong>：只要不是踢在頭頂（腰部以上直接確反），落地不要被她的假動作嚇住，狂按 2LP 小拳必勝其抓投！</li>
+<li><strong>通常技接蓄力扇有巨大物理縫隙</strong>：看見面前蓄力，直接出強昇龍拳截擊，絕不讓她白白偷到 +20F！</li>
+<li><strong>波動戰節奏在隆手中</strong>：隆的波動拳全體動作 47F 比舞的花蝶扇 52F 整整快 5 幀，對波優勢在隆！</li>
+<li><strong>OD 必殺忍蜂穿波是虧本生意</strong>：舞全螢幕穿波僅得 1,800 傷害，一旦被隆防住吃 -15F 滿額 3,600+ 痛懲！</li>
+<li><strong>四連扇 Level 2 是徹頭徹尾的假壓制</strong>：防住第一把扇子瞬間出 Drive Reversal，直接踹飛綠衝的不知火舞！</li>
+<li><strong>嚴禁空對空出慢速重拳</strong>：空中相遇使用隆的雙段 J.MP 截擊，防止被舞的 5F 夢櫻空中抓投！</li>
+<li><strong>3 輕拳推開後是防守方的回合</strong>：舞 3 輕拳後出 5LK 必揮空，後 Dash 必被打康，此時果斷按 5LK 搶回主動權！</li>
+<li><strong>不要畏懼火焰印記</strong>：火庫存只增加傷害，被防硬直完全不減，防住強招照打滿額大連段！</li>
+<li><strong>心態冷靜，以鐵壁波昇瓦解女神神話</strong>：不知火舞的一切花哨機動在嚴密的波昇與確反面前皆是泡影！</li>
+</ol>
+<hr />
+<h2>十六、 不知火舞殘局決勝與極限資源博弈 (Endgame Resource &amp; CA Optimization)</h2>
+<h3>1. 雙方血量低於 25% 且舞手握 CA 時的極致心理</h3>
+<p>當不知火舞進入血量紅血且持有 Level 3 / Critical Art（超必殺技）時，天梯舞玩家會顯著改變進攻風格：
+- <strong>心態轉變</strong>：她們不再頻繁滑鏟或貿然出必殺忍蜂，而是轉為「中距離花蝶扇牽制 ➔ 試圖摸中下中腳 (2MK) 綠衝確認 CA 斬殺」，或者「在防守中瘋狂尋找凹昇龍（飛翔龍炎陣）接 CA 的逆轉機會」。
+- <strong>隆的應對禁忌</strong>：
+  - <strong>嚴禁此時在常規射程盲目發波</strong>！舞的 CA 具有完全無敵幀與極快的突進穿透速度，在 2 個身位看見隆發波起手，舞可直接反應輸入 CA3 穿波反殺！
+  - <strong>嚴禁在壓起身時進行貪婪的連段壓制</strong>！此時不知火舞凹無敵技的機率高達 90% 以上。隆在打倒舞後，最穩健的策略是「假前走一步隨後立即站防（Safe Bait / Shimmy）」，誘導其凹出飛翔龍炎陣，隨後用連段 4 碎顱 5HK 斬殺，直接終結比賽！</p>
+<h3>2. 隆在力竭狀態（Burnout）面對舞的保命策略</h3>
+<p>如果隆不幸在殘局進入 Burnout：
+- 不知火舞會瘋狂使用花蝶扇推開削血，並跟進生綠衝試圖打出版邊暈眩（Stun）。
+- <strong>保命核心</strong>：
+  - 在防住第一發普通扇子後，立即利用跳躍（垂直跳或前跳）脫離版邊角落；
+  - 若舞生綠衝衝臉，果斷在防住打擊的瞬間輸入 <strong>SA1 (真空波動拳)</strong> 或 <strong>SA2 / SA3</strong>！超必殺技在 Burnout 狀態下依然具備無敵判定，能強行撕裂不知火舞的壓制網絡，反敗為勝！</p>
+<hr />
+<h2>十七、 Broski 原片金句實錄與世界頂級選手意識提煉 (Key Quotes &amp; Mindset Takeaways)</h2>
+<ol>
+<li><strong>關於滑鏟確反</strong>：<blockquote>
+<p><em>"People have this idea that Mai's slide is safe if spaced. Let me be clear: this is punishable at basically every single range. Do not let them get away with this."</em>
+（大家總有一種迷思，認為舞的滑鏟只要卡好距離就是安全的。讓我把話說清楚：這招在幾乎所有實戰距離下都是必吃確反的！絕對不要放任她們為所欲為。）</p>
+</blockquote>
+</li>
+<li><strong>關於俯衝踢假壓制</strong>：<blockquote>
+<p><em>"Even if she hits the absolute pixel of your toes, it's only plus one. A plus one situation does not beat a four-frame jab if she tries to throw! Mash your crouch jab!"</em>
+（就算她剛好踢中你腳趾頭的最極限像素，她也只有可憐的 +1F。如果她敢在 +1F 偷摔，她的 5F 投技絕對贏不了你的 4F 輕拳！狠狠按你的蹲輕拳吧！）</p>
+</blockquote>
+</li>
+<li><strong>關於通常技接蓄力扇</strong>：<blockquote>
+<p><em>"There is a gigantic gap if she cancels a normal into charged fan. You can literally just DP straight through it. It's not real!"</em>
+（如果她用通常技取消蓄力扇，中間存在一個巨大的物理真空！你甚至能直接用昇龍拳穿過去打爆她。這根本不是真正的壓制！）</p>
+</blockquote>
+</li>
+<li><strong>關於 Level 2 四連扇</strong>：<blockquote>
+<p><em>"It is fake. Even Manon with the worst Drive Rush in the universe can punish this. Use your Drive Reversal and blow them up."</em>
+（四連扇是徹底的假動作。就連全遊戲綠衝最慢的瑪濃都能確反它。直接用你的鬥氣反擊把她們轟飛吧！）</p>
+</blockquote>
+</li>
+</ol><div class="nav"><span><a href="160.html">← 160 Diaphone 破解SF6十大無賴神技完全對策指南</a></span><span style="text-align:right"><a href="162.html">162 SmashlogTV 全角色必備確定反擊技徹底解說大典後篇 ハイタニナウマン →</a></span></div></div></body></html>

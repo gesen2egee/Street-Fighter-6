@@ -1,0 +1,167 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>うりょ スト6 初心者講座第5回これを見れば一瞬で理解｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 323 篇</div><h1>うりょ スト6 初心者講座第5回これを見れば一瞬で理解</h1><h2>核心資訊與影片導航</h2>
+<ul>
+<li><strong>影片標題</strong>：【スト6】初心者講座第5回これを見れば一瞬で理解！フレームを簡単解説【うりょの無料講座】</li>
+<li><strong>頻道作者</strong>：うりょ</li>
+<li><strong>YouTube ID</strong>：<code>aAd_SNfgeQ8</code></li>
+<li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8">觀看完整影片</a></li>
+<li><strong>核心教學主旨</strong>：
+  本手冊由傳奇格鬥大師うりょ親自指導，專為《快打旋風 6 (Street Fighter 6)》入門至中階玩家設計的幀數（Frame Data）底層核心系統拆解。內容涵蓋格鬥遊戲以 60 FPS 為基準的時間單位概念、招式三要素（發生、持續、硬直）、命中硬直差與防禦硬直差的實戰判定邏輯。手冊進一步公開了格鬥遊戲世界中決定生死的隱藏通用定則——全角色最速 4F 輕攻擊、全角色 5F 普通摔、同幀判定打擊勝過摔技、防禦硬直投擲無敵保護機制，以及氣竭（Burnout）狀態下防禦硬直暴增 +4F 的致命破防機制。徹底理解這套邏輯，將能看懂訓練場幀數表（Frame Meter），擺脫胡亂出招被康（Counter）的命運。</li>
+</ul>
+<hr />
+<h2>完整微觀時間戳章節導航（Micro-Timeline Navigation）</h2>
+<ul>
+<li><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=26s">00:26</a> 幀數的本質：格鬥遊戲的「時間單位」與 60 FPS 翻頁漫畫原理</strong></li>
+<li>格鬥遊戲中的「幀（Frame）」是度量時間的最小單位，SF6 固定鎖定 60 FPS 運行。</li>
+<li>1 幀（1F）等於 1/60 秒（約等於 0.0167 秒），遊戲畫面即是由每秒 60 張靜態圖像快速翻動構成。</li>
+<li>
+<p>掌握幀數即掌握了對手與自己的「可行動時間差」，是制定確反與壓制戰術的基石。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=70s">01:10</a> 招式構造三部曲：發生、持續、收招硬直與 Frame Meter 判讀</strong></p>
+</li>
+<li>招式運作拆解為三階段：發生（Startup，產生攻擊判定前的準備時間）、持續（Active，判定存在的打擊時間）、硬直（Recovery，判定結束後無法行動的收招時間）。</li>
+<li>以隆的 2MP（蹲中拳）為例：發生 6F、持續 3F、硬直 15F，整體總幀數為 24F。</li>
+<li>
+<p>特殊機制：必殺技取消（Special Cancel）可直接忽略收招硬直進入必殺技動作，形成連段。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=195s">03:15</a> 命中硬直差 vs 防禦硬直差：決定連段成立與連續防禦的數學原理</strong></p>
+</li>
+<li>被擊中時進入受創硬直（Hitstun），被防禦時進入防禦硬直（Blockstun），此期間防禦方無法輸入一般行動。</li>
+<li>硬直差計算：隆 2MP 命中時為 +5F，因此接續最速 4F 的 2LP（蹲輕拳）能形成目視連段；若嘗試接 6F 的 2MP 則因缺少 1F 無法形成目押し連段。</li>
+<li>
+<p>防禦差差異：2MP 防禦時僅為 +1F；若透過驅動衝刺（Drive Rush）可使防禦硬直大幅增加 4F 變為 +5F，此時壓入 4F 招式即形成「連續防禦（連ガ）」，對手期間動彈不得。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=334s">05:34</a> 核心通用鐵律：4F 最速打擊、5F 普摔與「打擊剋摔」同幀判定規則</strong></p>
+</li>
+<li>全角色最速普通技判定均為 4F，此為被壓制時搶招（暴れ）的標準起手。</li>
+<li>全角色普通投擲（LP+LK）發生均為 5F，比最速打擊慢 1F。</li>
+<li>
+<p>系統底層絕對法則：當打擊判定與投擲判定在「完全相同的同一幀（Simultaneous Frame）」生效時，系統強制判定「打擊獲勝」。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=403s">06:43</a> 防禦投擲無敵保護機制：為何過多有利（+5F 以上）反而會「摔空」？</strong></p>
+</li>
+<li>系統保護機制：對手處於「防禦硬直中」完全免疫任何投擲判定（防止不可防禦死循環擇）。</li>
+<li>若進攻方取得 +5F 有利時立即按摔（5F），投擲判定會在對手防禦硬直尚未解除的最後一瞬間判定，造成投擲揮空（投抜け/スカ）。</li>
+<li>
+<p>地面防禦壓制時，最完美的抓摔有利幀數為「+4F」；唯一的例外是「對手倒地起身（Wake-up/Down）」時，起身第一幀沒有投擲無敵，此時 +5F 甚至更多有利均可成立直接投擲（壓起身肉搏）。</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=aAd_SNfgeQ8&amp;t=455s">07:35</a> 氣竭（Burnout）狀態下的地獄：防禦硬直額外增加 +4F 的破防聯攜</strong></p>
+</li>
+<li>當玩家進入 Burnout 狀態，防禦任何攻擊其防禦硬直（Blockstun）強制額外增加 4F。</li>
+<li>原本防禦為 +1F 的普通技暴增為 +5F，原本有利的招式紛紛變成完全連續防禦壓制，甚至被逼入角落形成削血致死連攜。</li>
+</ul>
+<hr />
+<h2>核心技術/心法深入拆解</h2>
+<h3>1. 幀數底層構造與 Frame Meter（幀數顯示表）極致解讀</h3>
+<p>在 SF6 練習模式中開啟幀數表，螢幕下方的彩色條紋代表所有招式的生命週期：
+- <strong>綠色區塊（發生 Startup）</strong>：按下按鈕到攻擊判定產生前的時間。例如 2MP 發生為 6F，代表按下按鈕後第 6 幀判定生效，命中對手。
+- <strong>紅色/粉色區塊（持續 Active）</strong>：判定在空間中存在並具有打擊效果的時間。若招式持續為 3F，代表判定在第 6、7、8 幀皆可造成判定。
+- <strong>藍色區塊（硬直 Recovery）</strong>：打擊判定結束到角色恢復自由操控（Neutral）的冷卻時間。
+- <strong>整體幀數（Total Frames）</strong>：發生 + 持續 + 硬直 = 招式總時間。</p>
+<blockquote>
+<p><strong>取消必殺技的底層機制</strong>：當普通技命中或被防禦時，於判定有效幀內輸入必殺技指令，系統會<strong>強制切斷藍色的收招硬直（Recovery）</strong>，無縫切換至必殺技的發生階段，這就是 SF 系列連段成立的核心物理法則。</p>
+</blockquote>
+<hr />
+<h3>2. 打擊與投擲的微觀博弈：同幀相殺與防禦硬直投擲無敵</h3>
+<p>格鬥遊戲近距離壓制是圍繞著「4F 打擊」與「5F 普通投」展開的數學博弈：</p>
+<pre><code>進攻方動作 (+1F 有利)              防禦方動作 (試圖反擊)
+   │                                     │
+   ├─ 執行最速普通投 (發生 5F)             ├─ 執行最速反抗打擊 2LP (發生 4F)
+   │  有效發生時間：1 + 5 = 6F 動作生效     │  有效發生時間：0 + 4 = 4F (加算前) -&gt; 總計 4F
+   │                                     │
+   └───────────────&gt; [判定交匯點] &lt;──────────┘
+                  雙方判定於同一幀發生時
+                     【打擊判定勝出】
+                 防禦方 4F 打擊打碎進攻方投擲！
+</code></pre>
+<h4>為什麼不能在「防禦硬直 +5F」時出投？</h4>
+<ul>
+<li><strong>防禦硬直中投擲無敵</strong>：當防禦方正在擋招的硬直期間，系統給予防禦方「投擲免疫」。</li>
+<li>如果進攻方綠衝打出一記大有利（例如讓對手擋住後進攻方為 +5F），進攻方若第 1 幀立即按投（發生 5F），判定會在對手防禦硬直結束的同一瞬間接觸，系統判定投擲穿透無效（Throw Whiff），進攻方將承受極大揮空硬直確反。</li>
+<li><strong>正解</strong>：面對防禦對手，必須製造「+4F 或更少有利」進行抓摔，或是故意「延遲（Delay）數幀」等對手脫離防禦硬直後再抓。</li>
+<li><strong>起面倒地（Knockdown）的例外規則</strong>：對手被擊倒起身瞬間<strong>不享有防禦硬直投擲無敵</strong>，起身第 1 幀即可被投擲。因此倒地壓起身（Oki）時，進攻方 +5F 進行肉身壓摔是完全成立且極度致命的。</li>
+</ul>
+<hr />
+<h3>3. 氣竭（Burnout）環境下的幀數質變</h3>
+<p>當進入 Burnout 狀態時，防禦機制受到嚴厲懲罰：
+1. <strong>全打擊防禦硬直增加 4F</strong>：
+   - 隆 2MP 防禦由原本的 <strong>+1F 暴增為 +5F</strong>。
+   - 隆 5LP 防禦由原本的 <strong>-1F 逆轉為 +3F</strong> 有利。
+2. <strong>連攜真空期消失</strong>：
+   原本對手可以插動 4F 反擊的間隙（Gap），在 Burnout 狀態下會被完全填補為「連續防禦（True Blockstring）」。防禦方只能被迫持續格擋，被推移至版邊承受綠衝削血、SA 撞牆昏厥（Stun）的絕境。</p>
+<hr />
+<h2>連段與 Setplay / 確反矩陣表</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">實戰情境</th>
+<th style="text-align: left;">起手招式 / 條件</th>
+<th style="text-align: left;">完整連段 / 壓制連攜路線</th>
+<th style="text-align: left;">驅動/SA消耗</th>
+<th style="text-align: left;">幀數狀態與硬直差</th>
+<th style="text-align: left;">戰術意圖與後續 Oki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>命中目視連段</strong></td>
+<td style="text-align: left;">隆 2MP（蹲中拳）命中</td>
+<td style="text-align: left;"><code>2MP &gt; 2LP &gt; 623HP</code> (昇龍拳)</td>
+<td style="text-align: left;">0 氣</td>
+<td style="text-align: left;">2MP 命中為 <strong>+5F</strong>，2LP 發生為 <strong>4F</strong>，完美目押し連段</td>
+<td style="text-align: left;">造成對手倒地，取得前前前壓起身的近身 Advantage</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>綠衝連續防禦壓制</strong></td>
+<td style="text-align: left;">隆 綠衝 (Drive Rush) 2MP 被防禦</td>
+<td style="text-align: left;"><code>Drive Rush 2MP &gt; 2LP &gt; 5LP</code></td>
+<td style="text-align: left;">1 格 Drive</td>
+<td style="text-align: left;">2MP 防禦由 +1F 增至 <strong>+5F</strong>，接續 4F 2LP 為<strong>連續防禦 (無縫)</strong></td>
+<td style="text-align: left;">對手完全無法插動 4F 搶招，無風險壓制並累積對手防禦值削磨</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>打擊與摔二擇 (+4F 最佳抓摔點)</strong></td>
+<td style="text-align: left;">隆 5HP 防禦時取消 綠衝普通技被擋</td>
+<td style="text-align: left;"><code>5HP &gt; 取消綠衝普通技 &gt; 普通投 (LP+LK)</code></td>
+<td style="text-align: left;">3 格 Drive</td>
+<td style="text-align: left;">【字幕校正】進攻方處於 <strong>+4F 有利</strong> 時（對手 -4F）隨即出 5F 投</td>
+<td style="text-align: left;"><strong>避免防禦投無敵</strong>：剛好在對手防禦硬直結束第 1 幀精準抓取（若有利達 +5F 反而會投擲揮空）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>氣竭死局壓制 (Burnout Pressure)</strong></td>
+<td style="text-align: left;">對手處於氣竭狀態，隆於版邊壓制</td>
+<td style="text-align: left;"><code>2MP &gt; 5LP &gt; 2MP &gt; 236HP</code> (波動拳)</td>
+<td style="text-align: left;">0 氣</td>
+<td style="text-align: left;">2MP 防禦硬直達 <strong>+5F</strong>，5LP 達 <strong>+3F</strong></td>
+<td style="text-align: left;">形成近乎無縫的版邊削血鎖死，逼迫對手冒險起跳或吃打擊</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>大師避坑指南與實戰心法（Common Pitfalls &amp; Master Tips）</h2>
+<h3>新手常見盲點與 NG 行為</h3>
+<ol>
+<li><strong>盲目搶摔（Mash Throw）以求脫困</strong>：
+   - 許多新手被壓制時習慣連按普通摔搶節奏。然而普通摔發生為 5F，同幀對碰又必輸給打擊。面對對手緊湊的打擊壓制，按摔必吃「Counter 甚至 Punish Counter」，導致大失血。
+   - <strong>大師解法</strong>：被壓制時若要反抗，優先使用全角色最速的 <strong>4F 輕攻擊（通常為 2LP/5LP）</strong>，或者穩健採取拉後格擋與延遲拆摔（Delay Tech）。</li>
+<li><strong>在極大有利幀（+5F 以上）盲目搶抓摔</strong>：
+   - 以為綠衝打中防禦取得大幅有利後「無腦出摔」必定命中，結果常常在對手臉前空抓揮空（因為對手還在防禦硬直中，享有投擲保護）。
+   - <strong>大師解法</strong>：若要用摔，請精確計算讓有利落在 <strong>+2F ~ +4F</strong>，或者刻意加入「極微小的微步停頓（Micro-walk / Delay）」等待對手防禦硬直解除的瞬間再下壓抓取。</li>
+</ol>
+<h3>頂尖選手思維（Master Tier Mindset）</h3>
+<ul>
+<li><strong>將幀數表化為空間直覺</strong>：
+  頂尖選手不需要在實戰中背誦所有數字，而是透過幀數掌握「<strong>回合權限（My Turn / Your Turn）</strong>」。當你打出 +2F 以上，就是「我的回合」，可以執行打擊/投擲二擇；當你處於 -3F 甚至不利，就是「對手的回合」，應當老實防禦，絕不在對手正幀時做多餘動作。</li>
+<li><strong>牢記自己的「4F」與「5F」</strong>：
+  剛接觸一個新角色時，優先進入訓練場查清楚兩件事：哪一顆按鈕是全角色最速的「4F 攻擊」（通常為 2LP 或 5LP），以及自身在不同距離下的確反極限。格鬥遊戲所有的防守反擊與立回確反，都是從這關鍵的「4F」開始構築。</li>
+</ul><div class="nav"><span><a href="322.html">← 322 オバハン スト6 MR1500から1800に上がる為に覚えた</a></span><span style="text-align:right"><a href="324.html">324 スト6初心者応援チャンネル スト6 テリー対策完全版 Year4対応 新・キ →</a></span></div></div></body></html>

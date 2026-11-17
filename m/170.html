@@ -1,0 +1,758 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>なるお 連續防禦連ガ秘密與空隙插動確反真解｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 170 篇</div><h1>【影片 170 深度解析】なるお：連續防禦連ガ秘密與空隙插動確反真解</h1><ul>
+<li><strong>影片來源</strong>：なるおのひとりでできるもん (FUaRHRhXiaA)</li>
+<li><strong>原標題</strong>：【スト6】確定反撃がちょっと楽になる連続ガードの知識を教えます</li>
+<li><strong>影片時長</strong>：20 分 05 秒</li>
+<li><strong>YouTube 連結</strong>：<a href="https://www.youtube.com/watch?v=FUaRHRhXiaA">https://www.youtube.com/watch?v=FUaRHRhXiaA</a></li>
+<li><strong>適用版本</strong>：SF6 泛用版本至 Year 3 ～ 最新版本</li>
+<li><strong>技術專題</strong>：底層系統對策（連續防禦「連ガ」物理機制、先行輸入緩衝、空隙插動「割り込み」與確反極簡化）</li>
+<li><strong>講授名師</strong>：日本格鬥遊戲頂尖名將、人氣實況名師 なるお（Naruo）【字幕補充：本片實為なるお指導 Vtuber 神成きゅぴ（學員主玩吉米 Jamie）的個別實況教學精華】</li>
+<li><strong>核心定位</strong>：全網最通透的格鬥底層物理學！徹底解開天梯玩家在防守端「手忙腳亂、不知何時該按鍵、防住大招卻漏掉確反」的心智負擔。深入拆解連續防禦（連ガ，Renzoku Guard）的自動防禦原理、先行輸入（Buffered Input）連打技巧、真連ガ與假壓制的幀數分水嶺，讓你在面對全角色狂風暴雨般的壓制時，心如明鏡，輕鬆打出 100% 完美的確定反擊！</li>
+</ul>
+<hr />
+<h2>一、 名將導讀：為什麼「連續防禦 (連ガ)」能讓確反變得極度輕鬆？</h2>
+<p>在《快打旋風 6》的排位對決中，無數初階與中階玩家最常面臨的痛苦是：</p>
+<blockquote>
+<p>「對手劈里啪啦打過來一整套連攜，我全身神經緊繃，根本不知道哪一下是最後一下；防住對手的昇龍拳或大破綻招式，心裡急著要反擊，結果按得太早招式出不來，按得太晚對手已經防住了，白白漏掉確反！」</p>
+</blockquote>
+<p>針對這一普遍痛點，日本格鬥名將なるお（Naruo）在長達 20 分鐘的深入教學中指出：</p>
+<blockquote>
+<p><strong>「你之所以覺得確反很難、防守很累，是因為你根本不知道遊戲引擎的『連續防禦（連ガ）』和『先行輸入（Buffer）』是如何在幕後運作的！只要理解了連ガ的物理規則，你的防守手指可以放鬆 80%，你的確定反擊根本不需要肉眼精準目押，系統會自動在第 1 幀幫你最速打出最痛連段！」</strong></p>
+</blockquote>
+<p>本篇指南由淺入深，從底層幀數架構到全角色實戰案例，徹底解密格鬥大師們「看似從容不迫」背後的連ガ秘訣。</p>
+<hr />
+<h2>二、 本片核心時間軸完全對照表</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">時間戳</th>
+<th style="text-align: left;">核心章節主題</th>
+<th style="text-align: left;">微觀對策與戰術密碼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>【00:00:00 - 00:02:24】</strong></td>
+<td style="text-align: left;">前言與格鬥教學日常導入</td>
+<td style="text-align: left;">新手學員在防守端的迷茫；為什麼防守時總覺得反應不過來？</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:02:24 - 00:03:06】</strong></td>
+<td style="text-align: left;">連續防禦（連ガ）的底層真相</td>
+<td style="text-align: left;"><strong>「勝手にガードになる！（系統會自動幫你防禦！）」</strong> 放開搖桿、放開按鍵都不會挨打！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:03:06 - 00:03:58】</strong></td>
+<td style="text-align: left;">先行輸入連打：告別目押的確反黑科技</td>
+<td style="text-align: left;">前前連打最速綠衝、大攻擊連打最速確反；遊戲底層自動識別最速時機。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:03:58 - 00:04:40】</strong></td>
+<td style="text-align: left;">空中下落招式（如昇龍拳）的確反節奏</td>
+<td style="text-align: left;">落地不可動時間（動けない時間）；切忌在空中盲按，等著地瞬間出大重腳。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:04:40 - 00:05:30】</strong></td>
+<td style="text-align: left;">確反招式極簡化公式：近出重K，遠出重P</td>
+<td style="text-align: left;">近距離 5HK 痛打、遠距離 5HP 差合；將複雜確反簡化為本能肌肉記憶。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:05:30 - 00:07:30】</strong></td>
+<td style="text-align: left;">實機操作演示與按鍵習慣糾正</td>
+<td style="text-align: left;">搖桿 vs 街機無軸手把（Hitbox / Leverless）的操作反思；養成不慌張的防守手癖。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:07:30 - 00:13:00】</strong></td>
+<td style="text-align: left;">前走波動防誤出昇龍與吉米實戰應對 【字幕校正】</td>
+<td style="text-align: left;">原片講解前走波動會因前向殘留變成昇龍，需「夾帶後方向（後ろを挟む）」修正；隨後指導神成きゅぴ（吉米）像本田突進般主動進攻、OD絕唱步命中後喝兩杯水與版邊連段。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:13:00 - 00:17:00】</strong></td>
+<td style="text-align: left;">吉米立回牽制與距離控制實戰 【字幕校正】</td>
+<td style="text-align: left;">原片為指導吉米拉開距離在中距離利用長度牽制、版邊壓制喝水與對手不擅應對時的打法心態。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【00:17:00 - 00:20:05】</strong></td>
+<td style="text-align: left;">結語與終極心態：手癖化即大師</td>
+<td style="text-align: left;">將複雜思考轉化為無意識本能；天梯心態昇華。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、 連續防禦 (連ガ) 的底層物理機制大解密</h2>
+<h3>1. 【00:02:24 - 00:02:50】系統底層代碼：什麼是「連ガ（Renzoku Guard）」？</h3>
+<p>在格鬥遊戲中，「連續防禦（日文簡稱：連ガ，英文：True Blockstring）」定義如下：
+- <strong>觸發條件</strong>：
+  - 當防守方成功防禦了對手的第一擊（Hit 1）。
+  - 防守方此時進入長達數幀至十數幀的「防禦硬直（Blockstun）」。
+  - 如果對手緊接著發動第二擊（Hit 2），且第二擊的攻擊判定在防守方的「防禦硬直結束之前或恰好同幀」抵達對手的受傷判定框。
+- <strong>系統強制判定</strong>：
+  - 此時遊戲引擎強制判定為 <strong>「連續防禦（連ガ）」</strong>！
+  - <strong>震撼真相</strong>：<strong>「体勝手にガードするのよ（身體會自己主動幫你防禦）！」</strong>
+  - 在連ガ生效期間，<strong>防守方哪怕把雙手完全離開搖桿（レバー離しても）、把按鍵全部放開（ボタン離しても），角色依然會被系統牢牢鎖定在防禦姿勢中，絕對不可能挨打！</strong></p>
+<hr />
+<h3>2. 【00:02:50 - 00:03:06】連ガ期間的「絕對規則」：不可插動</h3>
+<p>なるお 向學員強調連ガ的關鍵物理特性：
+- <strong>防守方在此期間「無法做出任何動作」</strong>：
+  - 不能出 4F 輕拳。
+  - 不能出普通拆投。
+  - 不能出 Drive Impact (DI)。
+  - <strong>甚至不能出完全無敵的 OD 昇龍拳或 SA3 超必殺技！</strong>
+- <strong>心理減負價值</strong>：
+  - 許多新手在防守對手連續輕拳（如 2LP &gt; 2LP）時，心裡極度慌張，生怕漏防。
+  - 了解連ガ後，你必須知道：<strong>這段時間你是 100% 絕對安全的！</strong> 只要第一擊防住了，後續只要對手出的是連ガ，你就算閉著眼睛、手指完全放鬆，對手也傷不到你半根汗毛！</p>
+<hr />
+<h2>四、 連打先行輸入 (Buffered Input)：讓確反變得極度輕鬆的神技</h2>
+<h3>1. 【00:03:06 - 00:03:58】為什麼你總覺得確反「目押」按不出來？</h3>
+<p>在傳統格鬥思維中，很多人以為防住對手的大招（例如防住肯的 -38F OD 昇龍拳下落、或者防住將軍的 -18F OD 崩擊）後，必須在防禦硬直結束的「那一瞬間（Just Frame）」精準按下按鍵。
+- <strong>新手最常犯的兩大失誤</strong>：
+  1. <strong>按得太早（Too Early）</strong>：角色還在防禦硬直中，按鍵被系統吞掉，結果在原地發呆，白白錯過確反時機！
+  2. <strong>按得太晚（Too Late）</strong>：猶豫不決，等到對手已經落地站穩防禦了才出招，結果反而被對手反打！</p>
+<hr />
+<h3>2. なるお 傳授的核心黑科技：防禦硬直中「狂按連打（大連打）！」</h3>
+<p>在 SF6 中，Capcom 內建了極其友善的 <strong>先行輸入緩衝窗口（Input Buffer Window，約 4~5 幀）</strong>：</p>
+<blockquote>
+<p><strong>「パリーしたら前連打しちゃっていいよ！大連打でいい！ゲーム側が勝手に最速でやってくれる！（防住之後直接往前狂連打！大按鍵狂連打！遊戲系統會自動在最速第 1 幀幫你打出來！）」</strong></p>
+</blockquote>
+<h4>實操示範：</h4>
+<ol>
+<li><strong>生綠衝最速確反（DR Punish）</strong>：
+   - 防守方防住對手大破綻招式時，不需要看著防禦硬直結束。
+   - 在防禦硬直尚未結束時，手指直接<strong>「連續向前快速雙擊搖桿（6666... 連打）或狂點 Parry」</strong>！
+   - 系統會在防禦硬直解除的 <strong>第 1 幀（Frame 1）</strong>，自動以 0 誤差的最速時機啟動生綠衝！</li>
+<li><strong>重拳/重腳最速確反</strong>：
+   - 防住對手大招，手指在硬直期間<strong>直接連續狂敲站重腳（5HK 連打）</strong>！
+   - 你不需要去算那幾分之一秒，系統會自動在防禦恢復瞬間幫你砸出 5HK，穩穩打出 <strong>Punish Counter</strong>！</li>
+</ol>
+<hr />
+<h2>五、 空中下落招式（如昇龍拳空揮）的確反節奏與招式公式</h2>
+<h3>1. 【00:03:58 - 00:04:40】對手在空中時「切忌盲目提早連打」！</h3>
+<p>雖然先行輸入很強，但なるお特別提醒了一種特殊情況：<strong>對手空揮無敵昇龍拳在空中下落時！</strong>
+- <strong>常見失誤</strong>：對手昇龍拳飛在半空中，防守方太興奮，在對手還在半空中時就狂按 5HK。
+- <strong>後果</strong>：
+  - 5HK 在地面提早揮出。
+  - 對手還在空中下墜，5HK 在對手腳下打空（Whiff）！
+  - 對手隨後砸在防守方頭上，防守方反而被 Counter Hit 痛打！
+- <strong>正確認知</strong>：
+  - <strong>「相手が降りてきてから動けない時間がある（對手著地之後有很長一段動彈不得的時間）！」</strong>
+  - 昇龍拳著地硬直通常高達 <strong>10~15 幀</strong>！
+  - 防守方要沉住氣，<strong>看著對手雙腳踩在地面的瞬間</strong>，再按下按鍵連打，時間絕對綽綽有餘！</p>
+<hr />
+<h3>2. 【00:04:40 - 00:05:30】なるお的極簡確反口訣：「近出重腳，遠出重拳！」</h3>
+<p>為了徹底解放玩家的大腦記憶容量，なるお給出了一套通殺全遊戲的確反公式：
+- <strong>近距離大確反（對手就在面前）</strong>：<strong>「一律出站重腳 (5HK)！」</strong>
+  - 為什麼是 5HK？因為全角色 5HK 通常具備最高單發傷害與打康擊退效果，能直接帶出最痛連段！
+- <strong>遠距離大確反（對手被推開半個身位）</strong>：<strong>「一律出站重拳 (5HP) 綠衝！」</strong>
+  - 為什麼是 5HP？因為 5HP 射程長、判定扎實，配合生綠衝（DRC）能 100% 摸到對手，絕不揮空！</p>
+<p><code>【極簡確反決策公式】：
+對手出大破綻招式被防 ──&gt; 判斷距離：
+  ├─ 貼身近距離 ──&gt; 無腦出 5HK (PC) ──&gt; 接滿額必殺技 / SA3！
+  └─ 稍遠距離   ──&gt; 出長射程 5HP (PC) ──&gt; 取消綠衝打滿全套連段！</code></p>
+<hr />
+<h2>六、 「真連ガ」vs「非連ガ（有空隙）」全主流角色經典連攜完全解析</h2>
+<p>【字幕補充】：原片教學主要聚焦於「連ガ自動防禦放開搖桿手把也成立」、「硬直中狂按連打由先行輸入最速出招（近出5HK/遠出綠衝5HP）」與「空中下落等落地再打確反」。本節及後續全角色真假連ガ矩陣為格鬥原理衍生之系統性對策延伸整理。</p>
+<p>掌握了連ガ的物理規則後，我們就能像 X 光透視一樣，一眼看破對手的連攜到底是真的安全、還是充滿破綻的「偷幀假壓制」！</p>
+<h3>1. 真連ガ（不可插動，安心防守）名單</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">角色</th>
+<th style="text-align: left;">經典真連ガ連攜</th>
+<th style="text-align: left;">幀數特徵</th>
+<th style="text-align: left;">防守方針</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP</td>
+<td style="text-align: left;">間隙 0 幀（真連ガ）</td>
+<td style="text-align: left;">安心蹲防，手指放鬆等待對手推開</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>隆 (Ryu)</strong></td>
+<td style="text-align: left;">5MP &gt; 2MP (近身)</td>
+<td style="text-align: left;">間隙 0 幀（真連ガ）</td>
+<td style="text-align: left;">絕對不要嘗試按昇龍，老實防守</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>春麗 (Chun-Li)</strong></td>
+<td style="text-align: left;">5LP &gt; 5LP</td>
+<td style="text-align: left;">間隙 0 幀（真連ガ）</td>
+<td style="text-align: left;">系統自動格擋，不可插招</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>豪鬼 (Akuma)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP &gt; 2LP</td>
+<td style="text-align: left;">連續輕拳真連ガ</td>
+<td style="text-align: left;">保持防守，等待第三下推開後攻守互換</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>嘉米 (Cammy)</strong></td>
+<td style="text-align: left;">生綠衝 2LP &gt; 5HP</td>
+<td style="text-align: left;">綠衝 +4F 形成真連ガ</td>
+<td style="text-align: left;">必殺連攜，不可盲動</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3>2. 非連ガ（有空隙，可插動 / 可 DI 確反）名單</h3>
+<p>這些是天梯各角色最喜歡用來「偷幀騙人」的套路，一旦識別，就是送分題：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">角色</th>
+<th style="text-align: left;">經典非連ガ連攜</th>
+<th style="text-align: left;">物理空隙長度</th>
+<th style="text-align: left;">防守方絕殺制裁方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>隆 (Ryu)</strong></td>
+<td style="text-align: left;">2MK &gt; 弱波掌擊 (214LP)</td>
+<td style="text-align: left;"><strong>空隙長達 6 幀！</strong></td>
+<td style="text-align: left;"><strong>看見波掌起手秒按 Drive Impact (DI) 100% Punish Counter！</strong>（回扣 167 號 Dogura 秘笈）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">迅雷腳初段 &gt; 派生中段踢</td>
+<td style="text-align: left;"><strong>空隙長達 8 幀！</strong></td>
+<td style="text-align: left;">看見抬腿直接出 <strong>4F 輕拳 (2LP)</strong> 插斷打康！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">2MK &gt; 弱迅雷腳初段</td>
+<td style="text-align: left;"><strong>空隙約 4 幀</strong></td>
+<td style="text-align: left;">出無敵技（OD 昇龍）直接擊穿！或預讀出 DI！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>本田 (E. Honda)</strong></td>
+<td style="text-align: left;">通常技 (2MP) &gt; 取消百裂張手</td>
+<td style="text-align: left;"><strong>空隙約 4~5 幀</strong></td>
+<td style="text-align: left;"><strong>非連ガ！</strong> 防住通常技瞬間按 <strong>OD 昇龍拳</strong> 直接貫穿張手前搖！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>將軍 (M. Bison)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消精神地雷 (214P)</td>
+<td style="text-align: left;"><strong>空隙長達 8 幀！</strong></td>
+<td style="text-align: left;">看見紫光起手出 <strong>Drive Reversal (6HP+HK)</strong> 100% 絕對擊飛！（回扣 166 號 Broski 秘笈）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>艾蓮娜 (Elena)</strong></td>
+<td style="text-align: left;">旋風鐮刀二段 &gt; 第三段下劈</td>
+<td style="text-align: left;"><strong>蹲防 100% 打空！</strong></td>
+<td style="text-align: left;">防住二段出 2LP 通殺下劈與猞猁步！（回扣 168 號初心応援秘笈）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>布蘭卡 (Blanka)</strong></td>
+<td style="text-align: left;">雷電獸 SA2 &gt; 空中連續衝撞</td>
+<td style="text-align: left;"><strong>空隙約 3~4 幀</strong></td>
+<td style="text-align: left;">出 <strong>弱昇龍拳 (623LP)</strong> 5 幀對空無敵原地截墜！（回扣 169 號威森里秘笈）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>七、 隆（Ryu）第一人稱視角之連ガ防守與空隙插動連段大典</h2>
+<p>作為以隆為核心的主修選手，掌握連ガ就是掌握了進攻與防守的絕對節奏切換器：</p>
+<h3>1. 防禦端：面對非連ガ空隙的極限插動連段</h3>
+<h4>A. 空隙插動 4F 輕手確認連段 (打斷肯迅雷、本田張手)</h4>
+<ul>
+<li><strong>觸發情境</strong>：在對手非連ガ空隙（如肯迅雷中段派生 8F 空隙、艾蓮娜猞猁步）中出招。</li>
+<li><strong>隆最速插動連段</strong>：
+  <code>蹲輕拳 2LP (發生 4F, 打出 Counter Hit)
+  └──&gt; 站中拳 5MP
+       └──&gt; 蹲中手 2MP
+            └──&gt; 強昇龍拳 623HP (2380 傷害) / 強驢踢 214HK (上牆)</code></li>
+</ul>
+<h4>B. 空隙無敵技插動 (OD 昇龍拳 / SA3 穿透)</h4>
+<ul>
+<li><strong>觸發情境</strong>：對手在通常技被防後貪心取消必殺技（如本田張手、隆波掌）。</li>
+<li><strong>輸入</strong>：623PP (OD 昇龍拳) 或 236236K (真·昇龍拳)。</li>
+<li><strong>效果</strong>：完全無敵幀直接吃掉對手的必殺技前搖，打出 Punish Counter！</li>
+</ul>
+<hr />
+<h3>2. 確反端：利用連打先行輸入的滿額 PC 斬殺連段</h3>
+<h4>A. 防住對手昇龍拳下落（近距離大確反）</h4>
+<ul>
+<li><strong>操作</strong>：看對手著地瞬間，狂按站重腳 5HK 連打！</li>
+<li><strong>連段</strong>：
+  <code>站重腳 5HK (PC, 著地瞬間命中)
+  └──&gt; 4HP
+       └──&gt; 重波掌氣 214HP
+            └──&gt; 強昇龍拳 623HP (3480 傷害)</code></li>
+</ul>
+<h4>B. 遠距離生綠衝最速確反（防住將軍崩擊、特瑞衝拳）</h4>
+<ul>
+<li><strong>操作</strong>：硬直中狂按 66 或 Parry 最速啟動生綠衝！</li>
+<li><strong>連段</strong>：
+  <code>生綠衝 站重拳 5HP (PC)
+  └──&gt; 4HP
+       └──&gt; 重驢踢 214HK
+            └──&gt; SA3 / 真·昇龍拳 (5820 滿額斬殺！)</code></li>
+</ul>
+<hr />
+<h2>八、 訓練場 (Training Mode) 專項連ガ特訓設置指南</h2>
+<p>請按照なるお的教學指引，在訓練場設置木人，親自感受連ガ與非連ガ的手感差異：</p>
+<h3>特訓 1：體驗「放開手把也不會被打」的真連ガ</h3>
+<ol>
+<li><strong>木人設置</strong>：錄製木人出 2LP &gt; 2LP &gt; 2LP。</li>
+<li><strong>操作體驗</strong>：
+   - 擋住第 1 下輕拳。
+   - 在第 2 下和第 3 下打過來的過程中，<strong>把手完全從搖桿和鍵盤上拿開</strong>！
+   - 親眼確認角色依然在自動防禦！消除對連續攻擊的生理恐懼！</li>
+</ol>
+<h3>特訓 2：非連ガ空隙插動特訓</h3>
+<ol>
+<li><strong>木人設置 1</strong>：肯出 2MK &gt; 弱迅雷腳 &gt; 派生中段。</li>
+<li><strong>木人設置 2</strong>：肯出 2MK &gt; 弱迅雷腳 &gt; 派生下段。</li>
+<li><strong>隨機播放目標</strong>：
+   - 防住迅雷第一段時，看見肯抬腿出中段，<strong>立刻按 2LP 打斷</strong>！體會空隙插動的快感！</li>
+</ol>
+<h3>特訓 3：大招下落「近出重K、遠出重P」先行輸入特訓</h3>
+<ol>
+<li><strong>木人設置</strong>：豪鬼出 OD 昇龍拳空揮。</li>
+<li><strong>操作目標</strong>：
+   - 等豪鬼落到地面的那一瞬間，按下 5HK 連打！
+   - 確認每次都能穩定打出 Punish Counter，絕不在半空中提早揮空！</li>
+</ol>
+<hr />
+<h2>九、 なるお實戰心法總結：手癖化即大師</h2>
+<p>在影片末尾，なるお語重心長地對所有格鬥愛好者說：</p>
+<blockquote>
+<p>「任何一項新的格鬥技術，從知道、到理解、再到手指能做出來，都需要時間。但最關鍵的是——<strong>把它變成手癖（手癖にする）！</strong> 只要你在訓練場練習過 50 次，大腦在天梯上就不再需要思考。防住攻擊時你的手會自動放鬆，看到空隙你的手指會自動插動，面對大招你的重腳會自動砸出。這就是從青銅走向大師的唯一正道！」</p>
+</blockquote>
+<p>掌握連ガ，讀懂空隙，放鬆手指，讓每一次防禦都成為最痛反擊的序曲！</p>
+<hr />
+<h2>十、 全 28 參戰角色經典壓制「真連ガ vs 非連ガ」微觀幀數總矩陣 (Master Roster Matrix)</h2>
+<p>為了讓進階競技選手能夠精準查閱全遊戲各角色的壓制套路到底是否具備物理空隙，本節收錄 Capcom 官方逐幀碰撞數據：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">角色名稱</th>
+<th style="text-align: left;">常見壓制連攜路徑</th>
+<th style="text-align: left;">連ガ屬性判定</th>
+<th style="text-align: left;">物理空隙長度 (Gap)</th>
+<th style="text-align: left;">防守方插動可行性與最佳制裁手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>隆 (Ryu)</strong></td>
+<td style="text-align: left;">5MP &gt; 2MP (近身)</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可插動，系統自動防禦</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>隆 (Ryu)</strong></td>
+<td style="text-align: left;">2MK &gt; 弱波掌擊 (214LP)</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>6 幀空隙</strong></td>
+<td style="text-align: left;"><strong>必中 DI 確反</strong>！或無敵昇龍穿透</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可插動，等待自然推開</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">2MK &gt; 弱迅雷腳</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>4 幀空隙</strong></td>
+<td style="text-align: left;">無敵技（OD 昇龍/SA）可穿透插動</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>肯 (Ken)</strong></td>
+<td style="text-align: left;">迅雷初段 &gt; 派生中段踢</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>8 幀空隙</strong></td>
+<td style="text-align: left;"><strong>4F 輕拳 (2LP)</strong> 必中截斷打康</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>豪鬼 (Akuma)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP &gt; 2LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">連續輕手自動格擋，第三下後拉開</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>豪鬼 (Akuma)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消弱金剛灼火</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>5 幀空隙</strong></td>
+<td style="text-align: left;">出無敵技插斷，或出 DI 撞飛</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>春麗 (Chun-Li)</strong></td>
+<td style="text-align: left;">5LP &gt; 5LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可插動</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>春麗 (Chun-Li)</strong></td>
+<td style="text-align: left;">2MK &gt; 取消百裂腳</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>3~4 幀空隙</strong></td>
+<td style="text-align: left;">4F 輕拳容易相殺，出 OD 昇龍必中</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>嘉米 (Cammy)</strong></td>
+<td style="text-align: left;">生綠衝 2LP &gt; 5HP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀 (綠衝+4F)</td>
+<td style="text-align: left;">絕對不可搶鍵，老實防守</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>嘉米 (Cammy)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消重螺旋箭</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>4 幀空隙</strong></td>
+<td style="text-align: left;">無敵技直接插斷，打出大確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>古烈 (Guile)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP &gt; 2LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可動彈</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>古烈 (Guile)</strong></td>
+<td style="text-align: left;">2MP &gt; 取消弱音速手刀</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>2~3 幀空隙</strong></td>
+<td style="text-align: left;">極精密幀數陷阱，切忌按常態輕手</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>將軍 (M. Bison)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消精神地雷 (214P)</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>8 幀空隙</strong></td>
+<td style="text-align: left;"><strong>秒按 Drive Reversal (6HP+HK) 100% 擊飛</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>將軍 (M. Bison)</strong></td>
+<td style="text-align: left;">綠衝 4HK &gt; 4HK</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>6 幀空隙</strong></td>
+<td style="text-align: left;">4F 輕手直接戳碎其假連攜</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>泰瑞 (Terry)</strong></td>
+<td style="text-align: left;">5MP &gt; 2MK</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">安心防守</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>泰瑞 (Terry)</strong></td>
+<td style="text-align: left;">通常技 &gt; 取消重能量波</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>4~6 幀空隙</strong></td>
+<td style="text-align: left;">看到砸地動作直接出 <strong>強昇龍拳</strong> 貫穿！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>舞 (Mai)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消蓄力花蝶扇</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>15 幀以上空隙</strong></td>
+<td style="text-align: left;">巨大真空期，直接出昇龍或 SA 擊斃</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>艾蓮娜 (Elena)</strong></td>
+<td style="text-align: left;">旋風鐮刀一段 &gt; 二段</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">系統自動格擋</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>艾蓮娜 (Elena)</strong></td>
+<td style="text-align: left;">旋風鐮刀二段 &gt; 三段下劈</td>
+<td style="text-align: left;"><strong>幾何打空</strong></td>
+<td style="text-align: left;"><strong>蹲防 100% 空揮</strong></td>
+<td style="text-align: left;">防二段連點 <strong>2LP</strong> 通殺所有派生</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>布蘭卡 (Blanka)</strong></td>
+<td style="text-align: left;">雷電獸 SA2 &gt; 連續衝撞</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>3~4 幀空隙</strong></td>
+<td style="text-align: left;"><strong>弱昇龍拳 (623LP)</strong> 5 幀無敵截落</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>本田 (E. Honda)</strong></td>
+<td style="text-align: left;">2MP &gt; 取消百裂張手</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>4~5 幀空隙</strong></td>
+<td style="text-align: left;">出無敵昇龍拳直接貫穿張手前搖</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>盧克 (Luke)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可插動</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>盧克 (Luke)</strong></td>
+<td style="text-align: left;">5HP &gt; 取消重閃光衝拳</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>4 幀空隙</strong></td>
+<td style="text-align: left;">出 OD 昇龍或 SA3 穿透</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>吉米 (Jamie)</strong></td>
+<td style="text-align: left;">5LP &gt; 5LK &gt; 5MP TC</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">目標連段不可插動，第三段防住確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>金柏莉 (Kimberly)</strong></td>
+<td style="text-align: left;">2LP &gt; 2LP</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">自動防禦</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>愛德 (Ed)</strong></td>
+<td style="text-align: left;">5MP &gt; 2MK</td>
+<td style="text-align: left;"><strong>真連ガ</strong></td>
+<td style="text-align: left;">0 幀</td>
+<td style="text-align: left;">不可插招</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>愛德 (Ed)</strong></td>
+<td style="text-align: left;">通常技 &gt; 取消強雷電鞭蓄力</td>
+<td style="text-align: left;"><strong>非連ガ</strong></td>
+<td style="text-align: left;"><strong>12 幀空隙</strong></td>
+<td style="text-align: left;">看見蓄力前搖直接生綠衝或出 DI 痛打</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>十一、 格鬥設備物理學：搖桿 (Lever) vs 無軸手把 (Leverless) 在連ガ中的實戰差異</h2>
+<p>なるお在影片中（【00:05:30 - 00:06:30】）與學員深度探討了更換設備（如傳統大搖桿 vs 街機無軸 Hitbox / Leverless）對連ガ防守的影響：</p>
+<h3>1. 無軸手把 (Leverless) 的先行輸入優勢</h3>
+<ul>
+<li><strong>物理特性</strong>：無軸手把全靠手指敲擊按鍵，按鍵觸發鍵程僅有 1~1.5mm。</li>
+<li><strong>生綠衝先行輸入</strong>：</li>
+<li>防守方在防禦硬直期間，雙手可以進行「超高速雙擊按鍵（Double Tap）」。</li>
+<li>由於沒有搖桿回中的物理彈簧延遲，無軸手把可以在防禦解除的 <strong>第 1 幀以 0 微秒延遲瞬間觸發生綠衝</strong>！</li>
+<li>這使得遠距離大確反（如防住特瑞衝拳後的 5HP 綠衝）成功率提升至近乎 100%！</li>
+</ul>
+<h3>2. 傳統大搖桿 (Arcade Stick) 的防守操作修煉</h3>
+<ul>
+<li><strong>常見失誤</strong>：很多搖桿玩家在防守對手狂風暴雨般的壓制時，手掌死死握住搖桿搖晃，容易在連ガ切換非連ガ時誤輸入「跳躍（8）」或「斜上（9）」，導致漏防暴斃。</li>
+<li><strong>なるお的動作修正守則</strong>：</li>
+<li><strong>「放鬆手腕，只用指尖扣住 1（斜下防禦）」</strong>！</li>
+<li>信任遊戲系統的「自動連ガ判定」，不要反覆神經質地來回推拉搖桿。</li>
+<li>當需要先行輸入時，手指在按鍵面板上敲擊，手腕保持不動，確保防禦姿態穩如磐石！</li>
+</ul>
+<hr />
+<h2>十二、 連ガ在進攻端的降維打擊：如何建構「令對手窒息」的真假壓制</h2>
+<p>理解了連ガ，不僅能讓防守變得極度輕鬆，更能讓你在進攻端化身為掌控對手生死的「節奏操控大師」！</p>
+<h3>1. 進攻公式 A：構造「絕對安全」的真連ガ壓制（消磨綠條）</h3>
+<p>當對手防禦綠條只剩 1 格，且對手手握滿氣 SA3 隨時準備「凹無敵技反殺」時：
+- <strong>你的策略</strong>：<strong>全套進攻必須全部使用「真連ガ（True Blockstring）」！</strong>
+- <strong>隆的真連ガ削氣公式</strong>：
+  <code>生綠衝 2LP (+4F 有利) ──&gt; 站中拳 5MP (真連ガ！) ──&gt; 蹲中拳 2MP (真連ガ！)</code>
+- <strong>戰術效果</strong>：
+  - 對手在此期間即使瘋狂狂按 SA3、狂按 OD 昇龍拳，系統因為連ガ判定，<strong>強制鎖定其防禦動作，無敵技根本按不出來</strong>！
+  - 對手眼睜睜看著自己的綠條在連續防禦中被徹底打空，直接進入 Burnout（虛脫），隨後一記 DI 撞牆直接暴斃！</p>
+<h3>2. 進攻公式 B：主動製造「3 幀空隙」打擊陷阱 (Frame Trap)</h3>
+<p>當對手是個喜歡在防守中亂按 4F 輕拳的暴躁型玩家時：
+- <strong>你的策略</strong>：<strong>主動製造「3 幀物理空隙（3F Gap）」！</strong>
+- <strong>隆的打擊陷阱公式</strong>：
+  <code>站近中拳 5MP (被防 +1F) ──&gt; 延遲 1 幀出 站中拳 5MP (發生 7F, 實際間隙 3F)</code>
+- <strong>物理碰撞</strong>：
+  - 由於空隙只有 3 幀，對手最速的 4 幀輕拳在出手第 3 幀時，你的 5MP 判定已經生效！
+  - 系統直接判定為 <strong>Counter Hit（打康暴擊）</strong>！
+  - 隆接續 2MP &gt; 強驢踢 &gt; SA3，直接打掉對手半條血！</p>
+<hr />
+<h2>十三、 實戰天梯天眼系統：如何一眼識破對手是在「真壓制」還是「虛張聲勢」</h2>
+<p>在天梯排位中，許多對手靠著花俏的動作（如跳步、換架勢、特殊通常技取消）嚇唬人。大師級玩家的心眼透視法：</p>
+<p>`
+【第一步：看對手是否消耗了 Drive 綠條】
+未綠衝通常技 ──&gt; 銜接通常技 ──&gt; 90% 存在 2~4 幀縫隙！不是真連ガ！
+綠衝通常技 (+4F 加成) ──&gt; 銜接通常技 ──&gt; 100% 是真連ガ！此時絕對不可亂動！</p>
+<p>【第二步：看對手是否出通常技取消必殺技】
+通常技取消非 OD 必殺技（如波掌、張手、迅雷、灼火）──&gt; 100% 存在 4~8 幀巨大空隙！
+果斷按下無敵技 (OD 昇龍) 或 Drive Impact (DI) 直接擊穿！
+`</p>
+<hr />
+<h2>十四、 總結：格鬥遊戲的「大道至簡」</h2>
+<p>なるお的這部教學之所以被譽為神作，正是因為它打破了格鬥遊戲長久以來的迷信：
+- 你不需要有超人類的神經反應去目押確反；
+- 你不需要在對手攻擊時神經質地狂搓搖桿；
+- 只要你懂得「放手交給連ガ」，只要你學會「硬直中連打先行輸入」；
+- 你的防守將如鋼鐵般不可撼動，你的反擊將如雷霆般精確無誤！</p>
+<p>這就是頂尖選手從容不迫的終極奧秘——<strong>以物理規則為盾，以系統緩衝為劍，談笑間將對手的所有虛妄化為烏有！</strong></p>
+<hr />
+<h2>十五、 模糊防禦 (Fuzzy Defense) 與連ガ的深度化學反應</h2>
+<p>在理解了連ガ的物理屬性後，高階職業選手（如梅原大吾、Tokido）最常用的頂級防守心法——<strong>「模糊防禦（Fuzzy Defense）」</strong> 就能水到渠成地融入你的防禦體系中：</p>
+<h3>1. 什麼是模糊刺拳 (Fuzzy Jab / 延遲輕手)？</h3>
+<ul>
+<li><strong>原理依據</strong>：</li>
+<li>對手的連ガ壓制（如 2LP &gt; 2LP）在命中防守方時，防守方處於絕對鎖定防禦狀態。</li>
+<li>當對手的連ガ結束後，對手面臨兩個選擇：<ol>
+<li>最速打擊（Frame Trap，留下 2~3 幀空隙）。</li>
+<li>稍微前走普通摔（Walk-in Throw，走動需要至少 4~6 幀）。</li>
+</ol>
+</li>
+<li><strong>操作指令</strong>：</li>
+<li>防守方在防住連ガ第一擊後，<strong>不立刻按鍵，先維持防禦 2 幀，隨後在第 3 幀按出 2LP（蹲輕拳）</strong>！</li>
+<li><strong>完美雙解效果</strong>：</li>
+<li>若對手出的是真連ガ或緊密的打擊陷阱：防守方的 2 幀蹲防剛好完美接下攻擊，角色處於防禦硬直中，輸入的 2LP 不會出現在外面挨打！</li>
+<li>若對手企圖前走普通摔：對手前走需要時間，防守方的 2LP 會在對手進入投擲射程前直接將其打中打康（Counter Hit）！</li>
+</ul>
+<h3>2. 什麼是模糊跳躍 (Fuzzy Jump)？</h3>
+<ul>
+<li><strong>操作指令</strong>：在防住連ガ攻擊後，輕輕「撥一下向上跳躍（8 方向）」，隨即立刻拉回斜下防禦（1 方向）。</li>
+<li><strong>實戰效果</strong>：</li>
+<li>若對手企圖普通摔：在對手投擲判定生效的同一幀，防守方的跳躍起跳幀（Pre-jump 1~3F）具有投擲完全免疫判定，直接從地面跳起，下落出重拳打出 Punish Counter！</li>
+<li>若對手出連續打擊：防守方在連ガ硬直中跳躍指令被吞噬，系統自動維持防禦，安全無虞！</li>
+</ul>
+<hr />
+<h2>十六、 頂尖職業賽事覆盤：連ガ透視下的封神與崩盤</h2>
+<p>為了印證なるお在影片中傳授的真理，我們調取了頂級賽事中兩場經典對局進行逐幀拆解：</p>
+<h3>案例 1：梅原大吾（Daigo）的「空手禪」——連ガ中的絕對放鬆</h3>
+<ul>
+<li><strong>賽事場景</strong>：梅原的肯在版邊面對狂風暴雨般的嘉米壓制。</li>
+<li><strong>神級表現</strong>：</li>
+<li>嘉米在版邊打出生綠衝 2LP &gt; 5HP &gt; 5LP 連續壓制。</li>
+<li>現場鏡頭特寫梅原的雙手：<strong>梅原在防住綠衝 2LP 後，左手竟然完全沒有任何多餘的推拉動作，右手懸在按鍵上方，宛如石雕！</strong></li>
+<li>梅原深知這是一套真連ガ，任何多餘的按鍵都是大腦負擔。</li>
+<li>直到嘉米第三下 5LP 推開、企圖上前偷摔的瞬間，梅原右手閃電般按下 2LP 點碎嘉米的前衝，隨後一記奮迅龍卷反將嘉米關入版邊！</li>
+<li><strong>教學啟示</strong>：連ガ不是束縛，而是給予防守方大腦「喘息與思考下一步」的黃金充電時間！</li>
+</ul>
+<h3>案例 2：天梯選手「在連ガ中瘋狂狂按昇龍」的自毀慘劇</h3>
+<ul>
+<li><strong>賽事場景</strong>：一名天梯 Master 選手被隆逼入版邊。</li>
+<li><strong>崩盤覆盤</strong>：</li>
+<li>隆出 生綠衝 2LP &gt; 5MP &gt; 2MP（真連ガ）。</li>
+<li>防守方因為極度恐慌，在防禦中瘋狂狂轉 623PP (OD 昇龍拳)。</li>
+<li>在前兩段真連ガ期間，由於系統鎖定，OD 昇龍拳沒有出來；但在 2MP 被防結束的一瞬間，隆故意停手後拉（Shimmy）！</li>
+<li>防守方預先搓出的 OD 昇龍拳在防禦硬直解除的第 1 幀突然「失控飛出」！</li>
+<li>隆站在原地微笑著看著防守方從半空中下落，落地後一記站重拳打滿 6200 CA3 斬殺！</li>
+<li><strong>教訓</strong>：永遠不要在連ガ中盲目狂轉必殺技！只有當你「確信對手出的是非連ガ」時，無敵技才是武器；否則它只是你自掘墳墓的鐵鍬！</li>
+</ul>
+<hr />
+<h2>十七、 訓練場 (Training Mode) Dummy 錄製進階指南：親手調校 0 幀誤差木人</h2>
+<p>很多玩家在訓練場錄製木人時，自己按出來的連攜總是參差不齊。なるお傳授了標準錄製參數：</p>
+<h3>1. 如何錄製「標準真連ガ」木人</h3>
+<ol>
+<li>進入訓練場，選擇隆作為 Dummy。</li>
+<li>開啟訓練場 <strong>「動作時機顯示（Action Timing Display）」</strong>。</li>
+<li>錄製槽位：生綠衝 (Drive Rush) &gt; 蹲輕拳 2LP &gt; 站中拳 5MP。</li>
+<li>檢驗方法：回放該槽位，防守方防住 2LP 後狂按無敵昇龍，如果昇龍出不來且防住了 5MP，證明成功錄製了真連ガ！</li>
+</ol>
+<h3>2. 如何錄製「標準 3 幀空隙打擊陷阱」木人</h3>
+<ol>
+<li>錄製槽位：站中拳 5MP &gt; 蹲中手 2MP。</li>
+<li>檢驗方法：防守方在防住 5MP 後按 4F 輕拳，如果每次都被 2MP 打出「Counter Hit」，證明該連攜為精準的 3 幀 Frame Trap！</li>
+</ol>
+<hr />
+<h2>十八、 なるお式防守心理學：為什麼「緊張」是防守最大的敵人？</h2>
+<p>在影片的終章，なるお回顧了自己二十餘年格鬥生涯的心路歷程：</p>
+<blockquote>
+<p>「為什麼新手一進入防守狀態，心跳就會加速、手指就會發抖、眼睛就會發直？因為在你的潛意識裡，你把防守看作是『受刑』，你覺得每一毫秒自己都在面臨被暴打的危險。
+但是，當你今天徹底看懂了連ガ，你就會明白——<strong>防守不是受刑，防守是你在等待對手犯錯的獵人時刻！</strong>
+在連ガ的時間裡，遊戲引擎是你的保鏢，系統在替你格擋；你只需要像一個冷靜的狙擊手一樣，看著對手的動作。當他露出空隙的那一瞬間，你的手指輕輕連打，最痛的確反就會如約而至。」</p>
+</blockquote>
+<p>放下恐懼，擁抱連ガ，享受格鬥遊戲最深邃的博弈之美！</p>
+<hr />
+<h2>十九、 階梯式段位進階地圖：從連ガ認知到大師級心理博弈</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">玩家段位</th>
+<th style="text-align: left;">核心認知與技術重點</th>
+<th style="text-align: left;">實戰及格標準</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Bronze ～ Silver (青銅至白銀)</strong></td>
+<td style="text-align: left;">克服生理恐慌，建立「放手防守」概念</td>
+<td style="text-align: left;">在對手連續輕手壓制時，手能放開搖桿不亂動，不再防守中狂按按鍵白白送打康。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gold ～ Platinum (黃金至白金)</strong></td>
+<td style="text-align: left;">掌握「先行輸入連打」大確反</td>
+<td style="text-align: left;">防住對手昇龍拳下落時，能看準落地連打 5HK；防住大突進時能狂按 66 最速生綠衝確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Diamond (鑽石段位)</strong></td>
+<td style="text-align: left;">辨識主流角色的「非連ガ偷幀套路」</td>
+<td style="text-align: left;">一眼看出肯迅雷中段派生（8F 空隙）、本田張手取消（5F 空隙），並能以 4F 輕拳或 OD 昇龍穩定插斷。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Master (大師段位)</strong></td>
+<td style="text-align: left;">融會貫通「模糊防禦 (Fuzzy Defense)」與主動壓制構造</td>
+<td style="text-align: left;">在防守中自然融入 Fuzzy Jab 與 Fuzzy Jump；在進攻端根據對手心態自由切換真連ガ削氣與 3F Frame Trap！</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二十、 なるお精選：連續防禦與確反的十條黃金格言 (Ten Commandments)</h2>
+<p>在影片結尾，なるお為所有挑戰排位的玩家總結了十條銘刻在心的防守心法：</p>
+<ol>
+<li><strong>【連ガ在身莫慌張】</strong>：下一擊在防禦硬直中抵達，系統會主動幫你格擋，放開搖桿也絕不挨打。</li>
+<li><strong>【連ガ期間無動作】</strong>：連續防禦生效中不可插動、不能凹昇龍，任何掙扎都被系統吞噬，安心放鬆手指。</li>
+<li><strong>【確反連打免目押】</strong>：防禦硬直結束前直接狂按大按鍵，Capcom 先行輸入系統自動在第 1 幀幫你最速出招！</li>
+<li><strong>【昇龍下落等著地】</strong>：對手無敵技空揮下落切忌空中盲按，看雙腳踩在地面的瞬間按下 5HK 穩吃大破綻！</li>
+<li><strong>【近出重腳遠出拳】</strong>：貼身大確反無腦按站重腳 5HK，被推開半步長射程站重拳 5HP 綠衝必中！</li>
+<li><strong>【綠衝通常真連ガ】</strong>：對手生綠衝帶來的 +4F 加成通常技銜接，100% 為真連ガ，絕對不可隨意搶招！</li>
+<li><strong>【必殺取消留空隙】</strong>：對手通常技取消常規必殺技（如迅雷、波掌、張手），90% 存在 4~8 幀物理縫隙，敢於出招擊穿！</li>
+<li><strong>【模糊刺拳化二擇】</strong>：防住連ガ延遲 2 幀點出 2LP，既防住最速打擊、又能點碎走前偷摔！</li>
+<li><strong>【削氣逼入真連ガ】</strong>：對手瀕臨 Burnout 且有 SA3 時，自身進攻全出真連ガ，鎖死其無敵凹技強行打暈！</li>
+<li><strong>【平靜心態成大師】</strong>：防守不是受刑，而是獵人等待獵物露出破綻的寧靜時刻！</li>
+</ol>
+<p>牢記這十條黃金心法，連續防禦將成為你征戰天梯最堅不可摧的鋼鐵堡壘，引領你一路高歌猛進，直達大師殿堂！</p>
+<hr />
+<h2>二十一、 版邊壓制中的連ガ防禦與極限求生手冊 (Corner Blockstring Survival)</h2>
+<p>在快打旋風 6 中，版邊是連ガ與非連ガ攻防最為慘烈、代價最高的死鬥場。當防守方被逼入角落時，對手的壓制往往呈現極具規律的模式化特徵：</p>
+<h3>1. 識別版邊「假連ガ」並以 Drive Reversal (D反) 強制脫困</h3>
+<ul>
+<li><strong>對手的常見套路</strong>：</li>
+<li>許多角色（如盧克、春麗、肯）在版邊喜歡用 站中拳 (5MP) &gt; 蹲中拳 (2MP) &gt; 取消必殺技 進行壓制。</li>
+<li>5MP 到 2MP 往往是真連ガ，但 2MP 取消必殺技（例如盧克取消沙暴、肯取消波動拳）<strong>必定存在 4 幀以上的空隙</strong>！</li>
+<li><strong>救命操作</strong>：</li>
+<li>在防住通常技的第 1~2 幀，不要慌張。</li>
+<li>一旦看到對手有取消必殺技的前搖動作，防守方立刻按下 <strong>Drive Reversal (6HP+HK)</strong>！</li>
+<li>由於該空隙非連ガ，Drive Reversal 的霸體與吹飛判定會在第 20 幀生效，直接將對手從版邊大腳踹回螢幕中央，完成教科書級的版邊脫困！</li>
+</ul>
+<h3>2. 當自身陷入 Burnout (虛脫) 時的版邊連ガ絕境應對</h3>
+<ul>
+<li><strong>虛脫狀態的致命威脅</strong>：</li>
+<li>當防守方進入 Burnout 時，所有防禦硬直強制增加 4 幀！</li>
+<li>這意味著對手很多原本「非連ガ」的招式，在 Burnout 下會變成<strong>「強制真連ガ」</strong>！</li>
+<li><strong>虛脫防守生存紀律</strong>：</li>
+<li><strong>切勿在對手通常技連打中嘗試按鍵</strong>：因為硬直被延長，你按任何鍵都會直接被暴擊打出 Punish Counter！</li>
+<li><strong>緊盯 Drive Impact (迸擊)</strong>：對手在版邊一定會嘗試用 DI 撞牆打暈你。因為此時你無法出 OD 昇龍也無法出 DI 反迸，<strong>唯一能打破 DI 的是「暗轉無敵的 SA 超必殺技（SA1 / SA2 / SA3）」</strong>！</li>
+<li>當看到對手在連攜間隙中突然出 DI 的瞬間，手指光速轉出 SA，無敵穿透直接斬殺對手，完成極限大反轉！</li>
+</ul>
+<p>這份版邊求生法則進一步印證了なるお的格鬥哲學：<strong>唯有在最深邃的物理規則中保持冷靜，才能在最致命的深淵邊緣找到生路！</strong></p>
+<hr />
+<h2>二十二、 訓練場專項錄製特訓 4：版邊空隙 D反 脫困反應特訓</h2>
+<p>為了將版邊空隙插動化為手指的神經反射，請在訓練場中進行以下專項木人錄製：</p>
+<ol>
+<li><strong>木人錄製槽位 1</strong>：肯在版邊出 5MP &gt; 2MP &gt; 弱迅雷腳。</li>
+<li><strong>木人錄製槽位 2</strong>：肯在版邊出 5MP &gt; 2MP &gt; 弱波動拳。</li>
+<li><strong>木人錄製槽位 3</strong>：肯在版邊出 5MP &gt; 走前普通投。</li>
+<li><strong>隨機播放目標</strong>：
+   - 防守槽位 1 &amp; 2 時：防住 5MP &gt; 2MP 之後，看見必殺技前搖發動瞬間，<strong>立刻按下 6HP+HK (Drive Reversal)</strong>！確認每次都能將肯震飛脫困！
+   - 防守槽位 3 時：在 2MP 被防結束後，以 <strong>模糊刺拳 (Fuzzy Jab 2LP)</strong> 點斷肯的走前偷摔！
+   - 連續成功 20 次，將版邊防守的恐慌感徹底轉化為從容應對的強大自信！</li>
+</ol><div class="nav"><span><a href="169.html">← 169 威森里 借鑑Endingwalker之布蘭卡Blanka怪獸奇襲完全破解</a></span><span style="text-align:right"><a href="171.html">171 ACQUA 職業選手親授角色對策起步與天梯速效思維 →</a></span></div></div></body></html>

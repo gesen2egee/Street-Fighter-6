@@ -1,0 +1,700 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>傑斯特 埃德蒙本田超級頭槌與百貫落速效對策｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 174 篇</div><h1>影片專屬深度解析 174：傑斯特 - 【street fighter 6】簡單的對策本田 (E. Honda) 核心破綻與速效滅殺指南</h1><blockquote>
+<p>📺 <strong>影片來源</strong>：<a href="https://www.youtube.com/watch?v=fN_KO-O8-mo">【street fighter 6】簡單的對策本田</a><br />
+👤 <strong>頻道作者</strong>：Jest_stickman【傑斯特】（繁體中文圈頂尖格鬥導師、資深格鬥名將） | ⏱️ <strong>時長</strong>：03分49秒 (229s) | 🆔 <strong>影片ID</strong>：fN_KO-O8-mo<br />
+【字幕補充】：原片無語音旁白（字幕檔為遊戲音效音樂），全片採實機操作與畫面字卡直觀教學；手冊忠實記錄本田頭槌被防 -4F 搶動、百貫落昇龍對空與前衝閃避、百烈張手負幀等核心畫面演示對策。<br />
+🎯 <strong>核心對策目標</strong>：徹底終結天梯新人與進階玩家的「初見殺惡夢」——相撲大師「埃德蒙·本田 (E. Honda)」的兩大無腦板斧（超級頭槌 Super Headbutt、超級百貫落 Sumo Smash）與百烈張手連攜！從底層物理機制拆解「為什麼防住頭槌不敢動是最大的致命錯誤？」「百貫落起飛與下落判定幾何分析」「對空昇龍截落與最速前衝閃避落地大確反」「百烈張手被防負幀確反」「OD 頭槌霸體破綻」，以及自角色隆（Ryu）專屬「強昇龍拳完美截墜與 5800+ 滿氣 CA3 滅殺公式」！</p>
+</blockquote>
+<hr />
+<h2>🧭 戰略總綱：破除相撲橫綱的「無腦輪椅」與「心理霸凌」</h2>
+<p>在《快打旋風 6 (Street Fighter 6)》中，<strong>埃德蒙·本田（E. Honda）</strong>常年被玩家戲稱為「天梯檢票員」或「輪椅王者」。</p>
+<p>無數新手、白金甚至鑽石段位的玩家在面對本田時，往往會經歷極度痛苦的心態崩潰：
+1. <strong>「超級頭槌（飛天肉彈）防住之後，為什麼我總是搶不到招？」</strong>：本田從全螢幕像一枚砲彈一樣撞過來，防守方辛辛苦苦擋住，卻因為害怕被反擊而不敢按鍵，結果被本田連續復讀頭槌撞到力竭（Burnout）碎盾！
+2. <strong>「超級百貫落（屁股下砸）到底怎麼解？」</strong>：本田整個人拔地而起飛上天，然後一屁股坐在防守方頭頂。防守方蹲防被砸，站防被砸，被防後本田還能接著搶招或指令投，讓人防不勝防！
+3. <strong>「近身百烈張手一直推，根本推不開！」</strong>：本田貼身連續雙手瘋狂拍擊，推完又拍，防守方動輒挨打出 Counter，不動又被磨血磨綠條！</p>
+<p>繁體中文圈知名格鬥導師 <strong>傑斯特 (Jest_stickman)</strong> 在本教學中用最精準、最實戰的語言揭示了真相：</p>
+<blockquote>
+<p><strong>「本田在低中段位的強勢，完全建立在對手『不懂幀數規律』與『不敢出招反抗』的心理恐懼之上！本田的頭槌被防是負幀！他的普通張手被防全是負幀！他的百貫落飛在空中有整整 40 幀的滯空時間任由你對空或走開！只要你記住『防住頭槌立刻點輕拳』與『百貫落抬頭出昇龍』這兩大鐵律，本田所有的無腦套路將會瞬間化為烏有！」</strong></p>
+</blockquote>
+<pre><code class="language-mermaid">graph TD
+    A[本田三大無腦進攻支柱] --&gt; B[支柱 1：全螢幕蓄力超級頭槌 [4]6P]
+    A --&gt; C[支柱 2：空中變軌超級百貫落 [2]8K]
+    A --&gt; D[支柱 3：近身百烈張手連推 236P]
+
+    B --&gt;|物理死穴| E[被防固定負 4 幀！貼身最速 4F 輕拳確反，中距離出波破蓄力]
+    C --&gt;|物理死穴| F[滯空 40 幀！強昇龍拳截落 / 最速前衝閃避抓落地 30F 硬直大斬殺]
+    D --&gt;|物理死穴| G[普通版被防 -4F 確反！OD 版被防秒按 Drive Reversal 推開！]
+</code></pre>
+<hr />
+<h2>⏱️ 影片微觀時間戳章節導航 (傑斯特速效時序)</h2>
+<p>本解析提煉傑斯特教學影片 00:00 至 03:49 每一秒的核心教學節奏與實機操作要點：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">分:秒 時間戳</th>
+<th style="text-align: left;">章節主題與教學核心</th>
+<th style="text-align: left;">實機演示與技術要點剖析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[00:00 - 00:28]</strong></td>
+<td style="text-align: left;"><strong>開篇總覽：為什麼本田是新手惡夢？</strong></td>
+<td style="text-align: left;">傑斯特剖析玩家面對本田時的恐懼來源，點明頭槌與百貫落的盲區</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[00:28 - 01:12]</strong></td>
+<td style="text-align: left;"><strong>超級頭槌 (Headbutt) 核心破綻與確反</strong></td>
+<td style="text-align: left;">實機演示弱/中/強頭槌被防幀數，拆解 <strong>-4F 物理定律</strong>，演示 4F 輕拳確反搶回回合</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:12 - 01:45]</strong></td>
+<td style="text-align: left;"><strong>頭槌中遠距離應對：波動拳破蓄力與 Parry</strong></td>
+<td style="text-align: left;">演示本田需要後蓄力的限制，傳授用氣功破壞蓄力與中距離格擋反制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:45 - 02:40]</strong></td>
+<td style="text-align: left;"><strong>超級百貫落 (Sumo Smash) 徹底破解指南</strong></td>
+<td style="text-align: left;">拆解百貫落起飛與下落時間差，實機演示昇龍拳對空截落與前衝抓著地 30F 痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[02:40 - 03:15]</strong></td>
+<td style="text-align: left;"><strong>百烈張手 (Hundred Hand Slap) 負幀真解</strong></td>
+<td style="text-align: left;">演示 236P 被防 -4F 破綻，說明普通版不可無腦復讀，防守方反打時機</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[03:15 - 03:49]</strong></td>
+<td style="text-align: left;"><strong>傑斯特治本田三大金科玉律與總結</strong></td>
+<td style="text-align: left;">總結實戰心態，傳授三大防守口訣，宣告本田無腦神話徹底破滅</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>一、 超級頭槌 (Super Headbutt / [4]6P) 微觀機制與確定反擊大典</h2>
+<p>超級頭槌是本田立足天梯的最核心牽制技。本田將全身重量化作一枚水平火箭向前飛撞：</p>
+<h3>1. 招式基本屬性與各版本微觀幀數表</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式版本</th>
+<th style="text-align: left;">輸入指令</th>
+<th style="text-align: left;">發生 (Startup)</th>
+<th style="text-align: left;">被防硬直 (On Block)</th>
+<th style="text-align: left;">命中優勢 (On Hit)</th>
+<th style="text-align: left;">判定特性與核心破綻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>弱頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6LP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;"><strong>-4 幀</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進距離短，近身撞在防禦上，防守方手握 +4F 主動權，4F 輕拳必中確反！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6MP</code></td>
+<td style="text-align: left;">15F</td>
+<td style="text-align: left;"><strong>-4 幀</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進距離中等，被防固定 -4 幀，防守方點小手打斷搶動！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>強頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6HP</code></td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-4 幀</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">全螢幕突進，速度快。尖端被防可能微拉開距離，但本田依然是 -4F！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6PP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;"><strong>-21 幀</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">具備 1 段霸體（Armor），發生極快。被防後手握 <strong>-21F 巨大硬直</strong>，跳入最大斬殺！</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code>超級頭槌被防判定框與幀數時序：
+本田飛出撞擊防禦： [防禦成功] ──&gt; 本田落地反彈，陷入無法動作硬直！
+幀數狀態：        本田：-4 幀（硬直中） | 防守方：+4 幀（最速可動！）
+防守方操作：      最速按出 2LP (發生 4F) ──&gt; 在本田能防禦的第 1 幀前精準命中！
+</code></pre>
+<h3>2. 玩家面對頭槌的最大盲區：被防後的「心理麻痺」</h3>
+<ul>
+<li><strong>常見錯誤</strong>：很多玩家防住頭槌之後，雙手死死拉著後方向不敢動。本田玩家最擅長看準這一點，防住頭槌後故意繼續按 2LP、出百烈張手，甚至再出一次頭槌！防守方就這樣一步步被磨損鬥氣條，最終被逼入版邊燒線！</li>
+<li><strong>傑斯特破解鐵律</strong>：</li>
+<li><strong>「防住頭槌，立刻點小手！」</strong></li>
+<li>在《快打旋風 6》中，全角色的最速輕拳均為 <strong>4 幀 (4F)</strong>！</li>
+<li>當你擋住常規頭槌時，你手握 <strong>+4 幀</strong> 的絕對優勢！</li>
+<li>此時你按下 2LP，你的判定會在第 4 幀完全展開。此時本田剛剛解除硬直，如果本田企圖按任何拳腳（哪怕是他的 4F 輕拳），也會因為落後 4 幀而被你<strong>直接打出 Counter 打康</strong>！</li>
+<li>如果本田防守，你的 2LP 也能將其推開，徹底打斷他的進攻節奏！</li>
+</ul>
+<h3>3. 中遠距離克制頭槌：波動拳破蓄力法</h3>
+<ul>
+<li><strong>底層物理機制</strong>：超級頭槌是「蓄力技（Charge Move）」，本田必須拉住後方向（4 方向）至少 45 幀（約 0.75 秒）才能蓄出頭槌；</li>
+<li><strong>隆的應對</strong>：</li>
+<li>隆在中遠距離不斷發射 <strong>弱波動拳 (236LP)</strong>；</li>
+<li>本田在面對氣功時，如果要前走就必須放開後蓄力，一旦放開後蓄力，他就無法使出頭槌！</li>
+<li>如果本田試圖強行出頭槌穿波，常規頭槌完全沒有穿波判定，會直接在空中撞在波動拳上被當場炸飛！</li>
+</ul>
+<hr />
+<h2>二、 超級百貫落 (Sumo Smash / [2]8K) 微觀機制與完全破解手冊</h2>
+<p>超級百貫落是本田最讓對手抓狂的招式：本田整個人垂直起跳騰空，隨後像一座肉山般急速下墜，用屁股將對手砸扁！</p>
+<h3>1. 百貫落的「兩段式判定」微觀解剖</h3>
+<p>百貫落看似只是一次下砸，但實際上包含兩個獨立的攻擊判定階段：
+1. <strong>上升階段（第一段打擊）</strong>：本田從地面拔地而起時，身體向上衝撞帶有打擊判定；
+2. <strong>滯空轉折階段</strong>：本田在最高點翻身（約有 15～20 幀在空中停頓）；
+3. <strong>下落階段（第二段砸擊）</strong>：本田以極快速度筆直下砸，屁股帶有強烈的重度下砸判定！</p>
+<h3>2. 破解百貫落的「兩大神級處罰方案」 (傑斯特親授)</h3>
+<h4>方案 A：對空昇龍拳「半空截墜」（最推薦、最致命）</h4>
+<ul>
+<li><strong>操作時機</strong>：看見本田起飛，在他在最高點翻身準備下落的一瞬間！</li>
+<li><strong>自角色隆 (Ryu) 的操作</strong>：</li>
+<li>本田在空中下落的攻擊判定，<strong>完全不具備對空無敵屬性</strong>！</li>
+<li>隆沉著抬頭目視，在空中下墜的瞬間最速輸入 <strong>強昇龍拳 (623HP)</strong> 或 <strong>OD 昇龍拳 (623PP)</strong>；</li>
+<li>昇龍拳從發生第 1 幀起享有完全的「對空無敵」判定！</li>
+<li>隆的昇龍鐵拳會硬生生穿透本田的屁股，將這座幾百斤的肉山直接在半空中揍飛，造成 1600+ 傷害並將本田擊倒在面前！</li>
+</ul>
+<pre><code>昇龍拳截墜百貫落判定框對決：
+本田空中下砸屁股 Hitbox： [肉山身軀] ===(下墜)===&gt; [臀部打擊判定]
+隆迎面衝天強昇龍拳：     [隆拳頭 Hitbox] ──(對空無敵，無視臀部判定！)──&gt; 命中本田受傷框！
+結果：本田空中被擊潰爆裂擊飛，隆無傷落地！
+</code></pre>
+<h4>方案 B：最速前衝閃避 (Forward Dash) 抓著地 30F 大硬直</h4>
+<ul>
+<li><strong>操作原理</strong>：百貫落的下砸軌跡是朝著防守方「起跳時的所在位置」下墜；</li>
+<li><strong>操作步驟</strong>：
+  1. 看見本田拔地而起飛上天的瞬間；
+  2. 防守方<strong>立刻雙擊前方向進行最速前衝 (Forward Dash)</strong>！
+  3. 由於前衝位移，防守方直接脫離了本田的下砸範圍；
+  4. 本田在防守方原本站立的空地上狠狠砸空，<strong>陷入長達整整 30 幀的無法動作著地硬直</strong>！
+  5. 隆轉身走上前，從容使出全套滿額 Punish Counter 連段：<code>5HK (PC) &gt; 4HP &gt; 重波掌氣 &gt; CA3 真空波動拳</code>，痛打 <strong>5800+ 點毀滅傷害</strong>！</li>
+</ul>
+<hr />
+<h2>三、 百烈張手 (Hundred Hand Slap / 236P) 與其他招式死穴</h2>
+<h3>1. 百烈張手 (236P) 幀數破綻與被防處罰</h3>
+<ul>
+<li><strong>招式屬性</strong>：雙手化作殘影連續拍擊，常用於連段壓制與削磨綠條。</li>
+<li><strong>幀數真相</strong>：</li>
+<li><strong>弱張手 (236LP)</strong>：被防 <strong>-4 幀</strong>；</li>
+<li><strong>中張手 (236MP)</strong>：被防 <strong>-4 幀</strong>；</li>
+<li><strong>強張手 (236HP)</strong>：被防 <strong>-4 幀</strong>；</li>
+<li><strong>強化拍擊派生</strong>：被防依然是負幀；</li>
+<li><strong>OD 張手 (236PP)</strong>：被防 <strong>+2 幀</strong>（本田全招式中唯一的被防有利技！）。</li>
+<li><strong>實戰破解</strong>：</li>
+<li>面對普通張手：擋住最後一掌落地的一瞬間，本田處於 <strong>-4F</strong> 不利，隆直接出 <strong>5LP 或 2LP</strong> 搶斷，本田企圖搶招必被打出 Counter！</li>
+<li>面對 OD 張手：本田身上冒金光連推，擋住後本田手握 +2F。<strong>此時絕對不要搶招！</strong> 防守方在防住後最優策略是：<strong>立刻輸入 Drive Reversal (6HP+HK)</strong>，直接一腳將本田踢飛，徹底粉碎他的近身壓制！</li>
+</ul>
+<h3>2. 大楠木指令投 (Oicho Throw / 63214P)</h3>
+<ul>
+<li><strong>招式屬性</strong>：近身指令投，抓空硬直長達 <strong>38 幀</strong>；</li>
+<li><strong>破解對策</strong>：近身預判本田要摔，直接<strong>垂直起跳 (Neutral Jump)</strong>，本田抓空 38 幀，下落打滿全套滿氣連段！</li>
+</ul>
+<hr />
+<h2>四、 自角色：隆 (Ryu) 第一人稱視角對戰本田「絕對滅殺手冊」</h2>
+<p>作為正統派波升代表，隆在面對本田時擁有全方位的物理克制工具：</p>
+<h3>1. 立回第一鐵律：波動拳打亂相撲蓄力節奏</h3>
+<ul>
+<li>本田無波，所有突進均需蓄力；</li>
+<li>隆在全場保持 2.5 個身位，以慢速 <strong>弱波動拳 (236LP)</strong> 迫使本田不斷起跳或防禦；</li>
+<li>一旦本田起跳，隆最速強昇龍拳截擊！</li>
+</ul>
+<h3>2. 迎擊百貫落第一人稱口訣：昇龍抬頭，前衝大殺</h3>
+<ul>
+<li>隆永遠留半隻眼睛盯著天上；</li>
+<li>本田拔地而起：若距離適中，輸入 <strong>623HP (強昇龍拳)</strong> 截墜；</li>
+<li>若本田在頭頂正上方：最速輸入 <strong>前衝 (66)</strong> 走開，轉身 <strong>5HK (PC) &gt; 生綠衝 &gt; 4HP &gt; 重驢踢 &gt; SA3</strong> 斬殺！</li>
+</ul>
+<h3>3. 頭槌防住後的肌肉反射：2LP 連打</h3>
+<ul>
+<li>擋住頭槌瞬間，右手大拇指本能地連按兩次輕拳鍵 (2LP)；</li>
+<li>若本田老實防守，將其推開重回立回；</li>
+<li>若本田敢搶任何按鍵，直接被打出 Counter，隆確認接續 <strong>5LP &gt; 輕旋風腿 (236LK)</strong> 擊倒！</li>
+</ul>
+<hr />
+<h2>五、 訓練場 (Training Mode) 專項「滅本田特訓」木人錄製菜單</h2>
+<h3>特訓 1：頭槌被防 -4F 最速輕拳確反特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田出 [4]6HP (強頭槌)，被防後立刻按 2LP。</li>
+<li><strong>防守方操作</strong>：
+   - 蹲下防守擋住頭槌；
+   - 擋住第 1 幀連打 2LP (4F)；
+   - 觀察螢幕出現「Counter Hit」，成功打斷本田！
+   - 連續成功 15 次！</li>
+</ol>
+<h3>特訓 2：百貫落下落強昇龍拳截墜特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田出 [2]8HK (超級百貫落)。</li>
+<li><strong>防守方操作</strong>：
+   - 觀察本田起飛翻身；
+   - 在本田下落瞬間按出 623HP (強昇龍拳)；
+   - 將本田凌空擊落，連續成功 15 次！</li>
+</ol>
+<h3>特訓 3：百貫落前衝閃避抓著地大斬殺特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田在中距離出 [2]8HK。</li>
+<li><strong>防守方操作</strong>：
+   - 看見本田起飛，立即雙擊前方向前衝 (66)；
+   - 本田砸在地板上僵直，隆轉身 5HK 打出 Punish Counter 並接續滿額連段；
+   - 連續成功 15 次！</li>
+</ol>
+<hr />
+<h2>六、 本田全通常技、特殊技與超必殺技 (Super Arts) 幾何破綻全景大典</h2>
+<p>除了頭槌與百貫落這兩大板斧，本田在地面立回中的通常技體系同樣存在著嚴重的幾何受傷判定框缺陷：</p>
+<h3>1. 本田核心通常技幀數與死穴矩陣</h3>
+<ol>
+<li><strong>站立重腳 (5HK - 相撲大踹)</strong>：
+   - <strong>發生幀數</strong>：12 幀
+   - <strong>被防幀數</strong>：-3 幀
+   - <strong>命中幀數</strong>：+2 幀
+   - <strong>物理弱點</strong>：本田的 5HK 射程極遠，天梯本田極度喜歡用這招在中距離踢擊蹭血。但這招的致命弱點在於<strong>揮空硬直長達 21 幀</strong>，且伸出去的整條肥碩大腿完全是受傷判定框（Hurtbox）！隆只要保持在其腳尖外微移，看見大腿踢空縮回的一瞬間，立刻按出 <strong>2MK 取消生綠衝</strong> 或 <strong>5HP</strong> 進行差合（Whiff Punish），痛打 3200+ 傷害！</li>
+<li><strong>站立重拳 (5HP - 雙掌前推)</strong>：
+   - <strong>發生幀數</strong>：10 幀
+   - <strong>被防幀數</strong>：-3 幀
+   - <strong>命中幀數</strong>：+3 幀
+   - <strong>特點</strong>：本田的核心地面確認技，常接生綠衝。防住之後本田為 -3F，此時隆處於 +3F 優勢，按 5LP (4F) 具有絕對優先權！</li>
+<li><strong>蹲下大足 (2HK - 橫掃地)</strong>：
+   - <strong>發生幀數</strong>：10 幀
+   - <strong>被防幀數</strong>：<strong>-11 幀</strong>（Punish Counter 狀態）
+   - <strong>確反實戰</strong>：本田的大足被防手握 <strong>-11F</strong> 的巨大破綻！防守方擋住後，不要猶豫，隆最速按出 <strong>5HK (PC) &gt; 綠衝 &gt; 4HP &gt; 重驢踢 &gt; 重昇龍</strong>，直接打掉本田 3800+ 血量！</li>
+<li><strong>滑步前衝腳 (3HK - 滑鏟)</strong>：
+   - <strong>發生幀數</strong>：11 幀
+   - <strong>被防幀數</strong>：近身 <strong>-12 幀</strong>，最遠端約 <strong>-6 幀</strong>
+   - <strong>屬性</strong>：意圖滑下盤穿波。只要本田近身出滑鏟被防，隆直接 <strong>2MP &gt; 236MK</strong> 痛打確反！</li>
+<li><strong>前重腳 (6HK - 翻跟斗下劈)</strong>：
+   - <strong>發生幀數</strong>：24 幀
+   - <strong>被防幀數</strong>：-4 幀
+   - <strong>屬性</strong>：中段技（Overhead，蹲防必挨打）
+   - <strong>破解</strong>：由於起手長達 24 幀，有極其誇張的肉體翻滾前搖，看清起手立刻切換站立防禦，擋住後最速 4F 輕拳搶斷！</li>
+</ol>
+<h3>2. 本田四大超必殺技 (Super Arts) 微觀破綻與反制</h3>
+<ol>
+<li><strong>超必殺技 SA1 (發勁衝擊 - 破顔掌)</strong>：
+   - <strong>發生幀數</strong>：12 幀
+   - <strong>被防幀數</strong>：<strong>-18 幀</strong>！
+   - <strong>重大機制漏洞</strong>：本田的 SA1 <strong>完全沒有全身無敵，僅有打擊霸體/對空無敵</strong>！在隆發動肉骨打擊或波動拳壓制時，本田無法靠 SA1 逆境逃脫！被防後隆手握 -18F 破綻，跳入 Jump HK 打出滿額 CA3 斬殺！</li>
+<li><strong>超必殺技 SA2 (連環飛天張手)</strong>：
+   - <strong>發生幀數</strong>：9 幀
+   - <strong>被防幀數</strong>：<strong>-22 幀</strong>！
+   - <strong>破綻剖析</strong>：連續多段推掌最後一擊砸地。擋完最後一擊後，本田整個人癱在地上，隆有整整 22 幀的從容準備時間打出最大傷害連段！</li>
+<li><strong>終極超必殺技 SA3 / CA3 (終極相撲飛天大壓)</strong>：
+   - <strong>發生幀數</strong>：10 幀
+   - <strong>被防幀數</strong>：<strong>-35 幀</strong>！
+   - <strong>避開真解</strong>：本田 SA3 是打擊判定（非 0 幀指令投），暗轉時只要隆在防禦狀態，穩穩擋住後本田砸地硬直高達 35 幀；若隆在暗轉前已起跳，空中下落直接打滿 6000 點 CA3 極限斬殺！</li>
+</ol>
+<hr />
+<h2>七、 深度進階：完美格擋 (Perfect Parry) 對抗頭槌與百貫落專項手冊</h2>
+<p>除了常態防禦與昇龍截擊，在格鬥高手與 Master 階級中，<strong>「完美格擋 (Perfect Parry / PP)」</strong>是徹底廢掉本田這兩大板斧的終極神器：</p>
+<h3>1. 超級頭槌的 Perfect Parry 節奏</h3>
+<ul>
+<li><strong>視覺信號</strong>：本田頭槌是筆直的水平飛行軌跡，飛行速度極度均勻；</li>
+<li><strong>輸入時機</strong>：在中遠距離看到本田橫飛過來的瞬間，在身體即將撞上你鼻尖的前 1～2 幀按下 <strong>中拳 + 中腳 (MP+MK)</strong>；</li>
+<li><strong>成功收益</strong>：</li>
+<li>觸發時間停頓暗轉，本田被定身在隆的面前；</li>
+<li>雖然 Perfect Parry 會將後續連段傷害補正削弱至 50%，但隆可以立刻接續：<code>5HP &gt; 4HP &gt; 重驢踢 &gt; 昇龍拳</code>（造成 1800+ 傷害並將本田推入版邊倒地）；</li>
+<li><strong>心理摧毀效應</strong>：一旦你在一回合內連續兩次成功 Perfect Parry 本田的頭槌，本田玩家的心理防線會徹底崩潰，再也不敢在全螢幕無腦發射頭槌！</li>
+</ul>
+<h3>2. 超級百貫落的 Perfect Parry 節奏</h3>
+<ul>
+<li><strong>聲音與視覺信號</strong>：本田飛到最高點時會發出一聲悶吼並翻身；</li>
+<li><strong>輸入時機</strong>：當本田翻身完畢，身體從最高點下墜至隆的頭頂上方約半個身位時，果斷按下 MP+MK；</li>
+<li><strong>成功收益</strong>：完美格擋第二段下砸，本田在面前落地僵直，隆直接最速 5HP 痛打連段！</li>
+</ul>
+<hr />
+<h2>八、 天梯本田玩家「四大心理惡習」完全讀心與懲罰矩陣</h2>
+<p>在天梯中（尤其 Master 1300~1600 分段），本田玩家往往養成了一套極度僵化的「無腦套路」。看穿這四個心理惡習，能讓你對局如同開了透視外掛：</p>
+<h3>惡習 1：開局第 1 秒「後退蓄力無腦飆頭槌」</h3>
+<ul>
+<li><strong>對手心理</strong>：本田玩家開局普遍幻想對手在發呆或往前衝，想在開局第 1 秒用頭槌偷 1200 點血量並搶得版面優勢。</li>
+<li><strong>破解對策</strong>：開局倒數結束，隆<strong>原地站防或直接準備輸入 Perfect Parry</strong>！擋住之後立刻按 2LP 打斷，或者開局直接向前發射 <strong>弱波動拳</strong>，本田剛衝出來就迎面撞上氣功被打飛！</li>
+</ul>
+<h3>惡習 2：版邊被壓時「賭徒式狂凹 OD 頭槌」</h3>
+<ul>
+<li><strong>對手心理</strong>：本田被逼到死角後，因為身體巨大、移動遲緩，90% 的本田玩家會將唯一的脫困希望寄託在具備 1 段霸體的 <strong>OD 頭槌 ([4]6PP)</strong> 上！</li>
+<li><strong>破解對策</strong>：隆在版邊擊倒本田後，<strong>採用「假壓制誘敵 (Bait / Shimmy)」</strong>！</li>
+<li>走上前一步假裝要投，隨後在第 1 幀突然退後防禦；</li>
+<li>本田狂凹出 OD 頭槌，直接撞在隆的防禦上；</li>
+<li>OD 頭槌被防手握 <strong>-21 幀</strong> 破綻！隆在版邊打出最痛的 <code>5HK (PC) &gt; 4HP &gt; 重波掌氣 &gt; CA3</code>，一波直接滿血秒殺！</li>
+</ul>
+<h3>惡習 3：中距離迷信「百貫落欺負對手沒對空」</h3>
+<ul>
+<li><strong>對手心理</strong>：天梯本田習慣於看見對手防守穩健時，突然裸出百貫落企圖打破僵局，賭對手反應不過來。</li>
+<li><strong>破解對策</strong>：隆在中距離立回時，心態隨時切換至「對空警戒模式」。只要看到本田拔地而起，毫不猶豫原地 <strong>前衝 (66)</strong> 閃避，在身後等他摔在地上，打滿一套 5000+ 滿額斬殺！</li>
+</ul>
+<h3>惡習 4：力竭 (Burnout) 時企圖靠百烈張手「強行推死」</h3>
+<ul>
+<li><strong>對手心理</strong>：當防守方進入 Burnout 時，本田玩家會興奮地貼臉狂出百烈張手，企圖將防守方活活推碎盾擊暈！</li>
+<li><strong>破解對策</strong>：防守方擋住第一下張手，在第二掌推過來的空隙中，<strong>直接狂凹無敵 SA1 或 SA3</strong>！超必殺技在力竭時依然享有完全無敵，直接在大掌推下來的瞬間穿透本田，反殺逆轉局勢！</li>
+</ul>
+<hr />
+<h2>九、 深度進階：埃德蒙·本田核心招式「微觀幀數與幾何判定框」全景矩陣</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱</th>
+<th style="text-align: left;">遊戲指令</th>
+<th style="text-align: left;">發生 (Startup)</th>
+<th style="text-align: left;">持續 (Active)</th>
+<th style="text-align: left;">硬直 (Recovery)</th>
+<th style="text-align: left;">被防幀數 (On Block)</th>
+<th style="text-align: left;">命中幀數 (On Hit)</th>
+<th style="text-align: left;">判定特性與幾何破綻剖析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>弱超級頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6LP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">11F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進距離短，被防固定 -4 幀，近身 4F 輕拳必確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中超級頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6MP</code></td>
+<td style="text-align: left;">15F</td>
+<td style="text-align: left;">14F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進距離中等，被防固定 -4 幀，防守方手握絕對先手權</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>強超級頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6HP</code></td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">全螢幕直線突進，速度快，被防本田依然是 -4 幀</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 超級頭槌</strong></td>
+<td style="text-align: left;"><code>[4]6PP</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;">35F</td>
+<td style="text-align: left;"><strong>-21F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">具備 1 次霸體，被防陷入 -21F 巨大硬直，跳入滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超級百貫落 (一段)</strong></td>
+<td style="text-align: left;"><code>[2]8K (起飛)</code></td>
+<td style="text-align: left;">9F</td>
+<td style="text-align: left;">7F</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">上升判定</td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">拔地而起上升打擊，近身容易擦中防守方</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超級百貫落 (二段)</strong></td>
+<td style="text-align: left;"><code>[2]8K (下落)</code></td>
+<td style="text-align: left;">著地前</td>
+<td style="text-align: left;">至著地</td>
+<td style="text-align: left;">著地 15F</td>
+<td style="text-align: left;"><strong>-3F~+1F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">筆直下墜，起飛至下落整整 40F，昇龍拳截擊或前衝躲開抓著地 30F 硬直</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>百烈張手 (弱/中/強)</strong></td>
+<td style="text-align: left;"><code>236P</code></td>
+<td style="text-align: left;">12F~16F</td>
+<td style="text-align: left;">3F(4)3F</td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">+2F</td>
+<td style="text-align: left;">連續推掌，普通版被防全部是負 4 幀，防住點小手搶斷</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 百烈張手</strong></td>
+<td style="text-align: left;"><code>236PP</code></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">多段</td>
+<td style="text-align: left;">16F</td>
+<td style="text-align: left;"><strong>+2F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">唯一被防有利技，防住後秒按 Drive Reversal 踢飛</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大楠木指令投</strong></td>
+<td style="text-align: left;"><code>63214P</code></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">38F</td>
+<td style="text-align: left;"><strong>抓空 38F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">相撲不可拆指令投，抓空 38 幀，垂直起跳落地滿額痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站立重腳 (5HK)</strong></td>
+<td style="text-align: left;"><code>5HK</code></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">4F</td>
+<td style="text-align: left;">21F</td>
+<td style="text-align: left;"><strong>-3F</strong></td>
+<td style="text-align: left;">+2F</td>
+<td style="text-align: left;">遠程大踢腿，揮空硬直 21 幀，受傷框巨大，隆 2MK 差合首選</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲下大足 (2HK)</strong></td>
+<td style="text-align: left;"><code>2HK</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;"><strong>-11F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">相撲橫掃腿，被防 -11 幀大破綻，5HK 打出 Punish Counter</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>前重腳 (6HK)</strong></td>
+<td style="text-align: left;"><code>6HK</code></td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">18F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">+3F</td>
+<td style="text-align: left;">翻跟斗下劈中段，起手動作極大，站防後 4F 輕拳確反搶斷</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA1</strong></td>
+<td style="text-align: left;"><code>236236P</code></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">32F</td>
+<td style="text-align: left;"><strong>-18F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">無完全無敵，僅對空無敵，被防 -18 幀跳入滿額斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA2</strong></td>
+<td style="text-align: left;"><code>236236K</code></td>
+<td style="text-align: left;">9F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;">30F</td>
+<td style="text-align: left;"><strong>-22F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">連環推掌大招，被防 -22 幀大硬直</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>超必殺技 SA3/CA3</strong></td>
+<td style="text-align: left;"><code>214214P</code></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">45F</td>
+<td style="text-align: left;"><strong>-35F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">終極相撲飛撲，打擊技判定，被防 -35 幀直接葬送比賽</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>十、 自角色：隆 (Ryu) 對戰本田專屬「確反與斬殺連段大典」</h2>
+<h3>1. 百貫落前衝躲開 (Whiff) 落地 30F 滿氣極限斬殺</h3>
+<ul>
+<li><strong>起手條件</strong>：本田百貫落起飛，隆最速前衝閃開，本田在身後空砸地面。</li>
+<li><strong>連段公式</strong>：</li>
+<li><code>站立重腳 5HK (Punish Counter) &gt; 站立重拳 5HP &gt; 4HP &gt; 生綠衝 &gt; 4HP &gt; 蹲下重拳 2HP &gt; 重波掌氣 (214HP) &gt; CA3 真空波動拳</code></li>
+<li><strong>傷害輸出</strong>：<strong>5920 點</strong>！一擊削去本田近 60% 體力，直接奠定勝局！</li>
+</ul>
+<h3>2. 防住本田大足 (-11F) 專屬確反</h3>
+<ul>
+<li><code>站立重拳 5HP (Punish Counter) &gt; 4HP &gt; 重驢踢 (214HK) &gt; 重昇龍拳 (623HP)</code></li>
+<li><strong>傷害輸出</strong>：3580 點，穩吃確定反擊並將本田打飛推至版邊！</li>
+</ul>
+<h3>3. 防住常規頭槌 (-4F) 最速輕拳確認</h3>
+<ul>
+<li><code>蹲下輕拳 2LP (打斷 Counter) &gt; 5LP &gt; 輕旋風腿 (236LK)</code></li>
+<li><strong>傷害輸出</strong>：1550 點，推開距離並阻止本田繼續壓制！</li>
+</ul>
+<h3>4. 百貫落空中昇龍截墜</h3>
+<ul>
+<li><code>強昇龍拳 623HP (對空 Counter)</code></li>
+<li><strong>傷害輸出</strong>：1680 點，將本田從半空中直接擊墜倒地！</li>
+</ul>
+<hr />
+<h2>十一、 訓練場 (Training Mode) 專項「滅本田特訓」木人錄製菜單</h2>
+<h3>特訓 1：頭槌被防 -4F 最速輕拳確反特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田出 [4]6HP (強頭槌)，被防後立刻按 2LP。</li>
+<li><strong>防守方操作</strong>：
+   - 蹲下防守擋住頭槌；
+   - 擋住第 1 幀連打 2LP (4F)；
+   - 觀察螢幕出現「Counter Hit」，成功打斷本田！
+   - 連續成功 15 次！</li>
+</ol>
+<h3>特訓 2：百貫落下落強昇龍拳截墜特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田出 [2]8HK (超級百貫落)。</li>
+<li><strong>防守方操作</strong>：
+   - 觀察本田起飛翻身；
+   - 在本田下落瞬間按出 623HP (強昇龍拳)；
+   - 將本田凌空擊落，連續成功 15 次！</li>
+</ol>
+<h3>特訓 3：百貫落前衝閃避抓著地大斬殺特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：本田在中距離出 [2]8HK。</li>
+<li><strong>防守方操作</strong>：
+   - 看見本田起飛，立即雙擊前方向前衝 (66)；
+   - 本田砸在地板上僵直，隆轉身 5HK 打出 Punish Counter 並接續滿額連段；
+   - 連續成功 15 次！</li>
+</ol>
+<hr />
+<h2>十二、 本田「相撲之魂 (Sumo Spirit / 22P)」強化機制與打斷指南</h2>
+<p>在高端本田的對局中，除了依賴頭槌與百貫落，本田會頻繁使用「相撲之魂」來強化其必殺技：</p>
+<h3>1. 相撲之魂 (22P) 的機制與威脅</h3>
+<ul>
+<li><strong>動作表現</strong>：本田原地雙手合十拍擊（相撲傳統的「貓騙」動作）；</li>
+<li><strong>強化效果</strong>：賦予下一次「百烈張手」強化屬性，使其發生速度更快、連段傷害更高，且被防時獲得更佳的有利幀；</li>
+<li><strong>破綻真相</strong>：</li>
+<li>本田在發動 22P 時，全體動作長達 <strong>40 幀</strong>！</li>
+<li>在這 40 幀中，本田處於<strong>完全毫無防禦的僵直狀態</strong>，且無法提前取消！</li>
+</ul>
+<h3>2. 打斷與懲罰策略</h3>
+<ul>
+<li><strong>全螢幕發動</strong>：若本田在全螢幕拍手，隆立刻發射 <strong>OD 波動拳 (236PP)</strong>！高速飛行的兩發氣功會在拍手動作完成前直接將本田轟飛，不僅打斷其強化，更直接削掉其綠條；</li>
+<li><strong>中距離發動</strong>：若本田在中距離企圖拍手，隆毫不猶豫直接啟動 <strong>生綠衝 (Raw Drive Rush) &gt; 5HP</strong>！綠衝 5HP 會在第 20 幀左右直接踢中本田，打出 Punish Counter，直接接續全套大連段！</li>
+</ul>
+<hr />
+<h2>十三、 波升流 (Hadoken &amp; Shoryuken) 對戰本田的立體幾何封鎖手冊</h2>
+<p>本田之所以在面對熟練的隆時極度痛苦，是因為隆的技能組在幾何判定上天然克制本田的一切核心打法：</p>
+<pre><code>隆對戰本田立體封鎖網絡：
+             【高空】 ──&gt; 本田百貫落 [2]8K ──&gt; 隆強昇龍拳 623HP (對空無敵穿透擊落！)
+              ▲
+              │
+             【中空】 ──&gt; 本田起跳跳入     ──&gt; 隆 2HP / 623HP (穩定防空擊飛！)
+              ▲
+              │
+【地面】 ────┴────&gt; 本田超級頭槌 [4]6P ──&gt; 隆弱波動拳 236LP (直接在飛行中途撞毀！)
+                                   └──&gt; 防住後 +4F 隆 2LP 搶斷打康！
+</code></pre>
+<h3>1. 慢速弱波動拳 (236LP) 的「隱形牆壁」</h3>
+<ul>
+<li>弱波動拳飛行速度極慢；</li>
+<li>當慢速氣功在地面緩緩前進時，本田整條水平線被完全封死；</li>
+<li>本田若此時發動頭槌，頭槌會直接迎面撞在波動拳上；</li>
+<li>本田若想跳過波動拳，其巨大的體積與緩慢的跳躍弧線，給予了隆長達 45 幀的充足反應時間，隆可以輕鬆從容地使出強昇龍拳將其打落！</li>
+</ul>
+<h3>2. 版邊「大體積」地獄壓制</h3>
+<ul>
+<li>本田的受傷判定框（Hurtbox）是全遊戲最寬大、最厚重的角色之一；</li>
+<li>當隆將本田逼入版邊後，本田由於沒有完全無敵的常規昇龍（僅有 1 段霸體的 OD 頭槌，怕投怕下段），在版邊極度容易被隆的 <strong>肉骨打擊 (Meaty 2MP)</strong> 與 <strong>普通投 (Throw)</strong> 形成死局二擇；</li>
+<li>隆在版邊只需連續發動 <strong>波掌氣 (214P)</strong> 壓制，被防手握巨幅有利幀，本田只能眼睜睜看著自己的鬥氣條被活活耗盡進入力竭！</li>
+</ul>
+<hr />
+<h2>十四、 傑斯特格鬥教室：對戰本田「全回合心流與戰術劇本」</h2>
+<pre><code>【第一回合 (Round 1)：破除頭槌心魔】
+核心目標：讓對手知道「你懂 -4 幀」！
+- 開局：死守蹲防，擋住本田的第一發頭槌；
+- 擋住瞬間：大膽連打 2LP，直接打斷本田企圖搶招的企圖，打出 Counter Hit！
+- 心理震撼：本田玩家發現你竟然懂 -4 幀確反，瞬間失去無腦撞人的底氣！
+
+【第二回合 (Round 2)：封鎖空中百貫落】
+核心目標：打碎對手的空中跳躍妄想！
+- 立回：拉開 2.5 身位，中距離慢速發波；
+- 本田急躁起飛：抬頭看準下落節奏，強昇龍拳迎面截落；或最速前衝閃開，抓著地 30F 大硬直打出 5800+ 滿氣 CA3 斬殺；
+- 心理震撼：本田在地面不敢出頭槌，在空中不敢出百貫落，徹底淪為無牙老虎！
+
+【第三回合 (Round 3)：殘局極限收割】
+核心目標：版邊壓殺，冷靜防凹！
+- 本田被逼至版邊倒地：防其殘血狂凹 OD 頭槌或 SA 大招；
+- 隆假走一步誘敵，退後站防；
+- 擋住本田的賭命大招後，打出最沉重的一套 PC 終結連段，乾脆俐落地收下「Perfect K.O.」！
+</code></pre>
+<hr />
+<h2>十五、 傑斯特親授：天梯高分段本田五大「邪道連攜」見招拆招全錄</h2>
+<p>在鑽石到大師 1700 分段，許多經驗老到的本田玩家不再只會無腦直衝，而是發展出了極具欺騙性的「邪道連攜」：</p>
+<h3>邪道 1：強頭槌尖端蹭防 (-4F) &gt; 賭徒後撤步 (Backdash) 騙差合</h3>
+<ul>
+<li><strong>對手意圖</strong>：本田故意在最遠距離發射強頭槌，尖端蹭在你的盾牌上。雖然本田是 -4F，但他知道防守方會按 2LP 或 2MK，於是本田在被防第 1 幀立刻使出後撤步（Backdash），讓防守方的 2LP 揮空，隨後本田出 5HP 差合打你 Punish Counter！</li>
+<li><strong>見招拆招</strong>：</li>
+<li>如果防守方發現本田是遠距離尖端蹭防，<strong>不要盲目出短手 2LP</strong>！</li>
+<li>隆直接向前走一步按 <strong>站立中拳 (5MP, 6F)</strong> 或 <strong>站立重腳 (5HK)</strong>，5HK 的超長攻擊距離會直接把後撤步途中的本田當場踹飛！</li>
+</ul>
+<h3>邪道 2：生綠衝 5LP (+4F) &gt; 零幀大楠木指令投</h3>
+<ul>
+<li><strong>對手意圖</strong>：本田在中距離突然消耗 1 格鬥氣生綠衝突進，出 5LP 點在防守方防禦上（手握 +4F 巨大有利），防守方此時處於極度緊繃狀態，本田立刻輸入 63214P 大楠木指令投，將死守防禦的對手直接抓起狠狠砸在地上！</li>
+<li><strong>見招拆招</strong>：</li>
+<li>看見本田爆發綠光，隆最速按出 <strong>2MP 或 5HP 迎面截殺</strong>；</li>
+<li>若沒能截住且擋住了綠衝 5LP，<strong>心態立刻切換為「猜投起跳」</strong>，直接拉上垂直起跳（Neutral Jump）！</li>
+<li>本田大楠木雙手撲空（抓空 38F），隆從空中下落打出全套滿額 CA3 斬殺！</li>
+</ul>
+<h3>邪道 3：百貫落近身「打背 (Cross-up)」視線欺騙</h3>
+<ul>
+<li><strong>對手意圖</strong>：本田在貼身距離突然起飛出百貫落，其上升與下砸軌跡會直接越過防守方頭頂，砸在防守方的身後，造成「逆向打背 (Cross-up)」打擊！防守方若依然拉後防禦，會被判定為防禦方向錯誤而挨打！</li>
+<li><strong>見招拆招</strong>：</li>
+<li>當本田在近身起飛時，防守方<strong>立刻切換防禦方向（向著本田飛行的方向拉防禦）</strong>；</li>
+<li>更好的解法：看見近身百貫落，隆<strong>直接原地雙擊前方向 (66) 往前跑</strong>，本田會在身後空砸在地，送給隆一個背後大確反！</li>
+</ul>
+<h3>邪道 4：版邊「百烈張手 &gt; 鐵炮拍擊」無限推磨陷阱</h3>
+<ul>
+<li><strong>對手意圖</strong>：本田把對手逼到版邊後，頻繁使用百烈張手派生鐵炮（4/6+MP+MK），企圖利用密不透風的掌影將防守方的鬥氣條生生推光。</li>
+<li><strong>見招拆招</strong>：</li>
+<li>百烈張手派生鐵炮並非真連ガ（連續防禦），中間存在 3～4 幀縫隙！</li>
+<li>防守方在擋住張手第一下後，<strong>最速連打無敵 OD 昇龍拳 (623PP)</strong> 或直接輸入 <strong>Drive Reversal (6HP+HK)</strong>，直接在鐵炮出手前一腳將本田踹飛解圍！</li>
+</ul>
+<h3>邪道 5：殘血局「OD 頭槌確認取消 SA3」賭命翻盤</h3>
+<ul>
+<li><strong>對手意圖</strong>：本田殘血時，極喜歡在立回中裸出 OD 頭槌（自帶 1 段霸體），並且在撞到防守方的瞬間，狂按 SA3（終極飛天大壓），企圖靠霸體抗過防守方的打擊強行逆轉！</li>
+<li><strong>見招拆招</strong>：</li>
+<li>隆在面對殘血本田時，<strong>絕對不要出單發通常技去摸獎</strong>！</li>
+<li>隆在全場保持發射 <strong>波動拳</strong> 或使用 <strong>下段 2MK</strong>；</li>
+<li>OD 頭槌的霸體無法防禦下段攻擊，隆的 2MK 會直接打破本田的霸體，打出 Punish Counter 並帶入連段斬殺！</li>
+</ul>
+<hr />
+<h2>十六、 傑斯特格鬥教室：天梯各分段（白金、鑽石、大師）對抗本田速成進階指南</h2>
+<p>為了讓處於不同段位的玩家能夠根據自身的反應能力與操作熟練度逐步提升對策水平，傑斯特特別制定了這套分段進階方案：</p>
+<h3>1. 白金 (Platinum) 段位：建立基本「幀數認知」與「對空反射」</h3>
+<ul>
+<li><strong>核心目標</strong>：克服恐懼，不再被本田的音效與大體型嚇倒！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>每當擋住本田的超級頭槌，不管三七二十一，<strong>立刻連按兩下 2LP</strong>！</li>
+<li>只要看見本田起飛出百貫落，不要試圖花哨操作，在頭頂下落瞬間輸入 <strong>強昇龍拳 (623HP)</strong>！</li>
+<li><strong>段位收益</strong>：在白金段位，95% 的本田只會這兩招。只要你能做到這兩點，本田在你面前就像斷了雙腿，你的勝率將瞬間飆破 75%！</li>
+</ul>
+<h3>2. 鑽石 (Diamond) 段位：將抓空懲罰「最大化」</h3>
+<ul>
+<li><strong>核心目標</strong>：讓本田每一次出百貫落都付出半條血的慘痛代價！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>熟練掌握 <strong>「最速前衝閃百貫落」</strong>：看見本田起飛，雙擊前方向向前衝，等本田砸在身後的地板上（30F 硬直），打滿全套滿氣 CA3 連段（5800+ 傷害）；</li>
+<li>熟練掌握 <strong>「中距離波動拳牽制」</strong>：利用 236LP 封鎖本田的地面蓄力，逼迫他只能在遠程乾著急；</li>
+<li><strong>段位收益</strong>：在鑽石段位，一場對局只要成功抓到一次百貫落著地硬直，本田就直接進入斬殺線，對手心態徹底失衡！</li>
+</ul>
+<h3>3. 大師 (Master 1500+) 段位：立體心理壓制與 Perfect Parry</h3>
+<ul>
+<li><strong>核心目標</strong>：從精神上徹底摧毀對手，讓本田不敢按任何按鍵！</li>
+<li><strong>實戰任務</strong>：</li>
+<li>在中遠距離目測本田頭槌軌跡，加入 <strong>Perfect Parry (完美格擋)</strong> 練習，用定身暗轉給予對手極致的心理絕望；</li>
+<li>面對殘血本田，精準使用 <strong>2MK 差合</strong> 破除其 OD 頭槌的 1 次霸體；</li>
+<li>在版邊運用 <strong>肉骨波掌氣與肉骨打擊</strong>，將本田活活壓死在角落，達成無傷 Perfect 勝利！</li>
+</ul>
+<hr />
+<h2>十七、 傑斯特格鬥教室：治本田「三大終極口訣」</h2>
+<ol>
+<li><strong>口訣一：防住頭槌立刻點小手，他敢搶招必打狗！</strong></li>
+<li><strong>口訣二：百貫落起飛等昇龍，前衝閃開打滿紅！</strong></li>
+<li><strong>口訣三：遠處不斷發氣功，相撲蓄力一場空！</strong></li>
+</ol>
+<hr />
+<h2>十八、 總結：相撲神話，就此破滅</h2>
+<p>傑斯特的這部對策教學，以最精煉的手法徹底解構了埃德蒙·本田：
+- 頭槌不再是無解的突進，而是送給防守方的 +4 幀主動權；
+- 百貫落不再是致命的肉山，而是空中白送的昇龍靶子與 30 幀的著地死穴；
+- 記住傑斯特的口訣，用你冷靜的防守與剛猛的拳腳告訴對面的本田：
+<strong>「在真正的格鬥家面前，無腦輪椅到此為止！」</strong></p><div class="nav"><span><a href="173.html">← 173 傑斯特 指令投三巨頭老桑瑪濃莉莉極簡防守與確反指南</a></span><span style="text-align:right"><a href="175.html">175 傑斯特 吉米Jamie飲酒阻斷與流派招式破綻速效解 →</a></span></div></div></body></html>

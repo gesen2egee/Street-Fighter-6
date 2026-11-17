@@ -1,0 +1,686 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>傑斯特 指令投三巨頭老桑瑪濃莉莉極簡防守與確反指南｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
+<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 173 篇</div><h1>影片專屬深度解析 173：傑斯特 - 【street fighter 6】簡單的對策 指令投角色 (老桑、Manon、Lily) 完全防守大典</h1><blockquote>
+<p>📺 <strong>影片來源</strong>：<a href="https://www.youtube.com/watch?v=hNAtc8ApF0Q">【street fighter 6】簡單的對策 指令投角色(老桑、Manon、Lily)</a><br />
+👤 <strong>頻道作者</strong>：Jest_stickman【傑斯特】（繁體中文圈頂尖格鬥導師、知名格鬥遊戲實況主） | ⏱️ <strong>時長</strong>：06分43秒 (403s) | 🆔 <strong>影片ID</strong>：hNAtc8ApF0Q<br />
+【字幕補充】：原片採實機畫面字卡演示，官方字幕僅含 03:19 一處勘誤字卡（「這邊打錯了 中段是214HK」）。手冊依 info.json 章節（老桑 0:00 / Manon 2:37 / Lily 3:50 / 共同對策 5:26）與畫面核心演示整理。<br />
+🎯 <strong>核心對策目標</strong>：徹底瓦解天梯玩家最懼怕的「指令投三巨頭（Command Grab Trinity）」——赤色狂獅「桑吉爾夫 (Zangief)」、卡波耶拉與柔道名模「瑪濃 (Manon)」、印第安戰鷹少女「莉莉 (Lily)」的近身恐懼與地獄二擇！從底層機制解答「為什麼按拆投必定被吸？」「不可拆投（Untechable Grab）的物理防守真解」「被防後的致命確定反擊（老桑大足 -13F、瑪濃旋轉踢 -8F、莉莉無風突進 -4F/有風突進 Drive Reversal 沒收法）」「西伯利亞特快車起跳滿額懲罰」，以及自角色隆（Ryu）專屬「波升牽制空間鎖死與垂直跳 5800+ 滿氣 CA3 滅殺公式」！</p>
+</blockquote>
+<hr />
+<h2>🧭 戰略總綱：撕開指令投角色的「心理威懾」與「不可拆投」物理真相</h2>
+<p>在《快打旋風 6 (Street Fighter 6)》的天梯征途中，無數中低階乃至白金、鑽石段位的玩家，只要在配對畫面上看見<strong>桑吉爾夫 (Zangief)</strong>、<strong>瑪濃 (Manon)</strong> 或 <strong>莉莉 (Lily)</strong>，心態便會立刻蒙上一層陰影。</p>
+<p>這種恐懼往往來自於一種深層的挫敗感與無力感：
+1. <strong>「為什麼我明明按了摔技拆投鍵（LP+LK），還是被老桑一把抓起來轉一圈砸在地上，一口氣爆扣三分之一血？」</strong>
+2. <strong>「瑪濃到底什麼時候會出指令投？獎牌疊到 5 級之後，只要被摸到一次就是 4000+ 傷害，根本不敢靠近！」</strong>
+3. <strong>「莉莉只要存了風衝過來，撞在我的防禦上明明是我擋住了，但接下來無論我按什麼都被打，不按就被指令投扔飛，這到底要怎麼防？」</strong></p>
+<p>台灣格鬥遊戲知名導師 <strong>傑斯特 (Jest_stickman)</strong> 在本教學中以最簡潔、最直擊本質的語言，點破了對抗指令投角色的核心心法：</p>
+<blockquote>
+<p><strong>「面對指令投角色，你最大的敵人不是對手的招式有多強，而是你自己的『思維慣性』！指令投在系統底層是 100% 不可拆解的！你越想著去拆投，你就越是把自己送進對手的懷抱！只要你搞懂不可拆投的防守物理法則，並掌握他們突進與大招被防後的致命確反，指令投角色在你眼裡就只是一群摸不到你的大號靶子！」</strong></p>
+</blockquote>
+<pre><code class="language-mermaid">graph TD
+    A[指令投三巨頭核心威脅] --&gt; B[桑吉爾夫 Zangief：超高血量 + 致命螺旋大坐 SPD]
+    A --&gt; C[瑪濃 Manon：獎牌累積 Lv1~5 + 芭蕾旋轉長射程]
+    A --&gt; D[莉莉 Lily：風之纏繞 + 帶風突進 +1F 霸道二擇]
+
+    B --&gt;|防守真理| E[絕對嚴禁按 LP+LK 拆投！猜投果斷垂直跳 / 封鎖大足 -13F]
+    C --&gt;|防守真理| F[芭蕾二段踢被防 -8F 綠衝確反！5HK 揮空打收招，抓空 38F 痛懲]
+    D --&gt;|防守真理| G[無風突進被防 -4F 最速確反！帶風突進秒按 Drive Reversal 沒收二擇！]
+</code></pre>
+<hr />
+<h2>⏱️ 影片微觀時間戳章節導航 (傑斯特全解析時序)</h2>
+<p>本解析嚴格提煉傑斯特教學影片 00:00 至 06:43 每一秒的關鍵內容與時間節點：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">分:秒 時間戳</th>
+<th style="text-align: left;">章節主題與教學核心</th>
+<th style="text-align: left;">實機演示與技術要點剖析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[00:00 - 00:35]</strong></td>
+<td style="text-align: left;"><strong>開篇總覽：指令投角色的本質恐懼</strong></td>
+<td style="text-align: left;">傑斯特闡述新手面對老桑、瑪濃、莉莉的盲區，點明不可拆投機制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[00:35 - 01:15]</strong></td>
+<td style="text-align: left;"><strong>桑吉爾夫核心破綻 1：大足 (2HK) 掃堂腿確反</strong></td>
+<td style="text-align: left;">演示老桑遠距離大足被防 <strong>-13F</strong>，強調不可只給輕拳，必出重攻擊打 PC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:15 - 01:50]</strong></td>
+<td style="text-align: left;"><strong>桑吉爾夫核心破綻 2：西伯利亞特快車 (奔跑摔)</strong></td>
+<td style="text-align: left;">演示老桑 214K 遠程狂奔抓人，解析不可防禦特性，傳授起跳與打擊攔截法</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[01:50 - 02:37]</strong></td>
+<td style="text-align: left;"><strong>桑吉爾夫螺旋大坐 (SPD) 抓空 40F 大斬殺</strong></td>
+<td style="text-align: left;">拆解 SPD 抓空判定框與僵直，演示垂直起跳落地最大傷害連段</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[02:37 - 03:05]</strong></td>
+<td style="text-align: left;"><strong>瑪濃核心破綻 1：芭蕾旋轉踢 (214K) 確反</strong></td>
+<td style="text-align: left;">演示瑪濃 214K 連續踢腿，第二段被防 <strong>-8F</strong>，中攻擊綠衝確反必中</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[03:05 - 03:25]</strong></td>
+<td style="text-align: left;"><strong>瑪濃核心破綻 2：中段派生 214HK 確反勘誤</strong></td>
+<td style="text-align: left;">糾正動作代號，中段踢被防 <strong>-9F</strong>，防守方起手確反連段</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[03:25 - 03:50]</strong></td>
+<td style="text-align: left;"><strong>瑪濃 5HK 揮空差合與指令投起跳痛懲</strong></td>
+<td style="text-align: left;">瑪濃 5HK 腿長收招慢，引誘揮空打差合；指令投抓空 38F 落地殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[03:50 - 04:30]</strong></td>
+<td style="text-align: left;"><strong>莉莉核心機制：風之纏繞 (存風) 與突進分歧</strong></td>
+<td style="text-align: left;">拆解莉莉無風 vs 有風的性能天壤之別，解析無風突進被防 <strong>-4F</strong> 確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[04:30 - 05:26]</strong></td>
+<td style="text-align: left;"><strong>莉莉帶風突進破解神技：Drive Reversal</strong></td>
+<td style="text-align: left;">實機演示莉莉 +1F 打擊/投二擇，傳授防住突進第 1 幀拍鬥氣反擊完全沒收</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[05:26 - 06:10]</strong></td>
+<td style="text-align: left;"><strong>三大共通對策：指令投不可拆與立回拉扯</strong></td>
+<td style="text-align: left;">總結不可拆投原理，說明後撤步、垂直跳與距離控制的重要性</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[06:10 - 06:43]</strong></td>
+<td style="text-align: left;"><strong>結語與實戰心態建立</strong></td>
+<td style="text-align: left;">傑斯特總結心法，鼓勵玩家勇敢對決指令投角色，克服心理恐懼</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>一、 桑吉爾夫 (Zangief) 核心招式微觀拆解與確定反擊大典</h2>
+<p>桑吉爾夫是快打旋風系列最具代表性的摔角之王，擁有全遊戲最高的體力（10500 HP）與單發威力最恐怖的指令投：</p>
+<h3>1. 致命招式 1：大足掃堂腿 (2HK - 旋轉掃地)</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[00:35 - 01:15]</li>
+<li><strong>招式屬性</strong>：下段滑動長距離掃腿</li>
+<li><strong>幀數數據</strong>：發生 10 幀，被防硬直 <strong>-13 幀</strong>（Punish Counter 狀態）</li>
+<li><strong>玩家常見盲區</strong>：防住老桑大足後，因為距離較遠，很多玩家習慣性按 2LP 或 5LP，往往因為手短摸不到而浪費確反機會，甚至被老桑反打！</li>
+<li><strong>傑斯特破解指南</strong>：</li>
+<li>老桑大足被防整整是 <strong>-13F</strong> 的超級大破綻！</li>
+<li>防住之後，對手處於絕對的 Punish Counter 狀態，不需要著急出小拳！</li>
+<li><strong>最速痛懲方案</strong>：<ul>
+<li><strong>自角色隆 (Ryu)</strong>：防住瞬間直接按 <strong>站立重腳 (5HK)</strong> 或 <strong>站立重拳 (5HP)</strong> 打出 Punish Counter！</li>
+<li><strong>滿額確反連段</strong>：<code>5HK (PC) &gt; 生綠衝 &gt; 4HP &gt; 重波掌氣 &gt; 重昇龍拳</code>（造成 3800+ 傷害並推至版邊）！</li>
+</ul>
+</li>
+</ul>
+<pre><code>老桑大足被防判定框時序：
+老桑 2HK 伸出掃腿： [老桑軀幹] ======================[長腿掃擊 Hurtbox]
+防守方成功蹲防：  [防禦硬直結束] ──&gt; 老桑陷入長達 13 幀無法動作收招！
+防守方反擊：      [隆 5HK 呼嘯踢出] ──&gt; 命中老桑收招受傷框 ──&gt; 觸發 PUNISH COUNTER！
+</code></pre>
+<h3>2. 致命招式 2：西伯利亞特快車 (Siberian Express / 214K 奔跑抓)</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[01:15 - 01:50]</li>
+<li><strong>招式屬性</strong>：遠距離突進不可防禦指令投（中遠程奇襲）</li>
+<li><strong>性能差異</strong>：</li>
+<li>弱/中/強版：老桑張開雙臂向前狂奔，跑過特定距離後起跳將對手撲倒抱摔；</li>
+<li>OD 版 (214KK)：奔跑速度極快，且具備 2 段打擊霸體（Armor）！</li>
+<li><strong>玩家常見盲區</strong>：看見老桑跑過來，下意識拉後防禦。但西伯利亞特快車是<strong>投技</strong>，防禦 100% 被抓，直接被老桑扛在肩上狂奔砸地扣掉 2800+ 血量！</li>
+<li><strong>傑斯特破解指南</strong>：</li>
+<li><strong>應對方案 A（最推薦：原地垂直跳）</strong>：看見老桑啟動奔跑，毫不猶豫<strong>垂直起跳 (8 方向)</strong>！老桑會從你腳底狂奔過去或在地面撲空，落地手握整整 45 幀硬直，任由你打出最大傷害連段！</li>
+<li><strong>應對方案 B（波動拳截殺）</strong>：一般版本的奔跑摔沒有霸體，隆在中遠距離發射波動拳（236P），老桑在跑動途中會直接撞在氣功上被擊飛！</li>
+<li><strong>應對方案 C（中距離重拳打康）</strong>：若老桑出常規版奔跑摔，隆在中距離直接按 5HP 或 2MK，直接在起跑瞬間將其打斷打出 Counter！</li>
+</ul>
+<h3>3. 致命招式 3：螺旋打樁機 (Screw Piledriver / SPD)</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[01:50 - 02:37]</li>
+<li><strong>招式屬性</strong>：近身指令投（360 方向 + P），傷害依輕、中、重、OD 遞增（2500 ~ 3400+）</li>
+<li><strong>抓空硬直</strong>：<strong>40 幀</strong>（全遊戲最長抓空硬直之一）</li>
+<li><strong>不可拆投原理</strong>：</li>
+<li>普通摔（Normal Throw）在被抓瞬間有 9 幀拆投窗口；</li>
+<li><strong>SPD 是特殊指令投，完全沒有拆投機制！</strong> 只要你在判定幀位於地面且未處於無敵狀態，按任何拆投鍵都會被直接判定為「挨投」！</li>
+<li><strong>傑斯特破解心法</strong>：</li>
+<li>近身面對老桑，如果感覺對手要出 SPD，<strong>唯一正確的防禦輸入是「垂直跳 (Neutral Jump)」或「後跳 (Back Jump)」</strong>！</li>
+<li>只要起跳，系統在起跳第 1 幀便賦予「空中判定（Airborne）」，投技對空中目標完全無效！</li>
+<li><strong>抓空滿額斬殺公式</strong>：<ul>
+<li>老桑雙手在地面空抓，身體僵直 40 幀！</li>
+<li>隆從空中下落按 <strong>Jump HK</strong> 打出 Punish Counter；</li>
+<li>落地接續：<code>5HP &gt; 4HP &gt; 重驢踢 (214HK) &gt; SA3 (真空波動拳)</code>，造成高達 <strong>5850 點</strong> 毀滅性傷害！</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>二、 瑪濃 (Manon) 核心招式微觀拆解與確定反擊大典</h2>
+<p>瑪濃結合了法國柔道與芭蕾舞蹈，擁有獨特的「獎牌等級系統（Medal Level 1～5）」：</p>
+<h3>1. 致命招式 1：芭蕾旋轉踢 (Rond-point / 214K 迴旋上踢)</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[02:37 - 03:05]</li>
+<li><strong>招式屬性</strong>：連續兩段高位踢擊，常作為連段收尾或立回突擊</li>
+<li><strong>幀數數據</strong>：</li>
+<li>第一段被防：約 -12F（但瑪濃通常會派生第二段）；</li>
+<li>第二段被防：<strong>-8 幀</strong>（中攻擊穩定確反）！</li>
+<li><strong>玩家常見盲區</strong>：防住瑪濃旋轉踢第一段後急躁搶招，正好被踢出的第二腳打中 Counter；或者防完兩段後不知道有確反，讓瑪濃安然退回立回。</li>
+<li><strong>傑斯特破解指南</strong>：</li>
+<li>防守時死守防禦，擋住第一踢後<strong>務必擋住第二踢</strong>！</li>
+<li>當第二踢踢完落地的一瞬間，瑪濃處於 <strong>-8F</strong> 破綻！</li>
+<li><strong>最速痛懲方案</strong>：<ul>
+<li>隆在擋完第二踢瞬間，按出 <strong>蹲下中拳 (2MP, 6F)</strong> 或 <strong>蹲下中腳 (2MK, 7F) 取消生綠衝</strong>；</li>
+<li>連段確認：<code>2MK &gt; 綠衝 &gt; 5HP &gt; 4HP &gt; 214HK &gt; 623HP</code>，穩穩痛打 3200+ 傷害！</li>
+</ul>
+</li>
+</ul>
+<pre><code>瑪濃 214K 旋轉踢防守節奏：
+[瑪濃起跳第一踢] ──(擋住)──&gt; [瑪濃第二段踢擊] ──(擋住)──&gt; [瑪濃著地 -8F]
+                                                                ▲ 隆最速 2MK 綠衝必確反！
+</code></pre>
+<h3>2. 致命招式 2：中段派生踢擊 (214HK / Overhead 派生)</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[03:05 - 03:25]</li>
+<li><strong>招式屬性</strong>：中段踢擊（蹲防必挨打）</li>
+<li><strong>幀數數據</strong>：被防 <strong>-9 幀</strong></li>
+<li><strong>傑斯特勘誤重點</strong>：傑斯特在影片 03:19 特別以字幕更正：「這邊打錯了，中段是 214HK」。</li>
+<li><strong>應對指南</strong>：</li>
+<li>當瑪濃企圖使用中段踢偷襲蹲防時，起手有明顯的騰空前躍動作；</li>
+<li>肉眼識別切換站防，擋住後瑪濃陷入 <strong>-9F</strong> 劣勢，隆直接 <strong>5MP (6F) &gt; 2MK &gt; 必殺技</strong> 痛打確反！</li>
+</ul>
+<h3>3. 致命招式 3：站立重腳 (5HK) 揮空與指令投抓空痛懲</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[03:25 - 03:50]</li>
+<li><strong>招式屬性</strong>：超長距離直線蹬腿</li>
+<li><strong>弱點剖析</strong>：</li>
+<li>瑪濃 5HK 距離非常長，天梯瑪濃極度依賴此招在遠程摸獎；</li>
+<li>但是！<strong>5HK 揮空（Whiff）後的硬直長達整整 20 幀</strong>，且收腿時其腿部受傷判定框會長時間停留在外！</li>
+<li><strong>傑斯特差合法則</strong>：<ul>
+<li>隆在瑪濃 5HK 射程外一步微移晃動，引誘瑪濃出 5HK；</li>
+<li>看到瑪濃腳尖踢空縮回的瞬間，隆立即按出 <strong>5HP</strong> 或 <strong>2MK 取消生綠衝</strong> 進行差合（Whiff Punish）！</li>
+</ul>
+</li>
+<li><strong>瑪濃指令投 (Manege Dore) 抓空</strong>：</li>
+<li>瑪濃指令投抓空硬直高達 <strong>38 幀</strong>；</li>
+<li>近身預讀指令投直接垂直起跳，下落 Jump HK 必打出 Punish Counter，直接重創瑪濃！</li>
+</ul>
+<hr />
+<h2>三、 莉莉 (Lily) 核心招式微觀拆解與確定反擊大典</h2>
+<p>莉莉身材嬌小，但手持雙戰斧，其戰鬥體系高度依賴「風之纏繞（存風）」：</p>
+<h3>1. 核心機制：存風 (Condor Wind / 214P) 的威力倍增</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[03:50 - 04:30]</li>
+<li><strong>機制真相</strong>：</li>
+<li>莉莉在 0 風狀態下，招式判定極弱，突進技全數存在被防確反；</li>
+<li>一旦擁有風儲備（1～3 個風），其突進技（禿鷹螺旋 Condor Spire）將獲得極大速度提升與「被防有利幀」！</li>
+</ul>
+<h3>2. 致命招式 1：無風狀態之突進 (Condor Spire / 236K)</h3>
+<ul>
+<li><strong>幀數數據</strong>：近身被防 <strong>-4 幀</strong>，中遠程被防約 <strong>-2 幀</strong></li>
+<li><strong>確反實戰</strong>：</li>
+<li>當莉莉在沒有風的情況下強行出 236K 突進，只要近身撞在防禦上，莉莉為 <strong>-4F</strong>！</li>
+<li><strong>最速確反</strong>：隆在防住瞬間直接按 <strong>4 幀輕拳 (5LP 或 2LP)</strong>，必定打出確定反擊並可接續連打確認連段！</li>
+</ul>
+<h3>3. 致命招式 2：帶風突進 (Wind Spire) 之「Drive Reversal 完全沒收法」</h3>
+<ul>
+<li><strong>微觀時間戳</strong>：[04:30 - 05:26]</li>
+<li><strong>招式威脅</strong>：</li>
+<li>莉莉消耗 1 個風出 236K 突進，撞在防守方身上為 <strong>+1 幀有利</strong>！</li>
+<li>此時莉莉手握主動權，接下來的招牌壓制就是：<ul>
+<li><strong>選項 A（打擊）</strong>：出 5LP (4F)，因為 +1F 優先權，會打斷防守方所有 4F 搶招；</li>
+<li><strong>選項 B（指令投）</strong>：出墨西哥旋風 (63214P)，直接把老實防守的對手抓飛！</li>
+</ul>
+</li>
+<li><strong>傑斯特傳授神級解法：Drive Reversal (鬥氣反擊 / 6HP+HK)</strong>：</li>
+<li>許多玩家不知道如何面對這個 +1F 二擇，只能盲目猜拳；</li>
+<li>傑斯特傳授：<strong>「根本不需要跟她猜拳！在莉莉帶風突進撞上你防禦的瞬間，毫不猶豫直接按 Drive Reversal (前 + 重拳重腳)！」</strong></li>
+<li><strong>底層物理機制</strong>：<ul>
+<li>莉莉突進撞完後處於近身，此時她正準備發動打擊或指令投；</li>
+<li>防守方在防禦硬直中預先輸入 Drive Reversal，在解除防禦硬直的瞬間爆發金黃色反擊；</li>
+<li>Drive Reversal 具備完全無敵判定，<strong>直接一腳將莉莉踹飛到螢幕另一端</strong>！</li>
+<li><strong>戰略收益</strong>：莉莉白白浪費了 1 個辛苦存下來的風儲備，不但沒能打出二擇，反而被打倒在地，攻防節奏徹底被防守方奪回！</li>
+</ul>
+</li>
+</ul>
+<pre><code>莉莉帶風突進 vs Drive Reversal 物理對決：
+莉莉帶風 236K 突進 ──&gt; [撞在防守方盾牌上，莉莉理論 +1F]
+防守方防住第 1 幀：  ──&gt; [最速輸入 6HP+HK (Drive Reversal)]
+莉莉企圖按 5LP / 指令投： ──&gt; [防守方無敵金光一腳踹出！]
+結果：莉莉被踢飛倒地，風儲備清空，二擇完全被「沒收」！
+</code></pre>
+<hr />
+<h2>四、 傑斯特傳授：面對指令投角色的「三大共通作戰心法」</h2>
+<p>在影片 05:26 至 06:43，傑斯特總結了全角色面對指令投對手時必須內化的三大心理與物理法則：</p>
+<h3>心法 1：指令投不可拆（Command Grab cannot be teched）</h3>
+<ul>
+<li>普通投可以使用 <code>LP+LK</code> 在被抓瞬間拆開；</li>
+<li><strong>指令投是絕對不可拆的！</strong></li>
+<li>如果你在防守指令投時按了 <code>LP+LK</code>，系統會執行普通拆投動作（揮空硬直高達 24 幀），並且<strong>完全無法防禦指令投</strong>，你會被 100% 抓取並判定為 Counter 傷害！</li>
+<li><strong>唯一合法的迴避手段</strong>：
+  1. <strong>垂直跳 (Neutral Jump)</strong>：最優解，落地打滿額大確反；
+  2. <strong>後跳 (Back Jump)</strong>：次優解，拉開距離回歸立回；
+  3. <strong>後撤步 (Backdash)</strong>：前段具備空中投擲避開屬性；
+  4. <strong>無敵技 (OD 昇龍 / SA)</strong>：利用完全無敵時間硬頂指令投。</li>
+</ul>
+<h3>心法 2：空間管理，拒絕盲目貼臉（Spacing &amp; Neutral）</h3>
+<ul>
+<li>指令投角色（尤其是老桑）在遠距離是純粹的劣勢，其所有威脅都建立在「貼身」的前提下；</li>
+<li>保持在對手最長通常技射程之外（約 2.5 個身位）；</li>
+<li>用長射程通常技（隆的 5HP、2MK）與飛行道具（波動拳）封鎖地面，逼迫對手冒險起跳或交出長距離突進；</li>
+<li>一旦對手起跳或突進，對手就失去了指令投的威脅，防守方可以用對空昇龍拳或確反連段將其打回原形！</li>
+</ul>
+<h3>心法 3：抓空懲罰最大化（Punish Whiff with Max Damage）</h3>
+<ul>
+<li>指令投一旦被起跳避開，對手在地面抓空的硬直普遍長達 <strong>38～40 幀</strong>（超過半秒完全毫無防備）；</li>
+<li>這時候切忌慌亂隨便按個輕拳，<strong>必須沉住氣等角色下落，打出本角色最高配置的滿氣滿血連段</strong>；</li>
+<li>兩次猜中垂直跳，指令投角色就會被直接斬殺！</li>
+</ul>
+<hr />
+<h2>五、 自角色：隆 (Ryu) 第一人稱視角對戰指令投三巨頭實戰駕駛手冊</h2>
+<p>作為正統派「波升流（Hadoken &amp; Shoryuken）」的代表，隆在對戰指令投角色時具備天然的戰略優勢。以下是主駕隆的第一人稱極限克制手冊：</p>
+<h3>1. 對戰老桑 (Zangief)：絕對距離波升拉扯手冊</h3>
+<ul>
+<li><strong>立回核心</strong>：全程保持在老桑大足射程之外，不斷發射 <strong>弱波動拳 (236LP)</strong> 與 <strong>OD 波動拳</strong>；</li>
+<li><strong>老桑應對與反制</strong>：</li>
+<li>老桑若用 Parry 頂氣功：隆主動前走半步，用 <strong>集中波掌氣</strong> 蓄力破其 Parry 節奏；</li>
+<li>老桑若急躁起跳：隆沉著目視，最速輸入 <strong>強昇龍拳 (623HP)</strong> 痛擊落空，直接擊落；</li>
+<li>老桑若出大足：防住瞬間按 <strong>5HK (PC) &gt; 生綠衝 &gt; 4HP &gt; 重驢踢 &gt; SA3</strong>，一波削掉 5800+ 血量！</li>
+</ul>
+<h3>2. 對戰瑪濃 (Manon)：長腿差合與版邊壓制手冊</h3>
+<ul>
+<li><strong>立回核心</strong>：</li>
+<li>瑪濃愛在遠距離用 5HK 蹭血，隆保持在其腳尖外半步，引誘其 5HK 踢空，隆最速按出 <strong>5HP 差合</strong> 打出 PC；</li>
+<li>瑪濃出 214K 芭蕾踢：穩穩防住兩段，防住第二段瞬間最速按出 <strong>2MK &gt; 綠衝 &gt; 5HP &gt; 4HP &gt; 昇龍拳</strong>；</li>
+<li>將瑪濃擊倒後，隆利用肉骨打擊（Meaty 2MP）壓制其起身，瑪濃無 OD 無敵昇龍，只能老實防守或賭 SA，隆佔據絕對進攻主動！</li>
+</ul>
+<h3>3. 對戰莉莉 (Lily)：封殺存風與鬥氣反擊手冊</h3>
+<ul>
+<li><strong>立回核心</strong>：</li>
+<li><strong>不給存風</strong>：看到莉莉後撤步出 214P 搖斧頭存風，隆立刻按出 <strong>生綠衝 5HP</strong> 或直接發射 <strong>OD 波動拳</strong>，在莉莉存風動作中途直接打出 Counter！</li>
+<li><strong>帶風突進處理</strong>：一旦莉莉帶風衝過來，隆防住第 1 幀秒按 <strong>Drive Reversal (6HP+HK)</strong>，將莉莉踹飛沒收其二擇；</li>
+<li><strong>近身預判跳躍</strong>：莉莉若殘血試圖指令投，隆原地垂直跳下落出 <strong>Jump HP &gt; 5HP &gt; 4HP &gt; 重波掌氣 &gt; CA3</strong> 斬殺！</li>
+</ul>
+<hr />
+<h2>六、 指令投三巨頭進階招式死穴與致命破綻全景大典</h2>
+<p>除了上述核心代表技，這三位角色在天梯立回中頻繁使用的輔助招式，也隱藏著巨大的物理破綻：</p>
+<h3>1. 桑吉爾夫進階招式死穴剖析</h3>
+<ul>
+<li><strong>頭槌 (6HP / Headbutt)</strong>：</li>
+<li><strong>發生與幀數</strong>：發生 22 幀，被防 <strong>+4 幀</strong>（老桑有利）！</li>
+<li><strong>心理陷阱</strong>：很多防守方看老桑用頭撞過來，以為打完該輪到自己，結果按 4F 輕拳直接被老桑 5 幀 SPD 或 2LP 打康！</li>
+<li><strong>破解真解</strong>：老桑頭槌起手動作極大（身子後仰向前砸），肉眼看見起手可直接出 <strong>Drive Impact (DI)</strong> 霸體強吃！若已被防，<strong>死守防禦或立刻後撤步 (Backdash)</strong>，切勿按鍵搶動！</li>
+<li><strong>雙重金臂勾 / 雙旋風掌 (Double Lariat / 2PP)</strong>：</li>
+<li><strong>常態版 (2PP)</strong>：被防 <strong>-15 幀</strong>！</li>
+<li><strong>OD 版 (2KK)</strong>：對空完全無敵，被防 <strong>-20 幀</strong>！</li>
+<li><strong>破綻剖析</strong>：老桑旋風掌在身體旋轉完畢後，有極長的收招硬直。只要防守方擋住旋轉，老桑陷入超過 15 幀的巨大硬直，隆直接原地 <strong>5HK (PC) &gt; 滿額 CA3 連段</strong>！</li>
+<li><strong>重拳蓄力 (5HP 蓄力猛擊)</strong>：</li>
+<li>老桑可蓄力 5HP 獲得 1 段霸體吸收打擊，蓄滿被防 <strong>+2 幀</strong>。</li>
+<li><strong>破解真解</strong>：看見老桑全身發紅蓄力，不要出單發拳腳，直接出 <strong>下段 2MK</strong>（老桑霸體只防上中段，不防下段！）或直接 <strong>跳到其身後</strong> 進行大確反！</li>
+<li><strong>超必殺技 SA1 (地獄拋投) / SA2 (旋轉風暴)</strong>：</li>
+<li><strong>SA1 (波爾修斯旋風)</strong>：對空投，被防/抓空硬直 <strong>49 幀</strong>！</li>
+<li><strong>SA2 (旋轉雙重金臂勾)</strong>：吸入式大招，被防 <strong>-34 幀</strong>！擋住後全角色前衝跳入打出最痛連段！</li>
+<li><strong>終極終結技 SA3 / CA3 (終極打樁機)</strong>：</li>
+<li><strong>發生時間</strong>：7 幀！</li>
+<li><strong>暗轉機制</strong>：<strong>暗轉後 0 幀抓取！</strong></li>
+<li><strong>重要生理法則</strong>：如果你在地面上看到了老桑 SA3 的特寫暗轉，此時你已經無法起跳（按跳躍需要 4 幀起跳硬直，已被 0F 判定吸走）！</li>
+<li><strong>唯一防禦法則</strong>：老桑殘血手握 SA3 時，<strong>必須在老桑近身之前預判性起跳</strong>，或者保持在老桑一個半身位以外，絕對不可近身肉搏！</li>
+</ul>
+<h3>2. 瑪濃進階招式死穴剖析</h3>
+<ul>
+<li><strong>獎牌等級機制 (Medal Scaling Analysis)</strong>：</li>
+<li>Lv 1：指令投傷害 2000</li>
+<li>Lv 2：指令投傷害 2300</li>
+<li>Lv 3：指令投傷害 2700</li>
+<li>Lv 4：指令投傷害 3200</li>
+<li><strong>Lv 5：指令投傷害高達 3700！(OD 版高達 4100！)</strong></li>
+<li><strong>對局節奏戰略</strong>：瑪濃是「雪球型角色」。在 Round 1 必須極限壓制，盡可能不讓其累積獎牌；若其獎牌已達 4~5 級，殘局必須將其視為「隨時能一招秒殺你的老桑」，近身防守心態全面轉向「預讀起跳」！</li>
+<li><strong>站立重拳 (5HP)</strong>：</li>
+<li>直線巴掌打擊，被防 <strong>-3 幀</strong>。揮空後手部受傷框延伸長，隆可用 2MK 差合。</li>
+<li><strong>蹲下重拳 (2HP 二段上撩手)</strong>：</li>
+<li>瑪濃常用對空與打擊技。第一段被防 -8F，第二段被防 <strong>-10 幀</strong>！擋住兩段後隆直接 <strong>2MP 綠衝連段</strong> 痛懲！</li>
+<li><strong>OD 芭蕾旋轉踢 (OD 214KK)</strong>：</li>
+<li>具備對空無敵，被防落地硬直長達 <strong>-29 幀</strong>！隆直接蓄力波掌氣或跳入 Jump HK 滿連段！</li>
+<li><strong>超必殺技 SA1 (連續迴旋踢) / SA2 (飛燕踢) / SA3 (天鵝之死)</strong>：</li>
+<li><strong>SA1</strong>：被防 <strong>-19 幀</strong>；</li>
+<li><strong>SA2</strong>：被防 <strong>-28 幀</strong>；</li>
+<li><strong>SA3 / CA3</strong>：指令投超必殺，抓空硬直長達 <strong>43 幀</strong>！起跳避開後落地打滿 CA3 逆轉！</li>
+</ul>
+<h3>3. 莉莉進階招式死穴剖析</h3>
+<ul>
+<li><strong>風之纏繞 (Condor Wind / 214P 存風)</strong>：</li>
+<li>莉莉搖動雙戰斧存風，全體動作長達 <strong>42 幀</strong>，完全沒有任何攻擊判定！</li>
+<li>許多新手看到莉莉拉開距離存風不知所措，這是在白白送給莉莉勝機！</li>
+<li><strong>戰略鐵律</strong>：只要莉莉開始搖斧頭，隆必須<strong>立刻啟動生綠衝 (Raw Drive Rush) &gt; 5HP</strong> 或立刻發射 <strong>OD 波動拳</strong>！42 幀的時間足夠隆在全螢幕反應打出 Counter！</li>
+<li><strong>空中禿鷹俯衝 (Condor Dive / 空中 2PP)</strong>：</li>
+<li>莉莉從空中筆直俯衝撞擊。</li>
+<li><strong>判定機制</strong>：若莉莉在空中較高位置發動，撞在地面防守方胸口以上，被防後莉莉手握 <strong>-12F～-15F</strong> 劣勢！隆落地直接按 <strong>5HP 或 2MK 綠衝</strong> 痛懲！</li>
+<li><strong>OD 禿鷹螺旋 (OD 236KK 帶風)</strong>：</li>
+<li>帶風 OD 突進極其迅速，被防手握 <strong>+2 幀有利</strong>！</li>
+<li>這時候莉莉更加依賴打擊與指令投二擇。</li>
+<li><strong>解法依然是 Drive Reversal</strong>：防住的一瞬間秒按 6HP+HK，哪怕是 OD 突進也直接一腳踢飛！</li>
+</ul>
+<hr />
+<h2>七、 深度進階：指令投三巨頭「微觀幀數與幾何判定框」全景矩陣</h2>
+<p>為了讓玩家在實戰中做到心中有數，以下整理三位指令投角色核心招式的微觀幀數條與空間受傷框數據：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">角色</th>
+<th style="text-align: left;">招式名稱</th>
+<th style="text-align: left;">發生 (Startup)</th>
+<th style="text-align: left;">持續 (Active)</th>
+<th style="text-align: left;">硬直 (Recovery)</th>
+<th style="text-align: left;">被防幀數 (On Block)</th>
+<th style="text-align: left;">命中幀數 (On Hit)</th>
+<th style="text-align: left;">判定特性與幾何破綻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>2HK (大足掃堂腿)</strong></td>
+<td style="text-align: left;">10F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">26F</td>
+<td style="text-align: left;"><strong>-13F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">腿部向前延伸，揮空受傷框停留長達 18 幀，被防全角色 5HK/5HP PC 確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>SPD (普通螺旋大坐)</strong></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">40F</td>
+<td style="text-align: left;"><strong>抓空 40F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">抓取距離依輕&gt;中&gt;強遞減（弱版最遠），抓空雙手伸出無防禦，空中下落大斬殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>OD SPD (OD 大坐)</strong></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">40F</td>
+<td style="text-align: left;"><strong>抓空 40F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">抓取距離極遠，傷害高達 3400+，抓空硬直與普通版相同</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>214K (西伯利亞特快車)</strong></td>
+<td style="text-align: left;">27F~45F</td>
+<td style="text-align: left;">2F</td>
+<td style="text-align: left;">45F</td>
+<td style="text-align: left;"><strong>抓空 45F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">奔跑前進突進投，普通版無霸體可被波動拳打斷；OD 版具 2 次霸體</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>6HP (鐵頭功)</strong></td>
+<td style="text-align: left;">22F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">16F</td>
+<td style="text-align: left;"><strong>+4F</strong></td>
+<td style="text-align: left;">+7F</td>
+<td style="text-align: left;">老桑核心有利技，被防切勿搶招，看見起手前搖直接出 DI 霸體轟殺</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>老桑</strong></td>
+<td style="text-align: left;"><strong>2PP (雙旋風掌)</strong></td>
+<td style="text-align: left;">15F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;"><strong>-15F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">旋轉雙臂，背後判定極弱，被防陷入 -15F 巨大硬直，重拳重腳大確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>214K (芭蕾旋轉踢一段)</strong></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;"><strong>-12F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">高位上踢，若未派生第二段直接大確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>214K&gt;K (旋轉踢第二段)</strong></td>
+<td style="text-align: left;">派生</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-8F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">第二段著地硬直固定 -8F，防守方 2MK/2MP/5MP 穩吃確定反擊</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>214HK (中段派生)</strong></td>
+<td style="text-align: left;">24F</td>
+<td style="text-align: left;">2F</td>
+<td style="text-align: left;">22F</td>
+<td style="text-align: left;"><strong>-9F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">翻身下劈中段，起手有滯空動畫，站防後 -9F 確反連段打滿</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>5HK (站立重腳)</strong></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">4F</td>
+<td style="text-align: left;">20F</td>
+<td style="text-align: left;"><strong>-5F</strong></td>
+<td style="text-align: left;">+2F</td>
+<td style="text-align: left;">遠距離直線蹬腿，揮空硬直 20 幀，腿部受傷框極為巨大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>2HP (下重拳二段)</strong></td>
+<td style="text-align: left;">9F</td>
+<td style="text-align: left;">3F(4)3F</td>
+<td style="text-align: left;">22F</td>
+<td style="text-align: left;"><strong>-10F</strong></td>
+<td style="text-align: left;">+1F</td>
+<td style="text-align: left;">常用對空與近身防守，防住第二段手握 -10F 確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>瑪濃</strong></td>
+<td style="text-align: left;"><strong>Manege Dore (指令投)</strong></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">38F</td>
+<td style="text-align: left;"><strong>抓空 38F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">轉身抱摔，不可拆投，抓空 38 幀，垂直起跳落地最大痛懲</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>莉莉</strong></td>
+<td style="text-align: left;"><strong>236K (無風突進)</strong></td>
+<td style="text-align: left;">14F</td>
+<td style="text-align: left;">3F</td>
+<td style="text-align: left;">19F</td>
+<td style="text-align: left;"><strong>-4F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">雙斧突刺，無風近身被防 -4F，4F 輕拳確反必中</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>莉莉</strong></td>
+<td style="text-align: left;"><strong>236K (帶風突進)</strong></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">4F</td>
+<td style="text-align: left;">13F</td>
+<td style="text-align: left;"><strong>+1F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">突進帶旋風，被防 +1F，防守方必須第一時間拍出 Drive Reversal</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>莉莉</strong></td>
+<td style="text-align: left;"><strong>214P (風之纏繞/存風)</strong></td>
+<td style="text-align: left;">42F 全體</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><strong>全體 42F</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">搖動雙斧存風，無攻擊判定，42 幀巨大破綻，中距離綠衝痛打</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>莉莉</strong></td>
+<td style="text-align: left;"><strong>空 2PP (無影突刺)</strong></td>
+<td style="text-align: left;">12F</td>
+<td style="text-align: left;">至著地</td>
+<td style="text-align: left;">著地 15F</td>
+<td style="text-align: left;"><strong>-8F~-15F</strong></td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;">空中俯衝，高位被防手握巨大不利，落地直接昇龍拳確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>莉莉</strong></td>
+<td style="text-align: left;"><strong>63214P (墨西哥旋風)</strong></td>
+<td style="text-align: left;">5F</td>
+<td style="text-align: left;">1F</td>
+<td style="text-align: left;">39F</td>
+<td style="text-align: left;"><strong>抓空 39F</strong></td>
+<td style="text-align: left;">抓取擊倒</td>
+<td style="text-align: left;">印第安旋風指令投，不可拆投，抓空 39F 硬直垂直起跳滿額斬殺</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>八、 自角色：隆 (Ryu) 針對指令投三巨頭專屬「確反與斬殺連段大典」</h2>
+<p>面對指令投角色，一旦抓到對手的大招硬直或指令投抓空，<strong>必須以最高規格的連段給予心理上的沉重打擊</strong>：</p>
+<h3>1. 抓空指令投（老桑 SPD / 瑪濃抱摔 / 莉莉旋風）落地最大斬殺</h3>
+<ul>
+<li><strong>起手條件</strong>：垂直起跳避開對手指令投，空中下落。</li>
+<li><strong>無氣基礎連段 (No Meter)</strong>：</li>
+<li><code>Jump HK (Punish Counter) &gt; 站立重拳 (5HP) &gt; 4HP &gt; 重驢踢 (214HK) &gt; 重昇龍拳 (623HP)</code></li>
+<li><strong>傷害</strong>：<strong>3920 點</strong>（直接打殘，版邊壓起身）！</li>
+<li><strong>滿氣滿資源極限斬殺 (Max Meter CA3)</strong>：</li>
+<li><code>Jump HK (Punish Counter) &gt; 站立重拳 (5HP) &gt; 4HP &gt; 生綠衝 &gt; 4HP &gt; 蹲下重拳 (2HP) &gt; 重波掌氣 (214HP) &gt; CA3 真空波動拳</code></li>
+<li><strong>傷害</strong>：<strong>5980 點</strong>！一口氣蒸發對手近 60% 血量，直接奠定勝局！</li>
+</ul>
+<h3>2. 防住老桑大足 (-13F) 專屬確反</h3>
+<ul>
+<li><code>站立重腳 5HK (Punish Counter) &gt; 2MK 取消生綠衝 &gt; 站立重拳 5HP &gt; 4HP &gt; 重驢踢 (214HK) &gt; 中昇龍拳 (623MP)</code></li>
+<li><strong>傷害</strong>：3650 點，將老桑推至版邊，徹底剝奪其空間優勢！</li>
+</ul>
+<h3>3. 防住瑪濃旋轉踢 (-8F) 專屬確反</h3>
+<ul>
+<li><code>蹲下中腳 2MK &gt; 綠衝 &gt; 站立中拳 5MP &gt; 4HP &gt; 重波掌氣 (214HP) &gt; 重昇龍拳 (623HP)</code></li>
+<li><strong>傷害</strong>：3150 點，穩吃確定反擊！</li>
+</ul>
+<h3>4. 防住莉莉無風突進 (-4F) 最速確反</h3>
+<ul>
+<li><code>站立輕拳 5LP (Punish Counter) &gt; 蹲下輕拳 2LP &gt; 5LP &gt; 輕龍卷旋風腳 (236LK) / 輕昇龍拳 (623LP)</code></li>
+<li><strong>傷害</strong>：1680 點，打斷對手節奏並推開！</li>
+</ul>
+<hr />
+<h2>九、 傑斯特格鬥教室：面對指令投角色的「全回合心理與心流戰術」</h2>
+<pre><code>【第一階段：開局至中距離拉扯】
+核心思想：保持 2.5 身位，嚴防突進奇襲！
+- 老桑戰：前走半步牽制，不給老桑無腦壓進，見老桑奔跑抓立即垂直起跳；
+- 瑪濃戰：利用下盤 2MK 差合其 5HK，封死其滑步突進；
+- 莉莉戰：見其搖斧頭存風立即出波動拳或綠衝打斷，絕對不讓其免費獲得風儲備！
+
+【第二階段：近身壓制與防守二擇】
+核心思想：寧挨打擊，不吃指令投！
+- 在快打旋風 6 中，被對手中拳打一下掉 800~1200 血，但吃一次指令投掉 3000~4200 血！
+- 因此，當你陷入近身二擇猜拳時，「起跳避投」的期望值永遠高於「原地防打擊」！
+- 一旦你跳開指令投，你換來的是一套 5000+ 的滿額斬殺反擊！
+
+【第三階段：殘局極限終結】
+核心思想：指令投角色普遍缺乏升龍無敵，擊倒後肉骨打擊徹底封死！
+- 老桑、瑪濃、莉莉在倒地後，防守資源極度匱乏；
+- 隆利用肉骨 2MP / 肉骨投連續壓制，逼迫對手花費寶貴的 SA 凹招；
+- 一旦對手 SA 凹空，直接打出最大滿額確反，乾脆利落地拿下勝利！
+</code></pre>
+<hr />
+<h2>十、 訓練場 (Training Mode) 專項「指令投防守特訓」木人設置指南</h2>
+<p>請在訓練場設置木人錄製，進行以下三項肌肉記憶專項特訓：</p>
+<h3>特訓 1：老桑大足 -13F 重攻擊 PC 確反特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：老桑出 2HK (大足掃堂腿)。</li>
+<li><strong>防守方操作</strong>：
+   - 蹲下防守擋住大足；
+   - 擋住瞬間最速按出 <strong>5HK (站立重腳)</strong> 打出 Punish Counter；
+   - 接續生綠衝連段，連續成功 15 次，徹底戒除「防住大足只按輕拳」的壞習慣！</li>
+</ol>
+<h3>特訓 2：瑪濃芭蕾踢第二段 -8F 確反特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：瑪濃出 5MP &gt; 214MK (芭蕾旋轉踢兩段)。</li>
+<li><strong>防守方操作</strong>：
+   - 連續防住兩踢；
+   - 擋完第二踢落地瞬間，最速按出 <strong>2MK 取消生綠衝</strong> 進行連段；
+   - 連續成功 15 次，形成肌肉反射！</li>
+</ol>
+<h3>特訓 3：莉莉帶風突進「Drive Reversal 沒收」特訓</h3>
+<ol>
+<li><strong>木人錄製</strong>：莉莉設置為 1 風狀態，錄製 236K (帶風突進) 命中後立刻按指令投 (63214P)。</li>
+<li><strong>防守方操作</strong>：
+   - 擋住帶風突進的瞬間，最速按出 <strong>6HP+HK (Drive Reversal)</strong>；
+   - 觀察莉莉在指令投出手前被金光一腳踹飛；
+   - 連續成功 15 次，徹底掌握防禦中先行輸入鬥氣反擊的技巧！</li>
+</ol>
+<hr />
+<h2>十一、 傑斯特親授：天梯指令投玩家「四大心理欺詐套路」完全破譯</h2>
+<p>在 Master 階級與排位賽中，指令投玩家非常擅長利用防守方的恐懼心理進行「心理詐欺」。看穿以下四種常見套路，能讓你在對局中完全處於心理制高點：</p>
+<h3>套路 1：老桑「2LP &gt; 2LP 幀數陷阱偷 SPD」</h3>
+<ul>
+<li><strong>對手套路</strong>：老桑近身出 2LP 命中或被防後，故意再出一個 2LP，中間留出 2～3 幀微小空隙。防守方以為對手打完了下意識按拆投，老桑卻在第二發 2LP 之後直接轉出 SPD，把按拆投的防守方直接吸走！</li>
+<li><strong>破解對策</strong>：</li>
+<li><strong>防守鐵律</strong>：面對老桑近身 2LP 連打，<strong>絕對不要按拆投鍵</strong>！</li>
+<li>擋完第一個 2LP 後，觀察老桑動作：若老桑停頓或前走，<strong>立刻拉上垂直跳 (8 方向)</strong>！</li>
+<li>若老桑繼續按 2LP，老桑的 2LP 傷害極低（僅 300 點左右），連吃三個 2LP 也遠比吃一個 3400 的 SPD 划算無數倍！</li>
+</ul>
+<h3>套路 2：瑪濃「生綠衝 2LP &gt; 零幀取消偷指令投」</h3>
+<ul>
+<li><strong>對手套路</strong>：在中距離對峙時，瑪濃突然花費 1 條綠氣生綠衝 (Raw Drive Rush) 突進，出 2LP 命中或被防（手握 +3F 有利），緊接著在防守方猶豫要不要搶招的瞬間，直接輸入 63214P 指令投！</li>
+<li><strong>破解對策</strong>：</li>
+<li>看見瑪濃身上爆出綠光的瞬間，<strong>隆直接按出 2MP 或 5HP 截殺綠衝</strong>！</li>
+<li>若沒能截住且被防住了綠衝 2LP，<strong>不要蹲在原地，毫不猶豫垂直起跳</strong>！</li>
+<li>瑪濃指令投抓空雙手僵直在原地，隆空中落下打滿一套 5000+ CA3 連段，直接讓瑪濃偷雞不成蝕把米！</li>
+</ul>
+<h3>套路 3：莉莉「版邊倒地存風假象，起身偷無敵 SA」</h3>
+<ul>
+<li><strong>對手套路</strong>：莉莉在版邊被擊倒後，經常故意擺出弱勢姿態，企圖在起身第 1 幀賭無敵 SA1 或 SA3，或者起身直接凹 OD 昇龍。</li>
+<li><strong>破解對策</strong>：</li>
+<li>隆在版邊壓制莉莉時，<strong>採用「安全壓制 (Safe Jump)」</strong>！</li>
+<li>擊倒莉莉後，最速前跳出 Jump HP（42 幀安全跳）：<ul>
+<li>若莉莉老實防守，隆直接轉入近身打擊/投二擇；</li>
+<li>若莉莉起身凹 SA 或無敵技，隆在空中攻擊判定未伸出即著地自動防禦，穩穩擋住莉莉大招，打出 Punish Counter 滿額斬殺！</li>
+</ul>
+</li>
+</ul>
+<h3>套路 4：力竭 (Burnout) 狀態下的極限求生法則</h3>
+<ul>
+<li><strong>極端情境</strong>：防守方在 Burnout（力竭狀態）面對指令投角色，被推到版邊時是全遊戲最危險的時刻：</li>
+<li>防禦對手拳腳被防硬直增加 4 幀；</li>
+<li>失去 Drive Impact、失去 Drive Reversal、失去綠衝！</li>
+<li><strong>絕處逢生真解</strong>：
+  1. <strong>不要靠牆死站</strong>：老桑或瑪濃貼臉時，不要一直拉後靠牆，適當利用前衝（Dash）反跳換位；
+  2. <strong>預防性垂直起跳 (Neutral Jump)</strong>：在版邊被壓時，一旦對手走進指令投射程，直接垂直起跳賭對手投；
+  3. <strong>凹無敵超必殺技 (Super Art)</strong>：隆在力竭時依然可以使用 SA1（真空波動拳）或 SA3！在對手企圖近身出指令投的瞬間，直接輸入 SA1/SA3 無敵技，強行逆轉絕境！</li>
+</ul>
+<hr />
+<h2>十二、 傑斯特格鬥心法：天梯對抗指令投「三大必勝口訣」</h2>
+<p>為了讓所有非工程使用者與格鬥新手在實戰激戰中能夠「零延遲調用肌肉記憶」，傑斯特總結了三句朗朗上口、字字珠璣的對抗口訣：</p>
+<h3>口訣一：見老桑大足莫出拳，重腳打康毀滅天</h3>
+<ul>
+<li><strong>白話真解</strong>：擋住老桑那個看似長又遠的掃堂腿（2HK）之後，不要因為害怕距離遠就慌慌張張按輕拳！老桑整整有 13 幀的受傷大破綻，沉住氣按出你角色的站立重腳（5HK）打出 Punish Counter，直接接續綠衝打掉他 4000 血，讓他再也不敢隨便掃地！</li>
+</ul>
+<h3>口訣二：莉莉帶風衝臉前，鬥氣反擊踢上天</h3>
+<ul>
+<li><strong>白話真解</strong>：看見全身帶著旋風特效的莉莉用斧頭衝向你時，千萬不要在心裡猶豫她會出拳還是抓你！只要那個旋風撞上你的防禦盾牌，最速按下前 + 重拳重腳（6HP+HK）使出鬥氣反擊（Drive Reversal），金光一閃直接把她踢到螢幕對面，沒收她的風，粉碎她的二擇！</li>
+</ul>
+<h3>口訣三：芭蕾踢腿莫著急，擋完二段綠衝踢</h3>
+<ul>
+<li><strong>白話真解</strong>：面對瑪濃那套優雅華麗的迴旋踢（214K），切忌擋完第一踢就搶著出招，那會被第二踢踢飛！一定要死守防禦擋完第二段落地，此時瑪濃陷入 8 幀硬直無法動彈，你的下中腳取消綠衝（2MK &gt; Drive Rush）是 100% 絕對命中的確定反擊！</li>
+</ul>
+<hr />
+<h2>十三、 總結：知己知彼，百戰不殆</h2>
+<p>傑斯特的這部指令投對策教學，為所有天梯玩家撥開了長久以來的恐懼迷霧：
+- <strong>老桑不可怕</strong>：大足被防是 -13 幀送命題，西伯利亞奔跑摔起跳就是滿額斬殺；
+- <strong>瑪濃不可怕</strong>：芭蕾旋轉踢被防是 -8 幀必確反，5HK 揮空就是免費的差合靶子；
+- <strong>莉莉不可怕</strong>：無風突進被防是 -4 幀輕拳確反，有風突進一記 Drive Reversal 直接踢碎她的二擇幻想！</p>
+<p>記住傑斯特的格言：<strong>「不要去拆不可拆的投，用起跳與無敵技讓對手抓空，用你最沉重的拳腳讓指令投角色付出代價！」</strong></p><div class="nav"><span><a href="172.html">← 172 威森里 戒酒拳法徹底封殺吉米Jamie三連擊與流派破綻</a></span><span style="text-align:right"><a href="174.html">174 傑斯特 埃德蒙本田超級頭槌與百貫落速效對策 →</a></span></div></div></body></html>
