@@ -1,30 +1,45 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>應對英格麗特（Ingrid）｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / Ingrid 英格麗特（ingrid） 對策</div><h1>應對英格麗特（Ingrid）</h1><p>英格麗特（Ingrid）是個節奏古怪、會一直用<strong>太陽瞬移（Vanishing Sun）</strong>繞來繞去、靠累積「<strong>太陽符紋（Sun Crest，俗稱太陽印記／Stock）</strong>」強化光束，還會用<strong>太陽射擊（Sun Shot，<code>236P</code>）</strong>煩你的角色。但只要拆開她的招式幀數與系統機制，你會發現她有三個超級致命的弱點：<strong>沒有真正的投技循環（Throw Loop）、太陽射擊被打到本體會直接消失、而且 SA1 和 SA3 慢到離譜！</strong> 這篇指南已依 Capcom 官方最新幀數表全面核對，教你主動貼近拆穿她的假連攜、阻止她偷補符紋，以及看到 SA3 閃光直接跳起來免費打她大懲罰。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c75" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C75 Ingrid 英格麗特（ingrid） 對策</div><header class="ph"><span class="pnum">C75</span><h1>應對英格麗特（Ingrid）</h1></header><p>英格麗特（Ingrid）是個節奏古怪、會一直用<strong>太陽瞬移（Vanishing Sun）</strong>繞來繞去、靠累積「<strong>太陽符紋（Sun Crest，俗稱太陽印記／Stock）</strong>」強化光束，還會用<strong>太陽射擊（Sun Shot，<code>236P</code>）</strong>煩你的角色。但只要拆開她的招式幀數與系統機制，你會發現她有三個超級致命的弱點：<strong>沒有真正的投技循環（Throw Loop）、太陽射擊被打到本體會直接消失、而且 SA1 和 SA3 慢到離譜！</strong> 這篇指南已依 Capcom 官方最新幀數表全面核對，教你主動貼近拆穿她的假連攜、阻止她偷補符紋，以及看到 SA3 閃光直接跳起來免費打她大懲罰。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>別跟她打遠距離火球戰，主動貼近！</strong>：英格麗特常態地面技被防沒有任何一招正幀，且<strong>沒有真正的投技循環</strong>（前摔後衝起來想再投，直接按最速 <strong>4 幀輕拳</strong>就能贏她！被後摔丟開也別亂跟）。
-2. <strong>打斷「假火球連攜」與抓她「偷補符紋」</strong>：她用 <code>Halo Flight（6HP）</code> 接太陽射擊常是假招，中間直接按<strong>蹲中拳或輕拳打斷</strong>（她的火球不會對撞，打中本體還會直接消失！）。她擊倒你後超愛按 <code>214LP</code>（全動作 <strong>48 幀</strong>）偷補太陽符紋，破綻極大（前摔後補約 <strong>-27</strong>、後摔約 <strong>-28</strong>、中旋昇後補約 <strong>-10</strong>、輕對空旋昇後補約 <strong>-11</strong>、遠距光束硬直補約 <strong>-35</strong>），<strong>盡量選原地起身（別無腦按後受身）</strong>才能重罰她！
-3. <strong>蹲中腳（<code>2MK</code>）取消綠衝接站重腳（<code>5HK</code>）被防可打斷</strong>：這套<strong>僅在命中時是真連段，被防時中間有高達 6 幀空隙</strong>，直接用 <strong>4 幀小技就能打斷</strong>！單獨站重腳（<code>5HK</code>）被防 <strong><code>-2</code></strong> 且<strong>只能取消 SA（無法取消必殺）</strong>，她沒 SA 氣條時可直接按 <strong>動力衝擊（DI）</strong>（若對 <code>5HK</code> 按完美撥擋，貼身小心第 2 段判定，須 5 幀內反擊）。
-4. <strong>三種太陽瞬移（<code>4/2/6 + KKK</code>）別把正負幀記反！</strong>：
-   * <strong>上方墜落版（<code>2+KKK</code>，俗稱下瞬移／屁股撞）</strong>：發生 43 幀、<strong>中段攻擊（Overhead）需站防</strong>，而且<strong>被防是英格麗特 <code>+2</code> 幀有利</strong>（擋完千萬別亂搶招！）。
-   * <strong>前方飛踢版（<code>6+KKK</code>）</strong>：發生 36 幀、上段攻擊，<strong>被防為 <code>-3</code> 幀不利</strong>（擋完輪到我們 <code>+3</code> 先動，直接搶攻或投！）。
-   * <strong>後方瞬移（<code>4+KKK</code>）</strong>：總長 48 幀無攻擊判定，看到閃光直接按鍵壓制空間。
-   * 看到瞬移閃光可用<strong>垂直判定佳的拳腳</strong>或<strong>輕拳複合昇龍</strong>攔截，不建議盲按 DI。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>別跟她打遠距離火球戰，主動貼近！</strong>：英格麗特常態地面技被防沒有任何一招正幀，且<strong>沒有真正的投技循環</strong>（前摔後衝起來想再投，直接按最速 <strong>4 幀輕拳</strong>就能贏她！被後摔丟開也別亂跟）。<br />
+2. <strong>打斷「假火球連攜」與抓她「偷補符紋」</strong>：她用 <code>Halo Flight（6HP）</code> 接太陽射擊常是假招，中間直接按<strong>蹲中拳或輕拳打斷</strong>（她的火球不會對撞，打中本體還會直接消失！）。她擊倒你後超愛按 <code>214LP</code>（全動作 <strong>48 幀</strong>）偷補太陽符紋，破綻極大（前摔後補約 <strong>-27</strong>、後摔約 <strong>-28</strong>、中旋昇後補約 <strong>-10</strong>、輕對空旋昇後補約 <strong>-11</strong>、遠距光束硬直補約 <strong>-35</strong>），<strong>盡量選原地起身（別無腦按後受身）</strong>才能重罰她！<br />
+3. <strong>蹲中腳（<code>2MK</code>）取消綠衝接站重腳（<code>5HK</code>）被防可打斷</strong>：這套<strong>僅在命中時是真連段，被防時中間有高達 6 幀空隙</strong>，直接用 <strong>4 幀小技就能打斷</strong>！單獨站重腳（<code>5HK</code>）被防 <strong><code>-2</code></strong> 且<strong>只能取消 SA（無法取消必殺）</strong>，她沒 SA 氣條時可直接按 <strong>動力衝擊（DI）</strong>（若對 <code>5HK</code> 按完美撥擋，貼身小心第 2 段判定，須 5 幀內反擊）。<br />
+4. <strong>三種太陽瞬移（<code>4/2/6 + KKK</code>）別把正負幀記反！</strong>：<br />
+   * <strong>上方墜落版（<code>2+KKK</code>，俗稱下瞬移／屁股撞）</strong>：發生 43 幀、<strong>中段攻擊（Overhead）需站防</strong>，而且<strong>被防是英格麗特 <code>+2</code> 幀有利</strong>（擋完千萬別亂搶招！）。<br />
+   * <strong>前方飛踢版（<code>6+KKK</code>）</strong>：發生 36 幀、上段攻擊，<strong>被防為 <code>-3</code> 幀不利</strong>（擋完輪到我們 <code>+3</code> 先動，直接搶攻或投！）。<br />
+   * <strong>後方瞬移（<code>4+KKK</code>）</strong>：總長 48 幀無攻擊判定，看到閃光直接按鍵壓制空間。<br />
+   * 看到瞬移閃光可用<strong>垂直判定佳的拳腳</strong>或<strong>輕拳複合昇龍</strong>攔截，不建議盲按 DI。<br />
 5. <strong>SA1 與 SA3 慢到像慢動作！</strong>：<strong>SA1 旭日光耀（<code>236236K</code>）</strong>發生 11 幀、被防 <strong><code>-99</code> 幀</strong>；<strong>SA3 宇宙射線（<code>236236P</code>）</strong>發生 <strong>20 幀</strong>、被防 <strong><code>-45</code> 幀</strong>！<strong>看到 SA3 暗轉閃光直接跳起來</strong>讓她全揮空，落地開動力箭步（綠衝）進去免費打約 <strong><code>+46</code> 幀</strong>超級大懲罰！</p>
 </blockquote>
 <hr />
 <h2>一、近身立回、「假投技循環」與必抓破綻表</h2>
 <h3>情境：英格麗特遠遠丟球或射光束，好不容易靠近又怕被她連續投或正幀壓制</h3>
 <ul>
-<li><strong>怎麼做</strong>：
-  1. <strong>主動貼近別打遠距離戰</strong>：英格麗特地面一般技常態完全沒有正幀（只有 <code>5MP</code> 被防 <code>±0</code>），進到中近距離交換其實我們完全不吃虧。
-  2. <strong>抓她「假投技循環」</strong>：英格麗特前摔（<code>Strange Knuckle</code>）後前衝雖然進得了投距，但有利幀不夠構成無解循環！看到她前衝過來想再摔，直接按<strong>最速 4 幀輕拳</strong>就能穩穩打贏她的投技！如果是被她「後摔（<code>Gravity Drop</code>）」丟開，先看清距離別急著亂前衝。
-  3. <strong>分清楚她真正有利與必罰的地面／特殊技幀數</strong>：<ul>
+<li><strong>怎麼做</strong>：</li>
+<li><strong>主動貼近別打遠距離戰</strong>：英格麗特地面一般技常態完全沒有正幀（只有 <code>5MP</code> 被防 <code>±0</code>），進到中近距離交換其實我們完全不吃虧。</li>
+<li><strong>抓她「假投技循環」</strong>：英格麗特前摔（<code>Strange Knuckle</code>）後前衝雖然進得了投距，但有利幀不夠構成無解循環！看到她前衝過來想再摔，直接按<strong>最速 4 幀輕拳</strong>就能穩穩打贏她的投技！如果是被她「後摔（<code>Gravity Drop</code>）」丟開，先看清距離別急著亂前衝。</li>
+<li><strong>分清楚她真正有利與必罰的地面／特殊技幀數</strong>：<ul>
 <li><strong>站中拳（<code>5MP</code>）</strong>：6 幀發生、被防 <strong><code>±0</code> 幀</strong>（五五開；綠衝發動則是 <strong><code>+4</code> 幀</strong>）。</li>
 <li><strong>蹲重拳（<code>2HP</code>）</strong>：12 幀發生、被防 <strong><code>-1</code> 幀</strong>（綠衝發動變 <strong><code>+3</code> 幀</strong>，壓貼身投擇要小心）。</li>
 <li><strong>站重腳（<code>5HK</code>）</strong>：9 幀發生、<strong>常態被防固定是 <code>-2</code> 幀</strong>（綠衝發動變 <strong><code>+2</code> 幀</strong>且進投距）。因為它<strong>不能取消一般必殺技（僅可取消 SA）</strong>，只要她沒有 SA 氣條就能直接按 <strong>DI</strong> 打穿！若你想用<strong>完美撥擋（Perfect Parry）</strong>接 <code>5HK</code>，小心它有兩段持續幀（9–13, 15–17 幀），貼身時要立刻用 <strong>5 幀內的快招或投</strong>反擊才不會吃到第 2 段。</li>
@@ -35,8 +50,10 @@
 <li><strong>目標連段收尾</strong>：<strong><code>Pretty Heel Kick（5MP~MK）</code></strong> 與 <strong><code>Glowing Touch 第 2 段（4MK~HP）</code></strong> 被防皆高達 <strong><code>-11</code> 幀</strong>；<strong><code>Luminous Uppercut（4HP / 4HP~HP）</code></strong> 被防為 <strong><code>-8</code> / <code>-10</code> 幀</strong>（中／重攻擊確反）。</li>
 <li><strong>蹲中腳（<code>2MK</code>）</strong>：被防 <strong><code>-6</code> 幀</strong>（貼身 4～6 幀輕中攻擊確反）。</li>
 <li><strong>站重拳（<code>5HP</code>）</strong>：被防 <strong><code>-5</code> 幀</strong>（貼身可用 4～5 幀技確反）。</li>
-<li><strong><code>Halo Flight（6HP）</code>、<code>Glowing Touch 第 1 段（4MK）</code> 與 <code>太陽閃光 Lv1（214MP）</code></strong>：被防皆為 <strong><code>-4</code> 幀</strong>（貼身可用 4 幀輕拳確反）。
-  4. <strong>當她進入燒盡（Burnout）或沒 2 格動力槽時</strong>：</li>
+<li><strong><code>Halo Flight（6HP）</code>、<code>Glowing Touch 第 1 段（4MK）</code> 與 <code>太陽閃光 Lv1（214MP）</code></strong>：被防皆為 <strong><code>-4</code> 幀</strong>（貼身可用 4 幀輕拳確反）。</li>
+</ul>
+</li>
+<li><strong>當她進入燒盡（Burnout）或沒 2 格動力槽時</strong>：<ul>
 <li>英格麗特沒有免費的無敵 OD 昇龍，唯一第 1 幀就能同時抓打擊與投技的反擊是 <strong>OD 太陽面紗（<code>22KK</code>，需耗 2 格動力）</strong>；<strong>普通版太陽面紗（<code>22K</code>）第 6 幀才啟動且不防投</strong>！所以一旦她進入<strong>燒盡狀態</strong>，她只剩下 11 幀發生的 SA1（不穿波）與 20 幀發生的 SA3，大膽用輕攻擊壓持續起身，她幾乎逃不出來！</li>
 </ul>
 </li>
@@ -45,16 +62,18 @@
 <h2>二、阻止她「偷補太陽符紋」與破解火球／光束</h2>
 <h3>情境：英格麗特把你打倒或拉開後，突然原地按 <code>214LP</code> 補符紋，或是用火球／強化光束壓你</h3>
 <ul>
-<li><strong>怎麼做</strong>：
-  1. <strong>打斷「<code>6HP（Halo Flight）</code> → 太陽射擊（<code>236P</code>）」</strong>：這中間有明顯空隙，直接按<strong>蹲中拳或輕拳</strong>打進去！而且英格麗特的<strong>太陽射擊（<code>236P</code>）不會與對手的氣功對撞，只要她本體被打中就會直接消失</strong>，加上發招時腿部會有向前延伸的受擊判定，用<strong>長距離下段技</strong>甚至能直接掃過火球踢到她本人！
-  2. <strong>別無腦按「後受身」，抓她偷補太陽符紋</strong>：英格麗特用 <code>214LP</code> 補 1 顆太陽符紋固定要花 <strong>48 幀</strong>（第 47 幀才拿到），很多玩家會在擊倒你或逼防後偷補，破綻大到誇張：<ul>
+<li><strong>怎麼做</strong>：</li>
+<li><strong>打斷「<code>6HP（Halo Flight）</code> → 太陽射擊（<code>236P</code>）」</strong>：這中間有明顯空隙，直接按<strong>蹲中拳或輕拳</strong>打進去！而且英格麗特的<strong>太陽射擊（<code>236P</code>）不會與對手的氣功對撞，只要她本體被打中就會直接消失</strong>，加上發招時腿部會有向前延伸的受擊判定，用<strong>長距離下段技</strong>甚至能直接掃過火球踢到她本人！</li>
+<li><strong>別無腦按「後受身」，抓她偷補太陽符紋</strong>：英格麗特用 <code>214LP</code> 補 1 顆太陽符紋固定要花 <strong>48 幀</strong>（第 47 幀才拿到），很多玩家會在擊倒你或逼防後偷補，破綻大到誇張：<ul>
 <li>遠距離強化光束硬直後偷補：約 <strong><code>-35</code> 幀</strong></li>
 <li>後摔（<code>Gravity Drop</code>）後直接補：約 <strong><code>-28</code> 幀</strong></li>
 <li>前摔（<code>Strange Knuckle</code>）後直接補：約 <strong><code>-27</code> 幀</strong></li>
 <li>輕版對空太陽旋昇（<code>236LK</code>）擊倒後補：約 <strong><code>-11</code> 幀</strong></li>
 <li>中版太陽旋昇（<code>236MK</code>）擊倒後補：約 <strong><code>-10</code> 幀</strong></li>
-<li>被摔或被點倒時<strong>盡量選「原地起身」（別習慣性按後受身拉遠）</strong>，才能在她偷補符紋的瞬間衝上去給她超大懲罰！（註：唯有中了 <strong>太陽閃光 Lv1 <code>214MP</code></strong> 被推飛到極遠處擊倒時，她再補符紋只虧約 <strong><code>-1</code> 幀</strong>較難衝過去罰；但在角落時她依然沒有正幀，原地起身可直接按鍵搶回主導權。）
-  3. <strong>分清「普通光束 <code>-4</code>」與「強化／OD 光束 <code>+4～+9</code>」</strong>：</li>
+<li>被摔或被點倒時<strong>盡量選「原地起身」（別習慣性按後受身拉遠）</strong>，才能在她偷補符紋的瞬間衝上去給她超大懲罰！（註：唯有中了 <strong>太陽閃光 Lv1 <code>214MP</code></strong> 被推飛到極遠處擊倒時，她再補符紋只虧約 <strong><code>-1</code> 幀</strong>較難衝過去罰；但在角落時她依然沒有正幀，原地起身可直接按鍵搶回主導權。）</li>
+</ul>
+</li>
+<li><strong>分清「普通光束 <code>-4</code>」與「強化／OD 光束 <code>+4～+9</code>」</strong>：<ul>
 <li>沒有符紋的<strong>中版 太陽閃光（<code>214MP</code>）</strong>被防是 <strong><code>-4</code> 幀</strong>；但只要她消耗 <strong>1／2 顆符紋打出重版（<code>214HP</code> Lv2/Lv3）</strong>或開 <strong>OD 版（<code>214PP</code>）</strong>，發生不僅加快到 <strong>18 幀</strong>、多段判定讓 DI 撞不破又極難完美撥擋，<strong>被防更會變成 <code>+4</code> / <code>+5</code> 幀（OD Lv3 高達 <code>+9</code> 幀）</strong>！當她身上有 <strong>2 顆以上符紋</strong>時，先穩穩蹲防擋下來——只要防住這發強化光束，她的符紋就會消耗掉，後續威脅反而大幅降低！</li>
 </ul>
 </li>
@@ -66,13 +85,15 @@
 <h2>三、三種太陽瞬移 &amp; 慢到離譜的 SA1／SA3 反制法</h2>
 <h3>情境：英格麗特突然閃光用太陽瞬移，或是突然開 SA1／SA3 凹招</h3>
 <ul>
-<li><strong>怎麼做</strong>：
-  1. <strong>三種太陽瞬移（Vanishing Sun，<code>4/2/6 + KKK</code>）對策</strong>：<ul>
+<li><strong>怎麼做</strong>：</li>
+<li><strong>三種太陽瞬移（Vanishing Sun，<code>4/2/6 + KKK</code>）對策</strong>：<ul>
 <li><strong>後方瞬移（<code>4+KKK</code>）</strong>：總長 48 幀（第 13–26 幀無敵）、無攻擊判定，純拉開距離，看到閃光往後退時可直接前走搶空間或按鍵壓制。</li>
 <li><strong>上方墜落版（<code>2+KKK</code>，俗稱下瞬移／屁股撞）</strong>：發生 <strong>43 幀</strong>、<strong>中段攻擊（Overhead）必須站防</strong>！更重要的是<strong>官方被防為英格麗特 <code>+2</code> 幀有利</strong>（若真的已經被防住，<strong>千萬別亂點輕拳搶招</strong>，先穩守看她是否接投或退步誘拆投！最佳處理是在她出現前先擊落）。</li>
 <li><strong>前方飛踢版（<code>6+KKK</code>）</strong>：發生 <strong>36 幀</strong>、上段攻擊，<strong>被防為英格麗特 <code>-3</code> 幀不利</strong>，擋住後立刻由我方拿回 <code>+3</code> 先手權，直接搶攻或前走投技！</li>
-<li><strong>實用攔截法</strong>：三種瞬移在閃光後皆有前搖空檔（36～43 幀才出現攻擊判定），看到閃光瞬間可以按<strong>垂直判定強的招式（例如隆的蹲中腳）</strong>或用<strong>輕拳複合輸入昇龍拳</strong>直接把她抓下來；一般不建議直接按 DI（容易鑽到上方墜落版下方而吃懲罰）。
-  2. <strong>SA1 與 SA3 看到直接重罰</strong>：</li>
+<li><strong>實用攔截法</strong>：三種瞬移在閃光後皆有前搖空檔（36～43 幀才出現攻擊判定），看到閃光瞬間可以按<strong>垂直判定強的招式（例如隆的蹲中腳）</strong>或用<strong>輕拳複合輸入昇龍拳</strong>直接把她抓下來；一般不建議直接按 DI（容易鑽到上方墜落版下方而吃懲罰）。</li>
+</ul>
+</li>
+<li><strong>SA1 與 SA3 看到直接重罰</strong>：<ul>
 <li><strong>SA1 旭日光耀（<code>236236K</code>）</strong>發生慢（<strong>11 幀</strong>，第 1–15 幀對打擊與投技無敵，但不抗飛道），<strong>被防更是高達 <code>-99</code> 幀</strong>，擋住後隨便你先補 Buff／設陷阱再打最大連段！</li>
 <li><strong>SA3 宇宙射線（<code>236236P</code>）</strong>發生更慢（<strong>20 幀</strong>，被防 <strong><code>-45</code> 幀</strong>）！<strong>只要看到 SA3 的暗轉閃光，直接往天上跳起來</strong>就能讓她整招全揮空，落地後開動力箭步（綠衝）衝過去免費拿到約 <strong><code>+46</code> 幀</strong>的超級大懲罰（連桑吉爾夫等慢速角都能打滿整套）！</li>
 </ul>
@@ -93,4 +114,11 @@
 <li><strong>太陽瞬移（Vanishing Sun）的應對流派取捨</strong>：一派選手推薦看到瞬移閃光就「<strong>原地跳（Neutral Jump）</strong>並出帶逆向判定的跳攻擊」同時覆蓋上方墜落版與換邊；另一派（特別是快攻或長手角）則習慣直接按「<strong>站輕拳或後跳</strong>」求高穩定度防住彈道接瞬移的連續壓制，實戰依自身角色跳躍與空戰性能選擇即可。</li>
 <li><strong>受身方向選擇（原地起身 vs 向後受身）</strong>：多數對戰建議<strong>優先「原地起身」</strong>以懲罰她偷補符紋（<code>-10</code>～<code>-28</code>）與開球假壓制；但若遇到不補符紋、習慣直接開動力箭步強行貼身壓起身的積極型英格麗特，適時混入<strong>向後受身（Back Rise）</strong>拉開距離同樣能打亂她的節奏。</li>
 <li><strong>閃避太陽射擊與 SA3 的跳躍方向</strong>：看到 <strong>SA3 宇宙射線</strong>暗轉閃光，無論原地跳或前跳幾乎都能讓她全揮空並綠衝懲罰；但面對中距離<strong>太陽射擊（<code>236P</code>）</strong>連攜時，需提防她改用斜上軌道的重太陽射擊或輕太陽旋昇（<code>236LK</code>）對空，應看清她的取消習慣再決定要前跳、原地跳或前走防禦推進。</li>
-</ul><div class="nav"><span><a href="c74.html">← C74 蓋爾對戰應對整理</a></span><span style="text-align:right"><a href="c76.html">C76 傑米對策攻略 →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c74.html">← C74 蓋爾對戰應對整理</a><a href="../index.html">返回總覽目錄</a><a href="c76.html">C76 傑米對策攻略 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

@@ -1,15 +1,30 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>動力撥擋（Drive Parry）防禦與回收｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 資源管理</div><h1>動力撥擋（Drive Parry）防禦與回收</h1><p>在《快打旋風 6》裡，一直蹲著按「後」死防很吃虧——對手每打你一下，綠色動力量表就少一截，防著防著就進燒盡（Burnout）。這時要靠「動力撥擋（Drive Parry）」，它不只幫你擋下上中下段與飛行道具，還能<strong>把消耗掉的動力量表吸回來</strong>！這篇指南從按鍵時機、量表回收原理，一路講到「完美撥擋（Perfect Parry）」的風險與取捨。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c07-03-parry" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C07 資源管理</div><header class="ph"><span class="pnum">C07-03</span><h1>動力撥擋（Drive Parry）防禦與回收</h1></header><p>在《快打旋風 6》裡，一直蹲著按「後」死防很吃虧——對手每打你一下，綠色動力量表就少一截，防著防著就進燒盡（Burnout）。這時要靠「動力撥擋（Drive Parry）」，它不只幫你擋下上中下段與飛行道具，還能<strong>把消耗掉的動力量表吸回來</strong>！這篇指南從按鍵時機、量表回收原理，一路講到「完美撥擋（Perfect Parry）」的風險與取捨。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包（直接照做版）</strong>
-1. <strong>撥擋鍵綁單鍵</strong>：經典操作按「中拳＋中腳」，現代操作有專用鍵，建議綁在好按的肩鍵或面板鍵。
-2. <strong>防飛行道具與超必殺必用撥擋</strong>：單純死防會狂扣綠條；面對連發波或超必殺，按住撥擋不扣血、還能回氣。
-3. <strong>撥擋最大天敵是投技</strong>：撥擋放開後有 <strong>33 幀收招硬直</strong>，期間只能一般防禦且全程處於懲罰反擊（Punish Counter）狀態；被摔會吃 2040 傷害的懲罰反擊投，還會被噴掉大量動力量表。
+<p><strong>⚡ 一分鐘懶人包（直接照做版）</strong><br />
+1. <strong>撥擋鍵綁單鍵</strong>：經典操作按「中拳＋中腳」，現代操作有專用鍵，建議綁在好按的肩鍵或面板鍵。<br />
+2. <strong>防飛行道具與超必殺必用撥擋</strong>：單純死防會狂扣綠條；面對連發波或超必殺，按住撥擋不扣血、還能回氣。<br />
+3. <strong>撥擋最大天敵是投技</strong>：撥擋放開後有 <strong>33 幀收招硬直</strong>，期間只能一般防禦且全程處於懲罰反擊（Punish Counter）狀態；被摔會吃 2040 傷害的懲罰反擊投，還會被噴掉大量動力量表。<br />
 4. <strong>完美撥擋是雙面刃</strong>：打擊完美撥擋收招只有 <strong>1 幀</strong>，能直接搶回回合，但傷害補正 50% 起跳；失敗或站蹲沒猜對就吃大虧，殘血保命用普通撥擋就夠。</p>
 </blockquote>
 <hr />
@@ -17,9 +32,9 @@
 <ul>
 <li><strong>發動方式</strong>：經典操作同時按「中拳＋中腳」（不用推後）；現代操作按專屬撥擋鍵。按下去角色發出藍光進入撥擋架式，<strong>第 1 幀啟動</strong>，最低持續 <strong>12 幀</strong>。</li>
 <li><strong>全方向自動防禦</strong>：按住撥擋期間，<strong>站立攻擊、下段、中段、跳入與飛行道具全部都能擋下</strong>（<strong>投技例外</strong>）。</li>
-<li><strong>兩個物理特性</strong>：
-  1. <strong>擊退距離變短</strong>：用撥擋擋招時，對手會比普通防禦時更貼近你（方便短手角色確反，但也可能更好摔你）。
-  2. <strong>有收招硬直</strong>：放開撥擋後收招 <strong>33 幀</strong>（期間僅能一般防禦），空振亂按容易在收招期間被反打。</li>
+<li><strong>兩個物理特性</strong>：</li>
+<li><strong>擊退距離變短</strong>：用撥擋擋招時，對手會比普通防禦時更貼近你（方便短手角色確反，但也可能更好摔你）。</li>
+<li><strong>有收招硬直</strong>：放開撥擋後收招 <strong>33 幀</strong>（期間僅能一般防禦），空振亂按容易在收招期間被反打。</li>
 </ul>
 <hr />
 <h2>二、量表消耗與回收：怎麼用才不會越按越虧？</h2>
@@ -101,7 +116,14 @@
 * 撥擋第 1 幀啟動、最低持續 12 幀、放開收招 33 幀（全程懲罰反擊狀態）；打擊完美撥擋收招 1 幀，飛行道具完美撥擋收招 10 幀。
 * <strong>普通撥擋第 4 幀起即可取消為動力箭步</strong>，不需要先等硬直結束，也不限完美撥擋。
 * 完美撥擋判定窗口以 1～2 幀為準；版本更新（判定 8→12 幀、硬直 29→33 幀等）屬已修正的舊版對照，請用現行數字。</p>
-<p><strong>仍屬實戰變數的取捨：</strong>
-1. <strong>撥擋量表細節</strong>：啟動消耗、單發飛行道具淨增減、被摔扣量表約 1～1.5 格等屬體感值，會因版本與狀況略有出入，請以訓練場量表顯示為準。
-2. <strong>JP 殘影該不該撥擋</strong>：保守派盡量撥擋省條；進攻派提醒容易被假動作釣或被瞬移投，建議只在有把握完美撥擋時才按，請依對手習慣彈性調整。
-3. <strong>完美撥擋取捨</strong>：搶回合 vs 傷害補正 50% 的風險，進攻派愛賭，保守派只在關鍵殘血或超必殺時使用。</p><div class="nav"><span><a href="c07-02-burnout.html">← C07-02 燒盡（Burnout）狀態與代價</a></span><span style="text-align:right"><a href="c07-05-reversal.html">C07-05 動力反攻（Drive Reversal）脫困反擊 →</a></span></div></div></body></html>
+<p><strong>仍屬實戰變數的取捨：</strong><br />
+1. <strong>撥擋量表細節</strong>：啟動消耗、單發飛行道具淨增減、被摔扣量表約 1～1.5 格等屬體感值，會因版本與狀況略有出入，請以訓練場量表顯示為準。<br />
+2. <strong>JP 殘影該不該撥擋</strong>：保守派盡量撥擋省條；進攻派提醒容易被假動作釣或被瞬移投，建議只在有把握完美撥擋時才按，請依對手習慣彈性調整。<br />
+3. <strong>完美撥擋取捨</strong>：搶回合 vs 傷害補正 50% 的風險，進攻派愛賭，保守派只在關鍵殘血或超必殺時使用。</p><nav class="pager"><a href="c07-02-burnout.html">← C07-02 燒盡（Burnout）狀態與代價</a><a href="../index.html">返回總覽目錄</a><a href="c07-05-reversal.html">C07-05 動力反攻（Drive Reversal）脫困反擊 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

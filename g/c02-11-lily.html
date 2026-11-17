@@ -1,21 +1,36 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>莉莉（Lily）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>莉莉（Lily）角色招式幀數數據</h1><p>莉莉（Lily）的核心玩法就是「集風（累積<strong>風纏 Windclad</strong>）→ 強化版<strong>鷹塔（Condor Spire）</strong>衝過來壓你打二擇」。很多玩家遇到莉莉最痛苦的就是：「她飛過來被我擋住，為什麼我按輕拳總是輸？哪些招式沒有風纏時其實是大破綻？」這篇以 Capcom 最新官方幀數表與系統公式為準，幫你把莉莉的關鍵幀數翻成實戰口訣！</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-lily" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>莉莉（Lily）角色招式幀數數據</h1></header><p>莉莉（Lily）的核心玩法就是「集風（累積<strong>風纏 Windclad</strong>）→ 強化版<strong>鷹塔（Condor Spire）</strong>衝過來壓你打二擇」。很多玩家遇到莉莉最痛苦的就是：「她飛過來被我擋住，為什麼我按輕拳總是輸？哪些招式沒有風纏時其實是大破綻？」這篇以 Capcom 最新官方幀數表與系統公式為準，幫你把莉莉的關鍵幀數翻成實戰口訣！</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>看清楚「有沒有風纏」決定鷹塔被防誰先動！</strong>：
-   * <strong>無風纏鷹塔（普通／OD 236K）</strong>：貼身被防皆為 <strong><code>-8</code> 幀</strong>（大破綻，中近距離擋住直接確反！但因持續長達 13 幀，若在最遠尖端才碰到會因壓持續變成安全甚至微正幀）。
-   * <strong>風纏鷹塔（有風 236K）</strong>：輕／中／重版被防皆為 <strong><code>+1</code> 幀</strong>，<strong>風纏 OD 鷹塔（<code>[Windclad] 236KK</code>）</strong>被防高達 <strong><code>+2</code> 幀</strong>（且第 9～32 幀對飛行道具無敵）！擋完是莉莉先動，馬上進入「4 幀站輕腳 vs 5 幀指令投」二擇，千萬別亂按拳腳搶招，建議視資源交<strong>動力反攻（Drive Reversal，6HP+HK）</strong>彈開她。
-2. <strong>看到近距離揮擊「鷹風」或空中「鷹襲」被防直接確反</strong>：
-   * <strong>鷹風（214P，集風揮擊）</strong>：輕／中／重版被防皆為 <strong><code>-8</code> 幀</strong>（OD 版被防 <strong><code>-5</code> 幀</strong>）；如果不揮擊直接原地蓄風，第 <strong>46 幀</strong>才拿到第 1 層風纏（OD 版第 <strong>38 幀</strong>），近距離看到她蓄風直接衝上去揍她！
-   * <strong>鷹襲（j.P，空中俯衝）</strong>：普通／OD 版被防基準為 <strong><code>-24</code> 幀</strong>，風纏版／風纏 OD 版被防為 <strong><code>-23</code> 幀</strong>，蹲防擋住直接用動力箭步或大招確反！
-   * <strong>墨西哥颱風（360+P，指令投／俗稱駒投）</strong>：發生固定 <strong>5 幀</strong>，但被跳躍躲開後有高達 <strong>53 幀揮空硬直</strong>（總動作 59 幀），落地直接送她最大懲罰反擊連段！
-3. <strong>對空與防身無敵幀重點</strong>：
-   * <strong>戰斧爆揮（623P，昇龍）</strong>：無風纏輕版發生 <strong>6 幀</strong>（可成立安全跳），但<strong>有風纏時輕版與 OD 版發生僅 <code>4</code> 幀</strong>（第 1～10 幀對空無敵，會直接打穿標準安全跳！）。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>看清楚「有沒有風纏」決定鷹塔被防誰先動！</strong>：<br />
+   * <strong>無風纏鷹塔（普通／OD 236K）</strong>：貼身被防皆為 <strong><code>-8</code> 幀</strong>（大破綻，中近距離擋住直接確反！但因持續長達 13 幀，若在最遠尖端才碰到會因壓持續變成安全甚至微正幀）。<br />
+   * <strong>風纏鷹塔（有風 236K）</strong>：輕／中／重版被防皆為 <strong><code>+1</code> 幀</strong>，<strong>風纏 OD 鷹塔（<code>[Windclad] 236KK</code>）</strong>被防高達 <strong><code>+2</code> 幀</strong>（且第 9～32 幀對飛行道具無敵）！擋完是莉莉先動，馬上進入「4 幀站輕腳 vs 5 幀指令投」二擇，千萬別亂按拳腳搶招，建議視資源交<strong>動力反攻（Drive Reversal，6HP+HK）</strong>彈開她。<br />
+2. <strong>看到近距離揮擊「鷹風」或空中「鷹襲」被防直接確反</strong>：<br />
+   * <strong>鷹風（214P，集風揮擊）</strong>：輕／中／重版被防皆為 <strong><code>-8</code> 幀</strong>（OD 版被防 <strong><code>-5</code> 幀</strong>）；如果不揮擊直接原地蓄風，第 <strong>46 幀</strong>才拿到第 1 層風纏（OD 版第 <strong>38 幀</strong>），近距離看到她蓄風直接衝上去揍她！<br />
+   * <strong>鷹襲（j.P，空中俯衝）</strong>：普通／OD 版被防基準為 <strong><code>-24</code> 幀</strong>，風纏版／風纏 OD 版被防為 <strong><code>-23</code> 幀</strong>，蹲防擋住直接用動力箭步或大招確反！<br />
+   * <strong>墨西哥颱風（360+P，指令投／俗稱駒投）</strong>：發生固定 <strong>5 幀</strong>，但被跳躍躲開後有高達 <strong>53 幀揮空硬直</strong>（總動作 59 幀），落地直接送她最大懲罰反擊連段！<br />
+3. <strong>對空與防身無敵幀重點</strong>：<br />
+   * <strong>戰斧爆揮（623P，昇龍）</strong>：無風纏輕版發生 <strong>6 幀</strong>（可成立安全跳），但<strong>有風纏時輕版與 OD 版發生僅 <code>4</code> 幀</strong>（第 1～10 幀對空無敵，會直接打穿標準安全跳！）。<br />
    * <strong>超必殺技</strong>：<strong>SA1 吹風鷹（10 幀）</strong>具打擊與投無敵、<strong>SA2 雷鳥（9 幀）</strong>與 <strong>SA3 怒火颱風（7 幀指令投）</strong>具完全無敵。</p>
 </blockquote>
 <hr />
@@ -569,10 +584,17 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>無風鷹塔被防「<code>-8</code> 確反 vs 尖端正幀」的距離差異</strong>：
-   * 許多玩家困惑「為什麼有時擋住無風鷹塔能確反，有時卻打不到甚至被莉莉搶贏？」——官方數據顯示無風鷹塔第 1 持續幀被防為 <strong><code>-8</code> 幀</strong>，但因為它的持續時間長達 <strong>13 幀</strong>（例如輕版為第 17～29 幀），若莉莉從遠距離起跳、剛好用最後幾個持續幀擦到你的防禦（Meaty 壓持續最多可加 <code>13 - 1 = 12</code> 幀），不利幀會大幅縮小甚至轉為 <code>+1</code>～<code>+4</code> 正幀！因此<strong>中近距離擋住無風鷹塔必確反，最遠尖端擋住則切勿盲目伸短手搶招</strong>。</li>
-<li><strong>有風戰斧爆揮（<code>4</code> 幀）對安全跳的破壞力</strong>：
-   * 對戰莉莉壓起身時，務必先看她身上的風纏圖示：當她<strong>沒有風纏</strong>時，輕／OD 戰斧爆揮為 <strong>6 幀</strong>發生，你的標準安全跳可以安全壓制；但當她<strong>有風纏</strong>時，風纏輕／OD 戰斧爆揮發生加快為 <strong>4 幀</strong>，會直接打穿 +41～+42 幀的標準安全跳！此時建議改用「空跳落地防禦」騙她揮空再打最大確反。</li>
-<li><strong>經典操作（Classic）與現代操作（Modern）的指令投取捨</strong>：
-   * 現代莉莉擁有極具威脅的一鍵指令投，但在懲罰反擊時，一鍵簡易重指令投傷害為 <strong>2576</strong>，手搓 <code>360+HP</code> 則高達 <strong>3220</strong>（差了 644 點血量！）。建議現代模式玩家在立回抓突進或起身亂動時用一鍵求穩，而在擋住大破綻招式（如對手昇龍或超必殺揮空）打確反時，務必手搓 <code>360+HP / PP</code> 拿滿完整傷害。</li>
-</ol><div class="nav"><span><a href="c02-11-kimberly.html">← C02-11 金伯莉（Kimberly）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-luke.html">C02-11 盧克（Luke）角色招式幀數數據 →</a></span></div></div></body></html>
+<li><strong>無風鷹塔被防「<code>-8</code> 確反 vs 尖端正幀」的距離差異</strong>：</li>
+<li>許多玩家困惑「為什麼有時擋住無風鷹塔能確反，有時卻打不到甚至被莉莉搶贏？」——官方數據顯示無風鷹塔第 1 持續幀被防為 <strong><code>-8</code> 幀</strong>，但因為它的持續時間長達 <strong>13 幀</strong>（例如輕版為第 17～29 幀），若莉莉從遠距離起跳、剛好用最後幾個持續幀擦到你的防禦（Meaty 壓持續最多可加 <code>13 - 1 = 12</code> 幀），不利幀會大幅縮小甚至轉為 <code>+1</code>～<code>+4</code> 正幀！因此<strong>中近距離擋住無風鷹塔必確反，最遠尖端擋住則切勿盲目伸短手搶招</strong>。</li>
+<li><strong>有風戰斧爆揮（<code>4</code> 幀）對安全跳的破壞力</strong>：</li>
+<li>對戰莉莉壓起身時，務必先看她身上的風纏圖示：當她<strong>沒有風纏</strong>時，輕／OD 戰斧爆揮為 <strong>6 幀</strong>發生，你的標準安全跳可以安全壓制；但當她<strong>有風纏</strong>時，風纏輕／OD 戰斧爆揮發生加快為 <strong>4 幀</strong>，會直接打穿 +41～+42 幀的標準安全跳！此時建議改用「空跳落地防禦」騙她揮空再打最大確反。</li>
+<li><strong>經典操作（Classic）與現代操作（Modern）的指令投取捨</strong>：</li>
+<li>現代莉莉擁有極具威脅的一鍵指令投，但在懲罰反擊時，一鍵簡易重指令投傷害為 <strong>2576</strong>，手搓 <code>360+HP</code> 則高達 <strong>3220</strong>（差了 644 點血量！）。建議現代模式玩家在立回抓突進或起身亂動時用一鍵求穩，而在擋住大破綻招式（如對手昇龍或超必殺揮空）打確反時，務必手搓 <code>360+HP / PP</code> 拿滿完整傷害。</li>
+</ol><nav class="pager"><a href="c02-11-kimberly.html">← C02-11 金伯莉（Kimberly）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-luke.html">C02-11 盧克（Luke）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

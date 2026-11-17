@@ -1,22 +1,37 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>盧克（Luke）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>盧克（Luke）角色招式幀數數據</h1><p>盧克（Luke）是《快打旋風 6》的標準型全能角，手上有超快彈速的噴沙（Sand Blast，236P）、神技蹲中拳（2MP），以及能蓄力改變性能的閃光拳（Flash Knuckle，214P）。很多玩家打盧克常覺得「他怎麼每一拳都好難搶、閃光拳到底安不安全？」這篇指南依據 Capcom 官方最新幀數表與系統公式，幫你把盧克所有招式數據、衍生加值與壓起身消幀套路翻成實戰攻略！</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-luke" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>盧克（Luke）角色招式幀數數據</h1></header><p>盧克（Luke）是《快打旋風 6》的標準型全能角，手上有超快彈速的噴沙（Sand Blast，236P）、神技蹲中拳（2MP），以及能蓄力改變性能的閃光拳（Flash Knuckle，214P）。很多玩家打盧克常覺得「他怎麼每一拳都好難搶、閃光拳到底安不安全？」這篇指南依據 Capcom 官方最新幀數表與系統公式，幫你把盧克所有招式數據、衍生加值與壓起身消幀套路翻成實戰攻略！</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>盧克閃光拳（214P）的鐵則：未蓄力有破綻、蓄滿中版安全、蓄滿重版他正幀！</strong>
-   * <strong>未蓄力版</strong>：輕版 <strong><code>-12</code> 幀</strong>、中版 <strong><code>-8</code> 幀</strong>、重版 <strong><code>-4</code> 幀</strong>（近距皆可確反），擋到直接反打！
-   * <strong>長按／完美蓄力版（第 18～20 幀放開）</strong>：輕版變 <strong><code>-8</code> 幀</strong>（近距仍有確反）、中版變 <strong><code>-3</code> 幀</strong>（安全無確反）、<strong>重版直接變 <code>+4</code> 幀</strong>（盧克大有利，擋到別亂按！）。
-2. <strong>小心盧克的兩大主力普通技</strong>：
-   * <strong>蹲中拳（2MP，發生 6 幀）</strong>：被防是正幀 <strong><code>+1</code> 幀</strong>（持續重疊壓起身可變 <strong><code>+2</code> ～ <code>+3</code> 幀</strong>，搭配動力箭步被防 <strong><code>+5</code> 幀</strong>），命中 <strong><code>+5</code> 幀</strong>，是盧克貼身壓制與打斷搶招的核心！
-   * <strong>站重腳（5HK，發生 10 幀）</strong>：擁有長達 7 幀的持續時間（10-16 幀），貼身第 1 持續幀命中 <strong><code>+2</code> 幀</strong>、被防 <strong><code>-5</code> 幀</strong>；但在中遠距離以最末端（第 7 持續幀）踢中或壓起身時，可變成命中 <strong><code>+8</code> 幀</strong>、被防 <strong><code>+1</code> 幀</strong>！
-3. <strong>必抓的破綻與噴沙（Sand Blast，236P）官方幀數</strong>：
-   * <strong>三重衝擊（5LP~MP~HP，目標連段打到底）</strong>：第三段被防高達 <strong><code>-14</code> 幀</strong>，沒取消必殺技直接重攻擊最大確反！
-   * <strong>站重拳（5HP，發生 10 幀）</strong>：命中 <strong><code>+1</code> 幀</strong>、被防 <strong><code>-4</code> 幀</strong>。若取消中噴沙（236MP）可做成無空隙連防；貼身單發不取消則可嘗試 4 幀搶招。
-   * <strong>雙重衝擊第一段（6HP，前重拳單發）</strong>：發生 16 幀，命中 <strong><code>+3</code> 幀</strong>、被防 <strong><code>-3</code> 幀</strong>（安全但換你動，最速 4 幀技可打斷第二段派生 <code>6HP~HP</code>）。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>盧克閃光拳（214P）的鐵則：未蓄力有破綻、蓄滿中版安全、蓄滿重版他正幀！</strong><br />
+   * <strong>未蓄力版</strong>：輕版 <strong><code>-12</code> 幀</strong>、中版 <strong><code>-8</code> 幀</strong>、重版 <strong><code>-4</code> 幀</strong>（近距皆可確反），擋到直接反打！<br />
+   * <strong>長按／完美蓄力版（第 18～20 幀放開）</strong>：輕版變 <strong><code>-8</code> 幀</strong>（近距仍有確反）、中版變 <strong><code>-3</code> 幀</strong>（安全無確反）、<strong>重版直接變 <code>+4</code> 幀</strong>（盧克大有利，擋到別亂按！）。<br />
+2. <strong>小心盧克的兩大主力普通技</strong>：<br />
+   * <strong>蹲中拳（2MP，發生 6 幀）</strong>：被防是正幀 <strong><code>+1</code> 幀</strong>（持續重疊壓起身可變 <strong><code>+2</code> ～ <code>+3</code> 幀</strong>，搭配動力箭步被防 <strong><code>+5</code> 幀</strong>），命中 <strong><code>+5</code> 幀</strong>，是盧克貼身壓制與打斷搶招的核心！<br />
+   * <strong>站重腳（5HK，發生 10 幀）</strong>：擁有長達 7 幀的持續時間（10-16 幀），貼身第 1 持續幀命中 <strong><code>+2</code> 幀</strong>、被防 <strong><code>-5</code> 幀</strong>；但在中遠距離以最末端（第 7 持續幀）踢中或壓起身時，可變成命中 <strong><code>+8</code> 幀</strong>、被防 <strong><code>+1</code> 幀</strong>！<br />
+3. <strong>必抓的破綻與噴沙（Sand Blast，236P）官方幀數</strong>：<br />
+   * <strong>三重衝擊（5LP~MP~HP，目標連段打到底）</strong>：第三段被防高達 <strong><code>-14</code> 幀</strong>，沒取消必殺技直接重攻擊最大確反！<br />
+   * <strong>站重拳（5HP，發生 10 幀）</strong>：命中 <strong><code>+1</code> 幀</strong>、被防 <strong><code>-4</code> 幀</strong>。若取消中噴沙（236MP）可做成無空隙連防；貼身單發不取消則可嘗試 4 幀搶招。<br />
+   * <strong>雙重衝擊第一段（6HP，前重拳單發）</strong>：發生 16 幀，命中 <strong><code>+3</code> 幀</strong>、被防 <strong><code>-3</code> 幀</strong>（安全但換你動，最速 4 幀技可打斷第二段派生 <code>6HP~HP</code>）。<br />
    * <strong>噴沙（236P）官方數據</strong>：全體總長皆為 <strong>47 幀</strong>（OD 版 40 幀）。輕版（14 幀）命中 <strong><code>-3</code></strong>／被防 <strong><code>-8</code></strong>；中版（17 幀）命中 <strong><code>0</code></strong>／被防 <strong><code>-5</code></strong>；重版（20 幀）命中 <strong><code>+3</code></strong>／被防 <strong><code>-2</code></strong>；唯有中遠距離靠飛行時間抵銷硬直時，防禦有利幀才會隨距離提升。</p>
 </blockquote>
 <hr />
@@ -555,11 +570,18 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>噴沙（Sand Blast）的「貼身基礎幀數 vs 遠距離飛行加值」</strong>：
-   * 過去常有玩家疑惑「為什麼有人說輕噴沙被防 -8、也有人說 -3？重噴沙被防到底是 -2 還是 +3？」
-   * 根據官方數據，輕／中／重噴沙在<strong>貼身（第 1 持續幀）</strong>的<strong>命中有利幀</strong>為 <strong><code>-3</code> / <code>0</code> / <code>+3</code> 幀</strong>，<strong>被防有利幀</strong>為 <strong><code>-8</code> / <code>-5</code> / <code>-2</code> 幀</strong>。部分教學影片口誤將「貼身命中幀數（<code>-3 / 0 / +3</code>）」講成被防幀數；另一方面，當盧克在中遠距離發動噴沙時，飛行道具在空中飛行的時間會抵銷盧克自身的收招硬直（最多可增加 4～9 幀有利），使遠距離被防時輕噴沙接近 <code>-3</code>～<code>-4</code> 幀、重噴沙甚至能變成正幀。實戰只要記住「<strong>近距離噴沙被防必虧、遠距離磨氣才安全</strong>」即可。</li>
-<li><strong>長按蓄力輕閃光拳（214[LP]）被防仍是 <code>-8</code> 幀</strong>：
-   * 許多人誤以為「只要閃光拳有蓄力被防就安全」，但官方幀數表清楚標示：<strong>輕閃光拳就算長按或完美蓄力，被防依然是 <code>-8</code> 幀</strong>！只有<strong>中閃光拳蓄力（<code>-3</code> 幀）</strong>與<strong>重閃光拳蓄力（<code>+4</code> 幀）</strong>在防禦時才是安全或正幀。</li>
-<li><strong>壓持續（Meaty）帶來的畫面震動與額外正幀</strong>：
-   * 盧克的 <strong>站重腳（5HK，持續 7 幀）</strong>、<strong>流氓踢（4HK，持續 4 幀）</strong> 與 <strong>不容追跡（236K~P 肩撞，持續 10 幀）</strong> 都擁有極長的持續幀。貼身第 1 幀被防雖為不利（<code>-5</code> / <code>-3</code> / <code>-6</code>），但算準距離用尖端或壓起身打在持續幀尾端時，系統會觸發額外有利幀（甚至出現防禦震動特效），讓盧克從不利直接變成 <strong><code>+1</code> ～ <code>+3</code> 幀有利</strong>。</li>
-</ol><div class="nav"><span><a href="c02-11-lily.html">← C02-11 莉莉（Lily）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-mbison.html">C02-11 拜森（M. Bison／日版名 Vega）角色招式幀數數據 →</a></span></div></div></body></html>
+<li><strong>噴沙（Sand Blast）的「貼身基礎幀數 vs 遠距離飛行加值」</strong>：</li>
+<li>過去常有玩家疑惑「為什麼有人說輕噴沙被防 -8、也有人說 -3？重噴沙被防到底是 -2 還是 +3？」</li>
+<li>根據官方數據，輕／中／重噴沙在<strong>貼身（第 1 持續幀）</strong>的<strong>命中有利幀</strong>為 <strong><code>-3</code> / <code>0</code> / <code>+3</code> 幀</strong>，<strong>被防有利幀</strong>為 <strong><code>-8</code> / <code>-5</code> / <code>-2</code> 幀</strong>。部分教學影片口誤將「貼身命中幀數（<code>-3 / 0 / +3</code>）」講成被防幀數；另一方面，當盧克在中遠距離發動噴沙時，飛行道具在空中飛行的時間會抵銷盧克自身的收招硬直（最多可增加 4～9 幀有利），使遠距離被防時輕噴沙接近 <code>-3</code>～<code>-4</code> 幀、重噴沙甚至能變成正幀。實戰只要記住「<strong>近距離噴沙被防必虧、遠距離磨氣才安全</strong>」即可。</li>
+<li><strong>長按蓄力輕閃光拳（214[LP]）被防仍是 <code>-8</code> 幀</strong>：</li>
+<li>許多人誤以為「只要閃光拳有蓄力被防就安全」，但官方幀數表清楚標示：<strong>輕閃光拳就算長按或完美蓄力，被防依然是 <code>-8</code> 幀</strong>！只有<strong>中閃光拳蓄力（<code>-3</code> 幀）</strong>與<strong>重閃光拳蓄力（<code>+4</code> 幀）</strong>在防禦時才是安全或正幀。</li>
+<li><strong>壓持續（Meaty）帶來的畫面震動與額外正幀</strong>：</li>
+<li>盧克的 <strong>站重腳（5HK，持續 7 幀）</strong>、<strong>流氓踢（4HK，持續 4 幀）</strong> 與 <strong>不容追跡（236K~P 肩撞，持續 10 幀）</strong> 都擁有極長的持續幀。貼身第 1 幀被防雖為不利（<code>-5</code> / <code>-3</code> / <code>-6</code>），但算準距離用尖端或壓起身打在持續幀尾端時，系統會觸發額外有利幀（甚至出現防禦震動特效），讓盧克從不利直接變成 <strong><code>+1</code> ～ <code>+3</code> 幀有利</strong>。</li>
+</ol><nav class="pager"><a href="c02-11-lily.html">← C02-11 莉莉（Lily）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-mbison.html">C02-11 拜森（M. Bison／日版名 Vega）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

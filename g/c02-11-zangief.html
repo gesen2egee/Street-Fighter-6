@@ -1,15 +1,30 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>角色招式幀數數據（Zangief｜桑吉爾夫）｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>角色招式幀數數據（Zangief｜桑吉爾夫）</h1><p>桑吉爾夫（老桑）的招式通常大開大闔，但可別以為他每招都慢又好確反——他擁有被防依然有利的正幀重擊，隨時準備接「螺旋打樁機（360+P）」把你抓飛；同時也有不少被防後 <code>-10</code> 到 <code>-20</code> 的超大破綻。本篇依據 Capcom 官方最新幀數表與共通系統規則，完整整理桑吉爾夫的發生幀、正幀陷阱、必反大破綻與起身壓制數據。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-zangief" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>角色招式幀數數據（Zangief｜桑吉爾夫）</h1></header><p>桑吉爾夫（老桑）的招式通常大開大闔，但可別以為他每招都慢又好確反——他擁有被防依然有利的正幀重擊，隨時準備接「螺旋打樁機（360+P）」把你抓飛；同時也有不少被防後 <code>-10</code> 到 <code>-20</code> 的超大破綻。本篇依據 Capcom 官方最新幀數表與共通系統規則，完整整理桑吉爾夫的發生幀、正幀陷阱、必反大破綻與起身壓制數據。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-- <strong>基本體質與安全跳</strong>：血量 <strong>11,000</strong>（比一般角色多 1,000）；前墊步總長 <strong>22 幀</strong>、後墊步總長 <strong>25 幀</strong>（第 1～15 幀投無敵）；起跳幀（Pre-jump）為 <strong>5 幀</strong>（一般角色 4 幀，因此老桑標準安全跳需 <strong>+43 幀</strong>擊倒）。
-- <strong>老桑最快的按鍵</strong>：<strong>蹲輕腳（2LK）4 幀</strong>（連按取消 3 幀，最快下段；現代模式輔助輕起手同為 4 幀）；<strong>羅宋炸藥（j.360+K）4 幀</strong>；<strong>螺旋打樁機（360+P）</strong> 與 <strong>6 種普通投</strong> 皆為 <strong>5 幀</strong>；<strong>蹲輕拳（2LP）6 幀</strong>（連按取消 3 幀）；<strong>SA3 大劇院風暴摔（720+P）6+0 幀</strong>；<strong>站輕拳（5LP）</strong> 與 <strong>地獄插（3MP）</strong> 皆為 <strong>7 幀</strong>。
-- <strong>擋完千萬別亂按的正幀招</strong>：<strong>頭槌（前重拳 6HP）</strong> 被防 <strong>+4</strong>（動力箭步被防 <strong>+8</strong>）、<strong>蓄力站重拳（5[HP]）</strong> 被防 <strong>+3</strong>（動力箭步被防 <strong>+7</strong>）、<strong>站輕拳（5LP）</strong> 被防 <strong>+2</strong>、<strong>蹲輕拳（2LP）</strong> 被防 <strong>+1</strong>（動力箭步被防 <strong>+5</strong>）、<strong>站重腳（5HK）</strong> 被防 <strong>+1</strong>；<strong>未蓄力站重拳（5HP）</strong> 一般被防 <code>-3</code>，但搭配動力箭步被防變為 <strong>+1</strong>。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+- <strong>基本體質與安全跳</strong>：血量 <strong>11,000</strong>（比一般角色多 1,000）；前墊步總長 <strong>22 幀</strong>、後墊步總長 <strong>25 幀</strong>（第 1～15 幀投無敵）；起跳幀（Pre-jump）為 <strong>5 幀</strong>（一般角色 4 幀，因此老桑標準安全跳需 <strong>+43 幀</strong>擊倒）。<br />
+- <strong>老桑最快的按鍵</strong>：<strong>蹲輕腳（2LK）4 幀</strong>（連按取消 3 幀，最快下段；現代模式輔助輕起手同為 4 幀）；<strong>羅宋炸藥（j.360+K）4 幀</strong>；<strong>螺旋打樁機（360+P）</strong> 與 <strong>6 種普通投</strong> 皆為 <strong>5 幀</strong>；<strong>蹲輕拳（2LP）6 幀</strong>（連按取消 3 幀）；<strong>SA3 大劇院風暴摔（720+P）6+0 幀</strong>；<strong>站輕拳（5LP）</strong> 與 <strong>地獄插（3MP）</strong> 皆為 <strong>7 幀</strong>。<br />
+- <strong>擋完千萬別亂按的正幀招</strong>：<strong>頭槌（前重拳 6HP）</strong> 被防 <strong>+4</strong>（動力箭步被防 <strong>+8</strong>）、<strong>蓄力站重拳（5[HP]）</strong> 被防 <strong>+3</strong>（動力箭步被防 <strong>+7</strong>）、<strong>站輕拳（5LP）</strong> 被防 <strong>+2</strong>、<strong>蹲輕拳（2LP）</strong> 被防 <strong>+1</strong>（動力箭步被防 <strong>+5</strong>）、<strong>站重腳（5HK）</strong> 被防 <strong>+1</strong>；<strong>未蓄力站重拳（5HP）</strong> 一般被防 <code>-3</code>，但搭配動力箭步被防變為 <strong>+1</strong>。<br />
 - <strong>擋到必須重懲的破綻</strong>：<strong>SA2 旋風碎頸臂（236236P）</strong> 被防 <strong>-35</strong>、<strong>蹲重拳（2HP）</strong> 被防 <strong>-20</strong>、<strong>斯密塔納飛腿（3HK）</strong> 被防 <strong>-18</strong>、<strong>機關槍拍擊第 3 段（5MP&gt;MP&gt;MP）</strong> 被防 <strong>-17</strong>、<strong>蹲重腳／掃倒（2HK）</strong> 被防 <strong>-13</strong>、<strong>雙重金臂勾（PPP）</strong> 被防 <strong>-12</strong>（極限技 OD 版 <strong>-11</strong>）、<strong>大力踩踏第 3 段（22MK&gt;MK&gt;MK）</strong> 被防 <strong>-10</strong>、<strong>旋風車輪踢（6HK，中段）</strong> 被防 <strong>-9</strong>（動力箭步被防 <strong>-5</strong>）。</p>
 </blockquote>
 <hr />
@@ -174,8 +189,8 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>實戰重點：</strong>
-- <strong>站輕拳（5LP）與蹲輕拳（2LP）的正幀壓迫</strong>：站輕拳被防 <code>+2</code>、蹲輕拳被防 <code>+1</code>，是老桑近身點摔（Tick Throw）接螺旋打樁機的核心起手。
+<p><strong>實戰重點：</strong><br />
+- <strong>站輕拳（5LP）與蹲輕拳（2LP）的正幀壓迫</strong>：站輕拳被防 <code>+2</code>、蹲輕拳被防 <code>+1</code>，是老桑近身點摔（Tick Throw）接螺旋打樁機的核心起手。<br />
 - <strong>站中拳（5MP）單發與派生差異</strong>：單發第一下被防 <code>-2</code> 相當安全，但若盲目按出第 2 段（<code>-6</code>）或第 3 段（<code>-17</code>）被防就會遭到確反，務必確認命中或截擊再打完。</p>
 <hr />
 <h2>二、特殊技與目標連段：核心壓制引擎與大破綻</h2>
@@ -328,8 +343,8 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>實戰重點：</strong>
-- <strong>頭槌（6HP）被防 <code>+4</code> 後的防搶幀數陷阱</strong>：頭槌被防後老桑 <code>+4</code>，此時出 <strong>7 幀的地獄插（3MP）</strong> 等同於在第 3 幀生效，能直接打贏對手最快的 <strong>4 幀輕攻擊搶招</strong>（截擊命中變成 <code>+1</code>），若對手乖乖防住則直接轉 <strong>5 幀螺旋打樁機</strong>！
+<p><strong>實戰重點：</strong><br />
+- <strong>頭槌（6HP）被防 <code>+4</code> 後的防搶幀數陷阱</strong>：頭槌被防後老桑 <code>+4</code>，此時出 <strong>7 幀的地獄插（3MP）</strong> 等同於在第 3 幀生效，能直接打贏對手最快的 <strong>4 幀輕攻擊搶招</strong>（截擊命中變成 <code>+1</code>），若對手乖乖防住則直接轉 <strong>5 幀螺旋打樁機</strong>！<br />
 - <strong>膝錘（6MK）的持續幀優勢</strong>：雖然貼身第 1 持續幀被防是 <code>-4</code>，但因持續長達 7 幀（14-20F），中距離用尾端壓持續（Meaty）碰防最多可加 <code>+6</code> 幀（變成被防 <strong>+2</strong>），搭配動力箭步更能直接貼臉有利。</p>
 <hr />
 <h2>三、必殺技、超必殺技與投技完整數據</h2>
@@ -529,17 +544,24 @@
 </tbody>
 </table></div>
 <blockquote>
-<p><strong>💡 共通系統動作補充</strong>：
-- <strong>動力衝擊：俄式雙劈（HPK）</strong>：發生 26F、持續 26-27F、收招 35F、被防 <strong>-3</strong>、傷害 800（第 1-27F 具 2 次霸體）。
-- <strong>動力反攻：反向俄式踢擊（6HPK）</strong>：防禦中發動 <strong>20F</strong>（第 1-22F 完全無敵）、起身發動 <strong>18F</strong>（第 1-20F 完全無敵），被防皆為 <strong>-6</strong>，造成 500 白血傷害。
+<p><strong>💡 共通系統動作補充</strong>：<br />
+- <strong>動力衝擊：俄式雙劈（HPK）</strong>：發生 26F、持續 26-27F、收招 35F、被防 <strong>-3</strong>、傷害 800（第 1-27F 具 2 次霸體）。<br />
+- <strong>動力反攻：反向俄式踢擊（6HPK）</strong>：防禦中發動 <strong>20F</strong>（第 1-22F 完全無敵）、起身發動 <strong>18F</strong>（第 1-20F 完全無敵），被防皆為 <strong>-6</strong>，造成 500 白血傷害。<br />
 - <strong>現代操作補充</strong>：現代模式「輔助強（頭槌 6HP）」單發被防同樣為 <strong>+4 幀</strong>，命中連打自動連段接進 SA3 可打出 <strong>5,060</strong> 傷害。</p>
 </blockquote>
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>一般出招 vs 動力箭步（綠衝）與壓持續的幀數變化</strong>：
-   - 許多玩家常混淆一般出招與綠衝後的幀數：例如<strong>蹲輕腳（2LK）</strong>一般被防為 <code>-3</code>，搭配動力箭步（+4）才變成被防 <strong>+1</strong>；<strong>蹲中拳（2MP）</strong>一般命中 <code>+3</code>、被防 <code>-1</code>，搭配動力箭步被防為 <strong>+3</strong>；<strong>地獄插（3MP）</strong>一般命中 <code>-1</code>、被防 <code>-3</code>，需靠截擊（命中 +1）、懲罰反擊（命中 +3）或動力箭步（命中 +3／被防 +1）才會轉為正幀。
-   - <strong>膝錘（6MK）與旋風車輪踢（6HK）的距離差異</strong>：膝錘基礎被防為 <code>-4</code>，但因持續幀長達 7 幀（14-20F），中距離用尾端壓持續（Meaty）防禦時可轉為 <code>0～+2</code> 有利；旋風車輪踢基礎被防 <code>-9</code> 但擊退距離遠，僅在極近距離（約開局位置內）才會被 8F 長拳腳確反，稍遠或壓持續時對手往往搆不到。</li>
-<li><strong>螺旋打樁機（SPD）後的起身壓制選擇</strong>：
-   - 螺旋打樁機命中後（重版約 <code>+28</code>、版邊輕版約 <code>+30</code>）距離會被拉開，不花資源時無法直接貼身壓制；若想強行壓起身，主流打法會消耗 1 格動力使用<strong>生動力箭步（Parry Drive Rush）</strong>衝刺貼臉，再以<strong>蹲輕拳（2LP）</strong>或<strong>膝錘（6MK）</strong>進行打投二擇。</li>
-</ol><div class="nav"><span><a href="c02-11-yasmine.html">← C02-11 角色招式幀數數據（亞思閔 Yasmine）</a></span><span style="text-align:right"><a href="c02-11.html">C02-11 角色招式幀數數據（達爾西姆 Dhalsim 與通用基準） →</a></span></div></div></body></html>
+<li><strong>一般出招 vs 動力箭步（綠衝）與壓持續的幀數變化</strong>：</li>
+<li>許多玩家常混淆一般出招與綠衝後的幀數：例如<strong>蹲輕腳（2LK）</strong>一般被防為 <code>-3</code>，搭配動力箭步（+4）才變成被防 <strong>+1</strong>；<strong>蹲中拳（2MP）</strong>一般命中 <code>+3</code>、被防 <code>-1</code>，搭配動力箭步被防為 <strong>+3</strong>；<strong>地獄插（3MP）</strong>一般命中 <code>-1</code>、被防 <code>-3</code>，需靠截擊（命中 +1）、懲罰反擊（命中 +3）或動力箭步（命中 +3／被防 +1）才會轉為正幀。</li>
+<li><strong>膝錘（6MK）與旋風車輪踢（6HK）的距離差異</strong>：膝錘基礎被防為 <code>-4</code>，但因持續幀長達 7 幀（14-20F），中距離用尾端壓持續（Meaty）防禦時可轉為 <code>0～+2</code> 有利；旋風車輪踢基礎被防 <code>-9</code> 但擊退距離遠，僅在極近距離（約開局位置內）才會被 8F 長拳腳確反，稍遠或壓持續時對手往往搆不到。</li>
+<li><strong>螺旋打樁機（SPD）後的起身壓制選擇</strong>：</li>
+<li>螺旋打樁機命中後（重版約 <code>+28</code>、版邊輕版約 <code>+30</code>）距離會被拉開，不花資源時無法直接貼身壓制；若想強行壓起身，主流打法會消耗 1 格動力使用<strong>生動力箭步（Parry Drive Rush）</strong>衝刺貼臉，再以<strong>蹲輕拳（2LP）</strong>或<strong>膝錘（6MK）</strong>進行打投二擇。</li>
+</ol><nav class="pager"><a href="c02-11-yasmine.html">← C02-11 角色招式幀數數據（亞思閔 Yasmine）</a><a href="../index.html">返回總覽目錄</a><a href="c02-11.html">C02-11 角色招式幀數數據（達爾西姆 Dhalsim 與通用基準） →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

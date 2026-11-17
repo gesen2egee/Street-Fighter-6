@@ -1,16 +1,31 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VesperArcade C  Viper Execution Guide｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 433 篇</div><h1>VesperArcade C  Viper Execution Guide</h1><h2>核心資訊與影片導航</h2>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="m" data-id="433" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html">單篇攻略</a><a href="../manuals.html" class="on">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../manuals.html">影片實戰手冊</a> / 第 401–500 篇</div><header class="ph"><span class="pnum">433</span><h1>VesperArcade C  Viper Execution Guide</h1></header><h2>核心資訊與影片導航</h2>
 <ul>
 <li><strong>影片標題</strong>：C. Viper Execution Guide! Easier Feints, Super Jump Cancels &amp; Combos (Street Fighter 6)</li>
 <li><strong>頻道作者</strong>：VesperArcade</li>
 <li><strong>YouTube 識別碼</strong>：1AqIeHwah74</li>
 <li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=1AqIeHwah74">觀看 YouTube 原片</a></li>
-<li><strong>核心教學主旨</strong>：
+<li><strong>核心教學主旨</strong>：<br />
   本教學針對格鬥遊戲中極具代表性的高 APM（每分鐘操作數）角色機制進行深度技術拆解，核心聚焦於「簡化假動作取消（Feint Cancels）」、「超級跳躍取消（Super Jump Cancel, 簡稱 SJC）」以及極限連段的輸入技巧。影片全面剖析《快打旋風 6》底層的指令優先權機制，示範如何透過「雙鍵同按並長按（Button Hold）」與「DI 巨集輔助」大幅降低高難度取消手動輸入失誤率。此外，深度解析 SJC 繞過普通技不可取消限制的強大體系，並提供控制器手勢與肌肉記憶優化心法，是進階玩家突破操作天花板、理解極限輸入架構的權威指南。</li>
 </ul>
 <hr />
@@ -54,24 +69,24 @@
 <hr />
 <h2>核心技術/心法深入拆解</h2>
 <h3>1. 假動作取消（Feint Cancel）的底層判定與輸入最佳化</h3>
-<p>在傳統概念中，假動作通常需要在必殺技發動後的特定啟動幀（Startup）內手動追加按下踢鍵（Kick）。然而在高 APM 連段中，這種「連續兩次單點」的操作極易受輸入延遲與手指疲倦影響，導致以下失誤：
-- <strong>按太慢</strong>：必殺技直接完整打出，若被對手防禦直接陷入巨大確反硬直（Punish Counter）。
+<p>在傳統概念中，假動作通常需要在必殺技發動後的特定啟動幀（Startup）內手動追加按下踢鍵（Kick）。然而在高 APM 連段中，這種「連續兩次單點」的操作極易受輸入延遲與手指疲倦影響，導致以下失誤：<br />
+- <strong>按太慢</strong>：必殺技直接完整打出，若被對手防禦直接陷入巨大確反硬直（Punish Counter）。<br />
 - <strong>按太快</strong>：踢鍵被吃掉，角色在原地發呆或打出非預期的普通技。</p>
 <h4>【字幕補充：原作者歸納之三種假動作手法】</h4>
 <ol>
 <li><strong>純手動法</strong>：輸入必殺技後，目視角色火花出現時手動按下任意踢鍵（容錯最低、最易疲勞）。</li>
 <li><strong>預先按住踢鍵法</strong>：先長按任意踢鍵不放，再完成必殺技指令（防守預備時可用）。</li>
-<li><strong>同按長按法（作者最推薦）</strong>：必殺技指令完成瞬間，拳鍵與踢鍵（HP + LK）同時按下並長按。
+<li><strong>同按長按法（作者最推薦）</strong>：必殺技指令完成瞬間，拳鍵與踢鍵（HP + LK）同時按下並長按。<br />
 <em>註：地震波（Seismic Hammer）假動作更為寬容，使用 <code>623(HP+LK)</code> 短點（Tap）即可觸發假動作，不強制要求長按。</em></li>
 </ol>
 <h4>【大師級解決方案：同按長按法（Simultaneous Press &amp; Hold）】</h4>
 <ul>
 <li><strong>輸入公式</strong>：<code>2HP &gt; 214 + (HP + LK)</code>（兩鍵完全同按，且按住不放）。</li>
-<li><strong>底層邏輯</strong>：
-  1. 系統檢測到 <code>214HP</code>，啟動「重雷電拳（Heavy Thunder Knuckle）」。
-  2. 同時輸入的 <code>LK</code> 在此時被系統判定為「取消必殺技指令」。
-  3. 只要維持按住 <code>LK</code>，系統會賦予假動作最高優先級（Priority），在動作啟動的最初幾幀內瞬間收招。</li>
-<li><strong>按鍵釋放細節（Key Release Timing）</strong>：
+<li><strong>底層邏輯</strong>：</li>
+<li>系統檢測到 <code>214HP</code>，啟動「重雷電拳（Heavy Thunder Knuckle）」。</li>
+<li>同時輸入的 <code>LK</code> 在此時被系統判定為「取消必殺技指令」。</li>
+<li>只要維持按住 <code>LK</code>，系統會賦予假動作最高優先級（Priority），在動作啟動的最初幾幀內瞬間收招。</li>
+<li><strong>按鍵釋放細節（Key Release Timing）</strong>：<br />
   這是該技術最核心的「手感門檻」。長按約 3～5 幀後必須俐落放開。</li>
 <li><strong>太早放開</strong>：系統判定取消條件解除，重拳直接揮出。</li>
 <li><strong>太晚放開</strong>：由於按鍵未回彈，下一動的普通技（如 <code>2HP</code>）輸入將無法被緩衝系統（Input Buffer）讀取，導致連段中斷。</li>
@@ -87,22 +102,22 @@
 </code></pre>
 <h4>SJC 系統霸道之處：</h4>
 <ol>
-<li><strong>打破普通技不可取消的框架</strong>：
+<li><strong>打破普通技不可取消的框架</strong>：<br />
    大部分角色的遠距離牽制重技（如不可取消的立重拳、立重踢）無法接續必殺技。但 SJC 的判定優先級獨立於「特殊技取消屬性（Special Cancellable）」之外——<strong>除了 2HK（掃腿）以外，所有普通技無論是否能接必殺技，全數支援 SJC</strong>。</li>
-<li><strong>透過 SJC 橋接必殺技（SJC Bypass）</strong>：
+<li><strong>透過 SJC 橋接必殺技（SJC Bypass）</strong>：<br />
    在普通技命中瞬間預先輸入 <code>28</code>，並在跳起的起跳預備幀（Pre-jump frames）內迅速輸入必殺技指令，即可達成「不可取消普通技 → 特殊必殺技」的致命連段。</li>
-<li><strong>被防壓制（Blockstring）的絕對有利</strong>：
+<li><strong>被防壓制（Blockstring）的絕對有利</strong>：<br />
    即使通常技被防禦，透過 SJC 假動作或低空特殊技，能強行重置攻勢幀數，製造打摔二擇或騙取對手遲推拆摔。</li>
 </ol>
 <hr />
 <h3>3. 外設與鍵位映射心法（Controller &amp; Layout Ergonomics）</h3>
 <p>高難度操作的穩定性，本質上由「按鍵人體工學」決定：
-* <strong>手把（Gamepad）玩家</strong>：
-  - 拇指常駐於下方的輕腳鍵（Cross / A 鍵），食指操作 R1 / RB（重手）。
-  - 在執行地震波假動作時，同時按下 <code>R1 (HP) + X/A (LK)</code>，即可極限簡化 <code>623HP + LK</code>。
+* <strong>手把（Gamepad）玩家</strong>：<br />
+  - 拇指常駐於下方的輕腳鍵（Cross / A 鍵），食指操作 R1 / RB（重手）。<br />
+  - 在執行地震波假動作時，同時按下 <code>R1 (HP) + X/A (LK)</code>，即可極限簡化 <code>623HP + LK</code>。<br />
   - 遇到極限連段時，採用<strong>爪握（Claw Grip）</strong>，將食指與中指置於右側按鍵表面，分擔拇指的移動負擔。
-* <strong>大型搖桿（Arcade Stick）玩家</strong>：
-  - 利用近拇指處的專屬按鍵（如 Drive Impact 巨集鍵 <code>HP+HK</code>）來替代踢鍵長按。
+* <strong>大型搖桿（Arcade Stick）玩家</strong>：<br />
+  - 利用近拇指處的專屬按鍵（如 Drive Impact 巨集鍵 <code>HP+HK</code>）來替代踢鍵長按。<br />
   - 由於 DI 巨集內含重腳，系統同樣判定踢擊成立，讓拇指無需大跨度移動即可穩定觸發假動作。</p>
 <hr />
 <h2>連段與 Setplay / 確反矩陣表</h2>
@@ -151,17 +166,24 @@
 <h2>大師避坑指南與實戰心法（Common Pitfalls &amp; Master Tips）</h2>
 <h3>⚠️ 常見失誤與新手 NG 行為</h3>
 <ol>
-<li><strong>死記死按，忽略「放開（Release）」的關鍵時機</strong>：
+<li><strong>死記死按，忽略「放開（Release）」的關鍵時機</strong>：<br />
    多數玩家只注意「出招時按住兩個鍵」，卻忽略了<strong>何時鬆開</strong>。如果在下一招目押輸入前手指仍壓在鍵上，遊戲輸入緩衝區會判定為長按無效，導致連段掉招。請將整個動作視為一個<strong>「壓下 → 彈起」的呼吸節奏</strong>。</li>
-<li><strong>手忙腳亂引發誤出 DI（Drive Impact）</strong>：
+<li><strong>手忙腳亂引發誤出 DI（Drive Impact）</strong>：<br />
    在緊張的對局中，急於同時按強攻擊與踢鍵，若手指落點偏差同時按到 <code>HP+HK</code>，會瞬間變成昂貴且破綻極大的 Drive Impact，直接遭對手反迸發。務必在訓練模式中打開「輸入歷程（Input History）」，確認每次輸入都乾淨俐落只有 <code>HP+LK</code>。</li>
-<li><strong>無節制使用 SJC 導致自己陷入 Burnout（虛脫）</strong>：
+<li><strong>無節制使用 SJC 導致自己陷入 Burnout（虛脫）</strong>：<br />
    在常規狀態下，每次 SJC 都會消耗 1 格鬥氣。若過度依賴 SJC 延長連段或強行壓制，很容易在沒有斬殺對手的情況下讓自己陷入枯竭狀態。非 SA1 狀態下，SJC 應精確保留在能造成擊殺或逆轉局面的關鍵連段。</li>
 </ol>
 <h3>💡 頂尖選手思維（Master Mindset）</h3>
 <ul>
-<li><strong>用輸入技巧替大腦「降低心理負擔（Mental Stack）」</strong>：
+<li><strong>用輸入技巧替大腦「降低心理負擔（Mental Stack）」</strong>：<br />
   高 APM 操作的最高境界不是「手動敲得多快」，而是<strong>「利用系統機制把三次輸入簡化為一次輸入」</strong>。將假動作簡化為雙鍵長按，能釋放大量的神經帶寬，讓你的注意力集中在對手的迸發反應、起跳動作與防禦姿態上。</li>
-<li><strong>節奏感高於極限手速</strong>：
+<li><strong>節奏感高於極限手速</strong>：<br />
   頂級玩家的假動作連段不是狂按亂刷，而是內建節拍器。每一次取消都有固定的時間窗口，透過反覆訓練「肌肉在精確毫秒內的放鬆與彈起」，才能在高壓錦標賽中維持 100% 的執行穩定度。</li>
-</ul><div class="nav"><span><a href="432.html">← 432 예미제이 스파6 C 바이퍼 초보자 가이드</a></span><span style="text-align:right"><a href="434.html">434 MC MuraFGC SF6 C Viper Starter Guide →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="432.html">← 432 예미제이 스파6 C 바이퍼 초보자 가이드</a><a href="../manuals.html">返回手冊目錄</a><a href="434.html">434 MC MuraFGC SF6 C Viper Starter Guide →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

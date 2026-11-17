@@ -1,15 +1,30 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>投技勝負規則與傷害｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 指令投與投技壓制（含防投）</div><h1>投技勝負規則與傷害</h1><p>為什麼有時候你明明按了投，卻被對方的輕拳打斷？為什麼開格擋（Parry）被摔會特別痛？這篇把《快打旋風 6》投技的底層系統規則一次講透——從發生幀數、同幀誰贏、對上格擋與驅動衝擊（DI）的懲罰傷害，到「吃投 vs 退康」的損益帳怎麼算，適合想搞懂投技邏輯、不再憑感覺亂猜的玩家。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c13-06" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C13 指令投與投技壓制（含防投）</div><header class="ph"><span class="pnum">C13-06</span><h1>投技勝負規則與傷害</h1></header><p>為什麼有時候你明明按了投，卻被對方的輕拳打斷？為什麼開格擋（Parry）被摔會特別痛？這篇把《快打旋風 6》投技的底層系統規則一次講透——從發生幀數、同幀誰贏、對上格擋與驅動衝擊（DI）的懲罰傷害，到「吃投 vs 退康」的損益帳怎麼算，適合想搞懂投技邏輯、不再憑感覺亂猜的玩家。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-- <strong>同幀出招，打擊一定贏投</strong>：普通投與多數指令投發生約 <strong>5 幀</strong>，比最快的 4 幀輕攻擊慢 1 幀；只要在 <code>+1</code> 幀硬出投，同時撞上對手的 4 幀輕拳必輸。
-- <strong>格擋（Parry）被摔到會變「懲罰反擊」</strong>：傷害大幅提高（比一般投痛非常多）還會直接扣掉一整格動力槽，且無法向後受身！
-- <strong>普通投約 1200 傷，退康吃一套可能噴半條血</strong>：與其每次怕被摔就亂按解摔，血量夠的時候「吃投」往往更划算，只在斬殺線或必須賭的時候才解摔。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+- <strong>同幀出招，打擊一定贏投</strong>：普通投與多數指令投發生約 <strong>5 幀</strong>，比最快的 4 幀輕攻擊慢 1 幀；只要在 <code>+1</code> 幀硬出投，同時撞上對手的 4 幀輕拳必輸。<br />
+- <strong>格擋（Parry）被摔到會變「懲罰反擊」</strong>：傷害大幅提高（比一般投痛非常多）還會直接扣掉一整格動力槽，且無法向後受身！<br />
+- <strong>普通投約 1200 傷，退康吃一套可能噴半條血</strong>：與其每次怕被摔就亂按解摔，血量夠的時候「吃投」往往更划算，只在斬殺線或必須賭的時候才解摔。<br />
 - <strong>蹲防防不住普通投，但能躲部分特殊指令投</strong>：普通投會把蹲著的人強制拉起來摔，但像艾力克斯的倒栽摔（下＋投）這類對站姿專用指令投，只要一直蹲著他就抓不到你。</p>
 </blockquote>
 <hr />
@@ -44,10 +59,10 @@
 <h3>2. 格擋（Parry）被投到底有多慘？</h3>
 <ul>
 <li>格擋雖然能擋下所有上、中、下段打擊，但<strong>完全防不住投技</strong>。</li>
-<li>一旦在開格擋的瞬間被摔到，會直接觸發<strong>懲罰反擊（Punish Counter）</strong>：
-  1. <strong>傷害大幅飆升</strong>（為普通摔的 1.7 倍，約 2,000～2,040 點傷害）。
-  2. <strong>額外直接扣掉一整格動力槽</strong>。
-  3. <strong>硬倒地（無法向後受身）</strong>，讓對手可以更輕鬆地繼續壓你起身。</li>
+<li>一旦在開格擋的瞬間被摔到，會直接觸發<strong>懲罰反擊（Punish Counter）</strong>：</li>
+<li><strong>傷害大幅飆升</strong>（為普通摔的 1.7 倍，約 2,000～2,040 點傷害）。</li>
+<li><strong>額外直接扣掉一整格動力槽</strong>。</li>
+<li><strong>硬倒地（無法向後受身）</strong>，讓對手可以更輕鬆地繼續壓你起身。</li>
 <li><strong>SA 量表回收順序與拆摔獎勵</strong>：從 SA 量表回收量來看，由高到低大致為：<strong>Punish Counter 普通摔 ＞ 指令投（桑吉爾夫貼身高速摔除外） ＞ Drive Impact ＞ 重攻擊 ＞ 必殺技</strong>。此外 <strong>Year 3 改版後，成功拆摔（解摔）時被摔方會獲得 1 格動力量表與約 0.1 格 SA 量表獎勵</strong>，讓拆摔的資源期待值大幅上升。</li>
 <li><strong>實戰心法</strong>：如果你自己的動力槽已經很少、被精準格擋風險很大時，別硬出打擊去撞對方的格擋，改用投技去抓是最安全、又能趁投技動畫回復動力槽的好選擇！另外當你<strong>自己成功精準格擋（Just Parry）</strong>對手招式時，多數情況下立刻接「後摔」是最穩的標準懲罰。</li>
 </ul>
@@ -67,9 +82,9 @@
 </ul>
 <hr />
 <h2>四、版本改動重點與實戰猜招節奏</h2>
-<p>根據實戰影片彙整的版本變動脈絡（實際細節請以最新遊戲實測為準）：
-- 投技擊倒後的有利幀曾從 <code>+20</code> 調整為 <code>+18</code>（讓部分角色倒地後無法直接無腦接站重拳壓制，需改用蹲中拳等手段）。
-- 部分後摔在角落的壓制被微調削弱（盧克後摔為例外）。
+<p>根據實戰影片彙整的版本變動脈絡（實際細節請以最新遊戲實測為準）：<br />
+- 投技擊倒後的有利幀曾從 <code>+20</code> 調整為 <code>+18</code>（讓部分角色倒地後無法直接無腦接站重拳壓制，需改用蹲中拳等手段）。<br />
+- 部分後摔在角落的壓制被微調削弱（盧克後摔為例外）。<br />
 - 指令投判定與部分招式的投無敵（如部分角色重天昇腳離地後免疫投技）也有所調整。</p>
 <h3>進攻三元猜招的標準邏輯</h3>
 <ul>
@@ -125,4 +140,11 @@
 <li><strong>指令投發生幀數與大量單一影片數字（待驗證）</strong>：</li>
 <li>發生約 5 幀、普通投約 1,200 傷害、確反多 70% 傷害、殘血 1.5 格動力可投斬殺／0.5 格無法反 DI、解摔 50% 成功率假設、站防 <code>+2</code>（泰瑞 <code>+2</code>）、不知火舞前衝投 <code>+3</code> / 後跳 <code>-4</code>、桑吉爾夫猜錯吃 2,500 / 後跳懲罰 3,000 / 空中打樁機試 11 次才成功、莉莉投後約 5,600、阿爾俊抓取約 3,600、金伯莉 300/600/1200 與手裏劍 2100、拜森兩次投 25% 或 70%、該角色「37 幀」與 100%/55%、玩家統計 1.9/3.1/2.8/3.4、艾蓮娜 2～3 倍火力與 <code>+19</code>、深紅毒蛇蹲中腳 <code>+1</code>/綠衝 <code>+7</code>、嘉米 <code>+2～+4</code> 速摔、豪鬼瞬移投第 31 幀、韓蛛俐 1200 / 3 格槽、英格麗特 1200 起、維加 <code>+1</code> 非 <code>+2</code>、達爾西姆 <code>+5</code>、某不明角色一鍵指令投 2000+ 傷等，皆為單一影片口述或未經統一實機核實數據。</li>
 <li><strong>字幕辨識存疑字詞</strong>：原檔中出現的「豪合機」、「體育出」、「投回外」、「橋式柔道」、「站拳」、「力投技」、「面罩」、「市民」、「圓波」、「摔路盤」、「抓技的軌，也就是指定頭」、「命中拒絕」等自動字幕誤辨字詞，本篇已依上下文邏輯轉譯並保留提醒。</li>
-</ul><div class="nav"><span><a href="c13-05.html">← C13-05 起身倒地與投技攻防</a></span><span style="text-align:right"><a href="c14.html">C14 跳入與空中攻擊：對手跳入時怎麼應對 →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c13-05.html">← C13-05 起身倒地與投技攻防</a><a href="../index.html">返回總覽目錄</a><a href="c14.html">C14 跳入與空中攻擊：對手跳入時怎麼應對 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

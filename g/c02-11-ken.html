@@ -1,21 +1,36 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>肯（Ken）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>肯（Ken）角色招式幀數數據</h1><p>肯（Ken）是《快打旋風 6》最具代表性的進攻型道服角色，憑藉奮迅腳（跑步）強化必殺技、迅雷腳多段壓制、龍尾腳突進與蹲中腳取消動力箭步（綠衝）威震排位賽。許多玩家對上肯最常困惑的是：「他一直踢龍尾腳跟迅雷腳過來，我到底哪一招可以搶、哪一招該乖乖防禦？」本篇依據 Capcom 官方最新幀數表與系統公式，幫你完整拆解肯的每一個正幀陷阱與確反破綻！</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-ken" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>肯（Ken）角色招式幀數數據</h1></header><p>肯（Ken）是《快打旋風 6》最具代表性的進攻型道服角色，憑藉奮迅腳（跑步）強化必殺技、迅雷腳多段壓制、龍尾腳突進與蹲中腳取消動力箭步（綠衝）威震排位賽。許多玩家對上肯最常困惑的是：「他一直踢龍尾腳跟迅雷腳過來，我到底哪一招可以搶、哪一招該乖乖防禦？」本篇依據 Capcom 官方最新幀數表與系統公式，幫你完整拆解肯的每一個正幀陷阱與確反破綻！</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>龍尾腳（<code>623K</code>）看清楚版本</strong>：
-   * <strong>重龍尾腳（<code>623HK</code>）</strong>被防是肯有利 <strong><code>+1</code> 幀</strong>（對<strong>蹲防 <code>+2</code>、站防 <code>+1</code></strong>），擋到重龍尾腳千萬別亂搶慢招！
-   * <strong>輕版被防 <code>-4</code>、中版被防 <code>-8</code>、奮迅版被防 <code>-8</code>、OD 版被防 <code>-9</code></strong>，除了重版以外被防全部都能確反！
-2. <strong>迅雷腳（<code>236K</code>）與二段、三段派生幀數全解</strong>：
-   * 第一段不派生時：<strong>輕版 <code>-11</code>、中版 <code>-7</code>、重版 <code>-2</code>、OD 版 <code>-7</code></strong>。
-   * 二段派生：<strong>風鐮腳（<code>~6LK</code> 下段）被防 <code>-5</code></strong>、<strong>轟雷斧（<code>~6MK</code> 中段）被防 <code>-3</code>（OD 版 <code>-7</code>）</strong>、<strong>閃火腳（<code>~6HK</code> 上段）被防 <code>-3</code>（OD 版 <code>-4</code>，且打不到蹲姿！）</strong>。
-   * OD 三段派生<strong>火碎腳（<code>236KK~6K~6K</code>）</strong>：接在下段／中段後被防 <strong><code>-12</code></strong>，接在上段閃火腳後被防高達 <strong><code>-20</code></strong>（擋到必死）！
-3. <strong>一般技全部沒有「常態被防正幀」，唯有蹲中拳被防 <code>0</code> 幀</strong>：
-   * <strong>站輕拳／蹲輕拳（4 幀）</strong>被防皆為 <strong><code>-1</code></strong>（蹲輕拳命中 <strong><code>+5</code></strong> 可直接目押站中拳／站輕腳）；<strong>站輕腳（5 幀）</strong>被防 <strong><code>-2</code></strong>；<strong>站中拳（5 幀）</strong>被防 <strong><code>-2</code>／命中 <code>+4</code></strong>；<strong>蹲中拳（6 幀）</strong>被防 <strong><code>0</code>／命中 <code>+5</code></strong>；<strong>蹲中腳（7 幀）</strong>被防 <strong><code>-6</code></strong>；<strong>站重拳（10 幀）</strong>被防 <strong><code>-2</code>／命中 <code>+3</code></strong>；<strong>蹲重拳（8 幀）</strong>被防 <strong><code>-7</code>／命中 <code>+3</code></strong>。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>龍尾腳（<code>623K</code>）看清楚版本</strong>：<br />
+   * <strong>重龍尾腳（<code>623HK</code>）</strong>被防是肯有利 <strong><code>+1</code> 幀</strong>（對<strong>蹲防 <code>+2</code>、站防 <code>+1</code></strong>），擋到重龍尾腳千萬別亂搶慢招！<br />
+   * <strong>輕版被防 <code>-4</code>、中版被防 <code>-8</code>、奮迅版被防 <code>-8</code>、OD 版被防 <code>-9</code></strong>，除了重版以外被防全部都能確反！<br />
+2. <strong>迅雷腳（<code>236K</code>）與二段、三段派生幀數全解</strong>：<br />
+   * 第一段不派生時：<strong>輕版 <code>-11</code>、中版 <code>-7</code>、重版 <code>-2</code>、OD 版 <code>-7</code></strong>。<br />
+   * 二段派生：<strong>風鐮腳（<code>~6LK</code> 下段）被防 <code>-5</code></strong>、<strong>轟雷斧（<code>~6MK</code> 中段）被防 <code>-3</code>（OD 版 <code>-7</code>）</strong>、<strong>閃火腳（<code>~6HK</code> 上段）被防 <code>-3</code>（OD 版 <code>-4</code>，且打不到蹲姿！）</strong>。<br />
+   * OD 三段派生<strong>火碎腳（<code>236KK~6K~6K</code>）</strong>：接在下段／中段後被防 <strong><code>-12</code></strong>，接在上段閃火腳後被防高達 <strong><code>-20</code></strong>（擋到必死）！<br />
+3. <strong>一般技全部沒有「常態被防正幀」，唯有蹲中拳被防 <code>0</code> 幀</strong>：<br />
+   * <strong>站輕拳／蹲輕拳（4 幀）</strong>被防皆為 <strong><code>-1</code></strong>（蹲輕拳命中 <strong><code>+5</code></strong> 可直接目押站中拳／站輕腳）；<strong>站輕腳（5 幀）</strong>被防 <strong><code>-2</code></strong>；<strong>站中拳（5 幀）</strong>被防 <strong><code>-2</code>／命中 <code>+4</code></strong>；<strong>蹲中拳（6 幀）</strong>被防 <strong><code>0</code>／命中 <code>+5</code></strong>；<strong>蹲中腳（7 幀）</strong>被防 <strong><code>-6</code></strong>；<strong>站重拳（10 幀）</strong>被防 <strong><code>-2</code>／命中 <code>+3</code></strong>；<strong>蹲重拳（8 幀）</strong>被防 <strong><code>-7</code>／命中 <code>+3</code></strong>。<br />
    * <strong>站重腳（12 幀）</strong>被防 <strong><code>-5</code></strong>、<strong>踏前前踢（<code>KK~HK</code>）</strong>被防 <strong><code>-4</code></strong>、<strong>蹲重腳（8 幀）</strong>被防 <strong><code>-10</code></strong>、<strong>顎撥雙連（<code>5MP~HP</code>）</strong>被防 <strong><code>-14</code></strong>。</p>
 </blockquote>
 <hr />
@@ -526,16 +541,23 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>「肯有沒有被防加幀的一般技？」的完整解答</strong>：
-   * <strong>常態下</strong>：肯的所有地面一般技與特殊技被防禦時皆無正幀（最高為蹲中拳 <code>2MP</code> 被防 <code>0</code> 幀，站輕拳／蹲輕拳皆為 <code>-1</code>，站中拳／站重拳皆為 <code>-2</code>）。唯一常態被防正幀的招式是必殺技<strong>重龍尾腳（<code>623HK</code>，站防 <code>+1</code>、蹲防 <code>+2</code>）</strong>与 <strong>OD 波動拳（遠距飛行抵銷硬直後有利，貼身被防為 <code>-2</code>）</strong>。
-   * <strong>特殊情境下變正幀</strong>：<ol>
+<li><strong>「肯有沒有被防加幀的一般技？」的完整解答</strong>：</li>
+<li><strong>常態下</strong>：肯的所有地面一般技與特殊技被防禦時皆無正幀（最高為蹲中拳 <code>2MP</code> 被防 <code>0</code> 幀，站輕拳／蹲輕拳皆為 <code>-1</code>，站中拳／站重拳皆為 <code>-2</code>）。唯一常態被防正幀的招式是必殺技<strong>重龍尾腳（<code>623HK</code>，站防 <code>+1</code>、蹲防 <code>+2</code>）</strong>与 <strong>OD 波動拳（遠距飛行抵銷硬直後有利，貼身被防為 <code>-2</code>）</strong>。</li>
+<li><strong>特殊情境下變正幀</strong>：<ol>
 <li><strong>搭配動力箭步（綠衝，<code>+4</code> 幀）</strong>：例如綠衝站輕拳／蹲輕拳被防變 <code>+3</code>、綠衝站中拳／站重拳被防變 <code>+2</code>、綠衝蹲中拳被防變 <code>+4</code>。</li>
 <li><strong>壓持續（Meaty）</strong>：如重昇龍拳擊倒前墊步後以站中拳持續後段壓起身（被防從 <code>-2</code> 變 <code>0</code> 或 <code>+1</code>），或蹲重拳壓持續。</li>
 <li><strong>對手處於燒盡（Burnout，<code>+4</code> 幀）</strong>：對手燒盡時防禦硬直增加 4 幀，因此肯的站輕拳／蹲輕拳被防變 <code>+3</code>、站中拳／站重拳被防變 <code>+2</code>、蹲中拳被防變 <code>+4</code>、奮迅紫電斧（中段）與轟雷斧／閃火腳被防從 <code>-3</code> 變為 <strong><code>+1</code> 幀有利</strong>！</li>
 </ol>
 </li>
-<li><strong>「中龍尾腳 <code>-8</code>」與「重龍尾腳 <code>+1</code>」的版本區分</strong>：
-   * 許多玩家混淆龍尾腳的有利幀，原因在於輕（<code>-4</code>）、中（<code>-8</code>）、重（<code>+1</code>）、OD（<code>-9</code>）、奮迅（<code>-8</code>）五個版本的被防數據截然不同。實戰中肯只有發動<strong>重龍尾腳（28 幀發生）</strong>時才會喊出台詞並獲得 <code>+1 / +2</code> 有利，其餘版本一旦被防皆可確反。</li>
-<li><strong>「OD 迅雷腳 <code>-7</code>」與「二段派生 <code>-3 / -5 / -7</code>」的指涉差異</strong>：
-   * 當肯單發 <strong>OD 迅雷腳（<code>236KK</code>）</strong> 不接派生時，被防為 <strong><code>-7</code> 幀</strong>；若接普通版中段轟雷斧／上段閃火腳為 <strong><code>-3</code> 幀</strong>，但若接 <strong>OD 轟雷斧（<code>236KK~6MK</code>）</strong> 則被防為 <strong><code>-7</code> 幀</strong>（與普通轟雷斧不同，OD 轟雷斧不接火碎腳時可被 7 幀內招式確反）。</li>
-</ol><div class="nav"><span><a href="c02-11-juri.html">← C02-11 韓蛛俐（Juri）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-kimberly.html">C02-11 金伯莉（Kimberly）角色招式幀數數據 →</a></span></div></div></body></html>
+<li><strong>「中龍尾腳 <code>-8</code>」與「重龍尾腳 <code>+1</code>」的版本區分</strong>：</li>
+<li>許多玩家混淆龍尾腳的有利幀，原因在於輕（<code>-4</code>）、中（<code>-8</code>）、重（<code>+1</code>）、OD（<code>-9</code>）、奮迅（<code>-8</code>）五個版本的被防數據截然不同。實戰中肯只有發動<strong>重龍尾腳（28 幀發生）</strong>時才會喊出台詞並獲得 <code>+1 / +2</code> 有利，其餘版本一旦被防皆可確反。</li>
+<li><strong>「OD 迅雷腳 <code>-7</code>」與「二段派生 <code>-3 / -5 / -7</code>」的指涉差異</strong>：</li>
+<li>當肯單發 <strong>OD 迅雷腳（<code>236KK</code>）</strong> 不接派生時，被防為 <strong><code>-7</code> 幀</strong>；若接普通版中段轟雷斧／上段閃火腳為 <strong><code>-3</code> 幀</strong>，但若接 <strong>OD 轟雷斧（<code>236KK~6MK</code>）</strong> 則被防為 <strong><code>-7</code> 幀</strong>（與普通轟雷斧不同，OD 轟雷斧不接火碎腳時可被 7 幀內招式確反）。</li>
+</ol><nav class="pager"><a href="c02-11-juri.html">← C02-11 韓蛛俐（Juri）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-kimberly.html">C02-11 金伯莉（Kimberly）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

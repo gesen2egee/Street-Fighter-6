@@ -1,23 +1,38 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>深紅毒蛇（C. Viper）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>深紅毒蛇（C. Viper）角色招式幀數數據</h1><p>深紅毒蛇（C. Viper）是以「大跳躍取消（俗稱超級跳取消 / SJC）」、「假動作取消（Feint）」與空中軌道變化為核心的高機動進攻型角色。本篇已依據 Capcom 官方最新幀數表與正式中文譯名全面核對，並<strong>清除舊版誤混入的阿鬼（A.K.I.）招式數據（毒泡、中毒與蛇輕功等）與口語誤差</strong>，為你完整整理深紅毒蛇的真實幀數基準、系統衍生加值與必罰破綻清單。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-cviper" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>深紅毒蛇（C. Viper）角色招式幀數數據</h1></header><p>深紅毒蛇（C. Viper）是以「大跳躍取消（俗稱超級跳取消 / SJC）」、「假動作取消（Feint）」與空中軌道變化為核心的高機動進攻型角色。本篇已依據 Capcom 官方最新幀數表與正式中文譯名全面核對，並<strong>清除舊版誤混入的阿鬼（A.K.I.）招式數據（毒泡、中毒與蛇輕功等）與口語誤差</strong>，為你完整整理深紅毒蛇的真實幀數基準、系統衍生加值與必罰破綻清單。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>最速搶招為 4 幀輕拳</strong>：<strong>站輕拳（<code>5LP</code>，被防 -2）</strong>與<strong>蹲輕拳（<code>2LP</code>，被防 -1）</strong>同為 <strong>4 幀發生</strong>；<strong>站輕腳（<code>5LK</code>）</strong>與<strong>蹲輕腳（<code>2LK</code>）</strong>為 <strong>5 幀</strong>。
-2. <strong>真正的常態正幀壓制只有這幾招</strong>：
-   * <strong>站中拳（<code>5MP</code>）</strong>：發生 <strong>8 幀</strong>、被防 <strong>+1</strong>、命中 <strong>+6</strong>，搭配<strong>動力箭步（綠衝）</strong>被防高達 <strong>+5</strong>，是毒蛇最核心的地面正幀壓制拳。
-   * <strong>二度燃燒（<code>Double Burn</code>，火焰踢派生）</strong>：需消耗 1 格動力槽，被防 <strong>+2</strong>（但發生慢達 21 幀，中間有空隙可防禦反制）。
-   * <strong>OD 空中火焰踢（<code>j.236KK</code>）</strong>：被防 <strong>+1～+7</strong>（無論高低打點皆正幀）；一般輕／中／重<strong>空中火焰踢（<code>j.236K</code>）</strong>視擊中高度落於 <strong>-4～+3</strong>，壓到腳尖極限低打點才會變正幀。
-   * <strong>常態非正幀的常見誤區</strong>：<strong>蹲中腳（<code>2MK</code>）被防是 -1</strong>（且不可直接取消必殺技或取消綠衝，僅可大跳躍取消）、<strong>兩段踢（<code>6HK</code>）被防是 -2</strong>、<strong>站重拳（<code>5HP</code>）被防是 -2</strong>、<strong>毒蛇肘擊（中段 <code>6MP</code>）被防是 -3</strong>，它們都要透過<strong>動力箭步（綠衝，+4 幀）</strong>或對手<strong>燒盡（Burnout，+4 幀）</strong>時才會轉正。
-3. <strong>必抓的高風險大破綻確反清單</strong>：
-   * <strong>重閃電衝擊（<code>214HP</code>，對空主力）</strong>：被防高達 <strong>-24 幀</strong>（直接吃滿套重攻擊確反）。
-   * <strong>追擊拳（<code>Knuckled Pursuit</code>，火焰踢派生）</strong>：被防 <strong>-15 幀</strong>；<strong>追跡組合技（<code>Tracer Combination</code>，閃電衝擊派生）</strong>輕／中版被防分別為 <strong>-15 / -13 幀</strong>。
-   * <strong>火力蓄存（<code>214K</code>）</strong>：Lv1 / Lv2 被防 <strong>-16 幀</strong>、Lv3 被防 <strong>-10 幀</strong>；且蓄力取消<strong>前墊步（21F）</strong>期間全程處於<strong>懲罰反擊（Punish Counter）</strong>狀態。
-   * <strong>蹲重腳（<code>2HK</code>）</strong>被防 <strong>-11 幀</strong>；<strong>輕／中／重震地槌（<code>623P</code>）</strong>被防 <strong>-10 幀</strong>（<strong>OD 版強化為 -6 幀</strong>）；<strong>蹲重拳（<code>2HP</code>）</strong>被防 <strong>-5 幀</strong>；<strong>OD 火焰踢（<code>236KK</code>）</strong>被防 <strong>-4 幀</strong>（可用 4 幀輕拳確反）。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>最速搶招為 4 幀輕拳</strong>：<strong>站輕拳（<code>5LP</code>，被防 -2）</strong>與<strong>蹲輕拳（<code>2LP</code>，被防 -1）</strong>同為 <strong>4 幀發生</strong>；<strong>站輕腳（<code>5LK</code>）</strong>與<strong>蹲輕腳（<code>2LK</code>）</strong>為 <strong>5 幀</strong>。<br />
+2. <strong>真正的常態正幀壓制只有這幾招</strong>：<br />
+   * <strong>站中拳（<code>5MP</code>）</strong>：發生 <strong>8 幀</strong>、被防 <strong>+1</strong>、命中 <strong>+6</strong>，搭配<strong>動力箭步（綠衝）</strong>被防高達 <strong>+5</strong>，是毒蛇最核心的地面正幀壓制拳。<br />
+   * <strong>二度燃燒（<code>Double Burn</code>，火焰踢派生）</strong>：需消耗 1 格動力槽，被防 <strong>+2</strong>（但發生慢達 21 幀，中間有空隙可防禦反制）。<br />
+   * <strong>OD 空中火焰踢（<code>j.236KK</code>）</strong>：被防 <strong>+1～+7</strong>（無論高低打點皆正幀）；一般輕／中／重<strong>空中火焰踢（<code>j.236K</code>）</strong>視擊中高度落於 <strong>-4～+3</strong>，壓到腳尖極限低打點才會變正幀。<br />
+   * <strong>常態非正幀的常見誤區</strong>：<strong>蹲中腳（<code>2MK</code>）被防是 -1</strong>（且不可直接取消必殺技或取消綠衝，僅可大跳躍取消）、<strong>兩段踢（<code>6HK</code>）被防是 -2</strong>、<strong>站重拳（<code>5HP</code>）被防是 -2</strong>、<strong>毒蛇肘擊（中段 <code>6MP</code>）被防是 -3</strong>，它們都要透過<strong>動力箭步（綠衝，+4 幀）</strong>或對手<strong>燒盡（Burnout，+4 幀）</strong>時才會轉正。<br />
+3. <strong>必抓的高風險大破綻確反清單</strong>：<br />
+   * <strong>重閃電衝擊（<code>214HP</code>，對空主力）</strong>：被防高達 <strong>-24 幀</strong>（直接吃滿套重攻擊確反）。<br />
+   * <strong>追擊拳（<code>Knuckled Pursuit</code>，火焰踢派生）</strong>：被防 <strong>-15 幀</strong>；<strong>追跡組合技（<code>Tracer Combination</code>，閃電衝擊派生）</strong>輕／中版被防分別為 <strong>-15 / -13 幀</strong>。<br />
+   * <strong>火力蓄存（<code>214K</code>）</strong>：Lv1 / Lv2 被防 <strong>-16 幀</strong>、Lv3 被防 <strong>-10 幀</strong>；且蓄力取消<strong>前墊步（21F）</strong>期間全程處於<strong>懲罰反擊（Punish Counter）</strong>狀態。<br />
+   * <strong>蹲重腳（<code>2HK</code>）</strong>被防 <strong>-11 幀</strong>；<strong>輕／中／重震地槌（<code>623P</code>）</strong>被防 <strong>-10 幀</strong>（<strong>OD 版強化為 -6 幀</strong>）；<strong>蹲重拳（<code>2HP</code>）</strong>被防 <strong>-5 幀</strong>；<strong>OD 火焰踢（<code>236KK</code>）</strong>被防 <strong>-4 幀</strong>（可用 4 幀輕拳確反）。<br />
 4. <strong>現代操作「輔助強連段」拆解</strong>：現代版輔助強（<code>アシスト強</code>）是以 <strong>9 幀蹲重拳（<code>2HP</code>，被防 -5）取消輕震地槌（<code>623LP</code>，被防 -10）</strong>構成，只要擋住第二下的震地槌就是 <strong>-10 幀大破綻</strong>，全角色都能穩穩重罰。</p>
 </blockquote>
 <hr />
@@ -302,17 +317,17 @@
 </table></div>
 <h3>3. 第二級實戰衍生幀數（系統加值驗算）</h3>
 <p>在《快打旋風 6》共通系統規則下，毒蛇的地面一般技與特殊技會依以下公式加減幀數：
-* <strong>動力箭步（綠衝）</strong>：經由動力箭步發動的地面一般技／特殊技，<strong>命中與被防固定 +4 幀</strong>。
-  * 綠衝 <strong>站中拳（<code>5MP</code>）</strong>：命中 <code>6 + 4 = +10</code>、被防 <code>1 + 4 = +5</code>（近距離極強壓制）。
-  * 綠衝 <strong>蹲中拳（<code>2MP</code>）</strong>：命中 <code>5 + 4 = +9</code>、被防 <code>-2 + 4 = +2</code>（6 幀快速突進壓制）。
-  * 綠衝 <strong>兩段踢（<code>6HK</code>）</strong>：命中 <code>4 + 4 = +8</code>、被防 <code>-2 + 4 = +2</code>（注意是靠綠衝才變 +2）。
-  * 綠衝 <strong>蹲中腳（<code>2MK</code>）</strong>：命中 <code>5 + 4 = +9</code>、被防 <code>-1 + 4 = +3</code>（因 <code>2MK</code> 本身不可取消綠衝，僅能透過生綠衝發動）。
-  * 綠衝 <strong>蹲輕腳（<code>2LK</code>）</strong>：命中 <code>4 + 4 = +8</code>、被防 <code>-1 + 4 = +3</code>（生綠衝快速下段突襲）。
-  * 綠衝 <strong>毒蛇肘擊（<code>6MP</code>）</strong>：命中 <code>2 + 4 = +6</code>、被防 <code>-3 + 4 = +1</code>（中段命中可穩接連段，被防仍為正幀）。
+* <strong>動力箭步（綠衝）</strong>：經由動力箭步發動的地面一般技／特殊技，<strong>命中與被防固定 +4 幀</strong>。<br />
+  * 綠衝 <strong>站中拳（<code>5MP</code>）</strong>：命中 <code>6 + 4 = +10</code>、被防 <code>1 + 4 = +5</code>（近距離極強壓制）。<br />
+  * 綠衝 <strong>蹲中拳（<code>2MP</code>）</strong>：命中 <code>5 + 4 = +9</code>、被防 <code>-2 + 4 = +2</code>（6 幀快速突進壓制）。<br />
+  * 綠衝 <strong>兩段踢（<code>6HK</code>）</strong>：命中 <code>4 + 4 = +8</code>、被防 <code>-2 + 4 = +2</code>（注意是靠綠衝才變 +2）。<br />
+  * 綠衝 <strong>蹲中腳（<code>2MK</code>）</strong>：命中 <code>5 + 4 = +9</code>、被防 <code>-1 + 4 = +3</code>（因 <code>2MK</code> 本身不可取消綠衝，僅能透過生綠衝發動）。<br />
+  * 綠衝 <strong>蹲輕腳（<code>2LK</code>）</strong>：命中 <code>4 + 4 = +8</code>、被防 <code>-1 + 4 = +3</code>（生綠衝快速下段突襲）。<br />
+  * 綠衝 <strong>毒蛇肘擊（<code>6MP</code>）</strong>：命中 <code>2 + 4 = +6</code>、被防 <code>-3 + 4 = +1</code>（中段命中可穩接連段，被防仍為正幀）。<br />
   * 綠衝 <strong>站重拳（<code>5HP</code>）</strong>：命中 <code>3 + 4 = +7</code>、被防 <code>-2 + 4 = +2</code>。
-* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 120%）。
-  * 例如 <strong>站中拳（<code>5MP</code>）</strong> 基礎命中 +6：截擊變 <strong>+8</strong>、懲罰反擊變 <strong>+10</strong>（可接 <code>2HP</code> 或 <code>5HK</code>）。
-  * <strong>兩段踢（<code>6HK</code>）</strong> 基礎命中 +4：截擊變 <strong>+6</strong>（可接 <code>2MP</code>）、懲罰反擊變 <strong>+8</strong>。
+* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 120%）。<br />
+  * 例如 <strong>站中拳（<code>5MP</code>）</strong> 基礎命中 +6：截擊變 <strong>+8</strong>、懲罰反擊變 <strong>+10</strong>（可接 <code>2HP</code> 或 <code>5HK</code>）。<br />
+  * <strong>兩段踢（<code>6HK</code>）</strong> 基礎命中 +4：截擊變 <strong>+6</strong>（可接 <code>2MP</code>）、懲罰反擊變 <strong>+8</strong>。<br />
   * <strong>站重腳（<code>5HK</code>）</strong> 懲罰反擊時<strong>額外增加 +19 幀</strong>有利，可接大跳躍取消或高傷爆發連段。
 * <strong>燒盡防禦（Burnout）</strong>：對手燒盡時防禦所有攻擊<strong>固定額外承受 +4 幀硬直</strong>（與綠衝相同，且可疊加）。此時毒蛇的 <strong>站中拳（<code>5MP</code>）</strong> 被防變 <strong>+5</strong>、<strong>站重拳（<code>5HP</code>）</strong> 與 <strong>兩段踢（<code>6HK</code>）</strong> 變 <strong>+2</strong>、連 <strong>蹲重拳（<code>2HP</code>）</strong> 被防也從 -5 變成 <strong>-1（完全安全）</strong>。
 * <strong>壓持續（Meaty）</strong>：以第 $k$ 個持續幀命中或被防時，有利幀額外增加 <code>+(k - 1)</code> 幀。毒蛇的 <strong>站中拳（<code>5MP</code>）</strong>、<strong>蹲中拳（<code>2MP</code>）</strong> 與 <strong>站重腳（<code>5HK</code>）</strong> 皆有 4 幀持續，壓在最後第 4 個持續幀時最多可額外 <strong>+3 幀</strong>（例如壓持續末端 <code>5MP</code> 被防可達 <code>+4</code>、壓持續末端 <code>2MP</code> 被防可達 <code>+1</code>）。</p>
@@ -734,18 +749,18 @@
 <h2>三、壓起身、消幀與安全跳基準</h2>
 <p>深紅毒蛇非常依賴大跳躍（<code>46+3F</code>）、震地槌與火焰踢後的時間差控制起身壓制，設計消幀套路時可先記住下列官方空揮總幀數基準：</p>
 <ol>
-<li><strong>常用消幀工具總幀數</strong>（以 <code>前搖 + 持續 + 硬直</code> 計算）：
-   * <strong>站輕拳（<code>5LP</code>）空揮</strong>：<code>3 + 3 + 8 = 14 幀</code>。
-   * <strong>蹲輕拳（<code>2LP</code>）空揮</strong>：<code>3 + 3 + 8 = 14 幀</code>。
-   * <strong>蹲輕腳（<code>2LK</code>）空揮</strong>：<code>4 + 2 + 9 = 15 幀</code>。
-   * <strong>站輕腳（<code>5LK</code>）空揮</strong>：<code>4 + 3 + 11 = 18 幀</code>。
-   * <strong>閃電衝擊假動作（Feint）</strong>：總長 <strong>12 幀</strong>；<strong>震地槌假動作（Feint）</strong>：總長 <strong>16 幀</strong>。
-   * <strong>前墊步（Forward Dash）</strong>：總長 <strong>21 幀</strong>（例如擊倒有利達 <code>+22</code> 以上時，單純前墊步即可留在貼身 <code>+1</code> 以上壓起身）。</li>
-<li><strong>安全跳（Safe Jump）通用基準（+41～+45 幀）</strong>：
-   * 《快打旋風 6》標準安全跳窗口一般落在擊倒後 <strong>+41～+45 幀</strong>。毒蛇可利用連段結尾取得約 +42 幀（如現代 <code>生綠衝前中 &gt; アシスト中 × 2</code> 的 <strong>+42 幀</strong>，或高有利擊倒後搭配<strong>前墊步 21F</strong>／<strong>空揮輕拳 14F</strong> 把剩餘幀數修進 +41～+45 幀）後直接前跳出拳，落地剛好防住對手 4～6 幀起身無敵技。
-   * 注意 <strong>OD 火焰踢（<code>236KK</code>）</strong> 等部分倒地路線若只停在 +44 左右但距離過遠或高度差不齊，實戰容易變成打點太晚或距離不夠的「假安全跳」，務必在訓練場錄製對手起身出 OD 昇龍確認防禦是否成立。</li>
-<li><strong>場中與角落的關鍵提醒</strong>：
-   * <strong>建議固定消幀與安全跳套路優先在角落使用！</strong> 在場中對手倒地可選擇<strong>向後受身（Back Rise）</strong>拉開身位，導致原本計算好的貼身前墊步或安全跳落點揮空；場中建議視對手受身方向，改以<strong>震地槌（<code>623P</code>）</strong>限制起身或開<strong>動力箭步（綠衝）</strong>追擊距離。</li>
+<li><strong>常用消幀工具總幀數</strong>（以 <code>前搖 + 持續 + 硬直</code> 計算）：</li>
+<li><strong>站輕拳（<code>5LP</code>）空揮</strong>：<code>3 + 3 + 8 = 14 幀</code>。</li>
+<li><strong>蹲輕拳（<code>2LP</code>）空揮</strong>：<code>3 + 3 + 8 = 14 幀</code>。</li>
+<li><strong>蹲輕腳（<code>2LK</code>）空揮</strong>：<code>4 + 2 + 9 = 15 幀</code>。</li>
+<li><strong>站輕腳（<code>5LK</code>）空揮</strong>：<code>4 + 3 + 11 = 18 幀</code>。</li>
+<li><strong>閃電衝擊假動作（Feint）</strong>：總長 <strong>12 幀</strong>；<strong>震地槌假動作（Feint）</strong>：總長 <strong>16 幀</strong>。</li>
+<li><strong>前墊步（Forward Dash）</strong>：總長 <strong>21 幀</strong>（例如擊倒有利達 <code>+22</code> 以上時，單純前墊步即可留在貼身 <code>+1</code> 以上壓起身）。</li>
+<li><strong>安全跳（Safe Jump）通用基準（+41～+45 幀）</strong>：</li>
+<li>《快打旋風 6》標準安全跳窗口一般落在擊倒後 <strong>+41～+45 幀</strong>。毒蛇可利用連段結尾取得約 +42 幀（如現代 <code>生綠衝前中 &gt; アシスト中 × 2</code> 的 <strong>+42 幀</strong>，或高有利擊倒後搭配<strong>前墊步 21F</strong>／<strong>空揮輕拳 14F</strong> 把剩餘幀數修進 +41～+45 幀）後直接前跳出拳，落地剛好防住對手 4～6 幀起身無敵技。</li>
+<li>注意 <strong>OD 火焰踢（<code>236KK</code>）</strong> 等部分倒地路線若只停在 +44 左右但距離過遠或高度差不齊，實戰容易變成打點太晚或距離不夠的「假安全跳」，務必在訓練場錄製對手起身出 OD 昇龍確認防禦是否成立。</li>
+<li><strong>場中與角落的關鍵提醒</strong>：</li>
+<li><strong>建議固定消幀與安全跳套路優先在角落使用！</strong> 在場中對手倒地可選擇<strong>向後受身（Back Rise）</strong>拉開身位，導致原本計算好的貼身前墊步或安全跳落點揮空；場中建議視對手受身方向，改以<strong>震地槌（<code>623P</code>）</strong>限制起身或開<strong>動力箭步（綠衝）</strong>追擊距離。</li>
 </ol>
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
@@ -755,4 +770,11 @@
 <li><strong>大跳躍取消（Frames 2–5 vs 7+）的節奏差異</strong>：官方大跳躍（<code>High Jump</code>）在第 7 幀起進入空中狀態，但<strong>第 2～5 幀仍處於地面並可取消地面版必殺技</strong>；因此「轉完 <code>2369</code> 立刻按 K（2–5F）」會打出貼地／地面版取消，「等起跳離地後再按 K（7F+）」才會打出空中火焰踢。</li>
 <li><strong>火力蓄存前墊步與 SA1 資源流派</strong>：<strong>火力蓄存（<code>214K</code>）</strong>取消前墊步（21F）期間全程處於<strong>懲罰反擊狀態</strong>，遠距拉蓄力取消前進時要防對手的穿波技或突襲；而進入 <strong>SA1 解禁飛旋踢（<code>236236K</code>）</strong> 700 幀計時器期間，大跳躍與必殺派生完全不消耗動力槽（Burnout 狀態也能用），極大幅度改變攻防節奏。</li>
 <li><strong>經典模式 vs 現代模式取捨</strong>：現代模式雖有一鍵<strong>重閃電衝擊（<code>前SP</code>）</strong>對空、一鍵空中火焰踢與自動確認的<strong>輔助強連段</strong>，但代價是失去懲罰反擊高達 <strong>+19 幀</strong>的<strong>站重腳（<code>5HK</code>）</strong>，高階爆發路線與純手感取消空間仍以經典模式最完整。</li>
-</ul><div class="nav"><span><a href="c02-11-blanka.html">← C02-11 布蘭卡（Blanka）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-cammy.html">C02-11 嘉米（Cammy）角色招式幀數數據 →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c02-11-blanka.html">← C02-11 布蘭卡（Blanka）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-cammy.html">C02-11 嘉米（Cammy）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

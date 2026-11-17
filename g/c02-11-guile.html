@@ -1,19 +1,34 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>蓋爾（Guile）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>蓋爾（Guile）角色招式幀數數據</h1><p>蓋爾（Guile）給人的印象就是「音速爆擊（Sonic Boom）一直丟、空翻腳刀（Somersault Kick）等對空，防到死都摸不到他」。但其實在《快打旋風 6》裡，蓋爾<strong>多數地面普通技與特殊技被防禦後都是負幀</strong>！本篇已依 Capcom 官方最新幀數表與正式中文術語全面校對，刪除舊版影片誤聽、錯置指令與過時數據，幫你精準掌握蓋爾哪些拳腳擋完就能搶回合、哪些招式擋到直接大確反。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-guile" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>蓋爾（Guile）角色招式幀數數據</h1></header><p>蓋爾（Guile）給人的印象就是「音速爆擊（Sonic Boom）一直丟、空翻腳刀（Somersault Kick）等對空，防到死都摸不到他」。但其實在《快打旋風 6》裡，蓋爾<strong>多數地面普通技與特殊技被防禦後都是負幀</strong>！本篇已依 Capcom 官方最新幀數表與正式中文術語全面校對，刪除舊版影片誤聽、錯置指令與過時數據，幫你精準掌握蓋爾哪些拳腳擋完就能搶回合、哪些招式擋到直接大確反。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>最速搶招與核心拳腳</strong>：蓋爾唯一 4 幀最速拳腳是<strong>蹲輕拳（<code>2LP</code>，發生 4 幀、被防 -2）</strong>；主力牽制則有<strong>站輕腳（<code>5LK</code>，5 幀、被防 -1）</strong>、<strong>蹲中拳（<code>2MP</code>，6 幀、被防 -2）</strong>與<strong>站中拳（<code>5MP</code>，7 幀、被防 ±0／命中 +6）</strong>。
-2. <strong>蓋爾地面常態只有 1 招正幀，其餘正幀全在 OD 必殺技</strong>：
-   * <strong>迴旋反手拳（<code>6HP</code>）</strong>：被防 <strong>+3 幀</strong>（唯一常態正幀特殊技，但打不到蹲姿）。
-   * <strong>OD 音速爆擊（<code>[4]6PP</code>）</strong>：被防 <strong>+3 幀</strong>。
-   * <strong>OD 音速刃（<code>214PP</code>）</strong>：被防 <strong>+1 幀</strong>；<strong>OD 音速十字（1／2）</strong>：被防 <strong>+6 幀</strong>。
-   * <strong>常見誤區校正</strong>：<strong>站中腳（<code>5MK</code>）被防 -4</strong>、<strong>灼熱直拳（<code>4HP</code>）被防 -4</strong>、<strong>蹲中腳（<code>2MK</code>）被防 -5</strong>、<strong>站重腳（<code>5HK</code>）發生 12 幀且被防 -4</strong>，都不算常態正幀。
-3. <strong>必抓大破綻確反清單</strong>：<strong>空翻腳刀（<code>[2]8K</code>）</strong>被防高達 <strong>-30～-33 幀</strong>、<strong>SA3 空翻交叉砲火</strong> <strong>-59 幀</strong>、<strong>橫向 SA1 音速龍捲風（L/M）</strong> <strong>-26 幀</strong>、<strong>蹲重腳（<code>2HK</code>）</strong>與<strong>鬼影刀（<code>2HK~3HK</code>）</strong>皆 <strong>-12 幀</strong>、<strong>大砲衝擊第 2 段（<code>5MP~4HP</code>）／蓋爾高踢（<code>3HK</code>）／蹲重拳（<code>2HP</code>）</strong>皆 <strong>-9 幀</strong>、<strong>翻身旋踢（<code>6HK</code>）</strong> <strong>-8 幀</strong>、<strong>迴旋後踢（<code>4MK/6MK</code>）／雙射（<code>2MP~2MP</code>）／站重拳（<code>5HP</code>）</strong>皆 <strong>-6 幀</strong>、<strong>龍牙（<code>2MK~6MP</code>）／蹲中腳（<code>2MK</code>）</strong>皆 <strong>-5 幀</strong>。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>最速搶招與核心拳腳</strong>：蓋爾唯一 4 幀最速拳腳是<strong>蹲輕拳（<code>2LP</code>，發生 4 幀、被防 -2）</strong>；主力牽制則有<strong>站輕腳（<code>5LK</code>，5 幀、被防 -1）</strong>、<strong>蹲中拳（<code>2MP</code>，6 幀、被防 -2）</strong>與<strong>站中拳（<code>5MP</code>，7 幀、被防 ±0／命中 +6）</strong>。<br />
+2. <strong>蓋爾地面常態只有 1 招正幀，其餘正幀全在 OD 必殺技</strong>：<br />
+   * <strong>迴旋反手拳（<code>6HP</code>）</strong>：被防 <strong>+3 幀</strong>（唯一常態正幀特殊技，但打不到蹲姿）。<br />
+   * <strong>OD 音速爆擊（<code>[4]6PP</code>）</strong>：被防 <strong>+3 幀</strong>。<br />
+   * <strong>OD 音速刃（<code>214PP</code>）</strong>：被防 <strong>+1 幀</strong>；<strong>OD 音速十字（1／2）</strong>：被防 <strong>+6 幀</strong>。<br />
+   * <strong>常見誤區校正</strong>：<strong>站中腳（<code>5MK</code>）被防 -4</strong>、<strong>灼熱直拳（<code>4HP</code>）被防 -4</strong>、<strong>蹲中腳（<code>2MK</code>）被防 -5</strong>、<strong>站重腳（<code>5HK</code>）發生 12 幀且被防 -4</strong>，都不算常態正幀。<br />
+3. <strong>必抓大破綻確反清單</strong>：<strong>空翻腳刀（<code>[2]8K</code>）</strong>被防高達 <strong>-30～-33 幀</strong>、<strong>SA3 空翻交叉砲火</strong> <strong>-59 幀</strong>、<strong>橫向 SA1 音速龍捲風（L/M）</strong> <strong>-26 幀</strong>、<strong>蹲重腳（<code>2HK</code>）</strong>與<strong>鬼影刀（<code>2HK~3HK</code>）</strong>皆 <strong>-12 幀</strong>、<strong>大砲衝擊第 2 段（<code>5MP~4HP</code>）／蓋爾高踢（<code>3HK</code>）／蹲重拳（<code>2HP</code>）</strong>皆 <strong>-9 幀</strong>、<strong>翻身旋踢（<code>6HK</code>）</strong> <strong>-8 幀</strong>、<strong>迴旋後踢（<code>4MK/6MK</code>）／雙射（<code>2MP~2MP</code>）／站重拳（<code>5HP</code>）</strong>皆 <strong>-6 幀</strong>、<strong>龍牙（<code>2MK~6MP</code>）／蹲中腳（<code>2MK</code>）</strong>皆 <strong>-5 幀</strong>。<br />
 4. <strong>音速爆擊（Sonic Boom）與精準版差距</strong>：L／M／H 版全體動作僅 <strong>40 幀</strong>（被防貼身 -3、命中 +3），蓄力需 <strong>45 幀</strong>（解除後保有約 <strong>9～10 幀</strong>寬限）；<strong>精準時機版（Just Sonic）</strong> 被防一樣 -3，但傷害從 550 升為 <strong>600</strong>、貼身命中從 +3 升為 <strong>+4 幀</strong>，是高階 Loop 連段的關鍵。</p>
 </blockquote>
 <hr />
@@ -375,19 +390,19 @@
 </table></div>
 <h3>3. 第二級實戰衍生幀數（系統加值驗算）</h3>
 <p>套用《快打旋風 6》共通系統公式，可直接從官方基礎幀數推算實戰衍生有利不利幀：
-* <strong>動力箭步（綠衝／DR）</strong>：地面一般技／特殊技命中與被防<strong>固定 +4 幀</strong>。
-  * <strong>綠衝＋站輕腳（<code>5LK</code>）</strong>：命中 <code>3 + 4 = +7</code>、被防 <code>-1 + 4 = +3</code>（貼身投打二擇起點）。
-  * <strong>綠衝＋蹲輕拳（<code>2LP</code>）／站輕拳（<code>5LP</code>）</strong>：命中 <code>+9 / +8</code>、被防 <code>-2 + 4 = +2</code>。
-  * <strong>綠衝＋蹲輕腳（<code>2LK</code>）</strong>：命中 <code>1 + 4 = +5</code>、被防 <code>-3 + 4 = +1</code>（下段貼身正幀）。
-  * <strong>綠衝＋麥格農重拳（<code>6MP</code>）</strong>：命中 <code>2 + 4 = +6</code>（可接 <code>2LP</code>／<code>5LK</code>）、被防 <code>-3 + 4 = +1</code>。
-  * <strong>綠衝＋蹲中腳（<code>2MK</code>）</strong>：命中 <code>4 + 4 = +8</code>（可穩接 7 幀 <code>5HP</code> 或 <code>5MP</code>）、被防 <code>-5 + 4 = -1</code>（安全微負）。
-  * <strong>綠衝＋站重腳（<code>5HK</code>）</strong>：命中 <code>4 + 4 = +8</code>（距離較遠常接 <code>5MP~4HP</code> 大砲衝擊）、被防 <code>-4 + 4 = ±0</code>。
+* <strong>動力箭步（綠衝／DR）</strong>：地面一般技／特殊技命中與被防<strong>固定 +4 幀</strong>。<br />
+  * <strong>綠衝＋站輕腳（<code>5LK</code>）</strong>：命中 <code>3 + 4 = +7</code>、被防 <code>-1 + 4 = +3</code>（貼身投打二擇起點）。<br />
+  * <strong>綠衝＋蹲輕拳（<code>2LP</code>）／站輕拳（<code>5LP</code>）</strong>：命中 <code>+9 / +8</code>、被防 <code>-2 + 4 = +2</code>。<br />
+  * <strong>綠衝＋蹲輕腳（<code>2LK</code>）</strong>：命中 <code>1 + 4 = +5</code>、被防 <code>-3 + 4 = +1</code>（下段貼身正幀）。<br />
+  * <strong>綠衝＋麥格農重拳（<code>6MP</code>）</strong>：命中 <code>2 + 4 = +6</code>（可接 <code>2LP</code>／<code>5LK</code>）、被防 <code>-3 + 4 = +1</code>。<br />
+  * <strong>綠衝＋蹲中腳（<code>2MK</code>）</strong>：命中 <code>4 + 4 = +8</code>（可穩接 7 幀 <code>5HP</code> 或 <code>5MP</code>）、被防 <code>-5 + 4 = -1</code>（安全微負）。<br />
+  * <strong>綠衝＋站重腳（<code>5HK</code>）</strong>：命中 <code>4 + 4 = +8</code>（距離較遠常接 <code>5MP~4HP</code> 大砲衝擊）、被防 <code>-4 + 4 = ±0</code>。<br />
   * <strong>綠衝＋膝頭砲（<code>4LK</code>）</strong>：命中 <code>0 + 4 = +4</code>、被防 <code>-4 + 4 = ±0</code>。
-* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 <strong>120%</strong>）。
-  * <strong>站重腳（<code>5HK</code>）</strong>基礎命中 +4：懲罰反擊變 <strong>+8 幀</strong>，可直接前走目押 <code>5MP</code>（7F）、<code>2MP</code>（6F）或 <code>5HP</code>（7F）帶入高傷連段。
-  * <strong>站中拳（<code>5MP</code>）</strong>基礎命中 +6：截擊變 <strong>+8 幀</strong>、懲罰反擊變 <strong>+10 幀</strong>。
-  * <strong>翻身旋踢（<code>6HK</code>）</strong>：截擊強制浮空倒地；懲罰反擊產生<strong>崩潰（Crumple）</strong>，可直接接續大套連段。
-  * <strong>蓋爾高踢（<code>3HK</code>）</strong>：懲罰反擊強制浮空，可接中／重空翻腳刀或 SA。
+* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 <strong>120%</strong>）。<br />
+  * <strong>站重腳（<code>5HK</code>）</strong>基礎命中 +4：懲罰反擊變 <strong>+8 幀</strong>，可直接前走目押 <code>5MP</code>（7F）、<code>2MP</code>（6F）或 <code>5HP</code>（7F）帶入高傷連段。<br />
+  * <strong>站中拳（<code>5MP</code>）</strong>基礎命中 +6：截擊變 <strong>+8 幀</strong>、懲罰反擊變 <strong>+10 幀</strong>。<br />
+  * <strong>翻身旋踢（<code>6HK</code>）</strong>：截擊強制浮空倒地；懲罰反擊產生<strong>崩潰（Crumple）</strong>，可直接接續大套連段。<br />
+  * <strong>蓋爾高踢（<code>3HK</code>）</strong>：懲罰反擊強制浮空，可接中／重空翻腳刀或 SA。<br />
   * <strong>龍牙（<code>2MK~6MP</code>）</strong>：截擊或懲罰反擊產生彈地，可追加追打。
 * <strong>燒盡防禦（Burnout）</strong>：對手燒盡時防禦所有攻擊<strong>固定額外承受 +4 幀硬直</strong>。此時蓋爾常態的<strong>站中拳（<code>5MP</code>）被防變 +4</strong>、<strong>站中腳／灼熱直拳／站重腳／膝頭砲被防全變 ±0</strong>、<strong>迴旋反手拳（<code>6HP</code>）更達 +7</strong>，壓制力大幅暴增。
 * <strong>壓持續（Meaty）</strong>：以第 $k$ 個持續幀命中或被防時，有利幀額外增加 <code>+(k - 1)</code> 幀（例如 5 幀持續的 <code>5MK</code> 或 <code>2HP</code> 最多可 <code>+4 幀</code>；4 幀持續的 <code>4LK</code> 最多可 <code>+3 幀</code>）。</p>
@@ -686,19 +701,19 @@
 <hr />
 <h2>三、蓄力機制、消幀工具與壓起身／安全跳基準</h2>
 <ol>
-<li><strong>蓄力規則與 Boom Loop 連段幀數邏輯</strong>：
-   * <strong>蓄力時間與保持寬限</strong>：音速爆擊與空翻腳刀皆需 <strong>45 幀</strong>蓄力（含方向切換約抓 46～48 幀）；解除蓄力後仍有約 <strong>9～10 幀</strong>保持寬限（第 11 幀失效），可前走 6～9 幀再出招。輸入「前」後約 <strong>3 幀內</strong>按拳可打出<strong>精準版（Just）</strong>。
-   * <strong>Loop 連段幀數門檻</strong>：弱版音速爆擊在連段中可取得約 <strong>+10 幀</strong>（精準版 <strong>+11 幀</strong>）；中版音速爆擊需用<strong>精準版（+9 幀）</strong>才能剛好接上發生 <strong>9 幀</strong>的<strong>灼熱直拳（<code>4HP</code>）</strong>（非精準版只有 +8 幀會掉連段）。部分 Loop 路線最速為 +5 幀時，需微延遲 1～2 幀變成 <strong>+6 幀</strong>才能穩接 6 幀發生的<strong>蹲中拳（<code>2MP</code>）</strong>。
-   * <strong>SA2 發動接連段</strong>：於立回命中接開 SA2（6 幀總長）後，若要在連段中接回 9 幀的 <code>4HP</code> 或其他拳腳，需在 <strong>+16 幀</strong>以上有利狀態發動（如 <code>5HK</code> 取消或確認連攜）。</li>
-<li><strong>常用消幀（Frame Kill）工具總幀數</strong>：
-   * <strong>前墊步</strong>：總長 <strong>21 幀</strong>。
-   * <strong>站輕拳（<code>5LP</code>）空揮</strong>：<code>4 前搖 + 3 持續 + 7 硬直 = 14 幀</code>。
-   * <strong>蹲輕拳（<code>2LP</code>）空揮</strong>：<code>3 前搖 + 3 持續 + 8 硬直 = 14 幀</code>。
-   * <strong>站輕腳（<code>5LK</code>）空揮</strong>：<code>4 前搖 + 2 持續 + 12 硬直 = 18 幀</code>。
-   * <strong>蹲中拳（<code>2MP</code>）空揮</strong>：<code>5 前搖 + 3 持續 + 13 硬直 + 3 揮空追加 = 24 幀</code>。</li>
-<li><strong>安全跳（Safe Jump）與場中／角落受身差異</strong>：
-   * <strong>安全跳窗口（+41～+45 幀）</strong>：快打 6 標準安全跳需於擊倒後取得 <strong>+41～+45 幀</strong>有利。蓋爾使用<strong>大砲衝擊（<code>5MP~4HP</code>）或雙射（<code>2MP~2MP</code>）取消重空翻腳刀</strong>結尾時，可取得約 <strong>+41 幀</strong>優勢，剛好落入標準安全跳區間（落地可穩防對手 4～6 幀無敵技／OD 昇龍）；單純以<strong>重空翻腳刀</strong>收尾約為 <strong>+39 幀</strong>，則較適合改走其他壓制路線。
-   * <strong>角落 vs 場中提醒</strong>：<strong>建議固定消幀與安全跳套路優先在角落使用</strong>！在場中對手倒地可選擇<strong>向後受身（Back Rise）</strong>拉開距離，常導致近距離消幀壓起身揮空或脫離投距；場中擊倒後建議視對手受身位置改用<strong>音速爆擊（<code>[4]6P</code>）</strong>或<strong>撥擋動力箭步接膝頭砲（<code>DR &gt; 4LK</code>）</strong>追擊壓制。</li>
+<li><strong>蓄力規則與 Boom Loop 連段幀數邏輯</strong>：</li>
+<li><strong>蓄力時間與保持寬限</strong>：音速爆擊與空翻腳刀皆需 <strong>45 幀</strong>蓄力（含方向切換約抓 46～48 幀）；解除蓄力後仍有約 <strong>9～10 幀</strong>保持寬限（第 11 幀失效），可前走 6～9 幀再出招。輸入「前」後約 <strong>3 幀內</strong>按拳可打出<strong>精準版（Just）</strong>。</li>
+<li><strong>Loop 連段幀數門檻</strong>：弱版音速爆擊在連段中可取得約 <strong>+10 幀</strong>（精準版 <strong>+11 幀</strong>）；中版音速爆擊需用<strong>精準版（+9 幀）</strong>才能剛好接上發生 <strong>9 幀</strong>的<strong>灼熱直拳（<code>4HP</code>）</strong>（非精準版只有 +8 幀會掉連段）。部分 Loop 路線最速為 +5 幀時，需微延遲 1～2 幀變成 <strong>+6 幀</strong>才能穩接 6 幀發生的<strong>蹲中拳（<code>2MP</code>）</strong>。</li>
+<li><strong>SA2 發動接連段</strong>：於立回命中接開 SA2（6 幀總長）後，若要在連段中接回 9 幀的 <code>4HP</code> 或其他拳腳，需在 <strong>+16 幀</strong>以上有利狀態發動（如 <code>5HK</code> 取消或確認連攜）。</li>
+<li><strong>常用消幀（Frame Kill）工具總幀數</strong>：</li>
+<li><strong>前墊步</strong>：總長 <strong>21 幀</strong>。</li>
+<li><strong>站輕拳（<code>5LP</code>）空揮</strong>：<code>4 前搖 + 3 持續 + 7 硬直 = 14 幀</code>。</li>
+<li><strong>蹲輕拳（<code>2LP</code>）空揮</strong>：<code>3 前搖 + 3 持續 + 8 硬直 = 14 幀</code>。</li>
+<li><strong>站輕腳（<code>5LK</code>）空揮</strong>：<code>4 前搖 + 2 持續 + 12 硬直 = 18 幀</code>。</li>
+<li><strong>蹲中拳（<code>2MP</code>）空揮</strong>：<code>5 前搖 + 3 持續 + 13 硬直 + 3 揮空追加 = 24 幀</code>。</li>
+<li><strong>安全跳（Safe Jump）與場中／角落受身差異</strong>：</li>
+<li><strong>安全跳窗口（+41～+45 幀）</strong>：快打 6 標準安全跳需於擊倒後取得 <strong>+41～+45 幀</strong>有利。蓋爾使用<strong>大砲衝擊（<code>5MP~4HP</code>）或雙射（<code>2MP~2MP</code>）取消重空翻腳刀</strong>結尾時，可取得約 <strong>+41 幀</strong>優勢，剛好落入標準安全跳區間（落地可穩防對手 4～6 幀無敵技／OD 昇龍）；單純以<strong>重空翻腳刀</strong>收尾約為 <strong>+39 幀</strong>，則較適合改走其他壓制路線。</li>
+<li><strong>角落 vs 場中提醒</strong>：<strong>建議固定消幀與安全跳套路優先在角落使用</strong>！在場中對手倒地可選擇<strong>向後受身（Back Rise）</strong>拉開距離，常導致近距離消幀壓起身揮空或脫離投距；場中擊倒後建議視對手受身位置改用<strong>音速爆擊（<code>[4]6P</code>）</strong>或<strong>撥擋動力箭步接膝頭砲（<code>DR &gt; 4LK</code>）</strong>追擊壓制。</li>
 </ol>
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
@@ -710,4 +725,11 @@
 <li><strong>穩健龜波控場流</strong>：以音速爆擊快慢節奏搭配音速刃（<code>214P</code>）控住遠中距離，逼對手在彈幕壓力下冒險跳入，再以 5～7 幀的空翻腳刀（<code>[2]8K</code>）或 <code>2HP</code>／<code>5MK</code> 穩定對空。</li>
 <li><strong>綠衝正幀／Boom Loop 爆發流</strong>：運用蹲中拳（<code>2MP</code>）或站輕腳（<code>5LK</code>）複合取消動力箭步搶近距離，並搭配 SA2 <strong>結實重拳（<code>214214P</code>）</strong> 與精準音速爆擊打高傷角落連段與回復 Drive 資源。</li>
 <li><strong>現代操作（Modern Controls）提醒</strong>：現代模式能一鍵高速連發音速爆擊與即時施放空翻腳刀，但會少掉部分獨立指令拳腳或承受簡易輸入傷害補正，選擇操作模式前可依自身蓄力習慣取捨。</li>
-</ul><div class="nav"><span><a href="c02-11-elena.html">← C02-11 艾蓮娜（Elena）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-ingrid.html">C02-11 英格麗特（Ingrid）角色招式幀數數據 →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c02-11-elena.html">← C02-11 艾蓮娜（Elena）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-ingrid.html">C02-11 英格麗特（Ingrid）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

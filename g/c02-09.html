@@ -1,17 +1,32 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>懲罰後傷害與連段｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>懲罰後傷害與連段</h1><p>同樣都是抓到對手破綻，為什麼老手打一次就能削掉對手一半以上血量，新手打完卻只掉一千多？這篇幫你搞懂 SF6 的<strong>傷害補正（Damage Scaling）邏輯、現代操作一鍵 vs 手動輸入差距、什麼時候該花資源斬殺、什麼時候該省資源推角落</strong>，並附上各角色實戰高回報連段思路。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-09" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-09</span><h1>懲罰後傷害與連段</h1></header><p>同樣都是抓到對手破綻，為什麼老手打一次就能削掉對手一半以上血量，新手打完卻只掉一千多？這篇幫你搞懂 SF6 的<strong>傷害補正（Damage Scaling）邏輯、現代操作一鍵 vs 手動輸入差距、什麼時候該花資源斬殺、什麼時候該省資源推角落</strong>，並附上各角色實戰高回報連段思路。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-- <strong>起手決定總傷害</strong>：輕攻擊與下段起手的補正較重；抓到大破綻時，優先用<strong>重攻擊／中攻擊起手</strong>的懲罰反擊（Punish Counter，確反）。有時「直接接超必殺」反而比「點兩下輕拳再接」更痛。
-- <strong>投技 vs 懲罰連段</strong>：普通投傷害 <code>1200</code>、懲罰反擊投 <code>2040</code>（並強制倒地）；一次大破綻的懲罰反擊全套連段可打出 <code>3000～5000</code> 以上，約是普通投的 <strong>2～4 倍</strong>。
-- <strong>現代操作（Modern）</strong>：輔助出招的必殺技／超必殺傷害較低（約 80%），手動輸入維持完整傷害；有充裕時間時，最後收尾建議改用手動輸入。
-- <strong>完美撥擋（Perfect Parry）</strong>：後續連段傷害補正 <strong>50% 起跳</strong>，除非能直接收頭，否則優先把人推進角落或走省資源路線。
-- <strong>命中確認（Hit Confirm）</strong>：用輕攻擊或中攻擊「點一下」，看對手是受創還是防禦，再決定要不要接必殺技，別無腦按到底送人確反。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+- <strong>起手決定總傷害</strong>：輕攻擊與下段起手的補正較重；抓到大破綻時，優先用<strong>重攻擊／中攻擊起手</strong>的懲罰反擊（Punish Counter，確反）。有時「直接接超必殺」反而比「點兩下輕拳再接」更痛。<br />
+- <strong>投技 vs 懲罰連段</strong>：普通投傷害 <code>1200</code>、懲罰反擊投 <code>2040</code>（並強制倒地）；一次大破綻的懲罰反擊全套連段可打出 <code>3000～5000</code> 以上，約是普通投的 <strong>2～4 倍</strong>。<br />
+- <strong>現代操作（Modern）</strong>：輔助出招的必殺技／超必殺傷害較低（約 80%），手動輸入維持完整傷害；有充裕時間時，最後收尾建議改用手動輸入。<br />
+- <strong>完美撥擋（Perfect Parry）</strong>：後續連段傷害補正 <strong>50% 起跳</strong>，除非能直接收頭，否則優先把人推進角落或走省資源路線。<br />
+- <strong>命中確認（Hit Confirm）</strong>：用輕攻擊或中攻擊「點一下」，看對手是受創還是防禦，再決定要不要接必殺技，別無腦按到底送人確反。<br />
 - <strong>基礎加值</strong>：懲罰反擊一般打擊命中 <code>+4</code> 幀、傷害 <code>120%</code>；動力箭步（綠衝）後的地面技命中／被防固定 <code>+4</code> 幀。</p>
 </blockquote>
 <hr />
@@ -113,8 +128,15 @@
 </ul>
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
-<p>已核對要點：
-1. <strong>傷害數字的來源差異</strong>：影片中的極端數字（如 <code>6185</code>、<code>6571</code>）多是特定極限資源路線或語音辨識斷句問題，不要當成常態；常態請以「重攻擊起手＋適量資源」的 <code>3000～5000</code> 作為基準。
-2. <strong>懲罰反擊與投傷害已定案</strong>：普通投 <code>1200</code>、懲罰反擊投 <code>2040</code>（舊影片若出現其他數字，以官方為準）；一般打擊懲罰反擊傷害 <code>120%</code>、命中 <code>+4</code>。
-3. <strong>版本演進</strong>：春麗空中 SA1 最後一擊由 <code>600</code> 調為 <code>800</code>，部分目標連段與強化投技補正也有改動，連段是否成立請以目前版本訓練模式實測。
-4. <strong>流派取捨</strong>：斬殺線之外，要「全資源爆發」還是「省動力推角落壓制」，屬選手風格；現代操作玩家則需權衡一鍵出招的傷害下降與穩定度。</p><div class="nav"><span><a href="c02-08.html">← C02-08 截擊、完美撥擋與懲罰反擊增益</a></span><span style="text-align:right"><a href="c02-10.html">C02-10 練習與學習方法 →</a></span></div></div></body></html>
+<p>已核對要點：<br />
+1. <strong>傷害數字的來源差異</strong>：影片中的極端數字（如 <code>6185</code>、<code>6571</code>）多是特定極限資源路線或語音辨識斷句問題，不要當成常態；常態請以「重攻擊起手＋適量資源」的 <code>3000～5000</code> 作為基準。<br />
+2. <strong>懲罰反擊與投傷害已定案</strong>：普通投 <code>1200</code>、懲罰反擊投 <code>2040</code>（舊影片若出現其他數字，以官方為準）；一般打擊懲罰反擊傷害 <code>120%</code>、命中 <code>+4</code>。<br />
+3. <strong>版本演進</strong>：春麗空中 SA1 最後一擊由 <code>600</code> 調為 <code>800</code>，部分目標連段與強化投技補正也有改動，連段是否成立請以目前版本訓練模式實測。<br />
+4. <strong>流派取捨</strong>：斬殺線之外，要「全資源爆發」還是「省動力推角落壓制」，屬選手風格；現代操作玩家則需權衡一鍵出招的傷害下降與穩定度。</p><nav class="pager"><a href="c02-08.html">← C02-08 截擊、完美撥擋與懲罰反擊增益</a><a href="../index.html">返回總覽目錄</a><a href="c02-10.html">C02-10 練習與學習方法 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

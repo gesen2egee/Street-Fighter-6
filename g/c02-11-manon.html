@@ -1,21 +1,36 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>瑪濃（Manon）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>瑪濃（Manon）角色招式幀數數據</h1><p>瑪濃（Manon）是手腳修長的柔道結合芭蕾投技型角色，擅長靠長距離拳腳與「解離（214K）」等必殺技在中距離牽制摸獎，一旦貼近就以跨回合保留的「獎章（Medal）」指令投造成毀滅性威脅。本篇完全依據 Capcom 官方最新幀數表與系統加值公式，為你整理瑪濃所有核心招式的發生、命中與被防幀數，徹底釐清哪些招是確反大破綻、哪些招是她的正幀陷阱！</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-manon" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>瑪濃（Manon）角色招式幀數數據</h1></header><p>瑪濃（Manon）是手腳修長的柔道結合芭蕾投技型角色，擅長靠長距離拳腳與「解離（214K）」等必殺技在中距離牽制摸獎，一旦貼近就以跨回合保留的「獎章（Medal）」指令投造成毀滅性威脅。本篇完全依據 Capcom 官方最新幀數表與系統加值公式，為你整理瑪濃所有核心招式的發生、命中與被防幀數，徹底釐清哪些招是確反大破綻、哪些招是她的正幀陷阱！</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>擋到這幾招直接確反，別讓她白白跑掉</strong>：
-   * <strong>解離系列（214K）</strong>：<strong>輕解離（214LK，下段）</strong>被防高達 <strong><code>-24</code></strong> 幀；<strong>中解離（214MK，中段）</strong>被防 <strong><code>-13</code></strong> 幀；<strong>重解離（214HK）</strong>被防 <strong><code>-9</code></strong> 幀（近距離確反）；僅 <strong>極限技解離（OD 214KK）</strong>被防 <strong><code>-3</code></strong> 幀安全。
-   * <strong>畫圈（236K，俗稱一二三）</strong>：輕／中／重／OD 版被防分別為 <strong><code>-15</code> / <code>-14</code> / <code>-11</code> / <code>-19</code></strong> 幀，全版本被防皆可確反！
-   * <strong>一般技與特殊技破綻</strong>：<strong>巴投（3HK）</strong>被防 <strong><code>-23</code></strong>、<strong>蹲重腳（2HK，11 幀）</strong>被防 <strong><code>-12</code></strong>、<strong>高位第 2 段（4MK~MK，中段）</strong>被防 <strong><code>-11</code></strong>、<strong>延伸（2HP~HP）</strong>被防 <strong><code>-10</code></strong>、<strong>蹲重拳（2HP）</strong>與<strong>重心轉移（5HP~HP，重手拉近）</strong>被防 <strong><code>-8</code></strong>、<strong>站重腳（5HK）</strong>被防 <strong><code>-6</code></strong>、<strong>站中腳（5MK）</strong>與<strong>貼地（5MP~MK，中手拉近）</strong>被防 <strong><code>-5</code></strong>。
-2. <strong>小心瑪濃的正幀招式（擋完別亂搶）</strong>：
-   * <strong>行禮（4HP，後重拳，8 幀）</strong>：一般被防即為 <strong><code>+1</code></strong> 幀（命中 <strong><code>+3</code></strong> 幀），搭配動力箭步（綠衝）被防高達 <strong><code>+5</code></strong> 幀！
-   * <strong>動力箭步（綠衝）中攻擊壓制</strong>：<strong>蹲中拳（2MP，7 幀）</strong>一般被防 <code>-1</code>、命中 <code>+6</code>，但<strong>綠衝蹲中拳被防為 <code>+3</code> 幀（命中 <code>+10</code>）</strong>；<strong>站中拳（5MP，7 幀）</strong>一般被防 <code>-2</code>、命中 <code>+2</code>，<strong>綠衝站中拳被防為 <code>+2</code> 幀（命中 <code>+6</code>）</strong>。
-3. <strong>最速搶招 4 幀與獎章傷害機制</strong>：
-   * 最速 4 幀招式為 <strong>站輕拳（5LP，命中 +4 / 被防 -1）</strong> 與 <strong>蹲輕拳（2LP，命中 +3 / 被防 -2，截擊 +5）</strong>。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>擋到這幾招直接確反，別讓她白白跑掉</strong>：<br />
+   * <strong>解離系列（214K）</strong>：<strong>輕解離（214LK，下段）</strong>被防高達 <strong><code>-24</code></strong> 幀；<strong>中解離（214MK，中段）</strong>被防 <strong><code>-13</code></strong> 幀；<strong>重解離（214HK）</strong>被防 <strong><code>-9</code></strong> 幀（近距離確反）；僅 <strong>極限技解離（OD 214KK）</strong>被防 <strong><code>-3</code></strong> 幀安全。<br />
+   * <strong>畫圈（236K，俗稱一二三）</strong>：輕／中／重／OD 版被防分別為 <strong><code>-15</code> / <code>-14</code> / <code>-11</code> / <code>-19</code></strong> 幀，全版本被防皆可確反！<br />
+   * <strong>一般技與特殊技破綻</strong>：<strong>巴投（3HK）</strong>被防 <strong><code>-23</code></strong>、<strong>蹲重腳（2HK，11 幀）</strong>被防 <strong><code>-12</code></strong>、<strong>高位第 2 段（4MK~MK，中段）</strong>被防 <strong><code>-11</code></strong>、<strong>延伸（2HP~HP）</strong>被防 <strong><code>-10</code></strong>、<strong>蹲重拳（2HP）</strong>與<strong>重心轉移（5HP~HP，重手拉近）</strong>被防 <strong><code>-8</code></strong>、<strong>站重腳（5HK）</strong>被防 <strong><code>-6</code></strong>、<strong>站中腳（5MK）</strong>與<strong>貼地（5MP~MK，中手拉近）</strong>被防 <strong><code>-5</code></strong>。<br />
+2. <strong>小心瑪濃的正幀招式（擋完別亂搶）</strong>：<br />
+   * <strong>行禮（4HP，後重拳，8 幀）</strong>：一般被防即為 <strong><code>+1</code></strong> 幀（命中 <strong><code>+3</code></strong> 幀），搭配動力箭步（綠衝）被防高達 <strong><code>+5</code></strong> 幀！<br />
+   * <strong>動力箭步（綠衝）中攻擊壓制</strong>：<strong>蹲中拳（2MP，7 幀）</strong>一般被防 <code>-1</code>、命中 <code>+6</code>，但<strong>綠衝蹲中拳被防為 <code>+3</code> 幀（命中 <code>+10</code>）</strong>；<strong>站中拳（5MP，7 幀）</strong>一般被防 <code>-2</code>、命中 <code>+2</code>，<strong>綠衝站中拳被防為 <code>+2</code> 幀（命中 <code>+6</code>）</strong>。<br />
+3. <strong>最速搶招 4 幀與獎章傷害機制</strong>：<br />
+   * 最速 4 幀招式為 <strong>站輕拳（5LP，命中 +4 / 被防 -1）</strong> 與 <strong>蹲輕拳（2LP，命中 +3 / 被防 -2，截擊 +5）</strong>。<br />
    * <strong>獎章（Medal）上限 5 級且跨回合保留</strong>：指令投 <strong>黃金旋轉木馬（63214P）</strong> 在 Lv1 時傷害 <code>2000</code>，疊滿 Lv5 時高達 <strong><code>3700</code></strong>（懲罰反擊時更高達 <strong><code>4255</code></strong>，超過 42% 體力）！</p>
 </blockquote>
 <hr />
@@ -442,11 +457,18 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>已由官方數據裁決之舊影片正負號與招式混淆</strong>：
-   * <strong>輕解離（214LK）與重解離（214HK）被防</strong>：官方數據明確為輕解離 <strong><code>-24</code> 幀</strong>、重解離 <strong><code>-9</code> 幀</strong>（舊影片字幕 <code>+24</code>、<code>+9</code> 純屬語音辨識正負號反轉）。
-   * <strong>蹲中拳（2MP）與站中拳（5MP）的「+3」來源</strong>：蹲中拳一般被防為 <strong><code>-1</code></strong>（命中 <strong><code>+6</code></strong>），必須透過 <strong>動力箭步（綠衝 +4 幀加值）</strong> 發動時，綠衝蹲中拳被防才是 <strong><code>+3</code></strong> 幀；同理，站中拳一般被防 <code>-2</code>、命中 <code>+2</code>，舊片稱「+3」實為 <strong>行禮（4HP，命中 +3）</strong> 或 <strong>蹲中腳（2MK，舊版命中 +3、現版本強化為 +4）</strong>。
-   * <strong>站重拳（5HP）與重心轉移（5HP~HP）</strong>：第 1 段單發站重拳被防為 <strong><code>-3</code> 幀</strong>（命中 <code>0</code> 幀），派生第 2 段重心轉移命中為 <strong><code>+3</code> 幀</strong>、被防則因額外增加 2 幀硬直而變為 <strong><code>-8</code> 幀</strong>。
-   * <strong>「一二三」、「自動 1」、「大型技」等俗稱還原</strong>：「一二三」即 <strong>畫圈（236K）</strong> 或連打目標連段；「自動 1 被防 -11」對應 <strong>重畫圈（236HK，被防 -11）</strong> 或 <strong>高位第 2 段（4MK~MK，被防 -11）</strong>；「大型技命中 +6 / 被防 -3」則對應 <strong>極限技解離（OD 214KK，命中 +6、被防 -3）</strong>。</li>
-<li><strong>距離對確反成立與否的實戰影響</strong>：
-   * 雖然 <strong>重解離（214HK，被防 <code>-9</code>）</strong>、<strong>站重腳（5HK，被防 <code>-6</code>）</strong> 與 <strong>站中腳（5MK，被防 <code>-5</code>）</strong> 在數字上皆達確反門檻，但瑪濃腿長極遠，若在招式最尖端防禦，絕大多數角色的 5～9 幀招式都會揮空。實戰中務必分辨「貼身／中距離被防（立刻確反）」與「尖端被防（不亂按或改用遠距離 SA 懲罰）」。</li>
-</ol><div class="nav"><span><a href="c02-11-mai.html">← C02-11 不知火舞（Mai）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-marisa.html">C02-11 瑪麗莎（Marisa）角色招式幀數數據 →</a></span></div></div></body></html>
+<li><strong>已由官方數據裁決之舊影片正負號與招式混淆</strong>：</li>
+<li><strong>輕解離（214LK）與重解離（214HK）被防</strong>：官方數據明確為輕解離 <strong><code>-24</code> 幀</strong>、重解離 <strong><code>-9</code> 幀</strong>（舊影片字幕 <code>+24</code>、<code>+9</code> 純屬語音辨識正負號反轉）。</li>
+<li><strong>蹲中拳（2MP）與站中拳（5MP）的「+3」來源</strong>：蹲中拳一般被防為 <strong><code>-1</code></strong>（命中 <strong><code>+6</code></strong>），必須透過 <strong>動力箭步（綠衝 +4 幀加值）</strong> 發動時，綠衝蹲中拳被防才是 <strong><code>+3</code></strong> 幀；同理，站中拳一般被防 <code>-2</code>、命中 <code>+2</code>，舊片稱「+3」實為 <strong>行禮（4HP，命中 +3）</strong> 或 <strong>蹲中腳（2MK，舊版命中 +3、現版本強化為 +4）</strong>。</li>
+<li><strong>站重拳（5HP）與重心轉移（5HP~HP）</strong>：第 1 段單發站重拳被防為 <strong><code>-3</code> 幀</strong>（命中 <code>0</code> 幀），派生第 2 段重心轉移命中為 <strong><code>+3</code> 幀</strong>、被防則因額外增加 2 幀硬直而變為 <strong><code>-8</code> 幀</strong>。</li>
+<li><strong>「一二三」、「自動 1」、「大型技」等俗稱還原</strong>：「一二三」即 <strong>畫圈（236K）</strong> 或連打目標連段；「自動 1 被防 -11」對應 <strong>重畫圈（236HK，被防 -11）</strong> 或 <strong>高位第 2 段（4MK~MK，被防 -11）</strong>；「大型技命中 +6 / 被防 -3」則對應 <strong>極限技解離（OD 214KK，命中 +6、被防 -3）</strong>。</li>
+<li><strong>距離對確反成立與否的實戰影響</strong>：</li>
+<li>雖然 <strong>重解離（214HK，被防 <code>-9</code>）</strong>、<strong>站重腳（5HK，被防 <code>-6</code>）</strong> 與 <strong>站中腳（5MK，被防 <code>-5</code>）</strong> 在數字上皆達確反門檻，但瑪濃腿長極遠，若在招式最尖端防禦，絕大多數角色的 5～9 幀招式都會揮空。實戰中務必分辨「貼身／中距離被防（立刻確反）」與「尖端被防（不亂按或改用遠距離 SA 懲罰）」。</li>
+</ol><nav class="pager"><a href="c02-11-mai.html">← C02-11 不知火舞（Mai）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-marisa.html">C02-11 瑪麗莎（Marisa）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

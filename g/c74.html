@@ -1,28 +1,43 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>蓋爾對戰應對整理｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / Guile（guile） 對策</div><h1>蓋爾對戰應對整理</h1><p>面對蓋爾（Guile）就是一場標準的「耐心大考驗」：音速爆擊（Sonic Boom）一顆接一顆飛過來，你一急著前跳就被空翻腳刀（Somersault Kick）踹下來；好不容易開動力箭步（綠衝）想硬撞過去，動力條還沒貼到他面前就先燒乾了。這篇指南已依 Capcom 官方最新幀數表與正式中文術語全面校對，幫你拆解蓋爾的核心思維——其實<strong>蓋爾每退一步蓄力，都是在幫你把他自己關進角落</strong>！學會邊防邊走、看穿他「第一形態（丟波）↔ 第二形態（拳腳）」的切換，以及在角落用安全跳破掉他的蹲蓄力與抓出正確負幀破綻，你就能把這個鐵桶陣徹底撬開。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c74" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C74 Guile（guile） 對策</div><header class="ph"><span class="pnum">C74</span><h1>蓋爾對戰應對整理</h1></header><p>面對蓋爾（Guile）就是一場標準的「耐心大考驗」：音速爆擊（Sonic Boom）一顆接一顆飛過來，你一急著前跳就被空翻腳刀（Somersault Kick）踹下來；好不容易開動力箭步（綠衝）想硬撞過去，動力條還沒貼到他面前就先燒乾了。這篇指南已依 Capcom 官方最新幀數表與正式中文術語全面校對，幫你拆解蓋爾的核心思維——其實<strong>蓋爾每退一步蓄力，都是在幫你把他自己關進角落</strong>！學會邊防邊走、看穿他「第一形態（丟波）↔ 第二形態（拳腳）」的切換，以及在角落用安全跳破掉他的蹲蓄力與抓出正確負幀破綻，你就能把這個鐵桶陣徹底撬開。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>絕對不要在場中央燒光動力槽硬衝！</strong>：對蓋爾是一場耐心戰。<strong>邊防禦音速爆擊邊往前走</strong>——他每往後退一步拉開距離重新蓄力，其實都在幫你<strong>把他自己逼進角落</strong>！
-2. <strong>只有「沒蹲蓄力」或「蓄力解除瞬間」才能跳</strong>：看到蓋爾站起來往前走、或剛放完招的瞬間才有資格跳；平時別只為了躲音速爆擊而亂跳，那是送他 5～7 幀無敵對空的空翻腳刀踢。
-3. <strong>遠距長按撥擋靠近，中距進入「讀波」節奏</strong>：音速爆擊全體只有 <strong>40 幀</strong>，遠距離按<strong>動力撥擋（Drive Parry）</strong>回氣慢慢走；進到中距離就準備抓他丟波的節奏（猜中 5 次只要成功 1 次你就大賺！）。注意普通音速爆擊只有 1 段可抓他跟進，但<strong>音速刃接音速十字（Sonic Cross）</strong>（多段／OD 版）會直接撞破<strong>動力衝擊（DI，2 次霸體）</strong>！
-4. <strong>蓋爾地面拳腳幾乎全負幀，但小心 OD 必殺技正幀</strong>：蓋爾地面一般技／特殊技裡，常態只有<strong>迴旋反手拳（<code>6HP</code>）被防 +3</strong>（且打不到蹲姿），<strong>站中拳（<code>5MP</code>）被防 0</strong>；其餘拳腳幾乎全是負幀破綻，例如<strong>空翻腳刀 -30～-33</strong>、<strong>蹲重腳／鬼影刀 -12</strong>、<strong>大砲衝擊第 2 段／蓋爾高踢 -9</strong>、<strong>翻身旋踢（<code>6HK</code>）-8</strong>、<strong>迴旋後踢／雙射／站重拳 -6</strong>、<strong>蹲中腳／龍牙 -5</strong>！唯有 <strong>OD 音速爆擊（+3）</strong>、<strong>OD 音速刃（+1）</strong> 與 <strong>OD 音速十字（+6）</strong> 被防是蓋爾有利，擋完別亂搶。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>絕對不要在場中央燒光動力槽硬衝！</strong>：對蓋爾是一場耐心戰。<strong>邊防禦音速爆擊邊往前走</strong>——他每往後退一步拉開距離重新蓄力，其實都在幫你<strong>把他自己逼進角落</strong>！<br />
+2. <strong>只有「沒蹲蓄力」或「蓄力解除瞬間」才能跳</strong>：看到蓋爾站起來往前走、或剛放完招的瞬間才有資格跳；平時別只為了躲音速爆擊而亂跳，那是送他 5～7 幀無敵對空的空翻腳刀踢。<br />
+3. <strong>遠距長按撥擋靠近，中距進入「讀波」節奏</strong>：音速爆擊全體只有 <strong>40 幀</strong>，遠距離按<strong>動力撥擋（Drive Parry）</strong>回氣慢慢走；進到中距離就準備抓他丟波的節奏（猜中 5 次只要成功 1 次你就大賺！）。注意普通音速爆擊只有 1 段可抓他跟進，但<strong>音速刃接音速十字（Sonic Cross）</strong>（多段／OD 版）會直接撞破<strong>動力衝擊（DI，2 次霸體）</strong>！<br />
+4. <strong>蓋爾地面拳腳幾乎全負幀，但小心 OD 必殺技正幀</strong>：蓋爾地面一般技／特殊技裡，常態只有<strong>迴旋反手拳（<code>6HP</code>）被防 +3</strong>（且打不到蹲姿），<strong>站中拳（<code>5MP</code>）被防 0</strong>；其餘拳腳幾乎全是負幀破綻，例如<strong>空翻腳刀 -30～-33</strong>、<strong>蹲重腳／鬼影刀 -12</strong>、<strong>大砲衝擊第 2 段／蓋爾高踢 -9</strong>、<strong>翻身旋踢（<code>6HK</code>）-8</strong>、<strong>迴旋後踢／雙射／站重拳 -6</strong>、<strong>蹲中腳／龍牙 -5</strong>！唯有 <strong>OD 音速爆擊（+3）</strong>、<strong>OD 音速刃（+1）</strong> 與 <strong>OD 音速十字（+6）</strong> 被防是蓋爾有利，擋完別亂搶。<br />
 5. <strong>角落「安全跳」是蓋爾的天敵</strong>：跳入攻擊屬於中段技，在角落對蓋爾用<strong>安全跳（+41～+45 幀窗口）</strong>壓起身，他為了防禦必須改拉正後「站防」——<strong>一離開發下方向就會解除下蓄力，讓他按不出 OD 空翻腳刀</strong>，就算硬凹出來也會被安全跳穩穩防住懲罰 <strong>-33 幀</strong>！</p>
 </blockquote>
 <hr />
 <h2>一、破除音速爆擊防線：別燒乾動力槽，讓蓋爾自己退進角落</h2>
 <h3>情境：蓋爾在畫面另一頭蹲著一直發音速爆擊，你感覺永遠走不到他面前</h3>
 <ul>
-<li><strong>怎麼做</strong>：
-  1. <strong>邊防邊走，把場中央讓出來逼他退</strong>：不要因為心急就在場中央狂開<strong>動力箭步（綠衝）</strong>或亂跳，對蓋爾這類擅長消耗戰的對手一定要留足動力餘裕（進入<strong>燒盡 Burnout</strong> 後防住他所有招式還會額外多吃 <code>+4 幀</code> 防禦硬直，幾乎必死）。穩定地防一發波往前走幾步、遠距離長按動力撥擋補動力慢慢推進，目標是推進到<strong>「蹲中腳快踢到或踢不到」</strong>的距離（這裡他再發波幾乎必被前跳打中）。
-  2. <strong>遇到慢速音速爆擊可「垂直跳」拖延他連發</strong>：如果遠距離走路防禦太辛苦，看到慢速輕版音速爆擊時可以<strong>垂直跳閃過</strong>（別急著前跳）。因為系統規定畫面上同時只能存在一發自己的波，用防禦或撥擋消掉波反而讓他立刻能連發下一發；垂直跳讓慢速波繼續飄向畫面外，能有效拖延他發下一發的時機！
-  3. <strong>觀察他的「兩種形態」切換</strong>：蓋爾有「第一形態（遠距發波龜陣）」與「第二形態（中近距離普通技立回）」。當你走近到他不敢隨便發波時，他就會開始切換成第二形態出拳腳，同時<strong>要特別提防他極有威脅的前跳進攻</strong>。
-  4. <strong>進入中距離「讀音速爆擊」與「完美撥擋後前跳」</strong>：到了中距離就準備用前跳或穿波／動力衝擊讀他的發波節奏（只要 5 次抓到 1 次跳入打滿整套，蓋爾就受不了）。面對連安全波都跳不到的節奏，可用<strong>完美撥擋（Perfect Parry，飛行道具收招僅 10 幀且無畫面凍結）</strong>接下第 1 發後立刻前跳，就能確定抓到他的第 2 發波！近距離看到重波動作拼撥擋時，也可順勢按下反擊招式（沒觸發完美也能自然防禦）。
-  5. <strong>破解「音速刃（<code>214P</code>）」與「音速十字（Sonic Cross）」前壓</strong>：單發音速爆擊只算 1 段判定，近距快擋前按動力衝擊（DI，第 1～27 幀 2 次霸體）有機會抓他綠衝跟進；但<strong>音速刃接音速十字（多段／OD 版）會直接打破 DI 霸體</strong>，千萬別亂撞！不過如果他用<strong>原地滯留的音速刃（總長 42～54 幀）</strong>準備取消發波轉為前壓，音速刃出招期間下半身受擊判定會往前伸，中近距離可直接用<strong>蹲重腳（掃倒）或長距離下段攻擊</strong>踢中／打斷蓋爾，音速刃也會隨之消失！</li>
+<li><strong>怎麼做</strong>：</li>
+<li><strong>邊防邊走，把場中央讓出來逼他退</strong>：不要因為心急就在場中央狂開<strong>動力箭步（綠衝）</strong>或亂跳，對蓋爾這類擅長消耗戰的對手一定要留足動力餘裕（進入<strong>燒盡 Burnout</strong> 後防住他所有招式還會額外多吃 <code>+4 幀</code> 防禦硬直，幾乎必死）。穩定地防一發波往前走幾步、遠距離長按動力撥擋補動力慢慢推進，目標是推進到<strong>「蹲中腳快踢到或踢不到」</strong>的距離（這裡他再發波幾乎必被前跳打中）。</li>
+<li><strong>遇到慢速音速爆擊可「垂直跳」拖延他連發</strong>：如果遠距離走路防禦太辛苦，看到慢速輕版音速爆擊時可以<strong>垂直跳閃過</strong>（別急著前跳）。因為系統規定畫面上同時只能存在一發自己的波，用防禦或撥擋消掉波反而讓他立刻能連發下一發；垂直跳讓慢速波繼續飄向畫面外，能有效拖延他發下一發的時機！</li>
+<li><strong>觀察他的「兩種形態」切換</strong>：蓋爾有「第一形態（遠距發波龜陣）」與「第二形態（中近距離普通技立回）」。當你走近到他不敢隨便發波時，他就會開始切換成第二形態出拳腳，同時<strong>要特別提防他極有威脅的前跳進攻</strong>。</li>
+<li><strong>進入中距離「讀音速爆擊」與「完美撥擋後前跳」</strong>：到了中距離就準備用前跳或穿波／動力衝擊讀他的發波節奏（只要 5 次抓到 1 次跳入打滿整套，蓋爾就受不了）。面對連安全波都跳不到的節奏，可用<strong>完美撥擋（Perfect Parry，飛行道具收招僅 10 幀且無畫面凍結）</strong>接下第 1 發後立刻前跳，就能確定抓到他的第 2 發波！近距離看到重波動作拼撥擋時，也可順勢按下反擊招式（沒觸發完美也能自然防禦）。</li>
+<li><strong>破解「音速刃（<code>214P</code>）」與「音速十字（Sonic Cross）」前壓</strong>：單發音速爆擊只算 1 段判定，近距快擋前按動力衝擊（DI，第 1～27 幀 2 次霸體）有機會抓他綠衝跟進；但<strong>音速刃接音速十字（多段／OD 版）會直接打破 DI 霸體</strong>，千萬別亂撞！不過如果他用<strong>原地滯留的音速刃（總長 42～54 幀）</strong>準備取消發波轉為前壓，音速刃出招期間下半身受擊判定會往前伸，中近距離可直接用<strong>蹲重腳（掃倒）或長距離下段攻擊</strong>踢中／打斷蓋爾，音速刃也會隨之消失！</li>
 <li><strong>常見踩雷</strong>：</li>
 <li>才走兩步沒耐心就從半場直接前跳，剛好蓋爾早就蹲好蓄力等著一記 5～7 幀的空翻腳刀踢下來。</li>
 </ul>
@@ -30,9 +45,9 @@
 <h2>二、近距離懲罰與「角落安全跳」的神奇威力</h2>
 <h3>情境：終於走近蓋爾了，該怎麼防他的貼身壓制與反擊？</h3>
 <ul>
-<li><strong>怎麼做</strong>：
-  1. <strong>中近距離大膽前後移動，別怕被下段摸到</strong>：蓋爾的<strong>蹲中腳（<code>2MK</code>，8 幀發生、被防 -5）不能取消必殺技或動力箭步</strong>，掃倒<strong>蹲重腳（<code>2HK</code>）</strong>也是兩段判定（9–10, 27–29），被他的單發下段牽制摸一下大約只損 500 傷害，遠比肉搏角安全。因此可以大膽前後移動誘使他揮空（特別是<strong>蹲中拳 <code>2MP</code> 揮空硬直達 16 幀</strong>），等他想拉開發「非安全波」的瞬間前跳進攻。
-  2. <strong>大膽反罰他的負幀招式</strong>：蓋爾沒有防住後自己有利的突進技，全角色地面普通／特殊技裡<strong>只有迴旋反手拳（<code>6HP</code>，16 幀）常態被防 +3 幀有利（但這招打不到蹲姿，蹲防即可閃避反擊）</strong>，<strong>站中拳（<code>5MP</code>）被防為 0 幀（五五波）</strong>。唯有 <strong>OD 音速爆擊（+3）</strong>、<strong>OD 音速刃（+1）</strong> 與 <strong>OD 音速十字（+6）</strong> 被防是蓋爾正幀，擋住這三招別亂搶；其餘看到以下招式被你防住，立刻按照幀數反打：</li>
+<li><strong>怎麼做</strong>：</li>
+<li><strong>中近距離大膽前後移動，別怕被下段摸到</strong>：蓋爾的<strong>蹲中腳（<code>2MK</code>，8 幀發生、被防 -5）不能取消必殺技或動力箭步</strong>，掃倒<strong>蹲重腳（<code>2HK</code>）</strong>也是兩段判定（9–10, 27–29），被他的單發下段牽制摸一下大約只損 500 傷害，遠比肉搏角安全。因此可以大膽前後移動誘使他揮空（特別是<strong>蹲中拳 <code>2MP</code> 揮空硬直達 16 幀</strong>），等他想拉開發「非安全波」的瞬間前跳進攻。</li>
+<li><strong>大膽反罰他的負幀招式</strong>：蓋爾沒有防住後自己有利的突進技，全角色地面普通／特殊技裡<strong>只有迴旋反手拳（<code>6HP</code>，16 幀）常態被防 +3 幀有利（但這招打不到蹲姿，蹲防即可閃避反擊）</strong>，<strong>站中拳（<code>5MP</code>）被防為 0 幀（五五波）</strong>。唯有 <strong>OD 音速爆擊（+3）</strong>、<strong>OD 音速刃（+1）</strong> 與 <strong>OD 音速十字（+6）</strong> 被防是蓋爾正幀，擋住這三招別亂搶；其餘看到以下招式被你防住，立刻按照幀數反打：</li>
 </ul>
 <div class="tbl"><table>
 <thead>
@@ -90,10 +105,10 @@
 </tr>
 </tbody>
 </table></div>
-<ol start="3">
-<li><strong>在角落用「安全跳」封死 OD 空翻腳刀</strong>：一旦把蓋爾關進角落，<strong>優先用安全跳（+41～+45 幀擊倒窗口）壓他起身</strong>！因為跳入攻擊屬於中段技，蓋爾要防禦必須拉正後「站防」，<strong>只要他一離開下方向就會解除下蓄力，6 幀發生的 OD 空翻腳刀（<code>[2]8KK</code>，1～11 幀完全無敵）直接放不出來</strong>；就算他原本就留好蓄力硬凹，安全跳也會在落地後穩穩防住，讓他白吃 <strong>-33 幀</strong>滿套懲罰！（註：場中擊倒因對手可選擇<strong>向後受身 Back Rise</strong>拉開距離，安全跳與固定壓制建議優先在角落使用。）
-* <strong>常見踩雷</strong>：
-  * 蓋爾蹲重腳（-12）、空翻腳刀（-30～-33）、翻身旋踢（-8）被你防住卻只點一下輕拳或不敢反打，讓他白白逃回遠距離繼續蓄力。</li>
+<ol>
+<li><strong>在角落用「安全跳」封死 OD 空翻腳刀</strong>：一旦把蓋爾關進角落，<strong>優先用安全跳（+41～+45 幀擊倒窗口）壓他起身</strong>！因為跳入攻擊屬於中段技，蓋爾要防禦必須拉正後「站防」，<strong>只要他一離開下方向就會解除下蓄力，6 幀發生的 OD 空翻腳刀（<code>[2]8KK</code>，1～11 幀完全無敵）直接放不出來</strong>；就算他原本就留好蓄力硬凹，安全跳也會在落地後穩穩防住，讓他白吃 <strong>-33 幀</strong>滿套懲罰！（註：場中擊倒因對手可選擇<strong>向後受身 Back Rise</strong>拉開距離，安全跳與固定壓制建議優先在角落使用。）</li>
+<li><strong>常見踩雷</strong>：</li>
+<li>蓋爾蹲重腳（-12）、空翻腳刀（-30～-33）、翻身旋踢（-8）被你防住卻只點一下輕拳或不敢反打，讓他白白逃回遠距離繼續蓄力。</li>
 </ol>
 <hr />
 <h2>三、各角色對戰蓋爾實戰小抄</h2>
@@ -120,4 +135,11 @@
 <li><strong>距離補正與確反射程落差</strong>：蓋爾的<strong>音速爆擊（<code>[4]6P</code>）</strong> 基礎貼身被防雖為 -3，但距離越遠越有利；<strong>迴旋後踢（<code>4MK/6MK</code>，-6）</strong> 與 <strong>站重腳（<code>5HK</code>，-4）</strong> 若打在極限尖端，擊退距離常會讓短手 4～6 幀輕中攻擊揮空，實戰務必確認自身角色長距離確反技的射程。另外一般防禦音速爆擊會微損動力槽，搭配<strong>動力撥擋</strong>能回氣但要注意蓋爾突然開<strong>動力箭步（綠衝）</strong>搶投。</li>
 <li><strong>面對蹲蓄力蓋爾「何時能跳」的流派選擇</strong>：保守派主張只要蓋爾蹲著蓄力就絕不起跳，純粹靠邊防邊走與垂直跳把他擠進角落；積極派則會在中距離抓準<strong>完美撥擋（10 幀硬直）</strong>或對手剛解除蓄力踏步的瞬間果斷前跳／繞背跳給心理壓力，讓蓋爾不敢安心蓄力。</li>
 <li><strong>角落安全跳 vs 場中向後受身差異</strong>：角落壓起身利用<strong>安全跳（+41～+45 幀）</strong>能迫使蓋爾站防解除下蓄力；但在場中對手倒地可選<strong>向後受身（Back Rise）</strong>拉開距離，跳入壓制與確反站位都會改變，追擊時需視落點彈性調整。</li>
-</ul><div class="nav"><span><a href="c73.html">← C73 豪鬼（Akuma）對策攻略</a></span><span style="text-align:right"><a href="c75.html">C75 應對英格麗特（Ingrid） →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c73.html">← C73 豪鬼（Akuma）對策攻略</a><a href="../index.html">返回總覽目錄</a><a href="c75.html">C75 應對英格麗特（Ingrid） →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

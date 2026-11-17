@@ -1,16 +1,31 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Butterbread39 In Depth Beginner s Guide｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 430 篇</div><h1>Butterbread39 In Depth Beginner s Guide</h1><h2>核心資訊與影片導航</h2>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="m" data-id="430" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html">單篇攻略</a><a href="../manuals.html" class="on">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../manuals.html">影片實戰手冊</a> / 第 401–500 篇</div><header class="ph"><span class="pnum">430</span><h1>Butterbread39 In Depth Beginner s Guide</h1></header><h2>核心資訊與影片導航</h2>
 <ul>
 <li><strong>影片標題</strong>：In Depth Beginner's Guide to C. Viper in Street Fighter 6!!</li>
 <li><strong>頻道作者</strong>：Butterbread39</li>
 <li><strong>YouTube 識別碼</strong>：<code>-_cUM1bvzN0</code></li>
 <li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=-_cUM1bvzN0">觀看原版 YouTube 影片</a></li>
-<li><strong>核心教學主旨</strong>：
+<li><strong>核心教學主旨</strong>：<br />
   本手冊針對高技術門檻角色 C. 毒蛇（C. Viper）在《快打旋風 6》系統下的移植與重構進行深度戰術拆解。C. Viper 具備高度特化的移動機制與專屬取消體系，其立回核心圍繞「燃燒踢（Burn Kick）」的逆向壓制與「超跳取消（Super Jump Cancel, SJC）」的招式延伸。本指南為初學者與進階玩家理清 Viper 的三大立體架構：必殺技派生與假動作（Feint）、SJC 資源管理與 Install 強化模式（SA1）、以及具備極高搬運能力與角落無消耗摔死循環（Throw Loop）的實戰對局思路（Game Plan）。</li>
 </ul>
 <hr />
@@ -64,9 +79,9 @@
 <h2>核心技術/心法深入拆解</h2>
 <h3>1. 超跳取消（SJC）與地面必殺技取消原理</h3>
 <ul>
-<li><strong>機制底層邏輯</strong>：
+<li><strong>機制底層邏輯</strong>：<br />
   Viper 的許多普通技（如 2HP、5HK）原本不具備 Special Cancel 屬性，但系統賦予其 Super Jump Cancel 判定。超跳在起跳時存在數個幀的「地面預備幀（Pre-jump frames）」。</li>
-<li><strong>精準指令輸入（Tiger Knee 式複合輸入）</strong>：
+<li><strong>精準指令輸入（Tiger Knee 式複合輸入）</strong>：<br />
   欲在地面打出取消必殺技（例如 2HP &gt; SJC &gt; 214P）：</li>
 <li>傳統直覺輸入：<code>2HP</code> $\to$ <code>28</code> $\to$ <code>214P</code>（極易失敗）。</li>
 <li>高階簡化輸入：利用指令暫存，在普通技硬直結束時輸入 <code>236</code> $\to$ <code>9</code> $\to$ <code>P</code> 或 <code>214</code> $\to$ <code>9</code> $\to$ <code>P</code>，利用推向 <code>9/8</code> 觸發超跳起跳判定，並在起跳預備幀內讀取到必殺技指令，直接將超跳覆蓋為必殺技。</li>
@@ -154,20 +169,27 @@
 <h2>大師避坑指南與實戰心法（Common Pitfalls &amp; Master Tips）</h2>
 <h3>🚨 新手常見致命失誤（Common Pitfalls）</h3>
 <ol>
-<li><strong>無節制超跳導致自我氣竭（Burnout）</strong>：
-   - 新手常迷戀 SJC 的高機動與取消能力，忽略了每次 SJC 需耗費 1 格 Drive Gauge。在非 SA1 狀態下連續取消兩次就會讓綠條見底，極易被對手推入版邊陷入死局。</li>
-<li><strong>過度依賴非取消普通技立回</strong>：
-   - Viper 的普通技性能相對特化，許多重攻擊若不配搭 SJC 或專屬必殺技派生，被防禦後破綻極大。切忌像使用路克（Luke）或春麗般單純依賴普通技伸空拳立回。</li>
-<li><strong>雷電衝刺派生時機僵化</strong>：
-   - 每次使用 236HP 習慣性必出 <code>6PP</code> 派生。若對手已經防住第一段，盲目派生將直接被對手大確反（Punish Counter）。</li>
+<li><strong>無節制超跳導致自我氣竭（Burnout）</strong>：</li>
+<li>新手常迷戀 SJC 的高機動與取消能力，忽略了每次 SJC 需耗費 1 格 Drive Gauge。在非 SA1 狀態下連續取消兩次就會讓綠條見底，極易被對手推入版邊陷入死局。</li>
+<li><strong>過度依賴非取消普通技立回</strong>：</li>
+<li>Viper 的普通技性能相對特化，許多重攻擊若不配搭 SJC 或專屬必殺技派生，被防禦後破綻極大。切忌像使用路克（Luke）或春麗般單純依賴普通技伸空拳立回。</li>
+<li><strong>雷電衝刺派生時機僵化</strong>：</li>
+<li>每次使用 236HP 習慣性必出 <code>6PP</code> 派生。若對手已經防住第一段，盲目派生將直接被對手大確反（Punish Counter）。</li>
 </ol>
 <h3>💡 頂尖教練進階心法（Master Tips）</h3>
 <ol>
-<li><strong>善用 SA1 扭轉資源逆境</strong>：
-   - SA1 具備打擊無敵判定，適合用於插動破壓制。更關鍵的是它的 Install 效果能完全免除 SJC 與必殺技派生的氣量消耗。
-   - 甚至在自己陷入 Burnout（氣竭）時，SA1 賦予一次「超跳」權限，這是全遊戲唯一能在氣竭狀態下使用的特權移動機制。</li>
-<li><strong>空間壓迫：讓對手在「防地震鎚」與「防燃燒踢」中崩潰</strong>：
-   - 站在中距離，利用 214P（下段）逼迫對手蹲防或嘗試起跳。一旦對手被制約而不敢前進，立刻用輕/中 214K 飛越頭頂打擊逆向。</li>
-<li><strong>角落摔死循環（Corner Throw Loop）的無情執行</strong>：
-   - 利用 SA2 誇張的搬運性能將對手推入角落後，Viper 具備無需花費任何 Drive 資源的 Corner Throw Loop。在角落請無情貫徹「摔 $\to$ 走步再摔 $\to$ 誘騙拆摔打擊」的鐵血三擇，直到對手倒下。</li>
-</ol><div class="nav"><span><a href="429.html">← 429 Yoro sensei SF6 玩C VIPER之前你必學的重點 大跳取</a></span><span style="text-align:right"><a href="431.html">431 예미제이 스파6 c 바이퍼 콤보트라이얼  클래식  모던 →</a></span></div></div></body></html>
+<li><strong>善用 SA1 扭轉資源逆境</strong>：</li>
+<li>SA1 具備打擊無敵判定，適合用於插動破壓制。更關鍵的是它的 Install 效果能完全免除 SJC 與必殺技派生的氣量消耗。</li>
+<li>甚至在自己陷入 Burnout（氣竭）時，SA1 賦予一次「超跳」權限，這是全遊戲唯一能在氣竭狀態下使用的特權移動機制。</li>
+<li><strong>空間壓迫：讓對手在「防地震鎚」與「防燃燒踢」中崩潰</strong>：</li>
+<li>站在中距離，利用 214P（下段）逼迫對手蹲防或嘗試起跳。一旦對手被制約而不敢前進，立刻用輕/中 214K 飛越頭頂打擊逆向。</li>
+<li><strong>角落摔死循環（Corner Throw Loop）的無情執行</strong>：</li>
+<li>利用 SA2 誇張的搬運性能將對手推入角落後，Viper 具備無需花費任何 Drive 資源的 Corner Throw Loop。在角落請無情貫徹「摔 $\to$ 走步再摔 $\to$ 誘騙拆摔打擊」的鐵血三擇，直到對手倒下。</li>
+</ol><nav class="pager"><a href="429.html">← 429 Yoro sensei SF6 玩C VIPER之前你必學的重點 大跳取</a><a href="../manuals.html">返回手冊目錄</a><a href="431.html">431 예미제이 스파6 c 바이퍼 콤보트라이얼  클래식  모던 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

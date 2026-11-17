@@ -1,16 +1,31 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ぷげら pugera ヴァイパーのハイジャンプキャンセル・低空バーニング｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 435 篇</div><h1>ぷげら pugera ヴァイパーのハイジャンプキャンセル・低空バーニング</h1><h2>核心資訊與影片導航</h2>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="m" data-id="435" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html">單篇攻略</a><a href="../manuals.html" class="on">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../manuals.html">影片實戰手冊</a> / 第 401–500 篇</div><header class="ph"><span class="pnum">435</span><h1>ぷげら pugera ヴァイパーのハイジャンプキャンセル・低空バーニング</h1></header><h2>核心資訊與影片導航</h2>
 <ul>
 <li><strong>影片標題</strong>：ヴァイパーのハイジャンプキャンセル・低空バーニングなどの入力コツ集！やり方を知ればどんどんできるようになります【ぷげら/スト6】</li>
 <li><strong>頻道作者</strong>：ぷげら pugera</li>
 <li><strong>YouTube 識別碼</strong>：<code>HwSZmtsh-k4</code></li>
 <li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=HwSZmtsh-k4">觀看原片</a></li>
-<li><strong>核心教學主旨</strong>：
+<li><strong>核心教學主旨</strong>：<br />
   本手冊由日本頂尖職業格鬥選手 Pugera 深入剖析高難度角色/特殊技巧中的「大跳取消（High Jump Cancel，簡稱 HJC）」與「複合必殺技指令」輸入心法。【字幕補充：本片為 Pugera 在《快打旋風 6》社群 Mod 環境下操作 C. Viper 的經典技巧教學，其底層判定原理通用於格鬥遊戲的預約輸入系統】。影片解析格鬥遊戲中「預約輸入緩衝窗口」、「幀數延遲感（Delay）」與「指令重疊優先級判定」的底層機制，徹底攻克「起跳前被判定為空中版」或「只出大跳不出必殺技」的致命操作盲點，建立極具穩定度的大師級指令肌肉記憶。</li>
 </ul>
 <hr />
@@ -55,17 +70,17 @@
 <h2>核心技術/心法深入拆解</h2>
 <h3>1. 「微頓後極速輸入」（Delay &amp; Snap）指令哲學</h3>
 <ul>
-<li><strong>底層物理機制</strong>：
+<li><strong>底層物理機制</strong>：<br />
   在具有大跳取消（High Jump Cancel）特性的動作中，一般玩家的直覺是「越快輸入越好」，因此常在 5HK 揮出的瞬間就瘋狂旋轉搖桿。這會導致輸入指令在普攻的命中停頓（Hitstop）內被提前消耗，甚至系統只辨識到了大跳（9）的指令，後續按鍵卻因為輸入過早被吃掉，角色便直直跳上半空。</li>
-<li><strong>Pugera 的解法公式</strong>：
-  $$\text{5HK} \longrightarrow \text{刻意微停（約 15\sim18 幀）} \longrightarrow \text{瞬間爆發完成 } 2369+\text{KK}$$
+<li><strong>Pugera 的解法公式</strong>：<br />
+  $$\text{5HK} \longrightarrow \text{刻意微停（約 15\sim18 幀）} \longrightarrow \text{瞬間爆發完成 } 2369+\text{KK}$$<br />
   在 5HK 確實擊中對手的後半段，一口氣將 <code>236</code> 帶到 <code>9</code>，並在推到 <code>9</code> 之後的 1~2 幀內壓下雙腳鍵。此時角色正處於起跳前硬直（Pre-jump），系統判定必殺技成立但角色仍接觸地面，因此吐出威力強大的「地上版 OD 招式」。</li>
 </ul>
 <h3>2. 目視衝擊波與音效反饋（震地取消心法）</h3>
 <ul>
-<li><strong>節奏分水嶺</strong>：
+<li><strong>節奏分水嶺</strong>：<br />
   震地（Seismo）類型的招式不能依賴盲目的「預先預約（Buffer）」，過早輸入只會讓角色單純垂直大跳（High Jump Whiff）。</li>
-<li><strong>確認要領</strong>：
+<li><strong>確認要領</strong>：<br />
   看到地面特效裂開、音效發出「砰（バーン）」的一瞬間，大腦給予手部訊號完成 <code>623 -&gt; 8/9 + P</code>。將手部發動時機與遊戲內的「打擊命中特效」綁定，而非與「出招準備動作」綁定，是大幅降低失誤率的最高心法。</li>
 </ul>
 <h3>3. 「地上版」與「低空版」的按鍵時機對立面</h3>
@@ -119,8 +134,15 @@
 </ol>
 <h3>💡 頂尖選手思維（Pugera Mindset）</h3>
 <ul>
-<li><strong>「先慢後快（Slow-Start, Fast-Finish）」</strong>：
+<li><strong>「先慢後快（Slow-Start, Fast-Finish）」</strong>：<br />
   頂級格鬥選手操作高難度取消時，絕不是全速狂搖。起手前有一段極其冷靜的「確認等待時間（Neutral Frames）」，一旦起手，指令完成的速度則是極限的「瞬發」。</li>
-<li><strong>將操作與畫面音效錨定</strong>：
+<li><strong>將操作與畫面音效錨定</strong>：<br />
   震地或重攻擊命中時的「打擊音效與特效爆破」就是你的節拍器。聽聲出招，遠比在腦中數幀數還要穩定百倍。只要找到那個「砰」的命中直後時機，任何高難度的大跳取消都能信手拈來。</li>
-</ul><div class="nav"><span><a href="434.html">← 434 MC MuraFGC SF6 C Viper Starter Guide</a></span><span style="text-align:right"><a href="436.html">436 Nephew So You Want to Learn C  V →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="434.html">← 434 MC MuraFGC SF6 C Viper Starter Guide</a><a href="../manuals.html">返回手冊目錄</a><a href="436.html">436 Nephew So You Want to Learn C  V →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

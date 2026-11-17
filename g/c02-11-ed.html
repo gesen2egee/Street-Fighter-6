@@ -1,21 +1,36 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>艾德（Ed）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>艾德（Ed）角色招式幀數數據</h1><p>艾德（Ed）是一位拳腳長、具備飛行道具與拉人手段的中距離拳擊型角色（Boxer）。在現行版本官方數據下，他的<strong>多數地面普通技被防為負幀（僅站重腳 <code>5HK</code> 被防為 <code>+4</code> 幀）</strong>，主要仰賴<strong>蓄力版／極限技（OD）念力閃刺拳</strong>與<strong>念力飛拳 Lv2</strong>搶下正幀壓制，且<strong>無敵技／昇龍（念力上鉤拳）發生速度偏慢（10～16 幀）</strong>。本指南已全面依 Capcom 官方最新幀數表與通用系統公式校準，協助你精準掌握艾德每一招的攻防判讀與確反窗口。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-ed" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>艾德（Ed）角色招式幀數數據</h1></header><p>艾德（Ed）是一位拳腳長、具備飛行道具與拉人手段的中距離拳擊型角色（Boxer）。在現行版本官方數據下，他的<strong>多數地面普通技被防為負幀（僅站重腳 <code>5HK</code> 被防為 <code>+4</code> 幀）</strong>，主要仰賴<strong>蓄力版／極限技（OD）念力閃刺拳</strong>與<strong>念力飛拳 Lv2</strong>搶下正幀壓制，且<strong>無敵技／昇龍（念力上鉤拳）發生速度偏慢（10～16 幀）</strong>。本指南已全面依 Capcom 官方最新幀數表與通用系統公式校準，協助你精準掌握艾德每一招的攻防判讀與確反窗口。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>艾德並非完全沒有正幀普通技</strong>：<strong>站重腳（<code>5HK</code>）</strong>被防直接 <strong><code>+4</code> 幀</strong>（但對蹲姿會揮空，可蹲下閃避後反擊！）；其餘地面普通技一般防禦下皆為負幀，須靠<strong>動力箭步（綠衝，命中與被防固定 <code>+4</code> 幀）</strong>或<strong>燒盡防禦（被防固定 <code>+4</code> 幀）</strong>才轉正。
-2. <strong>快速認清「假安全」負幀破綻（擋到必反！）</strong>：
-   * <strong>站輕拳（<code>5LP</code>）</strong>：<strong>4 幀</strong>最速技，命中 <code>+4</code>、被防 <strong><code>-1</code></strong>（僅目標連段<strong>閃刺拳組合技</strong> 2 段 <code>-3</code>、3 段 <strong><code>-8</code></strong>；<strong>蹲輕拳 <code>2LP</code></strong> 則是 <strong>4 幀</strong>、被防 <strong><code>-3</code></strong>）。
-   * <strong>蹲中拳（<code>2MP</code>）與蹲重腳（<code>2HK</code>）</strong>：皆為被防 <strong><code>-6</code> 幀</strong>（<code>2HK</code> 可取消必殺技，且接「低猛擊組合技」被防達 <strong><code>-8</code></strong>）。
-   * <strong>念力迅擊拳（俗稱閃電拳，<code>214P</code>）</strong>：輕版被防 <strong><code>-5</code></strong>、中／重版 <strong><code>-12</code></strong>、<strong>OD 版被防 <code>-4</code></strong>（全版本皆有確定反擊，OD 版雖可取消 SA2 仍別放過確反！）。
-3. <strong>三大 <code>+4</code> 正幀壓制武器（擋到別亂搶！）</strong>：
-   * <strong>蓄力版念力閃刺拳（俗稱拉繩／Snatcher，<code>236K</code> 長按）與 OD 念力閃刺拳</strong>：無論輕／中蓄力或 OD 版，被防一律 <strong><code>+4</code> 幀</strong>（但<strong>單按不蓄力</strong>的輕／中版被防是 <strong><code>-6</code></strong>）。
-   * <strong>念力飛拳 Lv2（<code>5HP</code> 按住超過 60 幀）</strong>：被防 <strong><code>+4</code> 幀</strong>（Lv1 超過 30 幀被防 <strong><code>-2</code></strong>，但在版邊附近為 <strong><code>0</code></strong> 幀）。
-   * <strong>念力閃擊（<code>236P</code>）與念力彈（<code>236P~6P</code>）</strong>：本體閃擊被防 <strong><code>-5</code></strong>（OD 版 <strong><code>-2</code></strong>）；貼身射出的念力彈被防 <strong><code>-8</code></strong>（OD 版 <strong><code>-2</code></strong>），僅在中遠距飛行抵銷硬直後才具進攻優勢。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>艾德並非完全沒有正幀普通技</strong>：<strong>站重腳（<code>5HK</code>）</strong>被防直接 <strong><code>+4</code> 幀</strong>（但對蹲姿會揮空，可蹲下閃避後反擊！）；其餘地面普通技一般防禦下皆為負幀，須靠<strong>動力箭步（綠衝，命中與被防固定 <code>+4</code> 幀）</strong>或<strong>燒盡防禦（被防固定 <code>+4</code> 幀）</strong>才轉正。<br />
+2. <strong>快速認清「假安全」負幀破綻（擋到必反！）</strong>：<br />
+   * <strong>站輕拳（<code>5LP</code>）</strong>：<strong>4 幀</strong>最速技，命中 <code>+4</code>、被防 <strong><code>-1</code></strong>（僅目標連段<strong>閃刺拳組合技</strong> 2 段 <code>-3</code>、3 段 <strong><code>-8</code></strong>；<strong>蹲輕拳 <code>2LP</code></strong> 則是 <strong>4 幀</strong>、被防 <strong><code>-3</code></strong>）。<br />
+   * <strong>蹲中拳（<code>2MP</code>）與蹲重腳（<code>2HK</code>）</strong>：皆為被防 <strong><code>-6</code> 幀</strong>（<code>2HK</code> 可取消必殺技，且接「低猛擊組合技」被防達 <strong><code>-8</code></strong>）。<br />
+   * <strong>念力迅擊拳（俗稱閃電拳，<code>214P</code>）</strong>：輕版被防 <strong><code>-5</code></strong>、中／重版 <strong><code>-12</code></strong>、<strong>OD 版被防 <code>-4</code></strong>（全版本皆有確定反擊，OD 版雖可取消 SA2 仍別放過確反！）。<br />
+3. <strong>三大 <code>+4</code> 正幀壓制武器（擋到別亂搶！）</strong>：<br />
+   * <strong>蓄力版念力閃刺拳（俗稱拉繩／Snatcher，<code>236K</code> 長按）與 OD 念力閃刺拳</strong>：無論輕／中蓄力或 OD 版，被防一律 <strong><code>+4</code> 幀</strong>（但<strong>單按不蓄力</strong>的輕／中版被防是 <strong><code>-6</code></strong>）。<br />
+   * <strong>念力飛拳 Lv2（<code>5HP</code> 按住超過 60 幀）</strong>：被防 <strong><code>+4</code> 幀</strong>（Lv1 超過 30 幀被防 <strong><code>-2</code></strong>，但在版邊附近為 <strong><code>0</code></strong> 幀）。<br />
+   * <strong>念力閃擊（<code>236P</code>）與念力彈（<code>236P~6P</code>）</strong>：本體閃擊被防 <strong><code>-5</code></strong>（OD 版 <strong><code>-2</code></strong>）；貼身射出的念力彈被防 <strong><code>-8</code></strong>（OD 版 <strong><code>-2</code></strong>），僅在中遠距飛行抵銷硬直後才具進攻優勢。<br />
 4. <strong>昇龍與 SA1 發生偏慢</strong>：輕念力上鉤拳發生 <strong>10 幀</strong>（無地面無敵）、<strong>OD 念力上鉤拳發生 13 幀</strong>（1～16 幀完全無敵、被防 <strong><code>-28</code></strong>）、<strong>SA1 念力風暴發生 13 幀</strong>（1～14 幀僅對打擊／投技無敵、被防 <strong><code>-32</code></strong>），面對壓起身輕拳（Safe Jab）容易被對方收招防住並遭受大連段確反。</p>
 </blockquote>
 <hr />
@@ -767,9 +782,16 @@
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
 <li><strong>官方數據已裁決並移除的舊片誤區</strong>：早期教學影片常見的「站輕拳被防 <code>-4</code>」、「站重腳被防 <code>-2</code> 或 <code>+3</code>」、「蹲中拳被防 <code>-1</code>」、「蹲重腳被防 <code>-4</code>」、「蹲重拳可蓄力 <code>+4</code>」、「蓄力閃刺拳被防 <code>+1</code>」、「OD 迅擊被防 <code>-3</code>」、「SA1 發生 <code>10 幀</code>」及不明「後重拳」等說法，<strong>皆已由 Capcom 官方最新幀數表全面訂正如上表</strong>，請勿再依舊數據誤判確反。</li>
-<li><strong>距離與版邊造成的情境差異</strong>：
-   * <strong>念力飛拳 Lv1</strong>：場中被防 <strong><code>-2</code> 幀</strong>，但在<strong>版邊附近被防額外 +2 幀（變為 <code>0</code> 幀）</strong>，對手貼牆防禦後若貿然搶 4 幀輕拳易相殺或落後於艾德的 <code>5LP</code>。
-   * <strong>念力彈（<code>236P~6P</code>）</strong>：官方表列貼身被防為 <strong><code>-8</code> 幀</strong>（OD <strong><code>-2</code></strong>），實戰於中遠距離發射時，飛行道具飛行時間會抵銷艾德收招硬直，使遠距離被防轉為安全甚至有利。
-   * <strong>長手招式的尖端距離</strong>：<code>2HK</code>、<code>2MP</code>、<code>職業殺手組合技 2 段</code> 雖然官方標註被防 <strong><code>-6</code> 幀</strong>，但在極限距離打在對手防禦前端時，因雙方距離過遠，多數角色 4～6 幀短手技會揮空構不到，實戰需視距離判斷是否確反。</li>
+<li><strong>距離與版邊造成的情境差異</strong>：</li>
+<li><strong>念力飛拳 Lv1</strong>：場中被防 <strong><code>-2</code> 幀</strong>，但在<strong>版邊附近被防額外 +2 幀（變為 <code>0</code> 幀）</strong>，對手貼牆防禦後若貿然搶 4 幀輕拳易相殺或落後於艾德的 <code>5LP</code>。</li>
+<li><strong>念力彈（<code>236P~6P</code>）</strong>：官方表列貼身被防為 <strong><code>-8</code> 幀</strong>（OD <strong><code>-2</code></strong>），實戰於中遠距離發射時，飛行道具飛行時間會抵銷艾德收招硬直，使遠距離被防轉為安全甚至有利。</li>
+<li><strong>長手招式的尖端距離</strong>：<code>2HK</code>、<code>2MP</code>、<code>職業殺手組合技 2 段</code> 雖然官方標註被防 <strong><code>-6</code> 幀</strong>，但在極限距離打在對手防禦前端時，因雙方距離過遠，多數角色 4～6 幀短手技會揮空構不到，實戰需視距離判斷是否確反。</li>
 <li><strong>版本演進與壓起身路線提醒</strong>：早期的「版邊摔後接殺戮步法正幀柔道（Throw Loop）」已在後續季度平衡中被移除，現今角落前摔後多改以撥擋動力箭步（生綠衝）貼身或蓄力念力閃刺拳（被防 <code>+4</code>）重新展開壓制；而 <code>+41～+45</code> 幀安全跳路線在場中容易因對手向後受身拉開距離，建議優先於版邊使用。</li>
-</ol><div class="nav"><span><a href="c02-11-ehonda.html">← C02-11 埃德蒙・本田（E. Honda）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-elena.html">C02-11 艾蓮娜（Elena）角色招式幀數數據 →</a></span></div></div></body></html>
+</ol><nav class="pager"><a href="c02-11-ehonda.html">← C02-11 埃德蒙・本田（E. Honda）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-elena.html">C02-11 艾蓮娜（Elena）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

@@ -1,16 +1,31 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>どぐら 生駒デビル スト６ 振り向き昇龍を確実に出す入力は  昇龍コ｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 379 篇</div><h1>どぐら 生駒デビル スト６ 振り向き昇龍を確実に出す入力は  昇龍コ</h1><h2>核心資訊與影片導航</h2>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="m" data-id="379" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html">單篇攻略</a><a href="../manuals.html" class="on">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../manuals.html">影片實戰手冊</a> / 第 301–400 篇</div><header class="ph"><span class="pnum">379</span><h1>どぐら 生駒デビル スト６ 振り向き昇龍を確実に出す入力は  昇龍コ</h1></header><h2>核心資訊與影片導航</h2>
 <ul>
 <li><strong>影片標題</strong>：【スト６】振り向き昇龍を確実に出す入力は？ 昇龍コマンド入力のあれこれを語るどぐら</li>
 <li><strong>頻道作者</strong>：どぐら 生駒デビル</li>
 <li><strong>YouTube ID</strong>：WELec4Rluzk</li>
 <li><strong>原片跳轉連結</strong>：<a href="https://www.youtube.com/watch?v=WELec4Rluzk">點擊前往 YouTube 觀看原片</a></li>
-<li><strong>核心教學主旨</strong>：
+<li><strong>核心教學主旨</strong>：<br />
   本片由日本知名職業格鬥遊戲選手どぐら（Dogura）主講，深入剖析《快打旋風 6》中「昇龍拳對空」的底層系統機制，尤其是令無數玩家頭痛的「回頭昇龍（振り向き昇龍）」指令輸入原理。內容涵蓋了對空昇龍「越晚按（引きつけ）越強大」的幀數判定優勢、蹲姿對空比站姿對空更能拉長反應時間並避開壓制判定的根本原因，以及如何利用「逆瑜珈（反半圈 63214）」指令在對手逆向跳入跨過頭頂的瞬間，100% 穩定觸發回頭昇龍的職業級指令技巧，徹底解決逆向對空時常發生的指令吃招或前衝誤發問題。</li>
 </ul>
 <hr />
@@ -91,10 +106,10 @@
                 ──&gt; 系統判定成立：轉身回頭昇龍拳！
 </code></pre>
 <ul>
-<li><strong>系統底層代碼邏輯拆解</strong>：
-  1. <strong>預先存入前要素</strong>：在對手跨過頭頂前輸入「6」，此時你正往前走穿過對手下方。
-  2. <strong>位置互換瞬間</strong>：當對手位置與你交錯換位，原本的「6（向右）」在系統判定中瞬間變成了新朝向的「4（向後）」，而原本的「4（向左）」則變成了新朝向的「6（向前）」。
-  3. <strong>逆半圈的奇蹟拼合</strong>：當你拉搖桿完成 <code>3 -&gt; 2 -&gt; 1 -&gt; 4</code>，在換位後的全新方向視角下，你實際上輸入的是：<ul>
+<li><strong>系統底層代碼邏輯拆解</strong>：</li>
+<li><strong>預先存入前要素</strong>：在對手跨過頭頂前輸入「6」，此時你正往前走穿過對手下方。</li>
+<li><strong>位置互換瞬間</strong>：當對手位置與你交錯換位，原本的「6（向右）」在系統判定中瞬間變成了新朝向的「4（向後）」，而原本的「4（向左）」則變成了新朝向的「6（向前）」。</li>
+<li><strong>逆半圈的奇蹟拼合</strong>：當你拉搖桿完成 <code>3 -&gt; 2 -&gt; 1 -&gt; 4</code>，在換位後的全新方向視角下，你實際上輸入的是：<ul>
 <li>換位前輸入的「6」被延遲緩衝讀取為新方向的「前」要素。</li>
 <li>後續逆半圈所經過的「2（下）」與「3/1（斜下）」完美補齊了昇龍拳需要的「下」與「前斜下」。</li>
 <li>指令判讀器認定你完成了 <code>6 -&gt; 2 -&gt; 3</code> 昇龍指令，直接以轉向後的姿態向上噴發！</li>
@@ -149,12 +164,12 @@
 <h2>大師避坑指南與實戰心法（Common Pitfalls &amp; Master Tips）</h2>
 <h3>🚨 新手與進階者常見地雷（NG 行為）</h3>
 <ol>
-<li><strong>慌張狂搖搖桿（ガチャ入力）</strong>：
-   * 看到對手逆向跳就失控地快速亂轉 623623 並猛按攻擊鍵。這會導致指令緩衝區被垃圾指令塞滿，高機率出現「出招太早朝前方揮空」或「直接原地出 5P/2P 被對手逆向打滿全套連段」。</li>
-<li><strong>站著等對手跳過來</strong>：
-   * 站姿狀態下角色的受擊體積過高，給對手極佳的起手打擊點，往往在你的昇龍指令還在推「6」或「2」時，就已經被對手腳尖點中破招。</li>
-<li><strong>對空「求快」的心理陷阱</strong>：
-   * 誤以為對空跟確反一樣越快按越好。昇龍對空是少數<strong>「越慢按越穩、判定越強」</strong>的系統動作，必須克服恐懼，學會「放進來打」。</li>
+<li><strong>慌張狂搖搖桿（ガチャ入力）</strong>：</li>
+<li>看到對手逆向跳就失控地快速亂轉 623623 並猛按攻擊鍵。這會導致指令緩衝區被垃圾指令塞滿，高機率出現「出招太早朝前方揮空」或「直接原地出 5P/2P 被對手逆向打滿全套連段」。</li>
+<li><strong>站著等對手跳過來</strong>：</li>
+<li>站姿狀態下角色的受擊體積過高，給對手極佳的起手打擊點，往往在你的昇龍指令還在推「6」或「2」時，就已經被對手腳尖點中破招。</li>
+<li><strong>對空「求快」的心理陷阱</strong>：</li>
+<li>誤以為對空跟確反一樣越快按越好。昇龍對空是少數<strong>「越慢按越穩、判定越強」</strong>的系統動作，必須克服恐懼，學會「放進來打」。</li>
 </ol>
 <h3>💡 頂尖職業心法（Dogura's Mindset）</h3>
 <ul>
@@ -162,4 +177,11 @@
 <li>當發現對手跳躍軌跡明顯會越過頭頂時，不要原地發慌，主動往前走一步（輸入 6），既能破壞對手的打背著地點，又能直接為後續的 <code>3214P</code> 回頭昇龍鋪好完美的指令前置。</li>
 <li><strong>注重風格與競技格調（フェアプレイと美学）</strong>：</li>
 <li>どぐら在影片尾聲特別叮嚀，想要成為強者，勝負心固然重要，但不要把心力放在極端消極、破壞遊戲樂趣或讓人反感（寒い/ダサい）的手法上。打出乾淨、紮實、符合力與美原理的攻防，才能在格鬥社群中長久立足並獲得真正強者的認同。</li>
-</ul><div class="nav"><span><a href="378.html">← 378 ぷげら pugera とりあえずコレ  プロが教えるアレックス立ち回り解</a></span><span style="text-align:right"><a href="380.html">380 Nephew Let s Learn Elena   ELENA →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="378.html">← 378 ぷげら pugera とりあえずコレ  プロが教えるアレックス立ち回り解</a><a href="../manuals.html">返回手冊目錄</a><a href="380.html">380 Nephew Let s Learn Elena   ELENA →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

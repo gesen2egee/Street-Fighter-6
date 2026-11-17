@@ -1,15 +1,30 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>對遠程牽制型角色（JP 等）的應對重點｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / JP（jp） 對策</div><h1>對遠程牽制型角色（JP 等）的應對重點</h1><p>遇到會一直丟彈幕、擺設置、放空間門，還會用當身技<strong>失憶（Amnesia，22K）</strong>跟二級超必殺<strong>拉夫舒克（Lovushka，SA2）</strong>把你關在全螢幕的遠程牽制型角色（以 JP 為代表），是不是覺得連靠近摸他一下都好難？這篇指南依據官方最新幀數與實戰對策，整理了從全螢幕突破彈幕、應對空間門與設置，到破解當身與燒盡壓制的完整思路，特別適合每次對上遠距離角色就急躁衝過去送頭的玩家。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c77" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C77 JP（jp） 對策</div><header class="ph"><span class="pnum">C77</span><h1>對遠程牽制型角色（JP 等）的應對重點</h1></header><p>遇到會一直丟彈幕、擺設置、放空間門，還會用當身技<strong>失憶（Amnesia，22K）</strong>跟二級超必殺<strong>拉夫舒克（Lovushka，SA2）</strong>把你關在全螢幕的遠程牽制型角色（以 JP 為代表），是不是覺得連靠近摸他一下都好難？這篇指南依據官方最新幀數與實戰對策，整理了從全螢幕突破彈幕、應對空間門與設置，到破解當身與燒盡壓制的完整思路，特別適合每次對上遠距離角色就急躁衝過去送頭的玩家。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>最大敵人是「自己急躁」</strong>：被飛行道具打中幾發不致命，用血量與防禦慢慢換取前進空間，把他逼到角落就是勝利。
-2. <strong>別看到他抬手就按撥擋</strong>：JP 很愛用<strong>拐袋魔佯攻（236[K]，假動作）</strong>騙你按動力撥擋，再立刻瞬移過來摔你或直接用遠距指令投<strong>擁抱（214K）</strong>抓你；請等暗影快飛到身邊再決定要不要撥擋。
-3. <strong>遇到空間門（出發，214P），絕對別站在正下方，也別後滾</strong>：站在空間門的「前方或後方」，看到他發動<strong>出發-窗口（214P~214LP/MP，瞬移）</strong>出現紫光與轉杖預兆時（第 26 幀起為空中狀態、第 31 幀才可出招），直接打對空！
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>最大敵人是「自己急躁」</strong>：被飛行道具打中幾發不致命，用血量與防禦慢慢換取前進空間，把他逼到角落就是勝利。<br />
+2. <strong>別看到他抬手就按撥擋</strong>：JP 很愛用<strong>拐袋魔佯攻（236[K]，假動作）</strong>騙你按動力撥擋，再立刻瞬移過來摔你或直接用遠距指令投<strong>擁抱（214K）</strong>抓你；請等暗影快飛到身邊再決定要不要撥擋。<br />
+3. <strong>遇到空間門（出發，214P），絕對別站在正下方，也別後滾</strong>：站在空間門的「前方或後方」，看到他發動<strong>出發-窗口（214P~214LP/MP，瞬移）</strong>出現紫光與轉杖預兆時（第 26 幀起為空中狀態、第 31 幀才可出招），直接打對空！<br />
 4. <strong>對付「極限技版失憶（22KK，1 幀當身）」與「SA2 拉夫舒克」</strong>：壓起身<strong>務必用輕攻擊（如 4 幀蹲輕拳）重疊</strong>、微後退騙招（退康）或垂直跳，切勿無腦壓中重攻擊或直接投；遇到 SA2 拉夫舒克記住固定順序<strong>「中段 → 上段 → 下段 → 中段」</strong>，還沒貼身時直接綠衝或跳走，被貼身時善用撥擋或抓空隙反制。</p>
 </blockquote>
 <hr />
@@ -46,11 +61,11 @@
 <h3>各角色「穿越彈幕」實戰小抄</h3>
 <p>如果你不想只靠撥擋慢慢走，很多角色都有能直接穿過拐袋魔或趁他施法時懲罰的招式（因為 JP 的拐袋魔暗影分身只有在接近我方時才具攻擊判定，高速突進可直接穿過）：
 * <strong>通用衝撞與穿波技</strong>：本田的「超級頭槌」、布蘭卡的「滾球（回轉攻擊）」、肯的「龍尾腳」、嘉米的「極限技版螺旋箭／流氓組合技」都能在抓準時機時突破彈幕。
-* <strong>強力動力箭步（綠衝）角色</strong>：
-  * <strong>韓蛛俐／迪傑</strong>：生綠衝速度極快，中距離看到 JP 抬手放波可直接綠衝穿過暗影貼身壓制。
-  * <strong>盧克</strong>：生綠衝接前重拳距離極遠；極限技版噴沙與 SA1 也能直接遠距反制 JP 施法。
-  * <strong>艾德／瑪麗莎／莉莉／泰瑞／維加（貝卡）</strong>：艾德的綠衝蹲中拳、瑪麗莎的綠衝中拳、莉莉的綠衝前重拳、泰瑞的綠衝重攻擊與能量灌籃、維加的極限技版精神粉碎機，都是抓 JP 施法硬直的利器。
-  * <strong>春麗</strong>：生綠衝較慢，建議在中距離用「霸山蹴」（過波屬性）從遠處打斷。
+* <strong>強力動力箭步（綠衝）角色</strong>：<br />
+  * <strong>韓蛛俐／迪傑</strong>：生綠衝速度極快，中距離看到 JP 抬手放波可直接綠衝穿過暗影貼身壓制。<br />
+  * <strong>盧克</strong>：生綠衝接前重拳距離極遠；極限技版噴沙與 SA1 也能直接遠距反制 JP 施法。<br />
+  * <strong>艾德／瑪麗莎／莉莉／泰瑞／維加（貝卡）</strong>：艾德的綠衝蹲中拳、瑪麗莎的綠衝中拳、莉莉的綠衝前重拳、泰瑞的綠衝重攻擊與能量灌籃、維加的極限技版精神粉碎機，都是抓 JP 施法硬直的利器。<br />
+  * <strong>春麗</strong>：生綠衝較慢，建議在中距離用「霸山蹴」（過波屬性）從遠處打斷。<br />
   * <strong>桑吉爾夫／瑪濃</strong>：機動性較受限，需耐心用「前走蹲防＋晚按撥擋」推進，把 JP 逼入中距離死角後再用長拳腳施壓。</p>
 <hr />
 <h2>三、破解「空間門與瞬移（出發 Departure）」：站對位置就贏一半</h2>
@@ -90,11 +105,11 @@
 </ul>
 <h3>2. 破解二級超必殺「拉夫舒克（Lovushka，SA2，214214P）」</h3>
 <ul>
-<li><strong>牢記四發暗影固定順序</strong>：SA2 拉夫舒克（29 幀發生，JP 本體硬直僅 13 幀）召喚的四發暗影順序固定為：
-  1. <strong>第 1 發：中段（必站防）</strong>
-  2. <strong>第 2 發：上段（站蹲皆可防）</strong>
-  3. <strong>第 3 發：下段（必蹲防）</strong>
-  4. <strong>第 4 發：中段（必站防）</strong></li>
+<li><strong>牢記四發暗影固定順序</strong>：SA2 拉夫舒克（29 幀發生，JP 本體硬直僅 13 幀）召喚的四發暗影順序固定為：</li>
+<li><strong>第 1 發：中段（必站防）</strong></li>
+<li><strong>第 2 發：上段（站蹲皆可防）</strong></li>
+<li><strong>第 3 發：下段（必蹲防）</strong></li>
+<li><strong>第 4 發：中段（必站防）</strong></li>
 <li><strong>怎麼應對最安全？</strong>：</li>
 <li><strong>還沒貼身、且沒進入防禦硬直時</strong>：看到他遠距離裸開 SA2 畫面凍結，結束瞬間直接<strong>前跳飛越</strong>、<strong>生綠衝衝臉打斷他</strong>（打中 JP 本體四發暗影就會全部消失！），或連續後退逃離範圍。</li>
 <li><strong>已經被密着連防啟動時</strong>：可在第 1 發中段到達瞬間<strong>按住動力撥擋（Drive Parry）</strong>自動擋下高低段切換，但<strong>千萬別無腦死按撥擋到底</strong>（否則 JP 本體會直接走上來用懲罰反擊投摔你 2040 傷害！）。若看到 JP 往前走想摔你，立刻放開撥擋按<strong>解摔、無敵昇龍／超必殺技，或在擋住第 1 發後的空隙按動力反攻（Drive Reversal，6HPK）</strong>把他推開！</li>
@@ -112,8 +127,15 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>遠距離「動力撥擋」與「普通防禦」的比例取捨</strong>：
-   * 面對喜愛在全螢幕連發戰神（地刺）與拐袋魔的 JP，<strong>晚按撥擋（甚至狙擊完美撥擋接生綠衝）</strong>是維持動力量表健康的核心；但若對手頻繁混入<strong>拐袋魔佯攻（236[K] 假動作）</strong>與<strong>擁抱（214K 遠距指令投）</strong>，則應降低預先撥擋頻率，改以「前走＋最後一刻看清動作再擋／前跳」為主。</li>
-<li><strong>空間門（出發，214P）出現時的突進判斷</strong>：
-   * 當 JP 在中近距離強行裸架空間門（一般版總長 50 幀、極限技版 40 幀）時，若我方已在生綠衝可及範圍內，直接<strong>生綠衝打中 JP 本體即可讓空間門直接消失</strong>；但若距離過遠、空間門已成形且即將引爆（第 150 幀／110 幀），切勿盲目綠衝撞進尖刺，應先穩守防住爆炸再推進。</li>
-</ol><div class="nav"><span><a href="c76.html">← C76 傑米對策攻略</a></span><span style="text-align:right"><a href="c78.html">C78 韓蛛俐對策攻略 →</a></span></div></div></body></html>
+<li><strong>遠距離「動力撥擋」與「普通防禦」的比例取捨</strong>：</li>
+<li>面對喜愛在全螢幕連發戰神（地刺）與拐袋魔的 JP，<strong>晚按撥擋（甚至狙擊完美撥擋接生綠衝）</strong>是維持動力量表健康的核心；但若對手頻繁混入<strong>拐袋魔佯攻（236[K] 假動作）</strong>與<strong>擁抱（214K 遠距指令投）</strong>，則應降低預先撥擋頻率，改以「前走＋最後一刻看清動作再擋／前跳」為主。</li>
+<li><strong>空間門（出發，214P）出現時的突進判斷</strong>：</li>
+<li>當 JP 在中近距離強行裸架空間門（一般版總長 50 幀、極限技版 40 幀）時，若我方已在生綠衝可及範圍內，直接<strong>生綠衝打中 JP 本體即可讓空間門直接消失</strong>；但若距離過遠、空間門已成形且即將引爆（第 150 幀／110 幀），切勿盲目綠衝撞進尖刺，應先穩守防住爆炸再推進。</li>
+</ol><nav class="pager"><a href="c76.html">← C76 傑米對策攻略</a><a href="../index.html">返回總覽目錄</a><a href="c78.html">C78 韓蛛俐對策攻略 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

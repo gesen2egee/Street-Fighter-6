@@ -1,15 +1,30 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>框架陷阱與確反判斷｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 起攻與起身</div><h1>框架陷阱與確反判斷</h1><p>為什麼別人防禦完能搶先出手，你防禦完一按鍵就被打成截擊（Counter）？或者對手出了一招看起來破綻很大的招，你卻總是打不到他？這篇指南教你用<strong>「幀數優勢」</strong>看懂誰先誰後，學會<strong>設置框架陷阱（Frame Trap）</strong>釣對手按鍵、抓準<strong>確定反擊（確反）</strong>，以及練習<strong>命中確認</strong>不再無腦送頭。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c05-05" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C05 起攻與起身</div><header class="ph"><span class="pnum">C05-05</span><h1>框架陷阱與確反判斷</h1></header><p>為什麼別人防禦完能搶先出手，你防禦完一按鍵就被打成截擊（Counter）？或者對手出了一招看起來破綻很大的招，你卻總是打不到他？這篇指南教你用<strong>「幀數優勢」</strong>看懂誰先誰後，學會<strong>設置框架陷阱（Frame Trap）</strong>釣對手按鍵、抓準<strong>確定反擊（確反）</strong>，以及練習<strong>命中確認</strong>不再無腦送頭。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包（直接照做版）</strong>
-1. <strong>確反成立看兩點</strong>：「你的反擊招發生幀數 ≤ 對手負幀」＋「距離夠長碰得到」，兩者缺一不可。
-2. <strong>什麼是框架陷阱？</strong> 就是「你有利的時候，刻意留一點小空隙再出下一招」，讓忍不住想按鍵搶招的對手直接撞上你的攻擊變成截擊。
-3. <strong>防禦後別無腦按中／重攻擊</strong>：沒確認對手真的有大破綻前，先用發生最快的<strong>輕攻擊</strong>試探或確認，才不會反被抓硬直。
+<p><strong>⚡ 一分鐘懶人包（直接照做版）</strong><br />
+1. <strong>確反成立看兩點</strong>：「你的反擊招發生幀數 ≤ 對手負幀」＋「距離夠長碰得到」，兩者缺一不可。<br />
+2. <strong>什麼是框架陷阱？</strong> 就是「你有利的時候，刻意留一點小空隙再出下一招」，讓忍不住想按鍵搶招的對手直接撞上你的攻擊變成截擊。<br />
+3. <strong>防禦後別無腦按中／重攻擊</strong>：沒確認對手真的有大破綻前，先用發生最快的<strong>輕攻擊</strong>試探或確認，才不會反被抓硬直。<br />
 4. <strong>打空不出招（佈置／套路）</strong>：在打不到對手的距離按可取消的「中／重攻擊＋必殺技或綠衝」，揮空時什麼都不會發生，只有對手走進來撞到才會自動接招（切記別用輕攻擊做，揮空也會衝出去）。</p>
 </blockquote>
 <hr />
@@ -17,9 +32,9 @@
 <h3>1. 確定反擊（確反）比二擇更重要</h3>
 <ul>
 <li><strong>為什麼必學？</strong> 二擇還要猜拳，但「確反」是對手自己露出破綻、<strong>100% 保證命中</strong>的免費傷害，是拉開段位差距的關鍵。</li>
-<li><strong>成立的兩個條件</strong>：
-  1. <strong>趕得上</strong>：你反擊招的發生幀數，必須小於或等於對手招式被防禦後的負幀（例如對手 -6，你就要用 6 幀以內的招式）。
-  2. <strong>碰得到</strong>：距離要夠長，就算幀數夠快，打不到也是白搭。</li>
+<li><strong>成立的兩個條件</strong>：</li>
+<li><strong>趕得上</strong>：你反擊招的發生幀數，必須小於或等於對手招式被防禦後的負幀（例如對手 -6，你就要用 6 幀以內的招式）。</li>
+<li><strong>碰得到</strong>：距離要夠長，就算幀數夠快，打不到也是白搭。</li>
 <li><strong>實戰習慣</strong>：把自己防禦字串裡「對手反擊時我能接大連段」的招式記熟，一旦對手亂搶招就能直接懲罰他。</li>
 </ul>
 <h3>2. 幀優勢與「截擊（Counter）」的原理</h3>
@@ -242,7 +257,14 @@
 <li><strong>說法不一（輕攻擊能不能直接接輕攻擊）</strong>：有影片說輕攻擊被防後不能直接接另一個輕攻擊（會輸給連按或防禦後投）；另一支影片則說三個輕攻擊串成的幀數陷阱不會被投或按鈕打斷。這取決於各角色輕攻擊的「取消空檔」與「發生幀數」，請用自己角色在訓練場開黃條實測。</li>
 <li><strong>說法不一（防禦後要不要直接按中攻擊）</strong>：有影片說防禦後出中攻擊是常見壓制；另一支影片提醒沒確認大破綻就按中／重攻擊反擊容易被反抓硬直。差別在於「你是防住對手的負幀招（可先用輕攻擊試探）」，還是「你原本就處於大有利狀態」。</li>
 <li><strong>說法不一（隆有利時的打法＆幀殺數字）</strong>：同一支影片前後分別建議「有利時改用投技別一直按打擊」與「多打前重拳、中腳嘗試破防」；另一支影片討論隆的幀殺延遲防守幀數時，前後分別說最低降到 <code>-3</code> 與最壞 <code>-1</code>。</li>
-<li><strong>待驗證數字（皆為單一影片說法）</strong>：
-   * 綠衝取消後至少 <code>+2</code>、艾德站輕腳 DI 反後 <code>+6</code>、隆強化破擊 <code>+5</code>、隆一級超必殺倒地幀 <code>26/30/24</code>、泰瑞崩裂噴射 <code>+1</code>、肯跑步中段 <code>+7</code>、艾蓮娜場中 <code>+37/+39</code> 與角落 <code>+36</code>、盧克倒地 <code>+5</code> 投、不知火舞角落 <code>+30/+32</code>／中段 <code>+4</code>／重飛道具 <code>+16</code>／反擊 <code>+19</code>、拉希德 <code>+26</code>、維加電鑽 <code>+5</code> 等。</li>
+<li><strong>待驗證數字（皆為單一影片說法）</strong>：</li>
+<li>綠衝取消後至少 <code>+2</code>、艾德站輕腳 DI 反後 <code>+6</code>、隆強化破擊 <code>+5</code>、隆一級超必殺倒地幀 <code>26/30/24</code>、泰瑞崩裂噴射 <code>+1</code>、肯跑步中段 <code>+7</code>、艾蓮娜場中 <code>+37/+39</code> 與角落 <code>+36</code>、盧克倒地 <code>+5</code> 投、不知火舞角落 <code>+30/+32</code>／中段 <code>+4</code>／重飛道具 <code>+16</code>／反擊 <code>+19</code>、拉希德 <code>+26</code>、維加電鑽 <code>+5</code> 等。</li>
 <li><strong>版本與辨識存疑</strong>：原檔第八章列出的多項版本改動（如強制防守距離變遠、蹲輕拳改為可快速取消、超人拳／頭槌／空中強化腳優勢提高等）未逐一指明角色，且部分字幕名詞辨識存疑（如「表勝利」、「百列／乾燥衝刺」、「裏與幕捨」、「地城存量」等），請以目前最新遊戲版本的訓練場實測為準。</li>
-</ol><div class="nav"><span><a href="c05-02.html">← C05-02 起身壓制的招式選擇</a></span><span style="text-align:right"><a href="c05-06.html">C05-06 安全跳與跳入設置 →</a></span></div></div></body></html>
+</ol><nav class="pager"><a href="c05-02.html">← C05-02 起身壓制的招式選擇</a><a href="../index.html">返回總覽目錄</a><a href="c05-06.html">C05-06 安全跳與跳入設置 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

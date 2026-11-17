@@ -1,17 +1,32 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Drive 系統幀數影響｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>Drive 系統幀數影響</h1><p>《快打旋風 6》的戰鬥核心就是 <strong>Drive（鬥氣）系統</strong>。很多時候你輸掉不是因為手速慢，而是沒搞懂<strong>綠衝加了幾幀、彈反（Parry）收招會不會被抓、燒盡（Burnout）時為什麼連輕拳都一直被壓到死</strong>。這篇幫你把 Drive 系統的幀數規則一次講清楚。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-07-drive" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-07</span><h1>Drive 系統幀數影響</h1></header><p>《快打旋風 6》的戰鬥核心就是 <strong>Drive（鬥氣）系統</strong>。很多時候你輸掉不是因為手速慢，而是沒搞懂<strong>綠衝加了幾幀、彈反（Parry）收招會不會被抓、燒盡（Burnout）時為什麼連輕拳都一直被壓到死</strong>。這篇幫你把 Drive 系統的幀數規則一次講清楚。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-- <strong>綠衝（DR）</strong>：命中或被防禦後，該招直接 <strong>額外 <code>+4 幀</code></strong>（多數攻略認同是綠衝後第一招獲得 <code>+4</code>）！生綠衝最快普通技大約在第 <code>11 幀</code> 啟動（加 4 幀輕拳約 <code>15 幀</code> 命中）；從格擋（Parry）直接取消綠衝可省下 <code>2 幀</code>（最快約 <code>13 幀</code> 確反）。
-- <strong>精準格擋（Perfect Parry）</strong>：窗口 <strong><code>2 幀</code></strong>（有說法提 1～2f 或 3～4f，暗轉時間改版由 8f 調為 12f），成功後 <strong>0 硬直</strong>，你的有利幀＝對手招式剩餘的硬直時間；精防後直接按 DI 可額外佔到便宜（+3f）。
-- <strong>普通格擋（Parry）</strong>：會「原封不動保留」原本防禦的幀數差，但<strong>放開格擋的硬直很長</strong>（從 <code>29 幀</code> 改版加長到 <code>33 幀</code>，點一下總動作達 <code>45 幀</code>），亂點很容易被對手走過來確反或吃懲罰投！
-- <strong>動力衝擊（DI）</strong>：發生 <strong><code>26 幀</code></strong>，被防禦/命中通常帶特定有利（命中 <strong><code>+5 幀</code></strong>），角落被防也會撞牆（Wall Splat），被 DI 命中或撞牆會被偷 <strong><code>1 格</code> 鬥氣</strong>；DI 怕 <strong>SA（超必殺）和投技</strong>。
-- <strong>動力反擊（Drive Reversal）</strong>：花 <strong><code>2 格</code> 鬥氣</strong>，有無敵且 0 裸傷（只打白血），被防禦從原本 <code>-8 幀</code> 改版調整為 <strong><code>-6 幀</code></strong>（燒盡時對方可能更難反擊或為 <code>-2</code>）；起身也能直接按（<code>18 幀</code> vs 防禦中 <code>20 幀</code>）。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+- <strong>綠衝（DR）</strong>：命中或被防禦後，該招直接 <strong>額外 <code>+4 幀</code></strong>（多數攻略認同是綠衝後第一招獲得 <code>+4</code>）！生綠衝最快普通技大約在第 <code>11 幀</code> 啟動（加 4 幀輕拳約 <code>15 幀</code> 命中）；從格擋（Parry）直接取消綠衝可省下 <code>2 幀</code>（最快約 <code>13 幀</code> 確反）。<br />
+- <strong>精準格擋（Perfect Parry）</strong>：窗口 <strong><code>2 幀</code></strong>（有說法提 1～2f 或 3～4f，暗轉時間改版由 8f 調為 12f），成功後 <strong>0 硬直</strong>，你的有利幀＝對手招式剩餘的硬直時間；精防後直接按 DI 可額外佔到便宜（+3f）。<br />
+- <strong>普通格擋（Parry）</strong>：會「原封不動保留」原本防禦的幀數差，但<strong>放開格擋的硬直很長</strong>（從 <code>29 幀</code> 改版加長到 <code>33 幀</code>，點一下總動作達 <code>45 幀</code>），亂點很容易被對手走過來確反或吃懲罰投！<br />
+- <strong>動力衝擊（DI）</strong>：發生 <strong><code>26 幀</code></strong>，被防禦/命中通常帶特定有利（命中 <strong><code>+5 幀</code></strong>），角落被防也會撞牆（Wall Splat），被 DI 命中或撞牆會被偷 <strong><code>1 格</code> 鬥氣</strong>；DI 怕 <strong>SA（超必殺）和投技</strong>。<br />
+- <strong>動力反擊（Drive Reversal）</strong>：花 <strong><code>2 格</code> 鬥氣</strong>，有無敵且 0 裸傷（只打白血），被防禦從原本 <code>-8 幀</code> 改版調整為 <strong><code>-6 幀</code></strong>（燒盡時對方可能更難反擊或為 <code>-2</code>）；起身也能直接按（<code>18 幀</code> vs 防禦中 <code>20 幀</code>）。<br />
 - <strong>燒盡（Burnout）</strong>：你處於燒盡狀態時，對手所有招式打在你防禦上都會 <strong>額外多 <code>+3</code> 或 <code>+4 幀</code> 有利</strong>，還會扣削血（Chip Damage），且你無法使用 DI 與 Parry。</p>
 </blockquote>
 <hr />
@@ -77,4 +92,11 @@
 <li><strong>綠衝 <code>+4 幀</code> 範圍</strong>：多數實測確認是「綠衝後出擊的第一招」獲得額外 <code>+4 幀</code>（命中與防禦皆然），僅少數影片口述籠統稱「所有招式」。</li>
 <li><strong>Drive Reversal 消耗與不利幀</strong>：統一消耗 <strong><code>2 格</code> 鬥氣</strong>（曾有單一影片字幕誤植瑪濃要 3 格）；被防禦早期版本為 <code>-8 幀</code>，改版後已統一調為 <strong><code>-6 幀</code></strong>（燒盡狀態下影片另有 <code>-2</code> 說法）。</li>
 <li><strong>Burnout 額外加幀</strong>：不同版本與影片分別有 <strong><code>+3 幀</code></strong> 與 <strong><code>+4 幀</code></strong> 的說法（現今多數以 <code>+4 幀</code> 計算），建議在訓練模式開燒盡狀態確認你想應對的特定招式。</li>
-</ol><div class="nav"><span><a href="c02-06.html">← C02-06 無敵、投技與飛道具</a></span><span style="text-align:right"><a href="c02-08.html">C02-08 截擊、完美撥擋與懲罰反擊增益 →</a></span></div></div></body></html>
+</ol><nav class="pager"><a href="c02-06.html">← C02-06 無敵、投技與飛道具</a><a href="../index.html">返回總覽目錄</a><a href="c02-08.html">C02-08 截擊、完美撥擋與懲罰反擊增益 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

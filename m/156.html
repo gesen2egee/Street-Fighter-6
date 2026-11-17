@@ -1,10 +1,25 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ChrisF 破解差合空間陷阱防守與反制指南｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../manuals.html">實戰手冊</a> / 第 156 篇</div><h1>影片專屬深度解析 156：Chris_F - 【スト6】破解差合空間陷阱 (Space Trap) 防守反制全書、立回物理底層解構與反差合指南</h1><ul>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="m" data-id="156" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html">單篇攻略</a><a href="../manuals.html" class="on">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../manuals.html">影片實戰手冊</a> / 第 101–200 篇</div><header class="ph"><span class="pnum">156</span><h1>影片專屬深度解析 156：Chris_F - 【スト6】破解差合空間陷阱 (Space Trap) 防守反制全書、立回物理底層解構與反差合指南</h1></header><ul>
 <li><strong>影片來源</strong>：格鬥戰術名宿 Chris_F (7SbOa3IQuWE)</li>
 <li><strong>原標題</strong>：how to beat space traps - SF6 guide</li>
 <li><strong>影片時長</strong>：高密度微觀格鬥理論與訓練場實證（4 分 34 秒純技術剖析）</li>
@@ -12,7 +27,7 @@
 <li><strong>適用版本</strong>：SF6 Year 1 ～ Year 3 全版本（格鬥遊戲立回物理通用鐵律）</li>
 <li><strong>對策角色</strong>：全參戰角色通用（特別適用於對抗豪鬼 Akuma、將軍 M. Bison、肯 Ken、路克 Luke、隆 Ryu、嘉米 Cammy 等立回長手強角）</li>
 <li><strong>核心對戰主角</strong>：隆 (Ryu) / 全格鬥家通用</li>
-<li><strong>核心定位</strong>：
+<li><strong>核心定位</strong>：<br />
   攻克天梯高分段（MR 1700+ ~ 2000+）最難以察覺的隱形殺手——<strong>「空間陷阱 (Space Trap)」</strong>！深度解構頂尖高手如何利用「微不利幀數 + 物理推開距離 + 後退微步 (Walk-back)」誘騙防守方出拳揮空，進而打出毀滅性差合（Whiff Punish）的完整心理與物理鏈條。全面傳授破解空間陷阱的四大黃金戰術支柱、訓練場 10 槽位 Block Reversal 肌肉記憶特訓、以及隆專屬的「反向空間控制體系」。</li>
 </ul>
 <hr />
@@ -22,35 +37,35 @@
 <p><em>「我明明防住了對手的招式，理論上輪到我搶招或者我有先手，為什麼我一按 2MP 或 2MK，卻立刻被對手重拳打出 Punish Counter 直接蒸發 40% 血量？」</em></p>
 </blockquote>
 <p>這正是掉入了格鬥遊戲中最致命的心理與物理陷阱——<strong>空間陷阱 (Space Trap)</strong>！</p>
-<p>`
+<p>`<br />
 【空間陷阱 (Space Trap) 物理運作鏈條】</p>
-<p>進攻方出通常技 (如豪鬼 5MP / 將軍 5MP) 被防
-            │
-            ├─► 幀數狀態：進攻方處於微不利 (-1F ~ -2F) 或微有利 (+1F)
-            ├─► 物理狀態：防禦產生了【向外推開距離 (Pushback)】
-            │
-            ▼
-    [進攻方立即向後微走 3~5 幀 (Walk-back)]
-            │
-            ├─► 防守方產生心理錯覺：「他負幀！輪到我進攻了！」
-            ├─► 防守方下意識按出【2MP / 2MK】試圖搶動/壓制
-            │
-            ▼
-    [防守方拳腳在空氣中揮空 (Whiff)！]
-            │
-            ├─► 防守方手臂/腿部向前伸展，殘留【長達 15~20 幀的受傷判定框 (Hurtbox)】
-            │
-            ▼
-    [進攻方早已就位，目視出拳揮空！]
-            │
-            ▼
-    ★【進攻方出 5HP PC / 5HK PC 取消綠衝】 ──► 轟出 4500+ 滿額致命連段！
+<p>進攻方出通常技 (如豪鬼 5MP / 將軍 5MP) 被防<br />
+            │<br />
+            ├─► 幀數狀態：進攻方處於微不利 (-1F ~ -2F) 或微有利 (+1F)<br />
+            ├─► 物理狀態：防禦產生了【向外推開距離 (Pushback)】<br />
+            │<br />
+            ▼<br />
+    [進攻方立即向後微走 3~5 幀 (Walk-back)]<br />
+            │<br />
+            ├─► 防守方產生心理錯覺：「他負幀！輪到我進攻了！」<br />
+            ├─► 防守方下意識按出【2MP / 2MK】試圖搶動/壓制<br />
+            │<br />
+            ▼<br />
+    [防守方拳腳在空氣中揮空 (Whiff)！]<br />
+            │<br />
+            ├─► 防守方手臂/腿部向前伸展，殘留【長達 15~20 幀的受傷判定框 (Hurtbox)】<br />
+            │<br />
+            ▼<br />
+    [進攻方早已就位，目視出拳揮空！]<br />
+            │<br />
+            ▼<br />
+    ★【進攻方出 5HP PC / 5HK PC 取消綠衝】 ──► 轟出 4500+ 滿額致命連段！<br />
 `</p>
 <ol>
-<li><strong>空間陷阱的物理本質</strong>：
-   - 空間陷阱本質上是<strong>「以幀數的微弱劣勢，換取距離上的絕對支配」</strong>！進攻方故意讓招式被防，利用推開距離，使雙方處於「防守方的通常技剛好差 1 毫米夠不到，而進攻方的長手通常技剛好能打中」的極限臨界點。</li>
-<li><strong>防守方的致命盲區</strong>：
-   - 防守方只盯著「幀數表上的 +F / -F」，忽視了「空間距離（Spacing）」。在距離不夠時盲目搶動，等於把自己的受傷判定框主動送到對手的武器上！</li>
+<li><strong>空間陷阱的物理本質</strong>：</li>
+<li>空間陷阱本質上是<strong>「以幀數的微弱劣勢，換取距離上的絕對支配」</strong>！進攻方故意讓招式被防，利用推開距離，使雙方處於「防守方的通常技剛好差 1 毫米夠不到，而進攻方的長手通常技剛好能打中」的極限臨界點。</li>
+<li><strong>防守方的致命盲區</strong>：</li>
+<li>防守方只盯著「幀數表上的 +F / -F」，忽視了「空間距離（Spacing）」。在距離不夠時盲目搶動，等於把自己的受傷判定框主動送到對手的武器上！</li>
 </ol>
 <hr />
 <h2>⏱️ 影片逐秒微觀時間戳章節導航</h2>
@@ -165,10 +180,10 @@
 </ul>
 <hr />
 <h3>4. 輔助戰術支柱：微前走、破下盤與強勢突進</h3>
-<p>除了三大博弈層級，原片與高階立回中還包含以下輔助反制手段：
-- <strong>微前走壓縮空間 (Micro-walk Forward)</strong>：推前 2~3 幀抹平對手後退拉開的距離，逼迫對手退向版邊；
-- <strong>低段牽制破壞下盤 (Low Poke 2MK/2LK)</strong>：對手站立後退時下半身無法防禦且 Hurtbox 變大，貼地下段踢直接踢中後退腳踝；
-- <strong>強勢突進奪回主動權 (Raw Drive Rush / 波動拳)</strong>：在對手全神貫注等待差合地面出拳時，用生綠衝或慢速波動拳打亂對手步調；
+<p>除了三大博弈層級，原片與高階立回中還包含以下輔助反制手段：<br />
+- <strong>微前走壓縮空間 (Micro-walk Forward)</strong>：推前 2~3 幀抹平對手後退拉開的距離，逼迫對手退向版邊；<br />
+- <strong>低段牽制破壞下盤 (Low Poke 2MK/2LK)</strong>：對手站立後退時下半身無法防禦且 Hurtbox 變大，貼地下段踢直接踢中後退腳踝；<br />
+- <strong>強勢突進奪回主動權 (Raw Drive Rush / 波動拳)</strong>：在對手全神貫注等待差合地面出拳時，用生綠衝或慢速波動拳打亂對手步調；<br />
 - <strong>全域系統解法 (Universal Options)</strong>：Chris_F 亦提及 Drive Parry、完美格擋（Perfect Parry）與 Perfect Parry Drive Rush Option Select 等全域防禦選項。</p>
 <hr />
 <h2>🥋 第三章：隆 (Ryu) 對抗空間陷阱的專屬駕駛手冊</h2>
@@ -343,17 +358,17 @@
 <p>在天梯頂端對抗中，空間陷阱往往伴隨著極其複雜的心態博弈：</p>
 <h3>1. 【假裝後退實則回馬槍前衝（Walk-back &amp; Forward Dash）】</h3>
 <ul>
-<li><strong>欺詐套路</strong>：
+<li><strong>欺詐套路</strong>：<br />
   對手後退 2 幀，防守方剛放鬆警惕準備前走，對手突然發動極速前前（Forward Dash 18F）直接近身普通投！</li>
-<li><strong>破除之策</strong>：
+<li><strong>破除之策</strong>：<br />
   維持下蹲防禦姿勢，目視對手前衝起步的瞬間按出 <strong>4F 輕拳 (2LP)</strong> 截殺前衝！</li>
 </ul>
 <h3>2. 【故意空揮輕拳製造虛假破綻（Bait Whiff Punish）】</h3>
 <ul>
-<li><strong>欺詐套路</strong>：
+<li><strong>欺詐套路</strong>：<br />
   對手在 2.5 身位故意空揮 5LP，其動作微小收招僅 7 幀；防守方誤以為抓到大破綻，衝上去按 5HP 想差合，結果對手早已收招，反手一個 2MK 差合防守方！</li>
-<li><strong>破除之策</strong>：
-  <strong>「不差合輕拳，專門差合重拳重腳！」</strong> 輕拳收招太快（僅 7~9F），人類神經無法目視差合；只有當對手出 5HP、5HK、2HK（收招 18~24 幀）時，才是差合的唯一安全窗口！</li>
+<li><strong>破除之策</strong>：<br />
+<strong>「不差合輕拳，專門差合重拳重腳！」</strong> 輕拳收招太快（僅 7~9F），人類神經無法目視差合；只有當對手出 5HP、5HK、2HK（收招 18~24 幀）時，才是差合的唯一安全窗口！</li>
 </ul>
 <hr />
 <h2>⚠️ 第八章：立回拉扯常見犯錯清單與自我檢核表</h2>
@@ -378,14 +393,14 @@
 <hr />
 <h2>🔬 第十章：格鬥遊戲差合 (Whiff Punish) 與判定框 (Hitbox/Hurtbox) 微觀物理</h2>
 <p>要真正克服空間陷阱，必須從 Capcom 遊戲引擎底層的「判定框（Box System）」來理解空間拉扯的物理本質：</p>
-<p>`
+<p>`<br />
 【攻擊發動時的三重物理判定結構】</p>
-<p>通常技出招 (Startup) ──► 揮空收招 (Recovery) ──► 回歸站立 (Neutral)
-            │                         │
-            ▼                         ▼
-  [攻擊判定框 (Red Hitbox)]    [延伸受傷判定框 (Green Hurtbox)]
-  - 存在時間極短 (僅 3~5 幀)    - 在空中長久殘留 (長達 15~24 幀！)
-  - 用於判定是否命中對手       - ★差合 (Whiff Punish) 的唯一實體打擊目標！
+<p>通常技出招 (Startup) ──► 揮空收招 (Recovery) ──► 回歸站立 (Neutral)<br />
+            │                         │<br />
+            ▼                         ▼<br />
+  [攻擊判定框 (Red Hitbox)]    [延伸受傷判定框 (Green Hurtbox)]<br />
+  - 存在時間極短 (僅 3~5 幀)    - 在空中長久殘留 (長達 15~24 幀！)<br />
+  - 用於判定是否命中對手       - ★差合 (Whiff Punish) 的唯一實體打擊目標！<br />
 `</p>
 <h3>1. 什麼是延伸受傷判定框 (Extended Hurtbox)？</h3>
 <ul>
@@ -499,20 +514,20 @@
 <hr />
 <h2>⚡ 第十二章：預先複合輸入差合 (Buffered Whiff Punish) 宗師特訓</h2>
 <p>頂尖職業選手（如 Daigo 梅原大吾、Tokido 翔、Punk）在立回中抓差合，絕非單純依靠肉眼極限反應，而是掌握了格鬥遊戲的至高秘傳——<strong>預先複合輸入 (Buffering)</strong>！</p>
-<p>`
+<p>`<br />
 【預先複合輸入 (Buffering) 底層物理邏輯】</p>
-<p>隆在 2.5 身位空揮出【下蹲中腳 (2MK)】
-            │
-            ▼
-    [隆在 2MK 出腳的瞬間，搖桿【提前快速輸入 214HP (重波掌擊)】]
-            │
-            ├─►【情況 A：對手沒有出招 / 距離不夠】
-            │     └─ 2MK 在空氣中揮空 ──► 系統物理判定【無法取消】！
-            │     └─ 預先輸入的 214HP【完全不會釋放出來】！隆安全收招！
-            │
-            └─►【情況 B：對手剛好出 5HP 揮空，手臂判定框撞上隆的 2MK！】
-                  └─ 2MK 命中對手殘留判定框 ──► 系統物理判定【打擊成立】！
-                  └─ 預先輸入的 214HP【瞬間自動爆發】！直接將對手擊倒並接續大連段！
+<p>隆在 2.5 身位空揮出【下蹲中腳 (2MK)】<br />
+            │<br />
+            ▼<br />
+    [隆在 2MK 出腳的瞬間，搖桿【提前快速輸入 214HP (重波掌擊)】]<br />
+            │<br />
+            ├─►【情況 A：對手沒有出招 / 距離不夠】<br />
+            │     └─ 2MK 在空氣中揮空 ──► 系統物理判定【無法取消】！<br />
+            │     └─ 預先輸入的 214HP【完全不會釋放出來】！隆安全收招！<br />
+            │<br />
+            └─►【情況 B：對手剛好出 5HP 揮空，手臂判定框撞上隆的 2MK！】<br />
+                  └─ 2MK 命中對手殘留判定框 ──► 系統物理判定【打擊成立】！<br />
+                  └─ 預先輸入的 214HP【瞬間自動爆發】！直接將對手擊倒並接續大連段！<br />
 `</p>
 <h3>1. 複合差合的無敵之處</h3>
 <ul>
@@ -608,20 +623,20 @@
 <h3>4. 【終極極限差合 (滿額 CA 斬殺)：5HK PC 浮空】</h3>
 <ul>
 <li><strong>起手招式</strong>：目視對手大掃腿 (2HK) 或長大重腳揮空，隆出 站立強腳 (5HK PC 浮空打康)！</li>
-<li><strong>後續連攜</strong>：
+<li><strong>後續連攜</strong>：<br />
   前走微步 5HK (PC 浮空) ➔ 蓄力重波掌擊 (214[HP]) ➔ 4HP ➔ 生綠衝 4HP ➔ 2HP ➔ 214HK ➔ CA (Critical Art)</li>
 <li><strong>實戰收益</strong>：<strong>高達 6280 點天文數字傷害！</strong> 全遊戲最強大的差合斬殺連段，直接將殘血對手送進墓地！</li>
 </ul>
 <hr />
 <h2>📏 第十八章：格鬥遊戲微觀距離測量學 (Pixel Spacing)</h2>
 <p>理解空間陷阱，必須建立起對「身位（Character Spacing）」的像素級距離感知：</p>
-<p>`
+<p>`<br />
 【SF6 地面立回五大距離分區全景圖】</p>
-<p>[貼身 (0.0~0.5)] ──► [近身 (1.0~1.5)] ──► [空間陷阱區 (1.5~2.2)] ──► [差合帝王區 (2.2~2.8)] ──► [遠程區 (3.0+)]
-         │                    │                     │                      │                    │
-         ▼                    ▼                     ▼                      ▼                    ▼
-   - 普通摔 (Throw)      - 幀數陷阱 (+F)      - ★空間陷阱核心區！     - 隆 5MK/2MK 極限      - 波動拳封鎖
-   - 最速 4F 搶動        - 拆投 / 打擊二擇     - 後退拉扯 5HP 差合     - 預判複合輸入差合      - 生綠衝突擊
+<p>[貼身 (0.0~0.5)] ──► [近身 (1.0~1.5)] ──► [空間陷阱區 (1.5~2.2)] ──► [差合帝王區 (2.2~2.8)] ──► [遠程區 (3.0+)]<br />
+         │                    │                     │                      │                    │<br />
+         ▼                    ▼                     ▼                      ▼                    ▼<br />
+   - 普通摔 (Throw)      - 幀數陷阱 (+F)      - ★空間陷阱核心區！     - 隆 5MK/2MK 極限      - 波動拳封鎖<br />
+   - 最速 4F 搶動        - 拆投 / 打擊二擇     - 後退拉扯 5HP 差合     - 預判複合輸入差合      - 生綠衝突擊<br />
 `</p>
 <h3>1. 【1.5 ~ 2.2 身位：空間陷阱的死亡危險區】</h3>
 <ul>
@@ -656,11 +671,11 @@
 <h2>🧠 第二十章：職業級心態建設：克服被差合後的「出拳恐懼症」</h2>
 <p>很多玩家在被對手抓過兩三次差合後，心態產生巨大恐懼，從此「雙手不敢按任何鍵，只敢龜縮蹲防」，結果被對手肆無忌憚地上前投擲、前衝、綠衝壓死。本章傳授職業選手的心態重塑法則：</p>
 <ol>
-<li><strong>「被差合不是因為出拳，而是因為盲目搶拳」</strong>：
+<li><strong>「被差合不是因為出拳，而是因為盲目搶拳」</strong>：<br />
    出拳本身沒有錯，錯在於「在對手設計好的空間陷阱中出拳」。只要你學會了「停頓 10 幀」與「用 2MK 戳下盤」，出拳的勝率將立刻逆轉！</li>
-<li><strong>「大膽微前走，主動打破恐懼」</strong>：
+<li><strong>「大膽微前走，主動打破恐懼」</strong>：<br />
    當你感到不敢出招時，大膽推住前方向走 2 步！你會發現對手比你更慌張，因為後退拉扯的人最怕防守方主動壓縮空間！</li>
-<li><strong>「把差合當作鏡子」</strong>：
+<li><strong>「把差合當作鏡子」</strong>：<br />
    每一次被對手差合，都是在提醒你：對手剛才在後退！下一次在相同情境下，毫不猶豫地賞他一記下蹲中腳（2MK），讓他為自己的貪心付出血的代價！</li>
 </ol>
 <hr />
@@ -723,7 +738,7 @@
 <hr />
 <h2>🔄 第廿四章：空間陷阱 (Space Trap) vs 幀數陷阱 (Frame Trap) 混合二擇破解手冊</h2>
 <p>在 MR 1900+ 乃至 Capcom Cup 頂級殿堂中，真正的絕世高手絕不會只用單一手段，而是將「幀數陷阱」與「空間陷阱」完美交織：</p>
-<p>`
+<p>`<br />
 【頂級高手的二擇心理殺局】</p>
 <pre><code>          進攻方通常技被防 (+1F ~ -2F)
                         │
@@ -749,11 +764,11 @@
 <h2>🏆 第廿五章：現代格鬥電競立回哲學：從「距離控制」到「心理統治」的宗師昇華</h2>
 <p>回顧 Chris_F 在本片中所傳遞的核心哲學，格鬥遊戲的至高境界絕非比拼誰按鍵更快，而是比拼誰能<strong>「主宰對手的大腦與注意力」</strong>：</p>
 <ol>
-<li><strong>「空間是由腳步創造的，而不是拳頭」</strong>：
+<li><strong>「空間是由腳步創造的，而不是拳頭」</strong>：<br />
    新手總以為立回就是出拳，而頂尖宗師（如 Daigo、Tokido）的立回 80% 是在用腳步「走位、微調、試探」。懂得何時停步、何時微前進、何時拉開半個身位的玩家，才能真正讓對手在無形中窒息。</li>
-<li><strong>「看破陷阱，則陷阱化為你的獵場」</strong>：
+<li><strong>「看破陷阱，則陷阱化為你的獵場」</strong>：<br />
    當你對空間陷阱一無所知時，對手的後退是你的催命符；當你徹底洞悉空間陷阱的物理原理後，對手的每一次後退，都成了你賞他下蹲中腳（2MK）或波動拳的最佳送禮時刻！</li>
-<li><strong>「在靜止中孕育雷霆」</strong>：
+<li><strong>「在靜止中孕育雷霆」</strong>：<br />
    面對喜歡花俏拉扯的對手，最可怕的武器往往不是慌亂的搶招，而是「巋然不動的沉著」。當你防住攻擊後紋絲不動、靜觀其變，對手的心理防線便會隨著時間的流逝自行崩塌！</li>
 </ol>
 <h2>📝 第廿六章：空間陷阱破解核心作戰速記口訣</h2>
@@ -765,4 +780,11 @@
 👑 <strong>「不貪輕拳差合賞，專抓大招定乾坤！」</strong></p>
 <p>💡 <strong>「莫道後退無破綻，下盤空虛命難全！」</strong><br />
 🥋 <strong>「微步咬死寸寸進，一代宗師定乾坤！」</strong></p>
-</blockquote><div class="nav"><span><a href="155.html">← 155 初心者応援 最新版JP射擊模式與棘刺陷阱完全破解</a></span><span style="text-align:right"><a href="157.html">157 MikeyD 擊潰豪鬼Akuma全方位對策與立回破局指南 →</a></span></div></div></body></html>
+</blockquote><nav class="pager"><a href="155.html">← 155 初心者応援 最新版JP射擊模式與棘刺陷阱完全破解</a><a href="../manuals.html">返回手冊目錄</a><a href="157.html">157 MikeyD 擊潰豪鬼Akuma全方位對策與立回破局指南 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

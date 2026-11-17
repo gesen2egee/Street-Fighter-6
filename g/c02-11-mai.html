@@ -1,23 +1,38 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>不知火舞（Mai）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>不知火舞（Mai）角色招式幀數數據</h1><p>不知火舞（Mai）在《快打旋風 6》擁有靈活的多段飛行道具「花蝶扇（<code>236P</code>）」、強力的「火焰存量（Flame Stocks）」強化機制與快速的 5 幀對空「輕飛翔龍炎陣（<code>623LK</code>）」。本篇依據 Capcom 官方最新幀數表與系統公式，完整整理不知火舞的一般技、特殊技、必殺技與超必殺技硬數據，幫你搞懂她的扇子壓制幀數、動力箭步（綠衝）加值，以及哪些招式被防住後可以直接確反！</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-mai" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>不知火舞（Mai）角色招式幀數數據</h1></header><p>不知火舞（Mai）在《快打旋風 6》擁有靈活的多段飛行道具「花蝶扇（<code>236P</code>）」、強力的「火焰存量（Flame Stocks）」強化機制與快速的 5 幀對空「輕飛翔龍炎陣（<code>623LK</code>）」。本篇依據 Capcom 官方最新幀數表與系統公式，完整整理不知火舞的一般技、特殊技、必殺技與超必殺技硬數據，幫你搞懂她的扇子壓制幀數、動力箭步（綠衝）加值，以及哪些招式被防住後可以直接確反！</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>花蝶扇（<code>236P</code>）一般版 vs 火焰存量強化版差異巨大</strong>：
-   * <strong>一般版（無存量）</strong>：輕／中／重發生分別為 <strong>16 / 14 / 12 幀</strong>，全體總長 <strong>48 幀</strong>，傷害 <strong>500</strong>，近距離被防為 <strong><code>-7 / -9 / -11</code> 幀</strong>（例如「站重拳 → 無蓄力輕花蝶扇」近距離被防 <code>-7</code> 幀，可被 6～7 幀中足確反）。
-   * <strong>火焰存量強化版（Boosted）</strong>：全體總長縮短為 <strong>45 幀</strong>（破綻減少 3 幀，比隆的波動拳 47 幀還快！），傷害提升至 <strong>600</strong>，近距離被防改善為 <strong><code>-3 / -5 / -7</code> 幀</strong>。
-   * <strong>極限技（OD）花蝶扇（<code>236PP</code>）</strong>：無蓄力版發生 <strong>12 幀</strong>、總長 <strong>42 幀</strong>，一般被防 <strong><code>-5</code> 幀</strong>，有火焰存量時被防轉為 <strong><code>+1</code> 幀</strong>（正幀壓制！）；<strong>蓄力 OD 花蝶扇（<code>236[PP]</code>）</strong>發生 28 幀，命中 <strong><code>+14</code> 幀</strong>、被防高達 <strong><code>+12</code> 幀</strong>！後續派生「亂花蝶扇（<code>236[PP]~6P</code>）」被防為 <strong><code>0</code> 幀（平幀）</strong>。
-2. <strong>看到這幾招別亂按（她有利或安全）</strong>：
-   * <strong>星孔雀第一段（後重腳 <code>4HK</code>）</strong>：發生 <strong>8 幀</strong>，一般命中 <strong><code>+3</code> 幀</strong>（強制站立）、被防 <strong><code>-1</code> 幀</strong>；搭配<strong>動力箭步（綠衝）</strong>後被防 <strong><code>+3</code> 幀</strong>、命中 <strong><code>+7</code> 幀</strong>，且剛好在投技距離內。
-   * <strong>鼯鼠之舞（空中俯衝 <code>j.214P</code>）</strong>：一般版與 OD 版被防為 <strong><code>-7 ～ +1</code> 幀</strong>（瞄準對手腳尖低點被防可達 <code>-2 ～ +1</code> 幀安全範圍）；有<strong>火焰存量強化</strong>時被防提升為 <strong><code>-4 ～ +2</code> 幀</strong>。
-   * <strong>扇骨打（前中拳 <code>6MP</code> 中段）</strong>：發生 <strong>20 幀</strong>，命中 <strong><code>+2</code> 幀</strong>（截擊 <code>+4</code>）、被防 <strong><code>-3</code> 幀</strong>（安全）；搭配動力箭步後命中 <strong><code>+6</code> 幀</strong>（可接蹲中拳連段）、被防 <strong><code>+1</code> 幀</strong>。
-3. <strong>關鍵起手與確反基準</strong>：
-   * <strong>4 幀最速技</strong>：站輕拳（<code>5LP</code>，命中 <code>+5</code>／被防 <code>-2</code>）、蹲輕拳（<code>2LP</code>，命中 <code>+4</code>／被防 <code>-1</code>）、站輕腳（<code>5LK</code>，命中 <code>+1</code>／被防 <code>-1</code>）。
-   * <strong>主力拳腳</strong>：蹲中拳（<code>2MP</code>）<strong>6 幀</strong>（命中 <code>+5</code>／被防 <code>-3</code>）；蹲中腳（<code>2MK</code>）<strong>7 幀</strong>（命中 <code>-2</code>／被防 <code>-6</code>）；站中拳（<code>5MP</code>）<strong>8 幀</strong>（命中 <code>+2</code>／被防 <code>-3</code>）；站中腳（<code>5MK</code>）與站重拳（<code>5HP</code>）皆為 <strong>9 幀</strong>；站重腳（<code>5HK</code>）<strong>14 幀</strong>（懲罰反擊崩潰 <code>+22</code> 幀）。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>花蝶扇（<code>236P</code>）一般版 vs 火焰存量強化版差異巨大</strong>：<br />
+   * <strong>一般版（無存量）</strong>：輕／中／重發生分別為 <strong>16 / 14 / 12 幀</strong>，全體總長 <strong>48 幀</strong>，傷害 <strong>500</strong>，近距離被防為 <strong><code>-7 / -9 / -11</code> 幀</strong>（例如「站重拳 → 無蓄力輕花蝶扇」近距離被防 <code>-7</code> 幀，可被 6～7 幀中足確反）。<br />
+   * <strong>火焰存量強化版（Boosted）</strong>：全體總長縮短為 <strong>45 幀</strong>（破綻減少 3 幀，比隆的波動拳 47 幀還快！），傷害提升至 <strong>600</strong>，近距離被防改善為 <strong><code>-3 / -5 / -7</code> 幀</strong>。<br />
+   * <strong>極限技（OD）花蝶扇（<code>236PP</code>）</strong>：無蓄力版發生 <strong>12 幀</strong>、總長 <strong>42 幀</strong>，一般被防 <strong><code>-5</code> 幀</strong>，有火焰存量時被防轉為 <strong><code>+1</code> 幀</strong>（正幀壓制！）；<strong>蓄力 OD 花蝶扇（<code>236[PP]</code>）</strong>發生 28 幀，命中 <strong><code>+14</code> 幀</strong>、被防高達 <strong><code>+12</code> 幀</strong>！後續派生「亂花蝶扇（<code>236[PP]~6P</code>）」被防為 <strong><code>0</code> 幀（平幀）</strong>。<br />
+2. <strong>看到這幾招別亂按（她有利或安全）</strong>：<br />
+   * <strong>星孔雀第一段（後重腳 <code>4HK</code>）</strong>：發生 <strong>8 幀</strong>，一般命中 <strong><code>+3</code> 幀</strong>（強制站立）、被防 <strong><code>-1</code> 幀</strong>；搭配<strong>動力箭步（綠衝）</strong>後被防 <strong><code>+3</code> 幀</strong>、命中 <strong><code>+7</code> 幀</strong>，且剛好在投技距離內。<br />
+   * <strong>鼯鼠之舞（空中俯衝 <code>j.214P</code>）</strong>：一般版與 OD 版被防為 <strong><code>-7 ～ +1</code> 幀</strong>（瞄準對手腳尖低點被防可達 <code>-2 ～ +1</code> 幀安全範圍）；有<strong>火焰存量強化</strong>時被防提升為 <strong><code>-4 ～ +2</code> 幀</strong>。<br />
+   * <strong>扇骨打（前中拳 <code>6MP</code> 中段）</strong>：發生 <strong>20 幀</strong>，命中 <strong><code>+2</code> 幀</strong>（截擊 <code>+4</code>）、被防 <strong><code>-3</code> 幀</strong>（安全）；搭配動力箭步後命中 <strong><code>+6</code> 幀</strong>（可接蹲中拳連段）、被防 <strong><code>+1</code> 幀</strong>。<br />
+3. <strong>關鍵起手與確反基準</strong>：<br />
+   * <strong>4 幀最速技</strong>：站輕拳（<code>5LP</code>，命中 <code>+5</code>／被防 <code>-2</code>）、蹲輕拳（<code>2LP</code>，命中 <code>+4</code>／被防 <code>-1</code>）、站輕腳（<code>5LK</code>，命中 <code>+1</code>／被防 <code>-1</code>）。<br />
+   * <strong>主力拳腳</strong>：蹲中拳（<code>2MP</code>）<strong>6 幀</strong>（命中 <code>+5</code>／被防 <code>-3</code>）；蹲中腳（<code>2MK</code>）<strong>7 幀</strong>（命中 <code>-2</code>／被防 <code>-6</code>）；站中拳（<code>5MP</code>）<strong>8 幀</strong>（命中 <code>+2</code>／被防 <code>-3</code>）；站中腳（<code>5MK</code>）與站重拳（<code>5HP</code>）皆為 <strong>9 幀</strong>；站重腳（<code>5HK</code>）<strong>14 幀</strong>（懲罰反擊崩潰 <code>+22</code> 幀）。<br />
    * <strong>必殺技破綻</strong>：輕龍炎舞（<code>214LP</code>）一般被防 <strong><code>-4</code> 幀</strong>（有 4 幀確反）、火焰存量強化被防 <strong><code>-2</code> 幀</strong>（安全）；中／重龍炎舞被防皆為 <strong><code>-6</code> 幀</strong>；OD 龍炎舞被防 <strong><code>-3</code> 幀</strong>（安全）；必殺忍蜂（<code>236K</code>）輕／中／重／OD 被防分別為 <strong><code>-10 / -12 / -13 / -12</code> 幀</strong>（皆可確反）。</p>
 </blockquote>
 <hr />
@@ -776,12 +791,19 @@
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>花蝶扇與鼯鼠之舞的「距離／高度」幀數浮動</strong>：
-   * 表中所列花蝶扇命中／被防幀數皆為「貼身第 1 持續幀接觸」的基準值。實戰中若從中遠距離施放，飛行時間會抵銷舞自身的收招硬直，使有利幀大幅增加；蓄力扇與 OD 扇更會因第二段落下扇子的掩護，搭配動力箭步衝入形成高達 <code>+12 ～ +17</code> 幀的強勢壓制。
-   * <strong>鼯鼠之舞（<code>j.214P</code>）</strong>被防幀數取決於打在對手身上的高度：打在頭頂或腰部以上為 <code>-7 ～ -4</code> 幀（可被 4 幀輕攻擊確反），必須精準控制在<strong>腳踝／腳尖最低點</strong>接觸，才能達到 <code>-2 ～ +1</code> 幀（強化版可達 <code>+1 ～ +2</code> 幀）的安全壓制。</li>
-<li><strong>「強化前後」口誤釐清</strong>：
-   * 部分早期教學影片將「花蝶扇 48 幀／500 傷 → 45 幀／600 傷」稱為「改版強化後」，實為對戰中<strong>消耗火焰存量（Flame Stocks）後的強化版（Boosted）數據</strong>，並非版本更新永久改動。無火焰存量時，普通花蝶扇仍為全體 48 幀、傷害 500。</li>
-<li><strong>安全跳（+42 幀）與壓起身路線選擇</strong>：
-   * 實戰最穩定的 <strong>+42 幀安全跳</strong>來源為：<code>飛燕連腳（5LK~LK~LK）→ 派生鼯鼠之舞（j.214P）</code> 命中，或有火焰存量時以 <code>強化版中龍炎舞（214MP）</code> 擊倒對手，落地後立刻前跳即可形成安全跳（場中與角落皆適用）。
-   * 必殺忍蜂（<code>236K</code>）擊倒後若直接發動「動力箭步 → 扇骨打（<code>6MP</code> 中段）」壓起身，會與對手起身最速 4 幀技發生相殺（Trade）；由於中段相殺後舞的有利幀極高，可直接在相殺後目押接上 <code>站重拳（5HP）</code> 或是 <code>蹲重拳（2HP）</code> 打出完整連段。</li>
-</ol><div class="nav"><span><a href="c02-11-mbison.html">← C02-11 拜森（M. Bison／日版名 Vega）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-manon.html">C02-11 瑪濃（Manon）角色招式幀數數據 →</a></span></div></div></body></html>
+<li><strong>花蝶扇與鼯鼠之舞的「距離／高度」幀數浮動</strong>：</li>
+<li>表中所列花蝶扇命中／被防幀數皆為「貼身第 1 持續幀接觸」的基準值。實戰中若從中遠距離施放，飛行時間會抵銷舞自身的收招硬直，使有利幀大幅增加；蓄力扇與 OD 扇更會因第二段落下扇子的掩護，搭配動力箭步衝入形成高達 <code>+12 ～ +17</code> 幀的強勢壓制。</li>
+<li><strong>鼯鼠之舞（<code>j.214P</code>）</strong>被防幀數取決於打在對手身上的高度：打在頭頂或腰部以上為 <code>-7 ～ -4</code> 幀（可被 4 幀輕攻擊確反），必須精準控制在<strong>腳踝／腳尖最低點</strong>接觸，才能達到 <code>-2 ～ +1</code> 幀（強化版可達 <code>+1 ～ +2</code> 幀）的安全壓制。</li>
+<li><strong>「強化前後」口誤釐清</strong>：</li>
+<li>部分早期教學影片將「花蝶扇 48 幀／500 傷 → 45 幀／600 傷」稱為「改版強化後」，實為對戰中<strong>消耗火焰存量（Flame Stocks）後的強化版（Boosted）數據</strong>，並非版本更新永久改動。無火焰存量時，普通花蝶扇仍為全體 48 幀、傷害 500。</li>
+<li><strong>安全跳（+42 幀）與壓起身路線選擇</strong>：</li>
+<li>實戰最穩定的 <strong>+42 幀安全跳</strong>來源為：<code>飛燕連腳（5LK~LK~LK）→ 派生鼯鼠之舞（j.214P）</code> 命中，或有火焰存量時以 <code>強化版中龍炎舞（214MP）</code> 擊倒對手，落地後立刻前跳即可形成安全跳（場中與角落皆適用）。</li>
+<li>必殺忍蜂（<code>236K</code>）擊倒後若直接發動「動力箭步 → 扇骨打（<code>6MP</code> 中段）」壓起身，會與對手起身最速 4 幀技發生相殺（Trade）；由於中段相殺後舞的有利幀極高，可直接在相殺後目押接上 <code>站重拳（5HP）</code> 或是 <code>蹲重拳（2HP）</code> 打出完整連段。</li>
+</ol><nav class="pager"><a href="c02-11-mbison.html">← C02-11 拜森（M. Bison／日版名 Vega）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-manon.html">C02-11 瑪濃（Manon）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

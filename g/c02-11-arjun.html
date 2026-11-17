@@ -1,24 +1,39 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>阿爾俊（Arjun）角色招式幀數數據｜快打旋風 6 實戰指南</title>
-<link rel="stylesheet" href="../style.css"></head><body>
-<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
-<span class="links"><a href="../index.html">單篇攻略</a><a href="../manuals.html">實戰手冊</a></span></div></header>
-<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>阿爾俊（Arjun）角色招式幀數數據</h1><p>阿爾俊（Arjun）是一位靠「神氣巨岩」控制場地、「大義巨腕」與「嚴酷岩肩」強行削磨對手可回復血量（白血），再用「鬼氣逼問」指令投與打擊兌現傷害的重裝壓制型角色。實戰中最容易讓人搞混的是：他眾多必殺技到底哪些被防才是真正的正幀壓制？哪些動作被防可以直接確反（懲罰反擊 / Punish Counter）？這份指南已依 Capcom 官方最新幀數表（2026 年 11 月抓取版本）與正式中文術語全面校對，幫你徹底清除舊版口誤與混植數據，精準掌握阿爾俊的攻防回合。</p>
+<link rel="stylesheet" href="../style.css">
+<script>try{var t=localStorage.getItem('sf6-guides-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-sec="g" data-id="c02-11-arjun" data-pre="../">
+<div class="layout">
+  <aside>
+    <a class="brand" href="../index.html">SF6 實戰指南</a>
+    <div class="sub">單篇攻略 ＋ 影片實戰手冊</div>
+    <nav class="secs"><a href="../index.html" class="on">單篇攻略</a><a href="../manuals.html">影片實戰手冊</a></nav>
+    <div class="search-wrap"><input id="nav-search" class="nav-search" type="search" placeholder="搜尋角色 / 分類 / 關鍵字..."><button id="toggle" class="toggle" type="button">目錄</button></div>
+    <ul id="nav"></ul>
+    <button id="theme" class="theme" type="button">切換深色 / 淺色主題</button>
+  </aside>
+  <main>
+    <section class="page">
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>阿爾俊（Arjun）角色招式幀數數據</h1></header><p>阿爾俊（Arjun）是一位靠「神氣巨岩」控制場地、「大義巨腕」與「嚴酷岩肩」強行削磨對手可回復血量（白血），再用「鬼氣逼問」指令投與打擊兌現傷害的重裝壓制型角色。實戰中最容易讓人搞混的是：他眾多必殺技到底哪些被防才是真正的正幀壓制？哪些動作被防可以直接確反（懲罰反擊 / Punish Counter）？這份指南已依 Capcom 官方最新幀數表（2026 年 11 月抓取版本）與正式中文術語全面校對，幫你徹底清除舊版口誤與混植數據，精準掌握阿爾俊的攻防回合。</p>
 <blockquote>
-<p><strong>⚡ 一分鐘懶人包</strong>
-1. <strong>唯一 4 幀最速與唯一被防正幀通常技就是「站輕拳（<code>5LP</code>）」</strong>：<code>5LP</code> 發生 <strong>4 幀</strong>且被防 <strong>+1 幀</strong>；蹲輕拳（<code>2LP</code>）與蹲輕腳（<code>2LK</code>）為 <strong>5 幀</strong>，站輕腳（<code>5LK</code>）則是 <strong>6 幀、被防 -4 幀</strong>（別把站輕拳和站輕腳的數字記反了）。
-2. <strong>看到這幾招被防直接確反</strong>：
-   * <strong>目標連段 <code>Loose Cannon（5HP~HP）</code></strong>：打到第 2 下被防高達 <strong>-11 幀</strong>，直接上最痛的重攻擊懲罰連段！
-   * <strong>無岩柱時的輕／中「嚴酷岩肩（<code>623LP/MP</code>）」</strong>：幀數固定，貼身或尖端被防一律 <strong>-4 幀</strong>，全角色用 4 幀輕攻擊穩定確反；若觸發撞岩派生 <strong><code>Justice Beyond</code></strong>，被防更是 <strong>-7 幀</strong>。
-   * <strong>近距離「圓環氣息（<code>236K</code>）」／「神氣巨岩（<code>214K</code>）」／衍生 <code>Breathing Shockwave</code></strong>：近身被防分別為 <strong>-6 幀</strong>／<strong>-6 幀</strong>／<strong>-7 幀</strong>（只有 <strong>OD 圓環氣息</strong> 被防為 <strong>+1 幀</strong>）。
-   * <strong>蹲重腳（<code>2HK</code>）</strong>：被防 <strong>-11 幀</strong>，但要注意它<strong>可取消必殺技</strong>，阿爾俊常會預先輸入輕大義巨腕掩護收招。
-3. <strong>真正的正幀陷阱只有這幾招</strong>：
-   * <strong>站輕拳（<code>5LP</code>）</strong>：被防 <strong>+1 幀</strong>。
-   * <strong>重／極限技（OD）大義巨腕（<code>236HP / 236PP</code>）</strong>：被防 <strong>+2 幀</strong>；其兩段派生 <strong><code>Follow-up（236P~6P）</code></strong> 被防為 <strong>+1 幀</strong>（注意輕／中版大義巨腕本體被防為 <strong>-2 幀</strong>，接派生之間存在空檔，常可用 4 幀技或動力衝擊 DI 打斷！）。
-   * <strong>重／極限技（OD）嚴酷岩肩（<code>623HP / 623PP</code>）</strong>：無觸發岩柱時被防固定 <strong>+1 幀</strong>（重版發生慢達 28 幀）。
-   * <strong>OD 圓環氣息（<code>236KK</code>）</strong>：被防 <strong>+1 幀</strong>。
-   * <strong>不撓護衛派生 <code>Moral Breakdown（22HK~P）</code></strong>：發生 <strong>28 幀</strong>、被防 <strong>+3 幀</strong>並造成 <strong>1100 白血</strong>。
+<p><strong>⚡ 一分鐘懶人包</strong><br />
+1. <strong>唯一 4 幀最速與唯一被防正幀通常技就是「站輕拳（<code>5LP</code>）」</strong>：<code>5LP</code> 發生 <strong>4 幀</strong>且被防 <strong>+1 幀</strong>；蹲輕拳（<code>2LP</code>）與蹲輕腳（<code>2LK</code>）為 <strong>5 幀</strong>，站輕腳（<code>5LK</code>）則是 <strong>6 幀、被防 -4 幀</strong>（別把站輕拳和站輕腳的數字記反了）。<br />
+2. <strong>看到這幾招被防直接確反</strong>：<br />
+   * <strong>目標連段 <code>Loose Cannon（5HP~HP）</code></strong>：打到第 2 下被防高達 <strong>-11 幀</strong>，直接上最痛的重攻擊懲罰連段！<br />
+   * <strong>無岩柱時的輕／中「嚴酷岩肩（<code>623LP/MP</code>）」</strong>：幀數固定，貼身或尖端被防一律 <strong>-4 幀</strong>，全角色用 4 幀輕攻擊穩定確反；若觸發撞岩派生 <strong><code>Justice Beyond</code></strong>，被防更是 <strong>-7 幀</strong>。<br />
+   * <strong>近距離「圓環氣息（<code>236K</code>）」／「神氣巨岩（<code>214K</code>）」／衍生 <code>Breathing Shockwave</code></strong>：近身被防分別為 <strong>-6 幀</strong>／<strong>-6 幀</strong>／<strong>-7 幀</strong>（只有 <strong>OD 圓環氣息</strong> 被防為 <strong>+1 幀</strong>）。<br />
+   * <strong>蹲重腳（<code>2HK</code>）</strong>：被防 <strong>-11 幀</strong>，但要注意它<strong>可取消必殺技</strong>，阿爾俊常會預先輸入輕大義巨腕掩護收招。<br />
+3. <strong>真正的正幀陷阱只有這幾招</strong>：<br />
+   * <strong>站輕拳（<code>5LP</code>）</strong>：被防 <strong>+1 幀</strong>。<br />
+   * <strong>重／極限技（OD）大義巨腕（<code>236HP / 236PP</code>）</strong>：被防 <strong>+2 幀</strong>；其兩段派生 <strong><code>Follow-up（236P~6P）</code></strong> 被防為 <strong>+1 幀</strong>（注意輕／中版大義巨腕本體被防為 <strong>-2 幀</strong>，接派生之間存在空檔，常可用 4 幀技或動力衝擊 DI 打斷！）。<br />
+   * <strong>重／極限技（OD）嚴酷岩肩（<code>623HP / 623PP</code>）</strong>：無觸發岩柱時被防固定 <strong>+1 幀</strong>（重版發生慢達 28 幀）。<br />
+   * <strong>OD 圓環氣息（<code>236KK</code>）</strong>：被防 <strong>+1 幀</strong>。<br />
+   * <strong>不撓護衛派生 <code>Moral Breakdown（22HK~P）</code></strong>：發生 <strong>28 幀</strong>、被防 <strong>+3 幀</strong>並造成 <strong>1100 白血</strong>。<br />
 4. <strong>設置總長與當身真相</strong>：普通<strong>神氣巨岩（<code>214K</code>）</strong>總動作 <strong>55 幀</strong>（OD 版 <strong>50 幀</strong>），中距離裸放極易吃綠衝確反；<strong>不撓護衛（<code>22HK</code>）</strong>並非第 1 幀無敵，而是<strong>第 3～28 幀</strong>吸收打擊與飛行道具、收招硬直 <strong>30 幀</strong>、被防 <strong>-3 幀</strong>且<strong>完全怕投</strong>。</p>
 </blockquote>
 <hr />
@@ -350,15 +365,15 @@
 </table></div>
 <h3>3. 第二級實戰衍生幀數（系統加值驗算）</h3>
 <p>在《快打旋風 6》共通系統規則下，下列情境會直接在「官方基礎幀數」上進行加減：
-* <strong>動力箭步（Drive Rush / 綠衝）</strong>：地面一般技／特殊技命中與被防<strong>固定 +4 幀</strong>。
-  * 綠衝 <strong>站輕拳（<code>5LP</code>）</strong>：命中 <code>4 + 4 = +8</code>（可目押接 <code>5MK</code>），被防 <code>1 + 4 = +5</code>（直接構成貼身投打與指令投擇）。
-  * 綠衝 <strong>站中拳（<code>5MP</code>）</strong>：命中 <code>4 + 4 = +8</code>（可穩接 <code>2HP</code>），被防 <code>-2 + 4 = +2</code>（轉為正幀壓制，且可無縫取消 <code>623LP</code> 嚴酷岩肩磨血）。
+* <strong>動力箭步（Drive Rush / 綠衝）</strong>：地面一般技／特殊技命中與被防<strong>固定 +4 幀</strong>。<br />
+  * 綠衝 <strong>站輕拳（<code>5LP</code>）</strong>：命中 <code>4 + 4 = +8</code>（可目押接 <code>5MK</code>），被防 <code>1 + 4 = +5</code>（直接構成貼身投打與指令投擇）。<br />
+  * 綠衝 <strong>站中拳（<code>5MP</code>）</strong>：命中 <code>4 + 4 = +8</code>（可穩接 <code>2HP</code>），被防 <code>-2 + 4 = +2</code>（轉為正幀壓制，且可無縫取消 <code>623LP</code> 嚴酷岩肩磨血）。<br />
   * 綠衝 <strong>蹲中腳（<code>2MK</code>）</strong>：命中 <code>5 + 4 = +9</code>，被防 <code>-2 + 4 = +2</code>（無法取消但取得 +2 先手）。
-* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 120%）。
-  * 例如 <strong>站輕拳（<code>5LP</code>）</strong> 基礎命中 +4：截擊變 <strong>+6</strong>、懲罰反擊變 <strong>+8</strong>（可直接目押接 7 幀 <code>5MK</code>！）。
-  * <strong>蹲輕拳（<code>2LP</code>）</strong> 基礎命中 +5：截擊變 <strong>+7</strong>（接 <code>5MK</code>）、懲罰反擊變 <strong>+9</strong>（接 <code>2MP</code> 擊倒）。
+* <strong>截擊（Counter Hit）與懲罰反擊（Punish Counter）</strong>：截擊命中<strong>固定 +2 幀</strong>，一般懲罰反擊命中<strong>固定 +4 幀</strong>（傷害皆 120%）。<br />
+  * 例如 <strong>站輕拳（<code>5LP</code>）</strong> 基礎命中 +4：截擊變 <strong>+6</strong>、懲罰反擊變 <strong>+8</strong>（可直接目押接 7 幀 <code>5MK</code>！）。<br />
+  * <strong>蹲輕拳（<code>2LP</code>）</strong> 基礎命中 +5：截擊變 <strong>+7</strong>（接 <code>5MK</code>）、懲罰反擊變 <strong>+9</strong>（接 <code>2MP</code> 擊倒）。<br />
   * <strong>重版大義巨腕（<code>236HP</code>）</strong> 懲罰反擊會觸發 <strong>26 幀崩潰（Crumple Stun）</strong>；<strong>輕／中版大義巨腕</strong> 截擊或懲罰反擊皆<strong>強制浮空</strong>，可再追打。
-* <strong>燒盡防禦（Burnout）</strong>：對手燒盡時防禦所有攻擊<strong>固定額外承受 +4 幀硬直</strong>（即進攻方被防幀數全部 <code>+4</code>）。
+* <strong>燒盡防禦（Burnout）</strong>：對手燒盡時防禦所有攻擊<strong>固定額外承受 +4 幀硬直</strong>（即進攻方被防幀數全部 <code>+4</code>）。<br />
   * 對手燒盡時，阿爾俊常態 <strong>輕／中大義巨腕</strong> 被防從 <code>-2</code> 變 <strong><code>+2</code></strong>，<strong>重／OD 大義巨腕</strong> 從 <code>+2</code> 變 <strong><code>+6</code></strong>，<strong>派生 Follow-up</strong> 從 <code>+1</code> 變 <strong><code>+5</code></strong>，<strong>站輕拳（<code>5LP</code>）</strong> 從 <code>+1</code> 變 <strong><code>+5</code></strong>，<strong>重／OD 嚴酷岩肩</strong> 從 <code>+1</code> 變 <strong><code>+5</code></strong>，搭配每招高額白血，會形成近乎無解的防禦地獄。
 * <strong>壓持續（Meaty）</strong>：以第 $k$ 個持續幀命中或被防時，有利幀額外增加 <code>+(k - 1)</code> 幀。例如 <strong>蹲重拳（<code>2HP</code>）</strong> 持續長達 7 幀（10–16 幀），若以最末端第 16 幀壓起身，最多可額外 <code>+6 幀</code>（被防從 -5 變 <strong><code>+1</code></strong>）。</p>
 <hr />
@@ -702,4 +717,11 @@
 <li><strong>輕／中大義巨腕（<code>236LP/MP</code>）與派生的距離變數</strong>：一般版大義巨腕被防雖為 <code>-2</code> 幀，但若在貼身或一般立回距離接 20 幀發生的 <strong><code>Follow-up（236P~6P）</code></strong>，兩段之間會出現約 4 幀以上的空隙，容易被 4 幀輕拳或動力衝擊（DI）打斷；然而在極限尖端距離或從連段自然帶入時，空隙縮減甚至形成連續防禦或幀數陷阱，進攻與防守方都必須看距離決定是否插招或按 DI。</li>
 <li><strong>嚴酷岩肩與岩石站位變數</strong>：輕／中嚴酷岩肩平地被防固定 <code>-4</code> 幀（不會因尖端而安全），重／OD 版固定 <code>+1</code> 幀；但只要撞觸場上的神氣巨岩就會強制轉為 <strong><code>Justice Beyond</code>（11 幀、破甲、被防 -7）</strong>，此時無法再用 DI 反制，距離也常推遠至無法輕易確反，防守方應切換為撥擋（Parry）與站位控制。</li>
 <li><strong>神氣巨岩蓄力與不同實戰壓起身優勢</strong>：原舊文對岩石設置曾混記 <code>+10</code> 與 <code>+4～+5</code> 等不同幀數，實因前置擊倒招式與是否長按蓄力（Hold）延遲落點所致，並非神氣巨岩基礎被防幀數改變（近身基礎被防皆為 <code>-6</code> 幀）；實戰可視對手是否習慣按撥擋，靈活切換長按延遲與即時壓制。</li>
-</ul><div class="nav"><span><a href="c02-11-alex.html">← C02-11 艾力克斯（Alex）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-blanka.html">C02-11 布蘭卡（Blanka）角色招式幀數數據 →</a></span></div></div></body></html>
+</ul><nav class="pager"><a href="c02-11-alex.html">← C02-11 艾力克斯（Alex）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-blanka.html">C02-11 布蘭卡（Blanka）角色招式幀數數據 →</a></nav>
+    </section>
+  </main>
+</div>
+<script src="../nav.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
