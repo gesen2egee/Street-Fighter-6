@@ -1,0 +1,160 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金伯莉（Kimberly）對策攻略｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / Kimberly 琪琳（kimberly） 對策</div><h1>金伯莉（Kimberly）對策攻略</h1><p>遇到武神流忍者角色「金伯莉（Kimberly）」，是不是常覺得她一下滑鏟、一下彩隱形（煙霧瞬移）飛到頭上、一下又開疾馳（跑步）衝過來多擇，被逼到角落後還要面對炸彈手裏劍（噴漆罐）壓起身，打起來就像在玩生存恐怖遊戲？本篇指南結合 Capcom 官方完整幀數表，幫你把金伯莉所有「看似無解、其實都有固定解法」的招式拆解清楚，從怎麼打斷她的疾馳急停與弧空、分辨彩隱形煙霧顏色、確反兩種滑鏟與肘落，到各角色專屬對策小抄，助你徹底擺脫被金伯莉速度與花招壓著打的困境！</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>第一原則：絕對別被免費推進角落，看到她倒地就大膽壓起身！</strong>
+   * 金伯莉<strong>沒有耗 2 格動力的地面無敵昇龍</strong>（她的 <strong>OD 武神旋風腳 <code>214KK</code> 第 1-11 幀僅對空無敵</strong>，對地面打擊毫無無敵；<strong>SA2 <code>214214P</code> 也僅第 1 幀無敵</strong>）。她在起身時唯一的無敵反擊只有<strong>動力反攻：轉（6HPK，被防 <code>-6</code>）</strong>、<strong>SA1 武神亂拍子（10 幀發生，第 1-14 幀打投無敵，被防 <code>-25</code>）</strong>與 <strong>SA3 武神顯現·神樂（8 幀發生，第 1-13 幀完全無敵，被防 <code>-35</code>）</strong>。只要注意她的超必殺槽，把她壓倒就是你的絕對進攻回合！
+2. <strong>看到「彩隱形（214P，煙霧瞬移）」看煙霧顏色瞬間反應</strong>：
+   * <strong>藍色煙霧（一般版 214P）</strong>：從地面出現（總長 43 幀，第 34 幀後才能出招，或長按超過 19 幀留在原地假動作），看到藍煙直接<strong>按輕拳或長判定站重腳</strong>打掉，<strong>千萬別按動力衝擊（會被她落地反開衝擊或摔掉）</strong>！
+   * <strong>黃綠色煙霧（OD 版 214PP）</strong>：固定出現在你正上方空中（第 34 幀起可出空中攻擊或空中指令投），看到黃綠煙<strong>立刻出對空技（蹲重拳或無敵昇龍）</strong>或直接<strong>垂直跳／前跳空對空</strong>！
+3. <strong>「肘落（j.2MP）」與「飛箭腳（前重腳 6HK）」別傻傻被壓</strong>：
+   * <strong>肘落（前跳頂點 j.2MP）</strong>：落地硬直長達 8 幀，被站防或一般高度防住後<strong>金伯莉多為不利（約 <code>-2</code> 幀）</strong>，防住後立刻按 <strong>4 幀輕拳</strong>搶回回合！
+   * <strong>飛箭腳（6HK，惡魔踩頭）</strong>：第一段被防後若她派生<strong>飛牆越櫓（~7/8/9 彈跳）</strong>，<strong>直接連按站輕拳（5LP）</strong>就能把她往前跳、原地跳與空跳摔的所有選項全部打落！
+4. <strong>認清金伯莉的「真假正幀」與必抓確反</strong>：
+   * <strong>千萬別搶按的正幀招</strong>：<strong>站重腳（5HK，被防 <code>+2</code>）</strong>、<strong>蹲中腳（2MK，被防 <code>+1</code>）</strong>、<strong>斷身（疾馳中 LK，被防 <code>+1</code>／OD 版 <code>+3</code>）</strong>、<strong>空中武神旋風腳（j.214K，被防 <code>+1</code>）</strong>。
+   * <strong>必抓的確反破綻</strong>：<strong>滑影（疾馳中 MK，被防 <code>-12</code>／OD 版 <code>-10</code>）</strong>、貼身防住的<strong>切水腳（3MK，第 1 持續幀被防 <code>-5</code>）</strong>、不派生的<strong>弧空（被防 <code>-6</code>）</strong>、以及弧空踢擊派生<strong>武神戟刃腳（弧空中 K，被防 <code>-8</code>）</strong>！</p>
+</blockquote>
+<hr />
+<h2>一、對戰金伯莉的核心觀念：拆解套路、拒絕免費放她進門</h2>
+<p>金伯莉的特點是「移動快、切入花招多，但未開 SA3 前基礎單發與投技傷害偏低（普通投僅 <code>1082</code>），且缺乏一般無敵凹招」。如果她一直用疾馳、飛箭腳或彩隱形壓你，你只顧死防就會被削光動力槽關進角落，因此<strong>必須在立回階段主動把她的偽連攜與突進技打散</strong>。</p>
+<ul>
+<li><strong>維持「中距離蹲防」並緊盯頭頂</strong>：</li>
+<li>中距離她最愛突然出<strong>切水腳（3MK，11 幀滑鏟）</strong>或<strong>疾馳滑影（236K~MK）</strong>貼臉，平時保持蹲防即可封死下段突進，並準備在看到藍色／黃綠色煙霧或前跳時立刻反應。</li>
+<li><strong>牢記兩大原生正幀普通技</strong>：金伯莉的<strong>站重腳（5HK，被防 <code>+2</code>）</strong>與<strong>蹲中腳（2MK，被防 <code>+1</code>）</strong>被防禦後皆為她有利，防住這兩招後切勿搶按中重攻擊，否則會直接吃她的 <code>站中拳（5MP，6 幀）</code> 或 <code>蹲輕拳（2LP，4 幀）</code> 幀數陷阱！</li>
+<li><strong>注意「輕流轉一文字（236LP）」被防 <code>-4</code> 的距離陷阱</strong>：</li>
+<li>輕流轉一文字（10 幀發生、持續 10-12）被防為 <strong><code>-4</code> 幀</strong>，若在最遠端（第 3 持續幀）被防更只有 <strong><code>-2</code> 幀</strong>，除非完全貼身且你的 4 幀輕拳夠長，否則防住後別盲目按慢速確反技以免揮空被反打。中版（236MP）、重版（236HP）與 OD 版（236PP）被防則高達 <strong><code>-12</code> 幀</strong>，擋住必可大確反！</li>
+<li><strong>對空優先用「上方判定廣的普通技（如蹲重拳）」，少用昇龍硬猜</strong>：</li>
+<li>金伯莉最愛在前跳頂點用<strong>肘落（j.2MP）</strong>急降停在半路，專門騙你揮空無敵昇龍再打全套懲罰反擊。改用 <code>蹲重拳（2HP）</code> 等對空普通技，就算被肘落騙到也只是小虧，打中還能接追打！</li>
+<li><strong>立回與角落別隨便「後跳」</strong>：她的空中<strong>肘落（j.2MP）</strong>或<strong>跳中拳（j.MP，空中命中強制浮空追打）</strong>會直接把後跳的你打落接整套連段。</li>
+</ul>
+<hr />
+<h2>二、徹底破解金伯莉四大招牌突進技</h2>
+<h3>1. 疾馳（Sprint，236K，俗稱跑步）取消、急停與弧空二擇</h3>
+<p>金伯莉常在 <code>站重拳（5HP）</code>、<code>站中拳（5MP）</code>、<code>站中腳（5MK）</code>、<code>蹲重拳（2HP）</code> 之後取消<strong>疾馳（236K）</strong>或 <strong>OD 疾馳（236KK）</strong>，接著衍生出「<strong>急停（~P，最快 21 幀／OD 版 18 幀）</strong>」、「<strong>弧空（近身自動飛踢）</strong>」或中距離三種踢擊。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">金伯莉的疾馳後續選項</th>
+<th style="text-align: left;">官方幀數與性質</th>
+<th style="text-align: left;">防守方最佳應對與確反手段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>一般疾馳急停（236K~P）</strong></td>
+<td style="text-align: left;">合計最快 21 幀；<code>5HP</code> 取消一般急停被防為 <strong><code>-4</code> 幀</strong></td>
+<td style="text-align: left;">看到 <code>5MK</code> / <code>5MP</code> / <code>5HP</code> 取消一般疾馳，<strong>直接連按 4 幀輕拳</strong>可同時打斷急停偷摔與慢速派生！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 疾馳急停（236KK~P）</strong></td>
+<td style="text-align: left;">合計最快 18 幀（快 3 幀）；<code>2HP</code> 取消 OD 急停被防 <strong><code>+1</code> 幀</strong></td>
+<td style="text-align: left;">不可無腦搶 4 幀（會被她的 4LP 截擊）！建議用<strong>延遲解摔（Delay Tech）</strong>同時防打擊與解摔</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>弧空（236K 近身自動）</strong><br>（不派生直接落地）</td>
+<td style="text-align: left;">發生 6 幀（含移動共 22F / OD 20F），落地<strong>命中 <code>+3</code>、被防 <code>-6</code></strong></td>
+<td style="text-align: left;">若她弧空後不按派生直接落地（俗稱空翻收招），<strong>被防是 <code>-6</code> 幀</strong>，直接用 4～6 幀輕中攻擊確反！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>武神戟刃腳（弧空中 K）</strong><br>（弧空跳踢派生）</td>
+<td style="text-align: left;">發生 13 幀，落地<strong>被防 <code>-8</code> 幀</strong>（OD 版同為 <strong><code>-8</code> 幀</strong>）</td>
+<td style="text-align: left;"><strong>大破綻！</strong> 只要蹲防／站防擋下這發跳踢，直接用 <strong>6～8 幀中攻擊連段</strong>確反！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>武神飯綱摔（弧空中 P）</strong><br>（弧空指令投派生）</td>
+<td style="text-align: left;">發生 13 幀，不可防禦（傷害 1440 / OD 900），<strong>揮空落地硬直 40 幀</strong></td>
+<td style="text-align: left;">場中在擋住弧空第一段後可輸入<strong>後墊步（44，1-15F 投無敵）</strong>，讓指令投揮空並獲得 <strong>-29 幀以上</strong>超大確反！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>斷身（疾馳中 LK）</strong></td>
+<td style="text-align: left;">一般版<strong>被防 <code>+1</code></strong>、OD 版<strong>被防 <code>+3</code></strong></td>
+<td style="text-align: left;"><strong>她有利！</strong> 防住後千萬別搶按，乖乖繼續猜下一波防禦</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>滑影（疾馳中 MK）</strong></td>
+<td style="text-align: left;">一般版<strong>被防 <code>-12</code></strong>、OD 版<strong>被防 <code>-10</code></strong></td>
+<td style="text-align: left;"><strong>大破綻！</strong> 蹲防擋下後直接用重攻擊或中攻擊取消綠衝打滿確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>獵頭踢（疾馳中 HK）</strong></td>
+<td style="text-align: left;">中段攻擊（19F / OD 15F），一般版<strong>被防 <code>-3</code></strong>、OD 版<strong>被防 <code>-1</code></strong></td>
+<td style="text-align: left;">站防擋下後她為微不利（-3 / -1），可搶按 4 幀輕拳拿回主動權</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>針對「普通技取消弧空」的三種實戰解法</strong>：
+  1. <strong>解法 A（完美撥擋 Perfect Parry）</strong>：弧空飛踢接觸的時間點非常固定，看到她取消疾馳近身起跳時點按<strong>動力撥擋（MP+MK）</strong>，一旦觸發打擊完美撥擋（硬直僅 1 幀），直接用最速普通技起手打整套連段（注意現行版本完美撥擋弧空後因空中高度關係，不建議直接按動力衝擊，改用地面最快拳腳接連段最穩）！還可以進階練習「<strong>按撥擋同時複合輸入前前（動力箭步）</strong>」：若她出弧空就會被你完美撥擋，若她急停想摔你，你則會因撥擋轉動力箭步衝出去而讓她的投技揮空！
+  2. <strong>解法 B（場中擋完弧空第一段後「後墊步 44」）</strong>：在<strong>場地中央</strong>防住弧空第一腳時立刻輸入<strong>後墊步（44）</strong>：若她派生<strong>武神飯綱摔（指令投）</strong>會直接抓空（落地 40 幀硬直任你宰割）；若她派生<strong>武神戟刃腳（跳踢）</strong>雖會在空中擦到後墊步中的你（僅受 630 輕傷且不會進第 2 段），落地後還能拉開距離回到立回！（<strong>注意：角落不可用後墊步</strong>，因為在角落被 OD 武神戟刃腳打中會直接上牆吃全套大連段！）
+  3. <strong>解法 C（無敵技／模糊輕拳逆二擇）</strong>：防住第一段或看到一般疾馳取消時，延遲約 3 幀再按 4 幀輕拳（模糊輕拳，同時防住直接派生並打斷急停偷摔），或偶爾穿插無敵昇龍／超必殺技讓她不敢肆無忌憚飛踢。</li>
+</ul>
+<h3>2. 彩隱形（Hidden Variable，214P，日文俗稱「ドロン」煙霧瞬移）</h3>
+<blockquote>
+<p><strong>術語小百科</strong>：日文攻略常稱此招為「ドロン（Doron，忍術煙霧消失音）」，早期自動字幕常誤譯為「無人機（Drone）」。實戰只要看煙霧顏色就能 100% 破解！
+* <strong>藍色煙霧（一般版 214P，地面出現）</strong>：
+  * 總長 43 幀（第 19-26 幀無敵，第 34 幀起才可出招；若長按超過 19 幀則為留在原地的假動作）。
+  * <strong>對策</strong>：看到藍色煙霧<strong>絕對不要按動力衝擊（DI）</strong>（她第 34 幀就能反按 DI 或直接摔掉你）！直接<strong>原地連按輕拳（5LP / 2LP）</strong>、<strong>蹲重拳（2HP）</strong>或判定大的<strong>站重腳</strong>，或是直接<strong>垂直跳攻擊</strong>，就能在她第 34 幀出招前直接把她打進連段！
+* <strong>黃綠色煙霧（OD 版 214PP，正上方空中出現）</strong>：
+  * 固定瞬移到你頭頂正上方空中，第 34 幀起可取消空中攻擊（<code>j.MP</code>）或空中指令投（<code>荒妖捻 j.236P</code>）。
+  * <strong>對策</strong>：看到黃綠色煙霧<strong>立刻出對空技（蹲重拳、對空特殊技或無敵昇龍）</strong>，或直接<strong>垂直跳／前跳空對空</strong>，幾乎百發百中！</p>
+</blockquote>
+<h3>3. 飛箭腳（Hisen Kick，前重腳 6HK，俗稱飛閃踢／惡魔踩頭）</h3>
+<p>金伯莉從中距離用前重腳（發生 27 幀、被防 <code>-3</code>、搭配綠衝被防 <code>+1</code>）踩過來後，可輸入 <code>7 / 8 / 9</code> 派生<strong>飛牆越櫓（三角跳彈起）</strong>再接正逆向跳攻擊或空跳摔。
+* <strong>千萬別無腦按住動力撥擋（Parry）</strong>：雖然撥擋不用猜正逆向，但如果金伯莉選擇「飛牆越櫓空跳落地直接摔」，按住撥擋會直接吃 <strong>1838 傷害（開 SA3 後 2040 傷害）的懲罰反擊大摔</strong>！
+* <strong>最簡單萬用解法——防住 6HK 第一段後直接連按「站輕拳（5LP）」</strong>：
+  * 只要防住飛箭腳第一段後立刻連點 <code>站輕拳（5LP）</code>，就能把她派生飛牆越櫓的「前跳、原地跳、空跳摔」全部在空中點落！就算她選擇往後跳（<code>~7</code>），你的輕拳也只是安全揮空並回到立回。</p>
+<h3>4. 兩種滑鏟（切水腳 3MK vs 滑影 236K~MK）與肘落（j.2MP）</h3>
+<ul>
+<li><strong>滑鏟防住後的確反判斷</strong>：</li>
+<li><strong>滑影（疾馳中 MK，236K~MK）</strong>：一般版被防 <strong><code>-12</code> 幀</strong>、OD 版被防 <strong><code>-10</code> 幀</strong>，不論什麼距離擋住，直接用重攻擊或中攻擊連段狠狠確反！</li>
+<li><strong>切水腳（3MK，通常滑鏟）</strong>：發生 11 幀、持續 11-20（共 10 幀）。<strong>近距離（第 1～2 持續幀）被防為 <code>-5</code>～<code>-4</code> 幀</strong>，擋下立刻用 4 幀輕拳確反！但須注意：<strong>切水腳貼身第 1 持續幀「命中」時金伯莉為 <code>+1</code> 幀有利</strong>（且遠距離尾端持續幀被防時金伯莉可達 <code>+1</code>～<code>+4</code> 幀有利），因此<strong>被打中切水腳、或是只用腳尖最遠端擦到防禦時，千萬別搶按</strong>！</li>
+<li><strong>肘落（前跳頂點 j.2MP）</strong>：</li>
+<li>落地硬直高達 8 幀，除非她在極低空才打到你的腳尖，否則一般高度被防住後<strong>金伯莉約為 <code>-2</code> 幀不利</strong>！擋下肘落後別發呆，<strong>立刻按 4 幀輕拳</strong>搶回進攻權。</li>
+</ul>
+<hr />
+<h2>三、對付「生動力箭步（綠衝）」與「角落炸彈手裏劍壓起身」</h2>
+<h3>1. 生動力箭步（綠衝拳腳）的攔截與撥擋</h3>
+<p>金伯莉的生綠衝初速極快，常接 <strong>綠衝站中拳（5MP，被防 <code>+2</code>）</strong>、<strong>綠衝蹲中拳（2MP，被防 <code>+3</code>）</strong> 或 <strong>綠衝蹲中腳（2MK，被防 <code>+5</code>）</strong>。
+* <strong>應對心法</strong>：金伯莉生綠衝多半在衝刺初段就出拳腳，看到綠光可優先準備<strong>點按完美撥擋</strong>或用長判定輕中攻擊攔截；當她忌憚你的撥擋而想「綠衝跑到底直接摔」時，因為滑行時間變長，反而容易被你看清楚點輕拳打斷。</p>
+<h3>2. 角落「炸彈手裏劍（噴漆罐，22P）」壓起身保命心法</h3>
+<ul>
+<li><strong>為什麼在角落被手裏劍壓起身時「寧可被摔，也不要亂按或亂解摔」？</strong></li>
+<li>金伯莉在角落透過 OD 武神戟刃腳上牆設置 <strong>重炸彈手裏劍（22HP）</strong> 後，前墊步擁有 <strong><code>+9</code> 幀有利</strong>（不前墊步 <strong><code>+12</code> 幀</strong>）。</li>
+<li>如果你在這時候亂按搶招或亂按解摔被她退康（Shimmy），一旦被 <code>蹲重拳（2HP）</code>、中段 <code>風車（4HK）</code> 或下段 <code>蹲中腳（2MK）</code> 打中並引爆手裏劍，就是一套 <strong>4,500～6,000 傷害的爆發連段</strong>；反之，若她直接對已經脫離手裏劍爆炸區、或在一般設置下摔你，<strong>她的基礎普通投傷害只有 <code>1082</code>（就算開了 SA3 也只是標準的 <code>1200</code>）</strong>！</li>
+<li><strong>防守鐵律</strong>：除非是已經算準時間「摔中會剛好踩在手裏劍爆炸上」的特定設置（此時可用 <strong>前跳逃生</strong> 或 <strong>OD 無敵昇龍／SA 無敵技</strong> 穿過），否則面對手裏劍連防時<strong>「集中精神看中下段切換防禦、少按解摔」</strong>，撐過爆炸就能活下來反打！</li>
+<li><strong>壓制金伯莉起身時怎麼打最兇？</strong>：</li>
+<li>因為她沒有耗 2 格動力的無敵昇龍（OD 旋風腳對地無無敵），只要她<strong>沒有氣放 SA1 / SA3</strong>，或者你用<strong>輕攻擊壓持續（Meaty 2LP / 5LP）</strong>（就算她按起身動力反攻 <code>6HPK</code> 18 幀發生，你的輕攻擊早就收招可以防住並確反她 <code>-6</code> 幀！），就能毫無顧忌地用打擊、壓持續與點摔把她壓死在角落！</li>
+</ul>
+<hr />
+<h2>四、各角色對戰金伯莉實戰小抄</h2>
+<ul>
+<li><strong>路克（Luke）</strong>：用 <code>蹲重拳（2HP）</code> 可同時穩定對空打落一般跳與肘落；面對她的彩隱形（214P）可用 <code>2HP</code> 或 <code>站輕拳（5LP）</code> 攔截；一旦把沒有無敵昇龍的金伯莉關進角落，用沙暴與強拳壓制就能輕鬆收割。</li>
+<li><strong>隆（Ryu）</strong>：中距離多用輕波與刀背踢牽制，逼她強行用飛箭腳或彩隱形進場再逐一擊落；防住她普通技取消疾馳時，除連按 <code>站輕拳（5LP）</code> 外，亦可穿插<strong>後跳重腳</strong>同時躲投並踢落她的派生。</li>
+<li><strong>凱爾（Guile）</strong>：核心目標是<strong>用音速爆擊（Sonic Boom）築牆，不讓她免費近身</strong>。看到藍色或黃綠色煙霧（彩隱形 214P / PP）時，凱爾的<strong>腳刀（Flash Kick）</strong>能一招直接擊落兩種瞬移的所有衍生！</li>
+<li><strong>韓蛛俐（Juri）</strong>：金伯莉常想用跳躍肘落跨過蛛俐的地波，放波後務必扣住對空；防住她的疾馳取消可用 <code>蹲輕拳（2LP）</code> 或 <code>站輕拳（5LP）</code> 打斷，壓她起身時大膽發揮蛛俐的綠衝連防優勢。</li>
+<li><strong>泰瑞（Terry）</strong>：立回可用 <code>站重拳（5HP）</code> 與遠距離火焰衝拳牽制；看到她用肘落變軌或 OD 彩隱形從頭頂落下時，重版昇龍（Rising Tackle）可穩定擊落。</li>
+<li><strong>布蘭卡（Blanka）</strong>：金伯莉在場中想用前跳肘落騙對空時，布蘭卡可算準她落點直接用 <code>雷霆滑行（3HP）</code> 抓落地硬直；防住飛箭腳（6HK）後的彈跳同樣用 <code>站輕拳（5LP）</code> 點落。</li>
+<li><strong>瑪儂（Manon）</strong>：看到藍色煙霧直接按 <code>站輕拳（5LP）</code>；防住她場中疾馳弧空時，可用<strong>後跳</strong>或<strong>後墊步</strong>同時閃過指令投與停頓選項（注意角落不可後跳）。</li>
+<li><strong>阿鬼（A.K.I.）</strong>：看到彩隱形煙霧立刻按 <strong><code>站重腳（5HK）</code></strong> 可同時攔截地面藍煙與空中黃綠煙！看到她普通技（2HP 除外）取消一般疾馳直接用 <code>5LP</code> 打斷；防住近距離切水腳（-5）用 <code>蹲輕拳（2LP）</code> 確反，防住疾馳滑影（-12 / -10）直接用重攻擊連段確反。</li>
+<li><strong>達爾西姆（Dhalsim）</strong>：面對金伯莉這種擁有彩隱形、滑鏟與肘落的高機動角色，單純龜在遠處放火球會被直接穿過，必須主動利用長拳腳與空中瞬移拉打。</li>
+<li><strong>豪鬼（Akuma）</strong>：對空用 <code>蹲重拳（2HP）</code> 迎擊肘落風險最低、打中可追打；在角落亦可預判她發動疾馳的瞬間用動力衝擊或百鬼襲反制。</li>
+<li><strong>傑米（Jamie）</strong>：面對金伯莉的肘落（j.2MP）與空中變軌，傑米發生較快的<strong>中版張弓腿（623MK）</strong>比慢速重版更適合穩定對空；防住她的破綻招式時，亦可用發生快、持續長的<strong>輕版張弓腿（623LK）</strong>穩定確反並推進酒杯等級。</li>
+</ul>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ol>
+<li><strong>已由官方數據裁決之核心爭議總結</strong>：
+   * <strong>防住「肘落（j.2MP）」誰有利？</strong>：官方數據肘落落地硬直為 <strong>8 幀</strong>（比一般跳攻多 5 幀），一般高度被站防／蹲防後皆為<strong>金伯莉不利（約 <code>-2</code> 幀）</strong>，防守方可直接按 4 幀輕拳搶攻；唯有金伯莉在極低打點剛好擦到蹲姿對手腳尖時才可能接近五五波。
+   * <strong>普通技取消「疾馳（236K）」能不能用 4 幀輕拳插斷？</strong>：取決於金伯莉前面按的是哪顆普通技以及是否花費動力出 <strong>OD 疾馳</strong>：<ul>
+<li>若為 <code>站中腳（5MK）</code>、<code>站中拳（5MP）</code> 或 <code>站重拳（5HP）</code> 取消<strong>一般疾馳急停（236K~P）</strong>，被防為 <strong><code>-4</code> 幀以下</strong>，防守方連按 4 幀輕拳可穩定打斷急停偷摔！</li>
+<li>若為 <code>站重拳（5HP）</code>／<code>蹲重拳（2HP）</code> 取消<strong>近距離弧空</strong>或取消 <strong>OD 疾馳急停（236KK~P，快 3 幀，2HP 取消被防 <code>+1</code>）</strong>，則 4 幀輕拳會被打康（Counter Hit），此時應改用<strong>完美撥擋</strong>、<strong>延遲解摔</strong>或<strong>場中後墊步</strong>應對。</li>
+</ul>
+</li>
+<li><strong>防守資源取捨流派（動力反攻 vs 延遲解摔／後墊步）</strong>：
+   * 面對金伯莉的 <strong>OD 疾馳弧空</strong> 或 <strong>角落手裏劍壓制</strong>，保守派選手傾向在防住第一段時直接花 2 格動力發動<strong>動力反攻（Drive Reversal）</strong>把她推回場中，避免進入猜錯掉半條血的二擇；進攻派選手則偏好保留動力量表，在場中利用<strong>後墊步（44）</strong>抓指令投揮空、在角落靠<strong>延遲解摔與耐性蹲防</strong>撐過爆炸後打滿確反。可依自身剩餘血量與動力量表靈活切換。</li>
+</ol><div class="nav"><span><a href="c79.html">← C79 肯（Ken）對策攻略</a></span><span style="text-align:right"><a href="c81.html">C81 莉莉（Lily）對策攻略 →</a></span></div></div></body></html>

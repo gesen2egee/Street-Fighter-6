@@ -1,0 +1,30 @@
+
+:root{--bg:#10131a;--card:#1a1f2b;--line:#2b3345;--text:#e6e9f0;--sub:#9aa5ba;--accent:#ff6a3d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 "Noto Sans TC","Microsoft JhengHei",sans-serif}
+a{color:#7cc4ff;text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 60px}
+header.top{border-bottom:1px solid var(--line);background:#0c0f15}
+header.top .wrap{padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+header.top b{color:var(--accent)}
+h1{font-size:1.7em;margin:.6em 0 .3em}h2{margin-top:1.8em;border-left:4px solid var(--accent);padding-left:.5em}
+h3{margin-top:1.4em;color:#ffd9cc}
+blockquote{margin:1em 0;padding:.6em 1em;background:var(--card);border-left:4px solid var(--accent);border-radius:6px}
+blockquote p{margin:.3em 0}
+code{background:#242b3b;padding:1px 6px;border-radius:4px;font-size:.92em}
+.tbl{overflow-x:auto;margin:1em 0}
+table{border-collapse:collapse;width:100%;font-size:.93em}
+th,td{border:1px solid var(--line);padding:6px 10px;vertical-align:top}
+th{background:#222a3a}
+tr:nth-child(even) td{background:#161b26}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:.95em}
+.nav a{max-width:48%}
+.crumb{color:var(--sub);font-size:.9em}
+#q{width:100%;padding:10px 14px;font-size:1em;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);margin:12px 0 4px}
+.grp{margin-top:28px}.grp h2{margin-bottom:6px}
+.sub{color:var(--sub);font-size:.9em;margin:0 0 6px}
+ul.list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+ul.list li a{display:block;padding:9px 12px;background:var(--card);border:1px solid var(--line);border-radius:8px;height:100%}
+ul.list li a:hover{border-color:var(--accent);text-decoration:none}
+.badge{display:inline-block;font-size:.78em;color:var(--accent);margin-right:6px}
+footer{color:var(--sub);font-size:.85em;margin-top:40px}

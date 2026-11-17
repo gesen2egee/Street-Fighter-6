@@ -1,0 +1,222 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>各角色確反｜其他角色｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>各角色確反｜其他角色</h1><p>這篇是給已經懂「確反（懲罰反擊，Punish Counter）」基本邏輯、想直接查「對上特定角色時，哪一招擋住可以穩穩反打、哪一招其實是正幀或安全不能亂搶」的玩家準備的實戰速查手冊。全篇已依 Capcom 官方最新 32 角色幀數表與系統公式全面校對，刪除錯植的非本作角色與語音亂碼，並統一採用正式中文招式名稱與 <strong>極限技（OD）</strong> 標記。</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>距離與壓持續會改變確反結果</strong>：多數角色的 <strong><code>2MK</code>（蹲中腳）</strong> 或突進技在極遠先端被防時，因為距離太遠導致短手輕攻摸不到，甚至因壓持續（Meaty）減少負幀；只有貼近深擋時才能打到全額確反！
+2. <strong>極限技版（OD）≠ 普通版</strong>：很多角色的 OD 版會把普通版的破綻大幅縮短甚至變成正幀（例如沙加特<strong>普通輕／中猛虎連結被防 -5</strong>，但 <strong>OD 版變 -3</strong> 安全；莉莉<strong>普通鷹塔被防 -8</strong>，但有風纏繞時 <strong>OD 版變 +2</strong>；不知火舞<strong>普通中／重龍炎舞 -6</strong>，但 <strong>OD 版變 -3</strong>）——擋完必殺千萬別憑直覺亂按！
+3. <strong>系統共通底線必背</strong>：只要對手招式被防為 <strong>-4 或更負</strong> 且在射程內，通常都能用 <strong>4 幀最速輕攻擊</strong>確反；<strong>對手處於燒盡（Burnout）狀態時，你所有攻擊被防都會固定 +4 幀</strong>（原本 <code>-4</code> 的招變 <code>±0</code>、原本 <code>±0</code> 的招變 <code>+4</code>）；<strong>動力反攻（Drive Reversal）被防固定 -6 幀</strong>，擋到必吃輕／中攻擊確反。
+4. <strong>遇到不熟的多段技別急著按</strong>：像桑吉爾夫的<strong>機關槍拍擊／大力踩踏</strong>、迪傑的 <strong>3 拍連擊／放克舞蹈</strong>、拜森（M. Bison）身上有<strong>念力地雷（Psycho Mine）</strong>時的衍生技，先搞清楚收招與有沒有埋地雷再出手。</p>
+</blockquote>
+<hr />
+<h2>一、通用確反判斷、系統加值與 OD 版本差異</h2>
+<h3>1. 通用確反與系統加值原則</h3>
+<ul>
+<li><strong>確反基本窗口與第二級公式</strong>：</li>
+<li><strong>普通版 4 幀起手</strong>：全遊戲絕大多數角色最快輕攻擊為 <strong>4 幀</strong>（桑吉爾夫快連按版 <code>5LP</code> 同樣 4 幀，一般 <code>5LP</code> 為 7 幀）。被防 <strong><code>-4</code> 幀以下</strong>且距離夠近時必吃確反。</li>
+<li><strong>燒盡防禦（Burnout）固定 <code>+4 幀</code></strong>：對手燒盡時防禦任何招式都會額外承受 +4 幀防禦硬直（換句話說，你的 <code>-4</code> 招式打在燒盡對手防禦上會變成 <strong><code>±0</code></strong>，<code>-6</code> 變成 <strong><code>-2</code></strong>）。</li>
+<li><strong>動力箭步（綠衝）固定 <code>+4 幀</code></strong>：任何經由動力箭步發動的地面一般技／特殊技，命中與被防一律 <strong>+4 幀</strong>（例如原本被防 <code>-6</code> 的 <code>2MK</code> 綠衝後會變成 <code>-2</code>）。</li>
+<li><strong>動力反攻（Drive Reversal）</strong>：防禦中 20F／起身 18F 發生，<strong>被防皆固定 -6 幀</strong>（可用 6 幀以內輕／中攻擊確反）。</li>
+<li><strong>單發站立中段特殊技（Overhead）</strong>：全角色幾乎皆為 20～24 幀發生、<strong>被防約 -3 幀</strong>（安全，無法確反，僅交出先手）。</li>
+<li><strong>抓偷喝／偷蓄資源破綻</strong>：對上<strong>傑米（魔身 <code>22P</code> 第 49 幀加酒）</strong>、<strong>莉莉（鷹風 <code>214P</code> 蓄風）</strong>、<strong>隆（電刃練氣 <code>22P</code> 第 51 幀蓄成）</strong>、<strong>埃德蒙本田（肩屋入 <code>22P</code> 第 51 幀蓄成）</strong> 時，一旦在立回遠距抓到對方偷補資源，或用動力反攻／擊倒後搶近壓制，都能直接用動力箭步或突進技打出 <strong>懲罰反擊（Punish Counter，命中 +4 幀、傷害 120%）</strong>。</li>
+<li><strong>二級超必殺（SA2）注意區分</strong>：</li>
+<li><strong>屬於「大破綻必罰」的 SA2</strong>：<strong>阿鬼（紫煙裂爪 <code>-19</code>）</strong>、<strong>嘉米（旋轉殺人蜂 <code>-24</code>／空中 <code>-23</code>）</strong>、<strong>迪傑（日出慶節首段 <code>-29</code>／收尾 <code>-43</code>～<code>-97</code>）</strong>、<strong>瑪麗莎（隕石 <code>-44</code>）</strong>、<strong>莉莉（雷鳥 <code>-60</code>）</strong>、<strong>沙加特（殘暴虎擊 <code>-58</code>）</strong> 等，防住後一律能打最大確反！</li>
+<li><strong>屬於「設置／進攻強壓」的 SA2</strong>：<strong>JP（拉夫舒克 <code>214214P</code> 設置 4 顆空間炸彈）</strong>、<strong>拉希德（龍捲風 <code>214214K</code> 被防 <code>+33</code>）</strong>、<strong>艾德（念力砲 <code>214214P</code> 被防 <code>+65</code>）</strong> 屬於佈局壓制型超必殺，擋到後不能硬按鍵反打，須靠無敵技或閃避空檔拆解。</li>
+</ul>
+<h3>2. 極限技（OD）與強化狀態的典型安全化例子</h3>
+<p>在各角色調整與機制下，<strong>OD 版（或資源強化版）</strong>與普通版的被防幀數常有天壤之別：
+* <strong>沙加特</strong>：普通輕／中<strong>猛虎連結（<code>214LK/MK</code>）</strong> 與普通<strong>猛虎威擊（<code>~6LK</code>）</strong> 被防皆為 <strong><code>-5</code></strong>（可確反）；但 <strong>OD 猛虎連結（<code>214KK</code>）</strong> 與 <strong>OD 猛虎威擊</strong> 被防縮短為 <strong><code>-3</code>（安全，無確反）</strong>！
+* <strong>不知火舞</strong>：普通<strong>花蝶扇（<code>236P</code>）</strong> 近距被防 <code>-7</code>／<code>-9</code>／<code>-11</code>，普通中／重<strong>龍炎舞（<code>214MP/HP</code>）</strong> 為 <strong><code>-6</code></strong>；但 <strong>OD 龍炎舞（<code>214PP</code>）被防變 <code>-3</code></strong>，聚氣強化後 <strong>OD 花蝶扇</strong> 被防更達 <strong><code>+1</code>（長按 <code>+12</code>）</strong>！
+* <strong>莉莉</strong>：無風纏繞的輕／中／重／OD <strong>鷹塔（<code>236K</code>）</strong> 被防皆為 <strong><code>-8</code></strong>（可確反）；一旦擁有<strong>風纏繞（Windclad）</strong>，普通版變 <strong><code>+1</code></strong>、<strong>OD 版變 <code>+2</code></strong>（正幀陷阱！）。
+* <strong>英格麗特</strong>：普通輕／中／重<strong>太陽旋昇（Sun Rise）</strong> 被防 <strong><code>-23</code>～<code>-25</code></strong> 必吃大確反；<strong>OD 太陽旋昇</strong> 被防卻僅 <strong><code>-3</code>（安全）</strong>！</p>
+<hr />
+<h2>二、各角色確反速查（實戰對策，官方最新數據）</h2>
+<h3>桑吉爾夫（Zangief）</h3>
+<ul>
+<li><strong>蹲重拳（<code>2HP</code>）／蹲重腳（<code>2HK</code>）</strong>：<code>2HP</code> 被防 <strong><code>-20</code></strong>、掃腿 <code>2HK</code> 被防 <strong><code>-13</code></strong>，幾乎所有角色都能走上前或用中重技／超必殺重懲。</li>
+<li><strong>旋風車輪踢（<code>6HK</code>）／斯密塔納飛腿（<code>3HK</code>）</strong>：<code>6HK</code> 被防 <strong><code>-9</code></strong>（距離常拉開，用中腳等長技反擊）、<code>3HK</code> 被防 <strong><code>-18</code></strong> 大破綻。</li>
+<li><strong>雙重金臂勾（Double Lariat，<code>PP</code>）</strong>：普通版 <strong><code>-12</code></strong>、OD 版 <strong><code>-11</code></strong>，擋住必罰！</li>
+<li><strong>目標連段（別跟頭槌搞混！）</strong>：</li>
+<li><strong>頭槌（<code>6HP</code>）</strong> 單發 14 幀發生、<strong>被防為 <code>+4</code> 正幀</strong>且可取消，擋到<strong>絕對別亂按</strong>！</li>
+<li>真正有空檔的多段目標連段是 <strong>機關槍拍擊（<code>MP~MP~MP</code>：2 段 <code>-6</code>、3 段 <code>-17</code>）</strong> 與 <strong>大力踩踏（<code>MK~MK~MK</code>：1 段 <code>-3</code>、2 段 <code>-4</code>、3 段 <code>-10</code>）</strong>，擋完收尾直接確反。</li>
+<li><strong>其他一般技</strong>：<strong>站輕腳（<code>5LK</code>）</strong> 為 7 幀發生、被防 <strong><code>-4</code></strong>（貼身才摸得到）、<strong>站中腳（<code>5MK</code>）</strong> 被防 <strong><code>-4</code></strong>、<strong>膝錘（<code>6MK</code>）</strong> <strong><code>-4</code></strong>；<strong>站重拳（<code>5HP</code>）</strong> <strong><code>-3</code></strong>（長按 <strong><code>+3</code></strong>）、<strong>站重腳（<code>5HK</code>）</strong> <strong><code>+1</code></strong>、<strong>蹲中腳（<code>2MK</code>）</strong> <strong><code>-2</code></strong> 皆安全。</li>
+</ul>
+<h3>隆（Ryu）</h3>
+<ul>
+<li><strong>必罰大破綻</strong>：<strong>昇龍拳（<code>623P</code>）</strong> 輕 <strong><code>-23</code></strong>／中 <strong><code>-32</code></strong>／重 <strong><code>-36</code></strong>／OD <strong><code>-40</code></strong>；<strong>龍捲旋風腳（<code>214K</code>）</strong> 輕 <strong><code>-15</code></strong>／中 <strong><code>-13</code></strong>／重 <strong><code>-13</code></strong>／OD <strong><code>-14</code></strong>；<strong>上段足刀（<code>236K</code>）</strong> 輕 <strong><code>-11</code></strong>／中 <strong><code>-8</code></strong>／OD <strong><code>-18</code></strong>（重足刀 <strong><code>-3</code></strong> 安全！）；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-12</code></strong>；<strong>蹲重拳（<code>2HP</code>）</strong> <strong><code>-7</code></strong>；<strong>不破三連擊（<code>5MP~LK~HK</code>）／上段雙連擊（<code>5HP~HK</code>）</strong> 收尾 <strong><code>-8</code></strong>。</li>
+<li><strong>波動拳（<code>236P</code>）與蹲中腳取消波動</strong>：</li>
+<li>近距離直接防住波動拳為 輕 <strong><code>-5</code></strong>／中 <strong><code>-7</code></strong>／重 <strong><code>-9</code></strong>（可確反）；但<strong>電刃練氣強化版／OD 波動拳</strong>近距為 <strong><code>-1</code>（安全）</strong>，<strong>電刃 OD 波動拳為 <code>+2</code>（正幀）</strong>！</li>
+<li>中遠距離因飛行幀數抵銷而變安全；從中遠距完美撥擋後可前衝或綠衝反擊。若隆以 <code>2MK</code>（被防 <code>-6</code>）遠距取消波動，兩段間可用無敵技或預判 DI 穿插，但近距離擋完還是要看他發什麼強度的波決定有沒有 <code>-5</code>～<code>-9</code> 確反。</li>
+<li><strong>波掌擊（<code>214P</code>）與安全重招</strong>：</li>
+<li><strong>中波掌擊</strong> 被防 <strong><code>-6</code></strong> 可確反（輕波掌擊 <strong><code>-3</code></strong> 安全）；<strong>重波掌擊（<code>+2</code>）／電刃重波掌（<code>+3</code>）／OD 波掌（<code>+3</code>）／電刃 OD（<code>+4</code>）</strong> 全部是<strong>隆正幀有利</strong>，別亂搶！</li>
+<li><strong>站重拳（<code>5HP</code>）</strong> <strong><code>-2</code></strong>、<strong>站重腳（<code>5HK</code>）</strong> <strong><code>+1</code></strong>、<strong>鳩尾碎擊（<code>6HP</code>）</strong> <strong><code>+3</code></strong>（若經由綠衝發動則是 <code>+3 + 4 = +7</code>），全數無確反且 <code>5HK</code>/<code>6HP</code> 甚至換隆繼續壓。</li>
+</ul>
+<h3>沙加特（Sagat）</h3>
+<ul>
+<li><strong>猛虎連結（Tiger Nexus，<code>214K</code>）與派生（<code>~6K</code>）</strong>：</li>
+<li>不派生時：輕／中猛虎連結被防 <strong><code>-5</code></strong>（近距 5 幀確反），<strong>重版與 OD 版皆為 <code>-3</code>（無確反）</strong>。</li>
+<li><strong>猛虎威擊（<code>~6LK</code>）</strong>：普通版被防 <strong><code>-5</code></strong>（5 幀確反！），<strong>OD 版被防 <code>-3</code>（安全）</strong>。</li>
+<li><strong>猛虎貪饕（<code>~6MK</code>）／猛虎新星（<code>~6HK</code>）</strong>：無論普通或 OD 版，被防分別為 <strong><code>+4</code></strong> 與 <strong><code>+2</code></strong> 正幀，擋住千萬別按鍵！</li>
+<li><strong>猛虎膝（Tiger Knee Crush，<code>236K</code>）</strong>：輕 <strong><code>-8</code></strong>、中 <strong><code>-7</code></strong>、重 <strong><code>-5</code></strong>、OD <strong><code>-2</code></strong>（注意中重版在遠距離先端被防常推開距離，近距離貼身擋住輕／中／重皆可罰）。</li>
+<li><strong>猛虎上勾拳（<code>623P</code>）</strong>：輕 <strong><code>-37</code></strong>、中／重／蓄力 <strong><code>-45</code></strong>、OD <strong><code>-43</code></strong>（全版必罰大連段）。</li>
+<li><strong>通常技與目標連段</strong>：<strong>站輕拳（<code>5LP</code>）</strong> 被防 <strong><code>-3</code></strong>（安全！）；<strong>站輕腳（<code>5LK</code>）</strong> <strong><code>-4</code></strong>；<strong>站重拳（<code>5HP</code>）／站重腳（<code>5HK</code>）／蹲重拳（<code>2HP</code>）</strong> 皆為 <strong><code>-5</code></strong>（貼近可用 5 幀技確反，遠距離難摸）；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-12</code></strong>；<strong>猛虎巨石柱（<code>4HP</code>）</strong> <strong><code>-10</code></strong>；<strong>猛虎扎（<code>5HP~HK</code>）</strong> <strong><code>-12</code></strong>；<strong>猛虎斬（<code>2MP~MP</code>）</strong> <strong><code>-14</code></strong>；<strong>猛虎昇（<code>2MP~MK</code>）</strong> <strong><code>-10</code></strong>；<strong>下段猛虎波（<code>236LP</code>）</strong> 近距離 <strong><code>-7</code></strong>（OD 下段 <strong><code>-1</code></strong>）。</li>
+</ul>
+<h3>艾力克斯（Alex）</h3>
+<ul>
+<li><strong>重攻擊長按陷阱</strong>：<strong>站重拳（<code>5HP</code>）</strong> 未蓄 <code>-3</code>／長按 <strong><code>+2</code></strong>；<strong>站重腳（<code>5HK</code>）</strong> 未蓄 <code>-4</code>／長按 <strong><code>+2</code></strong>；破壞者架勢中的 <strong>Heavy Lariat</strong> 未蓄 <code>+3</code>／長按 <strong><code>+5</code></strong>——蓄力長按版被防全部是艾力克斯有利，切勿亂搶！</li>
+<li><strong>閃光手斧／閃光手刀</strong>：<strong>輕／中閃光手斧（Flash Axe）</strong> 被防分別為 <strong><code>-4</code>／<code>-6</code></strong>（可確反）；<strong>重版閃光手刀（Flash Chop）</strong> 被防 <strong><code>+2</code></strong>（艾力克斯有利，且命中會轉身），<strong>OD 閃光手刀</strong> 則為 <strong><code>-4</code></strong>。</li>
+<li><strong>必罰大破綻</strong>：<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-11</code></strong>（大破綻必罰）、<strong>飛天膝擊（Aerial Knee Smash）</strong> 重版 <strong><code>-42</code></strong>／OD 版 <strong><code>-46</code></strong>、<strong>Twisted Drop（<code>L H</code> 目標連段）</strong> <strong><code>-15</code></strong>、<strong>Sweep Combination</strong> 第 1 段 <strong><code>-17</code></strong>／第 2 段 <strong><code>-20</code></strong>、<strong>Shoulder Launcher</strong> <strong><code>-6</code></strong>、<strong>蹲重拳（<code>2HP</code>）</strong> <strong><code>-6</code></strong>。</li>
+<li><strong>Flying Cross Chop（空中前跳 <code>H</code>）</strong>：依打點高度被防 <strong><code>-12～-1</code></strong>，打點高可確反，貼地擦腳尖則是安全（<code>-1</code>）。</li>
+</ul>
+<h3>深紅毒蛇（C. Viper）</h3>
+<ul>
+<li><strong>必罰大破綻</strong>：<strong>追跡組合技（Tracer Combination）</strong> 輕 <strong><code>-15</code></strong>／中 <strong><code>-13</code></strong>；<strong>追擊拳（Knuckled Pursuit，火焰踢派生）</strong> <strong><code>-15</code></strong>；<strong>火力蓄存（Focus Force）</strong> Lv1/Lv2 <strong><code>-16</code></strong>／Lv3 <strong><code>-10</code></strong>；<strong>重閃電衝擊（Thunder Dash）</strong> <strong><code>-24</code></strong>；<strong>震地槌（Seismic Hammer）</strong> 輕/中/重 <strong><code>-10</code></strong>、OD <strong><code>-6</code></strong>（但震地槌可取消大跳躍 High Jump）；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-11</code></strong>。</li>
+<li><strong>安全與陷阱招式</strong>：<strong>輕閃電衝擊</strong> <strong><code>-4</code></strong>、中 <strong><code>-3</code></strong>、OD <strong><code>-2</code></strong>；地面<strong>火焰踢（Burning Kick）</strong> 輕/中/重 <strong><code>-2</code></strong>、OD <strong><code>-4</code></strong>；派生 <strong>二度燃燒（Double Burn）</strong> 為 <strong><code>+2</code></strong> 正幀；空中火焰踢依高度 <strong><code>-4～+3</code></strong>（OD <strong><code>+1～+7</code></strong>）。遇到愛用綠衝配合重拳／特殊技進攻的毒蛇，可適時準備 <strong>動力衝擊（DI）</strong> 反制。</li>
+</ul>
+<h3>埃德蒙本田（E. Honda）</h3>
+<ul>
+<li><strong>超級飛頭槌（<code>[4]6P</code>）</strong>：<strong>輕／中／重普通版頭槌被防一律為 <code>-3</code></strong>（安全！不會被輕拳確反）；但 <strong>OD 超級飛頭槌被防高達 <code>-20</code></strong>，擋到直接走上前打最大重攻擊連段！</li>
+<li><strong>相撲衝派生（鐵砲／大砲）與百貫落</strong>：</li>
+<li><strong>鐵砲（Teppo Triple Slap）</strong>：普通第 1 下 <strong><code>-3</code></strong>、<strong>OD 第 1 下為 <code>+3</code> 正幀</strong>（擋到第 1 下不要硬按普通技，可開<strong>動力反攻（Drive Reversal）</strong>反切或繼續防住第 2 下）；<strong>第 2 下收招無論普通或 OD 版皆為 <code>-24</code> 超大破綻</strong>，擋完整套直接痛打！</li>
+<li><strong>大砲（Taiho Cannon Lift）</strong>：被防 <strong><code>-22</code></strong>。</li>
+<li><strong>超級百貫落（<code>[2]8K</code>）</strong>：輕／中／重 <strong><code>+1</code></strong>、OD <strong><code>+2</code></strong>，被防全是本田有利，別蹲在地上傻傻硬擋，要靠對空或完美撥擋破解。</li>
+<li><strong>百裂張手與通常技</strong>：無「肩屋入」強化時，輕百裂 <strong><code>-4</code></strong>、中／重百裂 <strong><code>-8</code></strong>、OD <strong><code>-3</code></strong>；有「肩屋入」強化時，輕 <strong><code>±0</code></strong>、中／重 <strong><code>-4</code></strong>、OD <strong><code>+1</code></strong>。另有<strong>蹲重腳（<code>2HK</code>）<code>-10</code></strong>、<strong>連環張手（Double Slaps）<code>-10</code></strong>、<strong>站重拳（<code>5HP</code>）<code>-6</code></strong>、<strong>掃腳（<code>Harai Kick</code>）<code>-5</code></strong>、<strong>站重腳（<code>5HK</code>）<code>-5</code></strong>。</li>
+</ul>
+<h3>JP（JP）</h3>
+<ul>
+<li><strong>風神（Stribog，<code>236P</code>）千萬別搞反強度</strong>：<strong>輕風神 <code>-10</code></strong>、<strong>中風神 <code>-8</code></strong>（皆可確反！）；但 <strong>重風神是 JP 自己 <code>+4</code> 正幀有利</strong>、<strong>OD 風神是 <code>+2</code> 正幀有利</strong>，擋住重或 OD 版千萬別亂按鍵！</li>
+<li><strong>拐袋魔（Torbalan，<code>236K</code>）</strong>：近距離輕 <strong><code>-6</code></strong>、中／重 <strong><code>-8</code></strong>、<strong>OD 版 <code>+25</code></strong>（遠距視彈道距離改善）。</li>
+<li><strong>戰神（Triglav，<code>22P</code>）</strong>：輕／中／重 <strong><code>-2</code></strong>、OD <strong><code>+3</code></strong>；防住普通版後前墊步／前進搶空間來得及。</li>
+<li><strong>通常技與特殊技破綻</strong>：<strong>惡作劇（<code>3HP</code>）</strong> <strong><code>-14</code></strong>；<strong>蹲重腳（<code>2HK</code>）</strong>、<strong>蹲重拳（<code>2HP</code>）</strong>、<strong>站中拳（<code>5MP</code>）</strong>、<strong>雷箭第 2 段</strong> 被防皆為 <strong><code>-6</code></strong>（遠距不好打時貼近用 4～6 幀輕中攻確反）；<strong>飛龍濟蘭特（<code>5HK~HP</code> 中／下段收尾）</strong> <strong><code>-4</code></strong>；<strong>史詩（<code>6HK</code>）</strong> <strong><code>-5</code></strong>。</li>
+<li><strong>出發（Departure，<code>214P</code>）</strong>：召喚時間極長（150F／OD 110F），看到 JP 在場上開門可直接往前走幾步或前跳縮短距離。遇他一般技想接遠程門或下必殺時，部分空隙可用<strong>動力衝擊（DI）</strong>反打（但要防備他的<strong>失憶 <code>22K</code></strong> 當身技：普通第 3 幀／OD 第 1 幀成立）。</li>
+</ul>
+<h3>金伯莉（Kimberly）</h3>
+<ul>
+<li><strong>必罰大破綻</strong>：<strong>武神旋風腳（<code>214K</code>）</strong> <strong><code>-30～-40</code></strong>；<strong>流轉一文字（<code>236P</code>）</strong> 輕 <strong><code>-4</code></strong>、中／重／OD <strong><code>-12</code></strong>；<strong>滑影（Shadow Slide，疾馳中下段）</strong> 普通 <strong><code>-12</code></strong>／OD <strong><code>-10</code></strong>；<strong>武神戟刃腳（弧空派生踢）</strong> <strong><code>-8</code></strong>（弧空本身 <strong><code>-6</code></strong>）；<strong>武神虎連牙（<code>5P~P</code>）／武神獄鎖拳第 4 段／武神天架拳第 4 段</strong> <strong><code>-12</code></strong>（天架拳第 2 段 <code>-6</code>、第 3 段 <code>-10</code>）；<strong>飛牆越櫓（<code>6HK~上</code>）</strong> <strong><code>-22</code></strong>；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-10</code></strong>；<strong>切水腳（<code>3MK</code>）</strong> <strong><code>-5</code></strong>；<strong>站重拳（<code>5HP</code>）／站中腳（<code>5MK</code>）</strong> <strong><code>-4</code></strong>。</li>
+<li><strong>正幀與安全注意</strong>：<strong>斷身（Torso Cleaver，疾馳派生）</strong> 普通 <strong><code>+1</code></strong>／OD <strong><code>+3</code></strong>；<strong>空中武神旋風腳（<code>j.214K</code>）</strong> <strong><code>+1</code></strong>；<strong>獵頭踢（Neck Hunter，疾馳派生中段）</strong> 普通 <strong><code>-3</code></strong>／OD <strong><code>-1</code></strong>（安全）。</li>
+<li><strong>反制疾馳急停與跳壓</strong>：金伯莉若用疾馳「急停（<code>236K~P</code>）」或低空<strong>肘落（<code>j.2P</code>）</strong>打高了／出假動作，保持冷靜直接按 4 幀輕技就能中斷她後續搶攻。</li>
+</ul>
+<h3>莉莉（Lily）</h3>
+<ul>
+<li><strong>鷹風（Condor Wind，<code>214P</code>）</strong>：只要打出攻擊判定，無論輕／中／重被防皆為 <strong><code>-8</code> 幀</strong>（即防守方 <strong><code>+8</code> 幀有利</strong>！<strong>OD 鷹風</strong>被防為 <strong><code>-5</code></strong>）。近距離用 8 幀以內夠長的招式（如隆 <code>2MK</code>）即可穩定確反；若她在遠距離蓄風，直接出 <strong>動力衝擊（DI）</strong> 可對中／重版打出懲罰反擊（對獨立弱版也能 Counter 命中）。</li>
+<li><strong>鷹塔（Condor Spire，<code>236K</code>）</strong>：<strong>無風纏繞</strong>時全版（輕／中／重／OD）被防皆為 <strong><code>-8</code></strong>，必罰！<strong>一旦有風纏繞（Windclad）</strong>，普通版變 <strong><code>+1</code></strong>、<strong>OD 版變 <code>+2</code></strong>，擋到千萬別按鍵！</li>
+<li><strong>鷹襲（Condor Dive，<code>j.P</code>）</strong>：無論有無風纏繞，被防高達 <strong><code>-23</code>～<code>-24</code></strong>，直接綠衝接最大連段！</li>
+<li><strong>通常技與超必殺</strong>：<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-12</code></strong>（非 <code>-8</code>！）；<strong>站重拳（<code>5HP</code>）／站重腳（<code>5HK</code>）／蹲中腳（<code>2MK</code>）</strong> 被防皆 <strong><code>-5</code></strong>（遠距先端常摸不到）；<strong>沙漠風暴</strong> 1 段 <code>-4</code>／2 段 <code>-9</code>／3 段 <strong><code>-23</code></strong>；<strong>SA1 <code>-36</code>／SA2 <code>-60</code>（風纏 <code>-59</code>）</strong>，全數超大破綻必罰！</li>
+</ul>
+<h3>韓蛛俐（Juri）</h3>
+<ul>
+<li><strong>風破刃（Fuhajin，<code>214K</code>）必背數字</strong>：輕 <strong><code>-4</code></strong>（近距 4 幀確反）、中 <strong><code>-6</code></strong>（6 幀內確反）、重 <strong><code>-8</code></strong>（8 幀內確反）、OD <strong><code>-12</code></strong>（注意若她剛出完風破刃還有氣，仍要確認距離夠不夠摸到）。</li>
+<li><strong>風破庫存派生（歲破衝／暗劍殺／五黃殺 <code>236K</code>）</strong>：</li>
+<li><strong>歲破衝（輕）</strong>：無氣 <strong><code>-8</code></strong>、有氣強化 <strong><code>-3</code></strong>（安全！）、OD <strong><code>-2</code></strong>；</li>
+<li><strong>暗劍殺（中）</strong>：無論無氣／有氣／OD 皆為 <strong><code>-8</code></strong>（可確反，若她沒接續其他氣招）；</li>
+<li><strong>五黃殺（重）</strong>：無氣 <strong><code>-11</code></strong>、有氣 <strong><code>-10</code></strong>、OD <strong><code>-16</code></strong>（沒再耗氣派生下一段時必吃重確反！）。</li>
+<li><strong>普通技與特殊技</strong>：<strong>蹲重拳（<code>2HP</code>）／蹲重腳（<code>2HK</code>）</strong> <strong><code>-11</code></strong>；<strong>蹲中腳（<code>2MK</code>）／鉤鐮斬（<code>4HK</code>）</strong> <strong><code>-6</code></strong>；<strong>站重拳（<code>5HP</code>）</strong> <strong><code>-5</code></strong>；<strong>連剋腳（<code>6HP</code>）／站中腳（<code>5MK</code>）</strong> <strong><code>-4</code></strong>（<code>5LK</code> 其實是 <strong><code>-3</code> 安全</strong>）；<strong>死紋腳第 3 段</strong> <strong><code>-16</code></strong>；<strong>天穿輪（<code>623P</code>）</strong> 輕 <strong><code>-8</code></strong>、中/重 <strong><code>-37</code></strong>、OD <strong><code>-48</code></strong>；<strong>疾空閃（<code>j.214K</code>）</strong> 依落點高度，踢得太高可用輕／中拳確反。</li>
+</ul>
+<h3>嘉米（Cammy）</h3>
+<ul>
+<li><strong>重要訂正（螺旋飛箭 vs 對地神槍砲）</strong>：</li>
+<li>地面的 <strong>螺旋飛箭（Spiral Arrow，<code>236K</code>）</strong> 無論輕 <strong><code>-12</code></strong>／中 <strong><code>-14</code></strong>／重 <strong><code>-12</code>（蓄力 <code>-14</code>）</strong>／OD <strong><code>-14</code></strong>，<strong>全版本皆為大破綻可確反</strong>（只有最遠腳尖先端才可能讓短招摸不到，絕不是 <code>-2</code> 安全！）。</li>
+<li>真正依打點高度變化的「高低俯衝踢」是空中的 <strong>對地神槍砲（Cannon Strike，<code>j.214K</code>）</strong>：普通版被防 <strong><code>-6～+5</code></strong>（高打點踢到胸口為 <code>-5～-6</code> 可確反，壓到腳尖則是正幀）；<strong>OD 版</strong>被防 <strong><code>-3～+7</code></strong>（高打點也僅 <code>-3</code> 不被確反！）。</li>
+<li><strong>安全牽制 vs 必罰破綻</strong>：<strong>站中腳（<code>5MK</code>）</strong> <strong><code>-4</code></strong>（因距離關係輕攻摸不到）、<strong>站重拳（<code>5HP</code>）／站重腳（<code>5HK</code>）</strong> <strong><code>-3</code></strong>（安全）；<strong>蹲中腳（<code>2MK</code>）</strong> <strong><code>-5</code></strong>、<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-10</code></strong>；<strong>延遲撕裂（<code>6HK</code>）／上勾組合（<code>4MP~HK</code>）／擺拳組合（<code>5HP~HK</code>）</strong> 皆為 <strong><code>-12</code></strong>；<strong>突擊刃（<code>4HK</code>）</strong> <strong><code>-7</code></strong>；<strong>神槍砲（<code>623K</code>）</strong> <strong><code>-36</code>～<code>-40</code></strong>；<strong>SA1 <code>-24</code>／SA2 <code>-24</code>／SA3 <code>-33</code></strong>。</li>
+<li><strong>流氓組合與反手拳別亂搶</strong>：<strong>重／OD 前衝反手拳（<code>214P</code>）</strong> 被防為 <strong><code>+3</code> 正幀</strong>（輕 <code>-3</code>、中 <code>-2</code>）；<strong>流氓組合無輸入「剃刀」</strong> 被防 <strong><code>+2</code></strong>。</li>
+</ul>
+<h3>春麗（Chun-Li）</h3>
+<ul>
+<li><strong>百裂腳（Hundred Lightning Kicks，<code>236K</code>）確定數字</strong>：</li>
+<li><strong>輕百裂腳／中百裂腳</strong>：被防皆為 <strong><code>-8</code></strong>（近中距離用 8 幀以內招式穩穩確反！）。</li>
+<li><strong>重百裂腳／OD 百裂腳</strong>：被防皆為 <strong><code>-3</code>（安全，無確反！）</strong>。</li>
+<li><strong>百裂連腳（OD 百裂派生 <code>236KK~K</code>）</strong>：被防 <strong><code>-13</code></strong>（大破綻必罰！）。</li>
+<li><strong>蹲重腳（<code>2HK</code>）與行雲流水架勢</strong>：春麗的掃腿 <code>2HK</code> 本身被防 <strong><code>-9</code></strong>，但因可取消進<strong>行雲流水（<code>214P</code>）</strong>架勢，所以要確認她沒進架勢才罰 <code>-9</code>；若她進架勢出招，<strong>蘭華（<code>~LP</code>）<code>-4</code></strong>、<strong>前踢（<code>~LK</code>）<code>-5</code></strong>、<strong>天空腳（<code>~HK</code>）<code>-9</code></strong>、<strong>仙風（<code>~MK</code>）<code>-10</code></strong>、<strong>伏蛇咬（<code>~MP</code>）<code>-15</code></strong> 皆可確反，唯獨<strong>蓮掌（<code>~HP</code>）是 <code>+1</code> 正幀</strong>！</li>
+<li><strong>其他破綻</strong>：<strong>氣功拳（<code>[4]6P</code>）</strong> 近距離輕／中 <strong><code>-7</code></strong>、重 <strong><code>-6</code></strong>、OD <strong><code>±0</code></strong>；<strong>霸山蹴（<code>214K</code>）</strong> 輕 <strong><code>-4</code></strong>、中 <strong><code>-3</code></strong>、重 <strong><code>-1</code></strong>、OD <strong><code>-5</code></strong>；<strong>迴旋鶴腳（<code>[2]8K</code>）</strong> <strong><code>-12～-18</code></strong>；<strong>天昇腳（<code>22K</code>）</strong> <strong><code>-37～-57</code></strong>；<strong>翼旋腳（<code>6HK</code>）</strong> <strong><code>-4</code></strong>。</li>
+</ul>
+<h3>蓋爾（Guile）</h3>
+<ul>
+<li><strong>蹲重腳（<code>2HK</code>）</strong>：9 幀發生、被防 <strong><code>-12</code></strong>（全角色重攻擊大連段確反）。</li>
+<li><strong>特殊技與目標連段</strong>：<strong>翻身旋踢（Reverse Spin Kick，<code>6HK</code>）</strong> <strong><code>-8</code></strong>（可用 8 幀中腳長技確反）；<strong>迴旋後踢（Rolling Sobat，<code>4MK/6MK</code>）</strong> <strong><code>-6</code></strong>；<strong>蓋爾高踢（<code>3HK</code>）</strong> <strong><code>-9</code></strong>；<strong>大砲衝擊（<code>5MP~4HP</code>）</strong> <strong><code>-9</code></strong>；<strong>鬼影刀（<code>2LK~3HK</code>）</strong> <strong><code>-12</code></strong>；<strong>雙射（<code>2LP~2MP</code>）</strong> <strong><code>-6</code></strong>；<strong>龍牙（Drake Fang，<code>2MK~6MP</code>）</strong> <strong><code>-5</code></strong>（蓋爾專屬目標連段）。</li>
+<li><strong>一般技與必殺技</strong>：<strong>蹲重拳（<code>2HP</code>）</strong> <strong><code>-9</code></strong>、<strong>站重拳（<code>5HP</code>）</strong> <strong><code>-6</code></strong>、<strong>蹲中腳（<code>2MK</code>）</strong> <strong><code>-5</code></strong>（先端常拉開難罰）、<strong>站中腳（<code>5MK</code>）／站重腳（<code>5HK</code>）／灼熱直拳（<code>4HP</code>）</strong> <strong><code>-4</code></strong>；<strong>空翻腳刀（<code>[2]8K</code>）</strong> <strong><code>-30～-33</code></strong>；<strong>音速爆擊（<code>[4]6P</code>）</strong> 普通 <strong><code>-3</code></strong>（OD <strong><code>+3</code></strong> 正幀）。</li>
+</ul>
+<h3>拜森（M. Bison，俗稱維加／警察）</h3>
+<ul>
+<li><strong>雙膝壓（Double Knee Press）</strong>：輕／中版被防 <strong><code>-5</code></strong>、重版 <strong><code>-4</code></strong>（近距離可用 4～5 幀招式確反；若只被最遠腳尖先端踢到，因推開距離會導致短手輕攻摸不到）；<strong>OD 雙膝壓被防高達 <code>-15</code></strong>，擋到直接走近或突進技痛打！</li>
+<li><strong>注意有沒有「念力地雷（Psycho Mine）」的生死差異</strong>：</li>
+<li><strong>無地雷時</strong>：<strong>鞭拳連段（Backfist Combo）</strong> 輕 <strong><code>-14</code></strong>／中重 <strong><code>-15</code></strong>／OD <strong><code>-25</code></strong>；<strong>念力粉碎擊（Psycho Crusher）</strong> 輕中 <strong><code>-20</code></strong>／重 <strong><code>-23</code></strong>／OD <strong><code>-3</code></strong>，全數大破綻必罰！</li>
+<li><strong>你身上已埋入地雷（會引爆）時</strong>：普通版鞭拳連段變 <strong><code>+9</code>（OD <code>-3</code>）</strong>、念力粉碎擊變 <strong><code>+5～+10</code></strong>，此時變成<strong>拜森大有利</strong>，絕對別按鍵！</li>
+<li><strong>其他招式</strong>：<strong>滑踢（Hover Kick，<code>3HK</code>）</strong> <strong><code>-15</code></strong>、<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-12</code></strong>、<strong>蹲重拳（<code>2HP</code>）</strong> <strong><code>-9</code></strong>、<strong>頭壓（Head Press）</strong> 普通 <strong><code>-39～-33</code></strong>（大破綻必罰！OD <strong><code>+5～+7</code></strong> 正幀）；而 <strong>站重拳（<code>5HP</code>）<code>+1</code></strong>、<strong>邪惡膝擊（<code>6MK</code>/<code>3MK</code>）<code>+1</code></strong>、<strong>逆轉魔（Devil Reverse）<code>+2～+8</code>（OD <code>+4</code>）</strong> 皆為拜森有利。</li>
+</ul>
+<h3>迪傑（Dee Jay）</h3>
+<ul>
+<li><strong>快速迴旋後踢（<code>236MK</code>）</strong>：被防 <strong><code>-6</code></strong>（貼近可用 5～6 幀技確反，先端踢到常安全）。</li>
+<li><strong>迴旋雙後踢（<code>236HK</code>）</strong>：被防 <strong><code>-10</code></strong>（大破綻確反！<strong>OD 版僅 <code>-2</code></strong> 安全）。</li>
+<li><strong>多段目標連段空檔</strong>：<strong>3 拍連擊（<code>5LP~MP~MK</code>）</strong> 第 2 段 <code>-3</code>、第 3 段 <strong><code>-8</code></strong>；<strong>迪・傑精選（<code>5MP~HP~HP</code>）</strong> 第 2 段 <strong><code>-11</code></strong>、第 3 段 <strong><code>-13</code></strong>；<strong>放克舞蹈（<code>5MK~MK~HK</code>）</strong> 第 2 段 <code>-2</code>、第 3 段 <strong><code>-8</code></strong>（留意他有時只打 2 段就停手騙你搶招）。</li>
+<li><strong>爽酷（Jus Cool，<code>214K</code>）衍生</strong>：<strong>放克刃（<code>~LK</code>）</strong> <strong><code>-3</code></strong>（安全）；<strong>月虧（<code>~MK</code>）</strong> <strong><code>+1</code></strong>（正幀別搶）；<strong>全力一擊（<code>~HK</code>）</strong> <strong><code>-10</code></strong>（OD <strong><code>-8</code></strong>）。</li>
+<li><strong>其他</strong>：<strong>機關槍上勾拳（<code>214P</code>）</strong> 全版 <strong><code>-19</code></strong>；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-11</code></strong>；<strong>蹲中腳（<code>2MK</code>）</strong> 常態 <strong><code>-6</code></strong>（搭配<strong>動力箭步（綠衝）</strong>固定 <code>+4</code> 變 <strong><code>-2</code></strong> 安全突襲！）；<strong>破顏擊（<code>4HP</code>）</strong> <strong><code>-5</code></strong>；<strong>SA1 <code>-12</code>／SA2 <code>-29～-61</code>／SA3 <code>-28</code></strong>。</li>
+</ul>
+<h3>不知火舞（Mai）</h3>
+<ul>
+<li><strong>重拳腳與安全招</strong>：<strong>站重拳（<code>5HP</code>）／站重腳（<code>5HK</code>）／蹲重拳（<code>2HP</code>）</strong> 被防皆 <strong><code>-3</code>（安全）</strong>；<strong>站中腳（<code>5MK</code>）</strong> <strong><code>-4</code></strong>（距離遠難摸）。</li>
+<li><strong>必罰招式</strong>：<strong>必殺忍蜂（<code>236K</code>）</strong> 輕 <strong><code>-10</code></strong>／中 <strong><code>-12</code></strong>／重 <strong><code>-13</code></strong>／OD <strong><code>-12</code></strong>（全版必罰！）；<strong>龍炎舞（<code>214P</code>）</strong> 輕 <strong><code>-4</code></strong>（聚氣 <code>-2</code>）、中／重 <strong><code>-6</code></strong>（可用 6 幀蹲中拳穩罰！<strong>OD 版 <code>-3</code> 安全</strong>）；<strong>飛燕連腳（<code>2LK~LK~LK</code>）</strong> 第 2／3 段 <strong><code>-10</code></strong>；<strong>星孔雀第 2 段（<code>5HK~HK</code>）</strong> <strong><code>-11</code></strong>；<strong>蹲重腳（<code>2HK</code>）</strong> <strong><code>-11</code></strong>；<strong>飛翔龍炎陣（<code>623K</code>）</strong> <strong><code>-28～-40</code></strong>。</li>
+<li><strong>花蝶扇（<code>236P</code>）</strong>：未強化近距被防 輕 <code>-7</code>／中 <code>-9</code>／重 <code>-11</code>（蓄力 <code>-5</code>、OD <code>-5</code>）；聚氣強化後 輕 <code>-3</code>／中 <code>-5</code>／重 <code>-7</code>／OD <strong><code>+1</code>（長按 <code>+12</code>）</strong>，遠距離彈道多為安全或正幀。</li>
+</ul>
+<h3>瑪麗莎（Marisa）</h3>
+<ul>
+<li><strong>短劍（Gladius，<code>236P</code>）蓄力陷阱</strong>：未蓄力輕／中／重被防 <strong><code>-5</code></strong>（OD <strong><code>-2</code></strong>），貼近可用 5 幀以內招式懲罰；但<strong>長按蓄力版全數變為 <code>+4</code> 正幀</strong>，擋到別亂動！</li>
+<li><strong>四馬戰車（Quadriga，<code>236K</code>）與步兵陣（Phalanx，<code>623P</code>）</strong>：<strong>輕／OD 四馬戰車</strong> 被防 <strong><code>-6</code></strong>（可確反！），<strong>中版 <code>-3</code></strong>（安全），<strong>重版 <code>+1</code></strong>（正幀）；<strong>步兵陣全版（L/M/H <code>+3</code>、OD <code>+4</code>）</strong> 皆為正幀，被防別亂搶。</li>
+<li><strong>必罰大破綻</strong>：<strong>雙劍鬥士（<code>214P</code>）</strong> 第 1 段輕/中/重 <strong><code>-16</code></strong>（OD <strong><code>-12</code></strong>）、第 2 段 <strong><code>-13～-14</code></strong>；<strong>長盾（<code>214K</code>）衍生雷擊第 2 段 <code>-21</code>、風暴 <code>-24</code></strong>；<strong>蹲重腳（<code>2HK</code>）</strong> 未蓄 <strong><code>-11</code></strong>（蓄力 <code>-3</code>）；<strong>目標連段收尾</strong>（<code>Novacula</code> <code>-10/-12</code>、<code>Malleus Breaker(2)</code> <code>-12</code>、<code>Falx Crusher(2)</code> <code>-12</code>、<code>Medium Two Hitter</code> <code>-8</code>）。</li>
+<li><strong>超必殺超大破綻</strong>：<strong>SA1 <code>-43</code>（蓄 <code>-42</code> / 反擊 <code>-37</code>）、SA2 <code>-44</code>、SA3 <code>-39</code></strong>，擋到足夠讓任何角色前跳或綠衝打出最高傷害連段！（註：瑪麗莎自己抓對手大破綻時，常依負幀與距離選用蓄力重拳／<code>4HP</code> 穿甲衝擊起手最高傷路線。）</li>
+</ul>
+<h3>達爾西姆（Dhalsim）</h3>
+<ul>
+<li><strong>滑鏟（蹲輕／中／重腳）</strong>：貼身蹲防住 <strong><code>2LK</code>（蹲輕腳）<code>-10</code></strong>、<strong><code>2MK</code>（蹲中腳）<code>-10</code></strong>、<strong><code>2HK</code>（蹲重腳／長距離滑踢）<code>-16</code></strong>！因滑鏟持續幀極長（<code>2LK</code> 7F、<code>2MK</code> 13F、<code>2HK</code> 16F），深擋一定必吃大確反，只有最遠腳尖壓持續擦到防禦才會大幅縮減負幀。</li>
+<li><strong>長手與必殺破綻</strong>：<strong>瑜伽長槍（<code>4HP</code>）<code>-16</code></strong>（沒取消必殺必罰）、<strong>站重拳（<code>5HP</code>）<code>-11</code></strong>、<strong>OD 瑜珈火焰（<code>63214PP</code>）<code>-11</code></strong>（普通版 <code>-4</code>）、<strong>瑜伽巨山（<code>4HK</code>）<code>-9</code></strong>、<strong>蹲重拳（<code>2HP</code>）<code>-8</code></strong>、<strong>因果腳（<code>1HK</code>）／瑜伽蹬踢（<code>1MK</code>）<code>-7</code></strong>、<strong>站重腳（<code>5HK</code>）／站中腳（<code>5MK</code>）／輕瑜珈火爆（<code>63214LK</code>）<code>-6</code></strong>（<code>5HK</code> 對蹲姿常揮空）、<strong>SA1 <code>-10</code>（重版 <code>-22</code>）、SA3 <code>-62</code></strong>。</li>
+<li><strong>安全技</strong>：<strong>合掌聖踢（<code>4MK</code>）<code>±0</code></strong>、<strong>OD 瑜珈火爆（<code>63214KK</code>）<code>±0</code></strong>、<strong>瑜伽上勾拳（<code>4MP</code>）／涅槃拳（<code>1HP</code>）／靈活踢（<code>1LK</code>）<code>-3</code></strong>。</li>
+</ul>
+<h3>阿鬼（A.K.I.）</h3>
+<ul>
+<li><strong>安全與正幀壓制</strong>：常用字串 <code>2LK（-2）→ 2LP（-1）→ 紫泡撒（214HP，-4 且距離常拉開）</code> 沒有確反；<strong>囚牛（<code>6HK</code>）<code>+2</code></strong>、<strong>蹲中腳（<code>2MK</code>）<code>+1</code></strong>、<strong>OD 紫煙炮（<code>214PP</code>）<code>+1</code></strong>、<strong>OD 兇襲刺（<code>214KK</code>）<code>+2</code></strong>（普通輕／中／重兇襲刺皆為 <strong><code>-3</code></strong> 安全！）。</li>
+<li><strong>必罰大破綻</strong>：<strong>紫泡泉（<code>214MP</code>）</strong> 總長 46 幀（放毒沼毫無防禦）；<strong>紫煙炮（<code>214LP</code>）</strong> 總長 52 幀、近距被防 <strong><code>-10</code></strong>；<strong>紫煙追（<code>214LP~6P</code>）</strong> <strong><code>-16</code></strong>（OD <strong><code>-13</code></strong>）；<strong>蛇頭鞭（<code>236P</code>）</strong> 輕 <strong><code>-8</code></strong>／中 <strong><code>-12</code></strong>／重 <strong><code>-20</code></strong>／OD <strong><code>-14</code></strong>；<strong>猛毒牙（<code>2P~P</code>）</strong> <strong><code>-25</code></strong>；<strong>窮奇第 2 段（<code>5HP~HP</code>）</strong> <strong><code>-15</code></strong>；<strong>蹲重拳（<code>2HP</code>）</strong> <strong><code>-8</code></strong>（註：阿鬼的 <code>2HK</code> 蹲重腳反而是 <strong><code>-3</code> 安全</strong>，別跟 <code>2HP</code> 搞混！）；<strong>SA1 <code>-46</code>／SA2 <code>-19</code>／SA3 <code>-36</code></strong>。</li>
+</ul>
+<h3>亞思敏（Yasmine）</h3>
+<ul>
+<li><strong>一般狀態破綻</strong>：目標連段 <strong><code>Tatlong Hiwa</code>（<code>MM</code>）<code>-13</code></strong>、<strong><code>Sunod-sunod na Sipa</code>（<code>MM~H</code>）<code>-13 / -9</code></strong>、<strong><code>Kumbinasyong Pampabagsak</code>（<code>MH</code>）<code>-10</code></strong>；<strong>蹲重拳（<code>2HP</code>）<code>-11</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-10</code></strong>、<strong>蹲中腳（<code>2MK</code>）<code>-6</code></strong>；<strong>流水連擊（<code>Daloy ng Tubig</code>）</strong> 輕／中／重 <strong><code>-6</code></strong>（OD <strong><code>-3</code></strong>）；<strong>背旋蛇牙（<code>Pangil sa Likuran</code>）</strong> 輕／中／重 <strong><code>-4</code></strong>（OD <strong><code>-2</code></strong>）；<strong><code>Alon(1)</code> <code>-12</code></strong>；<strong>OD 旋風刃（<code>Talim ng Hangin</code>）<code>-12</code></strong>（普通重版 <strong><code>+1</code></strong> 正幀）；<strong>食猿雕翔踢（<code>Lipad ng Agila</code>）<code>-29～-40</code></strong>。</li>
+<li><strong>強化模式（<code>Nakatagong Lakas</code> / SA2）</strong>：進入強化後，<code>Alon(2)</code> 的 <code>[Boosted]</code> 收尾會安全化至 <strong><code>-1</code>～<code>-3</code></strong>（無確定反擊），不可當成普通收尾去搶確反。</li>
+</ul>
+<h3>拉希德（Rashid）</h3>
+<ul>
+<li><strong>鷹襲（Eagle Spike，<code>214K</code>）</strong>：<strong>無氣流版全數高達 <code>-36</code></strong>（走上前或綠衝打最大連段！）；<strong>有氣流強化版</strong>則縮短為 <strong>輕／OD <code>-24</code>、中／重 <code>-15</code></strong>，雖會被彈開一段距離讓短手普通技打不到，但負幀依舊很大，用前走／動力箭步／長突進技或超必殺仍可確反！</li>
+<li><strong>旋風擊（Spinning Mixer，<code>236P</code>）</strong>：<strong>輕旋風擊被防 <code>-3</code>（有氣流 <code>+2</code>）</strong> 安全，常見安全字串為 <code>2LP &gt; 2LP &gt; 輕旋風擊（-3）</code>；但<strong>中／重／OD 旋風擊被防高達 <code>-42～-83</code></strong>（猶如擋到無敵昇龍般的大破綻，絕對不要放過！）。</li>
+<li><strong>阿拉伯旋風（<code>214P</code>）與派生</strong>：輕 <strong><code>-6</code></strong>、中 <strong><code>-4</code></strong>、重 <strong><code>-2</code></strong>、OD <strong><code>-10</code></strong>（注意可派生突襲鷹爪 <code>-9</code>）。對中距離完美撥擋後，因為距離與派生變化，DI 並非永遠確定。</li>
+</ul>
+<h3>英格麗特（Ingrid）</h3>
+<ul>
+<li><strong>太陽旋昇（Sun Rise）</strong>：普通輕 <strong><code>-24</code></strong>、中 <strong><code>-23</code></strong>、重 <strong><code>-25</code></strong>，全版大幅不利可用重攻擊起手確反！<strong>OD 太陽旋昇被防僅 <code>-3</code></strong>（只有命中才會出後續段，被防是安全的！）。</li>
+<li><strong>太陽閃光（Sun Flare）</strong>：Lv1 <strong><code>-4</code></strong>，但只要消耗太陽紋章升級為 <strong>Lv2（<code>+4</code>）／Lv3（<code>+5</code>）</strong> 或 <strong>OD 版（Lv1 <code>+4</code> / Lv2 <code>+5</code> / Lv3 <code>+9</code>）</strong> 就全是正幀！</li>
+<li><strong>目標連段與普通技</strong>：<code>Pretty Heel Kick（MM）</code> <strong><code>-11</code></strong>、<code>Glowing Touch（MH）</code> <strong><code>-4 / -11</code></strong>、<code>Luminous Uppercut（HH）</code> <strong><code>-8 / -10</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-12</code></strong>、<strong>蹲中腳（<code>2MK</code>）<code>-6</code></strong>、<strong>站重拳（<code>5HP</code>）<code>-5</code></strong>；<strong>SA1 <code>-99</code>／SA3 <code>-45</code></strong>。</li>
+</ul>
+<h3>阿爾俊（Arjun）</h3>
+<ul>
+<li><strong>關鍵釐清（蹲中腳 vs 蹲中拳）</strong>：<strong>蹲中腳（<code>2MK</code>，下段）被防為 <code>-2</code> 安全</strong>（無確反！）；會被 4 幀技確反的是 <strong>蹲中拳（<code>2MP</code>，<code>-4</code>）</strong>、<strong>站輕腳（<code>5LK</code>，<code>-4</code>）</strong> 與 <strong><code>Above the Law</code>（<code>-4</code>）</strong>！</li>
+<li><strong>破綻招式</strong>：目標連段 <strong><code>Loose Cannon（HH）</code> <code>-11</code></strong>、<strong><code>Penitent Fist</code> 未蓄 <code>-23</code>／蓄力 <code>-19</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-11</code></strong>、<strong>蹲重拳（<code>2HP</code>）<code>-5</code></strong>、<strong>圓環氣息（<code>Breathing Ring</code>）<code>-6</code></strong>（OD <strong><code>+1</code></strong>）、<strong>神氣巨岩（<code>Divine Pillar</code>）<code>-6</code></strong>、<strong><code>Justice Beyond</code> <code>-7</code></strong>；<strong>SA1 <code>-46</code>／SA2 <code>-41</code>／SA3 <code>-41</code></strong>。</li>
+<li><strong>正幀陷阱</strong>：<strong>重／OD 大義巨腕（<code>Arm of Justice</code>）<code>+2</code>（派生 <code>+1</code>）</strong>、<strong>重／OD 嚴酷岩肩（<code>Cruel Shoulder</code>）<code>+1</code></strong>、<strong>站輕拳（<code>5LP</code>）<code>+1</code></strong>、<strong><code>Moral Breakdown</code> <code>+3</code></strong>（皆無確反且會造成大量可回復白血）。</li>
+</ul>
+<h3>艾德（Ed）</h3>
+<ul>
+<li><strong>-4～-6 常見反擊點</strong>：<strong>站中腳（<code>5MK</code>）<code>-5</code></strong>、<strong>念力閃擊（<code>236P</code>）<code>-5</code></strong>、<strong>輕念力迅擊拳（<code>214LP</code>）<code>-5</code></strong>、<strong>殺戮斷連・破碎（<code>5/6K~6P</code>）<code>-4</code></strong>、<strong>殺戮斷連・追擊（<code>~dl.6P</code>）<code>-6</code></strong>、<strong>蹲輕腳（<code>2LK</code>）<code>-4</code></strong>、<strong>蹲中拳（<code>2MP</code>）<code>-6</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-6</code></strong>（注意：艾德的 <strong><code>2LP</code> 蹲輕拳為 <code>-3</code> 安全</strong>）。</li>
+<li><strong>必罰大破綻</strong>：<strong>閃刺拳組合技第 3 段（<code>LP~LP~LP</code>）<code>-8</code></strong>、<strong>體擊組合技（<code>5MP~HP</code>）<code>-8</code></strong>、<strong>低猛擊組合技（<code>2HK~HP</code>）<code>-8</code></strong>、<strong>職業殺手組合技第 3 段 <code>-11</code></strong>、<strong>蹲重拳（<code>2HP</code>）<code>-12</code></strong>、<strong>中／重念力迅擊拳 <code>-12</code></strong>（OD <code>-4</code>）、<strong>普通念力彈（<code>236P~6P</code>）<code>-8</code></strong>（OD <code>-2</code>）、<strong>念力上鉤拳（<code>623P</code>）輕 <code>-13</code>／中 <code>-20</code>／重 <code>-21</code>／OD <code>-28</code></strong>。</li>
+<li><strong>念力閃刺拳（<code>236K</code>）與防禦注意</strong>：未蓄力輕／中版被防 <strong><code>-6</code></strong>（距離較遠需用長技或前衝抓）；<strong>蓄力版與 OD 版皆為 <code>+4</code> 正幀</strong>（會把你拉近且艾德先動，前跳或預判閃避可反制）；<strong>站重腳（<code>5HK</code>）</strong> 被防也是 <strong><code>+4</code> 正幀</strong>。</li>
+</ul>
+<h3>其他通用小提醒（瑪濃、肯等）</h3>
+<ul>
+<li><strong>肯（Ken）</strong>：<strong>站中腳（<code>5MK</code>）<code>-5</code></strong>、<strong>站重腳（<code>5HK</code>）<code>-5</code></strong>、<strong>蹲中腳（<code>2MK</code>）<code>-6</code></strong>、<strong>蹲重拳（<code>2HP</code>）<code>-7</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-10</code></strong>；<strong>迅雷腳（<code>236K</code>）</strong> 輕 <strong><code>-11</code></strong>／中 <strong><code>-7</code></strong>／OD <strong><code>-7</code></strong>（重版 <code>-2</code> 安全；派生<strong>風鐮腳</strong> <code>-5</code>、<strong>火碎腳</strong> <code>-12～-20</code>）。</li>
+<li><strong>瑪濃（Manon）</strong>：<strong>站中腳（<code>5MK</code>）<code>-5</code></strong>、<strong>站重腳（<code>5HK</code>）<code>-6</code></strong>、<strong>蹲重拳（<code>2HP</code>）<code>-8</code></strong>、<strong>蹲重腳（<code>2HK</code>）<code>-12</code></strong>、<strong>巴投（<code>3HK</code>）<code>-23</code></strong>；<strong>畫圈（<code>236K</code>）<code>-11～-19</code></strong>；<strong>解離（<code>214K</code>）</strong> 輕 <strong><code>-24</code></strong>／中 <strong><code>-13</code></strong>／重 <strong><code>-9</code></strong>（OD <code>-3</code> 安全）；<strong>顛倒迴旋（<code>236P</code>）<code>-16～-23</code></strong>。</li>
+</ul>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ul>
+<li><strong>已核對並解決的舊爭議</strong>：本篇已依 Capcom 官方數據徹底消除所有舊影片誤傳與衝突——① <strong>拜森雙膝壓</strong>：輕／中 <code>-5</code>、重 <code>-4</code>、OD <code>-15</code>，近距 4～5 幀可確反，先端擊退後會摸不到；② <strong>阿爾俊蹲中</strong>：<code>2MK</code> 為 <code>-2</code> 安全，<code>-4</code> 可罰的是 <code>2MP</code> 與 <code>5LK</code>；③ <strong>拉希德氣流鷹襲</strong>：無氣流 <code>-36</code>、氣流強化為 <code>-15</code>（中/重）或 <code>-24</code>（輕/OD），負幀仍足夠靠長突進技／綠衝／超必殺反擊；④ <strong>春麗百裂腳</strong>：輕／中 <code>-8</code>（可罰）、重／OD <code>-3</code>（安全，僅派生百裂連腳 <code>-13</code> 可罰）；⑤ <strong>本田頭槌</strong>：普通版全 <code>-3</code> 安全，OD 版 <code>-20</code> 大確反；⑥ <strong>阿鬼／嘉米／迪傑 SA2</strong> 實為 <code>-19</code>～<code>-61</code> 大破綻（僅 JP／拉希德／艾德 SA2 屬設置型）；⑦ <strong>嘉米螺旋飛箭（<code>-12～-14</code>）與對地神槍砲（<code>-6～+5</code>／OD <code>-3～+7</code>）</strong> 分別訂正。</li>
+<li><strong>距離補正與壓持續變數</strong>：本篇表列負幀皆為「地面常態第 1 持續幀貼身防禦」基準；若對方在極限先端出手（例如拜森輕中雙膝壓、沙加特重猛虎膝、嘉米高飛踢、瑪濃／肯重腳最尖端），即使帳面是 <code>-4</code>～<code>-6</code>，自己最短的 4 幀輕拳也可能因距離不足而揮空，實戰務必先在訓練場測試自己主力角的確反距離。</li>
+<li><strong>資源與模式差異</strong>：面對<strong>燒盡（Burnout）</strong>狀態或對方使用<strong>動力箭步（綠衝）</strong>時，請務必現場加上 <code>+4</code> 幀驗算（<code>-4</code> 變 <code>±0</code>、<code>-5</code> 變 <code>-1</code>）；<strong>現代模式（Modern Controls）</strong> 玩家在面對 <code>-15</code> 以上大破綻或遠距離破綻時，一鍵超必殺（如一鍵 SA1/SA2/SA3）往往能比經典模式更快、更穩定地抓住遠距離確反。</li>
+</ul><div class="nav"><span><a href="c02-03-terry.html">← C02-03 各角色確反｜泰瑞（Terry）</a></span><span style="text-align:right"><a href="c02-04.html">C02-04 反應時間與反擊窗口 →</a></span></div></div></body></html>

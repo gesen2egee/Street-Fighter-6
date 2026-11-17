@@ -1,0 +1,179 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隆（Ryu）：起身壓制與二擇｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / Ryu 隆（ryu） 攻略</div><h1>隆（Ryu）：起身壓制與二擇</h1><p>這份指南專門整理<strong>隆（Ryu）將對手擊倒後的起身壓制（Okizeme / Oki）、消幀（Framekill）、連投循環（Throw Loop）、安全跳（Safe Jump）以及防守反制思路</strong>，所有招式名稱、指令與幀數數據皆已核對《快打旋風 6》官方資料。</p>
+<p>很多玩家打隆常遇到「好不容易把人踢倒，對手一起身卻不知道該壓哪一招，反而被對方凹無敵技或搶招反打」。這篇會帶你用官方正確幀數，建立一套<strong>結構簡單、進退有據的起身二擇系統</strong>。</p>
+<blockquote>
+<p>⚡ <strong>一分鐘懶人包</strong>
+- <strong>壓起身鐵三角</strong>：<strong>壓持續（Meaty）打擊</strong>（抓搶招／後退）、<strong>普通投（5 幀）</strong>（抓死防）、<strong>後退誘摔（Shimmy）／原地防禦</strong>（抓延遲解摔與無敵技）。
+- <strong>站中拳（5MP）真相澄清</strong>：<code>5MP</code> 普通貼身被防其實是 <strong><code>-1</code> 幀</strong>，並不是天生有利！必須搭配<strong>壓持續（最多額外 +3 幀，被防最高 +2）</strong>或<strong>動力箭步（綠衝，+4 幀，被防 +3）</strong>才會轉為有利。
+- <strong>角落自動消幀</strong>：版邊<code>過肩摔（前摔，+17 幀）</code>空揮<code>站輕拳（5LP，總長 13 幀）</code>可穩定得 <strong><code>+4</code> 幀</strong>展開連投循環；版邊<code>重昇龍拳（+29 幀）</code>可直接壓<code>重波掌擊（214HP，30 幀／被防 +2）</code>或空揮<code>蹲中拳（2MP，空揮總長 24 幀）</code>得 <strong><code>+5</code> 幀</strong>。
+- <strong>位置提醒</strong>：固定消幀與安全跳路線皆<strong>建議於角落使用</strong>；在場中央對手可<strong>向後受身（Back Rise）</strong>拉開距離，需依距離靈活改用<code>前墊步</code>、<code>生綠衝</code>或<code>波動拳</code>應對。</p>
+</blockquote>
+<hr />
+<h2>一、起身壓制的核心概念：打擊、普通投與後退誘摔</h2>
+<p>把對手打倒並貼近後，攻防永遠圍繞三個選項展開：</p>
+<ol>
+<li><strong>壓持續打擊（Meaty）</strong>：算準對手起身那一瞬間讓攻擊框重疊。只要對手想按 4 幀輕拳搶招（Abare）或往後走，就會直接吃下整套連段；且因為用持續幀後段擊中／被防，根據公式 <strong><code>+(k - 1)</code> 幀（最多 <code>持續幀數 - 1</code> 幀）</strong>，隆會比平常更早恢復行動、獲得額外有利幀。</li>
+<li><strong>普通投（Throw，5 幀發生）</strong>：如果對手很乖一直蹲防，走上去直接按<code>過肩摔（LP+LK）</code>或<code>巴摔（4+LP+LK）</code>（基礎傷害 <strong>1200</strong>）。在角落這招能形成逼對手不停猜拳的<strong>連投循環（Throw Loop，俗稱柔道）</strong>。</li>
+<li><strong>後退誘摔（Shimmy，俗稱退康）與防禦騙凹</strong>：面對喜歡起身直接凹 <code>OD 昇龍拳</code>／<code>SA</code>，或習慣用<strong>延遲解摔（Delay Tech）</strong>的對手，走到投距邊緣後稍微往後退一步或拉防禦：
+   - 對手凹 <code>OD 昇龍拳</code>（被防 -40）→ 擋住後直接打滿套<strong>懲罰反擊（Punish Counter）</strong>。
+   - 對手按解摔揮空（普通投揮空硬直 23 幀）→ 直接用重攻擊反打懲罰反擊（若改用普通投抓到懲罰反擊，傷害高達 <strong>2040</strong>、SA 量表 +4000 並強制轉為<strong>強制倒地</strong>）。</li>
+</ol>
+<hr />
+<h2>二、隆把人打倒後，最實用的 4 個起身進攻套路</h2>
+<h3>1. 輕龍捲旋風腳（214LK）擊倒後（投距外 vs 投距內）</h3>
+<ul>
+<li><strong>一般普通技取消輕龍捲（多數在投距外）</strong>：</li>
+<li>使用一次<code>前墊步（總長 19 幀）</code>後雖取得約 <strong><code>+4</code> 幀</strong>有利，但距離通常還在普通投射程外。</li>
+<li>此時可改用<strong><code>蹲中拳（2MP，發生 6 幀、命中 +5、被防 0，持續 6-9 幀）</code></strong>壓制搶招。只要抓到對手搶招打出<strong>截擊（Counter Hit，+2 幀）</strong>，命中有利至少達 <strong><code>+7</code> 幀</strong>，可穩接<code>站中拳（5MP，6 幀）</code>、<code>蹲中拳（2MP，6 幀）</code>或<code>上突（4HP，7 幀）</code>；若以壓持續命中截擊（達 <code>+8～+9</code> 幀），更能直接目押<code>蹲中腳（2MK，8 幀）</code>再取消龍捲！</li>
+<li>若由綠衝中段等較遠距離起手取消輕龍捲，在有動力量表時也可再接「<code>輔助中攻擊 → 取消動力箭步</code>」強行貼身再擇。</li>
+<li><strong>經由「取消動力箭步 → 強攻擊 → 重波掌擊 → 龍捲」擊倒（或生綠衝接重拳／後重拳 → 龍捲）</strong>：</li>
+<li>擊倒後接一次<code>前墊步（19 幀）</code>可取得約 <strong><code>+5</code> 幀</strong>且正好落於<strong>投距內</strong>！可微延遲按投、或原地拉防／後退誘使對手解摔揮空後再用蹲重拳（2HP）打懲罰反擊。</li>
+<li>場中需留意對手是否使用<strong>向後受身（Back Rise）</strong>；場中距離變遠時切勿盲目按投揮空，該路線在角落執行最為穩定。</li>
+</ul>
+<h3>2. 版邊前摔、重昇龍拳與蹲重腳（2HK）後的消幀（Framekill）壓制</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">擊倒情境（建議角落使用）</th>
+<th style="text-align: left;">消幀或壓制動作</th>
+<th style="text-align: left;">消幀總長／計算結果</th>
+<th style="text-align: left;">後續實戰壓制選項</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>版邊過肩摔（前摔）</strong><br>（約 <code>+17</code> 幀）</td>
+<td style="text-align: left;">空揮一次<code>站輕拳（5LP）</code></td>
+<td style="text-align: left;"><code>5LP</code> 總長 <strong>13 幀</strong><br>（3 前置 + 3 持續 + 7 硬直 → <code>17 - 13 = +4</code>）</td>
+<td style="text-align: left;">精準留下 <strong><code>+4</code> 幀</strong>自動對齊時間差，展開版邊<code>連投循環</code>；亦可不空揮直接壓<code>鳩尾碎擊（6HP，20 幀）</code>或現代模式<code>輔助重（5HP）</code>抓搶招與後墊步。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>版邊重昇龍拳（623HP）</strong><br>（標準 <code>+29</code> 幀）</td>
+<td style="text-align: left;">直接出<code>重波掌擊（214HP）</code></td>
+<td style="text-align: left;"><code>214HP</code> 發生 <strong>30 幀</strong><br>剛好重疊起身第 1 幀</td>
+<td style="text-align: left;"><strong>被防 <code>+2</code> 幀</strong>且在投距內！一旦對手亂動被命中，角落可接<code>輕波掌擊（214LP）→ 輕昇龍拳（623LP）</code>無氣連段形成壓制循環。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>版邊重昇龍拳（623HP）</strong><br>（標準 <code>+29</code> 幀）</td>
+<td style="text-align: left;">空揮一次<code>蹲中拳（2MP）</code></td>
+<td style="text-align: left;"><code>2MP</code> 空揮總長 <strong>24 幀</strong><br>（5 前置 + 4 持續 + 13 硬直 + 2 揮空 → <code>29 - 24 = +5</code>）</td>
+<td style="text-align: left;">取得 <strong><code>+5</code> 幀</strong>有利！就算對手後閃閃掉摔也來得及防禦不吃確反，按搶招則直接吃中攻擊截擊。（註：若為較高浮空 <code>+37</code> 幀擊倒路線，改空揮<code>站重拳 5HP</code> 總長 32 幀同得 <code>+5</code> 幀）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重腳（2HK，大足）</strong><br>懲罰反擊強制倒地（約 <code>+47</code> 幀）</td>
+<td style="text-align: left;">空揮一次<code>鳩尾碎擊（6HP）</code></td>
+<td style="text-align: left;"><code>6HP</code> 總長 <strong>40 幀</strong><br>（19 前置 + 5 持續 + 16 硬直 → <code>47 - 40 = +7</code>）</td>
+<td style="text-align: left;">取得 <strong><code>+7</code> 幀</strong>有利，可穩壓<code>站中拳（5MP，6 幀）</code>壓持續、普通投或誘摔；若賭對手搶招改按<code>上突（4HP，7 幀）</code>須注意其被防高達 <strong><code>-13</code> 幀</strong>，一般推薦用<code>站重拳（5HP，10 幀、被防 -2）</code>更穩。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>昇龍拳擊倒後生綠衝二擇</strong><br>（消耗 1 格動力）</td>
+<td style="text-align: left;"><code>撥擋動力箭步（生綠衝）</code></td>
+<td style="text-align: left;">地面招式固定 <strong><code>+4</code> 幀</strong></td>
+<td style="text-align: left;">近距離貼身直接二擇「<strong>前衝普通投</strong>」或中段技「<strong><code>鎖骨碎擊（6MP）</code></strong>」；<code>6MP</code> 基礎命中 <code>+3</code>／被防 <code>-3</code>，經生綠衝 <code>+4</code> 後變成<strong>被防 <code>+1</code> 安全有利、命中 <code>+7</code> 可穩接 <code>5MP / 2MP</code> → <code>上段足刀（236K）</code></strong>！</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>關於普通擊倒的「大足」與「中龍捲」</strong>：</li>
+<li><code>蹲重腳（2HK）</code>若僅是一般命中或截擊（非懲罰反擊），對手可受身且倒地時間較短，可用「空跳」騙對手的起身無敵技。</li>
+<li><code>中龍捲旋風腳（214MK）</code>擊倒後若對手在場中選擇<strong>向後受身（Back Rise）</strong>，距離會拉得比輕龍捲更遠，較難像輕龍捲那樣緊密壓起身，多半改以<code>波動拳</code>牽制或觀察對手動向為主。</li>
+<li><strong>前墊步次數提醒</strong>：隆的<code>前墊步</code>為 <strong>19 幀</strong>（兩次共 38 幀）。只有在高達 <code>+38</code> 幀以上的長倒地後兩次前墊步才會歸零，標準 <code>+29</code> 幀的<code>重昇龍拳</code>擊倒若硬按兩次前墊步反而會變成 <code>-9</code> 幀不利，切勿搞混！</li>
+</ul>
+<h3>3. 常見壓起身拳腳官方幀數一覽</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱與指令</th>
+<th style="text-align: left;">發生／持續</th>
+<th style="text-align: left;">基礎命中</th>
+<th style="text-align: left;">基礎被防</th>
+<th style="text-align: left;">壓持續／綠衝變化與實戰評價</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>站輕拳（5LP）／蹲輕拳（2LP）</strong></td>
+<td style="text-align: left;">4 幀／3 幀（2LP 2 幀）</td>
+<td style="text-align: left;">+4</td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;">最快搶招與點摔（Tick Throw）起手，點一下微頓即可摔，或連點確認防搶招。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中拳（5MP）</strong></td>
+<td style="text-align: left;">6 幀／6-9（4 幀）</td>
+<td style="text-align: left;">+7</td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;"><strong>基礎被防為 <code>-1</code>（並非天生正幀！）</strong>；但憑藉 4 幀持續，壓持續最多額外 <code>+3</code>（被防最高 <code>+2</code>），綠衝則變被防 <code>+3</code>，打中可穩接 <code>2MP / 5LK</code>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中拳（2MP）</strong></td>
+<td style="text-align: left;">6 幀／6-9（4 幀）</td>
+<td style="text-align: left;">+5</td>
+<td style="text-align: left;"><strong>0</strong></td>
+<td style="text-align: left;">起身壓制極穩的 6 幀中拳，基礎被防即平盤 <code>0</code> 幀，只要壓到第 2 持續幀以上被防就是 <code>+1～+3</code> 幀。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>鳩尾碎擊（6HP，大ゴス）</strong></td>
+<td style="text-align: left;">20 幀／20-24（5 幀）</td>
+<td style="text-align: left;">+6</td>
+<td style="text-align: left;"><strong>+3</strong></td>
+<td style="text-align: left;"><strong>天生正幀神技</strong>：直接壓被防就有 <code>+3</code>，壓持續更可達 <code>+4～+7</code>；命中 <code>+6</code> 接 <code>5MP / 2MP</code> 帶出大傷害。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重腳（5HK）</strong></td>
+<td style="text-align: left;">12 幀／12-15（4 幀）</td>
+<td style="text-align: left;">+9</td>
+<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: left;">天生被防 <code>+1</code>，但注意蹲姿對手可能躲過部分站姿高打點（需對準起身瞬間或搭配距離）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>輕波掌擊（214LP）</strong></td>
+<td style="text-align: left;">12 幀／12-17（6 幀）</td>
+<td style="text-align: left;">+2</td>
+<td style="text-align: left;"><strong>-3</strong></td>
+<td style="text-align: left;">安全試探與打亂節奏（<strong>注意</strong>：<code>中波掌擊 214MP</code> 被防為 <code>-6</code> 貼身會被確反，壓起身勿隨便用中版）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重波掌擊（214HP）／電刃版</strong></td>
+<td style="text-align: left;">30 幀（電刃 20 幀）</td>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;"><strong>+2 / +3</strong></td>
+<td style="text-align: left;">起身被防直接有利（<code>OD 波掌擊</code> 被防 <code>+3</code>、<code>電刃 OD 版</code> 被防 <code>+4</code> 且命中 <strong>39 幀崩潰</strong>），極適合削氣兼續壓。</td>
+</tr>
+</tbody>
+</table></div>
+<h3>4. 用「波動拳」與「安全跳（Safe Jump）」壓起身</h3>
+<ul>
+<li><strong>波動拳壓起身</strong>：在角落用<code>重上段足刀（236HK）</code>等長倒地收尾後直接發<code>波動拳（236P）</code>壓起身，對手防禦即被硬直卡住，你可直接走近二擇或安全蓄<code>電刃練氣（22P）</code>。</li>
+<li><strong>安全跳（Safe Jump，俗稱詐欺跳）與複合輸入</strong>：</li>
+<li>在角落創造 <code>+41～+45</code> 幀倒地（例如 <code>C20-02</code> 介紹的 <code>+42</code> 幀安全跳路線）後前跳出跳重攻擊：對手防禦就落地續壓，對手起身凹 6 幀的 <code>OD 昇龍拳</code> 則剛好落地防住反打滿套。</li>
+<li><strong>進階複合技巧</strong>：前跳出招同時預輸入<code>動力撥擋（Drive Parry）</code>並微長按（遇無敵技自動觸發撥擋省下防禦損耗），或面對打擊無敵的招式時預輸入<code>普通投</code>自動抓破綻。<strong>註：安全跳路線建議於角落使用，場中因向後受身距離不同請視實際距離調整。</strong></li>
+</ul>
+<hr />
+<h2>三、防守端：當自己被壓起身時怎麼辦？</h2>
+<ol>
+<li><strong>不要每回合都無腦起身凹 OD 昇龍拳</strong>
+   - <code>OD 昇龍拳（623PP）</code>雖是 6 幀發生且 <strong>第 1～8 幀完全無敵</strong>，但一旦被騙住防禦，收招高達 <strong><code>-40</code> 幀</strong>，不僅要吃整套懲罰反擊，還直接噴掉 2 格動力量表。</li>
+<li><strong>靈活使用「蹲防＋延遲解摔（Delay Tech）」與「完美撥擋」</strong>
+   - 起身優先蹲防擋住下段與多數壓持續打擊，看到貼身節奏稍慢再按<code>延遲解摔</code>拆投；面對固定節奏的壓持續打擊，也可練習抓準第 1～2 幀按<code>動力撥擋</code>觸發<strong>完美撥擋（Perfect Parry，打擊收招硬直僅 1 幀）</strong>反客為主。</li>
+<li><strong>活用「後墊步（Backward Dash）」、「後退」與「動力反攻（Drive Reversal）」</strong>
+   - <strong><code>後墊步</code></strong>：隆的後墊步總長 <strong>23 幀</strong>，<strong>第 1～15 幀具備投技無敵</strong>，當預測對手要貼身搶投時是重要脫身選項（但要注意後墊步會吃打擊壓持續）。
+   - <strong><code>動力反攻（起身中 6HP+HK，震擊）</code></strong>：消耗 2 格動力，起身發動為 <strong>18 幀發生、第 1～20 幀完全無敵</strong>（命中擊倒並造成 500 可回復傷害；但<strong>被防為 -6 幀</strong>會吃輕攻擊確反，不可太頻繁使用）。</li>
+</ol>
+<hr />
+<h2>四、實戰情境與流派差異提醒</h2>
+<ol>
+<li><strong>有利幀數下「連按壓制」vs「微走再按／前摔」的距離判斷</strong>：
+   - 即便在角落取得 <code>+2～+3</code> 幀有利，連續出招會因擊退（Pushback）迅速把彼此推開；若對手始終龜縮蹲防，連續按打擊很快就會失去威脅，必須適時穿插「向前微走半步再按 <code>5MP / 2MP</code>」或「直接走近普通投」。</li>
+<li><strong>場中普通投後能否直接開「撥擋動力箭步（生綠衝）」壓起身？</strong>
+   - 這完全取決於<strong>場中還是角落</strong>以及<strong>對手有沒有向後受身</strong>：在場中央對手向後受身拉開距離後，投完直接交 1 格生綠衝往往趕不上形成真正重疊的緊貼二擇，反而容易撞上對手搶招；若想穩定建立<code>連投循環</code>，仍以把人關進角落後的固定消幀最可靠。</li>
+<li><strong>防守時「後退誘防」vs「後跳」vs「後墊步」的風險取捨</strong>：
+   - 後退可防打擊但可能被壓下段踢到；後跳與後墊步可躲投技，但一旦遇到對手壓持續打擊就會空中或地上被打中。建議先靠蹲防與延遲解摔建立基礎防線，再依對手習慣切換避投手段。</li>
+<li><strong>精密消幀與不同角色體型的實戰微調</strong>：
+   - 雖然消幀總幀數是固定的，但部分角色起身受擊框寬度與走位速度略有差異（例如極少數大體型角色或特定距離下微走後退能否拉出投距），實戰套用新套路前建議進訓練模式開幀數條確認一次。</li>
+</ol><div class="nav"><span><a href="c20-03.html">← C20-03 隆（Ryu）：量表與超必殺資源運用</a></span><span style="text-align:right"><a href="c20-05.html">C20-05 隆（Ryu）：立回距離與對空應對 →</a></span></div></div></body></html>

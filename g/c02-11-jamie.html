@@ -1,0 +1,495 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>傑米（Jamie）角色招式幀數數據｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>傑米（Jamie）角色招式幀數數據</h1><p>傑米（Jamie）喝酒越喝越強、連段與派生花樣繁多，許多玩家對上他常被「流醉拳、醉疾步、特殊技目標連段」搞得眼花撩亂，不知道哪一下是正幀陷阱、哪一下才能搶招或確反。本篇完全依據 Capcom 官方最新幀數表與系統公式，將傑米全招式硬數據與衍生情境整理成實戰速查表，無論你是想練好傑米壓制節奏，還是想徹底看穿傑米破綻，都能直接對照使用！</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>最該記住的確反招式（擋到別放過他）</strong>：
+   * <strong>醉疾步（<code>214P</code>，推掌）</strong>：輕／中版被防 <strong><code>-6</code> 幀</strong>（近身可用 5～6 幀技確反，尖端壓持續除外）；重版被防 <strong><code>-3</code> 幀</strong>、OD 版被防 <strong><code>-1</code> 幀</strong>（皆安全無確反）。Lv4 追加派生「疾步仙掌（<code>214P~6P</code>）」被防 <strong><code>-23</code> 幀</strong>必死。
+   * <strong>流醉拳（<code>236P</code>）</strong>：Lv0～3 第 1 段被防 <strong><code>-6</code> 幀</strong>（近身 5～6 幀技確反），但 <strong>Lv4 第 1 段與 OD 版第 1、2 段被防僅 <code>-1</code>～<code>-3</code> 幀（安全）</strong>；只要他打到普通第 2 段（<code>-9</code>～<code>-13</code> 幀）或任何第 3 段（<code>-13</code>～<code>-17</code> 幀，流醉腳第 3 段更達 <code>-49</code> 幀），擋住皆可重確反！
+   * <strong>蹲重腳（<code>2HK</code>）與目標連段收尾</strong>：蹲重腳被防 <strong><code>-11</code> 幀</strong>（派生幻醉舞第 2 段 <strong><code>-28</code> 幀</strong>）；目標連段「銳鐘打」第 2 段 <strong><code>-8</code> 幀</strong>、第 3 段 <strong><code>-10</code> 幀</strong>，「圓月腳」第 2 段 <strong><code>-14</code> 幀</strong>，「酩酊襲」第 2 段 <strong><code>-11</code> 幀</strong>、第 3 段 <strong><code>-20</code> 幀</strong>。
+2. <strong>小心傑米的正幀與微不利陷阱</strong>：全一般技與特殊技中，只有 <strong>站中拳（<code>5MP</code>，被防 <code>+2</code> 幀）</strong> 是原生正幀（站輕拳 <code>5LP</code> 被防為 <code>0</code> 幀平幀，蹲輕拳 <code>2LP</code>、站輕腳 <code>5LK</code>、蹲中拳 <code>2MP</code> 被防皆為 <strong><code>-1</code> 幀</strong>）！但搭配<strong>動力箭步（綠衝，被防固定 <code>+4</code> 幀）</strong>後，<code>DR 5MP</code> 高達 <strong><code>+6</code> 幀</strong>、<code>DR 2MP</code> / <code>DR 2LP</code> 為 <strong><code>+3</code> 幀</strong>、<code>DR 5HP</code> / <code>DR 4HP</code> / <code>DR 6HK</code> 皆變為 <strong><code>+1</code> 幀</strong>有利。
+3. <strong>醉意（酒量）傷害倍率與飲酒幀數</strong>：魔身（<code>22P</code>）總長 <strong>50 幀</strong>（第 49 幀升 1 級醉意）；醉意 0～4 級的基礎傷害倍率依序為 <strong>90% → 95% → 100% → 105% → 110%</strong>（SA2 絕唱魔身期間固定為 105%）。</p>
+</blockquote>
+<hr />
+<h2>一、一般技（Normal Moves）官方完整幀數表</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱（指令）</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">實戰用法與官方備註（含綠衝 DR 加值）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>站輕拳（<code>5LP</code>）</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">5-6</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: left;">近身被防平幀（<code>0</code> 幀），命中 <code>+5</code> 可目押接 <code>5LK</code> / <code>2LP</code>；Lv1 以上可派生目標連段「銳鐘打」。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站輕腳（<code>5LK</code>）</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">5-6</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: left;">可連按取消與必殺取消；近身確反 <code>-5</code> 幀招式或前走搶斷常用。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中拳（<code>5MP</code>）</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;">8-11</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;"><strong>+6</strong></td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;"><strong>唯一原生被防正幀（<code>+2</code>）主力技！</strong> 持續長達 4 幀，一般命中 <code>+6</code> 可直接目押接 <code>2MP</code>（6 幀），截擊（<code>+8</code>）或懲罰反擊（<code>+10</code>）可接 <code>2HP</code>；<code>DR 5MP</code> 被防高達 <strong><code>+6</code> 幀</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中腳（<code>5MK</code>）</strong></td>
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">9-11</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">中距離主力牽制（起手受擊框後縮可閃對手 <code>2MK</code>）；揮空時額外增加 1 幀硬直（共 18 幀）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重拳（<code>5HP</code>）</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">5-14</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;"><strong>5 幀發生三段掌擊</strong>（判定於第 5、7、12-14 幀，僅前兩段可取消，可直接打穿動力衝擊）；<code>DR 5HP</code> 命中 <strong><code>+5</code></strong>、被防 <strong><code>+1</code></strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重腳（<code>5HK</code>）</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;">15-17</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-5</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">遠距離差合重擊；<strong>懲罰反擊（PC）時造成崩潰（Crumple）</strong>，空中命中強制浮空追打。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕拳（<code>2LP</code>）</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">4-5</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">250</td>
+<td style="text-align: left;">最速 <strong>4 幀</strong>搶招技，可連按取消；命中 <code>+5</code> 可接 <code>2LP</code> / <code>5LK</code>；<code>DR 2LP</code> 被防 <strong><code>+3</code> 幀</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕腳（<code>2LK</code>）</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">5-6</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: left;">5 幀下段起手，僅可連按取消接 <code>2LP</code> 或 <code>5LK</code>（不可直接取消必殺技）；<code>DR 2LK</code> 命中 <strong><code>+7</code></strong>、被防 <strong><code>+1</code></strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中拳（<code>2MP</code>）</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">6-8</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">拳頭判定極優的 6 幀攔截技；<strong>被防為 <code>-1</code> 幀</strong>（搭配綠衝 <code>DR 2MP</code> 被防為 <strong><code>+3</code> 幀</strong>、命中 <strong><code>+9</code> 幀</strong>）；揮空時額外增加 2 幀硬直（共 15 幀）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中腳（<code>2MK</code>）</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;">7-9</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;"><strong>-6</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: left;">7 幀可取消下段牽制；單發被防 <code>-6</code> 幀，通常搭配取消流醉拳或取消動力箭步使用。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重拳（<code>2HP</code>）</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;">8-12</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">8 幀高傷連段樞紐，命中強制站立（前 2 個持續幀可取消必殺技）；單發被防 <code>-8</code> 幀。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重腳（<code>2HK</code>）</strong></td>
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">9-15</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-11</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">兩段式下段掃倒（第 1 段被防時第 2 段視為上段，被防額外 +1 幀硬直達 <strong><code>-11</code> 幀</strong>）；可派生「幻醉舞」喝酒。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳攻擊（<code>j.LP</code> / <code>j.LK</code> / <code>j.MP</code> / <code>j.MK</code> / <code>j.HP</code> / <code>j.HK</code>）</strong></td>
+<td style="text-align: center;">5 / 6 / 7 / 7 / 10 / 8</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">落地 3</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><code>j.MP</code> 可 C</td>
+<td style="text-align: center;">300～800</td>
+<td style="text-align: left;"><code>j.LP</code> 與 <code>j.MK</code> 具繞背（逆向）性質；<code>j.MP</code> 可取消空中必殺技（無影腳）且空中命中強制浮空；<code>j.HP</code> 空中命中強制重擊倒地。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、特殊技與目標連段（Unique Attacks）</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱（指令）</th>
+<th style="text-align: center;">解鎖條件</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">官方備註與實戰重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>天晴腳（<code>2K</code> / 實戰 <code>2KK</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">9-11</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">僅在<strong>命中時可取消跳躍</strong>（常接安全跳或空中追打）；被防 <code>-8</code> 幀會被確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>幻醉舞（<code>2K~K</code> / 實戰 <code>2HK~HK~P</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;">12-14</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-28</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: left;"><code>2HK</code> 後的第 2 段踢擊被防 <strong><code>-28</code> 幀</strong>；第 3 段飲酒總長 <strong>60 幀</strong>（第 56 幀升 1 級醉意，Lv3 以下回 2,500 動力、Lv4 回 10,000 動力）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>落星腳（<code>6MK</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;">22-24</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">22 幀中段攻擊；單發被防 <code>-3</code> 幀安全，<code>DR 6MK</code> 命中 <strong><code>+5</code> 幀</strong>（可接 <code>2LP</code> / <code>5LK</code>，若截擊 <code>+7</code> 可接 <code>2MP</code>）、被防 <strong><code>+1</code> 幀</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>仙姑肘（<code>4HP</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: center;">18-21</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">SA</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">起手受擊框大幅後縮的差合誘招神技；可取消超必殺技（SA），<code>DR 4HP</code> 命中 <strong><code>+5</code></strong>、被防 <strong><code>+1</code></strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>旋影腳（<code>6HK</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;"><strong>16</strong></td>
+<td style="text-align: center;">16-18</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">SA</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">16 幀遠距離突進踢，被防 <strong><code>-3</code> 幀</strong>安全（<code>DR 6HK</code> 被防 <strong><code>+1</code> 幀</strong>）；截擊命中 <code>+5</code>、懲罰反擊 <code>+7</code>（<code>DR</code> 懲罰反擊 <code>+11</code>）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>銳鐘打（<code>5LP &gt; 5LK &gt; 5MP</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv1 以上</strong></td>
+<td style="text-align: center;">5 / 6 / 8</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">9 / 16 / 21</td>
+<td style="text-align: center;">+2 / -3 / -1</td>
+<td style="text-align: center;"><strong>-3 / -8 / -10</strong></td>
+<td style="text-align: center;">第 1、3 段可 C</td>
+<td style="text-align: center;">300 / 200 / 500</td>
+<td style="text-align: left;">輕攻擊確認主力目標連段！第 2 段被防 <code>-8</code>、第 3 段被防 <code>-10</code>（被防額外 +2 幀硬直），沒確認命中切勿打到第 2、3 段。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>圓月腳（<code>6MK &gt; MK &gt; P</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv2 以上</strong></td>
+<td style="text-align: center;">22 / 15 / —</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">20 / 28 / 總長 61</td>
+<td style="text-align: center;">+1 / D / —</td>
+<td style="text-align: center;"><strong>-3 / -14 / —</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">600 / 600 / 0</td>
+<td style="text-align: left;">中段連段飲酒技；第 2 段被防 <code>-14</code> 幀；第 3 段飲酒總長 61 幀（第 54 幀升 1 級醉意，回 5,000～10,000 動力）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>酩酊襲（<code>4HP &gt; HP &gt; HK</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv3 以上</strong></td>
+<td style="text-align: center;">18 / 21 / 21</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">21 / 20 / 37</td>
+<td style="text-align: center;">+1 / +1 / D</td>
+<td style="text-align: center;"><strong>-3 / -11 / -20</strong></td>
+<td style="text-align: center;">第 1 段 SA、第 2 段 C</td>
+<td style="text-align: center;">800 / 600 / 800</td>
+<td style="text-align: left;">第 2 段可取消必殺技；第 3 段命中在角落會觸發<strong>撞牆（Wall Splat）</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>亂醉旋（<code>6HK &gt; 4HK &gt; P</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv4 專屬</strong></td>
+<td style="text-align: center;">16 / — / 14(4)</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">19 / 總長 75 / 28(27)</td>
+<td style="text-align: center;">+3 / — / D</td>
+<td style="text-align: center;"><strong>-3 / — / -13(-9)</strong></td>
+<td style="text-align: center;">第 3 段可 C</td>
+<td style="text-align: center;">900 / 0 / 850(1200)</td>
+<td style="text-align: left;"><code>6HK</code> 揮空也可派生後撤（總長 75 幀）；立即派生掌發生 14F（被防 <code>-13</code>、傷 850），延遲派生掌發生 4F（被防 <code>-9</code>、傷 1200），最長延遲不攻擊總長 52F 並回復 10,000 動力。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、必殺技與超必殺技（Special Moves &amp; Super Arts）</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱（指令）</th>
+<th style="text-align: center;">解鎖條件</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">官方備註與衍生情境重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>魔身（<code>22P</code>，飲酒）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">單次總長 <strong>50 幀</strong>（第 49 幀升 1 級醉意；已 Lv4 時回復 5,000 動力）；按住連喝 1 級總動作為 97 幀。<strong>各級傷害倍率：Lv0 <code>90%</code>、Lv1 <code>95%</code>、Lv2 <code>100%</code>、Lv3 <code>105%</code>、Lv4 <code>110%</code></strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳・第 1 段（<code>236P</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">輕 <strong>13</strong><br>中 <strong>16</strong><br>重 <strong>19</strong><br>OD <strong>13</strong></td>
+<td style="text-align: center;">Lv0-3：<strong>-1</strong><br>Lv4：<strong>+1</strong><br>OD：<strong>+1</strong> (Lv4 <strong>+3</strong>)</td>
+<td style="text-align: center;">Lv0-3：<strong>-6</strong><br>Lv4：<strong>-3</strong><br>OD：<strong>-3</strong> (Lv4 <strong>-1</strong>)</td>
+<td style="text-align: center;">普通 SA3<br>OD SA2</td>
+<td style="text-align: center;">350～600</td>
+<td style="text-align: left;">Lv0～3 普通版被防皆為 <strong><code>-6</code> 幀</strong>（燒盡防禦下為 <code>-2</code> 幀）；<strong>升上 Lv4 後普通版變雙掌且被防變 <code>-3</code> 幀（安全）</strong>，OD 版被防 <code>-3</code> 幀（Lv4 僅 <code>-1</code> 幀）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳・第 2 段（<code>~6P</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">輕 <strong>13</strong> / 中 <strong>16</strong><br>重 <strong>19</strong> / Lv4 <strong>15</strong><br>OD <strong>13</strong> (Lv4 <strong>15</strong>)</td>
+<td style="text-align: center;">Lv0-3：<strong>-3</strong><br>Lv4：<strong>-2</strong><br>OD：<strong>-1</strong></td>
+<td style="text-align: center;">輕 <strong>-13</strong> / 中 <strong>-11</strong><br>重 <strong>-9</strong> / Lv4 <strong>-10</strong><br>OD：<strong>-3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">350～500</td>
+<td style="text-align: left;">第 1 段揮空也可派生；普通版第 2 段被防 <code>-9</code>～<code>-13</code> 幀皆可確反，唯獨 <strong>OD 版第 2 段被防為 <code>-3</code> 幀（安全無確反）</strong>！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉拳・第 3 段（<code>~6P</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">輕 <strong>13</strong> / 中 <strong>16</strong><br>重 <strong>19</strong> / Lv4 <strong>16</strong><br>OD <strong>13</strong> (Lv4 <strong>16</strong>)</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">輕 <strong>-17</strong> / 中 <strong>-15</strong><br>重 <strong>-13</strong> / Lv4 <strong>-14</strong><br>OD <strong>-13</strong> (Lv4 <strong>-14</strong>)</td>
+<td style="text-align: center;">普通 SA3<br>OD SA2</td>
+<td style="text-align: center;">550～750</td>
+<td style="text-align: left;">命中擊倒（不升醉意，重傷收尾用）；被防破綻極大（<code>-13</code>～<code>-17</code> 幀），但可取消 SA3（OD 版可取消 SA2）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流醉腳・第 2／3 段（<code>~6K~6K</code>）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">第 2 段：14/17/20/OD 14<br>第 3 段：18/21/24/OD 18</td>
+<td style="text-align: center;">第 2 段：<strong>-7</strong><br>第 3 段：<strong>D</strong></td>
+<td style="text-align: center;">第 2 段：<strong>-15</strong><br>第 3 段：<strong>-49</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">第 2 段 250～350<br>第 3 段 450～600</td>
+<td style="text-align: left;">第 3 段踢擊飲酒分別於第 55 / 59 / 62 / 56 幀升 1 級醉意，並回復 5,000（Lv4 為 10,000）動力量表；被防高達 <strong><code>-49</code> 幀</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>醉疾步（<code>214P</code>，推掌）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">輕 <strong>17</strong> / 中 <strong>20</strong><br>重 <strong>25</strong> / OD <strong>20</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">輕／中：<strong>-6</strong><br>重：<strong>-3</strong><br>OD：<strong>-1</strong></td>
+<td style="text-align: center;">普通 SA3<br>OD SA2</td>
+<td style="text-align: center;">900 / 1000<br>1200 / 1100</td>
+<td style="text-align: left;">全版本持續皆為 <strong>9 幀</strong>（尖端壓持續被防可加最多 <code>+8</code> 幀而變安全甚至正幀）；<strong>OD 版懲罰反擊（PC）命中會造成版邊撞牆（Wall Splat）</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>疾步仙掌（<code>214P~6P</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv4 專屬</strong></td>
+<td style="text-align: center;">普通／OD <strong>19</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-23</strong></td>
+<td style="text-align: center;">普通 SA3<br>OD SA2</td>
+<td style="text-align: center;">900 / 1000</td>
+<td style="text-align: left;">Lv4 醉疾步後的追加掌擊（可連喝兩杯或高傷收尾），被防 <code>-23</code> 幀。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>張弓腳（<code>623K</code>，昇龍）</strong></td>
+<td style="text-align: center;">無</td>
+<td style="text-align: center;">輕 <strong>5</strong> / 中 <strong>8</strong><br>重 <strong>10</strong> / OD <strong>6</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">輕 <strong>-45</strong><br>中/重/OD <strong>-43</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">1000 / 1200<br>1400 / 1500</td>
+<td style="text-align: left;">輕 1-12F、中 1-14F、重 1-16F 對空無敵；<strong>OD 版 1-9F 完全無敵、10-12F 對空無敵</strong>。第 1 段命中才會派生第 2 段。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>無影腳（<code>j.214K</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv1 以上</strong></td>
+<td style="text-align: center;">全版本 <strong>11</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">視打點高度<br>（低打點正幀）</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">普通 1000<br>OD 800</td>
+<td style="text-align: left;">前跳中發動，持續至落地，落地硬直 <strong>13 幀</strong>；高打點被防不利，壓低踢在腳踝處被防可拿正幀有利，OD 版命中可落地追打。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>爆迴（<code>236K</code>）</strong></td>
+<td style="text-align: center;"><strong>Lv2 以上</strong></td>
+<td style="text-align: center;">輕 <strong>18</strong> / 中 <strong>22</strong><br>重 <strong>25</strong> / OD <strong>18</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">輕 <strong>-12</strong> / 中 <strong>-16</strong><br>重 <strong>-17</strong> / OD <strong>-43</strong></td>
+<td style="text-align: center;">普通 SA3<br>OD SA2/SA3</td>
+<td style="text-align: center;">1400 / 1600<br>1800 / 2000</td>
+<td style="text-align: left;"><strong>穿波神技</strong>：對飛行道具無敵幀數為輕 3-24F、中 4-26F、重 5-33F、OD 3-28F。普通版最後一段可取消 SA3；OD 版可取消 SA2（被防取消 SA2 可拿正幀），且僅第 7 段可取消 SA3。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>點辰（<code>63214K</code>，指令投）</strong></td>
+<td style="text-align: center;"><strong>Lv3 以上</strong></td>
+<td style="text-align: center;">普通／OD <strong>8</strong></td>
+<td style="text-align: center;">普通：<strong>+8</strong><br>OD：<strong>D（崩潰）</strong></td>
+<td style="text-align: center;">投技不可防</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">普通 0<br>OD 650</td>
+<td style="text-align: left;">8 幀指令投（揮空硬直 52F）。<strong>普通版命中固定 <code>+8</code> 幀</strong>，可直接目押接 <strong>蹲重拳（<code>2HP</code>，8 幀）</strong> 打完整連段（從第 3 擊開始計算補正）；OD 版命中直接造成崩潰。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA1 武麗禽（<code>236236K</code>）</strong></td>
+<td style="text-align: center;">1 格 SA</td>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-60</strong> / <strong>-93</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">2200<br>（飲酒 1850）</td>
+<td style="text-align: left;"><strong>第 1～12 幀對打擊與投技無敵</strong>（非對波無敵）；演出中<strong>按住下方向</strong>可改為 1850 傷害、升 1 級醉意並獲得約 <code>+4</code> 幀以上貼身正幀壓起身！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 絕唱魔身（<code>214214P</code>）</strong></td>
+<td style="text-align: center;">2 格 SA</td>
+<td style="text-align: center;">總長 <strong>6</strong> 幀</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">立即將醉意暫時拉滿至 Lv4（持續 900 幀，期間傷害固定為 105%）；<strong>若發動時已處於 Lv4，改為立即回復 30,000（3 格）動力量表</strong>！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA3 / CA 月牙叉砲（<code>236236P</code>）</strong></td>
+<td style="text-align: center;">3 格 SA</td>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;"><strong>-27</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">SA3：2600<br>CA：4500</td>
+<td style="text-align: left;"><strong>第 1～12 幀完全無敵</strong>；SA3 傷害僅 2600 是因為命中後對手處於可追打狀態，傑米可接動力箭步或連段繼續追擊兼喝酒！（CA 版則為 4500 傷害直接強制倒地）。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>四、共通系統、動力箭步（綠衝）與壓起身幀數小抄</h2>
+<ul>
+<li><strong>前摔「背剪手（<code>LPK</code>）」與飲酒派生</strong>：</li>
+<li>發生 <strong>5 幀</strong>、傷害 1200（懲罰反擊 2040）。傑米在前摔演出中<strong>按住按鍵</strong>可派生喝酒升 1 級醉意：不喝酒時前摔命中有利幀較長（在角落可前走壓制），按住喝酒升 1 級醉意後仍保有約 <strong><code>+7</code> 幀有利</strong>（在角落依舊貼身，若剛好從 Lv3 升上 Lv4 則因升級演出變化獲得高達 <strong><code>+27</code> 幀</strong>有利，可直接繼續壓起身）。後摔「轉輪衝（<code>4LPK</code>）」無法派生喝酒，但推開距離遠，場中後摔完直接輸入 <code>22P</code> 魔身喝酒也相當安全。</li>
+<li><strong>動力箭步（Drive Rush / 綠衝）固定 <code>+4</code> 幀驗算</strong>：</li>
+<li><code>DR 5MP</code>：命中 <code>+6 + 4 =</code> <strong><code>+10</code> 幀</strong>（可接 <code>2HP</code> 或 <code>5HK</code>）、被防 <code>+2 + 4 =</code> <strong><code>+6</code> 幀</strong>。</li>
+<li><code>DR 2MP</code>：命中 <code>+5 + 4 =</code> <strong><code>+9</code> 幀</strong>（可接 <code>2HP</code>）、被防 <code>-1 + 4 =</code> <strong><code>+3</code> 幀</strong>（剛好貼在投距內二擇）。</li>
+<li><code>DR 5HP</code>：命中 <code>+1 + 4 =</code> <strong><code>+5</code> 幀</strong>、被防 <code>-3 + 4 =</code> <strong><code>+1</code> 幀</strong>。</li>
+<li><code>DR 6MK</code>（落星腳中段）：命中 <code>+1 + 4 =</code> <strong><code>+5</code> 幀</strong>（可連 <code>2LP</code> / <code>5LK</code>）、被防 <code>-3 + 4 =</code> <strong><code>+1</code> 幀</strong>。</li>
+<li><code>DR 2LK</code>（下段）：命中 <code>+3 + 4 =</code> <strong><code>+7</code> 幀</strong>（可連 <code>2MP</code>）、被防 <code>-3 + 4 =</code> <strong><code>+1</code> 幀</strong>。</li>
+<li><strong>點辰（指令投，8 幀發生）黃金設置區間（<code>+5</code>～<code>+7</code> 幀）</strong>：</li>
+<li>因為對手最快搶招為 4 幀輕攻擊，只要傑米處於 <strong><code>+5</code>～<code>+7</code> 幀有利</strong>，出 8 幀點辰就能在對手 4 幀技發生前直接抓起來（且贏過防禦與招架）！</li>
+<li>常見進入 <code>+5</code>～<code>+7</code> 幀的方法：<ol>
+<li>防禦 <code>DR 5MP</code>（<code>+6</code> 幀）或命中 <code>DR 5HP</code> / <code>DR 4HP</code> / <code>DR 6MK</code>（<code>+5</code> 幀）。</li>
+<li>角落輕張弓腳（<code>623LK</code>）擊倒後，空揮一次 <code>2HP</code>（消幀 31 幀）剩餘約 <strong><code>+6</code> 幀</strong>。</li>
+<li>角落 Lv3 升 Lv4 輕流醉腳（<code>236LP~6K~6K</code>）飲酒觸發升級凍結紅利後，空揮一次 <code>5LK</code> 剩餘約 <strong><code>+6</code> 幀</strong>。</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ol>
+<li><strong>已裁決之早期版本與口誤澄清（均以現行官方表為準）</strong>：
+   * <strong>蹲中拳（<code>2MP</code>）被防幀數</strong>：現行官方數據為發生 <strong>6 幀</strong>、命中 <strong><code>+5</code> 幀</strong>、被防 <strong><code>-1</code> 幀</strong>（揮空額外 +2 幀硬直）。舊影片提及被防 <code>+1</code> 或 <code>0</code> 幀皆為早期測試或搭配綠衝之誤傳。
+   * <strong>站輕拳（<code>5LP</code>）與站中拳（<code>5MP</code>）</strong>：<code>5LP</code> 為發生 5 幀、被防 <strong><code>0</code> 幀</strong>；<code>5MP</code> 為發生 8 幀、命中 <strong><code>+6</code> 幀</strong>、被防 <strong><code>+2</code> 幀</strong>。
+   * <strong>招式正負號視角差異</strong>：部分對策影片從「防守方視角」將傑米流醉拳第 1 段被防 <code>-6</code> 幀口述為「我方 <code>+6</code> 幀」、將 OD 張弓腳被防 <code>-43</code> 幀口述為「我方 <code>+43</code> 幀」，本篇已全數統一為標準「出招方（傑米）視角」之正負號。</li>
+<li><strong>現代模式（Modern Controls）幀數運用提示</strong>：
+   * 現代模式缺少 <code>2MP</code>（蹲中拳）與 <code>5MK</code>（站中腳），近身最速搶招以 <code>2LP</code>（下弱，4 幀）為主；<code>Assist 中</code>（<code>2MK</code>）連按會自動接中流醉拳（第 1 段被防 <code>-6</code> 幀、第 2 段被防 <code>-11</code> 幀，若被防建議改連打至被防 <code>-3</code> 幀安全的 OD 流醉拳）。
+   * 單鍵發動必殺技與超必殺技（如一鍵 <code>前＋SP</code> 張弓腳對空、一鍵 <code>後＋SP</code> 點辰指令投、一鍵 SA1/SA3）擁有與經典模式完全相同的發生幀數與無敵時間，僅受 <strong>80% 現代單鍵傷害補正</strong>影響；若想打出 100% 完整傷害或使用輕張弓腳（<code>623LK</code>）做安全跳，仍可手動輸入指令發動。</li>
+</ol><div class="nav"><span><a href="c02-11-jp.html">← C02-11 JP 角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-juri.html">C02-11 韓蛛俐（Juri）角色招式幀數數據 →</a></span></div></div></body></html>

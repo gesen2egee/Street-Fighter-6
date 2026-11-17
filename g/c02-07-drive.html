@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drive 系統幀數影響｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>Drive 系統幀數影響</h1><p>《快打旋風 6》的戰鬥核心就是 <strong>Drive（鬥氣）系統</strong>。很多時候你輸掉不是因為手速慢，而是沒搞懂<strong>綠衝加了幾幀、彈反（Parry）收招會不會被抓、燒盡（Burnout）時為什麼連輕拳都一直被壓到死</strong>。這篇幫你把 Drive 系統的幀數規則一次講清楚。</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+- <strong>綠衝（DR）</strong>：命中或被防禦後，該招直接 <strong>額外 <code>+4 幀</code></strong>（多數攻略認同是綠衝後第一招獲得 <code>+4</code>）！生綠衝最快普通技大約在第 <code>11 幀</code> 啟動（加 4 幀輕拳約 <code>15 幀</code> 命中）；從格擋（Parry）直接取消綠衝可省下 <code>2 幀</code>（最快約 <code>13 幀</code> 確反）。
+- <strong>精準格擋（Perfect Parry）</strong>：窗口 <strong><code>2 幀</code></strong>（有說法提 1～2f 或 3～4f，暗轉時間改版由 8f 調為 12f），成功後 <strong>0 硬直</strong>，你的有利幀＝對手招式剩餘的硬直時間；精防後直接按 DI 可額外佔到便宜（+3f）。
+- <strong>普通格擋（Parry）</strong>：會「原封不動保留」原本防禦的幀數差，但<strong>放開格擋的硬直很長</strong>（從 <code>29 幀</code> 改版加長到 <code>33 幀</code>，點一下總動作達 <code>45 幀</code>），亂點很容易被對手走過來確反或吃懲罰投！
+- <strong>動力衝擊（DI）</strong>：發生 <strong><code>26 幀</code></strong>，被防禦/命中通常帶特定有利（命中 <strong><code>+5 幀</code></strong>），角落被防也會撞牆（Wall Splat），被 DI 命中或撞牆會被偷 <strong><code>1 格</code> 鬥氣</strong>；DI 怕 <strong>SA（超必殺）和投技</strong>。
+- <strong>動力反擊（Drive Reversal）</strong>：花 <strong><code>2 格</code> 鬥氣</strong>，有無敵且 0 裸傷（只打白血），被防禦從原本 <code>-8 幀</code> 改版調整為 <strong><code>-6 幀</code></strong>（燒盡時對方可能更難反擊或為 <code>-2</code>）；起身也能直接按（<code>18 幀</code> vs 防禦中 <code>20 幀</code>）。
+- <strong>燒盡（Burnout）</strong>：你處於燒盡狀態時，對手所有招式打在你防禦上都會 <strong>額外多 <code>+3</code> 或 <code>+4 幀</code> 有利</strong>，還會扣削血（Chip Damage），且你無法使用 DI 與 Parry。</p>
+</blockquote>
+<hr />
+<h2>一、格擋（Drive Parry）與精準格擋（Perfect Parry）</h2>
+<h3>1. 普通格擋：別當成萬能防禦！</h3>
+<ul>
+<li><strong>幀數不變，但收招超慢</strong>：普通格擋擋下攻擊時，雙方的幀數差跟正常防禦差不多（但不會被推太遠，也不用猜上下段或正逆向）。<strong>真正的陷阱是「放開格擋的收招硬直」</strong>：原本就高達 <code>29 幀</code>，改版後更拉長到 <strong><code>33 幀</code></strong>（點一下放開總動作約 <strong><code>45 幀</code></strong>）。</li>
+<li><strong>發動門檻與接 SA 回氣</strong>：當 Drive 量表<strong>低於 <code>0.5 格</code></strong> 時無法發動一般 Parry（按下會直接耗盡進入 Burnout）；反之，若用 Parry 接下對手的超必殺技（SA）能大量回復鬥氣（影片所述舉例：剩 3 格時普通防禦變 2.9 格，改用 Parry 接下可回復至約 5.9 格）。</li>
+<li><strong>常見踩雷</strong>：在對手面前空按一下 Parry 沒擋到東西，對手只要眼睛夠快，走過來直接一個<strong>懲罰投（Punish Counter Throw）</strong>就能抓走你 <code>2040</code> 血外加偷你 1 格鬥氣！</li>
+</ul>
+<h3>2. 精準格擋（Perfect Parry）：逆轉神技</h3>
+<ul>
+<li><strong>判定窗口</strong>：按下格擋的最前面 <strong><code>2 幀</code></strong>（部分影片口述會有 1～2 幀或 3～4 幀的誤差說法，暗轉凍結時間改版後由 <code>8 幀</code> 調整為 <code>12 幀</code>）。</li>
+<li><strong>幀數效果</strong>：成功觸發畫面變灰暗並凍結時，<strong>你自己 0 硬直</strong>，對手招式剩下的恢復時間全部變成你的有利幀！所以幾乎都能直接反打或抓起來摔（注意傷害會有較高補正，後面章節會講）。</li>
+</ul>
+<hr />
+<h2>二、動力衝擊（DI）與動力衝刺（DR）</h2>
+<h3>1. 動力衝擊（Drive Impact / DI）</h3>
+<ul>
+<li><strong>發生與特性</strong>：發生 <strong><code>26 幀</code></strong>，帶有霸體（裝甲）吸收攻擊（常見說法可吸 2 下，部分影片口述 3 下或全吸，實戰遇到多段攻擊如春麗百裂腳、肯的連段容易被破甲），命中帶 <strong><code>+5 幀</code></strong>（可接大連段）。</li>
+<li><strong>資源與牆壁機制</strong>：不管對手有沒有防住，只要在角落附近擋下 DI 就會「撞牆（Wall Splat）」讓你接滿整套；DI 也能直接偷走對手 <strong><code>1 格</code>（成功反制／Punish Counter 或被擊中依版本實測可達 <code>1.5 格</code>）</strong>鬥氣。當你成功反打對手 DI 或騙出無敵技（消耗 2 格）後，若看對方鬥氣所剩不多，可在連段中<strong>再補一次 DI</strong>或接扣氣的 SA，直接把對手打進 Burnout 並推向角落！</li>
+<li><strong>DI 的天敵</strong>：<strong>投技</strong>跟 <strong>SA（超必殺技）</strong> 可以直接破掉 DI！另外改版後對手的 DI 先行輸入緩衝從 <code>5 幀</code> 放寬到 <code>10 幀</code>。</li>
+</ul>
+<h3>2. 動力衝刺（Drive Rush / DR）</h3>
+<ul>
+<li><strong>綠衝 <code>+4 幀</code> 鐵則</strong>：綠衝狀態下出招（無論是生綠衝耗 <code>1 格</code> 鬥氣，還是取消綠衝耗 <code>3 格</code> 鬥氣），<strong>擊中與被防禦都會額外 <code>+4 幀</code></strong>！原本 <code>-2</code> 的中拳綠衝過去會變成 <code>+2</code>；原本 <code>+1</code> 的招會變成 <code>+5</code>（直接能連本來連不上的重拳或蹲中腳）。部分大破綻的目標連段被防禦後若取消必殺技會被輕拳搶斷，此時取消進 <strong>綠衝接最速輕拳</strong> 形成無縫連防（True Block String），也是常見的保命解法。</li>
+<li><strong>生綠衝最快出手</strong>：直接 66 生綠衝後按最快的 <code>4 幀</code> 輕拳，大約第 <strong><code>11 幀</code></strong> 才能出招（合計 <strong><code>15 幀</code></strong> 左右碰到人）。如果是<strong>先按格擋再直接取消綠衝（Parry DR）</strong>，可以省下 <code>2 幀</code>（從第 1 幀啟動，約 <strong><code>13 幀</code></strong> 就能打到確反）。</li>
+</ul>
+<hr />
+<h2>三、動力反擊（Drive Reversal）與燒盡（Burnout）</h2>
+<h3>1. 動力反擊（Drive Reversal）：花 2 格買平安</h3>
+<ul>
+<li><strong>用途</strong>：防禦中按 <code>前 + 重拳重腳（DI鍵）</code>，或改版後<strong>起身時直接按</strong>，花 <strong><code>2 格</code> 鬥氣</strong>把對手推開。帶有<strong>無敵（包含對任何類型投技無敵）</strong>，但本身 <strong>0 實際傷害</strong>（只會打掉一點白血）。</li>
+<li><strong>風險變化</strong>：早期版本被防禦是 <strong><code>-8 幀</code></strong>（會吃重攻擊大確反），改版後調輕為 <strong><code>-6 幀</code></strong>（只吃輕/部分中攻擊確反，但依然不安全，不能無腦亂按！）。但要注意：<strong>如果防禦方本身處於燒盡（Burnout）狀態</strong>，擋下對手的 Drive Reversal 會因燒盡額外多 4 幀防禦硬直而變成 <strong><code>-2 幀</code></strong>，此時沒有確定反擊！另外起身版發生為 <code>18 幀</code>，防禦版為 <code>20 幀</code>。</li>
+</ul>
+<h3>2. 燒盡（Burnout）：為什麼一直被壓到死？</h3>
+<ul>
+<li>鬥氣耗盡進入灰白狀態（Burnout）時，除了不能用 DI、OD 技和 Parry、防必殺技會扣血（Chip Damage）之外，<strong>最致命的是「對手打你防禦額外多 <code>+3</code> 或 <code>+4 幀</code> 有利」</strong>！</li>
+<li>這代表什麼？本來被你防住是 <code>-2</code>、輪到你反擊的招式，在燒盡時會變成 <strong><code>+1</code> 或 <code>+2</code> 有利</strong>！進攻方甚至可以刻意製造 <strong><code>±0</code> 幀（五五波）</strong> 後按最速 <code>4 幀</code> 技壓制（對手搶 4F 最多相殺，且無法開 Parry 或 OD 無敵技翻身），或是在角落用 DI 直接把你「破防（Stun）」暈眩。<strong>所以永遠要注意自己的鬥氣量，快見底時就別硬取消綠衝了！</strong></li>
+</ul>
+<hr />
+<h2>四、超必殺技（SA）與鬥氣偷取／恢復</h2>
+<ul>
+<li><strong>SA 偷鬥氣</strong>：被對手的超必殺技打中會額外扣減你的鬥氣槽（大約 SA1 扣 <code>0.5 格</code>、SA2 扣 <code>1 格</code>、SA3 扣 <code>1.5 格</code>，CA 低血量版約扣 <strong><code>2 格</code></strong>），反過來說，用 SA 收尾不只打血量，也是強迫對手進入燒盡的關鍵手段。</li>
+<li><strong>鬥氣自動回復冷卻</strong>：用掉鬥氣後會有一段「暫停自動回復」的冷卻時間（改版曾將部分行為的回復冷卻從 <code>60 幀</code> 縮短至 <code>20 幀</code>，也有影片提到特定情況 <code>90 幀</code> 冷卻）。</li>
+</ul>
+<hr />
+<h2>五、各角色 Drive 系統實戰小筆記</h2>
+<ul>
+<li><strong>A.K.I.（阿鬼）</strong> / <strong>Cammy（嘉米）</strong> / <strong>Juri（韓蛛俐）</strong> / <strong>Ken（肯）</strong> / <strong>Luke（盧克）</strong>：這類角色綠衝慣性極強，生綠衝後接中/輕攻擊能快速拉近並拿到 <code>+4</code> 優勢打投擇。</li>
+<li><strong>E. Honda（本田）</strong>：普通格擋擋本田頭槌雖然能避免被磨掉大量鬥氣（相較於一般防禦扣鬥氣），但部分影片特別提醒格擋本田招式的幀數狀況（見下方衝突）。</li>
+<li><strong>JP</strong>：在燒盡狀態下幾乎無解他滿畫面的地刺＋幽靈磨血，打 JP 時鬥氣管理比任何對局都重要。</li>
+<li><strong>Manon（瑪濃）</strong>：生綠衝速度不算特別快，但綠衝接中/輕攻擊取得 <code>+3～+4</code> 後直接進入致命的指令投二擇；注意原影片字幕曾誤標她的 Drive Reversal 要 3 格（實為 2 格）。</li>
+<li><strong>Marisa（瑪麗莎）</strong>：蓄力技對上 DI 時要注意破甲判定；綠衝進身後配合裝甲技與高傷連段壓迫力極強。</li>
+<li><strong>Zangief（桑吉爾夫）</strong>：沒無敵昇龍，起身 <strong>Drive Reversal</strong> 是他脫困的重要手段之一；綠衝頭槌或站中拳帶來的貼身優勢極高。</li>
+</ul>
+<hr />
+<h2>說法不一與待驗證提醒</h2>
+<ol>
+<li><strong>精準格擋（Perfect Parry）窗口</strong>：主流共識為 <strong><code>2 幀</code></strong>，但有影片口頭講成 <code>1～2 幀</code> 或 <code>3～4 幀</code>；暗轉時間改版後為 <code>12 幀</code>（舊版為 <code>8 幀</code>）。</li>
+<li><strong>普通格擋（Normal Parry）幀數：「保留原幀數」vs「通用 +3」vs「對本田 -4」</strong>：遊戲機制本質是保留原攻擊的防禦幀數差（例如原本 -3 就還是 -3），但部分影片出現口頭誤稱「通用 +3」或單舉「本田 -4」的說法，實戰請以各自招式的真實防禦幀數為準。</li>
+<li><strong>DI 裝甲次數</strong>：「吸收 2 下」是標準設定，部分影片口述成「3 下」或「全霸體」，遇到多段數招式（如百裂腳、多段氣功）實際上會被破甲。</li>
+<li><strong>綠衝 <code>+4 幀</code> 範圍</strong>：多數實測確認是「綠衝後出擊的第一招」獲得額外 <code>+4 幀</code>（命中與防禦皆然），僅少數影片口述籠統稱「所有招式」。</li>
+<li><strong>Drive Reversal 消耗與不利幀</strong>：統一消耗 <strong><code>2 格</code> 鬥氣</strong>（曾有單一影片字幕誤植瑪濃要 3 格）；被防禦早期版本為 <code>-8 幀</code>，改版後已統一調為 <strong><code>-6 幀</code></strong>（燒盡狀態下影片另有 <code>-2</code> 說法）。</li>
+<li><strong>Burnout 額外加幀</strong>：不同版本與影片分別有 <strong><code>+3 幀</code></strong> 與 <strong><code>+4 幀</code></strong> 的說法（現今多數以 <code>+4 幀</code> 計算），建議在訓練模式開燒盡狀態確認你想應對的特定招式。</li>
+</ol><div class="nav"><span><a href="c02-06.html">← C02-06 無敵、投技與飛道具</a></span><span style="text-align:right"><a href="c02-08.html">C02-08 打康彈反與懲罰增益 →</a></span></div></div></body></html>

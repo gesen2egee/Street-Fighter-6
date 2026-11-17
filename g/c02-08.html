@@ -1,0 +1,89 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>打康彈反與懲罰增益｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>打康彈反與懲罰增益</h1><p>為什麼有時候明明只多按一下，血條卻少了一大截？這篇幫你搞懂 SF6 三種最關鍵的「攻擊增益」：<strong>打康（Counter Hit / CH）、懲罰反擊（Punish Counter / PC）、以及精準格擋（Perfect Parry / 彈反）</strong> 到底加了多少幀數、多了幾成傷害，以及實戰該怎麼把這些紅利吃滿。</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+- <strong>打康（Counter Hit, CH）</strong>：在對手出招起手時打中他。固定獲得 <strong>額外 <code>+2 幀</code> 有利</strong> ＋ <strong>傷害 <code>+20%</code></strong>（約多出 1.2 倍）。
+- <strong>懲罰反擊（Punish Counter, PC）</strong>：在對手招式「打空或收招破綻」時打中他（例如擋完無敵昇龍後反打）。固定獲得 <strong>額外 <code>+4 幀</code> 有利</strong> ＋ <strong>傷害 <code>+20%</code></strong> ＋ <strong>直接削掉對手鬥氣槽</strong>！
+- <strong>懲罰投（PC Throw）超痛</strong>：平常摔一次 <code>1200</code> 血，抓到對手空檔（例如空按 Parry、凹昇龍落空）摔下去變成 <strong>傷害 <code>+70%</code>（約 <code>2040</code> 血）＋偷走對手 <code>1 格</code> 鬥氣</strong>！
+- <strong>注意兩大例外</strong>：<strong>超必殺技（SA）不受懲罰反擊的 20% 增傷加成</strong>；<strong>綠衝（+4f）可以跟 CH（+2f）或 PC（+4f）疊加</strong>，讓原本接不上的大招直接連進來！
+- <strong>精準格擋（Perfect Parry）</strong>：雖然能無敵凍結反打，但<strong>後續連段會有嚴重的傷害補正（常見說法為 50% 起跳）</strong>，多數時候更看重「換邊、推入角落、搶攻勢」而不是純追求極限傷害。</p>
+</blockquote>
+<hr />
+<h2>一、Counter Hit（打康）vs Punish Counter（懲罰反擊）差在哪？</h2>
+<p>這兩個系統提示字跳出來時，代表你這招獲得了額外的「幀數」與「傷害」紅利：</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">類型</th>
+<th style="text-align: left;">觸發時機</th>
+<th style="text-align: left;">額外幀數優勢</th>
+<th style="text-align: left;">傷害與資源紅利</th>
+<th style="text-align: left;">實戰怎麼利用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>打康（CH）</strong></td>
+<td style="text-align: left;">對手正在出招的「發生幀」被打斷</td>
+<td style="text-align: left;"><strong>額外 <code>+2 幀</code></strong></td>
+<td style="text-align: left;"><strong>傷害 <code>+20%</code></strong>（若為連段起手，整套約多 <code>400</code> 傷害左右）</td>
+<td style="text-align: left;">平常 <code>+4</code> 的招變 <code>+6</code>，剛好可以接進平常連不上的 <code>6 幀</code> 中攻擊！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>懲罰反擊（PC）</strong></td>
+<td style="text-align: left;">對手招式「收招硬直（破綻）」被打中</td>
+<td style="text-align: left;"><strong>額外 <code>+4 幀</code></strong></td>
+<td style="text-align: left;"><strong>傷害 <code>+20%</code></strong> ＋ <strong>削掉對手鬥氣槽</strong></td>
+<td style="text-align: left;">平常 <code>+3</code> 的招變 <code>+7</code>，或是讓原本不浮空的招變成「膝崩／吹飛」，打出整套最高傷連段！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>懲罰投（PC Throw）</strong></td>
+<td style="text-align: left;">在對手破綻時按下投技（例如抓空振、抓 Parry）</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><strong>傷害 <code>+70%</code>（約 <code>2040</code>）＋扣對手 <code>1 格</code> 鬥氣＋強制原地受身</strong></td>
+<td style="text-align: left;">對手愛亂點 Parry 或愛原地凹招，走過去直接摔他一次就等於半套小連段外加偷鬥氣，而且他無法向後受身！</td>
+</tr>
+</tbody>
+</table></div>
+<h3>兩個一定要知道的實戰細節</h3>
+<ol>
+<li><strong>幀數疊加超恐怖</strong>：綠衝本身就 <strong><code>+4 幀</code></strong>，如果這記綠衝打中剛好又是 <strong>打康（+2f）</strong> 或 <strong>懲罰反擊（+4f）</strong>，總共會多出 <strong><code>+6</code> 到 <code>+8 幀</code></strong>！很多高手在畫面突然跳出 <code>COUNTER</code> 或 <code>PUNISH COUNTER</code> 時，會立刻換成更痛的重攻擊路線，就是這個原因。</li>
+<li><strong>裸放超必殺不會吃到 PC 增傷</strong>：如果你擋住對手昇龍後「直接按 SA3」，因為系統設定 SA 不吃 Punish Counter 的 <code>+20%</code> 傷害加成，<strong>千萬不要直接裸開大招</strong>！一定要先按一發重攻擊（例如 <code>5HP</code> 或 <code>5HK</code>）吃滿 PC 的 <code>+20%</code> 增傷與 <code>+4f</code> 優勢，再取消接進連段與 SA，總傷害會高非常多。</li>
+<li><strong>無敵技（凹招）的風險回報比與懲罰投受身特性</strong>：
+   * 影片舉例：無敵技命中通常只有約 <code>1700</code> 傷害，但一旦被防禦吃滿 Punish Counter 確反連段（含耗用 2 格 Drive 量表），可能直接損失約 <strong><code>5500</code> 傷害（約 6 割體力）與約 <code>4.5 格</code> 鬥氣</strong>，風險回報極度懸殊。
+   * <strong>懲罰投強制原地受身</strong>：透過 Parry 或破綻打出的 Punish Counter 投技，在幀數與距離上其實與「一般投技後對手選擇原地受身」相同，但傷害約為普通投的 1.7 倍、會削氣且<strong>對手無法向後受身</strong>（一般大足等其他招式的 PC 幀數則會改變）。另外若抓到對手「蹲姿按 Parry」，除了用綠衝摔拿約 <code>2000</code> 傷害，識破並打出「綠衝中段 Punish Counter」連段回報更可高達約 <code>5800</code> 傷害！</li>
+</ol>
+<hr />
+<h2>二、精準格擋（Perfect Parry / 彈反）的雙面刃</h2>
+<p>精準格擋能讓你瞬間化險為夷、反客為主，但它並不是「無敵免費大禮包」：</p>
+<ul>
+<li><strong>優勢</strong>：觸發瞬間畫面凍結、<strong>你自己 0 硬直</strong>，對手招式剩下的硬直全部變成你的有利幀，幾乎必中反打（影片所述有利幀數參考：擋下<strong>輕攻擊約 <code>+8 幀</code></strong>、<strong>中攻擊約 <code>+15 幀</code></strong>、<strong>重攻擊約 <code>+20 幀</code></strong>）。若覺得暗轉演出後很難抓準恢復行動的第 1 幀，可在<strong>演出期間長按想出的招式按鍵</strong>，系統會在最快時機自動出招！</li>
+<li><strong>代價（傷害補正）</strong>：為了平衡這個系統，精準格擋成功後接出來的連段<strong>傷害修正非常重</strong>（多數實測指出起手直接套用約 <code>50%</code> 傷害補正，見下方衝突提醒）。</li>
+<li><strong>實戰心法</strong>：精防成功後，如果你沒有要靠連段收頭（斬殺），<strong>優先選擇「把對手往角落推／換邊（例如背投進角落）」</strong>，或精防對手的 DI 時直接用 DI 反打，會比硬花 3 格鬥氣打一套被折半傷害的連段划算得多！</li>
+</ul>
+<hr />
+<h2>三、各角色實戰應用小筆記</h2>
+<ul>
+<li><strong>Cammy（嘉米）</strong>：站重拳／站重腳打出懲罰反擊後常能接進高傷膝崩或綠衝連段；注意她確認出打康後的輕/中攻擊銜接距離。</li>
+<li><strong>E. Honda（本田）</strong>：面對本田頭槌或百貫落抓準 <strong>精準格擋</strong> 是進階必修，雖然後續傷害被補正，但能立刻終結他的壓制並反推他進角落。</li>
+<li><strong>Jamie（傑米）</strong>：抓到懲罰反擊時，除了打傷害，也常優先選擇「收尾能穩穩喝酒」的路線來疊醉意等級。</li>
+<li><strong>Ken（肯）</strong>：站重拳在懲罰反擊狀態下（<code>+4f</code>）能接到平常命中接不到的 <code>2MK</code>（蹲中腳），打出極高傷害與角落搬運！</li>
+<li><strong>Luke（盧克）</strong>：後重拳（<code>4HP</code>）打出懲罰反擊是他的招牌大確反起手，接綠衝與完美蓄力閃光拳能打出驚人傷害並搶大量鬥氣。</li>
+<li><strong>M. Bison（貝卡／維加）</strong>：頭上踩踏或剪刀腳若被精防或揮空吃 PC，會損失大量血量；反之他自己抓到 PC 也能靠高傷炸彈連段瞬間逆轉。</li>
+<li><strong>Manon（瑪濃）</strong>：普通指令投本身就很痛，抓到 <strong>懲罰反擊的指令投</strong> 傷害會更上一層樓，並直接疊獎章。</li>
+<li><strong>Marisa（瑪麗莎）</strong>：重攻擊本身基礎傷害極高，配上 PC 的 <code>+20%</code> 增傷往往兩套就帶走對手；但同樣要注意精防後的傷害補正。</li>
+<li><strong>Ryu（隆）</strong>：懲罰反擊後用重攻擊起手接波掌擊／電刃練氣連段，傷害效率極高。</li>
+<li><strong>Zangief（桑吉爾夫）</strong>：普通投懲罰可達 <code>2040</code>（甚至特定情境中立投 PC 達 <code>2640</code>），是懲罰對手空按 Parry 的最強角色之一；但同樣提醒，桑吉爾夫「精準格擋後直接接螺旋打樁機」的傷害補正非常高！</li>
+</ul>
+<hr />
+<h2>說法不一與待驗證提醒</h2>
+<p>原攻略筆記針對 <strong>精準格擋（Perfect Parry）</strong> 存在幾處明顯的說法衝突，閱讀時請以實機最新平衡版本為準：
+1. <strong>精防後的幀數狀況</strong>：「收招 <code>20 幀</code> 且獲得巨大有利幀」vs「<code>-2 幀</code> 且沒有確定反擊」（前者應指對手打空或長收招招式時我方凍結後獲得大量優勢；後者可能指極個別快收招或特定距離/舊版本誤差）。
+2. <strong>精防後能否確定反擊</strong>：「可確定／直接反擊」vs「只有微弱 <code>+2 幀</code>」（實際取決於你精防的是輕拳還是重拳/必殺技——輕拳收招快，就算精防有時有利幀也沒想像中大；重拳或突進技則通常夠打最大確反）。
+3. <strong>精防後的傷害補正幅度</strong>：有影片口述「傷害修正稍微變低一點」，另一派實測則明確指出是 <strong>「<code>50%</code> 傷害補正（直接砍半）」</strong>（現今普遍共識為大幅補正，約 <code>50%</code> 起跳）。
+4. <strong>部分單一角色測試數字</strong>：如特定影片口述不同招式 CH/PC 的約略差距（約 <code>400</code> 傷害等）會因角色基礎傷害與連段長度而異，請當作概念參考即可。</p><div class="nav"><span><a href="c02-07-drive.html">← C02-07 Drive 系統幀數影響</a></span><span style="text-align:right"><a href="c02-09.html">C02-09 懲罰後傷害與連段 →</a></span></div></div></body></html>

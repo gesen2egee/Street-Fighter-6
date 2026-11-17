@@ -1,0 +1,793 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>迪傑（Dee Jay）角色招式幀數數據｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>迪傑（Dee Jay）角色招式幀數數據</h1><p>迪傑（Dee Jay）靠著全遊戲數一數二快的動力箭步（Drive Rush，俗稱綠衝）、豐富的假動作與節奏變化在場上進攻，新手對上他常覺得「他怎麼一直在搶先手、一直打摔擇？」這份指南已依據 Capcom 官方最新幀數表與共通系統規則全面核對修正，幫你精準掌握迪傑哪些招式被防住是真正的正幀陷阱、哪些破綻可以直接確反懲罰，以及綠衝／壓持續後的衍生幀數變化。</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>少數地面正幀普通技／特殊技別亂搶</strong>：站立通常技與特殊技中，真正被防為正幀的是 <strong>站中拳（<code>5MP</code>，<code>+2</code>）</strong> 與特殊技 <strong>日出腳跟踢（Sunrise Heel，<code>6MK</code>，<code>+1</code>）</strong>，以及爽酷的中段派生 <strong>月虧（Waning Moon，<code>+1</code>）</strong>；擋到這幾招別急著按輕拳搶招。<strong>站輕拳（<code>5LP</code>）其實被防 <code>-1</code></strong>，別誤以為能一直無腦搶先手。
+2. <strong>綠衝（動力箭步）加值後全面轉正</strong>：依系統規則，動力箭步發動的地面一般技／特殊技命中與被防固定 <strong><code>+4</code> 幀</strong>。因此 <strong>綠衝 <code>5LP</code>／<code>2LP</code></strong> 被防 <strong><code>+3</code></strong>（命中 <code>+8</code>，直接進投距打摔二擇）、<strong>綠衝 <code>5LK</code>／<code>2LK</code></strong> 被防 <strong><code>+2</code></strong>（命中 <code>+6</code>）、<strong>綠衝 <code>5MP</code></strong> 被防高達 <strong><code>+6</code></strong>（命中 <code>+9</code>）、<strong>綠衝 <code>6MK</code></strong> 被防 <strong><code>+5</code></strong>。看到他綠光衝過來先守穩。
+3. <strong>必抓的高破綻招式</strong>：
+   * <strong>蹲中腳（<code>2MK</code>）</strong> 與 <strong>快速迴旋後踢（Quick Rolling Sobat，<code>236MK</code>）</strong> 被防皆為 <strong><code>-6</code> 幀</strong>（6 幀以內招式直接確反）。
+   * <strong>蹲重腳（<code>2HK</code>，大掃腿／滑鏟）</strong> 近距被防高達 <strong><code>-11</code> 幀</strong>（大確反），但因持續長達 10 幀（<code>14-23</code>），在最遠極限尖端用末段持續幀擦到防禦時最多 <code>+9</code> 幀補正，會變成 <strong><code>-2</code> 幀安全</strong>。
+   * <strong>迴旋雙後踢（Double Rolling Sobat，<code>236HK</code>）</strong> 被防 <strong><code>-10</code> 幀</strong>；<strong>機關槍上勾拳（Machine Gun Uppercut，<code>214P</code>）</strong> 全版本被防皆 <strong><code>-19</code> 幀</strong>；<strong>連環折刀（Jackknife Maximum，蓄力 <code>2~8K</code>）</strong> 更是 <strong><code>-32</code>～<code>-55</code> 幀</strong>超大破綻！
+4. <strong>安全跳與過波機制精準門檻</strong>：
+   * <strong>連環折刀</strong> 的 <strong>OD 版（完全無敵）</strong> 發生 <strong><code>6</code> 幀</strong>，針對 OD 版只需要 <strong><code>+41</code> 幀</strong> 即可安全跳；但 <strong>重版（H 版）</strong> 發生只有 <strong><code>5</code> 幀</strong> 且第 1～9 幀對空中判定無敵，若迪傑有下蓄力，穩妥防住 H 版對空的安全跳建議 <strong><code>+42</code> 幀以上</strong>。
+   * <strong>爽酷（Jus Cool，<code>214K</code>）</strong> 進入後最早第 13 幀可取消進 <strong>耍戲步伐（Juggling Dash）</strong>，該步伐第 <strong>1～20 幀</strong> 具備飛行道具無敵（過波判定）。</p>
+</blockquote>
+<hr />
+<h2>一、一般攻擊、特殊技與目標連段（官方標準數據）</h2>
+<blockquote>
+<p><strong>系統衍生速算前提</strong>：
+- <strong>動力箭步（綠衝）</strong>：地面一般技／特殊技命中與被防固定 <strong><code>+4</code> 幀</strong>。
+- <strong>截擊（Counter Hit）</strong>：命中固定 <strong><code>+2</code> 幀</strong>，傷害 <code>120%</code>。
+- <strong>懲罰反擊（Punish Counter，確反）</strong>：一般命中固定 <strong><code>+4</code> 幀</strong>（部分招式另有額外加幀或強制倒地，見備註）。
+- <strong>燒盡（Burnout）</strong>：對手燒盡時防禦所有攻擊，進攻方被防有利幀固定 <strong><code>+4</code> 幀</strong>。
+- <strong>壓持續（Meaty）</strong>：以第 $k$ 個持續幀命中／被防，額外 <strong><code>+(k - 1)</code> 幀</strong>。</p>
+</blockquote>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式（指令）</th>
+<th style="text-align: left;">發生</th>
+<th style="text-align: left;">持續</th>
+<th style="text-align: left;">硬直</th>
+<th style="text-align: left;">命中</th>
+<th style="text-align: left;">被防</th>
+<th style="text-align: left;">取消</th>
+<th style="text-align: left;">傷害</th>
+<th style="text-align: left;">官方備註與實戰／衍生幀數應用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>站輕拳（<code>5LP</code>）</strong></td>
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">4-6</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">可連按取消；Counter <code>+6</code>、PC <code>+8</code>；<strong>綠衝命中 <code>+8</code>／被防 <code>+3</code></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕拳（<code>2LP</code>）</strong></td>
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">5-7</td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">可連按取消；Counter <code>+6</code>、PC <code>+8</code>；<strong>綠衝命中 <code>+8</code>／被防 <code>+3</code></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站輕腳（<code>5LK</code>）</strong></td>
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">5-6</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">最長輕攻擊；Counter <code>+4</code>、PC <code>+6</code>；<strong>綠衝命中 <code>+6</code>／被防 <code>+2</code></strong>（可取消接必殺技或取消綠衝）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕腳（<code>2LK</code>）</strong></td>
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">5-6</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">200</td>
+<td style="text-align: left;">下段攻擊；不可必殺取消但可連按取消成輕拳；<strong>綠衝命中 <code>+6</code>／被防 <code>+2</code></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中拳（<code>5MP</code>）</strong></td>
+<td style="text-align: left;"><strong>7</strong></td>
+<td style="text-align: left;">7-9</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;"><strong>+5</strong></td>
+<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">600</td>
+<td style="text-align: left;">主力正幀壓制技；Counter <code>+7</code> 可目押 <code>2MP</code>／<code>5MP</code>；<strong>綠衝命中 <code>+9</code>／被防 <code>+6</code></strong>；燒盡被防 <code>+6</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中拳（<code>2MP</code>）</strong></td>
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">6-9</td>
+<td style="text-align: left;">*14</td>
+<td style="text-align: left;"><strong>+5</strong></td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">600</td>
+<td style="text-align: left;">揮空硬直 +1 幀（<code>15</code>）；少數可取消中攻擊，Counter <code>+7</code>；<strong>綠衝命中 <code>+9</code>／被防 <code>+3</code></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中腳（<code>5MK</code>）</strong></td>
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">9-11</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-1</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">600</td>
+<td style="text-align: left;">全體 <code>27</code> 幀，中距牽制安全交出回合；綠衝命中 <code>+10</code>／被防 <code>+3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中腳（<code>2MK</code>）</strong></td>
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">8-11</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;">擊倒</td>
+<td style="text-align: left;"><strong>-6</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">700</td>
+<td style="text-align: left;">下段掃腿（被防 <code>-6</code> 可被輕／中攻擊確反）；<strong>Punish Counter 強制倒地（Hard Knockdown）</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重拳（<code>5HP</code>）</strong></td>
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">9-14</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: left;"><strong>+3</strong></td>
+<td style="text-align: left;"><strong>-4</strong></td>
+<td style="text-align: left;">C*</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;"><strong>強制站立</strong>；僅前 2 個持續幀（第 9-10 幀）可取消；後段持續幀壓持續（最多 +5）命中可達 <code>+8</code>、被防可達 <code>+1</code>（但遠距打蹲姿會揮空）；PC <code>+7</code> 起跳</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重拳（<code>2HP</code>）</strong></td>
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">8-9</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">全體 <code>29</code> 幀、<strong>強制站立</strong>；被防安全；<strong>Punish Counter 額外 <code>+12</code> 幀有利</strong>（可接重連段）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重腳（<code>5HK</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-14</td>
+<td style="text-align: left;">*22</td>
+<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: left;"><strong>-5</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">揮空硬直 +4 幀（<code>26</code>，揮空全體 <code>40</code> 幀）；<strong>Punish Counter 額外 <code>+18</code> 幀有利</strong>（核心差返神技）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重腳（<code>2HK</code>）</strong></td>
+<td style="text-align: left;"><strong>14</strong></td>
+<td style="text-align: left;">14-23</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-11</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">900</td>
+<td style="text-align: left;">下段大滑鏟；Counter／PC 延長倒地時間；持續達 10 幀，<strong>最遠尖端壓第 10 持續幀被防為 <code>-2</code> 幀</strong>（近貼被防 <code>-11</code> 大確反）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>日出腳跟踢（Sunrise Heel，<code>6MK</code>）</strong></td>
+<td style="text-align: left;"><strong>19</strong></td>
+<td style="text-align: left;">19-23</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;"><strong>+5</strong></td>
+<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: left;">SA</td>
+<td style="text-align: left;">700</td>
+<td style="text-align: left;"><strong>上段攻擊</strong>（外觀似中段）；壓持續最多 <code>+4</code>（命中達 <code>+9</code>、被防達 <code>+5</code>）；空中命中造成彈地；綠衝被防 <code>+5</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>破顏擊（Face Breaker，<code>4HK</code>）</strong></td>
+<td style="text-align: left;"><strong>7</strong></td>
+<td style="text-align: left;">7-12</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: left;"><strong>-5</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">兩段（7-8, 9-12）；<strong>強制站立</strong>；打中空中對手第 1 段強制浮空且單發傷 <code>800</code>；可取消必殺技確認</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3拍連擊（Threebeat Combo，<code>LP &gt; MK &gt; MK</code>）</strong></td>
+<td style="text-align: left;">第 2 段 <code>9</code>／第 3 段 <code>14</code></td>
+<td style="text-align: left;">9-11／14-16</td>
+<td style="text-align: left;">20／19</td>
+<td style="text-align: left;"><strong>+2</strong>／<strong>+3</strong></td>
+<td style="text-align: left;"><strong>-3</strong>／<strong>-8</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">400／626</td>
+<td style="text-align: left;">輕拳起手目標連段，第 3 段被防 <code>-8</code> 破綻大，命中 <code>+3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>迪·傑精選（Dee Jay Special，<code>MP &gt; HP &gt; HK</code>）</strong></td>
+<td style="text-align: left;">第 2 段 <code>11</code>／第 3 段 <code>13</code></td>
+<td style="text-align: left;">11-17／13-15</td>
+<td style="text-align: left;">24／30</td>
+<td style="text-align: left;"><strong>-2</strong>／<strong>D</strong></td>
+<td style="text-align: left;"><strong>-11</strong>／<strong>-13</strong></td>
+<td style="text-align: left;">—／SA</td>
+<td style="text-align: left;">500／600</td>
+<td style="text-align: left;">第 2 段空中命中強制浮空；第 3 段僅可取消 SA，被防極危險（<code>-11</code>／<code>-13</code>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>放克舞蹈（Funky Dance，<code>MP &gt; MP &gt; HP</code>）</strong></td>
+<td style="text-align: left;">第 2 段 <code>12</code>／第 3 段 <code>20</code></td>
+<td style="text-align: left;">12-13／20-21</td>
+<td style="text-align: left;">17／24</td>
+<td style="text-align: left;"><strong>+2</strong>／<strong>D</strong></td>
+<td style="text-align: left;"><strong>-2</strong>／<strong>-8</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">500／900</td>
+<td style="text-align: left;">雙中拳派生：防住第 2 段為迪傑 <code>-2</code>（防守方 <code>+2</code>），打完第 3 段被防則為 <strong><code>-8</code>（防守方大有利確反）</strong>；第 2 段空中命中強制浮空</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>放克舞蹈-假舞（Funky Dance Feint，<code>MP &gt; MP</code> 後長按 <code>HP</code> 或假動作）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>22</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">總長 <code>22</code> 幀，用於取消第 3 段搶投或誘騙對手搶招；看準第 3 段動作時機按 4 幀輕攻擊可對應</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>馬拉卡斯節奏（Speedy Maracas）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>65</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">第 22 幀 SA 量表 <code>+2000</code>，第 46 幀起每幀 <code>+49</code>；長按可延長；可由 M／H／OD 斬風取消進入</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>相打（Trade）與距離補正補充</strong>：<code>蹲重拳（2HP）</code> 本身命中 <code>+6</code>、硬直 <code>20</code>，若在近身壓制與對手輕／中攻擊同時互中（相打），視對手招式硬直常常能拿到 <code>+7</code> 幀以上的有利，直接目押接 <code>7</code> 幀發生的 <strong>SA1（終極迴旋踢）</strong>；相對地，若在錯誤距離出招揮空或讓大破綻招式被防（例如 <code>機關槍上勾拳 -19</code>、<code>2HK 近距 -11</code>），對手都能直接用站重腳懲罰反擊。</li>
+</ul>
+<hr />
+<h2>二、空中招式與跳躍特殊技</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式（指令）</th>
+<th style="text-align: left;">發生</th>
+<th style="text-align: left;">持續</th>
+<th style="text-align: left;">落地硬直</th>
+<th style="text-align: left;">傷害</th>
+<th style="text-align: left;">官方備註與實戰說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>跳輕拳（<code>j.LP</code>）</strong></td>
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">4-10</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">快速空對空攔截</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳輕腳（<code>j.LK</code>）</strong></td>
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">4-9</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">常用於空跳／假跳騙對空</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳中拳（<code>j.MP</code>）</strong></td>
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">6-9</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">700</td>
+<td style="text-align: left;">空對空命中<strong>強制浮空</strong>，可接空中派對或落地追打</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳中腳（<code>j.MK</code>）</strong></td>
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">8-13</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">500</td>
+<td style="text-align: left;">具<strong>繞背（Cross-up）</strong>判定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳重拳（<code>j.HP</code>）</strong></td>
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">9-14</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">空對空命中<strong>強制砸地擊倒（Slam Knockdown）</strong>；主力深跳壓制招</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跳重腳（<code>j.HK</code>）</strong></td>
+<td style="text-align: left;"><strong>10</strong></td>
+<td style="text-align: left;">10-14</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">橫向判定長，適合遠跳與安全跳壓起身</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>膝頭擊（Knee Shot，前跳中 <code>2LK</code>）</strong></td>
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">6-直到落地</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">300</td>
+<td style="text-align: left;">大幅縮短跳躍滯空（一般跳約 45 幀壓縮至約 30 幀），改變落點軌道干擾對空；低空命中站／蹲姿通常為 <code>+6</code>～<code>+7</code> 幀</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>空中派對（Party in the Air，跳躍中 <code>MP &gt; HP</code>）</strong></td>
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">8-14</td>
+<td style="text-align: left;">3 幀</td>
+<td style="text-align: left;">700</td>
+<td style="text-align: left;">空中目標連段第 2 段；空對空命中強制砸地擊倒</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、必殺技、爽酷派生與超必殺技（SA）</h2>
+<h3>1. 主力必殺技（斬風／連環折刀／迴旋後踢／機關槍上勾拳）</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式（指令）</th>
+<th style="text-align: left;">發生</th>
+<th style="text-align: left;">持續</th>
+<th style="text-align: left;">硬直／總長</th>
+<th style="text-align: left;">命中</th>
+<th style="text-align: left;">被防</th>
+<th style="text-align: left;">取消</th>
+<th style="text-align: left;">傷害</th>
+<th style="text-align: left;">官方備註與實戰對策</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>L 斬風（Air Slasher，蓄力 <code>4~6LP</code>）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>21</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>純假動作</strong>（不出飛行道具），專騙跳波、撥擋或 SA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>M 斬風（Air Slasher，蓄力 <code>4~6MP</code>）</strong></td>
+<td style="text-align: left;"><strong>17</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>44</code> 幀</td>
+<td style="text-align: left;"><strong>0</strong></td>
+<td style="text-align: left;"><strong>-5</strong></td>
+<td style="text-align: left;">SA3, *</td>
+<td style="text-align: left;">600</td>
+<td style="text-align: left;">1 發波；近貼為 <code>-5</code>，中遠距離因飛行距離抵銷硬直變安全或正幀；第 23 幀可取消進馬拉卡斯節奏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H 斬風（Air Slasher，蓄力 <code>4~6HP</code>）</strong></td>
+<td style="text-align: left;"><strong>17</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>60</code> 幀</td>
+<td style="text-align: left;"><strong>+3</strong></td>
+<td style="text-align: left;"><strong>-3</strong></td>
+<td style="text-align: left;">SA3, *</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">2 發波，總動畫長、近中距易被跳入；第 35-36 幀可取消進馬拉卡斯節奏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 斬風（OD Air Slasher，蓄力 <code>4~6PP</code>）</strong></td>
+<td style="text-align: left;">本體 <code>10</code>／飛道 <code>22</code></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>46</code> 幀</td>
+<td style="text-align: left;">近 <code>+5</code>／飛道 <code>D</code></td>
+<td style="text-align: left;">近 <strong><code>+2</code></strong>／飛道 <strong><code>+9</code></strong></td>
+<td style="text-align: left;">SA2, *</td>
+<td style="text-align: left;">1000+1000</td>
+<td style="text-align: left;">2 發強力波，近距命中 <code>+5</code> 可接連段，遠距飛行道具段被防高達 <strong><code>+9</code></strong>；第 31 幀可取消進馬拉卡斯節奏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L 連環折刀（Jackknife Maximum，蓄力 <code>2~8LK</code>）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">落地後 <code>6</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">假跳上升（第 6～45 幀視為空中）；第 23～40 幀可取消出跳攻擊或空中特殊技</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>M 連環折刀（蓄力 <code>2~8MK</code>）</strong></td>
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">6-22 (6-9, 19-22)</td>
+<td style="text-align: left;">落地後 <code>22+10</code> 幀</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-32</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1100</td>
+<td style="text-align: left;">第 1～5 幀<strong>對空中打擊與空飛道無敵</strong>、第 5～6 幀對投無敵；被防超大破綻</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H 連環折刀（蓄力 <code>2~8HK</code>）</strong></td>
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">5-33 (5-9, 17-21, 30-33)</td>
+<td style="text-align: left;">落地後 <code>17+15</code> 幀</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-44</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1300</td>
+<td style="text-align: left;"><strong>對空最速 <code>5</code> 幀！</strong> 第 1～9 幀對空中打擊與空飛道無敵、第 5～6 幀對投無敵；被防 <code>-44</code> 重罰</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 連環折刀（蓄力 <code>2~8KK</code>）</strong></td>
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">6-64 (5段)</td>
+<td style="text-align: left;">落地後 <code>29+18</code> 幀</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-55</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1500</td>
+<td style="text-align: left;"><strong>第 1～11 幀完全無敵</strong>（主力起身凹招）；前 3 段命中才進後段；被防 <code>-55</code> 必吃最大確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>搖滾假動作（Roll Through Feint，<code>236LK</code>）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>26</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">向前假踢停止（無攻擊判定），用於騙無敵技或縮短距離</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>快速迴旋後踢（Quick Rolling Sobat，<code>236MK</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-14</td>
+<td style="text-align: left;">硬直 <code>23</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-6</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">單段擊倒；被防明確為 <strong><code>-6</code> 幀</strong>（6 幀以內長手招可直接確反）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>迴旋雙後踢（Double Rolling Sobat，<code>236HK</code>）</strong></td>
+<td style="text-align: left;"><strong>15</strong></td>
+<td style="text-align: left;">15-39 (15-17, 36-39)</td>
+<td style="text-align: left;">硬直 <code>24</code></td>
+<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: left;"><strong>-10</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">1400</td>
+<td style="text-align: left;">兩段踢擊；<strong>地面命中為 <code>+2</code> 幀</strong>（可近身打擊／投擇），被防 <strong><code>-10</code> 幀</strong>；浮空連段命中第 2 擊才擊倒</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 迴旋雙後踢（OD Double Rolling Sobat，<code>236KK</code>）</strong></td>
+<td style="text-align: left;"><strong>17</strong></td>
+<td style="text-align: left;">17-30 (17-18, 28-30)</td>
+<td style="text-align: left;">硬直 <code>19</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">SA2</td>
+<td style="text-align: left;">1300</td>
+<td style="text-align: left;">被防僅 <strong><code>-2</code> 幀</strong>（<strong>對手燒盡時被防為 <code>+2</code> 幀有利</strong>）；僅第 2 擊可取消 SA2／SA3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L 機關槍上勾拳（Machine Gun Uppercut，<code>214LP</code>）</strong></td>
+<td style="text-align: left;"><strong>15</strong></td>
+<td style="text-align: left;">15-18</td>
+<td style="text-align: left;">硬直 <code>35</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-19</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">1650</td>
+<td style="text-align: left;">僅首擊命中才進後續連打；適合中攻擊起手接續</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>M 機關槍上勾拳（<code>214MP</code>）</strong></td>
+<td style="text-align: left;"><strong>22</strong></td>
+<td style="text-align: left;">22-25</td>
+<td style="text-align: left;">硬直 <code>35</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-19</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">1900</td>
+<td style="text-align: left;">適合重攻擊起手接續</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H 機關槍上勾拳（<code>214HP</code>）</strong></td>
+<td style="text-align: left;"><strong>28</strong></td>
+<td style="text-align: left;">28-31</td>
+<td style="text-align: left;">硬直 <code>35</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-19</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">2200</td>
+<td style="text-align: left;">發生慢，適合高浮空連段收尾</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 機關槍上勾拳（<code>214PP</code>）</strong></td>
+<td style="text-align: left;"><strong>26</strong></td>
+<td style="text-align: left;">26-29</td>
+<td style="text-align: left;">硬直 <code>35</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-19</strong></td>
+<td style="text-align: left;">SA2</td>
+<td style="text-align: left;">2500</td>
+<td style="text-align: left;">最後一擊<strong>強制倒地（Hard Knockdown）</strong>，壓起身空間極大；可延遲取消 SA2／SA3</td>
+</tr>
+</tbody>
+</table></div>
+<h3>2. 爽酷（Jus Cool，<code>214K</code>）與全派生系統</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式（指令）</th>
+<th style="text-align: left;">發生</th>
+<th style="text-align: left;">持續</th>
+<th style="text-align: left;">硬直／總長</th>
+<th style="text-align: left;">命中</th>
+<th style="text-align: left;">被防</th>
+<th style="text-align: left;">取消</th>
+<th style="text-align: left;">傷害</th>
+<th style="text-align: left;">官方備註與實戰說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>爽酷（Jus Cool，<code>214K</code>）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>37</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">第 13～24 幀可派生下列招式（後撤閃避牽制核心）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 爽酷（OD Jus Cool，<code>214KK</code>）</strong></td>
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">8-12</td>
+<td style="text-align: left;">硬直 <code>36</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-18</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">500</td>
+<td style="text-align: left;">第 1 擊帶攻擊判定，被防硬直 +1 幀（<code>37</code>）；第 25～39 幀可派生攻擊、第 19 幀可進耍戲步伐；單出不派生被防 <code>-18</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>放克刃（Funky Slicer，爽酷中 <code>L</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-14</td>
+<td style="text-align: left;">*22</td>
+<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: left;"><strong>-3</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">下段派生；被防硬直 -2 幀（<code>20</code>），打霸體或揮空 +3 幀；<strong>被防 <code>-3</code> 安全</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 放克刃（OD 爽酷中 <code>L</code>）</strong></td>
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">9-11</td>
+<td style="text-align: left;">*19</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">SA2</td>
+<td style="text-align: left;">900</td>
+<td style="text-align: left;">下段派生；<strong>命中 <code>+6</code> 可接輕／中連段</strong>、被防 <strong><code>-2</code></strong>；空中命中強制旋轉擊倒；打霸體／揮空 +5 幀</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>月虧（Waning Moon，爽酷中 <code>M</code>）</strong></td>
+<td style="text-align: left;"><strong>25</strong></td>
+<td style="text-align: left;">25-27</td>
+<td style="text-align: left;">硬直 <code>16</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;"><strong>中段攻擊</strong>（須站防）；<strong>第 12～26 幀對投無敵</strong>；<strong>被防 <code>+1</code> 有利</strong>；空中命中砸地擊倒；PC 彈地</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 月虧（OD 爽酷中 <code>M</code>）</strong></td>
+<td style="text-align: left;"><strong>19</strong></td>
+<td style="text-align: left;">19-23</td>
+<td style="text-align: left;">硬直 <code>17</code></td>
+<td style="text-align: left;"><strong>+7</strong></td>
+<td style="text-align: left;"><strong>-2</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1100</td>
+<td style="text-align: left;"><strong>中段攻擊</strong>；第 10～22 幀對投無敵；<strong>命中 <code>+7</code> 可接大連段</strong>、被防 <strong><code>-2</code></strong>；空中命中彈地</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>全力一擊（Maximum Strike，爽酷中 <code>H</code>）</strong></td>
+<td style="text-align: left;"><strong>15</strong></td>
+<td style="text-align: left;">15-19</td>
+<td style="text-align: left;">硬直 <code>25</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-10</strong></td>
+<td style="text-align: left;">SA3</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">長距離上段突進；被防 <code>-10</code> 破綻大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 全力一擊（OD 爽酷中 <code>H</code>）</strong></td>
+<td style="text-align: left;"><strong>11</strong></td>
+<td style="text-align: left;">11-15</td>
+<td style="text-align: left;">硬直 <code>21</code></td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-8</strong></td>
+<td style="text-align: left;">SA2</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">發生較快，被防 <code>-8</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>耍戲步伐（Juggling Dash，爽酷中 <code>6</code>／前指令）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>27</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>第 1～20 幀對飛行道具無敵</strong>（過波本體）；第 17～23 幀可轉進 <code>耍戲搖擺</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 耍戲步伐（OD 爽酷中 <code>6</code>／前指令）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>22</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>第 1～20 幀對飛行道具無敵</strong>；第 16～17 幀可轉進 <code>OD 耍戲搖擺</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>耍戲搖擺（Juggling Sway，步伐中輸入）</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>29</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">第 17～25 幀可取消除耍戲步伐外的其他派生（OD 版總長 <code>22</code> 幀、第 13～18 幀可取消）</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3. 超必殺技（SA）與共通系統</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式</th>
+<th style="text-align: left;">發生</th>
+<th style="text-align: left;">持續</th>
+<th style="text-align: left;">硬直</th>
+<th style="text-align: left;">命中</th>
+<th style="text-align: left;">被防</th>
+<th style="text-align: left;">傷害</th>
+<th style="text-align: left;">官方備註與實戰說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SA1 終極迴旋踢（The Greatest Sobat）</strong></td>
+<td style="text-align: left;"><strong>7</strong></td>
+<td style="text-align: left;">7-10</td>
+<td style="text-align: left;">33</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-12</strong></td>
+<td style="text-align: left;">2000</td>
+<td style="text-align: left;"><strong>完全沒有無敵幀！</strong> 被防 <strong><code>-12</code> 幀</strong>；PC 命中站姿對手造成<strong>崩潰</strong>、命中空中造成<strong>彈牆</strong>；最低保證傷害 <code>30%</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 日出慶節-輕（Lowkey Sunrise Festival，<code>L</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-16</td>
+<td style="text-align: left;">46</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-29</strong></td>
+<td style="text-align: left;">全套 <code>2600</code></td>
+<td style="text-align: left;">第 1～16 幀完全無敵；節奏窗口寬鬆；最後一段 <code>LLMHLMH</code> 傷 <code>1400</code>、被防 <code>-61</code>；最低保證傷害 <code>40%</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 日出慶節-奇妙（Marvelous Sunrise Festival，<code>M</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-16</td>
+<td style="text-align: left;">46</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-29</strong></td>
+<td style="text-align: left;">全套 <code>2800</code></td>
+<td style="text-align: left;">前 7 段 <code>1700</code> ＋ 結尾 <code>高潮擊</code>／<code>安可節奏</code> <code>1100</code>；節奏過早（2-11F）或過晚（18-30F）會失敗</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 日出慶節-極限（Headliner Sunrise Festival，<code>H</code>）</strong></td>
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">12-16</td>
+<td style="text-align: left;">46</td>
+<td style="text-align: left;"><strong>+6</strong></td>
+<td style="text-align: left;"><strong>-29</strong></td>
+<td style="text-align: left;">全套 <strong><code>3000</code></strong></td>
+<td style="text-align: left;">前 7 段 <code>1800</code> ＋ 結尾 <code>高潮擊</code>（11F 發生）／<code>安可節奏</code>（33F 發生）<code>1200</code>；節奏窗口最嚴但傷害最高</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA3／CA 週六狂歡夜（Weekend Pleasure）</strong></td>
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">9-13</td>
+<td style="text-align: left;">48</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-28</strong></td>
+<td style="text-align: left;"><code>4000</code>／CA <code>4500</code></td>
+<td style="text-align: left;">第 1～13 幀完全無敵；僅可從必殺技（及部分可 SA 取消招）取消；最低保證傷害 <code>50%</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>普通投（無禮節奏／過頭翻摔）</strong></td>
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">5-7</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">1200</td>
+<td style="text-align: left;">PC 傷害 <code>2040</code>、SA 量表 <code>+4000</code> 並轉為<strong>強制倒地</strong>；<strong>版邊前摔後最速前墊步（<code>19</code> 幀）可搶得極高有利幀（約 <code>+15</code> 幀）</strong>壓起身</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>前墊步／後墊步</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">全體 <code>19</code>／<code>23</code> 幀</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>前墊步 <code>19</code> 幀全遊戲頂尖</strong>；後墊步 <code>23</code> 幀（第 1～15 幀對投無敵）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>動力衝擊：狂野節奏（Drive Impact）</strong></td>
+<td style="text-align: left;"><strong>26</strong></td>
+<td style="text-align: left;">26-27</td>
+<td style="text-align: left;">35</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-3</strong></td>
+<td style="text-align: left;">800</td>
+<td style="text-align: left;">第 1～27 幀 2 次霸體</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>動力反攻：刮腳（Drive Reversal）</strong></td>
+<td style="text-align: left;">防 <code>20</code>／起 <code>18</code></td>
+<td style="text-align: left;">20-22／18-20</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;"><strong>D</strong></td>
+<td style="text-align: left;"><strong>-6</strong></td>
+<td style="text-align: left;">500（白血）</td>
+<td style="text-align: left;">第 1～22 幀（起身 1～20 幀）完全無敵</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ol>
+<li><strong>對戰迪傑的安全跳（Safe Jump）門檻差異</strong>：
+   * 若只防範迪傑的 <strong>6 幀完全無敵技（OD 連環折刀）</strong>，對手只需 <strong><code>+41</code> 幀</strong> 擊倒優勢即可成立安全跳。
+   * 但因為迪傑擁有 <strong><code>5</code> 幀發生的重版連環折刀（H Jackknife Maximum，第 1～9 幀對空中攻擊無敵）</strong>，只要他處於蹲下蓄力狀態，你用 <code>+41</code> 幀跳入仍可能被 H 版直接對空打下！因此實戰中面對有下蓄力的迪傑，穩妥的安全跳門檻建議取 <strong><code>+42</code> 幀以上</strong>；若確定他剛剛前走或剛起身失去蓄力，則可直接大膽進攻。</li>
+<li><strong>距離與壓持續（Meaty）導致的幀數浮動</strong>：
+   * <strong>站重拳（<code>5HP</code>）</strong>：基礎被防 <code>-4</code>、命中 <code>+3</code>，但擁有 6 個持續幀（<code>9-14</code>）。若在遠距離以第 5～6 個持續幀打到站姿對手，依壓持續公式可讓被防變為 <code>0</code>～<code>+1</code>、命中達 <code>+7</code>～<code>+8</code>；不過中遠距離 <code>5HP</code> 會從蹲姿對手頭頂揮空。
+   * <strong>蹲重腳（<code>2HK</code>）</strong>：貼身被防 <code>-11</code> 是必吃大確反，但最遠尖端壓到第 10 持續幀只剩 <code>-2</code> 幀安全。防守時應先目測距離再決定直接重攻擊確反或按住防禦。
+   * <strong>跳入高度與站／蹲姿差異</strong>：跳入攻擊（包含 <strong>膝頭擊 <code>j.2LK</code></strong>）的落地有利幀隨擊中高度變化，一般跳入與 <code>膝頭擊</code> 約為 <strong><code>+6</code> 幀</strong>，命中蹲姿或超低空打點可達 <strong><code>+7</code> 幀</strong>，打中部分高挑體型角色（如瑪麗莎）較高打點時則可能只有 <strong><code>+5</code> 幀</strong>。</li>
+<li><strong>爽酷（<code>214K</code>）後各派生的風險與回報取捨</strong>：
+   * 迪傑玩家進攻時常以 <strong>放克刃（<code>-3</code> 安全）</strong> 或 <strong>月虧（<code>+1</code> 中段偷幀）</strong> 為主力低風險壓制；只有需要高爆發或確認命中時才會出 <strong>全力一擊（<code>-10</code>）</strong> 或 <strong>OD 爽酷起手（未派生被防 <code>-18</code>）</strong>。防守方遇到他頻繁用爽酷搶節奏時，須留意 <code>月虧</code> 第 12～26 幀對投無敵，別盲目按普通投抓他中段。</li>
+</ol><div class="nav"><span><a href="c02-11-chunli.html">← C02-11 春麗（Chun-Li）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-ehonda.html">C02-11 埃德蒙・本田（E. Honda）角色招式幀數數據 →</a></span></div></div></body></html>

@@ -1,0 +1,105 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>深紅毒蛇（C. Viper）｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / C.Viper（cviper） 攻略</div><h1>深紅毒蛇（C. Viper）</h1><p>這篇是給想挑戰高操作上限、喜歡靠「<strong>大跳躍取消（俗稱超級跳取消 / SJC）</strong>、<strong>假動作取消（Feint）</strong>、<strong>震地槌（<code>623P</code>）</strong>與<strong>空中火焰踢（<code>j.236K</code>）</strong>」打亂對手節奏的玩家看的。深紅毒蛇（C. Viper）是一位高度吃重執行力與動力槽管理的進攻型角色，一旦掌握她的取消節奏與空中軌道變化，壓制與起身進攻將變得極為兇悍；但若資源控管不慎或假動作破綻被抓，也會迅速陷入「燒盡（Burnout）」危機。</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>假動作取消是靈魂</strong>：<strong>閃電衝擊（俗稱雷拳，214P）</strong>與<strong>震地槌（俗稱地震波，623P）</strong>都能在發招前轉成<strong>假動作（Feint）</strong>騙防禦與偷正幀；搭配「按住重拳不放（負邊緣）」技巧能讓連段取消變順手。
+2. <strong>大跳躍取消（SJC）切出兩種節奏</strong>：普通拳腳接 <code>2369</code> 取消進<strong>大跳躍（消耗 1 格動力）</strong>後，落在<strong>第 2～5 幀</strong>按招會出<strong>地面版必殺技</strong>，等<strong>第 7 幀離地出現紅閃</strong>後再按踢鍵則變成<strong>空中火焰踢（<code>j.236K</code>）</strong>，角落被關時還能靠這招直接飛越對手頭頂逃生！
+3. <strong>火力蓄存（<code>214K</code>）有全身霸體，唯獨怕投與多段技</strong>：Lv1 第 6～13 幀（按住可延至第 59 幀）具 <strong>1 次全身霸體</strong>並可自動反擊或取消<strong>前墊步（21F）</strong>，但蓄力與前墊步期間<strong>怕普通投</strong>且前墊步全程處於<strong>懲罰反擊（Punish Counter）被擊狀態</strong>。
+4. <strong>反制現代對手的小撇步</strong>：遇到愛按一鍵無敵昇龍的現代模式玩家，多利用垂直大跳與空中火焰踢的延遲變速去騙出對空技，等對方揮空落地後再拿滿套懲罰反擊。</p>
+</blockquote>
+<hr />
+<h2>一、核心操作技巧：假動作、指令優先權與大跳躍取消（SJC）</h2>
+<p>玩深紅毒蛇一定要先搞懂這三個操作基本功，否則連段接不上、壓制也會出現大破綻：</p>
+<h3>1. 閃電衝擊假動作（Feint）與負邊緣按鍵技巧</h3>
+<ul>
+<li><strong>假動作取消原理與強度差異</strong>：發出<strong>閃電衝擊（<code>214P</code>）</strong>後，在電拳真正打出之前<strong>補按「腳鍵（K）」</strong>即可轉成總長 <strong>12 幀</strong>的假動作（<code>[Thunder Dash] Feint</code>）用來騙防禦、偷近距離投技或延續壓制。</li>
+<li><strong>實戰必用重版假動作</strong>：依官方數據，重閃電衝擊在第 <strong>6 幀</strong>即可轉假動作、中版第 <strong>8 幀</strong>、輕版則要到第 <strong>12 幀</strong>才能轉。因此拳腳取消<strong>重版假動作</strong>最緊密安全（視前置拳腳通常落在 <code>±0～-3</code> 幀），而<strong>輕版假動作</strong>空隙過大（約 <code>-4</code> 幀），極易被對手以動力衝擊（DI）或快招打穿！</li>
+<li><strong>按住 <code>K</code> 最速取消</strong>：只要在輸入閃電衝擊後按住腳鍵（K），系統就會在該強度允許的最早窗口自動完成假動作取消。</li>
+<li><strong>按住 <code>HP</code> 放開（負邊緣 / Negative Edge）技巧</strong>：在設定開啟負邊緣時，先按住重拳不放，接著依序輸入方向與中拳再放開重拳，就能更順手地觸發閃電衝擊或取消連段。</li>
+<li><strong>按鍵指令優先權</strong>：同時輸入 <code>214 + P + K</code> 時，遊戲系統會優先判定成<strong>拳（P）</strong>的<strong>閃電衝擊</strong>，而非 <code>214K</code> 的火力蓄存；若是貼身後拉加按投技，則以<strong>投技優先權</strong>較高。</li>
+</ul>
+<h3>2. 大跳躍取消（High Jump Cancel / SJC）的官方原理與兩種節奏</h3>
+<ul>
+<li><strong>為何同一套 <code>2369 + K</code> 有時出地面技、有時變空中火焰踢？</strong>
+  依 Capcom 官方大跳躍（<code>High Jump</code>，總長 <code>46F + 落地 3F</code>，發動時<strong>消耗 1 格動力槽</strong>）規則，毒蛇是在<strong>第 7 幀起才進入空中狀態</strong>，而<strong>第 2～5 幀仍停留在地面並可直接取消地面版必殺技</strong>！看懂這條規則就能完全掌握兩種節奏：
+  1. <strong>貼地高速（第 2～5 幀地面取消）</strong>：在可大跳躍取消的拳腳（例如 <code>5HK</code>、<code>2HP</code>、<code>2MK</code>、<code>5MK</code>）命中後，稍微留約 1 幀間隔再迅速轉出 <code>2369</code>，讓最後的 <code>9</code> 與 <code>K</code>（或 <code>OD</code> 兩顆腳鍵）在<strong>第 2～5 幀</strong>同時送出，就能穩穩取消出<strong>地面版火焰踢 / OD 火焰踢</strong>或<strong>震地槌</strong>（注意上方向必須拉到底；若太早送按鍵容易漏成直接起跳或沒取消成功）。
+  2. <strong>延遲紅閃變速（第 7 幀離地後取消）</strong>：先完整輸入 <code>2369</code> 取消跳起，刻意等到角色離開地面（身上出現<strong>大跳躍起跳閃光</strong>、進入第 7 幀以上空中判定）後再補按 <code>K</code>，就會轉為<strong>空中火焰踢（<code>j.236K</code>）</strong>，用來打繞背（Cross-up）或拉慢落地時間騙對手對空。</li>
+</ul>
+<hr />
+<h2>二、必殺技與超必殺技實戰用法：火焰踢、震地槌、閃電衝擊與火力蓄存</h2>
+<h3>1. 火焰踢（Burning Kick，<code>236K</code>）＆ 空中火焰踢（<code>j.236K</code>）</h3>
+<p>深紅毒蛇的招牌火踢分為地面版、空中版與透過大跳躍取消切出的各種變速軌道：
+* <strong>地面火焰踢（<code>236LK/MK/HK</code>）</strong>：發生偏慢（23 / 25 / 27F），但<strong>不派生被防皆只有 -2 幀</strong>（安全交回回合）；<strong>OD 火焰踢（<code>236KK</code>）</strong>發生極快（<strong>8 幀</strong>），但<strong>被防為 -4 幀</strong>（貼身可被 4 幀輕拳確反）。
+* <strong>兩大耗氣派生（各消耗 1 格動力槽）</strong>：
+  * <strong>二度燃燒（<code>Double Burn</code>）</strong>：發生 21 幀、<strong>被防高達 +2 幀正幀壓制</strong>！適合在對手防住火焰踢後抓他猶豫或偷搶的瞬間繼續搶攻打摔二擇；但因 21 幀發生空隙較大，太常出會被 DI 或無敵技攔截。
+  * <strong>追擊拳（<code>Knuckled Pursuit</code>）</strong>：發生 12 幀、命中擊倒，但<strong>被防高達 -15 幀大破綻</strong>，原則上只用於連段確定命中追打。
+* <strong>空中火焰踢（垂直／前跳中 <code>236K</code>）與角落逃生</strong>：
+  * <strong>具繞背（Cross-up）判定</strong>：L / M / H 版發生分別為 22 / 20 / 18F，被防幀數隨打點高度變化（<strong>-4～+3 幀</strong>），必須壓到接近腳尖的極限低打點才會轉為正幀；<strong>OD 空中火焰踢</strong>則無論打點高低<strong>被防必定正幀（+1～+7 幀）</strong>！
+  * <strong>落地硬直懲罰細節</strong>：若飛越對手頭頂打背被防，落地硬直會額外 <strong>+1 幀</strong>（OD 版不加）；但若飛越頭頂<strong>完全揮空</strong>，落地硬直會額外暴增 <strong>+8 幀</strong>（總計 21F 硬直），揮空會直接吃大確反。
+  * <strong>逃出角落神器</strong>：被壓在版邊無路可退時，可直接透過大跳躍或前跳接空中火焰踢越過對手頭頂換邊逃生。</p>
+<h3>2. 震地槌（Seismic Hammer，<code>623P</code>）、閃電衝擊（<code>214P</code>）＆ 火力蓄存（<code>214K</code>）</h3>
+<ul>
+<li><strong>震地槌（<code>623P</code>，俗稱地震波）</strong>：</li>
+<li>從地面震出下段衝擊波（依輕／中／重調整出現距離，但重版也打不到全畫面最遠端，且對跳起來的對手會直接揮空、遠距對波戰較吃虧）。</li>
+<li>一般 L / M / H 版發生 <strong>24 幀</strong>（總幀長 <strong>57 幀</strong>）、<strong>被防高達 -10 幀</strong>；<strong>OD 震地槌</strong>發生 <strong>19 幀</strong>、被防在近期調整中已從 -8 強化為 <strong>-6 幀</strong>。</li>
+<li><strong>假動作誘跳與取消路線</strong>：震地槌第 11 幀可轉<strong>假動作（總長 16 幀）</strong>騙對手跳入或按 DI，對手一跳起就能立刻用重閃電衝擊對空擊落；此外震地槌可取消<strong>大跳躍</strong>與 SA，新版更強化了單發震地槌後接<strong>蹲重腳（<code>2HK</code>）</strong>的浮空追擊路線。</li>
+<li><strong>閃電衝擊（<code>214P</code>，俗稱雷拳）</strong>：</li>
+<li><strong>L / M 版</strong>：發生 17 / 16F，命中 <strong>+2 / +1</strong>，被防 <strong>-4 / -3</strong>（安全推距離或接假動作騙招）。</li>
+<li><strong>H 版（<code>214HP</code>，主力對空）</strong>：<strong>僅 7 幀發生，且第 1～9 幀對空中飛道與空中打擊無敵</strong>，可從蹲姿直接出招擊落各種跳入與指令空中技；但<strong>被防高達 -24 幀超大破綻</strong>，地面立回嚴禁盲按！</li>
+<li><strong>追跡組合技（<code>Tracer Combination</code>）</strong>：閃電衝擊命中或被防時耗 1 格動力槽派生，L / M 版被防分別為 <strong>-15 / -13 幀</strong>，僅建議確定命中或偶爾抓對手亂動時使用。</li>
+<li><strong>火力蓄存（<code>214K</code>）</strong>：</li>
+<li><strong>直接單點（Lv1）</strong>：23 幀發生、<strong>被防 -16 幀</strong>（OD 版 20 幀、被防 -16 幀），直接壓在防禦上必吃大確反！</li>
+<li><strong>蓄力霸體與前墊步取消</strong>：按住腳鍵時，普通版第 <strong>6～59 幀</strong>（OD 版第 <strong>3～57 幀</strong>）具備 <strong>1 次全身霸體</strong>，吸收對手打擊後會自動發動反擊；蓄滿超過 59 幀（OD 57 幀）轉為 Lv3，被防 -10 幀且<strong>命中直接產生崩潰（Crumple）</strong>！霸體期間可輸入前前取消<strong>前墊步（總長 21 幀）</strong>，但要注意兩點：<strong>一、霸體怕普通投與兩段以上多段攻擊</strong>；<strong>二、前墊步取消期間全程處於懲罰反擊（Punish Counter）被擊狀態</strong>，切忌在近距離無腦長按蓄力。</li>
+</ul>
+<h3>3. 防守端手段與 SA1 資源無限化機制</h3>
+<p>毒蛇在沒有無敵 OD 昇龍（<code>OD 閃電衝擊</code> 無無敵幀）的情況下，起身被壓制必須靈活運用一般防禦、動力撥擋、延遲解摔、後墊步（第 1～15 幀對投無敵）與<strong>電光反擊（動力反攻 <code>6HP+HK</code>，起身 18F／防禦 20F 無敵，但被防 -6 幀）</strong>，或是靠超必殺技反制：
+* <strong>SA1 解禁飛旋踢（<code>236236K</code>）</strong>：發生 <strong>8 幀</strong>（被防 -34），<strong>第 1～11 幀對打擊與投技無敵（但對飛道不無敵！）</strong>。最大特色是命中或發動後會開啟 <strong>700 幀計時器</strong>，期間<strong>「大跳躍」與「必殺技派生」完全不消耗動力槽</strong>（連 Burnout 狀態也能消耗計時器照常使用），且派生技命中還能<strong>回復 3000 點（約 0.3 格）動力槽</strong>！
+* <strong>SA2 任務終結（<code>214214P</code>）</strong>：發生 <strong>7 幀</strong>（被防 -29），<strong>第 1～10 幀完全無敵</strong>（唯一兩格氣全無敵凹招，注意可由 OD 閃電、OD 火焰踢與 OD 震地槌取消）。
+* <strong>SA3／CA 厄運排除者（<code>214214K</code>）</strong>：發生 <strong>10 幀</strong>（被防 -38），<strong>第 1～13 幀完全無敵</strong>（僅能由必殺技取消）。</p>
+<hr />
+<h2>三、拳腳立回與對戰節奏思路</h2>
+<ul>
+<li><strong>近身正幀核心 <code>5MP</code>（站中拳）</strong>：<strong>8 幀發生、命中 +6、被防 +1</strong>！是毒蛇極少數常態被防正幀的拳腳，壓在防禦上可接 <code>5LP / 2LP</code> 抓對手搶招，或藉 +1 優勢直接走路投、後退誘投（Shimmy）。</li>
+<li><strong>近距離萬用神拳 <code>2MP</code>（蹲中拳）</strong>：<strong>6 幀發生、命中 +5、被防 -2</strong>，可同時取消必殺技與大跳躍，是搶招、確認連段與綠衝（被防變 <strong>+2</strong>）的核心；高手更能透過大跳躍取消接閃電衝擊假動作把壓制轉為正幀節奏。</li>
+<li><strong>中距離牽制雙腳 <code>5MK</code> 與 <code>2MK</code></strong>：兩者同為 <strong>8 幀發生、命中 +5</strong>（近距命中可直接目押接 <code>5LP / 2LP</code> 或 <code>5LK</code>）。<strong><code>5MK</code>（被防 -3）</strong>與 <strong><code>2MK</code>（被防 -1，下段）</strong>皆<strong>無法直接取消一般必殺技與取消綠衝</strong>，必須練習接<strong>大跳躍取消</strong>才不會讓中腳打中後白白交出回合；另外可用生綠衝突襲 <code>2MK</code>（被防 <strong>+3</strong>、命中 <strong>+9</strong>）。</li>
+<li><strong>抓空揮（差返）與高爆發 <code>5HP</code>、<code>2HP</code> 與 <code>5HK</code></strong>：</li>
+<li><strong><code>5HP</code>（站重拳）</strong>：12 幀發生、被防 <strong>-2</strong> 安全，手長且適合打差返，僅能大跳躍取消。</li>
+<li><strong><code>2HP</code>（蹲重拳）</strong>：9 幀發生、強制站立、可取消必殺技與大跳躍，是起手火力核心；但<strong>被防 -5 幀</strong>，近距離若不接假動作或安全距離震地槌假動作，直接停手會有吃輕／中攻擊反打的風險。</li>
+<li><strong><code>5HK</code>（站重腳）</strong>：10 幀發生、被防 <strong>-3</strong>，擊中空中對手會彈地，<strong>懲罰反擊時更會額外獲得 +19 幀有利</strong>，大破綻確反或騙出昇龍時打這顆回報極高。</li>
+<li><strong>中段與特殊技</strong>：<strong>毒蛇肘擊（<code>6MP</code>，22F、被防 -3、16–27F 腳無敵）</strong>可安全偷下蹲防與躲低打點；<strong>兩段踢（<code>6HK</code>，11F、命中 +4、被防 -2）</strong>距離遠且被防安全，開綠衝壓制被防為 <strong>+2</strong>。</li>
+</ul>
+<h3>對付現代模式對手的小技巧</h3>
+<p>現代模式玩家普遍習慣靠「一鍵無敵昇龍」反制跳入。打現代對手時，善用毒蛇多變的空中跳躍與空中火焰踢變速（先空跳假裝要壓、或利用大跳躍紅閃延遲改軌道）去<strong>故意騙對方按出單鍵昇龍</strong>，等他揮空落地再接 <code>5HK</code> 或大跳躍滿套連段徹底懲罰。</p>
+<hr />
+<h2>四、現代模式（Modern）實戰指南與操作連段</h2>
+<p>現代模式的深紅毒蛇雖然失去了能拉高懲罰爆發的<strong>站重腳（<code>5HK</code>）</strong>，卻換來一鍵對空（<strong>重閃電衝擊</strong>）、一鍵突襲／空中變速（<strong>火焰踢</strong>）與自動確認高效率輔助連段，實戰性與穩定度依然相當優秀：</p>
+<ul>
+<li><strong>三大輔助連段（Auto）核心用法</strong>：</li>
+<li><strong>輔助輕連段（<code>アシスト弱</code>）</strong>：由 <strong>5 幀站輕腳（<code>5LK</code>）接中閃電衝擊（<code>214MP</code>）</strong>構成，貼身命中為 <strong>+1 幀</strong>可打摔二擇，被防到底也為 <strong>-3 幀</strong>（完全無確反但交出回合，專心轉防禦）。殘血時可自動帶入 SA3。</li>
+<li><strong>輔助中連段（<code>アシスト中</code>）</strong>：由 <strong>6 幀蹲中拳（<code>2MP</code>）</strong>起手，適合攔截對手生綠衝或當作確反起手墊步。</li>
+<li><strong>輔助強連段（<code>アシスト強</code>，主力核心）</strong>：由 <strong>9 幀蹲重拳（<code>2HP</code>，被防 -5）取消輕震地槌（<code>623LP</code>，被防 -10）</strong>構成並附帶自動命中確認！命中後會自動消耗 1 格動力做大跳躍取消接空中火焰踢（實戰傷害參考：無資源約 <strong>2,850</strong>、耗約 1.5 格動力含回復帶起攻約 <strong>3,150</strong>、耗 1 格動力＋SA3 約 <strong>5,020</strong>）。若動力槽快見底，可在震地槌出現後收手或改接一鍵閃電衝擊避免燒盡。</li>
+<li><strong>輔助強的破綻與距離控管</strong>：第 1 下 <code>2HP</code> 被防 <strong>-5</strong>、第 2 下輕震地槌被防更達 <strong>-10 幀大破綻</strong>，且貼身在 1–2 段之間甚至可能被 5 幀招插招或前跳躲過！務必控制在<strong>尖端距離</strong>出招，看到被防立即停手或改配其他安全進攻。</li>
+<li><strong>跳輔助重（<code>j.アシスト強</code>）</strong>：具備<strong>逆向（Cross-up）</strong>性能，跳入打背命中後繼續連打輔助重就能直接接完一整套連段。</li>
+<li><strong>大破綻／防禦動力反攻（-6 幀）確反</strong>：先墊一發 6 幀 <code>輔助中</code> 再接 <code>輔助強</code>，整體傷害會比直接按輔助強更高。</li>
+<li><strong>生綠衝上下段壓起身（勿在立回遠距亂開）</strong>：</li>
+<li>毒蛇生綠衝啟動與移動速度較慢，遠距立回直接開容易被點掉，建議趁<strong>擊倒壓起身</strong>時使用：<strong><code>生綠衝 下中（2MK，被防 +3）→ 輔助強</code></strong>（下段起手）搭配 <strong><code>生綠衝 前中（6MP，被防 +1）→ 輔助中 × 2</code></strong>（中段起手，結尾為 <strong>+42 幀安全跳</strong>，亦可改接 <code>前SP＋派生</code> 貼身猜拳）。</li>
+<li><strong>一鍵必殺與現代簡易假動作取消（Feint）</strong>：</li>
+<li><strong>一鍵火焰踢（<code>後SP</code>／跳躍中 <code>SP</code>）</strong>：中遠距離奇襲用，不派生被防 <strong>-2 幀</strong>；耗 1 格動力派生<strong>二度燃燒</strong>可取得 <strong>+2 幀正幀壓制</strong>（留意空隙防 DI）。另可練起跳後最速<strong>超低空空中火焰踢</strong>，既能越過下段／摔技，也可前後繞背打亂防禦（OD 版被防固定 <strong>+1～+7 幀</strong>）。</li>
+<li><strong>一鍵對空（<code>前SP</code>）</strong>：即 7 幀<strong>重閃電衝擊（<code>214HP</code>）</strong>，輕攻擊命中或對空時可穩接，資源充裕時耗 1 格動力派生<strong>追跡組合技</strong>並最速前墊步，可取得貼身 <strong>+4 幀</strong>起身壓制（切勿單純對防禦出 <code>前SP</code>，被防 <strong>-24 幀</strong>！）。</li>
+<li><strong>一鍵震地槌（<code>下SP</code>）</strong>：可用斜後下／下／斜前下切換出現距離；一樣能轉假動作騙跳再用 <code>前SP</code> 對空。</li>
+<li><strong>現代簡易假動作連段秘訣</strong>：在 <strong><code>輔助強（懲罰反擊）→ 前SP＋弱 → 輔助強</code></strong> 進階連段中，若單點容易誤發閃電衝擊，訣竅是<strong>稍微長按 <code>前SP＋弱</code> 直到畫面出現取消閃光音效再放開</strong>，即可穩定取消假動作並接回輔助強！</li>
+<li><strong>對手暈眩（Stun）爆發</strong>：有氣用 <code>OD 站SP（火力蓄存）蓄滿</code>（沒氣用普通 <code>站SP 蓄滿</code>）打出 Lv3 崩潰後，直接接 <code>輔助強</code> 按完帶 SA3 或派生壓制。</li>
+</ul>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ul>
+<li><strong>已核對修正要點</strong>：本篇已依 Capcom 官方最新幀數與中文譯名校對，統一使用<strong>閃電衝擊（<code>214P</code>）</strong>、<strong>火焰踢（<code>236K</code>）</strong>、<strong>震地槌（<code>623P</code>）</strong>、<strong>火力蓄存（<code>214K</code>）</strong>、<strong>大跳躍（High Jump）</strong>等正式名稱；依據官方大跳躍規則（<strong>第 2～5 幀地面必殺取消 vs 第 7 幀起空中狀態</strong>）徹底釐清舊文「快取消與延遲取消時機衝突」，並移除與毒蛇無關的舊示範誤植及未經實證的「現代之王／5300／+7」等模糊數字。</li>
+<li><strong>版本演進對照提醒</strong>：近期平衡調整已強化<strong>站中腳（<code>5MK</code>）命中為 +5 幀</strong>、<strong>OD 震地槌被防從 -8 改善為 -6 幀</strong>，並優化了大跳躍取消手感與震地槌後追擊路線；若翻閱早期剛發售時的攻略影片看到「OD 震地槌 -8」或舊版無法銜接的連段，請以現行實機版本為準。</li>
+<li><strong>經典模式 vs 現代模式選擇</strong>：經典模式保留懲罰反擊高達 <strong>+19 幀</strong>的<strong>站重腳（<code>5HK</code>）</strong>與全強度手動取消彈性，爆發與上限最高；現代模式雖缺少 <code>5HK</code>，但靠著一鍵 7F 重閃電衝擊對空、一鍵空中火焰踢與自動確認輔助強連段大幅降低操作失誤率，相當適合不希望被繁複指令卡住的新手與中階玩家。</li>
+<li><strong>動力槽管理與 SA1 爆發流派</strong>：由於大跳躍、追跡組合技、追擊拳與二度燃燒每次皆需消耗 <strong>1 格動力槽</strong>，保守派會刻意減少無謂取消以免瞬間 Burnout；進攻派則常在動力槽偏低時果斷接出 <strong>SA1 解禁飛旋踢</strong>開啟 700 幀無限資源模式強攻並回復動力槽。</li>
+</ul><div class="nav"><span><a href="c26.html">← C26 春麗（Chun-Li）</a></span><span style="text-align:right"><a href="c28.html">C28 迪傑（Dee Jay） →</a></span></div></div></body></html>

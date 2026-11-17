@@ -1,0 +1,578 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>莉莉（Lily）角色招式幀數數據｜快打旋風 6 實戰指南</title>
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="top"><div class="wrap"><a href="../index.html"><b>SF6</b> 快打旋風 6 實戰指南</a>
+<a href="../index.html">目錄</a></div></header>
+<div class="wrap"><div class="crumb"><a href="../index.html">目錄</a> / 幀數與確反</div><h1>莉莉（Lily）角色招式幀數數據</h1><p>莉莉（Lily）的核心玩法就是「集風（累積<strong>風纏 Windclad</strong>）→ 強化版<strong>鷹塔（Condor Spire）</strong>衝過來壓你打二擇」。很多玩家遇到莉莉最痛苦的就是：「她飛過來被我擋住，為什麼我按輕拳總是輸？哪些招式沒有風纏時其實是大破綻？」這篇以 Capcom 最新官方幀數表與系統公式為準，幫你把莉莉的關鍵幀數翻成實戰口訣！</p>
+<blockquote>
+<p><strong>⚡ 一分鐘懶人包</strong>
+1. <strong>看清楚「有沒有風纏」決定鷹塔被防誰先動！</strong>：
+   * <strong>無風纏鷹塔（普通／OD 236K）</strong>：貼身被防皆為 <strong><code>-8</code> 幀</strong>（大破綻，中近距離擋住直接確反！但因持續長達 13 幀，若在最遠尖端才碰到會因壓持續變成安全甚至微正幀）。
+   * <strong>風纏鷹塔（有風 236K）</strong>：輕／中／重版被防皆為 <strong><code>+1</code> 幀</strong>，<strong>風纏 OD 鷹塔（<code>[Windclad] 236KK</code>）</strong>被防高達 <strong><code>+2</code> 幀</strong>（且第 9～32 幀對飛行道具無敵）！擋完是莉莉先動，馬上進入「4 幀站輕腳 vs 5 幀指令投」二擇，千萬別亂按拳腳搶招，建議視資源交<strong>動力反攻（Drive Reversal，6HP+HK）</strong>彈開她。
+2. <strong>看到近距離揮擊「鷹風」或空中「鷹襲」被防直接確反</strong>：
+   * <strong>鷹風（214P，集風揮擊）</strong>：輕／中／重版被防皆為 <strong><code>-8</code> 幀</strong>（OD 版被防 <strong><code>-5</code> 幀</strong>）；如果不揮擊直接原地蓄風，第 <strong>46 幀</strong>才拿到第 1 層風纏（OD 版第 <strong>38 幀</strong>），近距離看到她蓄風直接衝上去揍她！
+   * <strong>鷹襲（j.P，空中俯衝）</strong>：普通／OD 版被防基準為 <strong><code>-24</code> 幀</strong>，風纏版／風纏 OD 版被防為 <strong><code>-23</code> 幀</strong>，蹲防擋住直接用動力箭步或大招確反！
+   * <strong>墨西哥颱風（360+P，指令投／俗稱駒投）</strong>：發生固定 <strong>5 幀</strong>，但被跳躍躲開後有高達 <strong>53 幀揮空硬直</strong>（總動作 59 幀），落地直接送她最大懲罰反擊連段！
+3. <strong>對空與防身無敵幀重點</strong>：
+   * <strong>戰斧爆揮（623P，昇龍）</strong>：無風纏輕版發生 <strong>6 幀</strong>（可成立安全跳），但<strong>有風纏時輕版與 OD 版發生僅 <code>4</code> 幀</strong>（第 1～10 幀對空無敵，會直接打穿標準安全跳！）。
+   * <strong>超必殺技</strong>：<strong>SA1 吹風鷹（10 幀）</strong>具打擊與投無敵、<strong>SA2 雷鳥（9 幀）</strong>與 <strong>SA3 怒火颱風（7 幀指令投）</strong>具完全無敵。</p>
+</blockquote>
+<hr />
+<h2>一、一般攻擊（Normal Moves）與特殊技（Unique Attacks）</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱（指令／俗稱）</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">實戰怎麼用 / 怎麼防（含官方備註）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>站輕拳（<code>5LP</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"><strong>+6</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C（可連按）</td>
+<td style="text-align: center;">350</td>
+<td style="text-align: left;">改版加快為 5 幀，命中有利高達 +6，可順暢銜接站輕腳或必殺技；但打點較短且退距明顯，不適合遠距確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站輕腳（<code>5LK</code>）</strong></td>
+<td style="text-align: center;"><strong>4 幀</strong></td>
+<td style="text-align: center;">4-6</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C（可連按）</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: left;"><strong>莉莉最速 4 幀起手技！</strong> 命中 +5（截擊 Counter 達 <strong>+7</strong>，可目押接 7 幀站中腳），近身搶招與點摔核心。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中拳（<code>5MP</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-12</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">判定長的中距離牽制技，但不可取消、被防 -4，切忌無腦連按以免被動力衝擊（DI）抓到。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站中腳（<code>5MK</code>）</strong></td>
+<td style="text-align: center;"><strong>7 幀</strong></td>
+<td style="text-align: center;">7-9</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">發生快、可必殺取消的優秀中攻擊，被防僅 -1，適合截擊確認與取消動力箭步。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重拳（<code>5HP</code>）</strong></td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-12</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>-5</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;"><strong>地面懲罰反擊（Punish Counter）會造成崩潰（Crumple）</strong>，對空懲罰反擊可浮空追打；常取消鷹風連防。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>站重腳（<code>5HK</code>）</strong></td>
+<td style="text-align: center;"><strong>14 幀</strong></td>
+<td style="text-align: center;">14-17</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-5</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;">擊退距離遠；<strong>截擊（CH）或懲罰反擊（PC）命中會強制擊飛倒地（Blowback Knockdown）</strong>，讓你免費蓄風！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕拳（<code>2LP</code>）</strong></td>
+<td style="text-align: center;"><strong>6 幀</strong></td>
+<td style="text-align: center;">6-8</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"><strong>+6</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C（可連按）</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: left;"><strong>6 幀確反與壓起身主力！</strong> 射程比站輕拳長，命中 +6（搭配動力箭步達 <strong>+10</strong>，可接碎角或站重拳）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲輕腳（<code>2LK</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-6</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-2</strong></td>
+<td style="text-align: center;">僅連按取消</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: left;">5 幀下段小技，可連按取消接 <code>5LP</code> 或 <code>5LK</code> 轉入必殺技。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中拳（<code>2MP</code>）</strong></td>
+<td style="text-align: center;"><strong>8 幀</strong></td>
+<td style="text-align: center;">8-10</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;"><strong>SA</strong></td>
+<td style="text-align: center;">700</td>
+<td style="text-align: left;"><strong>8 幀確反與抓差合主力</strong>，僅能取消超必殺技（SA），有氣時確認接 SA1 吹風鷹單發回報極高。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲中腳（<code>2MK</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-11</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-5</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: left;">改版加快為 9 幀的下段牽制，可取消必殺技或動力箭步，但近身被防 -5 會被對手 4～5 幀技確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重拳（<code>2HP</code>）</strong></td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-15</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>-2</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;"><strong>莉莉最強神技！</strong> 持續分兩段延伸（貼身第 10-11 幀、前端第 12-15 幀），被防僅 -2，兼具長距牽制、取消蓄風與對空。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>蹲重腳（<code>2HK</code>）</strong></td>
+<td style="text-align: center;"><strong>11 幀</strong></td>
+<td style="text-align: center;">11-20</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-12</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">雙段掃倒（11-12, 19-20），第 1 段被防時第 2 段視為上段攻擊；被防 -12 大破綻，但懲罰反擊命中為強制倒地。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>噴射嶺（<code>3HP</code>）</strong></td>
+<td style="text-align: center;"><strong>25 幀</strong></td>
+<td style="text-align: center;">25-27</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;"><strong>第 5～19 幀對下段攻擊無敵</strong>，可跨過對手下段牽制突襲，被防 -3 安全。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>碎角（<code>4HP</code>，後重拳）</strong></td>
+<td style="text-align: center;"><strong>14 幀</strong></td>
+<td style="text-align: center;">14-17</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>-2</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;"><strong>近身壓制與高傷連段樞紐！</strong> 命中高達 +5（可目押接 5LP/5LK）、被防僅 -2；<strong>搭配動力箭步命中 +9、懲罰反擊高達 +13 幀</strong>！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大旋轉（<code>j.2HP</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-19</td>
+<td style="text-align: center;">落地3</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">空中特殊技，持續長達 11 幀且<strong>具備繞背（Cross-up）攻擊屬性</strong>，跳入壓起身極強。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>雙箭（<code>j.MP~MP</code>）</strong></td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-12</td>
+<td style="text-align: center;">落地3</td>
+<td style="text-align: center;">浮空</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">僅 SA2</td>
+<td style="text-align: center;">700</td>
+<td style="text-align: left;">空中目標連段，對空命中強制浮空追打，<strong>第二段僅可取消 SA2 空中雷鳥（Soaring Thunderbird）</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>沙漠風暴（<code>6HP~HP~HP</code>）</strong></td>
+<td style="text-align: center;"><strong>16 / 20 / 20</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">24/27/39</td>
+<td style="text-align: center;">+2 / 0 / 擊倒</td>
+<td style="text-align: center;"><strong>-4 / -9 / -23</strong></td>
+<td style="text-align: center;">僅第1段 C</td>
+<td style="text-align: center;">900/500/800</td>
+<td style="text-align: left;">前重拳三段目標連段：第 1 段可取消（被防 -4），第 2 段被防 -9，<strong>第 3 段被防高達 -23 幀大確反</strong>（無風確反連段常用來收尾）。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>二、必殺技（Special Moves）：鷹風、鷹塔、戰斧爆揮、鷹襲與指令投</h2>
+<h3>1. 鷹風（Condor Wind，<code>214P</code>）——集風與揮擊數據</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式版本</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">蓄風幀數與實戰重點（官方 Note）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>輕鷹風（<code>214LP</code>）</strong></td>
+<td style="text-align: center;"><strong>19 幀</strong></td>
+<td style="text-align: center;">19-22</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">SA3</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;"><strong>前 15 幀內放開會揮擊（不加風纏！）</strong>，接在 <code>2HP</code> 後空隙極小可防 DI；<strong>按住不放於第 46、71、90 幀各得 1 層風纏</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中鷹風（<code>214MP</code>）</strong></td>
+<td style="text-align: center;"><strong>23 幀</strong></td>
+<td style="text-align: center;">23-26</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">SA3</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">第 45 幀前放開於攻擊第 1 持續幀<strong>獲得 1 層風纏</strong>，命中 +2 且推距近可接投打二擇；按住於第 46、71、90 幀得風纏。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重鷹風（<code>214HP</code>）</strong></td>
+<td style="text-align: center;"><strong>25 幀</strong></td>
+<td style="text-align: center;">25-28</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">SA3</td>
+<td style="text-align: center;">1100</td>
+<td style="text-align: left;">第 45 幀前放開於攻擊第 1 持續幀<strong>獲得 1 層風纏</strong>並擊倒對手；按住不放於第 46、71、90 幀得風纏。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 鷹風（<code>214PP</code>）</strong></td>
+<td style="text-align: center;"><strong>19 幀</strong></td>
+<td style="text-align: center;">19-22</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-5</strong></td>
+<td style="text-align: center;">SA2</td>
+<td style="text-align: center;">1200</td>
+<td style="text-align: left;">第 25 幀前放開揮擊得 1 層風纏（被防僅 -5）；<strong>按住不放於第 38 幀（全長 40 幀）極速獲得風纏</strong>！</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>💡 <strong>對策重點</strong>：輕／中／重鷹風揮擊被防皆為 <strong><code>-8</code> 幀</strong>（防守方 <code>+8</code> 幀），只要在近距離擋住，務必用 8 幀內的中攻擊（如蹲中拳、站中腳）直接確反！</p>
+</blockquote>
+<h3>2. 鷹塔（Condor Spire，<code>236K</code>）——突進壓制與穿波數據</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式版本</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">空中判定與實戰特性（官方 Note）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>無風 輕／中／重鷹塔（<code>236K</code>）</strong></td>
+<td style="text-align: center;"><strong>17 / 21 / 25</strong></td>
+<td style="text-align: center;">持續 13 幀</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">800/900/1000</td>
+<td style="text-align: left;"><strong>貼身被防皆為 -8 幀！</strong> 但因持續長達 13 幀，若控距在最遠尖端（第 8～13 持續幀）才碰到，會因壓持續變成 <code>-1</code>～<code>+4</code> 安全／正幀。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>無風 OD 鷹塔（<code>236KK</code>）</strong></td>
+<td style="text-align: center;"><strong>15 幀</strong></td>
+<td style="text-align: center;">15-27</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">僅 SA2</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;">無風纏時<strong>沒有飛行道具無敵</strong>，貼身被防同樣是 -8 幀，僅能取消 SA2 雷鳥補救。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【風纏】輕／中／重鷹塔</strong></td>
+<td style="text-align: center;"><strong>9 / 13 / 17</strong></td>
+<td style="text-align: center;">持續 29 幀</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">1000/1100/1200</td>
+<td style="text-align: left;"><strong>消耗 1 層風纏，被防固定 +1 幀正幀壓制！</strong> 發生大幅加快（輕版僅 9 幀可接在輕攻擊後），擋完直接逼對手猜投打二擇。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【風纏】OD 鷹塔（<code>236KK</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-32</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;">僅空中 SA2</td>
+<td style="text-align: center;">1200</td>
+<td style="text-align: left;"><strong>被防高達 +2 幀！且第 9～32 幀對飛行道具無敵</strong>，看到對手發波可直接穿波突進並無縫銜接 5 幀指令投！</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3. 戰斧爆揮（Tomahawk Buster，<code>623P</code>）與 鷹襲（Condor Dive，<code>j.P</code>）</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱與版本</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">無敵幀與特殊性質（官方 Note）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>無風 輕／中／重戰斧爆揮（<code>623P</code>）</strong></td>
+<td style="text-align: center;"><strong>6 / 8 / 10</strong></td>
+<td style="text-align: center;">6-16 等</td>
+<td style="text-align: center;">20+落地12 等</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-27 / -32 / -35</strong></td>
+<td style="text-align: center;">900/1000/1200</td>
+<td style="text-align: left;">分別於第 <strong>1～10 / 1～12 / 1～14 幀對空中打擊與空中飛行道具無敵</strong>；輕版 6 幀發生可被對手標準安全跳壓制。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>無風 OD 戰斧爆揮（<code>623PP</code>）</strong></td>
+<td style="text-align: center;"><strong>6 幀</strong></td>
+<td style="text-align: center;">6-17</td>
+<td style="text-align: center;">27+落地15</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-35</strong></td>
+<td style="text-align: center;">1400</td>
+<td style="text-align: left;"><strong>第 1～10 幀對投技無敵</strong>、第 11～14 幀對空無敵（<strong>對地面打擊無敵為 0！</strong>）；可派生 OD 鷹襲。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【風纏】輕／中／重戰斧爆揮</strong></td>
+<td style="text-align: center;"><strong>4 / 6 / 8</strong></td>
+<td style="text-align: center;">4-16 等</td>
+<td style="text-align: center;">20+落地12 等</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-25 / -30 / -33</strong></td>
+<td style="text-align: center;">1000/1200/1400</td>
+<td style="text-align: left;"><strong>風纏輕版發生僅 <code>4</code> 幀（第 1～10 幀對空無敵）！</strong> 會直接打穿對手針對 5～6 幀無敵技設計的安全跳！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【風纏】OD 戰斧爆揮（<code>623PP</code>）</strong></td>
+<td style="text-align: center;"><strong>4 幀</strong></td>
+<td style="text-align: center;">4-17</td>
+<td style="text-align: center;">27+落地15</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-35</strong></td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: left;"><strong>發生 4 幀，第 1～10 幀同時對空無敵＋對投技無敵！</strong> 讀到對手跳入或投技時可瞬間反制。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>普通／OD 鷹襲（<code>j.P</code> / <code>j.PP</code>）</strong></td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;">12-落地</td>
+<td style="text-align: center;">落地 24</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-24</strong></td>
+<td style="text-align: center;">800 / 1400</td>
+<td style="text-align: left;">僅垂直跳或前跳可用，具繞背屬性；被防基準 <strong>-24 幀</strong>，蹲防擋住必吃確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>【風纏】普通／OD 鷹襲</strong></td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;">12-落地</td>
+<td style="text-align: center;">落地 24</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-23</strong></td>
+<td style="text-align: center;">1000 / 1600</td>
+<td style="text-align: left;">被防基準 <strong>-23 幀</strong>；命中或被防時若身上還有風纏，可再消耗 1 層風纏追加一段鷹襲。</td>
+</tr>
+</tbody>
+</table></div>
+<h3>4. 墨西哥颱風（Mexican Typhoon，<code>360+P</code>，指令投／駒投）与普通投</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱與版本</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">揮空硬直</th>
+<th style="text-align: center;">基礎傷害</th>
+<th style="text-align: center;">懲罰反擊（PC）傷害</th>
+<th style="text-align: left;">實戰特性與現代模式差異</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>輕 墨西哥颱風（<code>360+LP</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;"><strong>53 幀</strong></td>
+<td style="text-align: center;"><strong>2000</strong></td>
+<td style="text-align: center;"><strong>2300</strong></td>
+<td style="text-align: left;"><strong>發生固定 5 幀！</strong> 輕版抓取距離最遠，適合中距離偷抓或偏遠的 -5 確反。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中 墨西哥颱風（<code>360+MP</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;"><strong>53 幀</strong></td>
+<td style="text-align: center;"><strong>2400</strong></td>
+<td style="text-align: center;"><strong>2760</strong></td>
+<td style="text-align: left;">距離與傷害居中。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重 墨西哥颱風（<code>360+HP</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;"><strong>53 幀</strong></td>
+<td style="text-align: center;"><strong>2800</strong></td>
+<td style="text-align: center;"><strong>3220</strong></td>
+<td style="text-align: left;">貼身二擇與 -5 幀確反首選！現代操作一鍵簡易輸入時，懲罰反擊傷害為 <strong>2576</strong>（手搓指令同為 3220）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 墨西哥颱風（<code>360+PP</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;"><strong>53 幀</strong></td>
+<td style="text-align: center;"><strong>2900</strong></td>
+<td style="text-align: center;"><strong>3350</strong></td>
+<td style="text-align: left;">現代操作一鍵簡易輸入時，懲罰反擊傷害為 <strong>2680</strong>（手搓指令為 3350）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>峽谷摔（前摔 <code>LP+LK</code>）／懸崖摔（後摔 <code>4LP+LK</code>）</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;"><strong>23 幀</strong></td>
+<td style="text-align: center;"><strong>1200</strong></td>
+<td style="text-align: center;"><strong>2040</strong></td>
+<td style="text-align: left;">懲罰反擊投造成 2040 傷害、增加 4000 SA 量表並轉為強制倒地（Hard Knockdown）。</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>三、超必殺技（Super Arts）與共通系統數據</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式名稱（指令）</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">官方無敵幀與補正規則</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SA1 吹風鷹（<code>236236P</code>）</strong></td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-47</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-36</strong></td>
+<td style="text-align: center;"><strong>2200</strong></td>
+<td style="text-align: left;"><strong>第 1～11 幀對打擊與投技無敵</strong>（對飛行道具無無敵），最低保證傷害 30%，改版加快為 10 幀後可作為可靠的起床凹招與 <code>2MP</code> 確認技。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 雷鳥（<code>236236K</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-41</td>
+<td style="text-align: center;">39+落地24</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;"><strong>-60（風纏 -59）</strong></td>
+<td style="text-align: center;"><strong>2600（風纏 2900）</strong></td>
+<td style="text-align: left;"><strong>第 1～12 幀完全無敵</strong>、第 13～41 幀對飛行道具無敵，最低保證傷害 40%；可由 <code>OD 鷹塔</code> 取消銜接。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA2 空中雷鳥（<code>j.236236K</code>）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-41</td>
+<td style="text-align: center;">落地 25</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>2600（風纏 2900）</strong></td>
+<td style="text-align: left;"><strong>第 1～12 幀完全無敵</strong>、第 13～41 幀對飛行道具無敵；可由空中目標連段 <code>雙箭（j.MP~MP）</code> 或 <code>風纏 OD 鷹塔</code> 取消銜接。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SA3 / CA 怒火颱風（<code>214214P</code>）</strong></td>
+<td style="text-align: center;"><strong>7 幀</strong></td>
+<td style="text-align: center;">7-8</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">擊倒</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>4500（CA 5000）</strong></td>
+<td style="text-align: left;"><strong>第 1～8 幀完全無敵的指令投超必殺！</strong> 無法防禦也無法撥擋，最低保證傷害 50%（由必殺技取消時立即套用 20% 額外補正）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>前墊步 / 後墊步</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>21 / 24 幀</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">前墊步總長 21 幀；後墊步總長 24 幀（第 1～15 幀對投技無敵）。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>衍生情境與壓起身關鍵數據（依官方公式驗算）</strong>：</li>
+<li><strong>動力箭步（綠衝）＋碎角（<code>4HP</code>）</strong>：基礎命中 <code>+5</code> 幀，經動力箭步加成為 <strong><code>+9</code> 幀</strong>（可接 <code>2MP</code> 等 8～9 幀技）；若打出<strong>懲罰反擊（Punish Counter）</strong>再加 <code>+4</code> 幀，高達 <strong><code>+13</code> 幀</strong>，可直接目押 <code>站重拳（5HP，10 幀）</code> 或現代模式 <code>輔助重攻擊</code> 接必殺技與 SA1（一套約 4000 傷害）！</li>
+<li><strong>起跳幀（Pre-jump Frames）</strong>：莉莉與桑吉爾夫同為 <strong>5 幀</strong>（一般角色為 4 幀），這讓莉莉在起身輸入 <code>360</code> 指令投轉到 <code>8</code>（上）方向時，有高達 5 幀的起跳窗口可施展「跳躍取消指令投（Jump Cancel SPD）」，利用離地前的投無敵吃掉對手的普通投或指令投並反抓！</li>
+<li><strong>無風纏 OD 墨西哥颱風命中後壓起身</strong>：擊倒後有利達 <strong><code>+42</code> 幀</strong>，原地前跳攻擊即可對發生 6～7 幀以下的無敵技形成標準<strong>安全跳（Safe Jump）</strong>。</li>
+<li><strong>輕鷹塔命中後接「前墊步（21 幀）→ 生動力箭步」</strong>：實戰壓起身抵達對手身邊時，打擊或投技剛好壓在對手起身瞬間，形成實戰極強的「碎角（<code>4HP</code>）vs 墨西哥颱風（<code>360+P</code>）」正幀二擇。</li>
+</ul>
+<hr />
+<h2>實戰情境與流派差異提醒</h2>
+<ol>
+<li><strong>無風鷹塔被防「<code>-8</code> 確反 vs 尖端正幀」的距離差異</strong>：
+   * 許多玩家困惑「為什麼有時擋住無風鷹塔能確反，有時卻打不到甚至被莉莉搶贏？」——官方數據顯示無風鷹塔第 1 持續幀被防為 <strong><code>-8</code> 幀</strong>，但因為它的持續時間長達 <strong>13 幀</strong>（例如輕版為第 17～29 幀），若莉莉從遠距離起跳、剛好用最後幾個持續幀擦到你的防禦（Meaty 壓持續最多可加 <code>13 - 1 = 12</code> 幀），不利幀會大幅縮小甚至轉為 <code>+1</code>～<code>+4</code> 正幀！因此<strong>中近距離擋住無風鷹塔必確反，最遠尖端擋住則切勿盲目伸短手搶招</strong>。</li>
+<li><strong>有風戰斧爆揮（<code>4</code> 幀）對安全跳的破壞力</strong>：
+   * 對戰莉莉壓起身時，務必先看她身上的風纏圖示：當她<strong>沒有風纏</strong>時，輕／OD 戰斧爆揮為 <strong>6 幀</strong>發生，你的標準安全跳可以安全壓制；但當她<strong>有風纏</strong>時，風纏輕／OD 戰斧爆揮發生加快為 <strong>4 幀</strong>，會直接打穿 +41～+42 幀的標準安全跳！此時建議改用「空跳落地防禦」騙她揮空再打最大確反。</li>
+<li><strong>經典操作（Classic）與現代操作（Modern）的指令投取捨</strong>：
+   * 現代莉莉擁有極具威脅的一鍵指令投，但在懲罰反擊時，一鍵簡易重指令投傷害為 <strong>2576</strong>，手搓 <code>360+HP</code> 則高達 <strong>3220</strong>（差了 644 點血量！）。建議現代模式玩家在立回抓突進或起身亂動時用一鍵求穩，而在擋住大破綻招式（如對手昇龍或超必殺揮空）打確反時，務必手搓 <code>360+HP / PP</code> 拿滿完整傷害。</li>
+</ol><div class="nav"><span><a href="c02-11-kimberly.html">← C02-11 金伯莉（Kimberly）角色招式幀數數據</a></span><span style="text-align:right"><a href="c02-11-luke.html">C02-11 盧克（Luke）角色招式幀數數據 →</a></span></div></div></body></html>
