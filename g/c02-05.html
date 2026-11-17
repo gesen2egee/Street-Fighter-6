@@ -22,38 +22,39 @@
 <div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-05</span><h1>壓制、安全跳與讀招差合</h1></header><p>進攻打不穿對面、每次起身都被凹昇龍，或者在地面立回一直被抓揮空？這篇把 SF6 高階對戰最核心的四件事拆開來講：<strong>怎麼製造「幀數陷阱」讓人亂按就爆血、怎麼做「安全跳」白嫖起攻又能防住對面凹招、怎麼在貼身玩延遲拆投／模糊防禦、以及怎麼在地面抓人揮空（差合）</strong>。</p>
 <blockquote>
 <p><strong>⚡ 一分鐘懶人包</strong><br />
-- <strong>壓制與幀數陷阱（Frame Trap）</strong>：絕大多數輕攻擊被防後是負幀（例如 <code>-1</code>、<code>-3</code>）。當你有 <code>+1～+3</code> 有利幀時故意留 <strong><code>1～2 幀</code> 空隙</strong> 出下一招，對手想按 <code>4 幀</code> 輕拳搶招就會剛好撞上你的攻擊吃康！<br />
-- <strong>貼身二擇門檻</strong>：在 <strong><code>+2</code> ～ <code>+5</code></strong> 且距離夠近時，投技與打擊二擇成立；綠衝接輕拳（約 <code>+3</code>）後直接走去摔也能抓掉對手搶招。<br />
-- <strong>安全跳（Safe Jump）標準數字</strong>：主流標準是倒地後 <strong><code>+42 幀</code></strong>（春麗等少數角色需 <code>45～47 幀</code>，如 <code>46 幀</code> 可防所有無敵技）；<code>+44</code> 通常已經不是真安全跳，會被昇龍打下來！<br />
+- <strong>壓制與幀數陷阱（Frame Trap）</strong>：絕大多數輕攻擊被防後是負幀（例如肯的站輕拳 <code>-1</code>、蹲輕腳 <code>-3</code>）。當你有 <code>+1～+3</code> 有利幀時故意留 <strong><code>1～2 幀</code> 空隙</strong> 出下一招，對手想按 <code>4 幀</code> 輕拳搶招就會剛好撞上你的攻擊，吃到截擊（Counter Hit，打康）！<br />
+- <strong>貼身二擇門檻</strong>：在 <strong><code>+2</code> ～ <code>+5</code></strong> 且距離夠近時，投技（普通投 <code>5 幀</code> 發生）與打擊二擇成立；動力箭步（Drive Rush，綠衝）後的輕拳被防約 <code>+3</code>（例：肯站輕拳平常被防 <code>-1</code>，綠衝後 <code>-1 + 4 = +3</code>），直接走去摔也能抓掉對手搶招。<br />
+- <strong>安全跳（Safe Jump）標準數字</strong>：主流標準是倒地後 <strong><code>+42 幀</code></strong>（桑吉爾夫、莉莉需 <code>+43</code>，春麗等少數角色需 <code>45～47 幀</code>，如 <code>46 幀</code> 可防所有無敵技）；<code>+44</code> 通常已經不是真安全跳，會被昇龍打下來！<br />
 - <strong>幀殺（消費幀數）</strong>：擊倒後靠「空揮輕攻擊、前墊步」把多餘的幀數精準消耗掉，讓下一招或跳入剛好重疊在對手起身第 1 幀。<br />
-- <strong>差合（Whiff Punish）兩種打法</strong>：「猜的差合」（預先拉距離等一下再按重攻擊抓衝刺）與「看的差合」（盯著對手伸手揮空瞬間再按）。</p>
+- <strong>差合（Whiff Punish）兩種打法</strong>：「猜的差合」（預先拉距離等一下再按重攻擊抓衝刺）與「看的差合」（盯著對手伸手揮空瞬間再按）；打在對手收招硬直上就是懲罰反擊（Punish Counter，確反）。</p>
 </blockquote>
 <hr />
 <h2>一、壓制與幀數陷阱：怎麼讓對手「按鍵就死」？</h2>
 <h3>1. 為什麼自己明明在壓制卻一直被打斷？</h3>
 <ul>
-<li>大部分的輕攻擊（2LP / 5LK）被防禦後其實是<strong>負幀</strong>（例如連點三下蹲輕拳後通常是 <code>-3</code>）。如果你點完輕拳還想硬走過去摔或按中攻擊，對手只要按 <code>4 幀</code> 輕拳就會直接把你打斷。</li>
-<li><strong>反過來看</strong>：只有當你確定自己是 <strong>有利幀（例如 <code>+1</code> 到 <code>+3</code>）</strong>，或是靠<strong>綠衝</strong>把原本負幀的招式變成正幀時，才輪到你做幀數陷阱。</li>
+<li>大部分的輕攻擊（2LP / 5LK）被防禦後其實是<strong>負幀</strong>（官方數據例：肯站輕拳 <code>-1</code>、蹲輕拳 <code>-1</code>、蹲輕腳 <code>-3</code>；舞站輕拳 <code>-2</code>；維加站輕拳 <code>-3</code>）。如果你點完輕拳還想硬走過去摔或按中攻擊，對手只要按 <code>4 幀</code> 輕拳就會直接把你打斷（多數角色最快的輕拳是 <code>4 幀</code>，部分角色如維加站輕拳為 <code>5 幀</code>）。</li>
+<li><strong>反過來看</strong>：只有當你確定自己是 <strong>有利幀（例如 <code>+1</code> 到 <code>+3</code>）</strong>，或是靠<strong>動力箭步（綠衝）</strong>把原本負幀的招式變成正幀時，才輪到你做幀數陷阱。綠衝的加值是固定的：經由動力箭步發動的地面一般技／特殊技，命中與被防都 <strong><code>+4</code></strong>（例：被防 <code>-1</code> 的招，綠衝後被防 <code>+3</code>）。</li>
 </ul>
 <h3>2. 幀數陷阱（Frame Trap）的原理</h3>
 <ul>
 <li><strong>情境</strong>：對手防住你的攻擊後，你處於 <code>+2</code> 或 <code>+3</code>。</li>
 <li><strong>怎麼做</strong>：故意出一招發生速度「比連防慢 1～2 幀」的攻擊（例如留出 <code>1～2 幀</code> 的空隙）。但注意延遲空隙不能抓太大——若刻意延遲導致空隙來到 <strong><code>3 幀</code> 以上</strong>，第二下以後就可能直接輸給對手的 <code>4 幀</code> 輕拳搶招！</li>
-<li><strong>為什麼有效</strong>：如果對手老實防禦，什麼事都不會發生；但如果對手以為「輪到我了」而按最快的 <code>4 幀</code> 輕拳想搶招，你的攻擊會先打中他的起手，直接變成 <strong>Counter Hit（打康）</strong> 讓你接上平常接不到的高傷連段！</li>
-<li><strong>Tick Throw（輕攻擊被防後直接投）</strong>：當你的輕攻擊被防禦後仍保有正幀有利時，對手不只無法用連按 <code>4 幀</code> 弱拳搶招打斷投技，也無法藉由跳躍逃脫（輕攻擊會直接打斷起跳嘗試）。</li>
+<li><strong>為什麼有效</strong>：如果對手老實防禦，什麼事都不會發生；但如果對手以為「輪到我了」而按最快的 <code>4 幀</code> 輕拳想搶招，你的攻擊會先打中他的起手，直接變成 <strong>截擊（Counter Hit，打康）</strong>，命中有利幀再 <strong><code>+2</code></strong>、傷害 <strong><code>120%</code></strong>，讓你接上平常接不到的高傷連段！</li>
+<li><strong>點摔（Tick Throw，輕攻擊被防後直接投）</strong>：當你的輕攻擊被防禦後仍保有正幀有利時，對手不只無法用連按 <code>4 幀</code> 弱拳搶招打斷投技，也無法藉由跳躍逃脫（輕攻擊會直接打斷起跳嘗試）。普通投官方為 <code>5 幀</code> 發生：有利只有 <code>+1</code> 時，對手 <code>4 幀</code> 輕拳會跟你的投同時落在第 5 幀，打擊會贏；至少 <code>+2</code> 起投才站得住，這也是「貼身二擇門檻 <code>+2</code>」的由來。</li>
 <li><strong>常見踩雷</strong>：以為「只要我是負幀就絕對不能按」？其實不一定！如果對方那招把你<strong>推得很遠</strong>（距離陷阱），對方的快招揮過來根本碰不到你，反而是你的長手招式可以反抓他的揮空。</li>
 </ul>
 <hr />
 <h2>二、起身壓制（Okizeme）與幀殺技巧</h2>
-<h3>1. 怎麼做到「一幀不差」的重疊壓制（Meaty）？</h3>
+<h3>1. 怎麼做到「一幀不差」的重疊壓制（壓持續，Meaty）？</h3>
 <ul>
-<li>靠感覺目押很容易太早（打空）或太晚（被對面 <code>4 幀</code> 輕拳搶贏）。高手都是靠<strong>「幀殺（消費幀數）」</strong>來對齊時間：</li>
-<li>例如對手倒地你有 <code>+27</code> 幀，如果直接走過去不好抓時機，就先「空揮一下輕拳（總動作 14 幀）」或「前墊步一次（約 19 幀）」，把多餘的幀數消耗掉，剩下的 <code>+5</code> 剛好讓你穩穩壓出招式或投技！</li>
-<li><strong>持續重疊（Meaty）的額外好處</strong>：如果讓攻擊的「持續幀後半段」剛好砸在對手起身那 1 幀上，你收回的時間沒變但對手防禦硬直照算，這招打在防禦上會額外多賺優勢（有時能多 <code>+7～+10</code> 幀以上，原本 <code>-2</code> 的招直接變正幀！）。而且像大腳掃堂腿（Sweep）這類<strong>無法向後受身的強制倒地（Hard Knockdown）</strong>，就算在場中也能靠固定設置做出持續幀重疊；相對地，一般投技後對手可以向後受身拉開距離，唯有透過 Parry 或破綻打出的 <strong>Punish Counter 投技</strong>會強制對手原地受身，壓起身更穩。</li>
+<li>靠感覺目押很容易太早（打空）或太晚（被對面 <code>4 幀</code> 輕拳搶贏）。高手都是靠<strong>「幀殺（消費幀數）」</strong>來對齊時間，算法就是「倒地有利幀 − 你消耗掉的幀數 = 剩下的幀數」：</li>
+<li>例如對手倒地你有 <code>+27</code> 幀，如果直接走過去不好抓時機，就先「空揮一下輕攻擊」或「前墊步一次」把多餘的幀數消耗掉。以肯為例，空揮蹲輕拳總動作 <code>14 幀</code>（<code>27 − 14 = 13</code>），前墊步總動作 <code>19 幀</code>（各角色不同）；每消耗一次就在腦中扣掉，剩下的幀數剛好對上你要壓出招式或投技的發生幀，就穩了（實際倒地有利幀隨連段與角色而異，請以訓練模式實測）。</li>
+<li><strong>壓持續（Meaty）的額外好處</strong>：如果讓攻擊的「持續幀後半段」剛好砸在對手起身那 1 幀上，你收回的時間沒變但對手防禦硬直照算，這招打在防禦上會額外多賺優勢。官方公式是：第 <code>k</code> 個持續幀命中或被防，比第 1 持續幀多 <code>(k − 1)</code> 幀，最多多 <code>持續幀數 − 1</code> 幀。例：肯站重拳持續 <code>10-14</code>（共 5 幀），平常被防 <code>-2</code>，壓在最後一個持續幀上最多多 <code>+4</code>，變成 <code>+2</code>；持續幀越長的招，壓持續賺得越多。</li>
+<li><strong>強制倒地與起身時機</strong>：蹲重腳這類<strong>大腳掃堂腿（Sweep）</strong> 一般命中只是普通擊倒，對手還能向後受身拉開距離；但<strong>抓到懲罰反擊時會變成強制倒地（Hard Knockdown）</strong>（例：肯、金伯莉蹲重腳官方備註），起身時機固定、不能受身，壓持續更穩。同理，普通投（前摔／後摔）打到懲罰反擊時傷害 <code>2040</code>、並強制倒地不能受身；常見的製造方式是對手撥擋收招（動力撥擋收招全程處於懲罰反擊狀態）或被抓到破綻時投下去。一般投技命中則對手可向後受身拉開距離，要看視距離調整。</li>
 </ul>
 <h3>2. 貼身二擇與延遲防禦（Fuzzy）</h3>
 <ul>
-<li><strong>角落 <code>+4</code> / <code>+5</code> 壓投</strong>：在角落你有 <code>+4</code> 或 <code>+5</code> 時出投，不只能抓防禦，有時連對手的後墊步都能在特定情況下壓制。</li>
+<li><strong>角落 <code>+4</code> / <code>+5</code> 壓投</strong>：在角落你有 <code>+4</code> 或 <code>+5</code> 時出投，不只能抓防禦，有時連對手的後墊步都能在特定情況下壓制。後墊步官方是第 <code>1～15</code> 幀對投技無敵，所以起身後墊步躲投很常見。場中與角落的起身距離不同，此類套路建議角落使用，場中視距離調整。</li>
 <li><strong>延遲拆投（Delay Tech）的 <code>3～7 幀</code> 節奏攻防</strong>：防守方在起身時稍微慢個 <code>3～7 幀</code> 再按投技或輕拳，可以用來同時防住「直接壓起身打擊」並拆掉「直接投」（常見穩健延遲約 <code>5～7 幀</code>，較早的延遲拆投約 <code>3 幀</code>）。但這也是互相讀招的心理戰：</li>
 <li>面對 <strong><code>+3 幀</code></strong> 貼身有利時，防守方若用 <code>3 幀</code> 延遲拆投雖能躲開投技，但可能會被 <code>+3</code> 後的特定中攻擊壓潰或相殺吃虧，往往必須再晚一點延遲到 <code>4 幀</code> 以上。</li>
 <li><strong>跳入著地「最速摔」vs 模糊輕拳</strong>：投技發生為 <code>5 幀</code>，因此跳入著地後想直接搶「最速摔」時，反而會輸給時機精準的 <strong><code>4 幀</code> 模糊輕拳</strong>（甚至部分 <code>5～7 幀</code> 招式也可能打贏）。</li>
@@ -65,24 +66,24 @@
 <h3>1. 什麼是安全跳？</h3>
 <ul>
 <li><strong>情境</strong>：你把對手擊倒，趁對手還在地上爬起來的時候前跳並按跳攻擊。</li>
-<li><strong>神奇效果</strong>：如果對手什麼都不按或想搶普通技，你的跳攻擊剛好壓在他起身第 1 幀，接整套連段；<strong>如果對手起身直接凹無敵 OD 昇龍或 SA</strong>，你的角色剛好在跳攻擊揮出去之前就「落地並拉好防禦」，穩穩擋住對手的無敵技，反打一套最大的 <strong>懲罰反擊（Punish Counter）</strong>！</li>
+<li><strong>神奇效果</strong>：如果對手什麼都不按或想搶普通技，你的跳攻擊剛好壓在他起身第 1 幀，接整套連段；<strong>如果對手起身直接凹無敵極限技（OD）昇龍或超必殺技（SA）</strong>，你的角色剛好在跳攻擊揮出去之前就「落地並拉好防禦」，穩穩擋住對手的無敵技，反打一套最大的 <strong>懲罰反擊（Punish Counter，確反）</strong>！</li>
 </ul>
 <h3>2. 必記的安全跳數字與底層原理</h3>
 <ul>
 <li><strong>為什麼是 <code>+42 幀</code>？（Trip Guard 與落地硬直原理）</strong>：</li>
-<li>所有普通跳躍都有 <strong><code>3 幀</code> 落地硬直（Landing Recovery）</strong>；如果在空中按了普通攻擊或空摔，落地時就會放棄立即防禦能力（失去 Trip Guard），在這 <code>3 幀</code> 落地硬直期間被打中會直接吃 <strong>Punish Counter</strong>！</li>
+<li>所有普通跳躍的跳攻擊落地後都有 <strong><code>3 幀</code> 落地硬直（Landing Recovery）</strong>（官方跳攻擊硬直皆標為「落地後 3 幀」）；如果在空中按了普通攻擊或空摔，落地時就會放棄立即防禦能力（失去 Trip Guard），在這 <code>3 幀</code> 落地硬直期間被打中會直接吃<strong>懲罰反擊</strong>！</li>
 <li>多數角色的標準跳躍是 <code>4 幀</code> 起跳前準備（Pre-jump）＋ <code>38 幀</code> 滯空＝<code>42 幀</code>（<strong>桑吉爾夫與莉莉</strong>多 <code>1 幀</code>，起跳前準備為 <code>5 幀</code>），空中出招多 <code>1 幀</code> 有效判定＝<code>43 幀</code>，因此需要 <strong><code>+42 幀</code></strong> 擊倒來讓最後 1 幀有效判定剛好壓在對手起身第 1 幀。</li>
-<li><strong>易受擊空檔只有 <code>4 幀</code></strong>：<code>1 幀</code> 攻擊有效 ＋ <code>3 幀</code> 落地硬直 ＝ <code>4 幀</code>！這就是為什麼標準安全跳能安全防住發生 <strong><code>5 幀</code> 或更慢</strong> 的無敵逆向技；也因此<strong>在 SF6 中，發生 <code>4 幀</code> 或更快的無敵技（例如莉莉有風纏時的 4 幀昇龍）無法被安全跳</strong>！</li>
-<li><strong>對手無敵技較慢時容錯更大</strong>：若對手最快的無敵技發生為 <code>6 幀</code> 或 <code>7 幀</code>（如迪傑所有對空技最快為 6 幀以上，或布蘭卡部分對空無敵技），有時 <strong><code>+41 幀</code></strong> 擊倒（如豪鬼中旋風打完）也能成立「6 幀安全跳」（對路克 5 幀昇龍則會被打）；此外安全跳本身被對手防禦或 Parry 後通常是安全的（例如 <code>-3 幀</code>，即使被完美 Parry 也僅對面 <code>+2</code> 幀、無確定反擊）。</li>
-<li><strong>肯（Ken）TC 跑旋風 <code>+43</code> 幀</strong>：肯的目標連段跑旋風打完為 <code>+43</code> 幀，若馬上前跳出跳攻擊會打不到人，必須手動體感延遲 1 幀起跳才成為真安全跳。</li>
-<li><strong>空跳搶招不切實際對策</strong>：空跳雖總長 45 幀，但最後 2 幀落地硬直中可預先輸入攻擊（若落地接 4 幀輕攻，判定發生在第 47 幀），理論上防禦方可用起身延遲 1 幀按 4 幀輕攻打斷，但實戰風險極高，仍以站防為主。</li>
+<li><strong>易受擊空檔只有 <code>4 幀</code></strong>：<code>1 幀</code> 攻擊有效 ＋ <code>3 幀</code> 落地硬直 ＝ <code>4 幀</code>！這就是為什麼標準安全跳能安全防住發生 <strong><code>5 幀</code> 或更慢</strong> 的無敵逆向技（例：肯輕昇龍拳發生 <code>5 幀</code>、極限昇龍拳 <code>6 幀</code>）；也因此<strong>在 SF6 中，發生 <code>4 幀</code> 或更快的無敵技無法被安全跳</strong>，例如莉莉有風纏（Windclad）時的極限戰斧爆揮（OD Tomahawk Buster）官方發生 <code>4 幀</code>！</li>
+<li><strong>對手無敵技較慢時容錯更大</strong>：若對手最快的無敵技發生為 <code>6 幀</code> 或 <code>7 幀</code>（如迪傑所有對空技最快為 6 幀以上，或布蘭卡部分對空無敵技），有時 <strong><code>+41 幀</code></strong> 擊倒（如豪鬼中旋風打完）也能成立「6 幀安全跳」（對路克 5 幀昇龍則會被打）；此外安全跳本身被對手防禦或撥擋（Parry）後通常是安全的（例如 <code>-3 幀</code>，即使被完美撥擋也僅對面 <code>+2</code> 幀、無確定反擊）。</li>
+<li><strong>肯（Ken）目標連段（TC）接跑旋風（奮迅腳取消龍捲旋風腳）<code>+43</code> 幀</strong>：肯的目標連段跑旋風打完為 <code>+43</code> 幀，若馬上前跳出跳攻擊會打不到人，必須手動體感延遲 1 幀起跳才成為真安全跳。</li>
+<li><strong>空跳搶招不切實際對策</strong>：空跳雖總長 45 幀，但最後 2 幀落地硬直中可預先輸入攻擊（若落地接 4 幀輕攻，判定發生在第 47 幀），理論上防禦方可用起身延遲 1 幀按 4 幀輕攻打斷，但實戰風險極高，仍以站防為主（此段幀數為影片說法，詳見文末提醒）。</li>
 <li><strong>春麗等特殊角色</strong>：因為跳躍滯空/落地體積與角色無敵發生幀差異，春麗有時需要 <strong><code>45～47 幀</code></strong>（實測常提到 <code>46 幀</code> 能防無敵、<code>45 幀</code> 會輸給 5 幀無敵技、<code>47 幀</code> 跳攻擊會揮空）。</li>
-<li><strong>常見踩雷</strong>：<strong><code>+44 幀</code></strong> 在大多數標準設定下「已經不是真安全跳」（落地來不及擋無敵技，或壓不到對面搶招）。另外像<strong>豪鬼</strong>有 <code>+43</code> 調整後變成 <code>+42</code> 的案例，<strong>嘉米</strong>標準是 <code>+42</code>，<strong>桑吉爾夫</strong>起跳慢 1 幀需 <code>+43</code> 幀；每個角色的特定套路都要在訓練模式錄對面「起身凹 OD 昇龍」實際測試過才算數！</li>
+<li><strong>常見踩雷</strong>：<strong><code>+44 幀</code></strong> 在大多數標準設定下「已經不是真安全跳」（落地來不及擋無敵技，或壓不到對面搶招）。另外像<strong>豪鬼</strong>有 <code>+43</code> 調整後變成 <code>+42</code> 的案例，<strong>嘉米</strong>標準是 <code>+42</code>，<strong>桑吉爾夫</strong>起跳慢 1 幀需 <code>+43</code> 幀；每個角色的特定套路都要在訓練模式錄對面「起身凹極限昇龍」實際測試過才算數！場中與角落的起身距離不同，跳入落點不一樣，建議角落使用，場中視距離調整。</li>
 </ul>
 <hr />
 <h2>四、讀招與地面差合（Whiff Punish）</h2>
 <ul>
-<li><strong>猜的差合（預判型）</strong>：自己先算好距離（站在對方中/重拳剛好揮不到的邊緣），抓準對面想摸你的節奏，<strong>稍微延遲後直接按站重腳（5HK）或長距離中腳</strong>。只要對方真的伸手揮空，你的招就剛好踢在他還沒收回來的手腳上（打出懲罰反擊）。</li>
+<li><strong>猜的差合（預判型）</strong>：自己先算好距離（站在對方中/重拳剛好揮不到的邊緣），抓準對面想摸你的節奏，<strong>稍微延遲後直接按站重腳（5HK）或長距離中腳</strong>。只要對方真的伸手揮空，你的招就剛好踢在他還沒收回來的手腳上（打出懲罰反擊，一般命中有利幀 <code>+4</code>、傷害 <code>120%</code>）。</li>
 <li><strong>看的差合（視覺反應型）</strong>：專心盯著對方在立回時常按的長手招（例如 2MK、5HP），<strong>看到他伸手揮空的瞬間</strong>才按下去抓收招硬直。這種對眼睛與手速要求極高，通常目標招式總動作要夠長才看得清楚。</li>
 </ul>
 <hr />
@@ -90,7 +91,7 @@
 <ul>
 <li><strong>A.K.I.（阿鬼）</strong>：利用毒泡與重攻擊製造遠距離有利幀，搭配 <code>42 幀</code> 類型的安全跳套路與輕/中段壓制；注意部分招式防禦後的推開距離較遠，別在摸不到的地方硬摔。</li>
 <li><strong>Akuma（豪鬼）</strong>：百鬼襲派生、空氣功與 <code>42 幀</code>（部分 <code>+43</code> 調整後）安全跳極強；站重拳／前重拳搭配綠衝壓制很容易製造幀數陷阱，但防禦方要小心別被他的假空檔騙去按慢招。</li>
-<li><strong>Blanka（布蘭卡）</strong>：布蘭卡人偶（娃娃）設置配合重攻擊與電氣球壓制；注意重電氣球被防禦後的距離判斷，部分距離下多數角色難以懲罰（見待驗證提醒）。</li>
+<li><strong>Blanka（布蘭卡）</strong>：布蘭卡人偶（娃娃）設置配合重攻擊與電氣球壓制；注意重電氣球被防禦後的距離判斷，部分距離下多數角色難以懲罰（見文末提醒）。</li>
 <li><strong>Cammy（嘉米）</strong>：旋風箭與大踢擊倒後常能接 <strong><code>42 幀</code> 安全跳</strong>，落地後再用輕拳連打或延遲走動摔打二擇，是全遊戲最強的貼身壓制角色之一。</li>
 <li><strong>Chun-Li（春麗）</strong>：行雲流水架勢中段與下段派生節奏快；安全跳門檻較特別（需留意 <strong><code>45～47 幀</code></strong> 區間）；立回蹲中腳跟氣功的節奏適合練習看畫面差合。</li>
 <li><strong>Dee Jay（迪傑）</strong>：假動作（假波、假突進）專門用來騙對手的預判差合與搶招；綠衝貼身距離極遠，很容易瞬間進入投/打二擇。</li>
@@ -100,26 +101,26 @@
 <li><strong>Guile（蓋爾）</strong>：發完音速手刀跟進壓制，或靠極快的站中拳（+Frames）做貼身幀數陷阱；注意他的站重腳、蹲中腳都是立回抓差合的利器。</li>
 <li><strong>Jamie（傑米）</strong>：<strong>「流醉拳／流水拳」三段派生</strong>是新手最容易踩雷的點！第 1 段被防後若你急著用 <code>6 幀</code> 招反擊，會直接撞上第 2 段；第 2 段被防後還有第 3 段！<strong>實戰原則：看到第 2 段出來就先預設第 3 段會來、繼續守住，等守完第 3 段再給他最大確反！</strong> 另若在版邊附近，一級超必殺推進角落後的有利幀比普通招更好壓制。</li>
 <li><strong>JP</strong>：幽靈被防住對 JP 有利；當身（Amnesia）若在角落起身直接空放沒被抓到，某些角色（如肯）能給出大確反。中距離別亂放波，小心他地刺或空間門設置；但看到他放長硬直地刺時可以直接預判前跳懲罰。</li>
-<li><strong>Juri（韓蛛俐）</strong>：綠衝後接中攻擊容易形成幀數陷阱，但被防時若對面凹無敵會切入，高段位建議綠衝後接近輕拳確認安全；風破刃（集風）消費可製造 <strong><code>+3</code> 幀</strong>（可投）或 <strong><code>+4</code> 幀</strong>（可投但注意無敵技反攻）；歲破衝（地面波）在最遠距離配合重攻擊讓她有很大優勢，前中腳／中段被防 <code>+1</code> 時小心用快招硬拚，會跟她的 5 幀中繼相打讓她賺更多優勢。</li>
-<li><strong>Ken（肯）</strong>：奮迅腳（跑步）急停被防大多是負幀（例如接蹲輕拳急停 <code>-3</code> 剛好沒人能確反，是安全的心理戰），重龍尾腳被防 <strong><code>+1</code> 幀</strong> 之後接 4 幀輕拳必形成幀數陷阱！另外迅雷腳派生下段/中段需要用防禦切換或 4 幀搶招時機應對；顎撥雙連（中拳→重拳）與綠衝 2MK→2MP 也是經典幀數陷阱起點。</li>
-<li><strong>Kimberly（金伯莉）</strong>：跑步急停為 <strong><code>-4</code> 幀</strong>（可被 4 幀輕拳反擊）；肘落被防她有利（可接 4 幀防搶或 <code>+2</code> 投）；掃倒第 1 段後只有 <code>2 幀</code> 空隙，按 <code>4 幀</code> 輕拳會輸；注意她有很多「偽連攜」（例如扭轉墜落有空隙可用快速技切入，但會被蹲輕連打壓掉）。</li>
-<li><strong>Lily（莉莉）</strong>：近身普通鷹塔（突進）被防 <strong><code>+1</code></strong>，需要 <code>+2</code> 才能穩穩連投（所以 <code>+1</code> 時出 5 幀指令投會輸給對手的 <code>4 幀</code> 輕拳！）；但投技命中後接強化版鷹塔則是 <strong><code>+8</code></strong>（很多對手會誤以為只有 <code>+2</code> 而亂動吃招）。</li>
+<li><strong>Juri（韓蛛俐）</strong>：綠衝後接中攻擊容易形成幀數陷阱，但被防時若對面凹無敵會切入，高段位建議綠衝後接近輕拳確認安全；風破刃（Fuhajin，集風）消費可製造 <strong><code>+3</code> 幀</strong>（可投）或 <strong><code>+4</code> 幀</strong>（可投但注意無敵技反攻）（無集風時風破刃被防為負幀：輕 <code>-4</code>、中 <code>-6</code>、重 <code>-8</code>，有利幀來自集風強化）；歲破衝（地面波）在最遠距離配合重攻擊讓她有很大優勢，前中腳／中段被防 <code>+1</code> 時小心用快招硬拚，會跟她的 5 幀中繼相打讓她賺更多優勢。</li>
+<li><strong>Ken（肯）</strong>：奮迅腳（Quick Dash，跑步）急停（Emergency Stop）本身是總長 <code>16 幀</code> 的收招動作，官方沒有列被防幀數；影片提到的「蹲輕攻擊接急停約 <code>-3</code>」可對照官方蹲輕腳被防 <code>-3</code>，這種距離下通常沒人能確反，是安全的心理戰。重龍尾腳（Dragonlash Kick，623H）被防官方為 <strong><code>+1</code> 幀</strong>，之後接 4 幀輕拳必形成幀數陷阱！另外迅雷腳（Jinrai Kick）的派生（風鐮腳、轟雷斧、閃火腳）發動期間官方標示全程處於懲罰反擊狀態，用 4 幀搶招打斷時會吃到更多傷害，需要用防禦切換或搶招時機應對；顎撥雙連（Chin Buster，站中拳→重拳）第二段被防為 <code>-14</code>，要小心別被防住後吃確反；綠衝 2MK→2MP 也是經典幀數陷阱起點（蹲中腳 2MK 平常被防 <code>-6</code>，綠衝後 <code>-2</code>；蹲中拳 2MP 被防 <code>0</code>）。</li>
+<li><strong>Kimberly（金伯莉）</strong>：疾馳（Sprint，跑步）急停影片說法為 <strong><code>-4</code> 幀</strong>（可被 4 幀輕拳反擊，官方僅列急停總長 <code>14 幀</code>、未列被防幀數）；肘落被防她有利（可接 4 幀防搶或 <code>+2</code> 投）；掃倒第 1 段後只有 <code>2 幀</code> 空隙，按 <code>4 幀</code> 輕拳會輸；注意她有很多「偽連攜」（例如扭轉墜落有空隙可用快速技切入，但會被蹲輕連打壓掉）。</li>
+<li><strong>Lily（莉莉）</strong>：近身<strong>風纏（Windclad）狀態的鷹塔（Condor Spire）</strong>被防 <strong><code>+1</code></strong>（官方：輕／中／重風纏鷹塔被防皆 <code>+1</code>，OD 風纏鷹塔 <code>+2</code>；沒有風纏時鷹塔被防為 <code>-8</code>），需要 <code>+2</code> 才能穩穩連投（所以 <code>+1</code> 時出 5 幀指令投會輸給對手的 <code>4 幀</code> 輕拳！）；但投技命中後接強化版鷹塔則是 <strong><code>+8</code></strong>（很多對手會誤以為只有 <code>+2</code> 而亂動吃招，此數字為影片說法，官方未列）。</li>
 <li><strong>Luke（盧克）</strong>：注意他的連攜「目標連段／重拳派生」：防禦後<strong>畫面有晃動（重攻擊/特技）就繼續守，沒晃動再用 4 幀反攻</strong>；另有影片教在特定連攜第 2 發被防禦後「連按 8 幀以內的招」，他若繼續派生你會自動連續防禦、他一停手你的招就會立刻飛出去確反！另外輕閃光拳後奔跑衝撞為 <strong><code>+3</code></strong>（可投可打）、角落後摔膝擊壓制為 <strong><code>+1</code></strong>。</li>
-<li><strong>M. Bison（貝卡／維加）</strong>：重技後常有看起來像沒動作的停頓（其實是 <code>±0</code> 幀左右），誘使對手誤以為有利想走過來摔，此時維加按 4 幀就能相打或打贏！站中拳被防基本有利，可接下段派生或投技；有心靈地雷（炸彈）在對手身上時，壓制結尾改用心靈粉碎會從 <code>-1</code> 變成 <strong><code>+6</code> 大有利</strong>，輕雙連組合結尾帶地雷還能拿到 <strong><code>42 幀</code> 安全跳</strong>。</li>
-<li><strong>Mai（不知火舞）</strong>：一般普通技被防幾乎沒有有利幀（除了輕攻擊連段），所以她<strong>高度依賴花蝶扇（扇子）</strong>來製造有利幀與壓制！沒扇子時別怕她一直壓；看到她中拳／中腳接普通花蝶扇時，直接按 <strong>動力衝擊（DI）</strong> 是非常簡單粗暴的對策。三級超必殺後前走是 <code>+1～+2</code> 可繼續壓；後重腳平常被防 <code>-1</code>，但當起身持續重疊（Meaty）時可變 <strong><code>+1</code></strong>。</li>
-<li><strong>Manon（瑪濃）</strong>：沒有任何「被防禦後還有利」的普通技！所以防住她的普通技時通常可以按輕招搶回回合（<strong>綠衝過來的打擊除外</strong>）；但一旦她靠綠衝（站中手綠衝接蹲中手）拿到 <strong><code>+3</code> 幀</strong> 貼身，就會進入超痛的「指令投 vs 打擊」純二擇。另外她的自動連按（Auto 1/2/3）都不安全（Auto 1 被防 <code>-11</code>），只能點一下做確認。</li>
+<li><strong>M. Bison（貝卡／維加）</strong>：重技後常有看起來像沒動作的停頓（站中拳官方被防 <code>±0</code>、站重拳被防 <code>+1</code>），誘使對手誤以為有利想走過來摔，此時維加按 4 幀就能相打或打贏！站中拳被防 <code>±0</code>，可接下段派生或投技；有念力地雷（Psycho Mine，炸彈）在對手身上時，壓制結尾改用念力粉碎擊（Psycho Crusher Attack）會從被防 <code>-20</code>（重版 <code>-23</code>）變成 <strong>輕／中版 <code>+6</code>、重版 <code>+5</code>、極限版 <code>+10</code> 大有利</strong>，輕雙連組合結尾帶地雷還能拿到 <strong><code>42 幀</code> 安全跳</strong>。</li>
+<li><strong>Mai（不知火舞）</strong>：一般普通技被防幾乎沒有有利幀（官方：站輕拳 <code>-2</code>、站中拳 <code>-3</code>、站重拳 <code>-3</code>、站重腳 <code>-3</code>；除了輕攻擊連段），所以她<strong>高度依賴花蝶扇（扇子）</strong>來製造有利幀與壓制！沒扇子時別怕她一直壓；看到她中拳／中腳接普通花蝶扇時，直接按 <strong>動力衝擊（Drive Impact，DI）</strong> 是非常簡單粗暴的對策（動力衝擊發生 <code>26 幀</code>、前 <code>27</code> 幀有兩次霸體）。三級超必殺後前走是 <code>+1～+2</code> 可繼續壓；後重腳平常被防 <code>-1</code>，但當起身持續重疊（Meaty）時可變 <strong><code>+1</code></strong>。</li>
+<li><strong>Manon（瑪濃）</strong>：沒有任何「被防禦後還有利」的普通技（官方：站輕拳 <code>-1</code>、站中拳 <code>-2</code>、站重拳 <code>-3</code>、站重腳 <code>-6</code>）！所以防住她的普通技時通常可以按輕招搶回回合（<strong>綠衝過來的打擊除外</strong>，綠衝後被防固定 <code>+4</code>）；但一旦她靠綠衝（站中手綠衝接蹲中手）拿到 <strong><code>+3</code> 幀</strong> 貼身，就會進入超痛的「指令投 vs 打擊」純二擇。另外她的自動連按（Auto 1/2/3）都不安全（Auto 1 被防 <code>-11</code>，影片說法），只能點一下做確認。</li>
 <li><strong>Marisa（瑪麗莎）</strong>：核心規則記兩句——<strong>「蓄滿力」的重攻擊／短劍／步兵陣／台拳被防禦後都是瑪麗莎有利，千萬別亂按鍵</strong>；反之，<strong>「沒蓄力」的短劍（例如中段目標連段接出的）被防禦後是守方有利</strong>，請勇敢按鍵搶回你的回合！</li>
-<li><strong>Rashid（拉希德）</strong>：風力強化後的旋風擊與阿拉伯旋風被防住後往往仍是拉希德有利（例如旋風擊被防 <code>+2</code>、阿拉伯旋風重拳版後前滾 <strong><code>+1</code></strong> 進二擇）；某些套路後墊步接前跳剛好是 <strong><code>+42 幀</code> 安全跳</strong>（若太早出前中拳變成 <code>+43</code> 就會失效）。注意他有些假壓制可用 5～7 幀招打斷，但若他開強化版就會蓋過一般打斷。</li>
-<li><strong>Ryu（隆）</strong>：第二季強化後的<strong>蓄力波掌擊</strong>是核心壓制技，被防也有極大有利幀；重昇龍接輕波掌擊帶入角落可做 5 輕拳幀殺（需精準時機，晚 1 幀就會變負幀）；前重腳接存跳有 <strong><code>+41</code> / <code>+42</code> 安全跳</strong>；另外面對隆的「輕技→投」壓制，可用 <code>4 幀</code> 反攻應對。</li>
-<li><strong>Terry（泰瑞）</strong>：普通技被防大多不是有利狀態，別因為招式看起來很順就被嚇到不敢按；但他靠<strong>重波動／能量波</strong>跟進壓起身時非常有利（如能量衝鋒後接圓波做幀數陷阱）。投技後前衝為 <strong><code>+3</code> 幀</strong>（可壓 4 幀輕拳）；中版能量衝鋒接跳重腳為 <strong><code>42 幀</code> 安全跳</strong>（版邊另有 <code>44 幀</code> 完美詐欺跳示範，見下方提醒）。</li>
-<li><strong>Zangief（桑吉爾夫）</strong>：沒快速輕腳延長壓制，站重腳雖然被防有利但打不到蹲姿；注意別因為怕他的 <code>5 幀</code> 螺旋打樁機就亂逃或亂跳！在他 <code>+3</code> 或 <code>+4</code> 時出指令投，你其實還有逃脫或拆/打的空間；他的安全跳約需 <strong><code>+43</code> 幀</strong> 才能躲過 6 幀昇龍。</li>
+<li><strong>Rashid（拉希德）</strong>：風力強化後的旋風彈（Whirlwind Shot，官方未蓄力版被防 <code>-9</code>，蓄力放開後被防約 <code>0～+8</code>，OD 蓄力版 <code>+10</code>）與阿拉伯旋風（Arabian Cyclone）被防住後往往仍是拉希德有利（例如旋風彈蓄力版被防 <code>+2</code>、阿拉伯旋風重拳版後前滾 <strong><code>+1</code></strong> 進二擇）；某些套路後墊步接前跳剛好是 <strong><code>+42 幀</code> 安全跳</strong>（若太早出前中拳變成 <code>+43</code> 就會失效）。注意他有些假壓制可用 5～7 幀招打斷，但若他開強化版就會蓋過一般打斷。</li>
+<li><strong>Ryu（隆）</strong>：第二季強化後的<strong>蓄力波掌擊（Hashogeki）</strong>是核心壓制技，重版被防官方為 <code>+2</code>、電刃練氣（Denjin Charge）狀態下為 <code>+3</code>、極限版 <code>+3</code>（電刃極限版 <code>+4</code>），被防有利幀不大但很穩；重昇龍接輕波掌擊帶入角落可做 5 輕拳幀殺（需精準時機，晚 1 幀就會變負幀）；前重腳接存跳有 <strong><code>+41</code> / <code>+42</code> 安全跳</strong>；另外面對隆的「輕技→投」壓制，可用 <code>4 幀</code> 反攻應對。</li>
+<li><strong>Terry（泰瑞）</strong>：普通技被防大多不是有利狀態，別因為招式看起來很順就被嚇到不敢按；但他靠<strong>重波動／能量波</strong>跟進壓起身時非常有利（如能量衝鋒後接圓波做幀數陷阱）。投技後前衝為 <strong><code>+3</code> 幀</strong>（可壓 4 幀輕拳）；中版能量衝鋒接跳重腳為 <strong><code>42 幀</code> 安全跳</strong>（版邊另有 <code>44 幀</code> 完美詐欺跳示範，見文末提醒）。</li>
+<li><strong>Zangief（桑吉爾夫）</strong>：沒快速輕腳延長壓制，站重腳雖然被防有利但打不到蹲姿；注意別因為怕他的 <code>5 幀</code> 螺旋打樁機（Screw Piledriver，官方發生 <code>5 幀</code>）就亂逃或亂跳！在他 <code>+3</code> 或 <code>+4</code> 時出指令投，你其實還有逃脫或拆/打的空間；他的安全跳約需 <strong><code>+43</code> 幀</strong> 才能躲過 6 幀昇龍。</li>
 </ul>
 <hr />
-<h2>六、說法不一與待驗證提醒</h2>
+<h2>六、實戰情境與流派差異提醒</h2>
 <ol>
 <li><strong>負幀就絕對不能按鍵嗎？</strong>：一支影片主張「不利幀就絕不該按鍵」，另一支則認為「要看推開距離與招式特性」，兩邊都有道理——<strong>貼身負幀別亂按，但遠距離被推開時，利用距離陷阱反抓對手揮空是完全合理的</strong>。</li>
-<li><strong>安全跳幀數微差（隆 <code>+41</code> vs <code>+42</code>、泰瑞 <code>44 幀</code>、艾德 <code>+42</code>）</strong>：多數角色標準安全跳是 <strong><code>+42</code></strong>，但隆前重腳後影片一處說 <code>+42</code>、兩處說 <code>+41</code>（<code>+41</code> 時對手 5 幀昇龍可能打中）；泰瑞版邊有影片示範 <code>44 幀</code> 詐欺跳；艾德上牆字幕寫 <code>+42</code> 疑為辨識錯誤。實戰前請務必在訓練模式錄「起身 OD 昇龍」測一次！</li>
-<li><strong>單一角色的衝突說法</strong>：</li>
+<li><strong>安全跳幀數微差（隆 <code>+41</code> vs <code>+42</code>、泰瑞 <code>44 幀</code>、艾德 <code>+42</code>）</strong>：安全跳的判斷公式固定（<code>+42</code> 能防 <code>5 幀</code> 以上無敵技、<code>+41</code> 只能防 <code>6 幀</code> 以上），但各角色套路實際落在 <code>+41</code> 還是 <code>+42</code>，會隨連段、距離與版本而不同。隆前重腳後影片一處說 <code>+42</code>、兩處說 <code>+41</code>（<code>+41</code> 時對手 5 幀昇龍可能打中）；泰瑞版邊有影片示範 <code>44 幀</code> 詐欺跳；艾德上牆字幕寫 <code>+42</code> 疑為辨識錯誤。實戰前請務必在訓練模式錄「起身極限昇龍」測一次！</li>
+<li><strong>單一角色的衝突說法</strong>（以下均屬影片說法互相矛盾，官方資料無法直接裁決，請以訓練模式實測）：</li>
 <li><strong>布蘭卡重電氣球</strong>：一處說防住重版懲罰容易，另一處說大多數情況安全（僅蓋爾等少數好確反）。</li>
 <li><strong>春麗輕百裂</strong>：同支影片前段說「見到就要反擊」，後段說「立回中幾乎不需防禦」（情境不同）。</li>
 <li><strong>傑米前摔 <code>-3</code></strong>：原話同時出現「安牌」與「不是安牌」矛盾說法。</li>
@@ -127,7 +128,7 @@
 <li><strong>維加延遲投與退康（Shimmy）</strong>：同段影片先說延遲 4 格可讓他無法退康，後面實測又說他仍來得及退康。</li>
 <li><strong>隆重昇龍</strong>：一處說 <code>+6</code>（非安全跳情境）vs 另一處說「不安全」。</li>
 <li><strong>沙加特站輕攻被防</strong>：同片 <code>13:41</code> 說沙加特有有利，<code>14:34</code> 說下方不利，方向相反。</li>
-<li><strong>字幕辨識存疑數字</strong>：如肯相殺後 <code>+49</code> 幀、韓蛛俐與岩石共用 <code>+42</code>、阿鬼與拉希德相殺主語錯置、<code>+84</code>、<code>+19</code> 等數字均屬單一影片字幕辨識結果，未經實機確認前請勿直接當成鐵則。</li>
+<li><strong>字幕辨識存疑數字</strong>：如肯相殺後 <code>+49</code> 幀、韓蛛俐與岩石共用 <code>+42</code>、阿鬼與拉希德相殺主語錯置、<code>+84</code>、<code>+19</code> 等數字，以及本文標註「影片說法」的數字（金伯莉急停 <code>-4</code>、莉莉投後強化鷹塔 <code>+8</code>、瑪濃 Auto 1 被防 <code>-11</code>、空跳搶招第 <code>47</code> 幀、維加 <code>4 幀</code> 反擊、舞後重腳 <code>-1</code>、泰瑞投後前衝 <code>+3</code> 等），均屬單一影片字幕辨識結果或官方未列的衍生情境，未經實機確認前請勿直接當成鐵則。</li>
 </ol><nav class="pager"><a href="c02-04.html">← C02-04 反應時間與反擊窗口</a><a href="../index.html">返回總覽目錄</a><a href="c02-06.html">C02-06 無敵、投技與飛道具 →</a></nav>
     </section>
   </main>

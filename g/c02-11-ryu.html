@@ -19,161 +19,260 @@
   </aside>
   <main>
     <section class="page">
-<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>隆（Ryu）角色招式幀數數據</h1></header><p>隆（Ryu）是《快打旋風 6》的基本功教科書，但改版後的隆多了「電刃練氣」強化、「波掌擊」的正幀壓制與各種強力的中遠距離拳腳。這篇已對照 Capcom 官方幀數表（2026 年 11 月抓取版本）與正式中文招式譯名，幫你把實戰必背的數字整理清楚：到底他哪些招式被防住是正幀陷阱？哪些破綻擋到可以直接確反（懲罰反擊 / Punish Counter）？</p>
+<div class="crumb"><a href="../index.html">單篇攻略</a> / C02 幀數與確反</div><header class="ph"><span class="pnum">C02-11</span><h1>隆（Ryu）角色招式幀數數據</h1></header><p>隆（Ryu）是《快打旋風 6》的基本功教科書，他的特色是「電刃練氣」強化必殺技、「波掌擊」的正幀壓制，以及各種強力的中遠距離拳腳。這篇已對照 Capcom 官方幀數表（2026 年 11 月抓取版本）與正式中文招式譯名，幫你把實戰必背的數字整理清楚：到底他哪些招式被防住是正幀陷阱？哪些破綻擋到可以直接確反（懲罰反擊 / Punish Counter）？</p>
 <blockquote>
 <p><strong>⚡ 一分鐘懶人包</strong><br />
 1. <strong>小心隆的「波掌擊（214P）」與正幀陷阱</strong>：<br />
    * <strong>重波掌擊</strong>被防 <strong>+2 幀</strong>（電刃強化後 <strong>+3 幀</strong>）。<br />
    * <strong>極限技（OD）波掌擊</strong>被防 <strong>+3 幀</strong>（電刃強化後 <strong>+4 幀</strong>）。<br />
-   * <strong>輕波掌擊</strong>貼身被防 <strong>-3 幀</strong>（若遠距壓持續最高可變有利）；但<strong>中波掌擊</strong>被防高達 <strong>-6 幀</strong>（可用 6 幀內快速招式直接確反！）。<br />
-   * <strong>鳩尾碎擊（俗稱大ゴス／大仏，前重拳 6HP）</strong>：發生 <strong>20 幀</strong>、被防 <strong>+3 幀</strong>（唯一被防正幀的特殊技；若隆接 8 幀蹲中腳，中間有 5 幀空隙可用 4～5 幀技打斷）。<br />
-   * <strong>站重腳（5HK）</strong>：被防 <strong>+1 幀</strong>（但對蹲姿會揮空，懲罰反擊會觸發 36 幀崩潰）。<br />
-2. <strong>必抓的破綻招式與足刀改版</strong>：<br />
-   * <strong>上段足刀（俗稱驢踢，236K）</strong>：輕版被防 <strong>-11 幀</strong>、中版被防 <strong>-8 幀</strong>、OD 版被防 <strong>-18 幀</strong>（皆有大確反）；<strong>重上段足刀</strong>被防為 <strong>-3 幀</strong>（無確反，且削 1 格動力量表）。<br />
-   * <strong>龍捲旋風腳（214K）</strong>：無論輕、中、重或 OD 版，貼身被防皆為 <strong>-13 ～ -15 幀大確反</strong>，站防擋完可直接打最大懲罰連段。<br />
+   * <strong>輕波掌擊</strong>貼身被防 <strong>-3 幀</strong>（若在遠距用持續幀後段壓制，最高可到 <strong>+2 幀</strong>，算法見第四章）；但<strong>中波掌擊</strong>被防高達 <strong>-6 幀</strong>（可用 6 幀內快速招式直接確反！）。<br />
+   * <strong>鳩尾碎擊（俗稱大ゴス／大仏，前重拳 6HP）</strong>：發生 <strong>20 幀</strong>、被防 <strong>+3 幀</strong>（唯一被防正幀的特殊技；若隆接 8 幀蹲中腳（2MK），中間有 5 幀空隙，4 幀技可打斷、5 幀技會互相對撞）。<br />
+   * <strong>站重腳（5HK）</strong>：被防 <strong>+1 幀</strong>（影片提醒對蹲姿會揮空，詳見文末；懲罰反擊命中會觸發 36 幀崩潰）。<br />
+2. <strong>必抓的破綻招式與足刀</strong>：<br />
+   * <strong>上段足刀（俗稱驢踢，236K）</strong>：輕版被防 <strong>-11 幀</strong>、中版被防 <strong>-8 幀</strong>、OD 版被防 <strong>-18 幀</strong>（皆有大確反）；<strong>重上段足刀</strong>被防為 <strong>-3 幀</strong>（沒有確反空間，影片另稱被防會削動力量表，官方表未載，詳見文末）。<br />
+   * <strong>龍捲旋風腳（214K）</strong>：輕 <strong>-15</strong>、中 <strong>-13</strong>、重 <strong>-13</strong>、OD <strong>-14 幀</strong>，貼身被防皆是大確反，站防擋完可直接打最大懲罰連段。<br />
    * <strong>波動拳（236P）</strong>：貼身被防為輕 <strong>-5</strong>／中 <strong>-7</strong>／重 <strong>-9 幀</strong>（但距離拉遠時因飛行時間抵銷硬直，會變安全甚至正幀）；<strong>蹲中腳（2MK）</strong>取消一般波動拳若太近且未連段，存在被搶招或確反的風險。<br />
 3. <strong>隆的最速起手與無敵大招</strong>：<br />
-   * <strong>站輕拳（5LP）／蹲輕拳（2LP）</strong>為隆唯二的 <strong>4 幀</strong>最速起手；<strong>站輕腳（5LK）／蹲輕腳（2LK）</strong>皆為 <strong>5 幀</strong>。<br />
-   * <strong>三級超必殺：真・昇龍拳（SA3 / CA，236236K）</strong>發生僅 <strong>5 幀</strong>（第 1～16 幀完全無敵，被防 <strong>-52 幀</strong>，總長 88 幀），殘血時千萬別亂揮大招。</p>
+   * <strong>站輕拳（5LP）／蹲輕拳（2LP）</strong>為隆地面上唯二的 <strong>4 幀</strong>最速起手；<strong>站輕腳（5LK）／蹲輕腳（2LK）</strong>皆為 <strong>5 幀</strong>。<br />
+   * <strong>三級超必殺：真・昇龍拳（SA3 / CA，236236K）</strong>發生僅 <strong>5 幀</strong>（第 1～16 幀完全無敵，被防 <strong>-52 幀</strong>，硬直 71 幀），殘血時千萬別亂揮大招。</p>
 </blockquote>
 <hr />
 <h2>一、一般技與特殊技：立回速度與被防狀態</h2>
+<p>下表的「命中／被防」都是<strong>沒有任何加成</strong>的基礎數字。搭配動力箭步（Drive Rush，綠衝）、截擊（Counter Hit）、懲罰反擊或壓持續時的衍生數字，請看第四章速查表。</p>
 <div class="tbl"><table>
 <thead>
 <tr>
 <th style="text-align: left;">招式名稱（指令／俗稱）</th>
-<th style="text-align: left;">發生</th>
-<th style="text-align: left;">被防後</th>
-<th style="text-align: left;">命中後</th>
-<th style="text-align: left;">取消與實戰特性</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">持續</th>
+<th style="text-align: center;">硬直</th>
+<th style="text-align: center;">命中</th>
+<th style="text-align: center;">被防</th>
+<th style="text-align: center;">取消</th>
+<th style="text-align: center;">傷害</th>
+<th style="text-align: left;">實戰特性</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>站輕拳（5LP）</strong></td>
-<td style="text-align: left;"><strong>4 幀</strong></td>
-<td style="text-align: left;"><strong>-1</strong></td>
-<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>4 幀</strong></td>
+<td style="text-align: center;">4-6</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">300</td>
 <td style="text-align: left;">可連打與必殺技取消；隆唯二 4 幀起手之一</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲輕拳（2LP）</strong></td>
-<td style="text-align: left;"><strong>4 幀</strong></td>
-<td style="text-align: left;"><strong>-1</strong></td>
-<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>4 幀</strong></td>
+<td style="text-align: center;">4-5</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">300</td>
 <td style="text-align: left;">可連打與必殺技取消；近戰最穩搶招鍵</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>站輕腳（5LK）</strong></td>
-<td style="text-align: left;"><strong>5 幀</strong></td>
-<td style="text-align: left;"><strong>-4</strong></td>
-<td style="text-align: left;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">300</td>
 <td style="text-align: left;">可取消必殺技；貼身被防有 -4 破綻</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲輕腳（2LK）</strong></td>
-<td style="text-align: left;"><strong>5 幀</strong></td>
-<td style="text-align: left;"><strong>-1</strong></td>
-<td style="text-align: left;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-6</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">200</td>
 <td style="text-align: left;">下段起手，可連打取消（不可取消必殺技）</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>站中拳（5MP）</strong></td>
-<td style="text-align: left;"><strong>6 幀</strong></td>
-<td style="text-align: left;"><strong>-1</strong></td>
-<td style="text-align: left;"><strong>+7</strong></td>
-<td style="text-align: left;">可取消；搭配動力箭步（綠衝）被防 <strong>+3 幀</strong>，揮空硬直 +2 幀</td>
+<td style="text-align: center;"><strong>6 幀</strong></td>
+<td style="text-align: center;">6-9</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><strong>+7</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">600</td>
+<td style="text-align: left;">可取消；搭配動力箭步被防 <strong>+3 幀</strong>，揮空硬直 +2 幀</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲中拳（2MP）</strong></td>
-<td style="text-align: left;"><strong>6 幀</strong></td>
-<td style="text-align: left;"><strong>0</strong></td>
-<td style="text-align: left;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>6 幀</strong></td>
+<td style="text-align: center;">6-9</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;"><strong>+5</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">600</td>
 <td style="text-align: left;">可取消；搭配動力箭步被防 <strong>+4 幀</strong>、命中 <strong>+9 幀</strong>，揮空硬直 +2 幀</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>站中腳（5MK）</strong></td>
-<td style="text-align: left;"><strong>9 幀</strong></td>
-<td style="text-align: left;"><strong>-4</strong></td>
-<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-11</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">700</td>
 <td style="text-align: left;">不可取消；中距離牽制主力（命中 +4、被防 -4）</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲中腳（2MK）</strong></td>
-<td style="text-align: left;"><strong>8 幀</strong></td>
-<td style="text-align: left;"><strong>-6</strong></td>
-<td style="text-align: left;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>8 幀</strong></td>
+<td style="text-align: center;">8-10</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-6</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">500</td>
 <td style="text-align: left;">可取消；中距離下段確認動力箭步（綠衝）主力</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>站重拳（5HP）</strong></td>
-<td style="text-align: left;"><strong>10 幀</strong></td>
-<td style="text-align: left;"><strong>-2</strong></td>
-<td style="text-align: left;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-14</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;"><strong>+4</strong></td>
+<td style="text-align: center;"><strong>-2</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">800</td>
 <td style="text-align: left;">可取消、強制站立；截擊（CH）<strong>+6</strong>、懲罰反擊（PC）<strong>+8</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲重拳（2HP）</strong></td>
-<td style="text-align: left;"><strong>9 幀</strong></td>
-<td style="text-align: left;"><strong>-7</strong></td>
-<td style="text-align: left;"><strong>+1</strong></td>
-<td style="text-align: left;">強制站立；僅第 1 持續幀命中可取消必殺技</td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-14</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-7</strong></td>
+<td style="text-align: center;">C*</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">強制站立；*僅第 1 持續幀命中可取消必殺技</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>站重腳（5HK）</strong></td>
-<td style="text-align: left;"><strong>12 幀</strong></td>
-<td style="text-align: left;"><strong>+1</strong></td>
-<td style="text-align: left;"><strong>+9</strong></td>
-<td style="text-align: left;">不可取消；對蹲姿會揮空，懲罰反擊產生 36 幀崩潰</td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;">12-15</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+9</strong></td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">不可取消；空中命中為浮空狀態；懲罰反擊產生 36 幀崩潰</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>蹲重腳（2HK，掃堂腿）</strong></td>
-<td style="text-align: left;"><strong>9 幀</strong></td>
-<td style="text-align: left;"><strong>-12</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-11</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;"><strong>-12</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">900</td>
 <td style="text-align: left;">不可取消；懲罰反擊延長倒地並轉為強制倒地</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>鎖骨碎擊（前中拳 6MP）</strong></td>
-<td style="text-align: left;"><strong>20 幀</strong></td>
-<td style="text-align: left;"><strong>-3</strong></td>
-<td style="text-align: left;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>20 幀</strong></td>
+<td style="text-align: center;">20-23</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;"><strong>-3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">600</td>
 <td style="text-align: left;">中段攻擊；第二下僅在第一下揮空時才轉為中段判定</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>鳩尾碎擊（前重拳 6HP，大ゴス）</strong></td>
-<td style="text-align: left;"><strong>20 幀</strong></td>
-<td style="text-align: left;"><strong>+3</strong></td>
-<td style="text-align: left;"><strong>+6</strong></td>
-<td style="text-align: left;">被防正幀壓制主力；動力箭步生衝命中為 <strong>+10 幀</strong></td>
+<td style="text-align: center;"><strong>20 幀</strong></td>
+<td style="text-align: center;">20-24</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;"><strong>+6</strong></td>
+<td style="text-align: center;"><strong>+3</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">被防正幀壓制主力；動力箭步（綠衝）命中為 <strong>+10 幀</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>上突（後重拳 4HP）</strong></td>
-<td style="text-align: left;"><strong>7 幀</strong></td>
-<td style="text-align: left;"><strong>-13</strong></td>
-<td style="text-align: left;"><strong>+1</strong></td>
-<td style="text-align: left;">強制站立；僅第 1 持續幀命中可取消必殺技，被防破綻極大</td>
+<td style="text-align: center;"><strong>7 幀</strong></td>
+<td style="text-align: center;">7-10</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-13</strong></td>
+<td style="text-align: center;">C*</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">強制站立；*僅第 1 持續幀命中可取消必殺技，被防破綻極大</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>斧踢（後重腳 4HK）</strong></td>
-<td style="text-align: left;"><strong>10 幀</strong></td>
-<td style="text-align: left;"><strong>-4</strong></td>
-<td style="text-align: left;"><strong>0</strong></td>
-<td style="text-align: left;">可取消；第一下強制站立，第二下擊中空中對手會彈地</td>
+<td style="text-align: center;"><strong>10 幀</strong></td>
+<td style="text-align: center;">10-14、20-23</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">第一下強制站立，第二下擊中空中對手會彈地</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>旋風腳（前重腳 6HK）</strong></td>
-<td style="text-align: left;"><strong>16 幀</strong></td>
-<td style="text-align: left;"><strong>-4</strong></td>
-<td style="text-align: left;"><strong>+2</strong></td>
-<td style="text-align: left;">僅可取消「空中龍捲旋風腳（含 OD 版）」</td>
+<td style="text-align: center;"><strong>16 幀</strong></td>
+<td style="text-align: center;">16-19</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">C*</td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">*僅可取消「空中龍捲旋風腳（含 OD 版）」</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>目標連段（上段雙連擊 / 不破三連擊）</strong></td>
-<td style="text-align: left;">9 / 17 幀</td>
-<td style="text-align: left;"><strong>-8</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">收尾僅命中可取消「電刃練氣（22P）」，被防 -8 可被確反</td>
+<td style="text-align: left;"><strong>上段雙連擊（5P~K，目標連段）</strong></td>
+<td style="text-align: center;"><strong>9 幀</strong></td>
+<td style="text-align: center;">9-12</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">C*</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;">*僅命中時可取消「電刃練氣（22P）」；被防 -8 可被確反</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不破三連擊（5P~LK~K，目標連段）第 2 段</strong></td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;">5-7</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;"><strong>+1</strong></td>
+<td style="text-align: center;"><strong>-4</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: left;">三連擊的中間一下，傷害低、被防 -4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不破三連擊（5P~LK~K，目標連段）第 3 段</strong></td>
+<td style="text-align: center;"><strong>17 幀</strong></td>
+<td style="text-align: center;">17-20</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;"><strong>-8</strong></td>
+<td style="text-align: center;">C*</td>
+<td style="text-align: center;">900</td>
+<td style="text-align: left;">*僅命中時可取消「電刃練氣（22P）」；被防 -8 可被確反</td>
 </tr>
 </tbody>
 </table></div>
@@ -183,103 +282,133 @@
 <thead>
 <tr>
 <th style="text-align: left;">招式名稱（指令／俗稱）</th>
-<th style="text-align: left;">發生</th>
-<th style="text-align: left;">被防後</th>
-<th style="text-align: left;">命中後</th>
+<th style="text-align: center;">發生</th>
+<th style="text-align: center;">被防後</th>
+<th style="text-align: center;">命中後</th>
+<th style="text-align: center;">傷害</th>
 <th style="text-align: left;">實戰應對與備註</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>波動拳（輕 / 中 / 重，236P）</strong></td>
-<td style="text-align: left;">16 / 14 / 12 幀</td>
-<td style="text-align: left;"><strong>-5 / -7 / -9</strong>（貼身）</td>
-<td style="text-align: left;">+2 / 0 / -2（貼身）</td>
-<td style="text-align: left;">總長 47 幀；中遠距離因彈道飛行抵銷硬直會更安全或有利</td>
+<td style="text-align: center;">16 / 14 / 12 幀</td>
+<td style="text-align: center;"><strong>-5 / -7 / -9</strong>（貼身）</td>
+<td style="text-align: center;">+2 / 0 / -2（貼身）</td>
+<td style="text-align: center;">700</td>
+<td style="text-align: left;">總長 47 幀；中遠距離因彈道飛行抵銷硬直會更安全或有利；可取消 SA3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>電刃強化／OD 波動拳</strong></td>
-<td style="text-align: left;"><strong>12 幀</strong></td>
-<td style="text-align: left;"><strong>-1</strong>（電刃OD <strong>+2</strong>）</td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">總長 40 幀（電刃 OD 為 38 幀）；幾乎全程安全</td>
+<td style="text-align: left;"><strong>電刃強化波動拳</strong></td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;"><strong>-1</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: left;">總長 40 幀；幾乎全程安全</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OD 波動拳（236PP）</strong></td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;"><strong>-1</strong>（電刃強化後 <strong>+2</strong>）</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">1000（電刃 1200）</td>
+<td style="text-align: left;">總長 40 幀（電刃 OD 為 38 幀）；電刃 OD 被防有利</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>輕波掌擊（214LP）</strong></td>
-<td style="text-align: left;"><strong>12 幀</strong></td>
-<td style="text-align: left;"><strong>-3</strong>（貼身）</td>
-<td style="text-align: left;"><strong>+2</strong></td>
-<td style="text-align: left;">持續 12-17 幀，若遠距壓持續末端可更安全；截擊／確反會浮空</td>
+<td style="text-align: center;"><strong>12 幀</strong></td>
+<td style="text-align: center;"><strong>-3</strong>（貼身）</td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;">700</td>
+<td style="text-align: left;">持續 12-17 幀，若遠距用持續末端壓制可更安全（最高 +2）；截擊／懲罰反擊命中會浮空</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>中波掌擊（214MP）</strong></td>
-<td style="text-align: left;"><strong>19 幀</strong></td>
-<td style="text-align: left;"><strong>-6</strong></td>
-<td style="text-align: left;"><strong>+2</strong></td>
-<td style="text-align: left;">近距離被防 -6 可用輕／中攻擊確反，切忌當成安全技亂壓</td>
+<td style="text-align: center;"><strong>19 幀</strong></td>
+<td style="text-align: center;"><strong>-6</strong></td>
+<td style="text-align: center;"><strong>+2</strong></td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">近距離被防 -6 可用 6 幀內招式確反，切忌當成安全技亂壓；截擊／懲罰反擊命中會浮空</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>重波掌擊（214HP）</strong></td>
-<td style="text-align: left;"><strong>30 幀</strong></td>
-<td style="text-align: left;"><strong>+2</strong>（電刃 <strong>+3</strong>）</td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">在投距內，擋完別亂搶招！但發生慢（30 幀）可用動力衝擊或快速技反制</td>
+<td style="text-align: center;"><strong>30 幀</strong>（電刃強化後 <strong>20 幀</strong>）</td>
+<td style="text-align: center;"><strong>+2</strong>（電刃 <strong>+3</strong>）</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">800</td>
+<td style="text-align: left;">在投距內，擋完別亂搶招！但未強化時發生慢（30 幀），可用動力衝擊或快速技反制</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>OD 波掌擊（214PP）</strong></td>
-<td style="text-align: left;"><strong>18 幀</strong></td>
-<td style="text-align: left;"><strong>+3</strong>（電刃 <strong>+4</strong>）</td>
-<td style="text-align: left;"><strong>+3</strong>（電刃崩潰 39 幀）</td>
+<td style="text-align: center;"><strong>18 幀</strong></td>
+<td style="text-align: center;"><strong>+3</strong>（電刃 <strong>+4</strong>）</td>
+<td style="text-align: center;"><strong>+3</strong>（電刃強化後崩潰 39 幀）</td>
+<td style="text-align: center;">1100（電刃 800）</td>
 <td style="text-align: left;">投距外但隆有利；電刃 OD 命中強制崩潰可接高傷大連段</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>上段足刀（輕 / 中 / 重 / OD，236K）</strong></td>
-<td style="text-align: left;">14 / 18 / 27 / 17 幀</td>
-<td style="text-align: left;"><strong>-11 / -8 / -3 / -18</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">輕／中／OD 版皆大確反；僅重版 -3 安全且削 1 格動力量表</td>
+<td style="text-align: center;">14 / 18 / 27 / 17 幀</td>
+<td style="text-align: center;"><strong>-11 / -8 / -3 / -18</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">1100 / 1200 / 1300 / 800</td>
+<td style="text-align: left;">輕／中／OD 版皆大確反；僅重版 -3 沒有確反空間（影片另稱會削動力量表，見文末）；重版懲罰反擊命中延長浮空時間</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>龍捲旋風腳（輕 / 中 / 重 / OD，214K）</strong></td>
-<td style="text-align: left;">12 / 14 / 16 / 13 幀</td>
-<td style="text-align: left;"><strong>-15 / -13 / -13 / -14</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
+<td style="text-align: center;">12 / 14 / 16 / 13 幀</td>
+<td style="text-align: center;"><strong>-15 / -13 / -13 / -14</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">900 / 1000 / 1200 / 1000</td>
 <td style="text-align: left;"><strong>全強度貼身被防皆是大破綻！</strong>擋住後直接打最大懲罰連段</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>空中龍捲旋風腳（前跳中 j.214K / OD）</strong></td>
+<td style="text-align: center;"><strong>11 幀</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">900（OD 1500）</td>
+<td style="text-align: left;">落地硬直 16 幀；可由旋風腳（6HK）取消出招</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>昇龍拳（輕 / 中 / 重 / OD，623P）</strong></td>
-<td style="text-align: left;">5 / 6 / 7 / 6 幀</td>
-<td style="text-align: left;"><strong>-23 / -32 / -36 / -40</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">輕/中/重僅對空無敵（1～14/9/8 幀）；OD 版 1～8 幀完全無敵</td>
+<td style="text-align: center;">5 / 6 / 7 / 6 幀</td>
+<td style="text-align: center;"><strong>-23 / -32 / -36 / -40</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">1100 / 1200 / 1400 / 1600</td>
+<td style="text-align: left;">輕／中／重僅對空無敵（1～14 / 1～9 / 1～8 幀）；OD 版 1～8 幀完全無敵；落地硬直另加 12 / 12 / 12 / 15 幀</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>電刃練氣（22P）</strong></td>
-<td style="text-align: left;">總長 <strong>52 幀</strong></td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">—</td>
-<td style="text-align: left;">第 51 幀取得 1 次強化；同時強化波動拳、波掌擊、SA1 與 SA2</td>
+<td style="text-align: center;">總長 <strong>52 幀</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">第 51 幀取得 1 次強化（最多持有 1 次）；同時強化波動拳、波掌擊、SA1 與 SA2</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>SA1：真空波動拳（236236P）</strong></td>
-<td style="text-align: left;"><strong>7 幀</strong></td>
-<td style="text-align: left;"><strong>-24</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">第 1～8 幀對打擊與投技無敵，傷害 2000（電刃 2400）</td>
+<td style="text-align: center;"><strong>7 幀</strong></td>
+<td style="text-align: center;"><strong>-24</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">2000（電刃 2400）</td>
+<td style="text-align: left;">第 1～8 幀對打擊與投技無敵；總長 86 幀（電刃 89 幀）</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>SA2：真・波掌擊（214214P）</strong></td>
-<td style="text-align: left;"><strong>12 / 20 / 70 幀</strong></td>
-<td style="text-align: left;"><strong>-20</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">Lv1 第 1～13 幀完全無敵（Lv2/3 為 1～9 幀），傷害 2800～3400</td>
+<td style="text-align: center;"><strong>12 / 20 / 70 幀</strong>（Lv1 / 2 / 3）</td>
+<td style="text-align: center;"><strong>-20</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">2800 / 2900 / 3000（電刃 3200 / 3300 / 3400）</td>
+<td style="text-align: left;">Lv1 第 1～13 幀完全無敵（Lv2／3 為 1～9 幀）；按住按鍵可提升等級</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>SA3 / CA：真・昇龍拳（236236K）</strong></td>
-<td style="text-align: left;"><strong>5 幀</strong></td>
-<td style="text-align: left;"><strong>-52</strong></td>
-<td style="text-align: left;"><strong>擊倒</strong></td>
-<td style="text-align: left;">第 1～16 幀完全無敵，傷害 4000（CA 4500）</td>
+<td style="text-align: center;"><strong>5 幀</strong></td>
+<td style="text-align: center;"><strong>-52</strong></td>
+<td style="text-align: center;"><strong>擊倒</strong></td>
+<td style="text-align: center;">4000（CA 4500）</td>
+<td style="text-align: left;">第 1～16 幀完全無敵；硬直 71 幀；CA 為血量 25% 以下才能使用</td>
 </tr>
 </tbody>
 </table></div>
@@ -287,19 +416,155 @@
 <h2>三、共通移動與投技／起身壓制（Oki）參考</h2>
 <ul>
 <li><strong>共通墊步與投技</strong>：前墊步（Forward Dash）總長 <strong>19 幀</strong>；後墊步（Backward Dash）總長 <strong>23 幀</strong>（第 1～15 幀對投無敵）；前摔「過肩摔」與後摔「巴摔」皆為 <strong>5 幀發生</strong>，懲罰反擊摔傷害為 <strong>2040</strong> 並轉為強制倒地。</li>
-<li><strong>實戰常見壓起身與安全跳（Safe Jump）路線</strong>：</li>
-<li><strong>前摔後壓制</strong>：前摔命中後優勢約 <strong>+17 幀</strong>（依版本與距離有微調，接「動力箭步」生衝壓起身常見為壓輕拳 <strong>+4</strong> 或壓站中拳 <strong>+7</strong>）。</li>
-<li><strong>版邊安全跳</strong>：版邊擊倒取得 <strong>+41 ～ +42 幀</strong>（如版邊重波掌擊後延遲接「前重腳（旋風腳）→ 龍捲旋風腳」）即可構成安全跳，騙取對手凹無敵昇龍並落地防禦；動力衝擊（DI）撞牆擊倒後亦可搭配消幀做詐欺跳。</li>
+<li><strong>動力系統共通招式</strong>：動力衝擊（Drive Impact）發生 <strong>26 幀</strong>、被防 <strong>-3 幀</strong>；動力反攻（Drive Reversal）防禦中 <strong>20 幀</strong>、起身 <strong>18 幀</strong>發生，被防皆為 <strong>-6 幀</strong>。</li>
+<li><strong>實戰常見壓起身與安全跳（Safe Jump）路線</strong>（以下為影片實測路線，場中與角落起身距離不同，<strong>建議角落使用，場中視距離調整</strong>）：</li>
+<li><strong>前摔後壓制</strong>：前摔命中後優勢約 <strong>+17 幀</strong>（依版本與距離有微調，接動力箭步（綠衝）壓起身，影片常見為壓站輕拳（5LP）<strong>+4</strong> 或壓站中拳（5MP）<strong>+7</strong>，兩者數字等同官方基礎命中幀）。</li>
+<li><strong>版邊安全跳</strong>：版邊擊倒取得 <strong>+41 ～ +42 幀</strong>（如版邊重波掌擊後延遲接「旋風腳（6HK）→ 空中龍捲旋風腳」）即可構成安全跳，騙取對手用無敵昇龍反擊並自己落地防禦；動力衝擊（DI）撞牆擊倒後亦可搭配消幀做安全跳。</li>
 </ul>
+<hr />
+<h2>四、衍生情境幀數速查（官方基礎幀數＋系統加值）</h2>
+<p>以下數字都是用第一章的官方基礎幀數，加上系統公式算出來的。每次都要寫清楚前提，例如「一般被防 -1，綠衝後被防 +3」。</p>
+<p><strong>1. 動力箭步（綠衝）：地面一般技／特殊技命中與被防都固定 +4</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式</th>
+<th style="text-align: center;">一般被防 → 綠衝後被防</th>
+<th style="text-align: center;">一般命中 → 綠衝後命中</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">站輕拳（5LP）／蹲輕拳（2LP）</td>
+<td style="text-align: center;">-1 → <strong>+3</strong></td>
+<td style="text-align: center;">+4 → <strong>+8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站輕腳（5LK）</td>
+<td style="text-align: center;">-4 → <strong>0</strong></td>
+<td style="text-align: center;">+2 → <strong>+6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">蹲輕腳（2LK）</td>
+<td style="text-align: center;">-1 → <strong>+3</strong></td>
+<td style="text-align: center;">+3 → <strong>+7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站中拳（5MP）</td>
+<td style="text-align: center;">-1 → <strong>+3</strong></td>
+<td style="text-align: center;">+7 → <strong>+11</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">蹲中拳（2MP）</td>
+<td style="text-align: center;">0 → <strong>+4</strong></td>
+<td style="text-align: center;">+5 → <strong>+9</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站中腳（5MK）</td>
+<td style="text-align: center;">-4 → <strong>0</strong></td>
+<td style="text-align: center;">+4 → <strong>+8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">蹲中腳（2MK）</td>
+<td style="text-align: center;">-6 → <strong>-2</strong></td>
+<td style="text-align: center;">+1 → <strong>+5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站重拳（5HP）</td>
+<td style="text-align: center;">-2 → <strong>+2</strong></td>
+<td style="text-align: center;">+4 → <strong>+8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">蹲重拳（2HP）</td>
+<td style="text-align: center;">-7 → <strong>-3</strong></td>
+<td style="text-align: center;">+1 → <strong>+5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站重腳（5HK）</td>
+<td style="text-align: center;">+1 → <strong>+5</strong></td>
+<td style="text-align: center;">+9 → <strong>+13</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">鳩尾碎擊（6HP）</td>
+<td style="text-align: center;">+3 → <strong>+7</strong></td>
+<td style="text-align: center;">+6 → <strong>+10</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>2. 截擊（Counter Hit）命中 +2、懲罰反擊（Punish Counter，確反）一般命中 +4</strong></p>
+<ul>
+<li>站重拳（5HP）：命中 +4 → 截擊 <strong>+6</strong>、懲罰反擊 <strong>+8</strong>。</li>
+<li>站中拳（5MP）：命中 +7 → 截擊 <strong>+9</strong>、懲罰反擊 <strong>+11</strong>。</li>
+<li>蹲中腳（2MK）：命中 +1 → 截擊 <strong>+3</strong>、懲罰反擊 <strong>+5</strong>。</li>
+<li>站重腳（5HK）懲罰反擊另有 36 幀崩潰效果，以崩潰為準。</li>
+</ul>
+<p><strong>3. 燒盡（Burnout）：對手被防幀數全部再 +4</strong></p>
+<ul>
+<li>對手燒盡時：站輕拳 -1 → <strong>+3</strong>、站中拳 -1 → <strong>+3</strong>、站重拳 -2 → <strong>+2</strong>、蹲中拳 0 → <strong>+4</strong>、站重腳 +1 → <strong>+5</strong>、鳩尾碎擊 +3 → <strong>+7</strong>。</li>
+<li>重波掌擊 +2 → <strong>+6</strong>（電刃 +3 → <strong>+7</strong>）、OD 波掌擊 +3 → <strong>+7</strong>（電刃 +4 → <strong>+8</strong>）、中波掌擊 -6 → <strong>-2</strong>、重上段足刀 -3 → <strong>+1</strong>。</li>
+</ul>
+<p><strong>4. 壓持續（Meaty）：最多再加「持續幀數 - 1」</strong></p>
+<p>用持續幀的最後一幀命中或被防，是最大加值，實際加多少要看對手起身時機。</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th style="text-align: left;">招式（持續幀）</th>
+<th style="text-align: center;">最多加成</th>
+<th style="text-align: center;">一般被防 → 壓持續後被防</th>
+<th style="text-align: center;">一般命中 → 壓持續後命中</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">站輕拳（4-6）</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">-1 → <strong>+1</strong></td>
+<td style="text-align: center;">+4 → <strong>+6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站中拳（6-9）</td>
+<td style="text-align: center;">+3</td>
+<td style="text-align: center;">-1 → <strong>+2</strong></td>
+<td style="text-align: center;">+7 → <strong>+10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">蹲中拳（6-9）</td>
+<td style="text-align: center;">+3</td>
+<td style="text-align: center;">0 → <strong>+3</strong></td>
+<td style="text-align: center;">+5 → <strong>+8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">站重拳（10-14）</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">-2 → <strong>+2</strong></td>
+<td style="text-align: center;">+4 → <strong>+8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">鳩尾碎擊（20-24）</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">+3 → <strong>+7</strong></td>
+<td style="text-align: center;">+6 → <strong>+10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">輕波掌擊（12-17）</td>
+<td style="text-align: center;">+5</td>
+<td style="text-align: center;">-3 → <strong>+2</strong></td>
+<td style="text-align: center;">+2 → <strong>+7</strong></td>
+</tr>
+</tbody>
+</table></div>
 <hr />
 <h2>實戰情境與流派差異提醒</h2>
 <ol>
-<li><strong>為何影片有時說波動拳／輕波掌擊「被防有利」？</strong></li>
-<li>官方表給的是「貼身（0 距離）立刻擋到第一持續幀」的數字（例如輕波動貼身 -5、輕波掌擊貼身 -3）。但實際對戰中，只要波動拳在<strong>中遠距離</strong>發射，飛行時間會抵銷一部分收招硬直；輕波掌擊若在極限距離讓<strong>持續幀末端（第 17 幀）</strong>壓持續命中，被防也會從 -3 變成 <strong>0 ～ +2 幀</strong>。因此實戰判斷安全性必須同時看距離與持續幀。</li>
-<li><strong>為何攻略常提到蹲中拳（2MP）或站中拳（5MP）被防 +3/+4？</strong></li>
-<li>隆的站中拳（-1）與蹲中拳（0）本身都不是正幀，實戰中會出現 <strong>+3 / +4 幀</strong>，是因為搭配了<strong>動力箭步（Drive Rush / 綠衝）</strong>出招（系統規定所有綠衝出的招式在命中或被防時額外獲得 <strong>+4 幀有利</strong>）。</li>
+<li><strong>波動拳／輕波掌擊的實戰安全性取決於距離</strong>：</li>
+<li>官方表給的是「貼身（0 距離）立刻擋到第一持續幀」的數字（輕波動拳貼身 -5、輕波掌擊貼身 -3）。實際對戰中，波動拳在<strong>中遠距離</strong>發射時，飛行時間會抵銷一部分收招硬直，所以影片常說「被防有利」；輕波掌擊在極限距離用<strong>持續幀末端（第 17 幀）</strong>命中時，被防可從 -3 變成最高 <strong>+2</strong>。判斷安全性必須同時看距離與持續幀。</li>
 <li><strong>版本演進說明</strong>：</li>
-<li>舊影片中曾提到「蹲輕腳被防 -3 調為 -2」、「鳩尾碎擊（6HP）原本 22 幀 / 被防 +1」等數據，皆為早期季度的改版過渡記憶。依 2026 年 11 月抓取之 Capcom 官方幀數表，目前最新數值已固定為：<strong>蹲輕腳（2LK）被防 -1 幀、鳩尾碎擊（6HP）發生 20 幀且被防 +3 幀</strong>。</li>
+<li>舊影片中曾提到「蹲輕腳被防 -3 調為 -2」、「鳩尾碎擊（6HP）原本 22 幀 / 被防 +1」等數據，屬於早期季度的數字。依 2026 年 11 月抓取之 Capcom 官方幀數表，目前數值為：<strong>蹲輕腳（2LK）被防 -1 幀、鳩尾碎擊（6HP）發生 20 幀且被防 +3 幀</strong>，看到舊影片的數字請以本篇為準。</li>
+<li><strong>影片說法，官方幀數表無法判定，請自行實測</strong>：</li>
+<li><strong>重上段足刀被防會削 1 格動力量表</strong>：官方表只列幀數與浮空備註，沒有動力量表削減數值。</li>
+<li><strong>站重腳（5HK）對蹲姿會揮空</strong>：官方備註沒有提到此判定，是影片的實戰觀察。</li>
+<li><strong>前摔後約 +17 幀、版邊擊倒 +41 ～ +42 幀</strong>：屬於系統與位置相關的實測值，官方表沒有收錄。壓起身與安全跳路線在場中與角落的起身距離不同，<strong>建議角落使用，場中視距離調整</strong>。</li>
+<li><strong>鳩尾碎擊接蹲中腳的 5 幀空隙</strong>：由官方 +3 與蹲中腳 8 幀發生推算，實戰仍要看對手輸入與延遲。</li>
 </ol><nav class="pager"><a href="c02-11-rashid.html">← C02-11 拉希德（Rashid）角色招式幀數數據</a><a href="../index.html">返回總覽目錄</a><a href="c02-11-sagat.html">C02-11 沙加特（Sagat）角色招式幀數數據 →</a></nav>
     </section>
   </main>

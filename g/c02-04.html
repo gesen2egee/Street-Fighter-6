@@ -23,7 +23,7 @@
 <blockquote>
 <p><strong>⚡ 一分鐘懶人包</strong><br />
 - <strong>人類正常反應極限</strong>：約 <code>0.2 秒</code>（12 幀）到 <code>0.3 秒</code>（18 幀），遊戲裡抓 <strong>14～15 幀</strong> 是很實用的分水嶺（15 幀還來得及反應，14 幀就很緊）。<br />
-- <strong>系統關鍵窗口</strong>：<strong>動力衝擊（DI）</strong> 發生 <code>26 幀</code>（約 433 毫秒），專心等看得到；<strong>生綠衝（DR）</strong> 反應約 <code>14～15 幀</code>，想用普通技截擊要在 <code>7 幀</code> 左右就按下；<strong>精準格擋（Just Parry）</strong> 窗口只有 <code>2 幀</code>。<br />
+- <strong>系統關鍵窗口</strong>：<strong>動力衝擊（DI）</strong> 發生 <code>26 幀</code>（約 433 毫秒），專心等看得到；<strong>撥擋動力箭步（生綠衝，Parry DR）</strong> 反應約 <code>14～15 幀</code>，想用普通技截擊要在 <code>7 幀</code> 左右就按下；<strong>完美撥擋（Perfect Parry）</strong> 窗口只有 <code>2 幀</code>。<br />
 - <strong>最快起手基準</strong>：全遊戲最快普通技是 <code>4 幀</code>（蹲輕拳/站輕拳），投技 <code>5 幀</code>，最快不蹲下（中段/站中拳）通常 <code>7 幀</code>，下中腳約 <code>9 幀</code>，一級超必殺約 <code>10 幀</code>。<br />
 - <strong>反擊與相打鐵則</strong>：同幀或自己 <code>+1</code> 時，4 幀打擊會贏 5 幀投技；要反擊無敵昇龍（假設 12 幀以內）得用夠快的招；揮空差合（Whiff Punish）要靠「預先輸入」而不是純看畫面。</p>
 </blockquote>
@@ -49,23 +49,23 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>動力衝擊（DI）</strong></td>
-<td style="text-align: left;">發生 <strong><code>26 幀</code></strong>（約 <code>433 ms</code>）</td>
+<td style="text-align: left;">發生 <strong><code>26 幀</code></strong>（約 <code>433 ms</code>；官方：持續 <code>26～27 幀</code>、收招 <code>35 幀</code>）</td>
 <td style="text-align: left;">專心防範時完全看得到！聽到聲音、看到紅黑墨水特效再反按 DI、跳躍或開 SA 都來得及。若對手在連攜中留出 <strong><code>6 幀</code> 以上空隙</strong>才出 DI，可直接用 <code>5 幀</code> 投技反制；反之面對有「當身技」的角色（如 Marisa、JP、Zangief），版邊 DI 連攜空隙必須壓在 <strong><code>2 幀</code> 以下</strong>。</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>生綠衝（DR）</strong></td>
-<td style="text-align: left;">反應窗口約 <strong><code>14～15 幀</code></strong></td>
-<td style="text-align: left;">生綠衝本身約 <code>11 幀</code> 加上 <code>4 幀</code> 輕攻擊合計 <strong><code>15 幀</code></strong>，剛好卡在人類反應極限邊緣，就算死盯著看也很難直接打停。想用普通技截擊建議選 <code>4～5 幀</code> 中判定最長的輕攻擊，並在 <code>7 幀</code> 左右就按下；另有高階「後退步複合」技巧，需在我方招式被防後處於 <strong><code>-4～-8 幀</code></strong> 左右（<code>-3 幀</code> 不成立，因最速生衝 Parry 起手為 <code>3 幀</code>），才能剛好對上對手的生衝時間窗。</td>
+<td style="text-align: left;"><strong>撥擋動力箭步（生綠衝）</strong></td>
+<td style="text-align: left;">反應窗口約 <strong><code>14～15 幀</code></strong>（待驗證）；官方為第 <strong><code>9 幀</code></strong> 起即可取消攻擊（第 <code>10 幀</code> 畫面凍結結束）</td>
+<td style="text-align: left;">原文「生綠衝本身約 <code>11 幀</code>」與官方不符，已依官方改寫。原文「加上 <code>4 幀</code> 輕攻擊合計 <strong><code>15 幀</code></strong>」的窗口算法未經官方核對，保留為待驗證；但仍可理解為剛好卡在人類反應極限邊緣，就算死盯著看也很難直接打停。想用普通技截擊建議選 <code>4～5 幀</code> 中判定最長的輕攻擊，並在 <code>7 幀</code> 左右就按下；另有高階「後退步複合」技巧，需在我方招式被防後處於 <strong><code>-4～-8 幀</code></strong> 左右（<code>-3 幀</code> 不成立，因最速生衝 Parry 起手為 <code>3 幀</code>），才能剛好對上對手的生衝時間窗。</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>精準格擋（Just Parry）</strong></td>
+<td style="text-align: left;"><strong>完美撥擋（Perfect Parry）</strong></td>
 <td style="text-align: left;">判定窗口 <strong><code>2 幀</code></strong></td>
 <td style="text-align: left;">單純靠眼睛現場反應幾乎不可能，通常是在對面出招時機固定（如起身壓制、固定連攜、飛道具距離）時抓節奏按。</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>動力反擊（Drive Reversal）</strong></td>
-<td style="text-align: left;">綠光反應約 <strong><code>14 幀</code></strong>（待驗證）</td>
-<td style="text-align: left;">看到對手格擋閃綠光時反應窗口很短，容易來不及。</td>
+<td style="text-align: left;"><strong>動力反攻（Drive Reversal）</strong></td>
+<td style="text-align: left;">官方：防禦中發動 <strong><code>20 幀</code></strong>（第 1～22 幀完全無敵）、起身發動 <strong><code>18 幀</code></strong>（第 1～20 幀完全無敵）；綠光反應窗口約 <strong><code>14 幀</code></strong>（待驗證）</td>
+<td style="text-align: left;">看到對手格擋閃綠光時反應窗口很短，容易來不及。被防皆為 <code>-6 幀</code>，可被輕攻擊／部分中攻擊確反（官方）。</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>後跳 vs 防禦/格擋</strong></td>
@@ -83,7 +83,7 @@
 <li><strong>7 幀</strong>：最快的不帶下段判定中攻擊（如部分角色站中拳 5MP）大約 <code>7 幀</code>。</li>
 <li><strong>9 幀</strong>：主流角色的蹲中腳（2MK）大多在 <code>9 幀</code> 左右。</li>
 <li><strong>10 幀</strong>：多數站中腳（5MK）、站重拳（5HP）以及 <strong>SA1（一級超必殺）</strong> 大約在 <code>10 幀</code> 上下。</li>
-<li><strong>投技與後墊步空檔</strong>：抓空投技的硬直大約 <strong><code>30 幀</code></strong>（非常大，夠你走過去打最大確反）；後墊步（Backdash）總動作約 <strong><code>23 幀</code></strong> 左右。</li>
+<li><strong>投技與後墊步空檔</strong>：普通投（前摔／後摔）揮空時官方為硬直 <strong><code>23 幀</code></strong>、總長 <strong><code>30 幀</code></strong>（全角色相同，夠你走過去打最大確反）；後墊步（Backdash）全角色第 <strong><code>1～15 幀</code></strong> 對投技無敵（官方），總動作依角色不同，原文「約 <code>23 幀</code>」未經官方核對。</li>
 </ul>
 <hr />
 <h2>四、搶招、相打與確反的實戰規則</h2>
@@ -99,7 +99,7 @@
 </ul>
 <h3>3. 反擊無敵昇龍（凹招）</h3>
 <ul>
-<li>如果對手凹無敵技（例如 OD 昇龍）被你防住，通常要抓 <strong><code>12 幀</code> 以內</strong> 發生的招式起手才能穩穩打到「懲罰反擊（Punish Counter）」（當然視各角色昇龍不利幀而定，但用 12 幀以內的重攻擊最保險）。</li>
+<li>如果對手凹無敵技（例如 OD 昇龍）被你防住，通常要抓 <strong><code>12 幀</code> 以內</strong> 發生的招式起手才能穩穩打到「懲罰反擊（Punish Counter，確反）」（當然視各角色昇龍不利幀而定，但用 12 幀以內的重攻擊最保險）。</li>
 </ul>
 <hr />
 <h2>五、各角色反應與窗口實戰筆記</h2>
@@ -112,30 +112,29 @@
 <li><strong>Lily（莉莉）</strong>：集風後的強化突進技（Condor Spire）速度極快且帶有利幀，看到突進再按 DI 或截擊窗口很短，建議提前防備。</li>
 <li><strong>Jamie（傑米）</strong>：魔身／突進掌（爆廻等）與醉拳連續派生會考驗反應，看到第 1 段防住不要急著按慢招，要看清楚有沒有後續派生。</li>
 <li><strong>Sagat（沙加特）</strong> / <strong>Alex（艾力克斯）</strong> / <strong>Elena（艾蓮娜）</strong> / <strong>Arjun（阿爾君，字幕待確認）</strong>：影片中亦有零星提及特定招式反應與對空窗口（部分屬預告或舊作/跨作比較脈絡，實戰請以遊戲內幀數表為準）。</li>
-<li><strong>Zangief（桑吉爾夫）</strong>：指令投（螺旋打樁機）發生 <code>5 幀</code>，貼身時不能靠「看到再跳」，必須靠讀招先跳或後墊步。</li>
+<li><strong>Zangief（桑吉爾夫）</strong>：指令投（螺旋打樁機）發生 <code>5 幀</code>（未核對：官方 5 幀為普通投規格，指令投以角色官方卡為準），貼身時不能靠「看到再跳」，必須靠讀招先跳或後墊步。</li>
 <li><strong>Dee Jay（迪傑）</strong>：假動作（飛道假動作等）專門用來騙對手的反射神經（騙 DI 或騙跳），看到動作立刻反應反而會中計。</li>
 <li><strong>Chun-Li（春麗）</strong>：行雲流水架勢派生與氣功跟進速度多變，中距離步行速度極快，差合時要注意她的伸手收回速度。</li>
 <li><strong>Marisa（瑪麗莎）</strong>：蓄力重攻擊與裝甲技（Gladius / Scutum）看到再反應按 DI 有時會剛好撞上她的破甲或裝甲，要注意蓄力時間差。</li>
 <li><strong>Rashid（拉希德）</strong>：氣流強化後的突進與空中軌道變化極快，單靠視覺反擊難度高。</li>
-<li><strong>Blanka（布蘭卡）</strong>：輕重布蘭卡球（Rolling Attack）速度不同，看到滾過來時要分辨距離與速度決定精準格擋或對空。</li>
+<li><strong>Blanka（布蘭卡）</strong>：輕重布蘭卡球（Rolling Attack）速度不同，看到滾過來時要分辨距離與速度決定完美撥擋或對空。</li>
 <li><strong>Akuma（豪鬼）</strong>：百鬼襲派生、阿修羅閃空（移動）與空波動變化多，需提前預設對策（例如看到閃空或跳起就準備對空/抓破綻）。</li>
 <li><strong>Manon（瑪濃）</strong>：打擊投／指令投二擇在近距離同樣是預判戰；大芭蕾滑踢等長距離突進若在遠距離揮空有足夠反應時間差合。</li>
-<li><strong>E. Honda（本田）</strong>：頭槌與百貫落（屁股坐）在線上實戰常考驗玩家反應，看到飛起來或衝過來要穩定用精準格擋或對空技對應（尤其遠距離頭槌反應時間相對充裕）。</li>
+<li><strong>E. Honda（本田）</strong>：頭槌與百貫落（屁股坐）在線上實戰常考驗玩家反應，看到飛起來或衝過來要穩定用完美撥擋或對空技對應（尤其遠距離頭槌反應時間相對充裕）。</li>
 <li><strong>JP</strong>：地上地刺與幽靈設置時收招較長，看準他放設置技的瞬間前跳或生綠衝是常見的反應切入點。</li>
 <li><strong>Ed（艾德）</strong>：蓄力閃刺拳（鞭子）有明顯前搖，但放出的時機可長可短，考驗玩家耐心等放招再反應。</li>
 <li><strong>Terry（泰瑞）</strong>：能量波與火焰衝鋒（Burn Knuckle）突進速度快，需在特定距離預先防備突進。</li>
 <li><strong>M. Bison（貝卡／維加）</strong>：雙膝壓殺（Scissors Kick）與惡魔逆轉（Head Press）空戰節奏詭異，看到起跳或滑踢要抓準落地或起手瞬間。</li>
 <li><strong>Dhalsim（達爾西姆）</strong>：遠距離伸縮手腳雖然看起來慢，但回收時間與瞬間移動（Yoga Teleport）容易打亂反應節奏；看到伸手太頻繁可以抓前搖按 DI 或前跳。</li>
-<li><strong>Luke（盧克）</strong>：極速沙塵爆（Sand Blast）彈速極快，中距離看到起手再跳往往來不及，需靠預讀或精準格擋應對。</li>
+<li><strong>Luke（盧克）</strong>：極速沙塵爆（Sand Blast）彈速極快，中距離看到起手再跳往往來不及，需靠預讀或完美撥擋應對。</li>
 </ul>
 <hr />
-<h2>說法不一與待驗證提醒</h2>
+<h2>實戰情境與流派差異提醒</h2>
 <ol>
 <li><strong>人類視覺極限「123 幀」vs「15 幀」</strong>：有單一影片字幕出現估算人類視覺反應極限為「123 幀」的說法，這與常識及其他所有攻略公認的「14～15 幀（約 0.25 秒）」落差極大，<strong>極可能是字幕辨識錯誤（例如把 12～13 幀辨識成 123 幀）</strong>，實戰請以 <code>14～15 幀</code> 為準。</li>
-<li><strong>DI 發生與反應說法差異</strong>：多數資料與實測顯示 DI 發生為 <code>26 幀</code>（約 433 ms），但也有影片口頭概稱「25～30 幀」或「十幾幀」（後者可能是指扣除反應延遲後剩下的有效按鍵時間，或將特定連攜算入）。</li>
 <li><strong>「全遊戲最快普通技 4 幀」vs「少數 3 幀例外」</strong>：絕大多數攻略都確認 SF6 最快普通技為 <code>4 幀</code>（取消前作 3 幀設定），僅極個別舊片或口誤提到「少數 3 幀例外」，請以遊戲內訓練模式幀數條顯示為準。</li>
-<li><strong>Just Parry 窗口說法</strong>：標準共識為 <code>2 幀</code>，但部分影片口述會有「約 3 幀／4 幀」或把暗轉（凍結）的 <code>10 幀</code> 混為一談的情況。</li>
-<li><strong>Drive Reversal 綠光窗口（14 幀）</strong>：屬單一影片估算，未經官方精確幀數實證；另外如 <code>Sagat</code>、<code>Arjun</code> 等非當期角色名稱出現，多為跨作舉例或語音字幕辨識誤差，閱讀時請自行留意。</li>
+<li><strong>完美撥擋窗口說法</strong>：標準共識為 <code>2 幀</code>，但部分影片口述會有「約 3 幀／4 幀」或把暗轉（凍結）的 <code>10 幀</code> 混為一談的情況。</li>
+<li><strong>動力反攻（Drive Reversal）綠光窗口（14 幀）</strong>：官方發生幀數為防禦中 <code>20 幀</code>、起身 <code>18 幀</code>，但「綠光反應約 14 幀」仍不是官方數字，屬單一影片估算，未經實證；另外如 <code>Sagat</code>、<code>Arjun</code> 等非當期角色名稱出現，多為跨作舉例或語音字幕辨識誤差，閱讀時請自行留意。</li>
 </ol><nav class="pager"><a href="c02-03.html">← C02-03 各角色確反｜其他角色</a><a href="../index.html">返回總覽目錄</a><a href="c02-05.html">C02-05 壓制、安全跳與讀招差合 →</a></nav>
     </section>
   </main>
